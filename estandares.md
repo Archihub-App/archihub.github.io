@@ -16,4 +16,6 @@ Los tipos de contenido tienen la función de establecer las categorías de recur
 │   │   ├── Expediente
  ```
 
-En este caso la jerarquía de la información funciona de la siguiente manera: los expedientes están contenidos en series documentales que a su vez están contenidas en fondos. La definición de estos tipos de contenido y su jerarquía permite una estructura lógica y ordenada del archivo. Esto facilita la búsqueda, navegación y recuperación de información, además de proporcionar una vista coherente y organizada de los documentos. Ahora veámos como implementar el archivo que estamos armando.
+En este caso la jerarquía de la información funciona de la siguiente manera: los expedientes están contenidos en series documentales que a su vez están contenidas en fondos. La definición de estos tipos de contenido y su jerarquía permite una estructura lógica y ordenada del archivo. Esto facilita la búsqueda, navegación y recuperación de información, además de proporcionar una vista coherente y organizada de los documentos. Ahora veámos como implementar la estructura de nuestro archivo.
+
+### Haciendo un nuevo tipo de contenido
