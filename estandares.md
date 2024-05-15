@@ -8,7 +8,7 @@ Esta capacidad de personalización en la configuración de los metadatos permite
 
 ## Los tipos de contenido
 
-Los tipos de contenido tienen la función de establecer las categorías de recursos que la herramienta de gestión documental va a organizar, así como la jerarquía en la que estos recursos serán estructurados. Para ilustrar esto, consideremos un fondo de ejemplo en el que queremos tener una estructura de la siguiente forma:
+Los tipos de contenido tienen la función de establecer las categorías de recursos que la herramienta de gestión documental va a organizar, así como la jerarquía en la que estos recursos serán estructurados. Para ilustrar esto, consideremos un archivo de ejemplo en el que queremos tener una estructura de la siguiente forma:
 
  ```
 ├── Fondo
@@ -16,4 +16,4 @@ Los tipos de contenido tienen la función de establecer las categorías de recur
 │   │   ├── Expediente
  ```
 
-En este caso la jerarquía de la información funciona de la siguiente manera: los expedientes están contenido en series documentales que a su vez están contenidas en fondos.
+En este caso la jerarquía de la información funciona de la siguiente manera: los expedientes están contenidos en series documentales que a su vez están contenidas en fondos. La definición de estos tipos de contenido y su jerarquía permite una estructura lógica y ordenada del archivo. Esto facilita la búsqueda, navegación y recuperación de información, además de proporcionar una vista coherente y organizada de los documentos. Ahora veámos como implementar el archivo que estamos armando.
