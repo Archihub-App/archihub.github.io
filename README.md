@@ -10,3 +10,8 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
 - Los roles de usuario
 - Los niveles de acceso a la información
 - Cargas masivas usando el script de carga y la API de administración
+
+### Documentación técnica
+
+- Los plugins
+- Las filas de procesos y los nodos de procesamiento
