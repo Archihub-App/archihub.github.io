@@ -1,0 +1,1 @@
+# Los estándares de metadatos y tipos de contenido
