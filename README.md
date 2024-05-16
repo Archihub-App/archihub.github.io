@@ -1,5 +1,3 @@
-# ArchiHUB
-
 ![logo](imagenes/logo.png)
 
 ## Documentación de instalación y uso
