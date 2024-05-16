@@ -6,6 +6,23 @@ Cada tipo de contenido puede ser configurado con el estándar de metadatos que m
 
 Esta capacidad de personalización en la configuración de los metadatos permite a la herramienta de gestión documental ajustarse a los requerimientos específicos de cualquier institución, garantizando que la información sea organizada y almacenada de manera coherente y estructurada. Al utilizar diferentes estándares para distintos tipos de contenido, se asegura una gestión eficiente y precisa de la documentación recopilada.
 
+## Los estándares de metadatos
+
+Cuando definimos un nuevo tipo de contenido, es fundamental tener una comprensión clara de los metadatos que deseamos implementar para ese tipo específico. En nuestra aplicación, los estándares de metadatos son independientes del tipo, lo que significa que un estándar de metadatos puede estar vinculado a uno o varios tipos al mismo tiempo.
+
+Es importante 
+
+Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. A continuación se describen algunos específicos.
+
+### El campo listado
+
+En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
+
+### El campo relación
+
+
+
+
 ## Los tipos de contenido
 
 Los tipos de contenido tienen la función de establecer las categorías de recursos que la herramienta de gestión documental va a organizar, así como la jerarquía en la que estos recursos serán estructurados. Para ilustrar esto, consideremos un archivo de ejemplo en el que queremos tener una estructura de la siguiente forma:
