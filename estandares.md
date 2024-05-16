@@ -29,14 +29,16 @@ Un estándar de metadatos ofrece una lista de metadatos que se pueden personaliz
 
 En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
 
+![menu](imagenes/listados.png)
 
 
 ### El campo relación
 
-
-
+El campo relación es útil si queremos 
 
 ## Los tipos de contenido
+
+![menu](imagenes/tipos.gif)
 
 Los tipos de contenido tienen la función de establecer las categorías de recursos que la herramienta de gestión documental va a organizar, así como la jerarquía en la que estos recursos serán estructurados. Para ilustrar esto, consideremos un archivo de ejemplo en el que queremos tener una estructura de la siguiente forma:
 
