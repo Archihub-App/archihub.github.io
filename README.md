@@ -15,7 +15,7 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
 
 ## Documentación técnica
 
-- Stack technológico y requerimientos
+- [Stack technológico y requerimientos](stack.md)
 - Los plugins
 - Las filas de procesos y los nodos de procesamiento
 
