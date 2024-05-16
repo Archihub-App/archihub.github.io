@@ -8,6 +8,8 @@ Esta capacidad de personalización en la configuración de los metadatos permite
 
 ## Los estándares de metadatos
 
+![menu](imagenes/estandares.gif)
+
 Cuando definimos un nuevo tipo de contenido, es fundamental tener una comprensión clara de los metadatos que deseamos implementar para ese tipo específico. En nuestra aplicación, los estándares de metadatos son independientes del tipo, lo que significa que un estándar de metadatos puede estar vinculado a uno o varios tipos al mismo tiempo.
 
 Para el correcto uso de ArchiHUB, es fundamental comprender y seguir los estándares de metadatos. Aunque nuestra plataforma te permite editar estos estándares incluso después de haber subido contenido, es importante que los campos existentes no cambien de tipo. Por ejemplo, no debes cambiar un campo de tipo fecha a uno de tipo número, ya que esto requeriría borrar y volver a catalogar el contenido. Idealmente, deberías utilizar la funcionalidad de edición de estándares de metadatos solo para agregar nuevos campos. Esto asegura que el sistema funcione correctamente y que tu contenido esté siempre bien organizado.
@@ -26,6 +28,8 @@ Un estándar de metadatos ofrece una lista de metadatos que se pueden personaliz
 ### El campo listado
 
 En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
+
+
 
 ### El campo relación
 
