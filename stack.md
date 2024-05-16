@@ -20,4 +20,28 @@ ArchiHUB es una plataforma web versátil que utiliza un stack technológico vari
 
 | Tipo | Requerimientos | Comentarios |
 | ----------- | ----------- | ----------- |
-| Máquina local | 8GB memoria RAM | |
+| Máquina local | - 8GB memoria RAM <br> - Tamaño en disco de acuerdo al contenido.Es importante tener en cuenta que ArchiHUB genera múltiples versiones de los archivos, además del original. Esto significa que el espacio requerido en disco puede variar según las versiones generadas y el tamaño de los originales.| Es importante destacar que en esta instalación, algunos plugins, como el de transcripción automática, pueden requerir recursos adicionales para ejecutarse correctamente. Sin embargo, puedes estar tranquilo sabiendo que para las funcionalidades de catalogación, recuperación y organización de archivos, no tendrás problemas gracias a los esfuerzos de optimización que hemos realizado. |
+| Instalación en una infraestructura con varias máquinas | | |
+
+<table>
+  <tr>
+    <td>
+
+      Primera tabla
+
+      | Columna 1 | Columna 2 |
+      | --------- | --------- |
+      | Celda 1   | Celda 2   |
+
+    </td>
+    <td>
+
+      Segunda tabla
+
+      | Columna 1 | Columna 2 |
+      | --------- | --------- |
+      | Celda 1   | Celda 2   |
+
+    </td>
+  </tr>
+</table>
