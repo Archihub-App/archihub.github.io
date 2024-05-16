@@ -1,3 +1,11 @@
+---
+title: Los niveles de acceso a la información
+author: Néstor Andrés Peña
+date: 2024
+category: ArchiHUB
+layout: post
+---
+
 # Los niveles de acceso a la información
 
 ArchiHUB permite configurar niveles de acceso a la información, adaptándose a las necesidades específicas del archivo. Por defecto, solo existe un nivel de acceso, que hace que todo el contenido sea __Público__. Sin embargo, es posible configurar niveles de acceso adicionales para controlar quién puede ver y manejar la información en la plataforma.
