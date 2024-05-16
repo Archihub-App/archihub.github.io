@@ -10,7 +10,16 @@ Esta capacidad de personalización en la configuración de los metadatos permite
 
 Cuando definimos un nuevo tipo de contenido, es fundamental tener una comprensión clara de los metadatos que deseamos implementar para ese tipo específico. En nuestra aplicación, los estándares de metadatos son independientes del tipo, lo que significa que un estándar de metadatos puede estar vinculado a uno o varios tipos al mismo tiempo.
 
-Es importante 
+Para el correcto uso de ArchiHUB, es fundamental comprender y seguir los estándares de metadatos. Aunque nuestra plataforma te permite editar estos estándares incluso después de haber subido contenido, es importante que los campos existentes no cambien de tipo. Por ejemplo, no debes cambiar un campo de tipo fecha a uno de tipo número, ya que esto requeriría borrar y volver a catalogar el contenido. Idealmente, deberías utilizar la funcionalidad de edición de estándares de metadatos solo para agregar nuevos campos. Esto asegura que el sistema funcione correctamente y que tu contenido esté siempre bien organizado.
+
+![pantallazo campo metadatos](imagenes/field.png)
+
+Un campo tiene mínimo 4 opciones configurables:
+
+- __Nombre__: este es el nombre del campo en el formulario y el que verán los usuarios para identificarlo del resto.
+- __Tipo__: el tipo de campo define el tipo de contenido que se guardará en ese campo.
+- __Destino__: esta es la ruta al interior del esquema de metadatos. Por defecto todos los destinos deben empezar con _metadata_, por ejemplo, la ruta por defecto para el título es _metadata.firstLevel.title_. De esta manera yo puedo tener el mismo campo, con el mismo tipo y destino en dos o más estándares distintos. Si intentas guardar un campo que ya ha sido configurado con cierto tipo no podrás guardarlo con uno distinto. Si quieres consultar el esquema completo de tus metadatos en la herramienta, puedes ir a la configuración del sistema.
+- __Requerido__: si el campo es requerido o no.
 
 Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. A continuación se describen algunos específicos.
 
