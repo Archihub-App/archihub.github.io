@@ -1,0 +1,1 @@
+# Instalación en una máquina local
