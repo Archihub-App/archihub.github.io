@@ -13,5 +13,14 @@ Para instalar ArchiHUB en una máquina local, es necesario contar con el aplicat
 
 - [Instalación en MAC](https://docs.docker.com/desktop/install/mac-install/)
 - [Instalación en Windows](https://docs.docker.com/desktop/install/windows-install/)
+- [Instalación en Linux](https://docs.docker.com/engine/install/)
 
 ## Descargar ArchiHUB
+
+El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar el repositorio con los scripts de instalación:
+
+```
+git clone https://github.com/Archihub-App/getting-started
+```
+
+En este repositorio encontramos centralizados las distintas formas en las que podemos iniciar nuestra instalación de ArchiHUB. Para nuestro caso específico, necesitaremos el contenido de la carpeta local-machine. Antes de comenzar el proceso de instalación, es crucial que actualices las llaves de ingreso y ajustes algunas configuraciones de seguridad. Esto asegurará que tu instalación sea segura y que todo funcione sin problemas desde el principio.
