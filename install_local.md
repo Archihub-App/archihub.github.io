@@ -24,3 +24,12 @@ git clone https://github.com/Archihub-App/getting-started
 ```
 
 En este repositorio encontramos centralizados las distintas formas en las que podemos iniciar nuestra instalación de ArchiHUB. Para nuestro caso específico, necesitaremos el contenido de la carpeta _local-machine_. Antes de comenzar el proceso de instalación, es crucial que actualices las llaves de ingreso y ajustes algunas configuraciones de seguridad. Esto asegurará que tu instalación sea segura y que todo funcione sin problemas desde el principio.
+
+### Configuración del entorno
+
+Para comenzar, debes ir a la carpeta /local-machine/archihub y editar el archivo .env. Puedes utilizar el editor de texto de tu preferencia para realizar esta tarea. Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
+
+- __Línea 7__: _MONGO_INITDB_ROOT_PASSWORD_ es la variable de entorno que le asigna una contraseña a la base de datos. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+- __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+- __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+- __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. [Enlace para generar llave fernet](https://fernetkeygen.com/).
