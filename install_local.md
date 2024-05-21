@@ -74,6 +74,8 @@ git clone https://github.com/Archihub-App/archihub-backend.git
 
 ![descarga desde github](imagenes/descarga_git.gif)
 
+### Arrancar el aplicativo
+
 Cuando ya tengamos las variables de entorno configuradas y las carpetas listas, estamos preparados para iniciar el aplicativo usando Docker. Para esto es necesario abrir un terminal y dirigirse a la carpeta en donde se encuentra la herramienta Archivo. Para hacer esto, se debe escribir `cd ` _(!! no olvidar el espacio al final)_ en la terminal y arrastrar la carpeta __archihub__ a la terminal.
 
 ![vista abrir carpeta en la terminal](imagenes/terminal.gif)
