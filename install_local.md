@@ -80,11 +80,10 @@ Cuando ya tengamos las variables de entorno configuradas y las carpetas listas, 
 
 ![vista abrir carpeta en la terminal](imagenes/terminal.gif)
 
-Pulsar “Enter” y luego copiar y pegar el comando `docker compose up -d` y “Enter” para aceptar. Se iniciará el despliegue de los servicios. Para verificar el estado de los servicios, se puede abrir la aplicación Docker y dirigirse a la pestaña "Containers". Allí debería aparecer __archihub__ como activo.
+Pulsar “Enter” y luego copiar y pegar el comando `docker compose up -d` y “Enter” para aceptar. Se iniciará el despliegue de los servicios. Para verificar el estado de los servicios, puedes abrir la aplicación Docker y dirigirte a la pestaña "Containers". Allí debería aparecer __archihub__ como activo.
 
-Usualmente la instalación puede tomar unos minutos. Cuando esté listo puede ir al siguiente enlace usando su navegador: http://localhost/
+Usualmente la instalación puede tomar unos minutos. Cuando estés listo puedes ir al siguiente enlace usando su navegador: [http://localhost/](http://localhost/)
 
-El usuario por defecto de esta instalación es: __beta__
-La contraseña: __beta__
+El usuario por defecto de esta instalación es __beta__ y la contraseña __beta__.
 
 Una vez estés listo podemos seguir con los [primeros pasos](pasos.md) en ArchiHUB.
