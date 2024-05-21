@@ -33,3 +33,31 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y editar el archivo
 - __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 - __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 - __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. [Enlace para generar llave fernet](https://fernetkeygen.com/).
+
+### Organización de las carpetas
+
+ ```
+├── local-machine
+│   ├── archihub
+│   │   ├── frontend
+│   │   ├── backend
+│   │   ├── mongo_db
+│   ├── webfiles
+│   ├── userfiles
+│   ├── temporal
+│   ├── original
+│   ├── data
+│   │   ├── mongodb
+│   │   ├── elastic
+ ```
+
+ La raiz de la carpeta está compuesta por:
+ - __archihub__: en esta carpeta encontramos el código del _frontend_, el _backend_ debemos descargarlo o clonarlo del repositorio y en _mongo_db_ se encuentra la configuración inicial del aplicativo para cargar a una instalación fresca de la base de datos.
+ - __webfiles__: ArchiHUB soporta una amplia variedad de documentos que puedes cargar sin preocuparte por el formato. Para facilitar la visualización y estandarizar los formatos, nuestra herramienta se encarga de generar versiones web de los documentos. Esto te permite acceder y ver tus archivos de manera consistente y sin complicaciones, independientemente del formato original.
+ - __userfiles__: en esta carpeta se guardan los archivos generados por los usuarios, pueden ser reportes de procesamiento masivo o inventarios que se solicitan desde el módulo de catalogación.
+ - __temporal__: para algunos casos de procesamiento es necesario manipular archivos temporal, esta carpeta se usa para eso.
+ - __original__: acá se almacenan los archivos originales de los documentos. Se guardan en una estructura temporal de carpetas y la ruta del original es la misma que la de las versiones web.
+ - __data__: estos son los datos persistentes tanto de la base de datos como del índice. Esta carpeta es para uso exclusivo del sistema y no debe ser modificada.
+
+### Descargar el backend del aplicativo
+
