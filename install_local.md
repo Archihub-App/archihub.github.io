@@ -51,7 +51,7 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y editar el archivo
 │   │   ├── elastic
  ```
 
- La raiz de la carpeta está compuesta por:
+ La raiz de la carpeta está compuesta por las siguientes carpetas, si no existen se deben crear:
  - __archihub__: en esta carpeta encontramos el código del _frontend_, el _backend_ debemos descargarlo o clonarlo del repositorio y en _mongo_db_ se encuentra la configuración inicial del aplicativo para cargar a una instalación fresca de la base de datos.
  - __webfiles__: ArchiHUB soporta una amplia variedad de documentos que puedes cargar sin preocuparte por el formato. Para facilitar la visualización y estandarizar los formatos, nuestra herramienta se encarga de generar versiones web de los documentos. Esto te permite acceder y ver tus archivos de manera consistente y sin complicaciones, independientemente del formato original.
  - __userfiles__: en esta carpeta se guardan los archivos generados por los usuarios, pueden ser reportes de procesamiento masivo o inventarios que se solicitan desde el módulo de catalogación.
@@ -61,3 +61,17 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y editar el archivo
 
 ### Descargar el backend del aplicativo
 
+Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/Archihub-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
+
+- __Clonando el repositorio__: Utiliza el comando `git clone` para clonar el repositorio.
+- __Descargando el zip__: Haz clic aquí para descargar el archivo zip con el contenido del backend.
+
+Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
+
+```
+git clone https://github.com/Archihub-App/archihub-backend.git
+```
+
+![descarga desde github](imagenes/descarga_git.gif)
+
+Una vez estés listo podemos seguir con los [primeros pasos](pasos.md) en ArchiHUB.
