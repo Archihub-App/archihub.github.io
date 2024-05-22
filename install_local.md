@@ -17,7 +17,7 @@ Para instalar ArchiHUB en una máquina local, es necesario contar con el aplicat
 
 ## Descargar ArchiHUB
 
-El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar el [repositorio](https://github.com/Archihub-App/getting-started) con los scripts de instalación:
+El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar o descargar el [repositorio](https://github.com/Archihub-App/getting-started) con los scripts de instalación:
 
 ```
 git clone https://github.com/Archihub-App/getting-started
