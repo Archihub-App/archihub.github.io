@@ -33,7 +33,6 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo ar
 - __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 - __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 - __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. [Enlace para generar llave fernet](https://fernetkeygen.com/).
-- __IMPORTANTE SI ERES USUARIO DE MAC__: debes cambiar el puerto por defecto 5000 en las lineas 2,3 y 26. Puedes poner otro puerto que no esté ocupado por el sistema como el 6000.
 
 ### Organización de las carpetas
 
