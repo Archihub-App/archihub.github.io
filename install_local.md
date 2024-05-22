@@ -68,7 +68,7 @@ Como mencionamos anteriormente, es necesario descargar el código del backend de
     ```
     git clone https://github.com/Archihub-App/archihub-backend.git
     ```
-- __Descargando el zip__: <br>![descarga desde github](imagenes/descarga_git.gif)<br>Haz clic aquí para descargar el archivo zip con el contenido del backend.
+- __Descargando el zip__: <br>![descarga desde github](imagenes/descarga_git.gif)
 
 Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
 
