@@ -27,7 +27,7 @@ En este repositorio encontramos centralizados las distintas formas en las que po
 
 ### Configuración del entorno
 
-Para comenzar, debes ir a la carpeta /local-machine/archihub y editar el archivo .env. Puedes utilizar el editor de texto de tu preferencia para realizar esta tarea. Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
+Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo archivo .env copiando el contenido que se encuentra en el archivo .env.back. Puedes utilizar el editor de texto de tu preferencia para realizar esta tarea. Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
 
 - __Línea 7__: _MONGO_INITDB_ROOT_PASSWORD_ es la variable de entorno que le asigna una contraseña a la base de datos. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
 - __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
