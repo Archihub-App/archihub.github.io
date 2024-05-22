@@ -64,16 +64,13 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo ar
 
 Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/Archihub-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
 
-- __Clonando el repositorio__: Utiliza el comando `git clone` para clonar el repositorio.
-- __Descargando el zip__: Haz clic aquí para descargar el archivo zip con el contenido del backend.
+- __Clonando el repositorio__: Utiliza el comando `git clone` para clonar el repositorio. <br>
+    ```
+    git clone https://github.com/Archihub-App/archihub-backend.git
+    ```
+- __Descargando el zip__: <br>![descarga desde github](imagenes/descarga_git.gif)<br>Haz clic aquí para descargar el archivo zip con el contenido del backend.
 
 Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
-
-```
-git clone https://github.com/Archihub-App/archihub-backend.git
-```
-
-![descarga desde github](imagenes/descarga_git.gif)
 
 ### Arrancar el aplicativo
 
