@@ -24,4 +24,6 @@ Por defecto, todo el contenido que se crea es __Público__ pero al asignarle un 
 
 ## Asignando niveles de acceso a los metadatos
 
-En algunos casos, existen tipos de contenido que idealmente deberían publicarse pero algunos de los metadatos son confidenciales. En tales casos, se puede asignar niveles de acceso al momento de crear o editar un nuevo estándar de metadatos. El usuario público no podrá leer los metadatos reservados pero habrá transparencia en cuanto al manejo de la información.
+En algunos casos, es posible que ciertos tipos de contenido deban publicarse, pero algunos metadatos sean confidenciales. Para estos casos, ArchiHUB permite asignar niveles de acceso al crear o editar un estándar de metadatos para cada campo indivualmente. De este modo:
+- Los __usuarios públicos__ no podrán leer los metadatos reservados, asegurando la confidencialidad de la información sensible.
+- __Transparencia:__ Se garantiza transparencia en el manejo de la información, ya que los metadatos públicos seguirán siendo visibles para todos.
