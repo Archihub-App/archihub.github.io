@@ -22,6 +22,7 @@
 - [x] Habilidad de los plugins de usar el contenido del archivo como material de entrenamiento para ajustar modelos
 - [x] Distintas filas de prioridad para los procesamientos: _high_, _medium_ y _low_
 - [x] Habilidad para los plugins de guardar en la base de datos configuraciones para su funcionamiento
+- [x] Sistema preparado para el soporte de modelos de texto como GPT, bien sea en la nube o en un despliegue local de un modelo libre
 
 ## Interfaz
 - [ ] Interfaz de búsqueda avanzada
