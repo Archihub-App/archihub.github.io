@@ -3,7 +3,8 @@
 Los roles de usuario definen la capacidad de los usuarios para manejar información. Por defecto, ArchiHUB soporta tres roles: admin, editor y processing.
 
 - __admin__: Los usuarios con este rol tienen acceso completo a todas las funciones de la plataforma. Pueden realizar cambios en la configuración del sistema, crear usuarios, catalogar y procesar información.
-- __editor__: Los usuarios con este rol pueden crear y editar recursos para distintos tipos de contenido. Aunque puede haber excepciones, en general, los editores pueden catalogar cualquier tipo de contenido, a menos que se configure lo contrario al crear los tipos de contenido.
+- __editor__: Los usuarios con este rol pueden crear y editar recursos para distintos tipos de contenido. Aunque puede haber excepciones, en general, los editores pueden catalogar cualquier tipo de contenido, a menos que se configure lo contrario al crear los tipos de contenido. El contenido que crean o actualizan queda guardado como un borrador hasta que un usuario con rol `publisher` lo publique.
+- __publisher__: Los usuario con este rol tienen la función de publicar los recursos en la plataforma y que sean visibles para el resto de usuarios. Por defecto, siempre que se guardar contenido este queda como borrador y solo es visible para los usuarios con rol de `admin` y `editor`. Es importante notar que al publicar un contenido este se hace visible solo para los usuarios que estén habilitates por niveles de acceso o roles.
 - __processing__: Los usuarios con este rol pueden ejecutar procesamientos y configurar plugins para que se ejecuten automáticamente en diversos momentos dentro de la aplicación, como al guardar un recurso. En algunos casos, puede requerirse un rol especial para ciertos procesamientos, lo cual se abordará en la configuración avanzada de plugins. Sin embargo, para acceder a las configuraciones, es necesario que el usuario tenga asignado este rol.
 
 ## Roles personalizados
