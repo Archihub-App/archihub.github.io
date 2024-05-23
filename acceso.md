@@ -20,7 +20,14 @@ Una vez tengamos la lista hecha, volvemos a los ajustes del sistema y en la secc
 
 ## Asignando niveles de acceso a los recursos
 
-Por defecto, todo el contenido que se crea es __Público__ pero al asignarle un nivel de acceso distinto solo lo usuarios con ese nivel de acceso podrán ver o editar esos recursos.
+Por defecto, todo el contenido creado en ArchiHUB es Público. Sin embargo, puedes asignar un nivel de acceso diferente para restringir quién puede ver o editar esos recursos. Aquí te explicamos cómo funciona:
+
+- __Contenido Público:__ Por defecto, cualquier usuario con rol `editor` puede ver y editar el contenido.
+- __Niveles de Acceso:__ Si asignas un nivel de acceso distinto, solo los usuarios con ese nivel podrán ver o editar esos recursos específicos.
+- __Visibilidad de Metadatos:__ Los metadatos seguirán siendo visibles para todos, garantizando transparencia.
+- __Restricción de Documentos:__ Los documentos asociados al recurso con niveles de acceso restringidos no podrán ser consultados por usuarios sin el nivel adecuado. Solo se mostrará el hash del documento, asegurando la confidencialidad del contenido.
+
+Esta funcionalidad permite un control detallado sobre quién puede acceder y manejar diferentes tipos de información en la plataforma.
 
 ## Asignando niveles de acceso a los metadatos
 
