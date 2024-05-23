@@ -24,6 +24,7 @@
 - [x] Distintas filas de prioridad para los procesamientos: _high_, _medium_ y _low_
 - [x] Habilidad para los plugins de guardar en la base de datos configuraciones para su funcionamiento
 - [x] Sistema preparado para el soporte de modelos de texto como GPT, bien sea en la nube o en un despliegue local de un modelo libre
+- [x] Habilidad de crear filas de procesamiento con los plugins y darle un orden específico de ejecución a cada uno
 
 ## Interfaz
 - [ ] Interfaz de búsqueda avanzada
