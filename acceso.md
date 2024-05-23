@@ -21,3 +21,7 @@ Una vez tengamos la lista hecha, volvemos a los ajustes del sistema y en la secc
 ## Asignando niveles de acceso a los recursos
 
 Por defecto, todo el contenido que se crea es __Público__ pero al asignarle un nivel de acceso distinto solo lo usuarios con ese nivel de acceso podrán ver o editar esos recursos.
+
+## Asignando niveles de acceso a los metadatos
+
+En algunos casos, existen tipos de contenido que idealmente deberían publicarse pero algunos de los metadatos son confidenciales. En tales casos, se puede asignar niveles de acceso al momento de crear o editar un nuevo estándar de metadatos. El usuario público no podrá leer los metadatos reservados pero habrá transparencia en cuanto al manejo de la información.
