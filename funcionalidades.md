@@ -6,6 +6,7 @@
 - [x] Múltiples campos para esos formularios entre los cuales tenemos listados cerrados y relación entre recursos
 - [x] Indexación y mapeo automático de la información catalogada para su recuperación en la búsqueda
 - [x] Actualización masiva de los tipos de contenido, las listas cerradas, los formaularios de metadatos y los recursos catalogados
+- [x] Validación del HASH del documento al momento de la subida para evitar duplicados
 - [x] Exportación de los recursos, tipos de contenido, metadatos y listas cerradas de la herramienta a formato excel
 - [x] Roles de _editor_ y _publisher_ para guardar cambios a los recursos o publicar un recurso
 - [x] Favoritos para guardar recursos y la habilidad de _recortar_ pedazos de documentos o fragmentos de audio/video
