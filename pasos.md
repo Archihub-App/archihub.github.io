@@ -58,8 +58,23 @@ Para crear una __Unidad Documental__, sigue estos pasos:
 
 ![Home Unidad Documental](/imagenes/home_unidad.png)
 
-Una vez que hayas guardado tu nueva Unidad Documental, serás redireccionado automáticamente al Módulo de Catalogación. Aquí podrás ver la Unidad Documental que acabas de crear.
+Una vez que hayas guardado tu nueva __Unidad Documental__, serás redireccionado automáticamente al Módulo de Catalogación. Aquí podrás ver la __Unidad Documental__ que acabas de crear.
 
-Para mostrarte un ejemplo, yo he subido un archivo de audio a una nueva Unidad Documental llamada "Audio". En la lista de Unidades Documentales, encuentra y haz clic en el nombre de tu recurso recién creado.
+Para mostrarte un ejemplo, yo he subido un archivo de audio a una nueva __Unidad Documental__ llamada "Audio". En la lista de __Unidades Documentales__, encuentra y haz clic en el nombre de tu recurso recién creado.
 
 ![Vista detalle del recurso](/imagenes/detail.png)
+
+Esta es la vista detalle de tu recurso, donde puedes encontrar la información general de tu __Unidad Documental__. Aquí tienes una guía rápida sobre lo que puedes hacer desde esta vista:
+
+- ![Miga de pan](/imagenes/miga.png)<br>__Miga de pan (breadcrumbs):__ En la esquina superior izquierda, verás la miga de pan que muestra la jerarquía de la información. Como puedes ver, tu recurso es hijo del __Fondo__ que creamos al inicio. Esto te ayuda a entender la estructura y ubicación de tu recurso dentro del archivo.
+
+- ![Menu detail](/imagenes/menu_detail.png)<br>__Botones de navegación:__ En la parte izquierda de la pantalla, encontrarás los botones para:
+    - Volver al Módulo de Catalogación
+    - Editar el recurso actual
+
+- ![Vista principal detalle](/imagenes/main_detail.png)<br>__Información del recurso:__ La parte principal de la pantalla muestra toda la información asociada a tu recurso, incluyendo:
+    - Metadatos: Detalles específicos sobre tu recurso siguiendo el estándar ISAD-G.
+    - Archivos contenidos: Los archivos que has subido a esta __Unidad Documental__.
+    - Recursos hijos: En el caso que estes viendo un recurso de un tipo de contenido que es padre de otros recursos, estos se mostrarán aquí, listando todos los recursos asociados y organizados en árbol.
+
+### Procesamientos
