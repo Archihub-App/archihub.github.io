@@ -57,3 +57,9 @@ Para crear una __Unidad Documental__, sigue estos pasos:
 - Guardar la __Unidad Documental__: Una vez completado el formulario, guarda tu nueva __Unidad Documental__. Si haces click en __Guardar__ esta se guardará como borrador y no será visible para los usuarios que no sean editores. En cambio, el botón __Publicar__ te permite hacer público tu recurso para todos los usuarios.
 
 ![Home Unidad Documental](/imagenes/home_unidad.png)
+
+Una vez que hayas guardado tu nueva Unidad Documental, serás redireccionado automáticamente al Módulo de Catalogación. Aquí podrás ver la Unidad Documental que acabas de crear.
+
+Para mostrarte un ejemplo, yo he subido un archivo de audio a una nueva Unidad Documental llamada "Audio". En la lista de Unidades Documentales, encuentra y haz clic en el nombre de tu recurso recién creado.
+
+![Vista detalle del recurso](/imagenes/detail.png)
