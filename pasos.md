@@ -78,3 +78,18 @@ Esta es la vista detalle de tu recurso, donde puedes encontrar la información g
     - Recursos hijos: En el caso que estes viendo un recurso de un tipo de contenido que es padre de otros recursos, estos se mostrarán aquí, listando todos los recursos asociados y organizados en árbol.
 
 ### Procesamientos
+
+Para poder interactuar con el audio que has subido (o con tu propio archivo), primero necesitamos procesarlo utilizando un plugin. Actualmente, los archivos subidos tienen un estado de "Sin procesar" y no son clicables. Sigue estos pasos para procesar tus archivos:
+
+- Ir a la página principal: Desde la vista detalle de tu recurso, regresa a la página principal de ArchiHUB.
+- Navegar a la sección de Procesamientos: En la página principal, dirígete a la sección de "Procesamientos".
+- Seleccionar el plugin de Procesamiento de archivos: Una vez en la sección de Procesamientos, busca el plugin llamado "Procesamiento de archivos".
+
+Este plugin se encargará de procesar tus archivos, cambiando su estado de "Sin procesar" a un formato en el que puedas interactuar con ellos.
+
+![Plugin procesamiento archivos](/imagenes/plugin_file.png)
+
+Tenemos dos opciones disponibles, por ahora vamos a Procesamiento masivo y ya volvemos para mirar los Ajustes Generales. La vista de Procesamiento Masivo es similar al Módulo de Catalogación, pero con algunas diferencias clave. Aquí, además de seleccionar los padres, también puedes seleccionar recursos específicos.
+- __Seleccionar un padre:__ Si seleccionas solo un padre, el procesamiento se ejecutará en todas las Unidades Documentales que estén dentro de ese recurso.
+- __Seleccionar recursos específicos:__ Si seleccionas uno o más recursos específicos, el procesamiento se ejecutará solo en esos recursos seleccionados.
+- __Opciones del procesamiento:__ A la derecha se ven las opciones que están disponibles para el procesamiento. En nuestro caso, el plugin de Procesamiento de Archivos permite sobreescribir versiones antiguas de las versiones web de los documentos.
