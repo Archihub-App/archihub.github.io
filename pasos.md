@@ -46,12 +46,14 @@ Ahora estás listo para crear __Unidades Documentales__ dentro de este __Fondo__
 
 Al crear una Unidad Documental, notarás algunas diferencias clave en el formulario de creación:
 
-- Estructura de árbol a la izquierda: A la izquierda del formulario, verás una estructura de árbol. Esta te permite seleccionar el padre al que quieres asignar la nueva Unidad Documental, ya sea un Fondo, una Sección o una Serie.
+- Estructura de árbol a la izquierda: A la izquierda del formulario, verás una estructura de árbol. Esta te permite seleccionar el padre al que quieres asignar la nueva __Unidad Documental__, ya sea un __Fondo__, una __Sección__ o una __Serie__.
 
-- Formulario a la derecha: A la derecha, encontrarás el formulario con los mismos campos que usaste para crear un Fondo, ya que la Unidad Documental utiliza el mismo estándar de metadatos, ISAD-G.
+- Formulario a la derecha: A la derecha, encontrarás el formulario con los mismos campos que usaste para crear un __Fondo__, ya que la __Unidad Documental__ utiliza el mismo estándar de metadatos, ISAD-G.
 
-Para crear una Unidad Documental, sigue estos pasos:
+Para crear una __Unidad Documental__, sigue estos pasos:
 
-- Seleccionar el padre: En la estructura de árbol a la izquierda, selecciona el padre adecuado (Fondo, Sección o Serie) para la nueva Unidad Documental.
-- Rellenar el formulario: Introduce la información necesaria en el formulario a la derecha. Los campos serán los mismos que ya conoces del estándar ISAD-G.
-- Guardar la Unidad Documental: Una vez completado el formulario, guarda tu nueva Unidad Documental. Si haces click en __Guardar__ esta se guardará como borrador y no será visible para los usuarios que no sean editores. En cambio, el botón __Publicar__ te permite hacer público tu recurso para todos los usuarios.
+- Seleccionar el padre: En la estructura de árbol a la izquierda, selecciona el padre adecuado (__Fondo__, __Sección__ o __Serie__) para la nueva __Unidad Documental__.
+- Rellenar el formulario: Introduce la información necesaria en el formulario a la derecha. Los campos serán los mismos que ya conoces del estándar ISAD-G. No tienes que ponerlos todos, podemos por ahora completar el título y subir un nuevo documento, ¡intenta arrastrar y soltar unos cuantos archivos!
+- Guardar la __Unidad Documental__: Una vez completado el formulario, guarda tu nueva __Unidad Documental__. Si haces click en __Guardar__ esta se guardará como borrador y no será visible para los usuarios que no sean editores. En cambio, el botón __Publicar__ te permite hacer público tu recurso para todos los usuarios.
+
+![Home Unidad Documental](/imagenes/home_unidad.png)
