@@ -36,8 +36,22 @@ Es importante saber que los tipos de contenido tienen una jerarquía. Actualment
 
 Para crear una nueva __Unidad Documental__, primero debemos crear un __Fondo__ que la contenga. Sigue estos pasos:
 
-- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G.
+- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G. Puedes saber más sobre los estándares de metadatos [acá](estandares.md).
 - Rellenar el formulario: No te preocupes por todos los campos en este momento. Solo necesitas introducir un _Título_ para tu nuevo recurso de tipo __Fondo__.
 - Guardar el __Fondo__: Una vez que hayas introducido el _Título_, puedes guardar tu nuevo recurso de tipo __Fondo__.
 
 Ahora estás listo para crear __Unidades Documentales__ dentro de este __Fondo__. ¡Vamos a empezar!
+
+![Nueva Unidad Documental](/imagenes/new_unidad.png)
+
+Al crear una Unidad Documental, notarás algunas diferencias clave en el formulario de creación:
+
+- Estructura de árbol a la izquierda: A la izquierda del formulario, verás una estructura de árbol. Esta te permite seleccionar el padre al que quieres asignar la nueva Unidad Documental, ya sea un Fondo, una Sección o una Serie.
+
+- Formulario a la derecha: A la derecha, encontrarás el formulario con los mismos campos que usaste para crear un Fondo, ya que la Unidad Documental utiliza el mismo estándar de metadatos, ISAD-G.
+
+Para crear una Unidad Documental, sigue estos pasos:
+
+- Seleccionar el padre: En la estructura de árbol a la izquierda, selecciona el padre adecuado (Fondo, Sección o Serie) para la nueva Unidad Documental.
+- Rellenar el formulario: Introduce la información necesaria en el formulario a la derecha. Los campos serán los mismos que ya conoces del estándar ISAD-G.
+- Guardar la Unidad Documental: Una vez completado el formulario, guarda tu nueva Unidad Documental. Si haces click en __Guardar__ esta se guardará como borrador y no será visible para los usuarios que no sean editores. En cambio, el botón __Publicar__ te permite hacer público tu recurso para todos los usuarios.
