@@ -16,6 +16,8 @@ Si deseas crear un nuevo estándar y necesitas verificar los campos existentes e
 
 ## Ajustes tipos de contenido
 
+![Ajustes tipos de contenido](/imagenes/ajustes_tipos.png)
+
 La siguiente opción de configuración se refiere a los tipos de contenido. Como ya vimos, puedes crear todos los tipos de contenido que desees. En la instalación por defecto de ArchiHUB, la jerarquía es la siguiente:
 
  ```
@@ -29,4 +31,16 @@ La siguiente opción de configuración se refiere a los tipos de contenido. Como
 
 De este diagrama, podemos deducir que el tipo de contenido que contiene la información o los documentos es la Unidad Documental. Los demás tipos de contenido están ahí para proporcionar orden y estructura a la organización de estos recursos.
 
-Cuando queramos explorar los recursos en este archivo, nos enfocaremos principalmente en las Unidades Documentales. Por eso, este es el tipo de contenido predeterminado en el módulo de catalogación. Al abrir el módulo o cargar el buscador en la herramienta, se abrirá automáticamente en la Unidad Documental, ya que es aquí donde se encuentra la información. Esto facilita la navegación y gestión de los documentos dentro de tu archivo.
+Cuando queramos explorar los recursos en este archivo, nos enfocaremos principalmente en las __Unidades Documentales__. Por eso, este es el tipo de contenido predeterminado en el módulo de catalogación. Al abrir el módulo o cargar el buscador en la herramienta, se abrirá automáticamente en la __Unidad Documental__, ya que es aquí donde se encuentra la información. Esto facilita la navegación y gestión de los documentos dentro de tu archivo.
+
+La siguiente opción de configuración se refiere a los tipos de contenido que se muestran en la vista individual de los recursos. Vamos a usar un ejemplo para aclarar esto. Supongamos que tienes un fondo llamado "Noticias".
+
+Cuando visitas el recurso "Noticias":
+
+- __Sección "Conoce"__: En la parte izquierda de la pantalla, verás los metadatos de ese recurso.
+- __Sección "Explora"__: Aquí encontrarás, en este caso, las __Unidades Documentales__ que están dentro de "Noticias".
+
+Esta configuración define qué tipos de contenido se muestran en esa vista. Como mencionamos antes, el tipo que contiene la información son las __Unidades Documentale__s. No queremos que se muestren las series o las secciones en esta vista, ya que estas se usan para organizar la información. En cambio, preferimos que estas aparezcan en forma de árbol, sirviendo como un filtro adicional.
+
+Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este caso son las __Unidades Documentales__, facilitando la navegación y la gestión de la información.
+
