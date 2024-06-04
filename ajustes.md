@@ -37,6 +37,8 @@ La siguiente opción de configuración se refiere a los tipos de contenido que s
 
 Cuando visitas el recurso "Noticias":
 
+![Vista individual](/imagenes/vista_individual.png)
+
 - __Sección "Conoce"__: En la parte izquierda de la pantalla, verás los metadatos de ese recurso.
 - __Sección "Explora"__: Aquí encontrarás, en este caso, las __Unidades Documentales__ que están dentro de "Noticias".
 
