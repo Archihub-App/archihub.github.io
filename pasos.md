@@ -89,7 +89,36 @@ Este plugin se encargará de procesar tus archivos, cambiando su estado de "Sin 
 
 ![Plugin procesamiento archivos](/imagenes/plugin_file.png)
 
-Tenemos dos opciones disponibles, por ahora vamos a Procesamiento masivo y ya volvemos para mirar los Ajustes Generales. La vista de Procesamiento Masivo es similar al Módulo de Catalogación, pero con algunas diferencias clave. Aquí, además de seleccionar los padres, también puedes seleccionar recursos específicos.
+Tenemos dos opciones disponibles, por ahora vamos a __Procesamiento masivo__ y ya volvemos para mirar los __Ajustes Generales__. La vista de Procesamiento Masivo es similar al Módulo de Catalogación, pero con algunas diferencias clave. Aquí, además de seleccionar los padres, también puedes seleccionar recursos específicos.
 - __Seleccionar un padre:__ Si seleccionas solo un padre, el procesamiento se ejecutará en todas las Unidades Documentales que estén dentro de ese recurso.
 - __Seleccionar recursos específicos:__ Si seleccionas uno o más recursos específicos, el procesamiento se ejecutará solo en esos recursos seleccionados.
 - __Opciones del procesamiento:__ A la derecha se ven las opciones que están disponibles para el procesamiento. En nuestro caso, el plugin de Procesamiento de Archivos permite sobreescribir versiones antiguas de las versiones web de los documentos.
+
+Podemos seleccionar el recurso que acabamos de crear e iniciar el procesamiento. Una vez haces click e inicias el procesamiento puedes dirigirte a tu perfil en el apartado __Mis procesamientos__:
+
+![Menu procesamientos](/imagenes/menu_procesamientos.png)
+
+Esta vista te permite monitorizar el progreso y resultados de tus procesamientos:
+
+![procesamientos](/imagenes/procesamientos.png)
+
+Y cuando haya terminado:
+
+![fin procesamiento](/imagenes/fin_procesamiento.png)
+
+### Procesamientos automaticos
+
+Para evitar repetir manualmente los pasos de procesamiento cada vez que subes un nuevo recurso con archivos, puedes configurar procesamientos automáticos. Esto se logra mediante la funcionalidad de "filas de ejecución" en algunos plugins. Aquí te mostramos cómo hacerlo:
+
+- __Ir a la vista de los plugins__: Desde la página principal, regresa a la sección de Procesamientos.
+- __Seleccionar Ajustes Generales__: Busca el plugin "Procesamiento de archivos" y selecciona la opción de Ajustes Generales.
+- __Configurar procesamiento automático__: En los Ajustes Generales, tienes la opción de agregar un nuevo procesamiento autómatico. Debes seleccionar un tipo de contenido, para nuestro caso seleccionamos __Unidad Documental__ y en el segundo campo podemos dejar el número 0. Cuando hablemos de filas avanzadas de procesamiento aprenderemos a usar ese campo para configurar el orden de ejecución. <br>![Fila de procesamientos](/imagenes/fila_procesamiento.png)<br>De esta forma configuramos el procesamiento automático del plugin para los archivos cada vez que se crea o actualiza una __Unidad Documental__.
+
+De esta manera, cada vez que subas o actualices un recurso, el procesamiento de archivos se ejecutará automáticamente sin necesidad de intervención manual.
+
+¡Eso es todo por ahora! Con los pasos que hemos cubierto, ya puedes empezar a configurar y gestionar tu archivo en ArchiHUB. Recuerda que hay muchas más funcionalidades y opciones disponibles en la herramienta.
+
+- __Explora más__: Te animamos a seguir explorando el resto de la documentación para descubrir todas las posibilidades que ArchiHUB ofrece.
+- __Experimenta__: No dudes en seguir "cacharreando" con tu archivo. La mejor manera de aprender y familiarizarse con la herramienta es experimentando con sus diferentes funcionalidades.
+
+¡Buena suerte con tu archivo y diviértete explorando ArchiHUB!
