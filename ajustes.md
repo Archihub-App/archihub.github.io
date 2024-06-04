@@ -46,3 +46,7 @@ Esta configuración define qué tipos de contenido se muestran en esa vista. Com
 
 Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este caso son las __Unidades Documentales__, facilitando la navegación y la gestión de la información.
 
+## Roles y acceso a la información
+
+![Ajustes roles](/imagenes/ajustes_roles.png)
+

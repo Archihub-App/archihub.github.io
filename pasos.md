@@ -114,7 +114,7 @@ Para evitar repetir manualmente los pasos de procesamiento cada vez que subes un
 - __Seleccionar Ajustes Generales__: Busca el plugin "Procesamiento de archivos" y selecciona la opción de Ajustes Generales.
 - __Configurar procesamiento automático__: En los Ajustes Generales, tienes la opción de agregar un nuevo procesamiento autómatico. Debes seleccionar un tipo de contenido, para nuestro caso seleccionamos __Unidad Documental__ y en el segundo campo podemos dejar el número 0. Cuando hablemos de filas avanzadas de procesamiento aprenderemos a usar ese campo para configurar el orden de ejecución. <br>![Fila de procesamientos](/imagenes/fila_procesamiento.png)<br>De esta forma configuramos el procesamiento automático del plugin para los archivos cada vez que se crea o actualiza una __Unidad Documental__.
 
-De esta manera, cada vez que subas o actualices un recurso, el procesamiento de archivos se ejecutará automáticamente sin necesidad de intervención manual.
+De esta manera, cada vez que subas o actualices un recurso de tipo __Unidad Documental__, el procesamiento de archivos se ejecutará automáticamente sin necesidad de intervención manual.
 
 ¡Eso es todo por ahora! Con los pasos que hemos cubierto, ya puedes empezar a configurar y gestionar tu archivo en ArchiHUB. Recuerda que hay muchas más funcionalidades y opciones disponibles en la herramienta.
 
