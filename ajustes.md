@@ -42,7 +42,7 @@ Cuando visitas el recurso "Noticias":
 - __Sección "Conoce"__: En la parte izquierda de la pantalla, verás los metadatos de ese recurso.
 - __Sección "Explora"__: Aquí encontrarás, en este caso, las __Unidades Documentales__ que están dentro de "Noticias".
 
-Esta configuración define qué tipos de contenido se muestran en esa vista. Como mencionamos antes, el tipo que contiene la información son las __Unidades Documentale__s. No queremos que se muestren las series o las secciones en esta vista, ya que estas se usan para organizar la información. En cambio, preferimos que estas aparezcan en forma de árbol, sirviendo como un filtro adicional.
+Esta configuración define qué tipos de contenido se muestran en esa vista. Como mencionamos antes, el tipo que contiene la información son las __Unidades Documentales__. No queremos que se muestren las series o las secciones en esta vista, ya que estas se usan para organizar la información. En cambio, preferimos que estas aparezcan en forma de árbol, sirviendo como un filtro adicional.
 
 Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este caso son las __Unidades Documentales__, facilitando la navegación y la gestión de la información.
 
