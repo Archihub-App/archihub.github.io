@@ -50,3 +50,6 @@ Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este c
 
 ![Ajustes roles](/imagenes/ajustes_roles.png)
 
+En este apartado de la configuración, debes seleccionar los listados creados para los roles y niveles de acceso. Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
+
+Mantén estos listados actualizados y revisa periódicamente para asegurarte de que reflejan correctamente las necesidades y estructuras de acceso de tu organización, sin comprometer la integridad del sistema.
