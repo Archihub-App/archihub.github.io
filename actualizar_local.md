@@ -4,7 +4,7 @@ ArchiHUB está en constante actualización y mejora. A veces, pueden surgir erro
 
 ## Reemplazando los archivos
 
-Si seguiste la guía de instalación y no estás familiarizado con las herramientas de desarrollo, es probable que debas actualizar las carpetas manualmente. Aunque pueda parecer laborioso, es un proceso relativamente sencillo. Primero, vuelve 
+Si seguiste la guía de instalación y no estás familiarizado con las herramientas de desarrollo, es probable que debas actualizar las carpetas manualmente. Aunque pueda parecer laborioso, es un proceso relativamente sencillo. Acá están los pasos:
 
 1. Descargar los repositorios:
 
