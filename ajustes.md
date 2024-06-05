@@ -64,3 +64,17 @@ ArchiHUB ofrece varias entradas de API que puedes gestionar desde esta configura
 - __API Pública__: Permite a los usuarios realizar consultas al archivo desde sus propias páginas web o herramientas, promoviendo una mayor apropiación del contenido. Esto puede incluir desde especiales web hasta instalaciones interactivas.
 
 Desde estos ajustes, puedes activar o desactivar rápidamente estas opciones según tus necesidades. Recuerda que al hacer algún cambio en estas configuraciones, es necesario reiniciar el backend de la herramienta para que los cambios surtan efecto.
+
+## Administración del índice
+
+![Ajustes indice](/imagenes/ajustes_indice.png)
+
+Uno de los pilares de ArchiHUB es la búsqueda avanzada, facilitada por la implementación de ElasticSearch para indexar y recuperar información. Esta indexación depende de la configuración y la sincronización entre la base de datos, la catalogación y el índice. Afortunadamente, ArchiHUB se encarga de todo esto automáticamente, permitiendo que te enfoques en usar la herramienta sin complicaciones.
+
+Desde las opciones de configuración, puedes:
+
+- __Activar o desactivar la búsqueda__: Esto es útil en máquinas con pocos recursos, ya que la búsqueda avanzada puede requerir una cantidad significativa de recursos.
+- __Regenerar el índice__: Es necesario si has realizado cambios en los estándares de metadatos o en los tipos de contenido.
+- __Reindexar los recursos__: Aunque no es un paso necesario en la mayoría de los casos, puedes usar esta opción si la búsqueda no está actualizada. ArchiHUB se encarga automáticamente de indexar tus recursos cuando los creas, actualizas o procesas.
+
+Con estas opciones, puedes gestionar la búsqueda avanzada de manera eficiente, adaptándola a las necesidades y capacidades de tu sistema.
