@@ -50,6 +50,17 @@ Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este c
 
 ![Ajustes roles](/imagenes/ajustes_roles.png)
 
-En este apartado de la configuración, debes seleccionar los listados creados para los roles y niveles de acceso. Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
+En este apartado de la configuración, debes seleccionar los listados creados para los [roles](roles.md) y [niveles de acceso](acceso.md). Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
 
 Mantén estos listados actualizados y revisa periódicamente para asegurarte de que reflejan correctamente las necesidades y estructuras de acceso de tu organización, sin comprometer la integridad del sistema.
+
+## API
+
+![Ajustes API](/imagenes/ajustes_api.png)
+
+ArchiHUB ofrece varias entradas de API que puedes gestionar desde esta configuración. Es posible activar o desactivar tanto la API de administración como la API pública:
+
+- __API de Administración__: Esta API es útil para conectar ArchiHUB con herramientas externas y facilitar la carga masiva de información.
+- __API Pública__: Permite a los usuarios realizar consultas al archivo desde sus propias páginas web o herramientas, promoviendo una mayor apropiación del contenido. Esto puede incluir desde especiales web hasta instalaciones interactivas.
+
+Desde estos ajustes, puedes activar o desactivar rápidamente estas opciones según tus necesidades. Recuerda que al hacer algún cambio en estas configuraciones, es necesario reiniciar el backend de la herramienta para que los cambios surtan efecto.
