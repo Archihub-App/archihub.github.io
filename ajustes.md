@@ -73,7 +73,7 @@ Uno de los pilares de ArchiHUB es la búsqueda avanzada, facilitada por la imple
 
 Desde las opciones de configuración, puedes:
 
-- __Activar o desactivar la búsqueda__: Esto es útil en máquinas con pocos recursos, ya que la búsqueda avanzada puede requerir una cantidad significativa de recursos.
+- __Activar o desactivar la búsqueda__: Esto es útil en máquinas con pocos recursos, ya que la búsqueda avanzada puede requerir una cantidad significativa de recursos. Si esta opción está desactivada la búsqueda por palabra clave no sirve pero puedes filtrar por listas cerradas.
 - __Regenerar el índice__: Es necesario si has realizado cambios en los estándares de metadatos o en los tipos de contenido.
 - __Reindexar los recursos__: Aunque no es un paso necesario en la mayoría de los casos, puedes usar esta opción si la búsqueda no está actualizada. ArchiHUB se encarga automáticamente de indexar tus recursos cuando los creas, actualizas o procesas.
 
