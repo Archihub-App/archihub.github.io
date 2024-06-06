@@ -13,3 +13,13 @@ Para esta guía, realizaremos dos ejemplos con dos estructuras de información d
 Para ejecutar este y otros scripts que administren el aplicativo, necesitas tener una llave de administración. Esta llave es esencial para interactuar con la API de administración de ArchiHUB. Conoce más sobre como generarla [acá](llaves.md).
 
 ## Descarga de los scripts
+
+Si ya seguiste la [guía de instalación en un máquina local](install_local.md), ya descargaste el [repositorio](https://github.com/Archihub-App/getting-started) que necesitamos. Si no, puedes clonar el repositorio o descargarlo [acá](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
+
+```
+git clone https://github.com/Archihub-App/getting-started.git
+```
+
+En la raíz de la carpeta verás una carpeta llamada `scripts`, el script en específico que nos interesa es el que se llama `folder_load.py`, pero antes de usarlo necesitamos ajustar algunas cosas.
+
+## Configuración del script
