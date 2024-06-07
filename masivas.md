@@ -27,18 +27,18 @@ En la raíz de la carpeta verás una carpeta llamada `scripts`, el script en esp
 El script de carga de carpetas para ArchiHUB tiene cuatro parámetros, de los cuales tres son obligatorios. A continuación, te explicamos cada uno de ellos y lo que necesitas para ejecutar el script:
 
 - Parámetros Obligatorios
-    1. `--folder`:
+    - `--folder`:
         - __Descripción__: Esta es la ruta de la carpeta raíz de los recursos que quieres cargar. Esta carpeta será cargada al sistema.
         - __Ejemplo de Uso__: Si en tu estructura de archivo tienes un tipo de contenido __Fondo__ que es padre de otro tipo __Unidad Documental__, tu carpeta raíz será el __Fondo__ de tu __Unidad Documental__.
         - __Ejemplo Práctico__: Imagina que tienes una estructura donde "Proyectos" es un __Fondo__ y dentro de cada proyecto tienes varias __Unidades Documentales__. La carpeta raíz que especificarías en este parámetro sería "Proyectos".
-    2. `--default_type`:
+    - `--default_type`:
         - __Descripción__: Este es el tipo de contenido que se usará por defecto para la carga si no se encuentra ningún archivo que especifique el tipo.
         - __Ejemplo de Uso__: Puedes tener varios tipos de contenido configurados en tu archivo. Si el script no encuentra un archivo que especifique el tipo, usará este tipo por defecto para la carga.
-    3. `--main_type`:
+    - `--main_type`:
         - __Descripción__: Este es el tipo principal donde organizas la información en tu archivo. Es el tipo en el que reposan tus documentos.
         - __Ejemplo de Uso__: Por ejemplo, si __Unidad Documental__ es el tipo donde reposan tus documentos, este será tu tipo principal.
 - Parámetro Opcional
-    1. `--publish`:
+    - `--publish`:
         - __Descripción__: ArchiHUB permite que al crear un nuevo recurso este sea guardado o publicado. Activa este parámetro si quieres que los recursos que subas queden publicados directamente.
         - Por Defecto: Los recursos serán guardados como borrador.
         - __Ejemplo de Uso__: Si quieres que los documentos cargados estén disponibles inmediatamente, activa este parámetro.
