@@ -24,7 +24,7 @@ En la raíz de la carpeta verás una carpeta llamada `scripts`, el script en esp
 
 ## Configuración del script
 
-El script de carga de ArchiHUB tiene cuatro parámetros, de los cuales tres son obligatorios. A continuación, te explicamos cada uno de ellos y lo que necesitas para ejecutar el script:
+El script de carga de carpetas para ArchiHUB tiene cuatro parámetros, de los cuales tres son obligatorios. A continuación, te explicamos cada uno de ellos y lo que necesitas para ejecutar el script:
 
 - Parámetros Obligatorios
     1. `--folder`:
@@ -42,3 +42,5 @@ El script de carga de ArchiHUB tiene cuatro parámetros, de los cuales tres son 
         - __Descripción__: ArchiHUB permite que al crear un nuevo recurso este sea guardado o publicado. Activa este parámetro si quieres que los recursos que subas queden publicados directamente.
         - Por Defecto: Los recursos serán guardados como borrador.
         - __Ejemplo de Uso__: Si quieres que los documentos cargados estén disponibles inmediatamente, activa este parámetro.
+
+## Requesitos y preparación de la carpeta
