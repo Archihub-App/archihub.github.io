@@ -45,5 +45,5 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
 
 ## Licencia y código de conducta
 
-- Licencia
+- [Licencia](licencia.md)
 - [Código de conducta](conducta.md)
