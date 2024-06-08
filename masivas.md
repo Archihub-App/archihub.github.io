@@ -43,4 +43,5 @@ El script de carga de carpetas para ArchiHUB tiene cuatro parámetros, de los cu
         - Por Defecto: Los recursos serán guardados como borrador.
         - __Ejemplo de Uso__: Si quieres que los documentos cargados estén disponibles inmediatamente, activa este parámetro.
 
-## Requesitos y preparación de la carpeta
+## Requisitos y preparación de la carpeta
+
