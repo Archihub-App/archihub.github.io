@@ -49,7 +49,7 @@ DATA_PATH=/mnt/disco_externo/data
 - __Consistencia de las Rutas__: Asegúrate de que las rutas especificadas estén siempre disponibles y accesibles por el sistema donde se ejecuta ArchiHUB.
 - __Permisos de Acceso__: Verifica que ArchiHUB tenga los permisos necesarios para leer y escribir en las nuevas rutas.
 - __Evitar Cambios Frecuentes__: Cambiar las rutas y el contenido de estas carpetas de manera frecuente puede causar errores en el funcionamiento del aplicativo. Asegúrate de definir estas rutas de manera definitiva durante la configuración inicial.
-- __Reinicio del Aplicativo__: Después de realizar estos cambios, es necesario reiniciar ArchiHUB para que los nuevos ajustes tengan efecto. Puedes ejecutar `docker compose up --build -d` desde la carpeta raíz.
+- __Reinicio del Aplicativo__: Después de realizar estos cambios, es necesario reiniciar ArchiHUB para que los nuevos ajustes tengan efecto. Puedes ejecutar `docker compose up --build -d` desde la carpeta raíz como lo vimos en el capítulo para la actualización.
 
 ## Habilitar ElasticSearch para la Búsqueda
 
