@@ -4,6 +4,8 @@
 
 En ArchiHUB, queremos fomentar un sentido de responsabilidad, cuidado y comunidad. Prestamos especial atención a los valores y principios del código abierto. Te invitamos a [participar](https://github.com/orgs/Archihub-App/discussions) en nuestra comunidad: comparte tus ideas, plantea problemas o simplemente agradece a las personas que hacen posible esta plataforma. ¡Tu participación es valiosa y ayuda a mejorar ArchiHUB para todos!
 
+Consulta una lista de las funcionalidades [acá](funcionalidades.md).
+
 ## Documentación de instalación y uso
 
 ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibilidad al permitir la configuración de diversos tipos de contenido, relaciones y estructuras de metadatos adaptadas a cada tipo de archivo. En esta documentación aprenderemos a instalar el aplicativo en una máquina local y como podemos empezar a organizar la jerarquía de la información para su funccionamiento.
