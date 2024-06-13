@@ -6,6 +6,26 @@ Esto es muy útil no solo para balancear la carga entre varias máquinas sino ta
 
 ## Las filas de procesos
 
-Inicialmente todas las tareas que tenemos que agregar a la fila de procesos tienen la misma carga de procesamiento. Sin embargo, ArchiHUB permite implementar procesamientos de mayor complejidad que quizas requieran una configuración distinta como por ejemplo una maquina con acceso a una GPU para procesamientos más intensos.
+Inicialmente, todas las tareas que se agregan a la fila de procesos en ArchiHUB tienen la misma carga de procesamiento. No obstante, ArchiHUB permite la implementación de procesamientos de mayor complejidad que podrían requerir una configuración diferente, como por ejemplo una máquina con acceso a una GPU para procesamientos más intensivos.
 
-En estos casos es posible desplegar un nodo de procesamiento en esa máquina dedicado a los procesamientos de mayor intensidad exclusivamente. Veamos por ejemplo el plugin para la transcripción automática que actualmente usa el modelo Whisper de OpenAI.
+En estos casos, es posible desplegar un nodo de procesamiento en esa máquina, dedicado exclusivamente a las tareas de mayor intensidad. Un ejemplo de esto es el plugin para la [transcripción automática](https://github.com/Archihub-App/transcribeWhisperX), que utiliza el modelo Whisper de OpenAI.
+
+Este procesamiento se ejecuta solamente en las máquinas que estén corriendo un nodo de procesamiento para la fila `high`. Si en el momento en que ejecutas la tarea no existe un nodo encargado de estas tareas, la tarea quedará pausada hasta que haya uno en línea que le permita continuar.
+
+### Iniciando un nodo de procesamiento
+
+Los nodos de procesamiento en ArchiHUB se configuran de manera similar al backend del aplicativo y deben tener acceso a las mismas carpetas, variables de entorno y servicios. Para que funcionen correctamente, es necesario asegurarse de que todas las variables de entorno definidas para el backend también estén presentes en los nodos de procesamiento. Además, se debe definir una variable de entorno adicional llamada `CELERY_WORKER` y asignarle cualquier valor. Esta variable permite identificar estas instancias como `workers` de Celery y evita la duplicación de tareas automáticas.
+
+El comando en la terminal para iniciar un nodo de procesamiento es:
+
+```
+celery --app app.celery_app worker --loglevel INFO
+```
+
+Esto iniciará un nodo de procesamiento para todas las tareas que no tengan especificada una fila de tareas en específico. Esto incluye todas las tareas del sistema, como la generación de inventarios o la indexación. Puedes tener varios nodos corriendo en la misma máquina o configurar el número de tareas en paralelo que cada uno es capaz de ejecutar. Por defecto, cada nodo corre una  sola tarea a la vez, pero esto puede configurarse en función de la capacidad de la máquina.
+
+Si quieres iniciar un nodo enfocado a las tareas de alta intensidad, lo haces con:
+
+```
+celery --app app.celery_app worker -q high --loglevel INFO
+```

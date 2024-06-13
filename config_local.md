@@ -64,6 +64,12 @@ Después de activar Elasticsearch en la configuración del sistema, es necesario
 - __Desde la terminal__: Debes navegar a la carpeta `local-machine/archihub` y desde ahí puedes ejecutar el siguiente comando para reiniciar el contenidor del backend: `docker compose up -d --no-deps archihub_flask_backend`.
 - __Desde el aplicativo de escritorio__: En el aplicativo de escritorio es un poco más sencillo, asegurate de estar en el submenu de los contenedores, busca el que dice `archihub_flask_backend` y simplemente lo detienes y vuelves a iniciar.
 
+Para validar que el índice de Elasticsearch haya iniciado correctamente, sigue estos pasos:
+
+Dirígete nuevamente a la configuración del sistema en la interfaz de ArchiHUB. Busca la sección "Administración del índice" y verifica si la primera opción está activa. Si esta opción está activa, ¡enhorabuena! Ya tienes tu archivo conectado al índice, lo que significa que Elasticsearch está funcionando correctamente y puedes aprovechar las capacidades de búsqueda avanzada de ArchiHUB.
+
+Si la primera opción no está activa, es posible que haya ocurrido algún problema al iniciar el índice. En este caso, intenta resolver el problema consultando nuestra sección de [preguntas frecuentes](preguntas.md), donde se abordan algunos de los problemas comunes y sus soluciones. Si no encuentras la respuesta allí, te recomendamos preguntar en el [foro](https://github.com/orgs/Archihub-App/discussions) del aplicativo, donde la comunidad y los desarrolladores pueden ofrecerte ayuda y orientación para resolver cualquier inconveniente.
+
 ### Iniciar la indexación
 
 Para que Elasticsearch funcione correctamente con ArchiHUB, es necesario generar un `mapping` para el índice, lo cual define la estructura de los datos que se van a indexar. Afortunadamente, ArchiHUB se encarga de esto automáticamente usando los estándares de metadatos que has definido. A continuación, explicamos cómo realizar estos pasos:
