@@ -81,3 +81,9 @@ Después de regenerar el índice, debes indexar los recursos para subirlos al í
 Una vez que el índice está generado y los recursos están indexados, ArchiHUB se encargará automáticamente de cargar los cambios de la base de datos a Elasticsearch en caso de que se actualice el contenido. Esto asegura que la información en el índice esté siempre actualizada y refleje los cambios realizados en el archivo.
 
 ## Configuración de Nodos de Procesamiento
+
+Por defecto, nuestro archivo `docker-compose.yml` arranca un solo nodo de procesamiento dedicado a todas las tareas que no estén en una fila específica de procesamiento. Puedes saber más sobre las filas de procesamiento haciendo click [acá](nodos.md).
+
+Sin embargo, si queremos [instalar nuevos plugins](install_plugin.md) que quizas usen procesamientos un poco más intensos, es necesario que modifiquemos ese archivo.
+
+Para esto abre el archivo `docker-compose.yml` en un editor de texto y dirígete al apartado `CELERY QUEUE SERVICE`. Te darás cuenta que se parece mucho a `CELERY WORKER SERVICE` pero está comentado y el comando que ejecuta es distinto pues ahora tenemos las filas de procesamiento especificadas. Descomenta todo el bloque de texto, luego abre la terminal y vuelve a iniciar los contenedores con `docker compose up --build -d`.

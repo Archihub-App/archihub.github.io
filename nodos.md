@@ -24,8 +24,10 @@ celery --app app.celery_app worker --loglevel INFO
 
 Esto iniciará un nodo de procesamiento para todas las tareas que no tengan especificada una fila de tareas en específico. Esto incluye todas las tareas del sistema, como la generación de inventarios o la indexación. Puedes tener varios nodos corriendo en la misma máquina o configurar el número de tareas en paralelo que cada uno es capaz de ejecutar. Por defecto, cada nodo corre una  sola tarea a la vez, pero esto puede configurarse en función de la capacidad de la máquina.
 
-Si quieres iniciar un nodo enfocado a las tareas de alta intensidad, lo haces con:
+Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensidad, lo haces con:
 
 ```
-celery --app app.celery_app worker -q high --loglevel INFO
+celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
+
+### Configurar el número de tareas que ejecta cada nodo
