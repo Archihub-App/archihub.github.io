@@ -53,4 +53,25 @@ DATA_PATH=/mnt/disco_externo/data
 
 ## Habilitar ElasticSearch para la Búsqueda
 
+Por defecto, el contenedor de Elasticsearch se descarga e instala junto con ArchiHUB. Sin embargo, esta funcionalidad no se activa automáticamente porque requiere bastantes recursos de máquina a medida que vas catalogando e indexando información. Vamos a ver cómo puedes activarlo y cómo utilizarlo. Esta funcionalidad es esencial para realizar búsquedas por palabra clave tanto en los metadatos de los recursos como en los archivos que procesas.
+
+### Activación de Elasticsearch en ArchiHUB
+
+El primer paso es ir la la configuración del sistema y en la sección Administración del índice activar la primera opción.
+
+Después de activar Elasticsearch en la configuración del sistema, es necesario reiniciar el contenedor del backend para aplicar los cambios. Esto se puede hacer de dos formas:
+
+- __Desde la terminal__: Debes navegar a la carpeta `local-machine/archihub` y desde ahí puedes ejecutar el siguiente comando para reiniciar el contenidor del backend: `docker compose up -d --no-deps archihub_flask_backend`.
+- __Desde el aplicativo de escritorio__: En el aplicativo de escritorio es un poco más sencillo, asegurate de estar en el submenu de los contenedores, busca el que dice `archihub_flask_backend` y simplemente lo detienes y vuelves a iniciar.
+
+### Iniciar la indexación
+
+Para que Elasticsearch funcione correctamente con ArchiHUB, es necesario generar un `mapping` para el índice, lo cual define la estructura de los datos que se van a indexar. Afortunadamente, ArchiHUB se encarga de esto automáticamente usando los estándares de metadatos que has definido. A continuación, explicamos cómo realizar estos pasos:
+
+Primero, accede a la configuración del sistema en la interfaz de ArchiHUB y busca la sección denominada __Administración del índice__. Aquí, deberás hacer clic en la opción para "Regenerar el índice". Esto generará el `mapping` necesario basándose en tus estándares de metadatos. Es importante notar que esta acción aparecerá en tus procesamientos en tu perfil, lo que te permitirá hacer seguimiento de su progreso.
+
+Después de regenerar el índice, debes indexar los recursos para subirlos al índice y así poder empezar a buscar. Para ello, en la misma sección __Administración del índice__, selecciona la opción "Indexar los recursos". Este proceso también se puede seguir desde la sección "Mis procesamientos" en tu perfil, donde podrás ver el estado y el progreso de la indexación.
+
+Una vez que el índice está generado y los recursos están indexados, ArchiHUB se encargará automáticamente de cargar los cambios de la base de datos a Elasticsearch en caso de que se actualice el contenido. Esto asegura que la información en el índice esté siempre actualizada y refleje los cambios realizados en el archivo.
+
 ## Configuración de Nodos de Procesamiento
