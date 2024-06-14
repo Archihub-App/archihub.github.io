@@ -28,11 +28,11 @@ El script de carga de carpetas para ArchiHUB tiene cuatro parámetros, de los cu
 
 - Parámetros Obligatorios
     - `--folder`
-        - __Descripción__: Esta es la ruta de la carpeta raíz de los recursos que quieres cargar. Esta carpeta será cargada al sistema.
+        - __Descripción__: Esta es la ruta de la carpeta raíz de los recursos que quieres cargar. Esta carpeta y su contenido será cargado al sistema.
         - __Ejemplo de Uso__: Si en tu estructura de archivo tienes un tipo de contenido __Fondo__ que es padre de otro tipo __Unidad Documental__, tu carpeta raíz será el __Fondo__ de tu __Unidad Documental__.
-        - __Ejemplo Práctico__: Imagina que tienes una estructura donde "Proyectos" es un __Fondo__ y dentro de cada proyecto tienes varias __Unidades Documentales__. La carpeta raíz que especificarías en este parámetro sería "Proyectos".
+        - __Ejemplo Práctico__: Imagina que tienes una estructura donde "Proyectos" es un __Fondo__ y dentro de cada proyecto tienes varias __Unidades Documentales__. La carpeta raíz que especificarías en este parámetro sería "Proyectos" la cual contendría varias carpetas que terminarían siendo las __Unidades documentales__.
     - `--default_type`
-        - __Descripción__: Este es el tipo de contenido que se usará por defecto para la carga si no se encuentra ningún archivo que especifique el tipo.
+        - __Descripción__: Este es el tipo de contenido que se usará por defecto para la carga si no se encuentra ningún archivo que especifique el tipo, como veremos en la siguiente parte.
         - __Ejemplo de Uso__: Puedes tener varios tipos de contenido configurados en tu archivo. Si el script no encuentra un archivo que especifique el tipo, usará este tipo por defecto para la carga.
     - `--main_type`
         - __Descripción__: Este es el tipo principal donde organizas la información en tu archivo. Es el tipo en el que reposan tus documentos.
@@ -40,8 +40,26 @@ El script de carga de carpetas para ArchiHUB tiene cuatro parámetros, de los cu
 - Parámetro Opcional
     - `--publish`
         - __Descripción__: ArchiHUB permite que al crear un nuevo recurso este sea guardado o publicado. Activa este parámetro si quieres que los recursos que subas queden publicados directamente.
-        - Por Defecto: Los recursos serán guardados como borrador.
+        - __Por Defecto__: Los recursos serán guardados como borrador.
         - __Ejemplo de Uso__: Si quieres que los documentos cargados estén disponibles inmediatamente, activa este parámetro.
 
 ## Requisitos y preparación de la carpeta
 
+Para identificar el tipo de contenido de cada carpeta, debemos crear un archivo de texto. Dentro de este archivo, debemos escribir el nombre corto del tipo.
+
+Si no estás seguro de cuál es el nombre corto, sigue estos pasos:
+
+- Navega el módulo de catalogación y desde ahí escoje el tipo de contenido que quieras. <br> ![Módulo tipo](/imagenes/modulo_tipo.png)
+- Cuando hayas escogido el tipo que te interesa, revisa la url que te sale en el navegador, la última parte es el nombre corto que necesitamos. En este ejemplo, el nombre corto de la __Unidad documental__ es `unidad-documental`.
+
+Recuerda que uno de los parámetros que definimos anteriormente nos permitía definir un tipo por defecto. Si la carpeta no tiene ese archivo `.txt` con el nombre corto entonces automaticamente tomará ese tipo por defecto.
+
+## La llave de administración en la variable de entorno del script
+
+Para poder ejecutar el script es necesario que tengamos una llave de administración creada. Una vez la tengamos debemos crear un archivo `.env` en la carpeta `scripts` en donde se encuentra nuestro script. Dentro de ese archivo pondremos nuestra llave de la siguiente forma:
+
+```
+ARCHIHUB_API_KEY=llave-de-administración
+```
+
+Y ya estamos listos para subir nuestro contenido usando el script de carga!
