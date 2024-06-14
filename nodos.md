@@ -31,3 +31,10 @@ celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
 ### Configurar el número de tareas que ejecta cada nodo
+
+Cada nodo es capaz de ejecutar múltiples tareas de manera concurrente. Por defecto, ArchiHUB configura el sistema para que cada nodo solo ejecute una tarea a la vez. Esta configuración puede cambiarse a través de las variables de entorno de cada nodo.
+
+```
+CELERYD_CONCURRENCY=1
+```
+Se recomienda realizar pruebas y validar la capacidad de la máquina para las tareas específicas que se quieren ejecutar. Por ejemplo, un nodo encargado de las tareas del sistema puede manejar entre 10 y 20 tareas simultáneamente, dependiendo de la máquina que se esté utilizando. Sin embargo, para nodos encargados de tareas con mayor intensidad se recomienda no ejecutar más de una tarea a la vez.
