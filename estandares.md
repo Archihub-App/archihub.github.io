@@ -23,18 +23,7 @@ Un campo tiene mínimo 4 opciones configurables:
 - __Destino__: esta es la ruta al interior del esquema de metadatos. Por defecto todos los destinos deben empezar con _metadata_, por ejemplo, la ruta por defecto para el título es _metadata.firstLevel.title_. De esta manera yo puedo tener el mismo campo, con el mismo tipo y destino en dos o más estándares distintos. Si intentas guardar un campo que ya ha sido configurado con cierto tipo no podrás guardarlo con uno distinto. Si quieres consultar el esquema completo de tus metadatos en la herramienta, puedes ir a la configuración del sistema.
 - __Requerido__: si el campo es requerido o no.
 
-Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. A continuación se describen algunos específicos.
-
-### El campo listado
-
-En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
-
-![menu](imagenes/listados.png)
-
-
-### El campo relación
-
-El campo relación es útil si queremos relacionar tipos de contenido entre si. Por ejemplo, podemos tener un tipo de contenido que se llame _Tesauro_ y usarlo a manera de etiqueta en otro tipo de contenido usando el campo relación. De esta manera puedo relacionar uno o más campos del _Tesauro_ al contenido. Es importante aclara que si uso un campo de relación de tipo _Tesauro_ para el formulario del _Tesauro_, al momento de guardar la plataforma los va a relacionar automaticamente entre si. Es decir que la relación se guardará no solo en el recurso que se está editando sino también en los recursos que estoy relacionando.
+Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. Mira la documentación detallada [acá](campos.md).
 
 ## Los tipos de contenido
 
