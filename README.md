@@ -18,6 +18,7 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
     - [Actualizar el aplicativo](actualizar_local.md)
 - __Configuración de la herramienta__
     - [Los estándares de metadatos y tipos de contenido](estandares.md)
+        - [Campos para los estándares de metadatos](campos.md)
     - [Los roles de usuario](roles.md)
     - [Los niveles de acceso a la información](acceso.md)
     - [Los ajustes del sistema](ajustes.md)
