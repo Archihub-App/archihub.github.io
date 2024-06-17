@@ -19,6 +19,8 @@ En casos especiales, un campo de metadatos puede tener un conjunto predefinido d
 
 El campo relación es útil si queremos relacionar tipos de contenido entre si. Por ejemplo, podemos tener un tipo de contenido que se llame _Tesauro_ y usarlo a manera de etiqueta en otro tipo de contenido usando el campo relación. De esta manera puedo relacionar uno o más campos del _Tesauro_ al contenido. Es importante aclarar que si uso un campo de relación de tipo _Tesauro_ para el formulario del _Tesauro_, al momento de guardar la plataforma los va a relacionar automaticamente entre si. Es decir que la relación se guardará no solo en el recurso que se está editando sino también en los recursos que estoy relacionando.
 
+![Formulario relación](/imagenes/formulario_relacion.png)
+
 ## El campo archivo
 
 Dentro de un formulario puedes configurar varios campos distintos para cargar archivos. Para el campo de archivo hay varias opciones que es importante considerar al momento de crear el formulario.
@@ -32,3 +34,7 @@ A diferencia de los otros campos de metadatos que se guardan en una ruta usando 
 A cada archivo asociado a un recurso, puedes ver el campo asociado en su etiqueta identificada, cada uno con un color distinto. Es posible verlo desde la vista del detalle de cada recurso o desde el formulario de edición una vez se haya subido y guardado el recurso.
 
 ## El campo separador
+
+Hay casos en los que el formulario debe tener varias páginas, y para eso usamos el campo __Separador__. Este es un campo especial que solo necesita el campo __Nombre__. Una vez se haya añadido al formulario, se usará para paginar el formulario al momento de catalogar un nuevo recurso.
+
+![Formulario separador](/imagenes/formulario_separador.png)
