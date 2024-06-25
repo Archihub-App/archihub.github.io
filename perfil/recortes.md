@@ -9,12 +9,15 @@ Para cada tipo de contenido que soporta la funcionalidad de recortes, el proceso
 Los documentos son el tipo más evidente para empezar a usar nuestros recortes. De la misma forma que recortas pedazos de periódicos para guardar las notas que más te interesan, en ArchiHUB puedes sistematizar los recortes de todos los usuarios y obtener visualizaciones más interesantes sobre la consulta del material. Pero vamos por pasos.
 
 ### Cómo Recortar Documentos en ArchiHUB
-- Acceder a la Opción de Recortes: Desde el componente de navegación, selecciona la opción "Agregar Recorte".
 
-- Seleccionar el Área de Interés: No importa la vista que hayas escogido, puedes ajustar el recorte seleccionando el área del documento que te interese.
+- __Acceder a la Opción de Recortes__: Desde el componente de navegación en la vista de documento, selecciona la opción "Agregar Recorte".
 
-- Guardar el Recorte: Una vez hayas seleccionado el área, pulsa el ícono de guardar.
+- __Seleccionar el Área de Interés__: No importa la vista que hayas escogido, puedes ajustar el recorte seleccionando el área del documento que te interese.
+
+- __Guardar el Recorte:__ Una vez hayas seleccionado el área, pulsa el ícono de guardar.
 
 ### Gestión de Recortes
 
 Desde tu perfil, puedes ver todos tus recortes guardados y filtrarlos por tipo. Esto te permite organizar y acceder rápidamente a los fragmentos más relevantes de tus documentos.
+
+![Vista recortes en el perfil](../imagenes/perfil_recortes.png)
