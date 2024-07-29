@@ -22,6 +22,7 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
     - [Los roles de usuario](roles.md)
     - [Los niveles de acceso a la información](acceso.md)
     - [Los ajustes del sistema](ajustes.md)
+    - Gestión de usuarios
 - __Mi perfil__
     - [Configuración de mi perfil](/perfil/config.md)
     - [Mis favoritos](/perfil/favoritos.md)
@@ -32,7 +33,7 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
 - __Carga de la información__
     - [El módulo de catalogación](catalogacion.md)
     - [Cargas masivas usando el script de carga y la API de administración](masivas.md)
-    - Importar / exportar los tipos de contenido, listados y estándares de metadatos
+    - [Actualizar / exportar los tipos de contenido, listados y estándares de metadatos](inventarios.md)
 - __Los Plugins__
     - Generar inventarios y edición masiva de la información
     - Descarga videos de YouTube
@@ -46,6 +47,9 @@ ArchiHUB es una plataforma versátil de gestión documental que ofrece flexibili
     - Hacer un plugin usando la plantilla
 - [Las filas de procesos y los nodos de procesamiento](nodos.md)
 - Compatibilidad con el Protocolo de la Iniciativa de Archivos Abiertos para la recolección de metadatos (OAI-PMH)
+
+## Preguntas frecuentes
+- Errores frecuentes
 
 ## Licencia y código de conducta
 
