@@ -1,10 +1,11 @@
 # Changelog
 
-## [Unreleased]
+## [0.7.1]
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Opciones avanzadas en el árbol de recursos.
+- Se agregan las búsquedas avanzadas para poder seleccionar el campo en el que se quiere buscar.
 
 ### Changed
 
@@ -13,6 +14,9 @@
 ### Removed
 
 ### Fixed
+- Manejo de errores al procesar los archivos
+- Se agrega shapely al archivo requirements.txt
+- Se ajusta el procesamiento de video para videos .MOV
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
@@ -38,4 +42,3 @@
 - se arregla un loop infinito al guardar un solo recurso al momento de indexar automaticamente.
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
