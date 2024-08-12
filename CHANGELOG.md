@@ -17,6 +17,7 @@
 - Manejo de errores al procesar los archivos
 - Se agrega shapely al archivo requirements.txt
 - Se ajusta el procesamiento de video para videos .MOV
+- Se ajusta el click en los listados sin anidados del árbol de navegación
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
