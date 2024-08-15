@@ -7,6 +7,7 @@
 - Opciones avanzadas en el árbol de recursos.
 - Se agregan las búsquedas avanzadas para poder seleccionar el campo en el que se quiere buscar.
 - Se agregan nuevos servicios para el analisis de las imagenes 'img_analyze'. Estos servicios proveen la posibilidad de devolver la metadata de los procesamientos y los bloques de segmentación en una imagen.
+- Se agrega un nuevo gestor de tareas para asignarle correcciones a recursos a ciertos usuarios. Para esto se genera un nuevo servicio y un nuevo rol de usuario `team_lead`
 
 ### Changed
 
