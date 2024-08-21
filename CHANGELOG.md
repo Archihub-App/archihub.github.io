@@ -8,6 +8,7 @@
 - Se agregan las búsquedas avanzadas para poder seleccionar el campo en el que se quiere buscar.
 - Se agregan nuevos servicios para el analisis de las imagenes 'img_analyze'. Estos servicios proveen la posibilidad de devolver la metadata de los procesamientos y los bloques de segmentación en una imagen.
 - Se agrega un nuevo gestor de tareas para asignarle correcciones a recursos a ciertos usuarios. Para esto se genera un nuevo servicio y un nuevo rol de usuario `team_lead`
+- Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 
 ### Changed
 
