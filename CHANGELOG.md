@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.7.1]
+## [0.7.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.

@@ -41,3 +41,7 @@ Ahora observemos el listado de recursos que vemos en el centro de la interfaz. L
 
 ### Filtro de búsqueda
 
+La búsqueda es un componente central de ArchiHUB, diseñado para facilitar la recuperación de información en varios niveles. Por defecto, al buscar por palabra clave, ArchiHUB realiza la búsqueda en todos los campos de metadatos. Sin embargo, también puedes limitar la búsqueda a un campo específico. Para hacerlo, simplemente haz clic en el ícono de filtros, donde podrás seleccionar el campo del formulario en el que deseas centrar la búsqueda.
+
+![icono](/imagenes/filtro_ico.png)
+![icono](/imagenes/filtro_form.png)
