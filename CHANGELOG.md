@@ -26,6 +26,7 @@
 - Se ajusta el click en los listados sin anidados del árbol de navegación
 - Visualización de los bloques en las imagenes y documentos
 - Se agregan los tipos de archivo .oga .ogv
+- Se soluciona la búsqueda de sinonimos en el buscador y el mapeo del índice.
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
