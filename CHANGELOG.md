@@ -12,6 +12,7 @@
 - Se agregan nuevos servicios para el analisis de las imagenes 'img_analyze'. Estos servicios proveen la posibilidad de devolver la metadata de los procesamientos y los bloques de segmentación en una imagen.
 - Se agrega un nuevo gestor de tareas para asignarle correcciones a recursos a ciertos usuarios. Para esto se genera un nuevo servicio y un nuevo rol de usuario `team_lead`
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
+- Se agrega un nuevo rol de usuario `user` para los usuarios logeados pero sin acceso a nada mas de la consulta y lo publico.
 
 ### Changed
 
@@ -27,6 +28,8 @@
 - Visualización de los bloques en las imagenes y documentos
 - Se agregan los tipos de archivo .oga .ogv
 - Se soluciona la búsqueda de sinonimos en el buscador y el mapeo del índice.
+- Se implementa la paginación al momento de procesar los archivos
+- Se ajusta los bloques sobre las imagenes verticales y horizontales
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
