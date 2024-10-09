@@ -1,0 +1,33 @@
+---
+import { SITE } from "../../consts";
+import Github from "@/components/Icons/Github.astro";
+import { Button } from "../ui/Button";
+type Props = {
+  currentPage: string;
+};
+---
+
+<header>
+  <nav>
+    <nav title="Top Navigation" class="border-gray-200 border">
+      <div
+        class="flex flex-wrap items-center justify-between mx-auto py-4 px-4"
+      >
+        <a href="/" class="flex items-center">
+          <img src={SITE.logo} class="h-8" alt="Flowbite Logo" />
+          <span class="md:text-2xl text-base font-bold whitespace-nowrap"
+            >{SITE.projectName}</span
+          >
+        </a>
+        <div>
+          <a href={SITE.githubUrl}>
+            <Button variant="outline" className="gap-3">
+              Descarga ya !!!
+              <Github width="18" />
+            </Button>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </nav>
+</header>

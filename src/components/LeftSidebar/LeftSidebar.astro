@@ -1,0 +1,53 @@
+---
+import { Button } from "../ui/Button";
+import { SIDEBAR } from "../../consts";
+
+type Props = {
+  currentPage: string;
+};
+const { currentPage } = Astro.props;
+const currentPageMatch = currentPage.endsWith("/")
+  ? currentPage.slice(1, -1)
+  : currentPage.slice(1);
+const sidebar = SIDEBAR["es"];
+---
+
+<nav class="w-full pr-4">
+  <ul class="w-full">
+    {
+      Object.entries(sidebar).map(([header, children]) => (
+        <li class="w-full">
+          <div class="w-full">
+            <h2 class="my-4 px-2 uppercase text-xs font-semibold sticky z-[1] tracking-wide"
+            >
+              {header}
+            </h2>
+            <ul class="w-full flex flex-col gap-2">
+              {children.map((child) => {
+                const url = child.link;
+                const isActive = `/${currentPageMatch}` === child.link;
+                return (
+                  <li class="w-full">
+                    <a
+                      href={url}
+                      aria-current={
+                        currentPageMatch === child.link ? "page" : false
+                      }
+                    >
+                      <Button
+                        className={`w-full justify-start`}
+                        variant={isActive ? "default" : "ghost"}
+                      >
+                        {child.text}
+                      </Button>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
