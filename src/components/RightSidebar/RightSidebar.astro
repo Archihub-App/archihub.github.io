@@ -8,12 +8,12 @@ type Props = {
   editUrl: string
 }
 
-const { headings, editUrl } = Astro.props
+const { editUrl } = Astro.props
 ---
 
 <nav class="sidebar-nav" aria-labelledby="grid-right">
   <div class="sidebar-nav-inner">
-    <TableOfContents client:media="(min-width: 50em)" headings={headings} />
+    <TableOfContents client:media="(min-width: 50em)"  />
     <MoreMenu editHref={editUrl} />
   </div>
 </nav>

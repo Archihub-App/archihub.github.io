@@ -1,10 +1,9 @@
-type ItemOffsets = {
-  id: string
-  topOffset: number
-}
+// type ItemOffsets = {
+//   id: string
+//   topOffset: number
+// }
 
 const TableOfContents= ({
-  headings = []
 }) => {
  
 
