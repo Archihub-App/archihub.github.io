@@ -1,7 +1,5 @@
 ---
 import type { MarkdownHeading } from "astro";
-import MoreMenu from "../RightSidebar/MoreMenu.astro";
-import TableOfContents from "../RightSidebar/TableOfContents";
 type Props = {
   title: string;
   headings: MarkdownHeading[];
@@ -10,7 +8,7 @@ type Props = {
   imageAlt: string | undefined;
 };
 
-const { title, headings, editUrl, imageSrc, imageAlt } = Astro.props;
+const { title, headings, imageSrc, imageAlt } = Astro.props;
 console.log(headings);
 ---
 

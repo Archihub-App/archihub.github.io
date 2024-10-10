@@ -1,9 +1,7 @@
 ---
-title: 'Markdown Test Page'
+title: 'Página de Prueba de Markdown'
 description: 'Página de prueba con diferentes elementos de Markdown'
 ---
-
-# Página de Prueba de Markdown
 
 Este es un ejemplo de una página Markdown con listas, citas, tablas y bloques de código para probar y visualizar estilos.
 

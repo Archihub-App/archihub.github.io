@@ -1,4 +1,7 @@
-# Instalación en una máquina local
+---
+title: 'Instalación en una máquina local '
+description: 'Lorem ipsum dolor sit amet - 2'
+---
 
 Es importante destacar que existen requerimientos mínimos de hardware para poder ejecutar el aplicativo en función de las herramientas que se deseen utilizar. A continuación, se presenta una tabla que describe las distintas funciones junto con sus requerimientos mínimos correspondientes.
 
