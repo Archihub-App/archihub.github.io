@@ -1,6 +1,7 @@
-# Primeros pasos
-
-## ¡Bienvenido!
+---
+title: 'Primeros pasos ¡Bienvenido!'
+description: ''
+---
 
 ![homepage](/imagenes/home.png)
 
