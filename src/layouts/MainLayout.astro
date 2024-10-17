@@ -1,0 +1,56 @@
+---
+import type { MarkdownHeading } from "astro";
+import type { CollectionEntry } from "astro:content";
+import HeadCommon from "@/components/HeadCommon.astro";
+import HeadSEO from "@/components/HeadSEO.astro";
+import Header from "@/components/Header/Header.astro";
+import PageContent from "@/components/PageContent/PageContent.astro";
+import { EDIT_URL, SITE } from "@/consts";
+import "@/styles/globals.css";
+import SidebarNav from "@/components/LeftSidebar/SideBar";
+
+type Props = CollectionEntry<"docs">["data"] & {
+    headings: MarkdownHeading[];
+};
+
+const { headings, ...data } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const currentPage = Astro.url.pathname;
+const currentFile = `src/content/docs${currentPage.replace(/\/$/, "")}.mdx`;
+const editUrl = `${EDIT_URL}/${currentFile}`;
+---
+
+<html dir={data.dir} lang="es" class="initial">
+    <head>
+        <HeadCommon />
+        <HeadSEO {...data} canonicalUrl={canonicalURL} />
+        <title>
+            {`${data.title} 🚀 ${SITE.title}`}
+        </title>
+    </head>
+
+    <body class="">
+        <Header currentPage={currentPage} />
+        <main class="grid grid-cols-9 ml-4 ">
+            <aside
+                class="col-span-2 max-md:hidden h-[calc(100vh-79px)] overflow-y-auto scrollbar-thin scrollbar-thumb scrollbar-track"
+            >
+                <SidebarNav currentPage={currentPage} client:load />
+            </aside>
+            <div
+                class="col-span-7 px-10 pt-5 pb-24 max-md:p-2 md:h-[calc(100vh-80px)] max-md:col-span-9 overflow-y-auto hide-scrollbar"
+            >
+                <PageContent
+                    title={data.title}
+                    headings={headings}
+                    editUrl={editUrl}
+                    imageSrc={data.image?.src}
+                    imageAlt={data.image?.alt}
+                >
+                    <slot />
+                </PageContent>
+            </div>
+        </main>
+        <!-- <Footer path={currentFile} /> -->
+    </body>
+</html>

@@ -1,21 +1,22 @@
-# Primeros pasos
+---
+title: 'Primeros pasos ¡Bienvenido!'
+description: ''
+---
 
-## ¡Bienvenido!
-
-![homepage](imagenes/home.png)
+![homepage](/imagenes/home.png)
 
 ¡Bienvenido al inicio de la aplicación! Actualmente, tienes un usuario con todos los permisos, lo que te da acceso completo al menú. Aprovechemos esta oportunidad para explorar todas las funcionalidades y familiarizarnos con la plataforma. ¡Vamos a echar un vistazo!
 
 ### Catalogación
 
-![modulo de catalogación](imagenes/catalogacion.gif)
-![home del modulo de catalogación](imagenes/home_catalogacion.png)
+![modulo de catalogación](/imagenes/catalogacion.gif)
+![home del modulo de catalogación](/imagenes/home_catalogacion.png)
 
 Esta es nuestra pantalla principal, donde pasarás la mayor parte del tiempo navegando por los archivos. Es importante que te familiarices con su funcionamiento para aprovechar al máximo todas las funcionalidades. Vamos a explorar juntos cómo funciona y cómo puedes utilizarlo de manera eficiente.
 
-![menu tipos de contenido](imagenes/menu_tipos.png)
+![menu tipos de contenido](/imagenes/menu_tipos.png)
 
-En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](estandares.md).
+En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](/estandares).
 
 Es importante saber que los tipos de contenido tienen una jerarquía. Actualmente estamos viendo __Unidad Documental__ y su jerarquía asociada es la siguiente:
 

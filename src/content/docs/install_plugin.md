@@ -1,4 +1,7 @@
-# Instalar un plugin
+---
+title: 'Instalar un plugin'
+description: ''
+---
 
 Estamos listos para comenzar. Aprendamos a instalar un plugin en ArchiHUB para ampliar las capacidades de nuestra aplicación. Como ejemplo, usaremos el complemento para descargar videos de YouTube. Este es un ejemplo sencillo, ya que hay muchas más opciones para los complementos que veremos más adelante cuando exploremos las opciones más avanzadas del sistema. ¡Por ahora, vamos a descargar videos!
 

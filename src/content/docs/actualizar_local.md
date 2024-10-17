@@ -1,4 +1,7 @@
-# Actualizar el aplicativo
+---
+title: 'Actualizar el aplicativo'
+description: 'Lorem ipsum dolor sit amet - 2'
+---
 
 ArchiHUB está en constante actualización y mejora. A veces, pueden surgir errores imprevistos. Por eso, es importante estar preparado para actualizar el aplicativo. Aquí te mostramos cómo hacerlo de dos maneras: reemplazando los archivos manualmente o actualizando vía git.
 
