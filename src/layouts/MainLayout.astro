@@ -33,12 +33,12 @@ const editUrl = `${EDIT_URL}/${currentFile}`;
         <Header currentPage={currentPage} />
         <main class="grid grid-cols-9 ml-4 ">
             <aside
-                class="col-span-2 max-md:hidden h-[calc(100vh-64px)] overflow-y-auto scrollbar-thin scrollbar-thumb scrollbar-track"
+                class="col-span-2 max-md:hidden h-[calc(100vh-79px)] overflow-y-auto scrollbar-thin scrollbar-thumb scrollbar-track"
             >
                 <SidebarNav currentPage={currentPage} client:load />
             </aside>
             <div
-                class="col-span-7 px-10 pt-5 max-md:p-2 md:h-[calc(100vh-64px)] max-md:col-span-9 overflow-y-auto hide-scrollbar"
+                class="col-span-7 px-10 pt-5 pb-24 max-md:p-2 md:h-[calc(100vh-80px)] max-md:col-span-9 overflow-y-auto hide-scrollbar"
             >
                 <PageContent
                     title={data.title}
