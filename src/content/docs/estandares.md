@@ -1,4 +1,7 @@
-# Los estándares de metadatos y tipos de contenido
+---
+title: 'Los estándares de metadatos y tipos de contenido '
+description: ''
+---
 
 ArchiHUB ha sido diseñado para ofrecer la máxima flexibilidad en cuanto a los diferentes tipos de contenido que puede manejar. Esta versatilidad se refleja en la capacidad de crear diversos tipos de contenido y establecer relaciones entre ellos. Un ejemplo concreto es la posibilidad de organizar el contenido en series documentales, que a su vez pueden contener expedientes.
 
@@ -8,13 +11,13 @@ Esta capacidad de personalización en la configuración de los metadatos permite
 
 ## Los estándares de metadatos
 
-![menu](imagenes/estandares.gif)
+![menu](/imagenes/estandares.gif)
 
 Cuando definimos un nuevo tipo de contenido, es fundamental tener una comprensión clara de los metadatos que deseamos implementar para ese tipo específico. En nuestra aplicación, los estándares de metadatos son independientes del tipo, lo que significa que un estándar de metadatos puede estar vinculado a uno o varios tipos al mismo tiempo.
 
 Para el correcto uso de ArchiHUB, es fundamental comprender y seguir los estándares de metadatos. Aunque nuestra plataforma te permite editar estos estándares incluso después de haber subido contenido, es importante que los campos existentes no cambien de tipo. Por ejemplo, no debes cambiar un campo de tipo fecha a uno de tipo número, ya que esto requeriría borrar y volver a catalogar el contenido. Idealmente, deberías utilizar la funcionalidad de edición de estándares de metadatos solo para agregar nuevos campos. Esto asegura que el sistema funcione correctamente y que tu contenido esté siempre bien organizado.
 
-![pantallazo campo metadatos](imagenes/field.png)
+![pantallazo campo metadatos](/imagenes/field.png)
 
 Un campo tiene mínimo 4 opciones configurables:
 
@@ -27,7 +30,7 @@ Un estándar de metadatos ofrece una lista de metadatos que se pueden personaliz
 
 ## Los tipos de contenido
 
-![menu](imagenes/tipos.gif)
+![menu](/imagenes/tipos.gif)
 
 Los tipos de contenido tienen la función de establecer las categorías de recursos que la herramienta de gestión documental va a organizar, así como la jerarquía en la que estos recursos serán estructurados. Para ilustrar esto, consideremos un archivo de ejemplo en el que queremos tener una estructura de la siguiente forma:
 

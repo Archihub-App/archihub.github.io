@@ -1,4 +1,8 @@
-# Campos para los estándares de metadatos
+---
+title: 'Campos para los estándares de metadatos'
+description: ''
+---
+
 
 En esta parte de la documentación detallaremos cada uno de los campos que se pueden configurar en el formulario:
 
@@ -13,7 +17,7 @@ En esta parte de la documentación detallaremos cada uno de los campos que se pu
 
 En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
 
-![menu](imagenes/listados.png)
+![menu](/imagenes/listados.png)
 
 ## El campo relación
 

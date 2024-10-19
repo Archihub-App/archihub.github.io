@@ -1,4 +1,7 @@
-# Vistas de consulta
+---
+title: 'Vistas de consulta'
+description: ''
+---
 
 Como ya lo vimos, ArchiHUB permite la configuración de múltiples tipos de contenido y estándares de metadatos. Por ahora, para explorar el contenido usando el módulo de catalogación, solo podemos hacerlo tipo por tipo. Aquí es donde entran las vistas de consulta, que nos permiten configurar módulos de exploración específicos según el contenido que queramos mostrar.
 
