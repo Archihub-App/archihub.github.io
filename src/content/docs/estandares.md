@@ -1,4 +1,7 @@
-# Los estándares de metadatos y tipos de contenido
+---
+title: 'Los estándares de metadatos y tipos de contenido '
+description: ''
+---
 
 ArchiHUB ha sido diseñado para ofrecer la máxima flexibilidad en cuanto a los diferentes tipos de contenido que puede manejar. Esta versatilidad se refleja en la capacidad de crear diversos tipos de contenido y establecer relaciones entre ellos. Un ejemplo concreto es la posibilidad de organizar el contenido en series documentales, que a su vez pueden contener expedientes.
 

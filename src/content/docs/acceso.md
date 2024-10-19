@@ -1,9 +1,9 @@
 ---
-title: Los niveles de acceso a la información
-author: Néstor Andrés Peña
-date: 2024-02-02
-category: ArchiHUB
-layout: post
+title: 'Los niveles de acceso a la información'
+description: ''
+# date: 2024-02-02
+# category: ArchiHUB
+# layout: post
 ---
 
 # Los niveles de acceso a la información

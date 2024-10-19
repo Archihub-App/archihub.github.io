@@ -1,4 +1,8 @@
-# Campos para los estándares de metadatos
+---
+title: 'Campos para los estándares de metadatos'
+description: ''
+---
+
 
 En esta parte de la documentación detallaremos cada uno de los campos que se pueden configurar en el formulario:
 
