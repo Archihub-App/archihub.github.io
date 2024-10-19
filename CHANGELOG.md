@@ -23,6 +23,8 @@
 
 ### Changed
 
+- Actualizar el cache al crear o actualizar recursos ahora tiene la opción de deshabilitarse al momento de realizar cargas masivas.
+
 ### Deprecated
 
 ### Removed
@@ -37,6 +39,7 @@
 - Se soluciona la búsqueda de sinonimos en el buscador y el mapeo del índice.
 - Se implementa la paginación al momento de procesar los archivos
 - Se ajusta los bloques sobre las imagenes verticales y horizontales
+- Al borar un recurso este y sus hijos se borran recursivamente del indice de búsqueda.
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
