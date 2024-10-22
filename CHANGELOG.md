@@ -24,6 +24,7 @@
 ### Changed
 
 - Actualizar el cache al crear o actualizar recursos ahora tiene la opción de deshabilitarse al momento de realizar cargas masivas.
+- Al cargar las imagenes a un recurso ahora es posible ajustar el orden en el que se verán las imágenes en la galería.
 
 ### Deprecated
 
