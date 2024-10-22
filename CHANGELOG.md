@@ -6,6 +6,10 @@
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Opciones avanzadas en el árbol de recursos.
 
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+
 ## [0.7.1] _20 October 2024_
 
 ### Added
@@ -43,7 +47,6 @@
 - Al borar un recurso este y sus hijos se borran recursivamente del indice de búsqueda.
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.7] _7 August 2024_
 
