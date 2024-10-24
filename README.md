@@ -132,12 +132,7 @@ export const OPEN_GRAPH = {
 }
 ```
 
->[!NOTE]
->Actualiza el `og:image` para que apunte a una imagen adecuada de tu proyecto.
 
-## 📚 Documentación Multilingüe (Próximamente)
-
-Estamos trabajando para proporcionar soporte para documentación multilingüe y así servir mejor a una audiencia global.
 
 >[!NOTE]
 >Mantente atento a las actualizaciones sobre el soporte multilingüe.
