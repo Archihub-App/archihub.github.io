@@ -1,4 +1,7 @@
-# Cargas masivas usando el script de carga y la API de administración (instrucciones para el CNMH)
+---
+title: 'Cargas masivas usando el script de carga y la API de administración (instrucciones para el CNMH)'
+description: ''
+---
 
 ArchiHUB tiene como objetivo ser lo más flexible posible tanto para la administración y organización del archivo como para su gestión. Para facilitar la carga de documentos y mantener la lógica y jerarquía que han trabajado los equipos, ArchiHUB ofrece un script simple pero muy útil para cargar carpetas.
 

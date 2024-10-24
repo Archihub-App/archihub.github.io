@@ -1,4 +1,7 @@
-# Los ajustes del sistema
+---
+title: 'Los ajustes del sistema'
+description: ''
+---
 
 ![Menu ajustes generales](/imagenes/menu_ajustes.gif)
 

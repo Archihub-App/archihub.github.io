@@ -1,4 +1,7 @@
-# Sistema geográfico
+---
+title: 'Sistema geográfico'
+description: ''
+---
 
 ArchiHUB permite la sistematización de diferentes polígonos geográficos para la catalogación y visualización de la información. El sistema ha sido diseñado con la flexibilidad necesaria para soportar diversos lugares geográficos y niveles administrativos. A continuación, veremos cómo se pueden agregar esos polígonos al sistema y cómo funcionan.
 
@@ -12,7 +15,7 @@ El segundo nivel administrativo se carga de manera similar. En la carpeta app/ut
 
 Una vez que los archivos se han ubicado en las carpetas correctas de acuerdo con el nivel administrativo que representan, se puede iniciar la carga de estos desde la configuración del sistema.
 
-![carga poligonos](imagenes/carga_poly.png)
+![carga poligonos](/imagenes/carga_poly.png)
 
 Durante la carga de los archivos GEOJSON, ArchiHUB itera entre ellos, asociando cada polígono del nivel administrativo al polígono del nivel superior que lo contiene. Por ejemplo, al cargar el nivel 1, que corresponde a los departamentos, el sistema automáticamente valida en qué polígono del nivel administrativo 0 (país) se encuentra y lo asocia en la base de datos.
 

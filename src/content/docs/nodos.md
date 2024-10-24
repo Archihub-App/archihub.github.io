@@ -1,4 +1,7 @@
-# Las filas de procesos y los nodos de procesamiento
+---
+title: 'Las filas de procesos y los nodos de procesamiento'
+description: ''
+---
 
 Como ya habrás notado, ArchiHUB maneja ciertas tareas en lo que nosotros llamamos filas de procesamiento. Cada usuario tiene sus procesamientos y a su vez el sistema también puede agregar procesamientos automaticos.
 

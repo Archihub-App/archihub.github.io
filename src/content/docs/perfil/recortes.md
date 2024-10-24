@@ -1,4 +1,7 @@
-# Los recortes
+---
+title: 'Los recortes'
+description: ''
+---
 
 Los recortes son una de las funcionalidades más emocionantes de ArchiHUB. Son similares a los favoritos, pero a diferencia de estos, que guardan el recurso o el documento en su totalidad, con los recortes puedes seleccionar una zona específica del documento, un fragmento de audio, o algunas frases en la transcripción de un video. Tal como su nombre lo indica, te permite guardar recortes de tus fragmentos favoritos mientras exploras el archivo para volver a ellos luego.
 

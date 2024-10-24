@@ -1,4 +1,7 @@
-# Changelog
+---
+title: 'Changelog'
+description: ''
+---
 
 ## [0.7.1] _beta_
 

@@ -1,5 +1,7 @@
-# Mis procesamientos
-
+---
+title: 'Mis procesamientos'
+description: ''
+---
 ![Vista procesamientos](../imagenes/procesamientos_vista.png)
 
 Desde la pestaña de los procesamientos puedes ver los procesamientos que activas desde el menú de plugins. Desde esta vista, podrás saber el estado del procesamiento, si ya terminó, y ver el resultado en caso de que el plugin lo tenga habilitado.

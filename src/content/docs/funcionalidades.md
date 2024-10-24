@@ -1,4 +1,7 @@
-# Listado de funccionalidades
+---
+title: 'Listado de funccionalidades'
+description: ''
+---
 
 ## Catalogación
 - [x] Tipos de contenido flexibles para crear relaciones y jerarquías de la información

@@ -1,4 +1,7 @@
-# Configuración de mi perfil
+---
+title: 'Configuración de mi perfil'
+description: ''
+---
 
 ![Formulario configuración de mi perfil](/imagenes/perfil_config.png)
 

@@ -1,4 +1,7 @@
-# El módulo de catalogación
+---
+title: 'El módulo de catalogación'
+description: ''
+---
 
 Si estás en la tarea de editar o crear nuevo contenido, tendrás que familiarizarte con esta vista. Bienvenido al módulo de catalogación. En esta sección, profundizaremos en el uso de esta herramienta y exploraremos las distintas opciones que ofrece.
 

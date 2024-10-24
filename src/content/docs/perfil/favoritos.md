@@ -1,4 +1,7 @@
-# Mis favoritos
+---
+title: 'Mis favoritos'
+description: ''
+---
 
 ![Favoritos](../imagenes/favoritos.png)
 
