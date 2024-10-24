@@ -3,7 +3,7 @@ title: 'Las llaves de acceso'
 description: ''
 ---
 
-![Menu llaves de acceso](../imagenes/menu_llaves.png)
+![Menu llaves de acceso](/imagenes/menu_llaves.png)
 
 ArchiHUB permite expandir sus capacidades mediante el uso de diversas APIs. Dependiendo de los roles habilitados para tu usuario, puedes generar llaves que otorguen acceso a tus herramientas para interactuar con el archivo. Desde administración hasta tableros de visualización, aquí veremos los detalles para cada una.
 

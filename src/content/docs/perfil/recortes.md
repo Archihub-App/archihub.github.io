@@ -9,7 +9,7 @@ Para cada tipo de contenido que soporta la funcionalidad de recortes, el proceso
 
 ## Documentos
 
-![Recorte documento](../imagenes/recortes_anim.gif)
+![Recorte documento](/imagenes/recortes_anim.gif)
 
 Los documentos son el tipo más evidente para empezar a usar nuestros recortes. De la misma forma que recortas pedazos de periódicos para guardar las notas que más te interesan, en ArchiHUB puedes sistematizar los recortes de todos los usuarios y obtener visualizaciones más interesantes sobre la consulta del material. Pero vamos por pasos.
 
@@ -25,4 +25,4 @@ Los documentos son el tipo más evidente para empezar a usar nuestros recortes. 
 
 Desde tu perfil, puedes ver todos tus recortes guardados y filtrarlos por tipo. Esto te permite organizar y acceder rápidamente a los fragmentos más relevantes de tus documentos.
 
-![Vista recortes en el perfil](../imagenes/perfil_recortes.png)
+![Vista recortes en el perfil](/imagenes/perfil_recortes.png)
