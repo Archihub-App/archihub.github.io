@@ -6,6 +6,11 @@
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Opciones avanzadas en el árbol de recursos.
 
+### Fixed
+- Se agrega un timeout de 30s para la conexión de mongodb.
+- Se ajusta el query a elasticsearch para mostrar el total de resultados cuando estos superan los 10.000
+- El aplicativo solo limpia el cache al iniciar si el entorno es de desarrollo y no producción.
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
