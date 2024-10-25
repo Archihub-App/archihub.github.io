@@ -6,9 +6,13 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'ArchiHUB Docs',
+			logo: {
+				src: './src/assets/logo.png',
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Archihub-App/archihub.github.io',
+				instagram: 'https://www.instagram.com/archihub_app/',
 			},
 			sidebar: [
 				{
