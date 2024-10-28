@@ -11,7 +11,9 @@
 - Se agrega un timeout de 30s para la conexión de mongodb.
 - Se ajusta el query a elasticsearch para mostrar el total de resultados cuando estos superan los 10.000
 - El aplicativo solo limpia el cache al iniciar si el entorno es de desarrollo y no producción.
-
+- Al guardar un `record`, el sistema se asegura que los padres de ese documentos
+ no esten repetidos en el campo `parent`.
+ 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
