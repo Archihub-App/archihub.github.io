@@ -8,13 +8,17 @@ export default defineConfig({
 		starlight({
 			title: 'ArchiHUB Docs',
 			logo: {
-				src: './src/assets/logo.png',
+				src: './src/assets/logo_docu_archihub.png',
 			},
 			social: {
 				github: 'https://github.com/Archihub-App/archihub.github.io',
 				instagram: 'https://www.instagram.com/archihub_app/',
 			},
 			sidebar: [
+				{
+					label: 'CHANGELOG',
+					slug: 'changelog',
+				},
 				{
 					label: 'Instalación',
 					items: [
