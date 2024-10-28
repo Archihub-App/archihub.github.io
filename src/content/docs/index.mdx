@@ -1,0 +1,32 @@
+---
+title: Documentación ArchiHub
+description: Explora la documentación oficial de ArchiHub
+template: splash
+hero:
+  tagline: Bienvenido al centro de recursos para desarrolladores
+  image:
+    file: ../../assets/logo_docu_archihub.png
+    alt: Logo de ArchiHub
+  actions:
+    - text: Instala ahora mismo
+      link: /install_local
+      icon: right-arrow
+    - text: Explorar funciones
+      link: /estandares
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Próximos pasos	
+<CardGrid stagger>
+	<Card title="Guía de inicio rápido" icon="rocket">
+		Comienza a utilizar ArchiHub en minutos con nuestra guía paso a paso para nuevos usuarios.
+	</Card>
+	<Card title="Mejores prácticas" icon="star">
+		Aprende las mejores prácticas para sacar el máximo provecho de ArchiHub en tus proyectos.
+	</Card>
+	<Card title="Documentación oficial" icon="open-book">
+		Explora en profundidad todas las funcionalidades de ArchiHub en nuestra [documentación completa](/estandares).
+	</Card>
+</CardGrid>
