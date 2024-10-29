@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://archihub-app.github.io/archihub.github.io/',
-	base: '/docs',
+	site: 'https://archihub-app.github.io',
+	base: '/archihub.github.io',
 	integrations: [
 		starlight({
 			title: 'ArchiHUB Docs',
