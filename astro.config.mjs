@@ -12,7 +12,7 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/logo_docu_archihub.png',
 			},
-			favicon: '/archihub.github.io/favicon.ico',
+			favicon: '/favicon.ico',
 			social: {
 				github: 'https://github.com/Archihub-App/archihub.github.io',
 				instagram: 'https://www.instagram.com/archihub_app/',
