@@ -70,7 +70,7 @@ Como mencionamos anteriormente, es necesario descargar el código del backend de
     ```
     git clone https://github.com/Archihub-App/archihub-backend.git
     ```
-- __Descargando el zip__: <br>![descarga desde github](/imagenes/descarga_git.gif)
+- __Descargando el zip__: <br>![descarga desde github](/archihub.github.io/imagenes/descarga_git.gif)
 
 Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
 
@@ -78,7 +78,7 @@ Esto te permitirá obtener todo el código necesario para configurar y ejecutar 
 
 Cuando ya tengamos las variables de entorno configuradas y las carpetas listas, estamos preparados para iniciar el aplicativo usando Docker. Para esto es necesario abrir un terminal y dirigirse a la carpeta en donde se encuentra la herramienta Archivo. Para hacer esto, se debe escribir `cd ` _(!! no olvidar el espacio al final)_ en la terminal y arrastrar la carpeta __archihub__ a la terminal.
 
-![vista abrir carpeta en la terminal](/imagenes/terminal.gif)
+![vista abrir carpeta en la terminal](/archihub.github.io/imagenes/terminal.gif)
 
 Pulsar “Enter” y luego copiar y pegar el comando `docker compose up -d` y “Enter” para aceptar. Se iniciará el despliegue de los servicios. Para verificar el estado de los servicios, puedes abrir la aplicación Docker y dirigirte a la pestaña "Containers". Allí debería aparecer __archihub__ como activo.
 

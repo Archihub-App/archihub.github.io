@@ -9,13 +9,13 @@ Estamos listos para comenzar. Aprendamos a instalar un plugin en ArchiHUB para a
 
 Los plugins de la aplicación se encuentran comúnmente en un repositorio separado. Los plugins que están instalados actualmente en tu archivo son los complementos predeterminados que acompañan al aplicativo y que cumplen con las funcionalidades básicas, como la creación de inventarios y las ediciones masivas.
 
-![Plugins por defecto](/imagenes/plugins_defecto.png)
+![Plugins por defecto](/archihub.github.io/imagenes/plugins_defecto.png)
 
 Descarga el nuevo complemento yendo al [repositorio](https://github.com/Archihub-App/videoDownloader) o haciendo click [acá](https://github.com/Archihub-App/videoDownloader/archive/refs/heads/main.zip) para descargar el archivo zip.
 
 Cuando lo hayas descargado debes descomprimir el archivo y copiar la carpeta en `/gettin-started/local-machine/archihub/backend/app/plugins` de la siguiente forma:
 
-![Carpetas de plugins](/imagenes/plugins_folders.png)
+![Carpetas de plugins](/archihub.github.io/imagenes/plugins_folders.png)
 
 Una vez eso listo debemos reiniciar el backend con el comando:
 
@@ -27,7 +27,7 @@ Con ArchiHUB, no tienes que preocuparte por instalar nuevas dependencias o prepa
 
 Una vez haya terminado vamos al submenu de __Plugins__ en la __Administración del sistema__.
 
-![Activar plugins](/imagenes/plugin_activate.png)
+![Activar plugins](/archihub.github.io/imagenes/plugin_activate.png)
 
 Después de activar el complemento, es esencial reiniciar el backend. Este reinicio evitará la descarga de dependencias, lo que debería agilizar el proceso.
 
@@ -38,6 +38,6 @@ docker compose up --no-deps -d archihub_flask_backend
 
 Ahora podemos volver a nuestro menu de procesamientos y debería salir nuestro nuevo plugin activo:
 
-![Descarga videos](/imagenes/plugin_videos.png)
+![Descarga videos](/archihub.github.io/imagenes/plugin_videos.png)
 
 Eso es todo por ahora, puedes explorar la guía general de los plugins para saber más!

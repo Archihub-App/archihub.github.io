@@ -54,7 +54,7 @@ Para identificar el tipo de contenido de cada carpeta, debemos crear un archivo 
 
 Si no estás seguro de cuál es el nombre corto, sigue estos pasos:
 
-- Navega el módulo de catalogación y desde ahí escoje el tipo de contenido que quieras. <br> ![Módulo tipo](/imagenes/modulo_tipo.png)
+- Navega el módulo de catalogación y desde ahí escoje el tipo de contenido que quieras. <br> ![Módulo tipo](/archihub.github.io/imagenes/modulo_tipo.png)
 - Cuando hayas escogido el tipo que te interesa, revisa la url que te sale en el navegador, la última parte es el nombre corto que necesitamos. En este ejemplo, el nombre corto de la __Unidad documental__ es `unidad-documental`.
 
 Recuerda que uno de los parámetros que definimos anteriormente nos permitía definir un tipo por defecto. Si la carpeta no tiene ese archivo `.txt` con el nombre corto entonces automaticamente tomará ese tipo por defecto.

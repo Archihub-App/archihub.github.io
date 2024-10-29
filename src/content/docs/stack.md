@@ -7,7 +7,7 @@ ArchiHUB es una plataforma web versátil que utiliza un stack technológico vari
 
 ## Stack technológico
 
-![stack tech](/imagenes/infra.png)
+![stack tech](/archihub.github.io/imagenes/infra.png)
 
 - __Base de datos:__ Nos basamos en MongoDB, una base de datos no relacional altamente flexible. Esta elección nos permite adaptarnos a tus necesidades cambiantes en cuanto a los esquemas de metadatos.
 

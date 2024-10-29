@@ -3,13 +3,13 @@ title: 'Los ajustes del sistema'
 description: ''
 ---
 
-![Menu ajustes generales](/imagenes/menu_ajustes.gif)
+![Menu ajustes generales](/archihub.github.io/imagenes/menu_ajustes.gif)
 
 En esta sección de la documentación, exploraremos en profundidad las diversas opciones disponibles para configurar ArchiHUB. Aquí aprenderás cómo personalizar y ajustar la herramienta para satisfacer tus necesidades específicas, asegurándote de aprovechar al máximo todas sus funcionalidades.
 
 ## Esquema metadatos
 
-![Estándares de metadatos](/imagenes/estandares.png)
+![Estándares de metadatos](/archihub.github.io/imagenes/estandares.png)
 
 La primera opción que encontramos no es algo que puedas modificar directamente, pero es crucial para entender la estructura de metadatos que maneja tu instalación de ArchiHUB. Desde esta sección, puedes consultar rápidamente el esquema agregado de todos los esquemas de metadatos que has creado.
 
@@ -19,7 +19,7 @@ Si deseas crear un nuevo estándar y necesitas verificar los campos existentes e
 
 ## Ajustes tipos de contenido
 
-![Ajustes tipos de contenido](/imagenes/ajustes_tipos.png)
+![Ajustes tipos de contenido](/archihub.github.io/imagenes/ajustes_tipos.png)
 
 La siguiente opción de configuración se refiere a los tipos de contenido. Como ya vimos, puedes crear todos los tipos de contenido que desees. En la instalación por defecto de ArchiHUB, la jerarquía es la siguiente:
 
@@ -40,7 +40,7 @@ La siguiente opción de configuración se refiere a los tipos de contenido que s
 
 Cuando visitas el recurso "Noticias":
 
-![Vista individual](/imagenes/vista_individual.png)
+![Vista individual](/archihub.github.io/imagenes/vista_individual.png)
 
 - __Sección "Conoce"__: En la parte izquierda de la pantalla, verás los metadatos de ese recurso.
 - __Sección "Explora"__: Aquí encontrarás, en este caso, las __Unidades Documentales__ que están dentro de "Noticias".
@@ -51,7 +51,7 @@ Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este c
 
 ## Roles y acceso a la información
 
-![Ajustes roles](/imagenes/ajustes_roles.png)
+![Ajustes roles](/archihub.github.io/imagenes/ajustes_roles.png)
 
 En este apartado de la configuración, debes seleccionar los listados creados para los [roles](roles.md) y [niveles de acceso](acceso.md). Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
 
@@ -59,7 +59,7 @@ Mantén estos listados actualizados y revisa periódicamente para asegurarte de 
 
 ## API
 
-![Ajustes API](/imagenes/ajustes_api.png)
+![Ajustes API](/archihub.github.io/imagenes/ajustes_api.png)
 
 ArchiHUB ofrece varias entradas de API que puedes gestionar desde esta configuración. Es posible activar o desactivar tanto la API de administración como la API pública:
 
@@ -70,7 +70,7 @@ Desde estos ajustes, puedes activar o desactivar rápidamente estas opciones seg
 
 ## Administración del índice
 
-![Ajustes indice](/imagenes/ajustes_indice.png)
+![Ajustes indice](/archihub.github.io/imagenes/ajustes_indice.png)
 
 Uno de los pilares de ArchiHUB es la búsqueda avanzada, facilitada por la implementación de ElasticSearch para indexar y recuperar información. Esta indexación depende de la configuración y la sincronización entre la base de datos, la catalogación y el índice. Afortunadamente, ArchiHUB se encarga de todo esto automáticamente, permitiendo que te enfoques en usar la herramienta sin complicaciones.
 
