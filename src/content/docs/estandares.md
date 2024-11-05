@@ -26,7 +26,7 @@ Un campo tiene mínimo 4 opciones configurables:
 - __Destino__: esta es la ruta al interior del esquema de metadatos. Por defecto todos los destinos deben empezar con _metadata_, por ejemplo, la ruta por defecto para el título es _metadata.firstLevel.title_. De esta manera yo puedo tener el mismo campo, con el mismo tipo y destino en dos o más estándares distintos. Si intentas guardar un campo que ya ha sido configurado con cierto tipo no podrás guardarlo con uno distinto. Si quieres consultar el esquema completo de tus metadatos en la herramienta, puedes ir a la configuración del sistema.
 - __Requerido__: si el campo es requerido o no.
 
-Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. Mira la documentación detallada [acá](../campos).
+Un estándar de metadatos ofrece una lista de metadatos que se pueden personalizar según las necesidades específicas del tipo de contenido. Los tipos de campos disponibles son diversos y se adaptan a una amplia gama de posibilidades. Mira la documentación detallada [acá](./campos).
 
 ## Los tipos de contenido
 
