@@ -86,4 +86,4 @@ Usualmente la instalación puede tomar unos minutos. Cuando estés listo puedes 
 
 El usuario por defecto de esta instalación es __beta__ y la contraseña __beta__.
 
-Una vez estés listo podemos seguir con los [primeros pasos](./pasos) en ArchiHUB.
+Una vez estés listo podemos seguir con los [primeros pasos](../pasos) en ArchiHUB.
