@@ -71,7 +71,7 @@ Para validar que el índice de Elasticsearch haya iniciado correctamente, sigue 
 
 Dirígete nuevamente a la configuración del sistema en la interfaz de ArchiHUB. Busca la sección "Administración del índice" y verifica si la primera opción está activa. Si esta opción está activa, ¡enhorabuena! Ya tienes tu archivo conectado al índice, lo que significa que Elasticsearch está funcionando correctamente y puedes aprovechar las capacidades de búsqueda avanzada de ArchiHUB.
 
-Si la primera opción no está activa, es posible que haya ocurrido algún problema al iniciar el índice. En este caso, intenta resolver el problema consultando nuestra sección de [preguntas frecuentes](preguntas.md), donde se abordan algunos de los problemas comunes y sus soluciones. Si no encuentras la respuesta allí, te recomendamos preguntar en el [foro](https://github.com/orgs/Archihub-App/discussions) del aplicativo, donde la comunidad y los desarrolladores pueden ofrecerte ayuda y orientación para resolver cualquier inconveniente.
+Si la primera opción no está activa, es posible que haya ocurrido algún problema al iniciar el índice. En este caso, intenta resolver el problema consultando nuestra sección de [preguntas frecuentes](../preguntas), donde se abordan algunos de los problemas comunes y sus soluciones. Si no encuentras la respuesta allí, te recomendamos preguntar en el [foro](https://github.com/orgs/Archihub-App/discussions) del aplicativo, donde la comunidad y los desarrolladores pueden ofrecerte ayuda y orientación para resolver cualquier inconveniente.
 
 ### Iniciar la indexación
 
@@ -85,7 +85,7 @@ Una vez que el índice está generado y los recursos están indexados, ArchiHUB 
 
 ## Configuración de Nodos de Procesamiento
 
-Por defecto, nuestro archivo `docker-compose.yml` arranca un solo nodo de procesamiento dedicado a todas las tareas que no estén en una fila específica de procesamiento. Puedes saber más sobre las filas de procesamiento haciendo click [acá](nodos.md).
+Por defecto, nuestro archivo `docker-compose.yml` arranca un solo nodo de procesamiento dedicado a todas las tareas que no estén en una fila específica de procesamiento. Puedes saber más sobre las filas de procesamiento haciendo click [acá](../nodos).
 
 Sin embargo, si queremos [instalar nuevos plugins](install_plugin.md) que quizas usen procesamientos un poco más intensos, es necesario que modifiquemos ese archivo.
 

@@ -37,7 +37,7 @@ Es importante saber que los tipos de contenido tienen una jerarquía. Actualment
 
 Para crear una nueva __Unidad Documental__, primero debemos crear un __Fondo__ que la contenga. Sigue estos pasos:
 
-- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G. Puedes saber más sobre los estándares de metadatos [acá](estandares.md).
+- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G. Puedes saber más sobre los estándares de metadatos [acá](../estandares).
 - Rellenar el formulario: No te preocupes por todos los campos en este momento. Solo necesitas introducir un _Título_ para tu nuevo recurso de tipo __Fondo__.
 - Guardar el __Fondo__: Una vez que hayas introducido el _Título_, puedes guardar tu nuevo recurso de tipo __Fondo__.
 
