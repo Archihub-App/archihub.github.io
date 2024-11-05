@@ -4,11 +4,16 @@ description: ''
 ---
 
 ## [0.7.2] _beta_
+
+### HOTFIX
+- Se soluciona la validación de los campos número para que soporten decimales.
+
 ### Added
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Opciones avanzadas en el árbol de recursos.
 - Se agrega soporte para base de datos vectorial Qdrant.
+- Se agrega la descargar de los documentos asociados a un recurso en un .zip
 
 ### Fixed
 - Se agrega un timeout de 30s para la conexión de mongodb.
@@ -16,6 +21,7 @@ description: ''
 - El aplicativo solo limpia el cache al iniciar si el entorno es de desarrollo y no producción.
 - Al guardar un `record`, el sistema se asegura que los padres de ese documentos
  no esten repetidos en el campo `parent`.
+- Se arregla la paginas de los archivos para cada recurso, cambiando la paginación en función de si tiene o no agrupación por galería de imágenes.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
