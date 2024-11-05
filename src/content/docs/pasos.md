@@ -16,7 +16,7 @@ Esta es nuestra pantalla principal, donde pasarás la mayor parte del tiempo nav
 
 ![menu tipos de contenido](/archihub.github.io/imagenes/menu_tipos.png)
 
-En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](/estandares).
+En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](../estandares).
 
 Es importante saber que los tipos de contenido tienen una jerarquía. Actualmente estamos viendo __Unidad Documental__ y su jerarquía asociada es la siguiente:
 
