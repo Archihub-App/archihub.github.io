@@ -22,6 +22,7 @@ description: ''
 - Al guardar un `record`, el sistema se asegura que los padres de ese documentos
  no esten repetidos en el campo `parent`.
 - Se arregla la paginas de los archivos para cada recurso, cambiando la paginación en función de si tiene o no agrupación por galería de imágenes.
+- Se quita la petición a la base de datos que ralentizaba las peticiones del arbol de recursos.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
