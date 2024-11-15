@@ -3,17 +3,32 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.7.2] _beta_
+## [0.8] _beta_
 
 ### HOTFIX
-- Se soluciona la validación de los campos número para que soporten decimales.
 
 ### Added
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
-- Opciones avanzadas en el árbol de recursos.
-- Se agrega soporte para base de datos vectorial Qdrant.
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
+
+### Fixed
+- Se soluciona el cache al momento de obtener un listado de todos los plugins
+ 
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.7.2] _11 November 2024_
+
+### HOTFIX
+- Se soluciona la validación de los campos número para que soporten decimales.
+- Se soluciona None en el momento de cargar ajustes de plugins y que estos no existan. Si es el caso devuelve un {}.
+
+### Added
+- Se agrega soporte para base de datos vectorial Qdrant.
+- Los usuarios con rol `editor` ahora puede crear y editar listados.
+- Se agrega flujo de validación y aprobación de las tareas de catalogación.
+- Soporte para la versión 2.0 de la interfaz de administración.
 
 ### Fixed
 - Se agrega un timeout de 30s para la conexión de mongodb.
@@ -25,7 +40,6 @@ description: ''
 - Se quita la petición a la base de datos que ralentizaba las peticiones del arbol de recursos.
  
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 
 ## [0.7.1] _20 October 2024_
