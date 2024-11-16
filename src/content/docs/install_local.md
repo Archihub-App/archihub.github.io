@@ -7,8 +7,8 @@ Es importante destacar que existen requerimientos mínimos de hardware para pode
 
 | Descripción | Requerimientos |
 | ----------- | ----------- |
-| __Módulo de catalogación__: Esta funcionalidad permite catalogar y organizar nuevos recursos en base a un formulario descrito por el usuario. Los procesamientos deben estar límitados a uno al tiempo para evitar sobrecargar la máquina. | __8GB RAM__ |
-| __Búsqueda avanzada__ con cruces de información relacionada al procesamiento de texto, OCR, transcripción y etiquetado automático. | __32GB RAM__ (_16GB RAM es posible pero es necesario usar modelos de menor tamaño y capacidad en el caso de la transcripción automática_)|
+| __Módulo de catalogación__: Esta funcionalidad permite catalogar y organizar nuevos recursos en base a un formulario descrito por el usuario. Los procesamientos deben estar límitados a uno al tiempo para evitar sobrecargar la máquina. | __4GB RAM__ |
+| __Búsqueda avanzada__ con cruces de información relacionada al procesamiento de texto, OCR, transcripción y etiquetado automático. | __16GB RAM__|
 
 ## Instalación de Docker en la máquina
 
