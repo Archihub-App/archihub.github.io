@@ -3,14 +3,18 @@ title: Documentación ArchiHub
 description: Explora la documentación oficial de ArchiHub
 template: splash
 hero:
-  tagline: Bienvenido al centro de recursos para desarrolladores
+  tagline: Crea poderosos archivos digitales con ArchiHub
   image:
     file: ../../assets/logo_docu_archihub.png
     alt: Logo de ArchiHub
   actions:
-    - text: Instala ahora mismo
+    - text: Empieza ahora
       link: /archihub.github.io/install_local
-      icon: right-arrow
+      icon: rocket
+    - text: Ve el repositorio
+      link: https://github.com/Archihub-App/archihub.github.io
+      icon: github
+      variant: secondary
     - text: CHANGELOG
       link: /archihub.github.io/changelog
       variant: secondary
@@ -20,13 +24,10 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Próximos pasos	
 <CardGrid stagger>
-	<Card title="Guía de inicio rápido" icon="rocket">
-		Comienza a utilizar ArchiHub en minutos con nuestra guía paso a paso para nuevos usuarios.
-	</Card>
-	<Card title="Mejores prácticas" icon="star">
-		Aprende las mejores prácticas para sacar el máximo provecho de ArchiHub en tus proyectos.
-	</Card>
-	<Card title="Documentación oficial" icon="open-book">
-		Explora en profundidad todas las funcionalidades de ArchiHub en nuestra [documentación completa](/archihub.github.io/estandares).
-	</Card>
+  <Card title="Guía de inicio rápido" icon="rocket">
+    Comienza a utilizar ArchiHub en minutos con nuestra guía paso a paso para nuevos usuarios. [Instala ahora →](/archihub.github.io/install_local)
+  </Card>
+	<Card title="Estándares de metadatos" icon="star">
+    Crea facilmente distintos tipos de formularios para tu contenido. [Conoce los estándares de metadatos →](/archihub.github.io/estandares)
+  </Card>
 </CardGrid>
