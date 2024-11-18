@@ -8,13 +8,13 @@ export default defineConfig({
 	base: '/archihub.github.io/',
 	integrations: [
 		starlight({
-			title: 'ArchiHUB Docs',
+			title: 'Arhuhub',
 			logo: {
 				src: './src/assets/logo_docu_archihub.png',
 			},
 			favicon: '/favicon.ico',
 			social: {
-				github: 'https://github.com/Archihub-App/archihub.github.io',
+				github: 'https://github.com/Archihub-App',
 				instagram: 'https://www.instagram.com/archihub_app/',
 			},
 			sidebar: [
