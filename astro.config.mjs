@@ -8,7 +8,7 @@ export default defineConfig({
 	base: '/archihub.github.io/',
 	integrations: [
 		starlight({
-			title: 'Archihub',
+			title: 'ArchiHub',
 			logo: {
 				src: './src/assets/logo_docu_archihub.png',
 			},
