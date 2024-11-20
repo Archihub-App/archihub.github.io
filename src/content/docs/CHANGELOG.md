@@ -17,6 +17,7 @@ description: ''
 - Se soluciona el cache al momento de obtener un listado de todos los plugins
 - Se soluciona el procesamiento bulk cuando un tipo de recurso no tiene un padre seleccionado
 - Se agregan opciones de exportación en la nueva interfaz
+- Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
