@@ -12,12 +12,14 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
 - Se agrega la posibilidad de login con LDAP
+- Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
 
 ### Fixed
 - Se soluciona el cache al momento de obtener un listado de todos los plugins
 - Se soluciona el procesamiento bulk cuando un tipo de recurso no tiene un padre seleccionado
 - Se agregan opciones de exportación en la nueva interfaz
-- Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
+- Se arregla el titulo del label en los metadatos al devolver un select
+- Cuando se guarda un formulario (estandar de metadatos) el campo de Título siempre debe ser un campo de tipo texto
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
