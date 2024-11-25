@@ -13,6 +13,7 @@ description: ''
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
 - Se agrega la posibilidad de login con LDAP
 - Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
+- Se impolementa los campos condicionales para los de tipo texto (igual a, contiene a, distinto a) y los campos verdaderos falsos
 
 ### Fixed
 - Se soluciona el cache al momento de obtener un listado de todos los plugins
