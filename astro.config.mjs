@@ -19,6 +19,10 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'El proyecto',
+					slug: 'archihub',
+				},
+				{
 					label: 'CHANGELOG',
 					slug: 'changelog',
 				},
