@@ -3,8 +3,11 @@ title: 'Licencia'
 description: ''
 ---
 
-LA INTERFAZ DE ADMINISTRACIÓN NO ES DE CÓDIGO ABIERTO Y SE PUEDE DESCARGAR GRATUITAMENTE PARA USO NO COMERCIAL.
-Licencia CREATIVE COMMONS Atribución – No comercial – Sin Derivar
+## Licenciamiento
+
+Archihub se divide en varias partes. Por un lado un __backend__ de código abierto con lincencia del MIT descrita más abajo. Un __frontend__ de administración y puesta a público de la información que es de código propietario y con una licencia CREATIVE COMMONS Atribución – No comercial – Sin Derivar. Esta interfaz es de descarga gratuita para usos no comerciales. Para un licenciamiento comercial favor comunicarse con [BITSOL](https://www.instagram.com/bitsol.xyz/). Y finalmente tenemos un ecosistema de plugins disponibles, cada uno con un licenciamiento distinto.
+
+## Licencia
 
 LA LICENCIA DESCRITA A CONTINUACIÓN SOLO APLICA PARA EL BACKEND DEL APLICATIVO CON LA PERTINENTE ACLARACIÓN CON LOS PLUGINS.
 
