@@ -19,7 +19,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'El proyecto',
+					label: 'Conoce el proyecto',
 					slug: 'archihub',
 				},
 				{

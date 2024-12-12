@@ -13,14 +13,16 @@ description: ''
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
 - Se agrega la posibilidad de login con LDAP
 - Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
-- Se impolementa los campos condicionales para los de tipo texto (igual a, contiene a, distinto a) y los campos verdaderos falsos
+- Se implementa los campos condicionales para los de tipo texto (igual a, contiene a, distinto a) y los campos verdaderos falsos
+- Se agregan instrucciones a los campos de los estándares de metadatos
 
 ### Fixed
 - Se soluciona el cache al momento de obtener un listado de todos los plugins
 - Se soluciona el procesamiento bulk cuando un tipo de recurso no tiene un padre seleccionado
 - Se agregan opciones de exportación en la nueva interfaz
 - Se arregla el titulo del label en los metadatos al devolver un select
-- Cuando se guarda un formulario (estandar de metadatos) el campo de Título siempre debe ser un campo de tipo texto
+- Se agregan las tareas finalizadas al perfil del usuario además de un sistema de color para identificar el estado de manera más simple.
+- Cuando se guarda un formulario (estándar de metadatos) el campo de Título siempre debe ser un campo de tipo texto
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
