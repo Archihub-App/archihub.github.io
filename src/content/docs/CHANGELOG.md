@@ -23,6 +23,7 @@ description: ''
 - Se arregla el titulo del label en los metadatos al devolver un select
 - Se agregan las tareas finalizadas al perfil del usuario además de un sistema de color para identificar el estado de manera más simple.
 - Cuando se guarda un formulario (estándar de metadatos) el campo de Título siempre debe ser un campo de tipo texto
+- Se ajusta la visibilidad de las tareas cuando el usuario no es `team_lead`.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
