@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8] _beta_
+## [0.8.1] _beta_
 
 ### HOTFIX
 
@@ -11,6 +11,17 @@ description: ''
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
+
+### Fixed
+ 
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.8] _17 December 2024_
+
+### HOTFIX
+
+### Added
 - Se agrega la posibilidad de login con LDAP
 - Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
 - Se implementa los campos condicionales para los de tipo texto (igual a, contiene a, distinto a) y los campos verdaderos falsos
