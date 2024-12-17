@@ -22,6 +22,7 @@ description: ''
 ### HOTFIX
 
 ### Added
+- Los `requirements.txt` de las librerias ahora no tienen versionamiento, siempre busca y descarga la última versión
 - Se agrega la posibilidad de login con LDAP
 - Se implementa un nuevo campo múltiple para los estándares. Este campo permite generar listas de campos perzonalizados en los formularios
 - Se implementa los campos condicionales para los de tipo texto (igual a, contiene a, distinto a) y los campos verdaderos falsos
