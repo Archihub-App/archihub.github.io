@@ -11,6 +11,7 @@ description: ''
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip
+- Al devolver los recursos se agrega el campo `createdAt`
 
 ### Fixed
  

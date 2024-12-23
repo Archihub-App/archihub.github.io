@@ -5,13 +5,13 @@ description: ''
 
 ## 📚 ¿Qué es Archihub?
 
-Archihub es un aplicativo de código abierto colombiano que busca tejer narrativas a través de la sistematización de la información, ya sea con documentos institucionales, archivos históricos o datos naturales. 🌱
-Su objetivo es ayudar a los usuarios a comprender mejor los datos complejos y a ver las conexiones entre diferentes piezas de información. 🔍
+ArchiHUB es un aplicativo de código abierto colombiano que busca tejer narrativas a través de la sistematización de la información, ya sea con documentos institucionales, archivos históricos o datos naturales. 🌱
+Gracias a su alta flexibilidad, compatibilidad con servicios como S3 de AWS, ecosistema de plugins en Python y robusta gestión de bases de datos, ArchiHUB facilita la preservación digital a largo plazo. 🔍 Su objetivo es ayudar a los usuarios a comprender mejor los datos complejos y visualizar conexiones entre diferentes piezas de información. Aprende cómo funciona, descubre sus características clave y observa cómo puede transformar la forma en que administras y proteges tus archivos digitales.
 
 ## 🌿 Archihub y los archivos documentales
 
-Archihub es una herramienta flexible que permite organizar y adecuar archivos virtuales para su consulta en línea, a través de una API y permitir ejecutar una amplia gama de procesamientos tales como: transcripción automática, segmentación de documentos e imagenes, procesamientos de texto usando LLMs, NER, OCR entre muchos otros.
-La herramienta organiza la información y pone a disposición diversas maneras de consultar, bien sea usando búsqueda semática o palabra clave, filtros de catalogación o descripción automática de la información.
+ArchiHUB es una herramienta flexible que permite organizar y adecuar archivos virtuales para su consulta en línea, a través de una API, y ejecutar una amplia gama de procesamientos tales como: transcripción automática, segmentación de documentos e imágenes, procesamientos de texto usando LLMs, NER, OCR, entre muchos otros.
+Además, ArchiHUB ofrece la posibilidad de realizar copias de seguridad tanto en la nube como localmente, asegurando la integridad y preservación de los archivos digitales. La herramienta organiza la información y pone a disposición diversas maneras de consultar, ya sea usando búsqueda semántica o por palabra clave, filtros de catalogación o descripción automática de la información.
 
 ## 🌿 Archihub y la huerta hidropónica
 
