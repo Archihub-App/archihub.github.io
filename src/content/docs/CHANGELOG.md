@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.1] _beta_
+## [0.8.2] _beta_
 
 ### HOTFIX
 
@@ -17,6 +17,17 @@ description: ''
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.8.1] _20 December 2024_
+
+### HOTFIX
+
+### Added
+- Se agrega la posibilidad de ordenar los resultados por `Fecha del registro` o por el `Titulo` de cada registro en la vista de resultados.
+
+### Fixed
+ 
+### Security
 
 ## [0.8] _17 December 2024_
 
