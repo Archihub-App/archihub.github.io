@@ -11,7 +11,7 @@ Archihub se divide en varias partes. Por un lado un __backend__ de código abier
 
 LA LICENCIA DESCRITA A CONTINUACIÓN SOLO APLICA PARA EL BACKEND DEL APLICATIVO CON LA PERTINENTE ACLARACIÓN CON LOS PLUGINS.
 
-Copyright 2023-2024 Archihub, Author: Néstor Andrés Peña
+Copyright 2023-2025 Archihub, Author: Néstor Andrés Peña
 
 Se concede por la presente, de forma gratuita, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el "Software"), el permiso para manejar el Software sin restricciones, incluidos, entre otros, los derechos de usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a las que se les proporcione el Software hacer lo mismo, sujeto a las siguientes condiciones:
 
