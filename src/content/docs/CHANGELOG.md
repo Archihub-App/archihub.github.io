@@ -17,6 +17,7 @@ description: ''
 
 ### Fixed
 - Se agregan campos Verdaderos/Falsos al campo múltiple.
+- Se arreglan el ordenar por fecha y titulo en la vista pública de consulta.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
