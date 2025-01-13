@@ -16,6 +16,7 @@ description: ''
 - Se agrega la opción de recuperar contraseña.
 
 ### Fixed
+- Se agregan campos Verdaderos/Falsos al campo múltiple.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
