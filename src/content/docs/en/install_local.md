@@ -84,4 +84,4 @@ Press “Enter” and then copy and paste the command `docker compose up -d` and
 
 Usually the installation can take a few minutes. When you are ready you can go to the following link using your browser: [http://localhost/](http://localhost/)
 
-Once you are ready we can continue with the [first steps](../pasos) in ArchiHUB.
+Once you are ready we can continue with the [first steps](pasos) in ArchiHUB.
