@@ -18,7 +18,7 @@ ArchiHUB is a versatile web platform that uses a varied technological stack to o
 - __Backend:__ The backend of our application benefits from several open source projects. We use:
 <br> &nbsp;&nbsp; - __FFmpeg__: for file processing
 <br> &nbsp;&nbsp; - __Celery__: for the management of the processing queue, allowing a distributed and asynchronous execution of tasks.
-<br> &nbsp;&nbsp; - __Flask y Gunicorn__: to run the backend in parallel, ensuring optimal scalability and performance at all time.
+<br> &nbsp;&nbsp; - __Flask and Gunicorn__: to run the backend in parallel, ensuring optimal scalability and performance at all time.
 
 - __Frontend:__ Our application has a frontend developed using React.js.
 
