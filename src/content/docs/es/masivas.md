@@ -13,7 +13,7 @@ Para esta guía, realizaremos dos ejemplos con dos estructuras de información d
 
 ## Llave para la API de administración
 
-Para ejecutar este y otros scripts que administren el aplicativo, necesitas tener una llave de administración. Esta llave es esencial para interactuar con la API de administración de ArchiHUB. Conoce más sobre como generarla [acá](/perfil/llaves.md).
+Para ejecutar este y otros scripts que administren el aplicativo, necesitas tener una llave de administración. Esta llave es esencial para interactuar con la API de administración de ArchiHUB. Conoce más sobre como generarla [acá](../perfil/llaves).
 
 ## Descarga de los scripts
 

@@ -1,5 +1,5 @@
 ---
-title: 'Listado de funccionalidades'
+title: 'Listado de funcionalidades'
 description: ''
 ---
 
