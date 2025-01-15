@@ -13,7 +13,7 @@ If you are in the process of editing or creating new content, you will need to f
 
 In the ArchiHUB cataloging module, you manage and organize your content effectively. Let's explore the different sections of this interface to understand how it works and how to interact with it.
 
-![Side menu](/archihub.github.io/imagenes/catalogacion_izquierda.gif)
+![Side menu](/archihub.github.io/imagenes/catalogacion_izquierda.png)
 
 On the left side of the screen you find the main options of this section. Here you can create a new resource or download an inventory of existing resources. These actions allow you to maintain and update the database efficiently.
 

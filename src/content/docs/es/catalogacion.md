@@ -13,7 +13,7 @@ Si estás en la tarea de editar o crear nuevo contenido, tendrás que familiariz
 
 En el módulo de catalogación de ArchiHUB, gestionas y organizas tu contenido de manera efectiva. Vamos a explorar las diferentes secciones de esta interfaz para entender cómo funciona y cómo interactuar con ella.
 
-![Menu lateral](/archihub.github.io/imagenes/catalogacion_izquierda.gif)
+![Menu lateral](/archihub.github.io/imagenes/catalogacion_izquierda.png)
 
 En la parte izquierda de la pantalla encuentras las opciones principales de esta sección. Aquí puedes crear un nuevo recurso o descargar un inventario de los recursos existentes. Estas acciones te permiten mantener y actualizar la base de datos de manera eficiente.
 
