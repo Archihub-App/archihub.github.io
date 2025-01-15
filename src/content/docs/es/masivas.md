@@ -17,7 +17,7 @@ Para ejecutar este y otros scripts que administren el aplicativo, necesitas tene
 
 ## Descarga de los scripts
 
-Si ya seguiste la [guía de instalación en un máquina local](install_local.md), ya descargaste el [repositorio](https://github.com/Archihub-App/getting-started) que necesitamos. Si no, puedes clonar el repositorio o descargarlo [acá](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
+Si ya seguiste la [guía de instalación en un máquina local](../install_local), ya descargaste el [repositorio](https://github.com/Archihub-App/getting-started) que necesitamos. Si no, puedes clonar el repositorio o descargarlo [acá](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
 
 ```
 git clone https://github.com/Archihub-App/getting-started.git
