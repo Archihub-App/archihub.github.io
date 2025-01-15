@@ -17,6 +17,8 @@ description: ''
 
 ### Fixed
 - True/False fields are added to the multiple field.
+- Fixed sorting by date and title in the public query view.
+- Fixed the order when using elastic for keyword searches.
  
 ### Security
 - The access levels for image galleries are adjusted.
