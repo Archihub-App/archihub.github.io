@@ -38,6 +38,9 @@ ArchiHUB es una plataforma de documentación y recursos para arquitectos y profe
 │   ├── assets/
 │   ├── content/
 │   │   ├── docs/
+│   │   │   ├── en/
+│   │   │   ├── es/
+│   │   │   └── index.mdx
 │   │   └── config.ts
 │   └── env.d.ts
 ├── astro.config.mjs
@@ -60,7 +63,7 @@ ArchiHUB es una plataforma de documentación y recursos para arquitectos y profe
 
 Para agregar o modificar contenido de la documentación:
 
-1. Crea o edita archivos Markdown (.md) en la carpeta `src/content/docs/`.
+1. Crea o edita archivos Markdown (.md) en la carpeta `src/content/docs/[es/en]`. Por el momento la documentación está en español e inglés, por lo que se deben editar los archivos Markdown correspondientes en cada idioma.
 2. Utiliza la sintaxis de Markdown para formatear el contenido.
 3. Agrega imágenes en la carpeta `public/images/` y refiérete a ellas usando rutas relativas.
 
