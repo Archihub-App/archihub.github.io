@@ -13,11 +13,11 @@ Para esta guía, realizaremos dos ejemplos con dos estructuras de información d
 
 ## Llave para la API de administración
 
-Para ejecutar este y otros scripts que administren el aplicativo, necesitas tener una llave de administración. Esta llave es esencial para interactuar con la API de administración de ArchiHUB. Conoce más sobre como generarla [acá](/perfil/llaves.md).
+Para ejecutar este y otros scripts que administren el aplicativo, necesitas tener una llave de administración. Esta llave es esencial para interactuar con la API de administración de ArchiHUB. Conoce más sobre como generarla [acá](../perfil/llaves).
 
 ## Descarga de los scripts
 
-Si ya seguiste la [guía de instalación en un máquina local](install_local.md), ya descargaste el [repositorio](https://github.com/Archihub-App/getting-started) que necesitamos. Si no, puedes clonar el repositorio o descargarlo [acá](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
+Si ya seguiste la [guía de instalación en un máquina local](../install_local), ya descargaste el [repositorio](https://github.com/Archihub-App/getting-started) que necesitamos. Si no, puedes clonar el repositorio o descargarlo [acá](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
 
 ```
 git clone https://github.com/Archihub-App/getting-started.git

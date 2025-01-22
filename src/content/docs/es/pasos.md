@@ -122,4 +122,4 @@ De esta manera, cada vez que subas o actualices un recurso de tipo __Unidad Docu
 - __Explora más__: Te animamos a seguir explorando el resto de la documentación para descubrir todas las posibilidades que ArchiHUB ofrece.
 - __Experimenta__: No dudes en seguir "cacharreando" con tu archivo. La mejor manera de aprender y familiarizarse con la herramienta es experimentando con sus diferentes funcionalidades.
 
-¡Buena suerte con tu archivo y diviértete explorando ArchiHUB ❤️!
+¡Buena suerte con tu archivo y diviértete explorando ArchiHub ❤️!
