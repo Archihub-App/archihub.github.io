@@ -14,11 +14,15 @@ description: ''
 - Se agrega la posibilidad de descarga los documentos originales o procesados para cada archivo individual.
 - Se agrega el registro de usuario público.
 - Se agrega la opción de recuperar contraseña.
+- Se agrega la posibilidad de eliminar los zips generados desde el panel de administracion.
 
 ### Fixed
 - Se agregan campos Verdaderos/Falsos al campo múltiple.
+- Se agregan campos Area de texto al campo múltiple.
 - Se arreglan el ordenar por fecha y titulo en la vista pública de consulta.
 - Se arregla el orden cuando se usa elastic para las búsquedas por palabras clave.
+- Se arregla el acceso a los records desde un perfil publico si y solo si el archivo tiene los permisos publicos.
+- Se arregla la carga inicial para la busqueda publica cuando no esta `page` en el body de la request.
  
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
