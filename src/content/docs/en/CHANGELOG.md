@@ -14,11 +14,15 @@ description: ''
 - The possibility of downloading original or processed documents for each individual file has been added.
 - Added public user registration.
 - Password recovery option has been added.
+- The ability to delete generated ZIPs from the administration panel is added.
 
 ### Fixed
 - True/False fields are added to the multiple field.
-- Fixed sorting by date and title in the public query view.
-- Fixed the order when using elastic for keyword searches.
+- Text area fields are added to the multiple field.
+- Sorting by date and title is fixed in the public query view.
+- Sorting is fixed when using Elasticsearch for keyword searches.
+- Access to records from a public profile is fixed if and only if the file has public permissions.
+- The initial load for the public search is fixed when page is not in the body of the request.
  
 ### Security
 - The access levels for image galleries are adjusted.
