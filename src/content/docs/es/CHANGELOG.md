@@ -3,13 +3,18 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.2] _beta_
-
-### HOTFIX
+## [0.8.3] _beta_
 
 ### Added
 - Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.8.2] _21 January 2025_
+
+### Added
 - Se agrega la descargar de los documentos asociados a un recurso en un .zip, en este caso solo se habilita la descarga para los archivos asociados directamente a un recurso.
 - Se agrega la posibilidad de descarga los documentos originales o procesados para cada archivo individual.
 - Se agrega el registro de usuario público.
@@ -23,9 +28,7 @@ description: ''
 - Se arregla el orden cuando se usa elastic para las búsquedas por palabras clave.
 - Se arregla el acceso a los records desde un perfil publico si y solo si el archivo tiene los permisos publicos.
 - Se arregla la carga inicial para la busqueda publica cuando no esta `page` en el body de la request.
- 
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
+
 
 ## [0.8.1] _20 December 2024_
 

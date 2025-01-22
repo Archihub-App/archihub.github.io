@@ -3,13 +3,18 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.2] _beta_
-
-### HOTFIX
+## [0.8.3] _beta_
 
 ### Added
 - The possibility is added for plugins to define their responsibilities. That is to say, a plugin can be responsible for the indexing of the processing it executes. The processing flow is implemented in the tool to launch these responsibilities automatically when loading or updating a resource.
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.8.2] _21 January 2025_
+
+### Added
 - It is now possible to download the documents associated to a resource in a .zip file, in this case only the download is enabled for the files directly associated to a resource.
 - The possibility of downloading original or processed documents for each individual file has been added.
 - Added public user registration.
@@ -23,9 +28,6 @@ description: ''
 - Sorting is fixed when using Elasticsearch for keyword searches.
 - Access to records from a public profile is fixed if and only if the file has public permissions.
 - The initial load for the public search is fixed when page is not in the body of the request.
- 
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.8.1] _20 December 2024_
 
