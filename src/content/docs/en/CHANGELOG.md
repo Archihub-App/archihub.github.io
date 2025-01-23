@@ -8,6 +8,10 @@ description: ''
 ### Added
 - The possibility is added for plugins to define their responsibilities. That is to say, a plugin can be responsible for the indexing of the processing it executes. The processing flow is implemented in the tool to launch these responsibilities automatically when loading or updating a resource.
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
+- The ability to delete generated ZIPs from the administration panel is added.
+
+### Fixed
+- The ability for an administrator to delete users is added.
 
 ### Security
 - The access levels for image galleries are adjusted.
@@ -19,7 +23,7 @@ description: ''
 - The possibility of downloading original or processed documents for each individual file has been added.
 - Added public user registration.
 - Password recovery option has been added.
-- The ability to delete generated ZIPs from the administration panel is added.
+- The application now automatically creates default configuration fields if they do not exist in the database.
 
 ### Fixed
 - True/False fields are added to the multiple field.
