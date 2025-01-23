@@ -12,6 +12,7 @@ description: ''
 
 ### Fixed
 - Se agrega la posibilidad de eliminar los usuarios por un administrador.
+- Cuando no hay contenido ya no se queda la animación de cargando.
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
