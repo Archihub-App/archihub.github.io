@@ -9,11 +9,11 @@ description: ''
 - The possibility is added for plugins to define their responsibilities. That is to say, a plugin can be responsible for the indexing of the processing it executes. The processing flow is implemented in the tool to launch these responsibilities automatically when loading or updating a resource.
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to delete generated ZIPs from the administration panel is added.
+- Dark mode for the UI.
 
 ### Fixed
 - The ability for an administrator to delete users is added.
 - The loading animation no longer persists when there is no content.
-- Dark mode for the UI.
 
 ### Security
 - The access levels for image galleries are adjusted.
