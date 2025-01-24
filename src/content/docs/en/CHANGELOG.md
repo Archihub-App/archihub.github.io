@@ -13,6 +13,7 @@ description: ''
 ### Fixed
 - The ability for an administrator to delete users is added.
 - The loading animation no longer persists when there is no content.
+- Dark mode for the UI.
 
 ### Security
 - The access levels for image galleries are adjusted.
