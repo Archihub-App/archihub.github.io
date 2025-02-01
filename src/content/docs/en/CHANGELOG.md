@@ -10,6 +10,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to delete generated ZIPs from the administration panel is added.
 - Dark mode for the UI.
+- Public downloads of inventory files is now available for public users.
 
 ### Fixed
 - The ability for an administrator to delete users is added.
