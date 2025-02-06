@@ -3,11 +3,17 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.3] _beta_
+## [0.8.4] _beta_
 
 ### Added
-- Se agrega la posibilidad a los plugins de definir sus responsabilidades. Es decir, un plugin puede tener como responsabilidad la indexación de los procesamientos que ejecuta. Se implementa el flujo de procesamiento en la herramienta para lanzar estas responsabilidades automaticamente al momento de carga o actualización de un recurso.
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.8.3] _6 February 2024_
+
+### Added
 - Se agrega la posibilidad de eliminar los zips generados desde el panel de administracion.
 - Modo oscuro en la interfaz.
 - Se habilita la descarga de inventarios desde la interfaz pública del aplicativo.
@@ -15,9 +21,6 @@ description: ''
 ### Fixed
 - Se agrega la posibilidad de eliminar los usuarios por un administrador.
 - Cuando no hay contenido ya no se queda la animación de cargando.
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.8.2] _21 January 2025_
 

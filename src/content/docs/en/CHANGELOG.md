@@ -6,8 +6,14 @@ description: ''
 ## [0.8.3] _beta_
 
 ### Added
-- The possibility is added for plugins to define their responsibilities. That is to say, a plugin can be responsible for the indexing of the processing it executes. The processing flow is implemented in the tool to launch these responsibilities automatically when loading or updating a resource.
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.8.3] _6 February 2024_
+
+### Added
 - The ability to delete generated ZIPs from the administration panel is added.
 - Dark mode for the UI.
 - Public downloads of inventory files is now available for public users.
@@ -16,8 +22,6 @@ description: ''
 - The ability for an administrator to delete users is added.
 - The loading animation no longer persists when there is no content.
 
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.8.2] _21 January 2025_
 
