@@ -17,6 +17,7 @@ description: ''
 - Se agrega la posibilidad de eliminar los zips generados desde el panel de administracion.
 - Modo oscuro en la interfaz.
 - Se habilita la descarga de inventarios desde la interfaz pública del aplicativo.
+- Documentacion en Swagger
 
 ### Fixed
 - Se agrega la posibilidad de eliminar los usuarios por un administrador.
