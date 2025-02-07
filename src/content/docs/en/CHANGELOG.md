@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.3] _beta_
+## [0.8.4] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -17,6 +17,7 @@ description: ''
 - The ability to delete generated ZIPs from the administration panel is added.
 - Dark mode for the UI.
 - Public downloads of inventory files is now available for public users.
+- Swagger docs support
 
 ### Fixed
 - The ability for an administrator to delete users is added.
