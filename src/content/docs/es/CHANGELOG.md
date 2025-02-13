@@ -5,6 +5,9 @@ description: ''
 
 ## [0.8.4] _beta_
 
+### Fixed
+- El archivo `config.json` del frontend ahora permite configurar la URL de la API
+
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Soporte de español e inglés para el aplicativo

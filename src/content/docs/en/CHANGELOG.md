@@ -5,6 +5,9 @@ description: ''
 
 ## [0.8.4] _beta_
 
+### Fixed
+- The `config.json` file of the frontend now allows configuring the API URL.
+
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Support for spanish and english for the entire app
