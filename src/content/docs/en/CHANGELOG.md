@@ -13,6 +13,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Support for spanish and english for the entire app
 - The possibility of deleting generated inventories is added so that new ones can be created.
+From bulk processing for plugins, it can be executed for all content types.
 
 ### Security
 - The access levels for image galleries are adjusted.
