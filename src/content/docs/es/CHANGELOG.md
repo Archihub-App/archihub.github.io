@@ -7,6 +7,7 @@ description: ''
 
 ### Fixed
 - El archivo `config.json` del frontend ahora permite configurar la URL de la API
+- Se ajustan detalles para la versión oscura de la interfaz en las opciones de mi perfil y al formulario de catalogación
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
