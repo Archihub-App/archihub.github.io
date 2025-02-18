@@ -14,6 +14,7 @@ description: ''
 - Soporte de español e inglés para el aplicativo
 - Se agrega la posibilidad de eliminar los inventarios generados para que se generen nuevos
 - Desde el procesamiento masivo para los complementos se puede ejecutar para todos los tipos de contenido
+- Nueva vista `Panel de control` para los complementos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
