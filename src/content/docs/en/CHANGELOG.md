@@ -8,6 +8,7 @@ description: ''
 ### Fixed
 - The `config.json` file of the frontend now allows configuring the API URL.
 - Details are being adjusted for the dark mode version of the interface in the "My Profile" options and the cataloging form.
+- Resource tree now show drafts if user is authorized
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -16,6 +17,7 @@ description: ''
 - From bulk processing for plugins, it can be executed for all content types.
 - New `Control Panel` view for plugins
 - Fixes to dark mode of the UI
+- Added the ability to reorder lists
 
 ### Security
 - The access levels for image galleries are adjusted.
