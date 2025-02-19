@@ -19,16 +19,12 @@ description: ''
 - El árbol de recursos ahora muestra los borradores si el usuario tiene los permisos
 
 ### Added
-- Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Soporte de español e inglés para el aplicativo
 - Se agrega la posibilidad de eliminar los inventarios generados para que se generen nuevos
 - Desde el procesamiento masivo para los complementos se puede ejecutar para todos los tipos de contenido
 - Nueva vista `Panel de control` para los complementos
 - Arreglos varios a la vista oscura de la interfaz
 - Se agrega la posibilidad de reordenar los listados
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.8.3] _6 February 2024_
 
