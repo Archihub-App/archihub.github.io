@@ -33,6 +33,18 @@ If you want to start a node focused on high, medium and low intensity tasks, you
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
+#### Processing nodes for tasks that require GPU
+
+For tasks that require the use of a GPU such as automatic transcription, it is necessary to add two additional parameters to the start command of the processing node:
+
+```
+CUDA_VISIBLE_DEVICES=0 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO -P solo
+```
+
+If you prefer to use the machine's environment variables, you can define the `CUDA_VISIBLE_DEVICES` variable in the machine's `.env` file and assign it the value `0`. This will allow the processing node to use the machine's GPU 0.
+
+If the machine has more than one GPU, you can define the `CUDA_VISIBLE_DEVICES` variable with the indexes of the GPUs you want to use. For example, if you want to use GPUs 0 and 1, you must define the `CUDA_VISIBLE_DEVICES` variable with the value `0,1`.
+
 ### Configure the number of tasks executed by each node
 
 Each node is capable of running multiple tasks concurrently. By default, ArchiHub configures the system so that each node only runs one task at a time. This setting can be changed through the environment variables of each node.

@@ -33,6 +33,18 @@ Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensida
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
+#### Nodos de procesamiento para tareas que requieren GPU
+
+Para tareas que requieren el uso de GPU como la transcripción automática, es necesario agregar dos parametros adicionales al comando de inicio del nodo de procesamiento:
+
+```
+CUDA_VISIBLE_DEVICES=0 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO -P solo
+```
+
+Si prefieres usar las variables de entorno de la máquina, puedes definir la variable `CUDA_VISIBLE_DEVICES` en el archivo `.env` de la máquina y asignarle el valor `0`. Esto permitirá que el nodo de procesamiento utilice la GPU 0 de la máquina.
+
+En caso de que la máquina tenga más de una GPU, puedes definir la variable `CUDA_VISIBLE_DEVICES` con los índices de las GPUs que quieres utilizar. Por ejemplo, si quieres utilizar las GPUs 0 y 1, debes definir la variable `CUDA_VISIBLE_DEVICES` con el valor `0,1`.
+
 ### Configurar el número de tareas que ejecta cada nodo
 
 Cada nodo es capaz de ejecutar múltiples tareas de manera concurrente. Por defecto, ArchiHub configura el sistema para que cada nodo solo ejecute una tarea a la vez. Esta configuración puede cambiarse a través de las variables de entorno de cada nodo.
