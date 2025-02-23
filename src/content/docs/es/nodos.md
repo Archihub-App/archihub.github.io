@@ -33,7 +33,7 @@ Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensida
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
-#### Nodos de procesamiento para tareas que requieren GPU
+### Nodos de procesamiento para tareas que requieren GPU
 
 Para tareas que requieren el uso de GPU como la transcripción automática, es necesario agregar dos parametros adicionales al comando de inicio del nodo de procesamiento:
 

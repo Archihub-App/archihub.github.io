@@ -33,7 +33,7 @@ If you want to start a node focused on high, medium and low intensity tasks, you
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
-#### Processing nodes for tasks that require GPU
+### Processing nodes for tasks that require GPU
 
 For tasks that require the use of a GPU such as automatic transcription, it is necessary to add two additional parameters to the start command of the processing node:
 
