@@ -53,3 +53,16 @@ Cada nodo es capaz de ejecutar múltiples tareas de manera concurrente. Por defe
 CELERYD_CONCURRENCY=1
 ```
 Se recomienda realizar pruebas y validar la capacidad de la máquina para las tareas específicas que se quieren ejecutar. Por ejemplo, un nodo encargado de las tareas del sistema puede manejar entre 10 y 20 tareas simultáneamente, dependiendo de la máquina que se esté utilizando. Sin embargo, para nodos encargados de tareas con mayor intensidad se recomienda no ejecutar más de una tarea a la vez.
+
+### En caso de problemas
+
+En caso de que el nodo de procesamiento se detenga y sea necesario reiniciarlo, esto puede suceder al ejecutar el módulo de transcripción o procesamiento intensivo que no use GPU:
+
+```
+docker ps
+# listado de contenedores para validar el nombre del worker
+
+docker compose stop <nombre del contenedor>
+
+docker compose up -d
+```

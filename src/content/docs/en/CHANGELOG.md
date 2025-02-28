@@ -3,7 +3,15 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.4] _beta_
+## [0.8.5] _beta_
+
+### Added
+- The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.8.4] _19 February 2025_
 
 ### Fixed
 - The `config.json` file of the frontend now allows configuring the API URL.
@@ -11,16 +19,12 @@ description: ''
 - Resource tree now show drafts if user is authorized
 
 ### Added
-- The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Support for spanish and english for the entire app
 - The possibility of deleting generated inventories is added so that new ones can be created.
 - From bulk processing for plugins, it can be executed for all content types.
 - New `Control Panel` view for plugins
 - Fixes to dark mode of the UI
 - Added the ability to reorder lists
-
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.8.3] _6 February 2024_
 

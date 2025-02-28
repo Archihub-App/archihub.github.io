@@ -7,6 +7,7 @@ description: ''
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
+- Nuevo servicio que devuelve los ajustes generales del aplicativo de cara a mostrar opciones en la interfaz
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
