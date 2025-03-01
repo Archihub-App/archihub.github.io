@@ -53,3 +53,16 @@ Each node is capable of running multiple tasks concurrently. By default, ArchiHu
 CELERYD_CONCURRENCY=1
 ```
 It is recommended to test and validate the machine's capacity for the specific tasks to be executed. For example, a node in charge of system tasks can handle between 10 and 20 tasks simultaneously, depending on the machine being used. However, for nodes in charge of more intensive tasks, it is recommended not to run more than one task at a time.
+
+### In Case of Issues
+
+If the processing node stops and needs to be restarted, this may happen when running the transcription module or intensive processing that does not use the GPU:
+
+```
+docker ps  
+# List containers to verify the worker's name  
+
+docker compose stop <container name>  
+
+docker compose up -d  
+```
