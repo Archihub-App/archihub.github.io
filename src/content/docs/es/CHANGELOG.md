@@ -11,6 +11,9 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
 
+### Fixed
+- Se soluciona problema de pagina en la vista de los recursos para los archivos.
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
