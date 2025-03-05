@@ -13,6 +13,7 @@ description: ''
 
 ### Fixed
 - Pagination issue in the resource view for the records.
+- Solved chunks reading for the stream to blob for audios and video.
 
 ### Security
 - The access levels for image galleries are adjusted.

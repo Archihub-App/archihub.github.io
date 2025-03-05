@@ -13,6 +13,7 @@ description: ''
 
 ### Fixed
 - Se soluciona problema de pagina en la vista de los recursos para los archivos.
+- Se soluciona lectura de los chunks del stream para convertir a un blob en la vista de video y audio
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
