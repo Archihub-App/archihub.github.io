@@ -9,6 +9,10 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - New service that returns the application's general settings for displaying options in the interface.
 - The ability to sort results using more fields from the forms.
+- Support for LLMs APIs
+
+### Fixed
+- Pagination issue in the resource view for the records.
 
 ### Security
 - The access levels for image galleries are adjusted.
