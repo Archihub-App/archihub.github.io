@@ -242,7 +242,7 @@ export default defineConfig({
               translations: {
                 en: 'Audio and video transcription'
               },
-              link: '/transcribeWhisperX'
+              link: '/transcribe'
             }
           ]
         },
