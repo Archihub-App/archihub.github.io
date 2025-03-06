@@ -11,7 +11,7 @@ Esto es muy útil no solo para balancear la carga entre varias máquinas sino ta
 
 Inicialmente, todas las tareas que se agregan a la fila de procesos en ArchiHub tienen la misma carga de procesamiento. No obstante, ArchiHub permite la implementación de procesamientos de mayor complejidad que podrían requerir una configuración diferente, como por ejemplo una máquina con acceso a una GPU para procesamientos más intensivos.
 
-En estos casos, es posible desplegar un nodo de procesamiento en esa máquina, dedicado exclusivamente a las tareas de mayor intensidad. Un ejemplo de esto es el plugin para la [transcripción automática](https://github.com/Archihub-App/transcribeWhisperX), que utiliza el modelo Whisper de OpenAI.
+En estos casos, es posible desplegar un nodo de procesamiento en esa máquina, dedicado exclusivamente a las tareas de mayor intensidad. Un ejemplo de esto es el plugin para la [transcripción automática](../transcribe), que utiliza el modelo Whisper de OpenAI.
 
 Este procesamiento se ejecuta solamente en las máquinas que estén corriendo un nodo de procesamiento para la fila `high`. Si en el momento en que ejecutas la tarea no existe un nodo encargado de estas tareas, la tarea quedará pausada hasta que haya uno en línea que le permita continuar.
 

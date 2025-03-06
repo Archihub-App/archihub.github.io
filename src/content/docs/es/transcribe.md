@@ -12,7 +12,7 @@ El plugin de transcripción automática de ArchiHub utiliza el modelo Whisper de
 
 2. **Instalación del plugin**: para instalar el plugin de transcripción automática, debes clonar el [repositorio del plugin](https://github.com/Archihub-App/transcribeWhisperX.git) en la carpeta `plugins` del aplicativo siguiendo los pasoos indicados en la sección de [instalación de plugins](../install_plugin).
 
-3. **Configuración del token de Hugging Face**: el plugin ofrece la opción de generar la transcripción “plana” de la voz o de separar los parlantes identificados en el audio. Para usar la segunda opción es importante tener una cuenta en [huggingface](https://huggingface.co/) y crear un token para hacer uso del modelo de separación de parlantes:
+3. **Configuración del token de Hugging Face**: el plugin ofrece la opción de generar la transcripción “plana” de la voz o de separar los parlantes identificados en el audio. Para usar la segunda opción es importante tener una cuenta en [Hugging Face](https://huggingface.co/) y crear un token para hacer uso del modelo de separación de parlantes:
 
     - Una vez creada la cuenta, debes ir a los ajustes de tu perfil y luego a Access Tokens. También puedes acceder a [ajustes](https://huggingface.co/settings/tokens) (debes haber iniciado sesión en la cuenta).
     - En la página de tokens de acceso haz clic en el botón “Create new token”.

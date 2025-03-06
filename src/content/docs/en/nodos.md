@@ -11,7 +11,7 @@ This is very useful not only to balance the load between several machines but al
 
 Initially, all tasks that are added to the process queue in ArchiHub have the same processing load. However, ArchiHub allows the implementation of more complex processing that might require a different configuration, such as a machine with access to a GPU for more intensive processing.
 
-In these cases, it is possible to deploy a processing node on that machine, dedicated exclusively to the most intensive tasks. An example of this is the plugin for [automatic transcription](https://github.com/Archihub-App/transcribeWhisperX), which uses OpenAI's Whisper model.
+In these cases, it is possible to deploy a processing node on that machine, dedicated exclusively to the most intensive tasks. An example of this is the plugin for [automatic transcription](../transcribe), which uses OpenAI's Whisper model.
 
 This processing is executed only on machines that are running a processing node for the `high` queue. If at the time you run the task there is no node in charge of these tasks, the task will be paused until there is one online that allows it to continue.
 
