@@ -232,6 +232,21 @@ export default defineConfig({
           ]
         },
         {
+          label: 'Plugins disponibles',
+          translations: {
+            en: 'Available plugins'
+          },
+          items: [
+            {
+              label: 'Transcripción de audio y video',
+              translations: {
+                en: 'Audio and video transcription'
+              },
+              link: '/transcribeWhisperX'
+            }
+          ]
+        },
+        {
           label: 'Licencia y código de conducta',
           translations: {
             en: 'License and code of conduct'
