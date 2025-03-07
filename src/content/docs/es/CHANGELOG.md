@@ -10,10 +10,12 @@ description: ''
 - Nuevo servicio que devuelve los ajustes generales del aplicativo de cara a mostrar opciones en la interfaz.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
+- Los plugins ahora pueden definir acciones que son botones que aparecen en ciertos lugares del aplicativo para ejecutar acciones específicas
 
 ### Fixed
 - Se soluciona problema de pagina en la vista de los recursos para los archivos.
 - Se soluciona lectura de los chunks del stream para convertir a un blob en la vista de video y audio
+- Se agregan valores por defecto a los ajustes del sistema
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

@@ -10,10 +10,12 @@ description: ''
 - New service that returns the application's general settings for displaying options in the interface.
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
+- Plugins can now define actions that are buttons appearing in certain places within the application to perform specific tasks
 
 ### Fixed
 - Pagination issue in the resource view for the records.
 - Solved chunks reading for the stream to blob for audios and video.
+- Added default values for system settings
 
 ### Security
 - The access levels for image galleries are adjusted.
