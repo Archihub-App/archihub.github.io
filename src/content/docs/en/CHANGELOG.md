@@ -11,6 +11,7 @@ description: ''
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
 - Plugins can now define actions that are buttons appearing in certain places within the application to perform specific tasks
+- The ability to edit transcriptions for videos or audios has been added. Transcriptions allow editing of the transcribed text as well as the speaker's name if processing is available.
 
 ### Fixed
 - Pagination issue in the resource view for the records.

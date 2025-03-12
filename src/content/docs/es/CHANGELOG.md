@@ -11,6 +11,7 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
 - Los plugins ahora pueden definir acciones que son botones que aparecen en ciertos lugares del aplicativo para ejecutar acciones específicas
+- Se agrega la posibilidad de editar las transcripciones para videos o para audios. Las transcripciones permiten editar el texto transcrito asi como el nombre del parlante si existe el procesamiento
 
 ### Fixed
 - Se soluciona problema de pagina en la vista de los recursos para los archivos.
