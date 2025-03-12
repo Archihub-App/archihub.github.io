@@ -264,7 +264,7 @@ export default defineConfig({
                 en: 'Video download'
               },
               link: '/video_download'
-            }
+            },
             {
               label: 'Transcripción de audio y video',
               translations: {
