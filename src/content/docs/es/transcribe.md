@@ -35,6 +35,8 @@ docker compose up --no-deps -d archihub_flask_backend
 
 ## Uso del plugin
 
+### Uso desde la vista de procesamientos
+
 Una vez reiniciado, accede a la interfaz de Archihub y ve a la pestaña de procesamientos. Si el plugin de transcripción no está habilitado, debes habilitarlo desde la pestaña de ajustes y luego reiniciar el aplicativo con los comandos indicaos en el paso anterior.
 
 Es importante que la [fila de procesamiento](../nodos/#las-filas-de-procesos) requerida para ejecutar tareas del plugin se haya iniciado.
@@ -48,3 +50,15 @@ Una vez en el plugin, selecciona los archivos que quieres transcribir y configur
 - **Tamaño del modelo**: selecciona el tamaño del modelo a utilizar. El tamaño del modelo afecta la calidad de la transcripción y el tiempo de procesamiento.
 
 - **Idioma de la transcripción**: selecciona el idioma del audio a transcribir. Por defecto, el idioma está en automático, por lo que el modelo intentará identificar el idioma del audio.
+
+### Uso desde la vista de archivos en el módulo de catalogación
+
+El plugin también puede ser utilizado desde la vista de archivos en el módulo de catalogación. Para ello, selecciona los archivos de audio o video a transcribir y en la opción de `Acciones` selecciona selecciona `Transcribir con Whisper`. Se mostrará una ventana emergente con las opciones de configuración del plugin. Configura las opciones y haz clic en el botón `OK` para iniciar el proceso de transcripción:
+
+![Transcripción de archivos con WhisperX](/archihub.github.io/imagenes/transcribe_cat.gif)
+
+## Visualización de los resultados de la transcripción
+
+Una vez finalizado el proceso de transcripción, puedes visualizar los resultados desde el módulo de catalogación. Para ello, selecciona el archivo y selecciona `Transcripción automática` en el listado de procesamientos. Además, si se quiere descargar el archivo de transcripción, se puede hacer desde la opción de `Acciones` en la vista de archivos seleccionando la opción `Descargar transcripción`. Archihub permite descargar las transcripciones en formato `.pdf`, `.doc` o `.srt`:
+
+![Visualización de transcripciones en Archihub](/archihub.github.io/imagenes/download_transcription.gif)

@@ -34,16 +34,27 @@ docker compose up --no-deps -d archihub_flask_backend
 
 ## Using the plugin
 
-Once restarted, access the Archihub interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
+### Using from the processing view
 
-It is important that the [required processing row](../nodos/#the-process-queues) to run plugin tasks has been started.
+Once restarted, access the ArchiHub interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
+
+It is important that the [processing row](../nodos/#the-process-queues) required to execute plugin tasks has been started.
 
 Once in the plugin, select the files you want to transcribe and configure the plugin options:
 
 - **Overwrite existing processes**: if this option is enabled, the plugin will overwrite existing transcription files.
-
 - **Separate speakers**: the option to separate speakers enabled uses the token configured in the previous steps of this guide. Its use requires having configured the token.
-
 - **Model size**: select the model size to use. The model size affects the quality of the transcription and the processing time.
-
 - **Transcription language**: select the language of the audio to transcribe. By default, the language is set to automatic, so the model will try to identify the language of the audio.
+
+### Using from the file view in the cataloging module
+
+The plugin can also be used from the file view in the cataloging module. To do this, select the audio or video files to transcribe and in the `Actions` option select `Transcribe with Whisper`. A popup window will appear with the plugin configuration options. Configure the options and click the `OK` button to start the transcription process:
+
+![Transcription of files with WhisperX](/archihub.github.io/imagenes/transcribe_cat.gif)
+
+## Viewing the transcription results
+
+Once the transcription process is complete, you can view the results in the file view in the cataloging module. The transcription files will be displayed in the file list with the transcription icon. Click on the transcription icon to view the transcription text. You can also download the transcription file by clicking on the download icon. The transcription files can be downloaded in formats such as `.pdf`, `.doc`, or `.srt`.
+
+![Viewing transcription results in ArchiHub](/archihub.github.io/imagenes/download_transcription.gif)

@@ -259,18 +259,18 @@ export default defineConfig({
               link: '/massive_updater'
             },
             {
-              label: 'Transcripción de audio y video',
-              translations: {
-                en: 'Audio and video transcription'
-              },
-              link: '/transcribe'
-            },
-            {
               label: 'Descarga de videos',
               translations: {
                 en: 'Video download'
               },
               link: '/video_download'
+            }
+            {
+              label: 'Transcripción de audio y video',
+              translations: {
+                en: 'Audio and video transcription'
+              },
+              link: '/transcribe'
             }
           ]
         },
