@@ -238,11 +238,25 @@ export default defineConfig({
           },
           items: [
             {
+              label: 'Procesamiento de archivos',
+              translations: {
+                en: 'File processing'
+              },
+              link: '/file_processing'
+            },
+            {
               label: 'Transcripción de audio y video',
               translations: {
                 en: 'Audio and video transcription'
               },
               link: '/transcribe'
+            },
+            {
+              label: 'Descarga de videos',
+              translations: {
+                en: 'Video download'
+              },
+              link: '/video_download'
             }
           ]
         },
