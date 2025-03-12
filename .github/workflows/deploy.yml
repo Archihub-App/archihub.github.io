@@ -24,7 +24,7 @@ jobs:
         uses: withastro/action@v3
         with:
         #   path: /docs
-          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          node-version: 18.20.6
           package-manager: npm # The package manager that should be used to install your site’s dependencies. Defaults to npm. (optional)
 
   deploy:
