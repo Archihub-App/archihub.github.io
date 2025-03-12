@@ -245,6 +245,20 @@ export default defineConfig({
               link: '/file_processing'
             },
             {
+              label: 'Generador de inventarios',
+              translations: {
+                en: 'Inventory maker'
+              },
+              link: '/inventory_maker'
+            },
+            {
+              label: 'Actualización masiva de recursos',
+              translations: {
+                en: 'Massive updater of resources'
+              },
+              link: '/massive_updater'
+            },
+            {
               label: 'Transcripción de audio y video',
               translations: {
                 en: 'Audio and video transcription'
