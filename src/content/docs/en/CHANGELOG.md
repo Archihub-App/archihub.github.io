@@ -17,6 +17,8 @@ description: ''
 - Pagination issue in the resource view for the records.
 - Solved chunks reading for the stream to blob for audios and video.
 - Added default values for system settings
+- Fixed portrait/landscape mode for video player
+- Pagination fixed for users tasks
 
 ### Security
 - The access levels for image galleries are adjusted.

@@ -17,6 +17,7 @@ description: ''
 - Se soluciona problema de pagina en la vista de los recursos para los archivos.
 - Se soluciona lectura de los chunks del stream para convertir a un blob en la vista de video y audio
 - Se agregan valores por defecto a los ajustes del sistema
+- Se soluciona la vista horizontal/vertical para los videos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
