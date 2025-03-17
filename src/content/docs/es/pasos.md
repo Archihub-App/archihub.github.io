@@ -69,9 +69,7 @@ Esta es la vista detalle de tu recurso, donde puedes encontrar la información g
 
 - ![Miga de pan](/archihub.github.io/imagenes/miga.png)<br>__Miga de pan (breadcrumbs):__ En la esquina superior izquierda, verás la miga de pan que muestra la jerarquía de la información. Como puedes ver, tu recurso es hijo del __Fondo__ que creamos al inicio. Esto te ayuda a entender la estructura y ubicación de tu recurso dentro del archivo.
 
-- ![Menu detail](/archihub.github.io/imagenes/menu_detail.png)<br>__Botones de navegación:__ En la parte izquierda de la pantalla, encontrarás los botones para:
-    - Volver al Módulo de Catalogación
-    - Editar el recurso actual
+- ![Menu detail](/archihub.github.io/imagenes/menu_detail.png)<br>__Botones de navegación:__ En la parte izquierda de la pantalla, siempre encontrarás los botones para acceder a los diferentes módulos de ArchiHUB. Desde aquí, puedes navegar a la página principal, Procesamientos,Usuarios, Configuración o a la ventana de inicio del módulo de catalogación.
 
 - ![Vista principal detalle](/archihub.github.io/imagenes/main_detail.png)<br>__Información del recurso:__ La parte principal de la pantalla muestra toda la información asociada a tu recurso, incluyendo:
     - Metadatos: Detalles específicos sobre tu recurso siguiendo el estándar ISAD-G.
@@ -95,7 +93,7 @@ Tenemos dos opciones disponibles, por ahora vamos a __Procesamiento masivo__ y y
 - __Seleccionar recursos específicos:__ Si seleccionas uno o más recursos específicos, el procesamiento se ejecutará solo en esos recursos seleccionados.
 - __Opciones del procesamiento:__ A la derecha se ven las opciones que están disponibles para el procesamiento. En nuestro caso, el plugin de Procesamiento de Archivos permite sobreescribir versiones antiguas de las versiones web de los documentos.
 
-Podemos seleccionar el recurso que acabamos de crear e iniciar el procesamiento. Una vez haces click e inicias el procesamiento puedes dirigirte a tu perfil en el apartado __Mis procesamientos__:
+Podemos seleccionar el recurso que acabamos de crear e iniciar el procesamiento. Una vez haces click e inicias el procesamiento puedes dirigirte a tu perfil en el apartado __Tareas del sistema__:
 
 ![Menu procesamientos](/archihub.github.io/imagenes/menu_procesamientos.png)
 
