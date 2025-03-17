@@ -58,3 +58,15 @@ The plugin can also be used from the file view in the cataloging module. To do t
 Once the transcription process is complete, you can view the results in the file view in the cataloging module. The transcription files will be displayed in the file list with the transcription icon. Click on the transcription icon to view the transcription text. You can also download the transcription file by clicking on the download icon. The transcription files can be downloaded in formats such as `.pdf`, `.doc`, or `.srt`.
 
 ![Viewing transcription results in ArchiHub](/archihub.github.io/imagenes/download_transcription.gif)
+
+## Editing transcripts
+
+After a transcript is generated, it is possible to edit it from the file view in the cataloging module. There are two editing options:
+
+- **Speakers edition**: if the transcript was generated with the option to separate speakers, it is possible to edit the names of the speakers by selecting the `Edit speakers` option in the edit transcript option:
+  
+![Edit speakers in ArchiHub](/archihub.github.io/imagenes/edit_speakers.gif)
+
+- **Transcript edition**: it is possible to edit the content of the transcript by selecting the `Edit transcript` option. To do this, select the text segment you want to edit and modify the content and the speaker if necessary. Once you have finished editing, click the `Save` button to save the changes:
+
+![Edit transcript in ArchiHub](/archihub.github.io/imagenes/edit_transcription.gif)

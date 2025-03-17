@@ -62,3 +62,17 @@ El plugin también puede ser utilizado desde la vista de archivos en el módulo 
 Una vez finalizado el proceso de transcripción, puedes visualizar los resultados desde el módulo de catalogación. Para ello, selecciona el archivo y selecciona `Transcripción automática` en el listado de procesamientos. Además, si se quiere descargar el archivo de transcripción, se puede hacer desde la opción de `Acciones` en la vista de archivos seleccionando la opción `Descargar transcripción`. Archihub permite descargar las transcripciones en formato `.pdf`, `.doc` o `.srt`:
 
 ![Visualización de transcripciones en Archihub](/archihub.github.io/imagenes/download_transcription.gif)
+
+
+
+## Edición de transcripciones
+
+Luego de generada una transcripción, es posible editarla desde la vista de archivos en el módulo de catalogación. Hay dos opciones de edición:
+
+- **Edición de oradores**: si la transcripción fue generada con la opción de separar parlantes, es posible editar los nombres de los oradores seleccionando la opción `Editar oradores` en la opción de editar la transcripción:
+
+![Edición de oradores en Archihub](/archihub.github.io/imagenes/edit_speakers.gif)
+
+- **Edición de transcripción**: es posible editar el contenido de la transcripción seleccionando la opción `Editar transcripción`. Para esto, selecciona el segmento de texto que quieres editar y modifica el contenido y el orador en caso de ser necesario. Una vez finalizada la edición, haz clic en el botón `Guardar` para guardar los cambios:
+
+![Edición de transcripción en Archihub](/archihub.github.io/imagenes/edit_transcription.gif)
