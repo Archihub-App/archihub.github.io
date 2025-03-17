@@ -20,6 +20,7 @@ description: ''
 - Fixed portrait/landscape mode for video player
 - Pagination fixed for users tasks
 - A user must have one of the three system roles: `editor`, `admin` or `user`
+- Speaker dialog can be activated or deactivated from the actions panel
 
 ### Security
 - The access levels for image galleries are adjusted.
