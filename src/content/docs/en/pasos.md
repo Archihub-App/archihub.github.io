@@ -69,9 +69,7 @@ This is the detail view of your resource, where you can find the general informa
 
 - ![Breadcrumbs](/archihub.github.io/imagenes/miga.png)<br>__Breadcrumbs:__ In the upper left corner, you will see the breadcrumb that shows the hierarchy of information. As you can see, your resource is a child of the __Fond__ we created at the beginning. This helps you understand the structure and location of your resource within the file.
 
-- ![Menu detail](/archihub.github.io/imagenes/menu_detail.png)<br>__Navigation buttons:__ On the left side of the screen, you will find the buttons for:
-    - Return to the Cataloging Module
-    - Edit the current resource
+- ![Menu detail](/archihub.github.io/imagenes/menu_detail.png)<br>__Navigation buttons:__ On the left side of the screen, you'll always find buttons to access the different ArchiHUB modules. From here, you can navigate to the main page, Processing, Users, Settings, or the cataloging module's home window.
 
 - ![Main view detail](/archihub.github.io/imagenes/main_detail.png)<br>__Resource information:__ The main part of the screen displays all the information associated with your resource, including:
     - Metadata: Specific details about your resource following the ISAD-G standard.
