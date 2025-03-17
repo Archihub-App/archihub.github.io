@@ -18,6 +18,8 @@ description: ''
 - Se soluciona lectura de los chunks del stream para convertir a un blob en la vista de video y audio
 - Se agregan valores por defecto a los ajustes del sistema
 - Se soluciona la vista horizontal/vertical para los videos
+- Se soluciona el pagina de las tareas de catalogación
+- Se valida que un usuario siempre tenga uno de los tres roles del sistema: `editor`, `admin` o `user`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

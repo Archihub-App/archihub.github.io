@@ -19,6 +19,7 @@ description: ''
 - Added default values for system settings
 - Fixed portrait/landscape mode for video player
 - Pagination fixed for users tasks
+- A user must have one of the three system roles: `editor`, `admin` or `user`
 
 ### Security
 - The access levels for image galleries are adjusted.
