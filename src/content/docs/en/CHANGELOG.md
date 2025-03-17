@@ -3,13 +3,20 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.5] _beta_
+## [0.9] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- New service that returns the application's general settings for displaying options in the interface.
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.8.5] _17 March 2025_
+
+### Added
+- New service that returns the application's general settings for displaying options in the interface.
 - Plugins can now define actions that are buttons appearing in certain places within the application to perform specific tasks
 - The ability to edit transcriptions for videos or audios has been added. Transcriptions allow editing of the transcribed text as well as the speaker's name if processing is available.
 
@@ -21,9 +28,6 @@ description: ''
 - Pagination fixed for users tasks
 - A user must have one of the three system roles: `editor`, `admin` or `user`
 - Speaker dialog can be activated or deactivated from the actions panel
-
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.8.4] _19 February 2025_
 

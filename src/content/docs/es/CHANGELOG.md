@@ -3,13 +3,20 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.8.5] _beta_
+## [0.9] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
-- Nuevo servicio que devuelve los ajustes generales del aplicativo de cara a mostrar opciones en la interfaz.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.8.5] _17 March 2025_
+
+### Added
+- Nuevo servicio que devuelve los ajustes generales del aplicativo de cara a mostrar opciones en la interfaz.
 - Los plugins ahora pueden definir acciones que son botones que aparecen en ciertos lugares del aplicativo para ejecutar acciones específicas
 - Se agrega la posibilidad de editar las transcripciones para videos o para audios. Las transcripciones permiten editar el texto transcrito asi como el nombre del parlante si existe el procesamiento
 
@@ -20,9 +27,7 @@ description: ''
 - Se soluciona la vista horizontal/vertical para los videos
 - Se soluciona el pagina de las tareas de catalogación
 - Se valida que un usuario siempre tenga uno de los tres roles del sistema: `editor`, `admin` o `user`
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
+- Se ajusta la vista del listado de oradores con los botones de acciones
 
 ## [0.8.4] _19 February 2025_
 
