@@ -13,6 +13,12 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
+## [0.8.6] _beta_
+
+### Added
+- Nuevos ajustes para el reproductor (velocidad y avance rápido)
+- Borrar tareas que se quedaron pendientes
+
 ## [0.8.5] _17 March 2025_
 
 ### Added
