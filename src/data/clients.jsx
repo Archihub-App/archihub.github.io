@@ -4,11 +4,11 @@ export const clients = [
       logo: '/archihub.github.io/logos/agn.png',
       link: 'https://dataviva.archivogeneral.gov.co/'
     },
-    {
-      name: 'Comisión de la verdad',
-      logo: '/archihub.github.io/logos/comisionverdad.png',
-      link: 'https://www.comisiondelaverdad.co/'
-    },
+    // {
+    //   name: 'Comisión de la verdad',
+    //   logo: '/archihub.github.io/logos/comisionverdad.png',
+    //   link: 'https://www.comisiondelaverdad.co/'
+    // },
     {
       name: 'Centro nacional de memoria histórica',
       logo: '/archihub.github.io/logos/cnmh.png',
