@@ -20,6 +20,7 @@ description: ''
 - Delete task that are pending
 - Added actions to the resource page
 - Added `FileProcessing`action to resource view
+- Added support for user tasks at the record level
 
 ## [0.8.5] _17 March 2025_
 
