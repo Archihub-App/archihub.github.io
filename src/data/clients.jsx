@@ -18,5 +18,10 @@ export const clients = [
       name: 'Museo Afro',
       logo: '/archihub.github.io/logos/museoafro.png',
       link: 'https://www.museoafro.gov.co/'
+    },
+    {
+      name: 'JEP',
+      logo: '/archihub.github.io/logos/jep.jpg',
+      link: 'https://www.jep.gov.co/Paginas/Inicio.aspx'
     }
   ];
