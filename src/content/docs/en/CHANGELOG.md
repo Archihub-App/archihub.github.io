@@ -16,7 +16,7 @@ description: ''
 ## [0.8.6] _beta_
 
 ### Added
-- New player settings (speed and fast forward)
+- New player settings (speed and fast forward) for audio and video
 - Delete task that are pending
 
 ## [0.8.5] _17 March 2025_

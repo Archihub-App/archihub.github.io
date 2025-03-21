@@ -16,7 +16,7 @@ description: ''
 ## [0.8.6] _beta_
 
 ### Added
-- Nuevos ajustes para el reproductor (velocidad y avance rápido)
+- Nuevos ajustes para el reproductor (velocidad y avance rápido) para audio y video
 - Borrar tareas que se quedaron pendientes
 
 ## [0.8.5] _17 March 2025_
