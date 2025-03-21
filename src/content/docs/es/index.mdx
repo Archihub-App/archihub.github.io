@@ -35,6 +35,8 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import '../../../styles/clients.css';
+import { clients } from '../../../data/clients.jsx';
 
 ## Próximos pasos	
 <CardGrid stagger>
@@ -48,3 +50,15 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo. [Conoce las guías en video →](https://www.youtube.com/watch?v=XrH0VRjUpys&list=PLzh6tCpowSeuJ7QOqjVL_lM5ASIcBdQXu)
   </Card>
 </CardGrid>
+
+## ¿Quienes han confiado en Archihub?
+
+Este desarrollo se beneficia de la experiencia en la administración de archivos de diversas entidades públicas en Colombia. A todas estas entidades y los equipos que las conformaron, un agradecimiento especial por hacerlo posible, por aportar su conocimiento y sus comentarios para probar y mejorar el aplicativo.
+
+<section className="clients">
+  {clients.map((client) => (
+    <a key={client.name} href={client.link} target="_blank" rel="noopener noreferrer" className="client">
+      <img src={client.logo} alt={client.name} />
+    </a>
+  ))}
+</section>
