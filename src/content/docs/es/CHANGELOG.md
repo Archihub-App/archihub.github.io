@@ -18,6 +18,8 @@ description: ''
 ### Added
 - Nuevos ajustes para el reproductor (velocidad y avance rápido) para audio y video
 - Borrar tareas que se quedaron pendientes
+- Se agregan acciones a la vista de los recursos
+- Se agrega la acción de `FileProcessing` en la vista de un recurso
 
 ## [0.8.5] _17 March 2025_
 

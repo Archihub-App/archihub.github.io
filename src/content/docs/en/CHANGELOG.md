@@ -18,6 +18,8 @@ description: ''
 ### Added
 - New player settings (speed and fast forward) for audio and video
 - Delete task that are pending
+- Added actions to the resource page
+- Added `FileProcessing`action to resource view
 
 ## [0.8.5] _17 March 2025_
 
