@@ -13,7 +13,7 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.8.6]_24 March 2025_
+## [0.8.6] _26 March 2025_
 
 ### Added
 - Nuevos ajustes para el reproductor (velocidad y avance rápido) para audio y video
