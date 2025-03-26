@@ -22,6 +22,9 @@ description: ''
 - Se agrega la acción de `FileProcessing` en la vista de un recurso
 - Se implementan las tareas de catalogación a nivel de archivo
 
+### Fixed
+- La variable de entorno para el ELASTIC_DOMAIN ahora debe tener `http` o `https`
+
 ## [0.8.5] _17 March 2025_
 
 ### Added

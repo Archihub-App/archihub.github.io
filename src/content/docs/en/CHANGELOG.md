@@ -13,7 +13,7 @@ description: ''
 ### Security
 - The access levels for image galleries are adjusted.
 
-## [0.8.6] _24 March 2025_
+## [0.8.6] _26 March 2025_
 
 ### Added
 - New player settings (speed and fast forward) for audio and video
@@ -21,6 +21,9 @@ description: ''
 - Added actions to the resource page
 - Added `FileProcessing`action to resource view
 - Added support for user tasks at the record level
+
+### Fixed
+- Environment variable ELASTIC_DOMAIN now must have `http` or `https`
 
 ## [0.8.5] _17 March 2025_
 
