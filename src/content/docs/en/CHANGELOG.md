@@ -13,7 +13,7 @@ description: ''
 ### Security
 - The access levels for image galleries are adjusted.
 
-## [0.8.6] _beta_
+## [0.8.6] _24 March 2025_
 
 ### Added
 - New player settings (speed and fast forward) for audio and video

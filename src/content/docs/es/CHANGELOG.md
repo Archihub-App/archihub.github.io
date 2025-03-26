@@ -13,13 +13,14 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.8.6] _beta_
+## [0.8.6]_24 March 2025_
 
 ### Added
 - Nuevos ajustes para el reproductor (velocidad y avance rápido) para audio y video
 - Borrar tareas que se quedaron pendientes
 - Se agregan acciones a la vista de los recursos
 - Se agrega la acción de `FileProcessing` en la vista de un recurso
+- Se implementan las tareas de catalogación a nivel de archivo
 
 ## [0.8.5] _17 March 2025_
 
