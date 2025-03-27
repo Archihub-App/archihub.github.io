@@ -10,6 +10,9 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
 
+### Fixed
+- Se soluciona error al exportar los formularios para los campos sin `instrucciones`
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 

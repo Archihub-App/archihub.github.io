@@ -10,6 +10,9 @@ description: ''
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
 
+### Fixed
+- Fixed error while exporting forms with fields without `instructions`
+
 ### Security
 - The access levels for image galleries are adjusted.
 
