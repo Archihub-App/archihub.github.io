@@ -232,6 +232,21 @@ export default defineConfig({
           ]
         },
         {
+          label: 'Guías para desarrolladores',
+          translations: {
+            en: 'Guides for developers'
+          },
+          items: [
+            {
+              label: 'Guía para crear un plugin',
+              translations: {
+                en: 'Guide to create a plugin'
+              },
+              link: '/crear_plugin'
+            }
+          ]
+        },
+        {
           label: 'Plugins disponibles',
           translations: {
             en: 'Available plugins'
