@@ -16,6 +16,12 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
+## [0.8.7] _beta_
+
+### Fixed
+- Nuevo rol del sistema `transcriber` para editar las transcripciones sin necesidad del rol `editor`
+- Se agregan mensaje de progreso a la vista de tareas del sistema
+
 ## [0.8.6] _26 March 2025_
 
 ### Added
