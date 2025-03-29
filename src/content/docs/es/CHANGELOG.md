@@ -20,7 +20,8 @@ description: ''
 
 ### Fixed
 - Nuevo rol del sistema `transcriber` para editar las transcripciones sin necesidad del rol `editor`
-- Se agregan mensajes de progreso a la vista de tareas del sistema
+- Se agregan mensajes de progreso a la vista de tareas del sistema para cualquier procesamiento
+- Se ajusta la vista de ventanas arrastrables para que cada vez que se haga click, la ventana seleccionada suba encima del resto
 
 ### Added
 - Se agrega mensaje y barra de progreso a los procesamientos de archivo

@@ -21,6 +21,7 @@ description: ''
 ### Fixed
 - New system rol `transcriber` for editing transcriptions without the need for rol `editor`
 - Added progress messages to task result view for all processings
+- The draggable windows view is adjusted so that each time a window is clicked, the selected window moves to the top of the stack
 
 ### Added
 - Added message and progress bar to file processing plugin
