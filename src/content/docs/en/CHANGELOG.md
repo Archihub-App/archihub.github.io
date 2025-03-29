@@ -20,7 +20,10 @@ description: ''
 
 ### Fixed
 - New system rol `transcriber` for editing transcriptions without the need for rol `editor`
-- Added progress messages to task result view
+- Added progress messages to task result view for all processings
+
+### Added
+- Added message and progress bar to file processing plugin
 
 ## [0.8.6] _26 March 2025_
 
