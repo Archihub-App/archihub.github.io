@@ -16,7 +16,7 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.8.7] _beta_
+## [0.8.7] _31 March 2025_
 
 ### Fixed
 - Nuevo rol del sistema `transcriber` para editar las transcripciones sin necesidad del rol `editor`
@@ -25,6 +25,7 @@ description: ''
 
 ### Added
 - Se agrega mensaje y barra de progreso a los procesamientos de archivo
+- Nuevas opciones para los ajustes de reproduccion de videos y audios
 
 ## [0.8.6] _26 March 2025_
 

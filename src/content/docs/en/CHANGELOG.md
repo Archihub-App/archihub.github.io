@@ -16,7 +16,7 @@ description: ''
 ### Security
 - The access levels for image galleries are adjusted.
 
-## [0.8.7] _beta_
+## [0.8.7] _31 March 2025_
 
 ### Fixed
 - New system rol `transcriber` for editing transcriptions without the need for rol `editor`
@@ -25,6 +25,7 @@ description: ''
 
 ### Added
 - Added message and progress bar to file processing plugin
+- New options for audio an video playback
 
 ## [0.8.6] _26 March 2025_
 
