@@ -16,6 +16,11 @@ description: ''
 ### Security
 - The access levels for image galleries are adjusted.
 
+## [0.8.8] _beta_
+
+### Fixed
+- The issue with system settings in the indexing section has been resolved. The "Regenerate" button was leading to a broken link in the backend. To fix this, delete the entry with ID `index_management` from the `system` collection in the database and restart the backend.
+
 ## [0.8.7] _31 March 2025_
 
 ### Fixed
