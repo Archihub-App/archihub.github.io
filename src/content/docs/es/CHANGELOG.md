@@ -16,7 +16,7 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.8.8] _beta_
+## [0.8.8] _1 April 2025_
 
 ### Fixed
 - Se soluciona error con los ajustes del sistema en la parte de indexación. El botón regenerar llevaba a un enlace roto en el backend. Para solucionar, borrar la entrada con id `index_management` en la colección `system` de la base de datos y reiniciar el backend.
