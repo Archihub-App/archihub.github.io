@@ -20,6 +20,8 @@ description: ''
 
 ### Fixed
 - Se soluciona error con los ajustes del sistema en la parte de indexación. El botón regenerar llevaba a un enlace roto en el backend. Para solucionar, borrar la entrada con id `index_management` en la colección `system` de la base de datos y reiniciar el backend.
+- Se actualiza la versión de python en el Dockerfile
+- Se actualiza la tarea de indexación para que omita el campo `createdAt` si este no existe en el registro. Esto para brindar compatibilidad con versiones viejas de la base de datos de Archihub.
 
 ## [0.8.7] _31 March 2025_
 
