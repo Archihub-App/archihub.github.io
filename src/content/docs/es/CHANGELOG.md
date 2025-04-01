@@ -24,6 +24,9 @@ description: ''
 - Se actualiza la tarea de indexación para que omita el campo `createdAt` si este no existe en el registro. Esto para brindar compatibilidad con versiones viejas de la base de datos de Archihub.
 - Se soluciona problema al generar los tokens para los usuarios que no son `beta`
 
+### Added
+- Se agrega un mensaje de resultado para los procesamientos de indexación
+
 ## [0.8.7] _31 March 2025_
 
 ### Fixed

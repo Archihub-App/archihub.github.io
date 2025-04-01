@@ -24,6 +24,9 @@ description: ''
 - The indexing task has been updated to omit the `createdAt` field if it does not exist in the record. This ensures compatibility with older versions of the ArchiHUB database.
 - The issue with generating tokens for users who are not beta has been resolved.
 
+### Added
+- A result message has been added for indexing processes
+
 ## [0.8.7] _31 March 2025_
 
 ### Fixed
