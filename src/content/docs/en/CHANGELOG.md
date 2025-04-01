@@ -22,6 +22,7 @@ description: ''
 - The issue with system settings in the indexing section has been resolved. The "Regenerate" button was leading to a broken link in the backend. To fix this, delete the entry with ID `index_management` from the `system` collection in the database and restart the backend.
 - Python version updated in the Dockerfile
 - The indexing task has been updated to omit the `createdAt` field if it does not exist in the record. This ensures compatibility with older versions of the ArchiHUB database.
+- The issue with generating tokens for users who are not beta has been resolved.
 
 ## [0.8.7] _31 March 2025_
 
