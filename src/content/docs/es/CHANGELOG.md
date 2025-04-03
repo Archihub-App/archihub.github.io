@@ -9,9 +9,11 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
+- Opción de activar/desactivar la descarga de documentos en el aplicativo
 
 ### Fixed
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`
+- Se soluciona error con el servicio de las acciones
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

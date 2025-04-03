@@ -9,9 +9,11 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
+- Added an option to enable/disable document downloads in the application
 
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
+- The issue with the actions service has been resolved
 
 ### Security
 - The access levels for image galleries are adjusted.
