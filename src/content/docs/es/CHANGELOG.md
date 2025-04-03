@@ -10,6 +10,7 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
 - Opción de activar/desactivar la descarga de documentos en el aplicativo
+- Se agrega la posibilidad de implementar una unidad para los campos número
 
 ### Fixed
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`

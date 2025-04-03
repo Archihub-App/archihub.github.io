@@ -10,6 +10,7 @@ description: ''
 - The ability to sort results using more fields from the forms.
 - Support for LLMs APIs
 - Added an option to enable/disable document downloads in the application
+- Added the ability to implement a unit for numeric fields
 
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
