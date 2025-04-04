@@ -10,7 +10,10 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Soporte para APIs de LLMs
 - Opción de activar/desactivar la descarga de documentos en el aplicativo
-- Se agrega la posibilidad de implementar una unidad para los campos número
+- Se agrega la posibilidad de implementar una unidad para los campos 
+- Se agregan nuevos filtros de saturación e invertir el color
+- Se agrega la posibilidad de girar las imágenes
+- Se agrega la caja de filtros a la vista de documentos
 
 ### Fixed
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`
