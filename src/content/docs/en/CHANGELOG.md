@@ -11,6 +11,9 @@ description: ''
 - Support for LLMs APIs
 - Added an option to enable/disable document downloads in the application
 - Added the ability to implement a unit for numeric fields
+- New filters for saturation and color inversion have been added  
+- Image rotation functionality has been implemented  
+- The filter box has been added to the document view
 
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
