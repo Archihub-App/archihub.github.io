@@ -20,6 +20,7 @@ description: ''
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
 - The issue with the actions service has been resolved
+- Multiple windows for files can now be open simultaneously
 
 ### Security
 - The access levels for image galleries are adjusted.

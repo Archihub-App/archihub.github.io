@@ -14,10 +14,13 @@ description: ''
 - Se agregan nuevos filtros de saturación e invertir el color
 - Se agrega la posibilidad de girar las imágenes
 - Se agrega la caja de filtros a la vista de documentos
+- Se agrega la información de los usuarios que envían las tareas
+- Se agregan los parametros de las funciones de las tareas para obtener detalles de los recursos sobre los cuales se ejecta
 
 ### Fixed
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`
 - Se soluciona error con el servicio de las acciones
+- Las ventanas sobre los archivos ahora pueden ser varias al tiempo
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
