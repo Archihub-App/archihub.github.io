@@ -21,6 +21,7 @@ description: ''
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`
 - Se soluciona error con el servicio de las acciones
 - Las ventanas sobre los archivos ahora pueden ser varias al tiempo
+- Un usuario `transcriber` no puede guardar cambios de una transcripción si no tiene una tarea asignada en esa transcripción
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

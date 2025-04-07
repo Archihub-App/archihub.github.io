@@ -21,6 +21,7 @@ description: ''
 - Fixed error while exporting forms with fields without `instructions`
 - The issue with the actions service has been resolved
 - Multiple windows for files can now be open simultaneously
+- A `transcriber` user cannot save changes to a transcription unless they have an assigned task for that transcription
 
 ### Security
 - The access levels for image galleries are adjusted.
