@@ -14,6 +14,8 @@ description: ''
 - New filters for saturation and color inversion have been added  
 - Image rotation functionality has been implemented  
 - The filter box has been added to the document view
+- Added information about the users who submit tasks  
+- Added task function parameters to retrieve details about the resources on which they are executed
 
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
