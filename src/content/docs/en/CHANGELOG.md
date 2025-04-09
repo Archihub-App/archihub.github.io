@@ -17,6 +17,7 @@ description: ''
 - Added information about the users who submit tasks  
 - Added task function parameters to retrieve details about the resources on which they are executed
 - AI assistants have been added to the audio/video transcription feature
+- New `llm` role added for users who can engage in conversations with the AI
 
 ### Fixed
 - Fixed error while exporting forms with fields without `instructions`
