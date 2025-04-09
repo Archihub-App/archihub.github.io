@@ -16,6 +16,7 @@ description: ''
 - Se agrega la caja de filtros a la vista de documentos
 - Se agrega la información de los usuarios que envían las tareas
 - Se agregan los parametros de las funciones de las tareas para obtener detalles de los recursos sobre los cuales se ejecta
+- Se agrega asistentes de IA a la transcripción de audio/video
 
 ### Fixed
 - Se soluciona error al exportar los formularios para los campos sin `instrucciones`
