@@ -3,11 +3,18 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9] _beta_
+## [0.9.1] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.9] _10 April 2025_
+
+### Added
 - Support for LLMs APIs
 - Added an option to enable/disable document downloads in the application
 - Added the ability to implement a unit for numeric fields
@@ -24,9 +31,6 @@ description: ''
 - The issue with the actions service has been resolved
 - Multiple windows for files can now be open simultaneously
 - A `transcriber` user cannot save changes to a transcription unless they have an assigned task for that transcription
-
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.8.8] _1 April 2025_
 

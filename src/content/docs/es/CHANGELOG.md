@@ -3,19 +3,26 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9] _beta_
+## [0.9.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9] _10 April 2025_
+
+### Added
 - Soporte para APIs de LLMs
 - Opción de activar/desactivar la descarga de documentos en el aplicativo
-- Se agrega la posibilidad de implementar una unidad para los campos 
+- Se agrega la posibilidad de implementar una unidad para los campos número
 - Se agregan nuevos filtros de saturación e invertir el color
 - Se agrega la posibilidad de girar las imágenes
 - Se agrega la caja de filtros a la vista de documentos
 - Se agrega la información de los usuarios que envían las tareas
-- Se agregan los parametros de las funciones de las tareas para obtener detalles de los recursos sobre los cuales se ejecta
+- Se agregan los parametros de las funciones de las tareas para obtener detalles de los recursos sobre los cuales se ejecuta
 - Se agrega asistentes de IA a la transcripción de audio/video
 - Nuevo rol `llm` para los usuarios que puedan tener conversaciones con la IA
 
@@ -24,9 +31,6 @@ description: ''
 - Se soluciona error con el servicio de las acciones
 - Las ventanas sobre los archivos ahora pueden ser varias al tiempo
 - Un usuario `transcriber` no puede guardar cambios de una transcripción si no tiene una tarea asignada en esa transcripción
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.8.8] _1 April 2025_
 
