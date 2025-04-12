@@ -9,6 +9,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
 - Error message added when the plugin for downloading inventories is not active.
+- Added the ability to edit transcription text directly in place. Clicking on the text now makes it editable and no longer controls video playback.
 
 ### Security
 - The access levels for image galleries are adjusted.
