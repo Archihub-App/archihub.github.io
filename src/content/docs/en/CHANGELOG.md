@@ -10,6 +10,7 @@ description: ''
 - The ability to sort results using more fields from the forms.
 - Error message added when the plugin for downloading inventories is not active.
 - Added the ability to edit transcription text directly in place. Clicking on the text now makes it editable and no longer controls video playback.
+- Added MARKDOWN support for transcriptions and AI chats.
 
 ### Security
 - The access levels for image galleries are adjusted.

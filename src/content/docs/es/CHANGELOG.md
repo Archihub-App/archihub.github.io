@@ -10,6 +10,7 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Mensaje de error cuando el plugin para descargar los inventarios no está activo.
 - Se agrega la posibilidad de editar el texto de la transcripción directamente sobre el texto, al hacer click el texto se vuelve editable y ya no maneja la reproducción del video.
+- Se agrega soporte MARKDOWN para las transcripciones y los chats con IA
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
