@@ -11,6 +11,7 @@ description: ''
 - Mensaje de error cuando el plugin para descargar los inventarios no está activo.
 - Se agrega la posibilidad de editar el texto de la transcripción directamente sobre el texto, al hacer click el texto se vuelve editable y ya no maneja la reproducción del video.
 - Se agrega soporte MARKDOWN para las transcripciones y los chats con IA
+- Se agrega Google como uno de los proveedores de API LLMs
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
