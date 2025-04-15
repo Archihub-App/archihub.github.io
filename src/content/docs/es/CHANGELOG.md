@@ -13,6 +13,10 @@ description: ''
 - Se agrega soporte MARKDOWN para las transcripciones y los chats con IA
 - Se agrega Google como uno de los proveedores de API LLMs
 
+### Fixed
+- El rol `transcriber` puede enviar tareas a revisión
+- El árbol de recursos muestra correctamente los recursos asociados en borradores
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 

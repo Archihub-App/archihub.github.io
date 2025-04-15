@@ -13,6 +13,10 @@ description: ''
 - Added MARKDOWN support for transcriptions and AI chats.
 - Google has been added as one of the LLM API providers
 
+### Fixed
+- The `transcriber` role can now submit tasks for review  
+- The resource tree correctly displays associated resources in draft status
+
 ### Security
 - The access levels for image galleries are adjusted.
 
