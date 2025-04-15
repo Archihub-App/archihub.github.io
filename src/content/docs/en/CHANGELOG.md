@@ -3,11 +3,18 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.1] _beta_
+## [0.9.2] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.9.1] _15 April 2025_
+
+### Added
 - Error message added when the plugin for downloading inventories is not active.
 - Added the ability to edit transcription text directly in place. Clicking on the text now makes it editable and no longer controls video playback.
 - Added MARKDOWN support for transcriptions and AI chats.
@@ -17,9 +24,6 @@ description: ''
 ### Fixed
 - The `transcriber` role can now submit tasks for review  
 - The resource tree correctly displays associated resources in draft status
-
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.9] _10 April 2025_
 

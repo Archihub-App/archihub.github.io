@@ -3,11 +3,18 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.1] _beta_
+## [0.9.2] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.1] _15 April 2025_
+
+### Added
 - Mensaje de error cuando el plugin para descargar los inventarios no está activo.
 - Se agrega la posibilidad de editar el texto de la transcripción directamente sobre el texto, al hacer click el texto se vuelve editable y ya no maneja la reproducción del video.
 - Se agrega soporte MARKDOWN para las transcripciones y los chats con IA
@@ -17,9 +24,6 @@ description: ''
 ### Fixed
 - El rol `transcriber` puede enviar tareas a revisión
 - El árbol de recursos muestra correctamente los recursos asociados en borradores
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9] _10 April 2025_
 
