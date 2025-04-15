@@ -12,6 +12,7 @@ description: ''
 - Se agrega la posibilidad de editar el texto de la transcripción directamente sobre el texto, al hacer click el texto se vuelve editable y ya no maneja la reproducción del video.
 - Se agrega soporte MARKDOWN para las transcripciones y los chats con IA
 - Se agrega Google como uno de los proveedores de API LLMs
+- Las conversaciones con IA ahora pueden cambiar de modelo en medio de la conversación para usar los mensajes de una conversación como contexto para modelos más potentes
 
 ### Fixed
 - El rol `transcriber` puede enviar tareas a revisión

@@ -12,6 +12,7 @@ description: ''
 - Added the ability to edit transcription text directly in place. Clicking on the text now makes it editable and no longer controls video playback.
 - Added MARKDOWN support for transcriptions and AI chats.
 - Google has been added as one of the LLM API providers
+- AI conversations can now switch models mid-conversation, allowing the messages from the ongoing conversation to be used as context for more powerful models
 
 ### Fixed
 - The `transcriber` role can now submit tasks for review  
