@@ -8,9 +8,11 @@ description: ''
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
+- Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+- Validación jerárquica de los niveles de acceso al cargar un `record`
 
 ## [0.9.1] _15 April 2025_
 
