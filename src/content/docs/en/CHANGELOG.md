@@ -10,6 +10,9 @@ description: ''
 - The ability to sort results using more fields from the forms.
 - Added support for `lat,lon` and map display in the Location field
 
+### Fixed
+- Fixed an issue with loading filters when initializing a gallery
+
 ### Security
 - The access levels for image galleries are adjusted.
 - Hierarchical validation of access levels added when loading a `record`
