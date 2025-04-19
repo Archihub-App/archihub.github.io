@@ -10,6 +10,9 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
 
+### Fixed
+- Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 - Validación jerárquica de los niveles de acceso al cargar un `record`
