@@ -12,6 +12,8 @@ description: ''
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
+- Los logs que tengan como usuario `None` automáticamente se registran como `system`
+- Se simplifica la actualización de un `record` en una única función para centralizar las acciones del Hookhandler
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

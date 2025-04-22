@@ -12,6 +12,8 @@ description: ''
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery
+- Logs with the user set to `None` are now automatically recorded as `system`  
+- The `record` update process has been simplified into a single function to centralize actions within the HookHandler
 
 ### Security
 - The access levels for image galleries are adjusted.
