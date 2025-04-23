@@ -9,6 +9,7 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
+- Botón de editar recurso en las acciones de los recursos
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria

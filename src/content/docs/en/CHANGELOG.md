@@ -9,6 +9,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
 - Added support for `lat,lon` and map display in the Location field
+- Added an "Edit Resource" button to the resource actions
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery
