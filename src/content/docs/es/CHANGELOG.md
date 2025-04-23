@@ -11,6 +11,7 @@ description: ''
 - Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
 - Botón de editar recurso en las acciones de los recursos
 - Soporte para varias ubicaciones para el campo ubicación
+- Se agrega los procesamientos necesarios para la indexacion geografica conjugada con el `geosystem`
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria

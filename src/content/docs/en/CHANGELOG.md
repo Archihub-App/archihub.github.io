@@ -11,6 +11,7 @@ description: ''
 - Added support for `lat,lon` and map display in the Location field
 - Added an "Edit Resource" button to the resource actions
 - Added support for multiple locations in the Location field
+- Added necessary processing for geographic indexing integrated with the `geosystem`
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery
