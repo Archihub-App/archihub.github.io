@@ -10,6 +10,7 @@ description: ''
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
 - Botón de editar recurso en las acciones de los recursos
+- Soporte para varias ubicaciones para el campo ubicación
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
