@@ -13,6 +13,7 @@ description: ''
 - Added support for multiple locations in the Location field
 - Added necessary processing for geographic indexing integrated with the `geosystem`
 - Added indexing of polygons in the `geosystem`
+- Added the cataloging tasks window to the document view
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery

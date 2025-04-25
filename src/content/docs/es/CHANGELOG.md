@@ -13,6 +13,7 @@ description: ''
 - Soporte para varias ubicaciones para el campo ubicación
 - Se agrega los procesamientos necesarios para la indexacion geografica conjugada con el `geosystem`
 - Se agrega la indexación de los polygonos en `geosystem`
+- Se agrega la ventana de tareas de catalogación en la vista de documentos
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
