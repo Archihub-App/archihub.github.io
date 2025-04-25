@@ -14,6 +14,7 @@ description: ''
 - Se agrega los procesamientos necesarios para la indexacion geografica conjugada con el `geosystem`
 - Se agrega la indexación de los polygonos en `geosystem`
 - Se agrega la ventana de tareas de catalogación en la vista de documentos
+- Se agrega filtro por ubicación geográfica en la búsqueda
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria

@@ -14,6 +14,7 @@ description: ''
 - Added necessary processing for geographic indexing integrated with the `geosystem`
 - Added indexing of polygons in the `geosystem`
 - Added the cataloging tasks window to the document view
+- Added geographic location filter to search functionality
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery
