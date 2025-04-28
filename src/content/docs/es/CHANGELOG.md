@@ -22,6 +22,7 @@ description: ''
 - Los logs que tengan como usuario `None` automáticamente se registran como `system`
 - Se simplifica la actualización de un `record` en una única función para centralizar las acciones del Hookhandler
 - Se simplifica la creación de una nuevo índice centralizando la tarea en la clase `IndexHandler`
+- Se mejora la implementación del `mapping` al momento de generar un nuevo índice
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

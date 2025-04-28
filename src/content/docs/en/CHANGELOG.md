@@ -22,6 +22,7 @@ description: ''
 - Logs with the user set to `None` are now automatically recorded as `system`  
 - The `record` update process has been simplified into a single function to centralize actions within the HookHandler
 - Simplified the creation of a new index by centralizing the task within the `IndexHandler` class
+- Improved the `mapping` implementation when generating a new index.
 
 ### Security
 - The access levels for image galleries are adjusted.
