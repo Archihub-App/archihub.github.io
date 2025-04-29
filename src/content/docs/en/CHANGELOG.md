@@ -15,7 +15,8 @@ description: ''
 - Added indexing of polygons in the `geosystem`
 - Added the cataloging tasks window to the document view
 - Added geographic location filter to search functionality
-- All processings can now be exported to a new 'Liquid Text' format for easy editing in a simple text editor.
+- All processings can now be exported to a new 'Liquid Text' format for easy editing in a simple text editor
+- Added a button to restart the backend of the application when deployed in containers
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery

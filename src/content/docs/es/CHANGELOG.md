@@ -16,6 +16,7 @@ description: ''
 - Se agrega la ventana de tareas de catalogación en la vista de documentos
 - Se agrega filtro por ubicación geográfica en la búsqueda
 - Todos los procesamientos se pueden extraer a un nuevo formato 'Texto líquido' para editar en un editor de texto sencillo
+- Se agrega un botón para reiniciar el back del aplicativo si se despliega en contenedores
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
