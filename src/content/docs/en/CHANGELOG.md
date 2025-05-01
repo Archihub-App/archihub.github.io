@@ -19,6 +19,7 @@ description: ''
 - Added a button to restart the backend of the application when deployed in containers
 - Change history has been added for resources. When visiting a resource, users can view its change history. Depending on their role and access level, they may see detailed information about the changes made.
 - Added the ability for the class responsible for LLMs to estimate the approximate number of tokens for processing and to provide a warning when a query exceeds token limits, suggesting it be split.
+- Added keyboard shortcuts for the audio and video playback views: play and pause.
 
 ### Fixed
 - Fixed an issue with loading filters when initializing a gallery

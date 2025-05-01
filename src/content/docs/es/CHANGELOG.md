@@ -18,7 +18,8 @@ description: ''
 - Todos los procesamientos se pueden extraer a un nuevo formato 'Texto líquido' para editar en un editor de texto sencillo
 - Se agrega un botón para reiniciar el back del aplicativo si se despliega en 
 - Se agrega historial de cambios para los recursos. Al visitar un recurso un usuario puede consultar el historial de cambios. En función de su rol y nivel de acceso puede ver al detalle o no los cambios realizados.
-- Se agrega la posibilidad a la clase responsable de los LLMs de calcular el número aproximado de tokens para el procesamiento y de avisar para partir la consulta en caso de exeder los límites.
+- Se agrega la posibilidad a la clase responsable de los LLMs de calcular el número aproximado de tokens para el procesamiento y de avisar para partir la consulta en caso de exceder los límites.
+- Se agregan atajos del teclado para las vistas de reproducción de audios y videos: reproducir y pausar.
 
 ### Fixed
 - Se soluciona problema con la carga de los filtros al momento de iniciar una galeria
