@@ -15,7 +15,7 @@ description: ''
 - Added indexing of polygons in the `geosystem`
 - Added the cataloging tasks window to the document view
 - Added geographic location filter to search functionality
-- All processings can now be exported to a new 'Liquid Text' format for easy editing in a simple text editor
+- All processings can now be exported to a new 'Liquid Text' format for easy editing in a simple text editor, the text can be saved and exported to PDF, DOCX or TXT
 - Added a button to restart the backend of the application when deployed in containers
 - Change history has been added for resources. When visiting a resource, users can view its change history. Depending on their role and access level, they may see detailed information about the changes made.
 - Added the ability for the class responsible for LLMs to estimate the approximate number of tokens for processing and to provide a warning when a query exceeds token limits, suggesting it be split.
