@@ -8,6 +8,14 @@ description: ''
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
+- Added keyboard shortcuts for the audio and video playback views: play and pause.
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.9.2] _6 May 2025_
+
+### Added
 - Added support for `lat,lon` and map display in the Location field
 - Added an "Edit Resource" button to the resource actions
 - Added support for multiple locations in the Location field
@@ -29,7 +37,6 @@ description: ''
 - Improved the `mapping` implementation when generating a new index.
 
 ### Security
-- The access levels for image galleries are adjusted.
 - Hierarchical validation of access levels added when loading a `record`
 
 ## [0.9.1] _15 April 2025_

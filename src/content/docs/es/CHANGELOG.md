@@ -3,10 +3,19 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.2] _beta_
+## [0.9.3] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
+- La posibilidad de ordenar los resultados usando más campos de los formularios.
+- Se agregan atajos del teclado para las vistas de reproducción de audios y videos: reproducir y pausar.
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.2] _6 May 2025_
+
+### Added
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Se agrega soporte de `lat,lon` y mapa para el campo Ubicación
 - Botón de editar recurso en las acciones de los recursos
@@ -29,7 +38,6 @@ description: ''
 - Se mejora la implementación del `mapping` al momento de generar un nuevo índice
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 - Validación jerárquica de los niveles de acceso al cargar un `record`
 
 ## [0.9.1] _15 April 2025_
