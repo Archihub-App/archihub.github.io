@@ -9,6 +9,8 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - The ability to sort results using more fields from the forms.
 - Added keyboard shortcuts for the audio and video playback views: play and pause.
+- Implemented a timezone standard for display in the frontend
+- Added search/replace functionality in the Liquid Text editor
 
 ### Security
 - The access levels for image galleries are adjusted.

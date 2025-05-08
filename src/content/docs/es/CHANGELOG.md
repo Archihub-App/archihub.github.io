@@ -9,6 +9,8 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - La posibilidad de ordenar los resultados usando más campos de los formularios.
 - Se agregan atajos del teclado para las vistas de reproducción de audios y videos: reproducir y pausar.
+- Se implementa un estandar de franja horaria para la visualización en el front
+- Se agrega Buscar/reemplazar en el editor del texto líquido
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
