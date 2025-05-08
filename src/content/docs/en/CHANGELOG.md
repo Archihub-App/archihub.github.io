@@ -12,6 +12,9 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added search/replace functionality in the Liquid Text editor
 
+### Fixed
+- Fixed and simplified the code for creating an instance of an already initialized Plugin.
+
 ### Security
 - The access levels for image galleries are adjusted.
 

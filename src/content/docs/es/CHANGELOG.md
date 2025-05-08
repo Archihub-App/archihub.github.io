@@ -12,6 +12,9 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega Buscar/reemplazar en el editor del texto líquido
 
+### Fixed
+- Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
