@@ -11,9 +11,10 @@ description: ''
 - Added keyboard shortcuts for the audio and video playback views: play and pause.
 - Implemented a timezone standard for display in the frontend
 - Added search/replace functionality in the Liquid Text editor
+- Implemented semantic search for resource metadata
 
 ### Fixed
-- Fixed and simplified the code for creating an instance of an already initialized Plugin.
+- Fixed and simplified the code for creating an instance of an already initialized Plugin
 
 ### Security
 - The access levels for image galleries are adjusted.

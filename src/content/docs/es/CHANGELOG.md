@@ -11,6 +11,7 @@ description: ''
 - Se agregan atajos del teclado para las vistas de reproducción de audios y videos: reproducir y pausar.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega Buscar/reemplazar en el editor del texto líquido
+- Se implementa búsqueda semántica para los metadatos de los recursos
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
