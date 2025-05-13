@@ -15,6 +15,7 @@ description: ''
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
+- Se agrega el procesamiento automatico de los archivos cuando se actualiza un recurso y no solo cuando se crea
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

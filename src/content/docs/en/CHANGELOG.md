@@ -15,6 +15,7 @@ description: ''
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
+- Added automatic file processing when a resource is updated, not just when it is created.
 
 ### Security
 - The access levels for image galleries are adjusted.
