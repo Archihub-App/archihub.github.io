@@ -15,7 +15,8 @@ description: ''
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
-- Added automatic file processing when a resource is updated, not just when it is created.
+- Added automatic file processing when a resource is updated, not just when it is created
+- Optimized the loading of geographic polygons from the backend by simplifying shapes and omitting polygons based on size
 
 ### Security
 - The access levels for image galleries are adjusted.
