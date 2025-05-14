@@ -17,6 +17,7 @@ description: ''
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
 - Added automatic file processing when a resource is updated, not just when it is created
 - Optimized the loading of geographic polygons from the backend by simplifying shapes and omitting polygons based on size
+- Fixed an issue where some polygons would disappear from the map view when displaying locations
 
 ### Security
 - The access levels for image galleries are adjusted.

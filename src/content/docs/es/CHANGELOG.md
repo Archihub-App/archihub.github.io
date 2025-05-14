@@ -17,6 +17,7 @@ description: ''
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
 - Se agrega el procesamiento automatico de los archivos cuando se actualiza un recurso y no solo cuando se crea
 - Se optimiza la carga de polígonos geograficos desde el back del aplicativo simplificando figuras y omitiendo por tamaño
+- Se soluciona error al visualizar las ubicaciones en la que algunos polígonos se desaparecían de la visualización
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
