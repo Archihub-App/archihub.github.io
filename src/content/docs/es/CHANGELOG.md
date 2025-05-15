@@ -18,6 +18,7 @@ description: ''
 - Se agrega el procesamiento automatico de los archivos cuando se actualiza un recurso y no solo cuando se crea
 - Se optimiza la carga de polígonos geograficos desde el back del aplicativo simplificando figuras y omitiendo por tamaño
 - Se soluciona error al visualizar las ubicaciones en la que algunos polígonos se desaparecían de la visualización
+- Se agrega la posibilidad de buscar un lugar geografico para las ubicaciones y automaticamente se asigna el polygono si existe en la base de datos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
