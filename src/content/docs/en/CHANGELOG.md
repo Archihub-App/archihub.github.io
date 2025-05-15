@@ -12,6 +12,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added search/replace functionality in the Liquid Text editor
 - Implemented semantic search for resource metadata
+- Added a name-based search field to the location form.
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
