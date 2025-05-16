@@ -21,6 +21,7 @@ description: ''
 - Se soluciona error al visualizar las ubicaciones en la que algunos polígonos se desaparecían de la visualización
 - Se agrega la posibilidad de buscar un lugar geografico para las ubicaciones y automaticamente se asigna el polygono si existe en la base de datos
 - Se soluciona problema con el campo fecha al guardar para que no resetee la hora, minutos y segundos a 0
+- Se pule el estilo de los campos de los formularios tanto en la interfaz normal como la oscura
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

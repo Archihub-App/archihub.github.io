@@ -21,6 +21,7 @@ description: ''
 - Fixed an issue where some polygons would disappear from the map view when displaying locations
 - Added the ability to search for a geographic location for assignments, and automatically assign the corresponding polygon if it exists in the database.
 - Fixed an issue with the date field where saving would reset the hour, minutes, and seconds to 0
+- Refined the styling of form fields for both light and dark interfaces
 
 ### Security
 - The access levels for image galleries are adjusted.
