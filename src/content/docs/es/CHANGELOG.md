@@ -20,6 +20,7 @@ description: ''
 - Se optimiza la carga de polígonos geograficos desde el back del aplicativo simplificando figuras y omitiendo por tamaño
 - Se soluciona error al visualizar las ubicaciones en la que algunos polígonos se desaparecían de la visualización
 - Se agrega la posibilidad de buscar un lugar geografico para las ubicaciones y automaticamente se asigna el polygono si existe en la base de datos
+- Se soluciona problema con el campo fecha al guardar para que no resetee la hora, minutos y segundos a 0
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
