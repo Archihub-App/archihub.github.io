@@ -15,6 +15,7 @@ description: ''
 - Se agrega un campo de búsqueda por nombre al formulario de la ubicación
 - Se agrega la posibilidad de conocer desde la interfaz la versión del backend y frontend del aplicativo
 - Se agrega el campo `updatedAt` para guardar la fecha de edición tanto en los recursos como los records
+- Se agrega el campo `updatedBy` para guardar el usuario que hizo la última edición en los recursos y records
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado

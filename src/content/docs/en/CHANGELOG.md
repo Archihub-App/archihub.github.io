@@ -15,6 +15,7 @@ description: ''
 - Added a name-based search field to the location form
 - Added the ability to view the backend and frontend version of the application from the interface
 - Added the `updatedAt` field to store the edit date for both resources and records
+- Added the `updatedBy` field to store the user who made the last edit in both resources and records
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
