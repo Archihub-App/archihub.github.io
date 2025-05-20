@@ -16,6 +16,7 @@ description: ''
 - Se agrega la posibilidad de conocer desde la interfaz la versión del backend y frontend del aplicativo
 - Se agrega el campo `updatedAt` para guardar la fecha de edición tanto en los recursos como los records
 - Se agrega el campo `updatedBy` para guardar el usuario que hizo la última edición en los recursos y records
+- Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
