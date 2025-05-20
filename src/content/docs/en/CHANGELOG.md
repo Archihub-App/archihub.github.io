@@ -14,6 +14,7 @@ description: ''
 - Implemented semantic search for resource metadata
 - Added a name-based search field to the location form
 - Added the ability to view the backend and frontend version of the application from the interface
+- Added the `updatedAt` field to store the edit date for both resources and records
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
