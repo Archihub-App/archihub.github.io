@@ -14,7 +14,7 @@ ArchiHUB es una plataforma de documentación y recursos para arquitectos y profe
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/Archihub-App/archihub.github.io
+   git clone https://github.com/ArchiHUB-App/archihub.github.io
    ```
 2. Navega a la carpeta del proyecto:
    ```sh

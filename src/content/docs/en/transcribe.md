@@ -3,13 +3,13 @@ title: 'Transcribe with WhisperX'
 description: ''
 ---
 
-The ArchiHub automatic transcription plugin uses the Whisper model from OpenAI to automatically transcribe audio or video files uploaded to ArchiHub. To make this work correctly, you need to follow these steps:
+The ArchiHUB automatic transcription plugin uses the Whisper model from OpenAI to automatically transcribe audio or video files uploaded to ArchiHUB. To make this work correctly, you need to follow these steps:
 
 ## Installation
 
 1. **Installation of the application**: to install the application you must follow the steps mentioned in the [installation section](../install_local).
 
-2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/Archihub-App/transcribeWhisperX.git) in the `plugins` folder of the application following the steps indicated in the [plugin installation section](../install_plugin).
+2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/ArchiHUB-App/transcribeWhisperX.git) in the `plugins` folder of the application following the steps indicated in the [plugin installation section](../install_plugin).
 
 3. **Hugging Face token configuration**: the plugin offers the option to generate the "flat" transcription of the voice or to separate the speakers identified in the audio. To use the second option, it is important to have an account on [Hugging Face](https://huggingface.co/) and create a token to use the speaker separation model:
 
@@ -23,7 +23,7 @@ The ArchiHub automatic transcription plugin uses the Whisper model from OpenAI t
 
 4. **Access the diarization repository**: access the [model repository](https://huggingface.co/pyannote/speaker-diarization-3.1) and request access. Complete the form with the requested information.
 
-5. **Environment variables configuration**: once the Hugging Face access token is generated, you must paste the token into the Archihub environment variables. To do this, open the .env file in any text editor and look for the `HF_TOKEN` variable. If it does not exist, create it and assign the generated key.
+5. **Environment variables configuration**: once the Hugging Face access token is generated, you must paste the token into the ArchiHUB environment variables. To do this, open the .env file in any text editor and look for the `HF_TOKEN` variable. If it does not exist, create it and assign the generated key.
 
 6. **Restart the backend**: restart the application backend with the following commands:
 
@@ -36,7 +36,7 @@ docker compose up --no-deps -d archihub_flask_backend
 
 ### Using from the processing view
 
-Once restarted, access the ArchiHub interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
+Once restarted, access the ArchiHUB interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
 
 It is important that the [processing row](../nodos/#the-process-queues) required to execute plugin tasks has been started.
 
@@ -57,7 +57,7 @@ The plugin can also be used from the file view in the cataloging module. To do t
 
 Once the transcription process is complete, you can view the results in the file view in the cataloging module. The transcription files will be displayed in the file list with the transcription icon. Click on the transcription icon to view the transcription text. You can also download the transcription file by clicking on the download icon. The transcription files can be downloaded in formats such as `.pdf`, `.doc`, or `.srt`.
 
-![Viewing transcription results in ArchiHub](/archihub.github.io/imagenes/download_transcription.gif)
+![Viewing transcription results in ArchiHUB](/archihub.github.io/imagenes/download_transcription.gif)
 
 ## Editing transcripts
 
@@ -65,8 +65,8 @@ After a transcript is generated, it is possible to edit it from the file view in
 
 - **Speakers edition**: if the transcript was generated with the option to separate speakers, it is possible to edit the names of the speakers by selecting the `Edit speakers` option in the edit transcript option:
   
-![Edit speakers in ArchiHub](/archihub.github.io/imagenes/edit_speakers.gif)
+![Edit speakers in ArchiHUB](/archihub.github.io/imagenes/edit_speakers.gif)
 
 - **Transcript edition**: it is possible to edit the content of the transcript by selecting the `Edit transcript` option. To do this, select the text segment you want to edit and modify the content and the speaker if necessary. Once you have finished editing, click the `Save` button to save the changes:
 
-![Edit transcript in ArchiHub](/archihub.github.io/imagenes/edit_transcription.gif)
+![Edit transcript in ArchiHUB](/archihub.github.io/imagenes/edit_transcription.gif)

@@ -20,10 +20,10 @@ To install ArchiHUB on a local machine, it is necessary to have the Docker appli
 
 ## Download ArchiHUB
 
-The ArchiHUB system is composed of two main parts: a backend and a frontend. The backend, being an API, allows the frontend to be an interchangeable component. Currently, there is a version of the frontend that executes all tasks related to archive processing and management. However, this configuration does not restrict the use of the system, since it is possible to develop an interface adapted to the specific needs of each user, depending on their requirements. We will now detail the steps to follow for installation using _docker compose_. The first step is to clone or download the [repository](https://github.com/Archihub-App/getting-started) with the installation scripts:
+The ArchiHUB system is composed of two main parts: a backend and a frontend. The backend, being an API, allows the frontend to be an interchangeable component. Currently, there is a version of the frontend that executes all tasks related to archive processing and management. However, this configuration does not restrict the use of the system, since it is possible to develop an interface adapted to the specific needs of each user, depending on their requirements. We will now detail the steps to follow for installation using _docker compose_. The first step is to clone or download the [repository](https://github.com/ArchiHUB-App/getting-started) with the installation scripts:
 
 ```
-git clone https://github.com/Archihub-App/getting-started
+git clone https://github.com/ArchiHUB-App/getting-started
 ```
 
 In this repository we find centralized the different ways in which we can start our ArchiHUB installation. For our specific case, we will need the content of the _local-machine_ folder. Before starting the installation process, it is crucial that you update the login keys and adjust some security settings. This will ensure that your installation is secure and that everything runs smoothly from the start.
@@ -64,11 +64,11 @@ To begin, you must go to the /local-machine/archihub folder and create a new .en
 
 ### Download the application backend
 
-As we mentioned before, it is necessary to download the backend code from the [repository](https://github.com/Archihub-App/archihub-backend) of the project. You can do it in two ways:
+As we mentioned before, it is necessary to download the backend code from the [repository](https://github.com/ArchiHUB-App/archihub-backend) of the project. You can do it in two ways:
 
 - __Cloning the repository__: Use the `git clone` command to clone the repository, this should be inside the `/local-machine/archihub/` folder with the folder name "backend". <br>
     ```
-    git clone https://github.com/Archihub-App/archihub-backend.git backend
+    git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
     ```
 - __Downloading the zip file__: <br>![download from github](/archihub.github.io/imagenes/descarga_git.gif)
 

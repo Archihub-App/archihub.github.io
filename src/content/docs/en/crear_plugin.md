@@ -1,27 +1,27 @@
 ---
 'title': 'Guide to Create a Plugin'
-'description': 'Learn how to create plugins for ArchiHub'
+'description': 'Learn how to create plugins for ArchiHUB'
 ---
 
 # Guide to create a Plugin
 
-Our commitment to the development of ArchiHub as an open source project goes beyond the creation of the freely licensed tool. We also want to encourage contributions from ArchiHub's users, allowing anyone to extend ArchiHub's functionality by developing plugins. In this section, we will guide you through the process of creating a plugin for ArchiHub.
+Our commitment to the development of ArchiHUB as an open source project goes beyond the creation of the freely licensed tool. We also want to encourage contributions from ArchiHUB's users, allowing anyone to extend ArchiHUB's functionality by developing plugins. In this section, we will guide you through the process of creating a plugin for ArchiHUB.
 
 ## What is a Plugin?
 
-A plugin is an additional module that can be integrated into ArchiHub to extend its functionality. Plugins can be used to add new features or even integrate ArchiHub with other tools and services.
+A plugin is an additional module that can be integrated into ArchiHUB to extend its functionality. Plugins can be used to add new features or even integrate ArchiHUB with other tools and services.
 
 As an example, we have the plugin for [audio and video transcription](../transcribe) that allows users to automatically transcribe the content of their media files using OpenAI's Whisper model.
 
-![Viewing transcripts in Archihub](/archihub.github.io/imagenes/download_transcription.gif)
+![Viewing transcripts in ArchiHUB](/archihub.github.io/imagenes/download_transcription.gif)
 
-In this guide we are going to develop a plugin that allows the integration of ArchiHub with the OpenAI API. This plugin will allow ArchiHub users to modify resource titles using artificial intelligence.
+In this guide we are going to develop a plugin that allows the integration of ArchiHUB with the OpenAI API. This plugin will allow ArchiHUB users to modify resource titles using artificial intelligence.
 
 ## Plugin structure
 
-As a starting point, we will use the plugin template found in the ArchiHub repository. This template contains the basic structure of a plugin and some examples of how different functionalities can be implemented. To access the template, you can clone the [`backend` repository](https://github.com/Archihub-App/archihub-backend) and look for the `Plugin.py` file in the `app/utils/templates/` folder.
+As a starting point, we will use the plugin template found in the ArchiHUB repository. This template contains the basic structure of a plugin and some examples of how different functionalities can be implemented. To access the template, you can clone the [`backend` repository](https://github.com/ArchiHUB-App/archihub-backend) and look for the `Plugin.py` file in the `app/utils/templates/` folder.
 
-Plugins in ArchiHub always contain the following parts:
+Plugins in ArchiHUB always contain the following parts:
 - **Structured plugin information**: contains the basic plugin information. This is defined in JSON format and is located at the end of the plugin template.
 - **Endpoints**: contains the endpoints that are exposed to interact with the plugin or the tool in general. These are defined in the `add_routes` function available in the plugin template.
 - **Tasks**: contains the tasks that are executed when processing files. These tasks are defined in the `bulk` function available in the plugin template.
@@ -171,21 +171,21 @@ In addition, the second parameter of the `self.add_task_to_user` function is the
 
 Inside the `bulk` function, the code to be executed when processing the records is defined. In this case, the original title of the resource is obtained and sent to the OpenAI API to be modified. Then, the resource title is updated in the database.
 
-As ArchiHub's own functions, there are the `mongodb.get_all_records` and `mongodb.update_record` functions. The first function gets the records from the database and the second one updates the record in the database. In addition, at the end of the `bulk` function, the `clear_cache` function of the plugin is called to update the changes in the ArchiHub interface. This is important because if this function is not called, the changes will not be reflected in the ArchiHub interface unless the cache is regenerated from the application settings.
+As ArchiHUB's own functions, there are the `mongodb.get_all_records` and `mongodb.update_record` functions. The first function gets the records from the database and the second one updates the record in the database. In addition, at the end of the `bulk` function, the `clear_cache` function of the plugin is called to update the changes in the ArchiHUB interface. This is important because if this function is not called, the changes will not be reflected in the ArchiHUB interface unless the cache is regenerated from the application settings.
 
 ### Processing row
 
-The plugin runs in a processing queue. This means that when a task is sent to the plugin, it is added to a queue and processed in the background. This is useful to distribute the tasks to different workers and avoid performance problems if everything runs on the same machine and processing queue. In this case, the plugin uses the `low` queue to process the tasks. For more information on processing queues, see the [ArchiHub documentation](https://archihub-app.github.io/archihub.github.io/en/nodos/).
+The plugin runs in a processing queue. This means that when a task is sent to the plugin, it is added to a queue and processed in the background. This is useful to distribute the tasks to different workers and avoid performance problems if everything runs on the same machine and processing queue. In this case, the plugin uses the `low` queue to process the tasks. For more information on processing queues, see the [ArchiHUB documentation](https://archihub-app.github.io/archihub.github.io/en/nodos/).
 
 ### Frontend interaction fields
 
-For frontend interactions, fields are defined from the `plugin_info` variable. This variable contains the plugin information and is used to display the information in the ArchiHub interface. In this case, different field types are being used:
+For frontend interactions, fields are defined from the `plugin_info` variable. This variable contains the plugin information and is used to display the information in the ArchiHUB interface. In this case, different field types are being used:
 - **instructions**: used to display an instruction text to the user. This field is not editable and is only shown as information.
 - **select**: is used to display a selection field to the user. In this case, it is being used to select the OpenAI model to be used to modify the title.
 - **text**: is used to display a text field to the user. In this case, it is being used to display the instruction field and the command field for GPT.
 
-***Note: in case you require other types of fields, feel free to open an issue in the repository where the ArchiHub frontend is located. We will be happy to help you implement it. Remember that ArchiHub is an open source project and we are open to receive contributions from the community.***
+***Note: in case you require other types of fields, feel free to open an issue in the repository where the ArchiHUB frontend is located. We will be happy to help you implement it. Remember that ArchiHUB is an open source project and we are open to receive contributions from the community.***
 
 ## Plugin repository
 
-To facilitate the understanding of the guide, we have created a repository where you can find the [developed plugin](https://github.com/Archihub-App/titleModifier). To install it, follow the instructions in the [official ArchiHub documentation](https://archihub-app.github.io/archihub.github.io/en/install_plugin/).
+To facilitate the understanding of the guide, we have created a repository where you can find the [developed plugin](https://github.com/ArchiHUB-App/titleModifier). To install it, follow the instructions in the [official ArchiHUB documentation](https://archihub-app.github.io/archihub.github.io/en/install_plugin/).

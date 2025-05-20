@@ -11,7 +11,7 @@ Si seguiste la guía de instalación y no estás familiarizado con las herramien
 
 1. Descargar los repositorios:
 
-    - Vuelve a descargar los repositorios tanto del [instalador](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip) como del [backend](https://github.com/Archihub-App/archihub-backend/archive/refs/heads/master.zip) desde los repositorios oficiales.
+    - Vuelve a descargar los repositorios tanto del [instalador](https://github.com/ArchiHUB-App/getting-started/archive/refs/heads/main.zip) como del [backend](https://github.com/ArchiHUB-App/archihub-backend/archive/refs/heads/master.zip) desde los repositorios oficiales.
 
 2. Realizar una copia de seguridad:
 

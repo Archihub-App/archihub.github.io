@@ -3,7 +3,7 @@ title: 'Snippets'
 description: ''
 ---
 
-Snippets are one of the most exciting features of ArchiHub. They are similar to bookmarks, but unlike bookmarks, which save the entire resource or document, with snippets you can select a specific area of the document, an audio fragment, or a few sentences in a video transcript. As its name suggests, it allows you to save snippets of your favorite fragments while exploring the file to return to them later.
+Snippets are one of the most exciting features of ArchiHUB. They are similar to bookmarks, but unlike bookmarks, which save the entire resource or document, with snippets you can select a specific area of the document, an audio fragment, or a few sentences in a video transcript. As its name suggests, it allows you to save snippets of your favorite fragments while exploring the file to return to them later.
 
 For each type of content that supports the snipping functionality, the process is slightly different. Let's see how you can start trimming snippets:
 
@@ -11,9 +11,9 @@ For each type of content that supports the snipping functionality, the process i
 
 ![Document snipping](/archihub.github.io/imagenes/recortes_anim.gif)
 
-Documents are the most obvious type to start using our clippings. In the same way that you cut out pieces of newspapers to keep the notes you are most interested in, in ArchiHub you can systematize the clippings of all users and get more interesting visualizations of the consultation of the material. But let's go step by step.
+Documents are the most obvious type to start using our clippings. In the same way that you cut out pieces of newspapers to keep the notes you are most interested in, in ArchiHUB you can systematize the clippings of all users and get more interesting visualizations of the consultation of the material. But let's go step by step.
 
-### How to Trim Documents in ArchiHub
+### How to Trim Documents in ArchiHUB
 
 - __Access the Snipping Option__: From the navigation component in the document view, select the “Add Snippet” option.
 

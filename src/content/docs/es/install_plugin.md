@@ -11,7 +11,7 @@ Los plugins de la aplicación se encuentran comúnmente en un repositorio separa
 
 ![Plugins por defecto](/archihub.github.io/imagenes/plugins_defecto.png)
 
-Descarga el nuevo complemento yendo al [repositorio](https://github.com/Archihub-App/videoDownloader) o haciendo click [acá](https://github.com/Archihub-App/videoDownloader/archive/refs/heads/main.zip) para descargar el archivo zip.
+Descarga el nuevo complemento yendo al [repositorio](https://github.com/ArchiHUB-App/videoDownloader) o haciendo click [acá](https://github.com/ArchiHUB-App/videoDownloader/archive/refs/heads/main.zip) para descargar el archivo zip.
 
 Cuando lo hayas descargado debes descomprimir el archivo y copiar la carpeta en `/gettin-started/local-machine/archihub/backend/app/plugins` de la siguiente forma:
 

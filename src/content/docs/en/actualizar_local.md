@@ -11,7 +11,7 @@ If you followed the installation guide and you are not familiar with the develop
 
 1. Download the repositories:
 
-    - Re-download the repositories for both [installer](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip) and [backend](https://github.com/Archihub-App/archihub-backend/archive/refs/heads/master.zip) from the official repositories.
+    - Re-download the repositories for both [installer](https://github.com/ArchiHUB-App/getting-started/archive/refs/heads/main.zip) and [backend](https://github.com/ArchiHUB-App/archihub-backend/archive/refs/heads/master.zip) from the official repositories.
 
 2. Perform a backup:
 

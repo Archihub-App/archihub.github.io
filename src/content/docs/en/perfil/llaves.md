@@ -5,7 +5,7 @@ description: ''
 
 ![Menu access keys](/archihub.github.io/imagenes/menu_llaves.png)
 
-ArchiHub allows you to expand its capabilities through the use of various APIs. Depending on the roles enabled for your user, you can generate keys that grant access to your tools to interact with the archive. From administration to visualization dashboards, here we will see the details for each one.
+ArchiHUB allows you to expand its capabilities through the use of various APIs. Depending on the roles enabled for your user, you can generate keys that grant access to your tools to interact with the archive. From administration to visualization dashboards, here we will see the details for each one.
 
 ## Key for system administration
 

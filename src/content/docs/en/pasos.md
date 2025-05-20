@@ -120,4 +120,4 @@ That's all for now! With the steps we have covered, you can now start configurin
 - __Explore more__: We encourage you to continue exploring the rest of the documentation to discover all the possibilities that ArchiHUB offers.
 - __Experiment__: Do not hesitate to continue “tinkering” with your file. The best way to learn and become familiar with the tool is to experiment with its different functionalities.
 
-Good luck with your archive and have fun exploring ArchiHub ❤️!
+Good luck with your archive and have fun exploring ArchiHUB ❤️!

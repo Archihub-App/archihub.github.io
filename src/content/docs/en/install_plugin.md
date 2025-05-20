@@ -11,7 +11,7 @@ Application plugins are commonly found in a separate repository. The plugins tha
 
 ![Default plugins](/archihub.github.io/imagenes/plugins_defecto.png)
 
-Download the new plug-in by going to [repository](https://github.com/Archihub-App/videoDownloader) or by clicking [here](https://github.com/Archihub-App/videoDownloader/archive/refs/heads/main.zip) to download the zip file.
+Download the new plug-in by going to [repository](https://github.com/ArchiHUB-App/videoDownloader) or by clicking [here](https://github.com/ArchiHUB-App/videoDownloader/archive/refs/heads/main.zip) to download the zip file.
 
 When you have downloaded it you must unzip the file and copy the folder to `/gettin-started/local-machine/archihub/backend/app/plugins` as follows:
 

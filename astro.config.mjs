@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/archihub.github.io',
   integrations: [
     starlight({
-      title: 'ArchiHub',
+      title: 'ArchiHUB',
       defaultLocale: 'es',
       locales: {
         es: {
@@ -324,7 +324,7 @@ export default defineConfig({
       },
       favicon: '/favicon.ico',
       social: {
-        github: 'https://github.com/Archihub-App',
+        github: 'https://github.com/ArchiHUB-App',
         instagram: 'https://www.instagram.com/archihub_app/',
       },
     }),

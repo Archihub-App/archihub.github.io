@@ -71,7 +71,7 @@ To validate that the Elasticsearch index has started correctly, follow these ste
 
 Head back to the system configuration in the ArchiHUB interface. Look for the “Index Management” section and check if the first option is active. If this option is active, congratulations! You now have your archive connected to the index, which means that Elasticsearch is working properly and you can take advantage of ArchiHUB's advanced search capabilities.
 
-If the first option is not active, it is possible that a problem occurred when starting the index. In this case, try to solve the problem by consulting our [frequently asked questions](../preguntas) section, where some of the common problems and their solutions are addressed. If you do not find the answer there, we recommend that you ask in the [forum](https://github.com/orgs/Archihub-App/discussions) of the application, where the community and developers can offer help and guidance to solve any problem.
+If the first option is not active, it is possible that a problem occurred when starting the index. In this case, try to solve the problem by consulting our [frequently asked questions](../preguntas) section, where some of the common problems and their solutions are addressed. If you do not find the answer there, we recommend that you ask in the [forum](https://github.com/orgs/ArchiHUB-App/discussions) of the application, where the community and developers can offer help and guidance to solve any problem.
 
 ### Start indexing
 

@@ -20,10 +20,10 @@ Para instalar ArchiHUB en una máquina local, es necesario contar con el aplicat
 
 ## Descargar ArchiHUB
 
-El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar o descargar el [repositorio](https://github.com/Archihub-App/getting-started) con los scripts de instalación:
+El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar o descargar el [repositorio](https://github.com/ArchiHUB-App/getting-started) con los scripts de instalación:
 
 ```
-git clone https://github.com/Archihub-App/getting-started
+git clone https://github.com/ArchiHUB-App/getting-started
 ```
 
 En este repositorio encontramos centralizados las distintas formas en las que podemos iniciar nuestra instalación de ArchiHUB. Para nuestro caso específico, necesitaremos el contenido de la carpeta _local-machine_. Antes de comenzar el proceso de instalación, es crucial que actualices las llaves de ingreso y ajustes algunas configuraciones de seguridad. Esto asegurará que tu instalación sea segura y que todo funcione sin problemas desde el principio.
@@ -64,11 +64,11 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo ar
 
 ### Descargar el backend del aplicativo
 
-Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/Archihub-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
+Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/ArchiHUB-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
 
 - __Clonando el repositorio__: Utiliza el comando `git clone` para clonar el repositorio, esto debe ser dentro de la carpeta `/local-machine/archihub/` con el nombre de carpeta "backend". <br>
     ```
-    git clone https://github.com/Archihub-App/archihub-backend.git backend
+    git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
     ```
 - __Descargando el zip__: <br>![descarga desde github](/archihub.github.io/imagenes/descarga_git.gif)
 

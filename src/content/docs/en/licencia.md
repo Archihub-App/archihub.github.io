@@ -5,13 +5,13 @@ description: ''
 
 ## Licensing
 
-Archihub is divided into several parts. On the one hand an open source __backend__ with MIT license described below. A __frontend__ for the administration and public release of information which is proprietary and licensed under a CREATIVE COMMONS Attribution - Non-commercial - No Derivative license. This interface is free to download for non-commercial use. For commercial licensing please contact [BITSOL](https://www.instagram.com/bitsol.xyz/). And finally we have an ecosystem of plugins available, each with a different licensing.
+ArchiHUB is divided into several parts. On the one hand an open source __backend__ with MIT license described below. A __frontend__ for the administration and public release of information which is proprietary and licensed under a CREATIVE COMMONS Attribution - Non-commercial - No Derivative license. This interface is free to download for non-commercial use. For commercial licensing please contact [BITSOL](https://www.instagram.com/bitsol.xyz/). And finally we have an ecosystem of plugins available, each with a different licensing.
 
 ## License
 
 THE LICENSE DESCRIBED BELOW ONLY APPLIES TO THE BACKEND OF THE APPLICATION WITH THE PERTINENT CLARIFICATION WITH THE PLUGINS.
 
-Copyright 2023-2025 Archihub, Author: Néstor Andrés Peña
+Copyright 2023-2025 ArchiHUB, Author: Néstor Andrés Peña
 
 Se concede por la presente, de forma gratuita, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el "Software"), el permiso para manejar el Software sin restricciones, incluidos, entre otros, los derechos de usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a las que se les proporcione el Software hacer lo mismo, sujeto a las siguientes condiciones:
 

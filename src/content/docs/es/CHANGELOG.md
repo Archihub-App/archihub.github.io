@@ -14,6 +14,7 @@ description: ''
 - Se implementa búsqueda semántica para los metadatos de los recursos
 - Se agrega un campo de búsqueda por nombre al formulario de la ubicación
 - Se agrega la posibilidad de conocer desde la interfaz la versión del backend y frontend del aplicativo
+- Se agrega el campo `updatedAt` para guardar la fecha de edición tanto en los recursos como los records
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
@@ -92,7 +93,7 @@ description: ''
 ### Fixed
 - Se soluciona error con los ajustes del sistema en la parte de indexación. El botón regenerar llevaba a un enlace roto en el backend. Para solucionar, borrar la entrada con id `index_management` en la colección `system` de la base de datos y reiniciar el backend.
 - Se actualiza la versión de python en el Dockerfile
-- Se actualiza la tarea de indexación para que omita el campo `createdAt` si este no existe en el registro. Esto para brindar compatibilidad con versiones viejas de la base de datos de Archihub.
+- Se actualiza la tarea de indexación para que omita el campo `createdAt` si este no existe en el registro. Esto para brindar compatibilidad con versiones viejas de la base de datos de ArchiHUB.
 - Se soluciona problema al generar los tokens para los usuarios que no son `beta`
 
 ### Added

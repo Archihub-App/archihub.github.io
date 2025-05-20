@@ -17,10 +17,10 @@ To run this and other scripts that manage the application, you need to have an a
 
 ## Descarga de los scripts
 
-If you have already followed the [installation guide on a local machine](../install_local), you have already downloaded the [repository](https://github.com/Archihub-App/getting-started) we need. If not, you can clone the repository or download it [here](https://github.com/Archihub-App/getting-started/archive/refs/heads/main.zip).
+If you have already followed the [installation guide on a local machine](../install_local), you have already downloaded the [repository](https://github.com/ArchiHUB-App/getting-started) we need. If not, you can clone the repository or download it [here](https://github.com/ArchiHUB-App/getting-started/archive/refs/heads/main.zip).
 
 ```
-git clone https://github.com/Archihub-App/getting-started.git
+git clone https://github.com/ArchiHUB-App/getting-started.git
 ```
 
 In the root of the folder you will see a folder called `scripts`, the specific script we are interested in is the one called `folder_load.py`, but before using it we need to adjust a few things.
@@ -44,7 +44,7 @@ The folder upload script for ArchiHUB has four parameters, three of which are ma
         - __Description__: This parameter allows us to configure Folders that we want to skip, such as the Original folders. It is important to note that if an Original folder is found, the other folders will be ignored.
 - Optional Parameter
     - `--publish`
-        - __Description__: ArchiHub allows you to save or publish a new resource when you create it. Activate this parameter if you want the resources you upload to be published directly.
+        - __Description__: ArchiHUB allows you to save or publish a new resource when you create it. Activate this parameter if you want the resources you upload to be published directly.
         - __By default__: The resources will be saved as a draft.
         - __Example of use__: If you want the uploaded documents to be available immediately, activate this parameter.
 

@@ -3,14 +3,14 @@ title: 'Transcripción automática con WhisperX'
 description: ''
 ---
 
-El plugin de transcripción automática de ArchiHub utiliza el modelo Whisper de OpenAI para transcribir automáticamente los archivos de audio o video que se carguen a ArchiHub. Para que este funcione correctamente, es necesario tener en cuenta los siguientes pasos:
+El plugin de transcripción automática de ArchiHUB utiliza el modelo Whisper de OpenAI para transcribir automáticamente los archivos de audio o video que se carguen a ArchiHUB. Para que este funcione correctamente, es necesario tener en cuenta los siguientes pasos:
 
 
 ## Instalación
 
 1. **Instalación del aplicativo**: para instalar el aplicativo debes seguir los pasos en la mencionados en la sección de [instalación](../install_local).
 
-2. **Instalación del plugin**: para instalar el plugin de transcripción automática, debes clonar el [repositorio del plugin](https://github.com/Archihub-App/transcribeWhisperX.git) en la carpeta `plugins` del aplicativo siguiendo los pasoos indicados en la sección de [instalación de plugins](../install_plugin).
+2. **Instalación del plugin**: para instalar el plugin de transcripción automática, debes clonar el [repositorio del plugin](https://github.com/ArchiHUB-App/transcribeWhisperX.git) en la carpeta `plugins` del aplicativo siguiendo los pasoos indicados en la sección de [instalación de plugins](../install_plugin).
 
 3. **Configuración del token de Hugging Face**: el plugin ofrece la opción de generar la transcripción “plana” de la voz o de separar los parlantes identificados en el audio. Para usar la segunda opción es importante tener una cuenta en [Hugging Face](https://huggingface.co/) y crear un token para hacer uso del modelo de separación de parlantes:
 
@@ -24,7 +24,7 @@ El plugin de transcripción automática de ArchiHub utiliza el modelo Whisper de
 
 4. **Accede al repositorio de diarización**: accede al [repositorio del modelo](https://huggingface.co/pyannote/speaker-diarization-3.1) y solicita acceso. Completa el formulario con la información solicitada.
 
-5. **Configuración de las variables de entorno**: una vez generado el token de acceso de Hugging Face, debes pegar el token en las variables de entorno de Archihub. Para ello, abre el archivo .env en cualquier editor de texto y busca la variable `HF_TOKEN`. Si no existe, créala y asigna la llave generada.
+5. **Configuración de las variables de entorno**: una vez generado el token de acceso de Hugging Face, debes pegar el token en las variables de entorno de ArchiHUB. Para ello, abre el archivo .env en cualquier editor de texto y busca la variable `HF_TOKEN`. Si no existe, créala y asigna la llave generada.
 
 6. **Reinicio del backend**: reinicia el backend del aplicativo con los siguientes comandos:
 
@@ -37,7 +37,7 @@ docker compose up --no-deps -d archihub_flask_backend
 
 ### Uso desde la vista de procesamientos
 
-Una vez reiniciado, accede a la interfaz de Archihub y ve a la pestaña de procesamientos. Si el plugin de transcripción no está habilitado, debes habilitarlo desde la pestaña de ajustes y luego reiniciar el aplicativo con los comandos indicaos en el paso anterior.
+Una vez reiniciado, accede a la interfaz de ArchiHUB y ve a la pestaña de procesamientos. Si el plugin de transcripción no está habilitado, debes habilitarlo desde la pestaña de ajustes y luego reiniciar el aplicativo con los comandos indicaos en el paso anterior.
 
 Es importante que la [fila de procesamiento](../nodos/#las-filas-de-procesos) requerida para ejecutar tareas del plugin se haya iniciado.
 
@@ -59,9 +59,9 @@ El plugin también puede ser utilizado desde la vista de archivos en el módulo 
 
 ## Visualización de los resultados de la transcripción
 
-Una vez finalizado el proceso de transcripción, puedes visualizar los resultados desde el módulo de catalogación. Para ello, selecciona el archivo y selecciona `Transcripción automática` en el listado de procesamientos. Además, si se quiere descargar el archivo de transcripción, se puede hacer desde la opción de `Acciones` en la vista de archivos seleccionando la opción `Descargar transcripción`. Archihub permite descargar las transcripciones en formato `.pdf`, `.doc` o `.srt`:
+Una vez finalizado el proceso de transcripción, puedes visualizar los resultados desde el módulo de catalogación. Para ello, selecciona el archivo y selecciona `Transcripción automática` en el listado de procesamientos. Además, si se quiere descargar el archivo de transcripción, se puede hacer desde la opción de `Acciones` en la vista de archivos seleccionando la opción `Descargar transcripción`. ArchiHUB permite descargar las transcripciones en formato `.pdf`, `.doc` o `.srt`:
 
-![Visualización de transcripciones en Archihub](/archihub.github.io/imagenes/download_transcription.gif)
+![Visualización de transcripciones en ArchiHUB](/archihub.github.io/imagenes/download_transcription.gif)
 
 
 
@@ -71,8 +71,8 @@ Luego de generada una transcripción, es posible editarla desde la vista de arch
 
 - **Edición de oradores**: si la transcripción fue generada con la opción de separar parlantes, es posible editar los nombres de los oradores seleccionando la opción `Editar oradores` en la opción de editar la transcripción:
 
-![Edición de oradores en Archihub](/archihub.github.io/imagenes/edit_speakers.gif)
+![Edición de oradores en ArchiHUB](/archihub.github.io/imagenes/edit_speakers.gif)
 
 - **Edición de transcripción**: es posible editar el contenido de la transcripción seleccionando la opción `Editar transcripción`. Para esto, selecciona el segmento de texto que quieres editar y modifica el contenido y el orador en caso de ser necesario. Una vez finalizada la edición, haz clic en el botón `Guardar` para guardar los cambios:
 
-![Edición de transcripción en Archihub](/archihub.github.io/imagenes/edit_transcription.gif)
+![Edición de transcripción en ArchiHUB](/archihub.github.io/imagenes/edit_transcription.gif)
