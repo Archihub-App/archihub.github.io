@@ -7,7 +7,8 @@ description: ''
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- The ability to sort results using more fields from the forms.
+- The ability to sort results using more fields from the forms
+- When using text search, results can now be sorted either by relevance or by any of the active columns
 - Added keyboard shortcuts for the audio and video playback views: play and pause.
 - Implemented a timezone standard for display in the frontend
 - Added search/replace functionality in the Liquid Text editor
