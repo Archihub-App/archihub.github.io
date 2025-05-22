@@ -18,6 +18,7 @@ description: ''
 - Added the `updatedAt` field to store the edit date for both resources and records
 - Added the `updatedBy` field to store the user who made the last edit in both resources and records
 - Added a new form field that allows selecting one of the users registered in the system
+- Added `Ctrl + Z` support in the Liquid Text editor
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
