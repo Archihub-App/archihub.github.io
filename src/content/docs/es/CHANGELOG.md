@@ -3,34 +3,38 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.3] _beta_
+## [0.9.4] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
-- La posibilidad de ordenar los resultados usando más campos de los formularios
-- Cuando se usa la búsqueda de texto los resultados se pueden organizar bien sea por relevancia o por alguna de las columnas activas
 - Se agregan atajos del teclado para las vistas de reproducción de audios y videos: reproducir y pausar.
 - Se implementa un estandar de franja horaria para la visualización en el front
-- Se agrega Buscar/reemplazar en el editor del texto líquido
 - Se implementa búsqueda semántica para los metadatos de los recursos
+- Soporte `Ctrl + Z` en el editor de texto líquido
+- Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.3] _23 May 2025_
+
+### Added
+- La posibilidad de ordenar los resultados usando más campos de los formularios
+- Cuando se usa la búsqueda de texto los resultados se pueden organizar bien sea por relevancia o por alguna de las columnas activas
+- Se agrega Buscar/reemplazar en el editor del texto líquido
 - Se agrega un campo de búsqueda por nombre al formulario de la ubicación
 - Se agrega la posibilidad de conocer desde la interfaz la versión del backend y frontend del aplicativo
 - Se agrega el campo `updatedAt` para guardar la fecha de edición tanto en los recursos como los records
 - Se agrega el campo `updatedBy` para guardar el usuario que hizo la última edición en los recursos y records
-- Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
-- Soporte `Ctrl + Z` en el editor de texto líquido
+- Se agrega la posibilidad de buscar un lugar geografico para las ubicaciones y automaticamente se asigna el polygono si existe en la base de datos
 
 ### Fixed
 - Se soluciona y simplifica el código al crear una instancia de un Plugin ya iniciado
 - Se agrega el procesamiento automatico de los archivos cuando se actualiza un recurso y no solo cuando se crea
 - Se optimiza la carga de polígonos geograficos desde el back del aplicativo simplificando figuras y omitiendo por tamaño
 - Se soluciona error al visualizar las ubicaciones en la que algunos polígonos se desaparecían de la visualización
-- Se agrega la posibilidad de buscar un lugar geografico para las ubicaciones y automaticamente se asigna el polygono si existe en la base de datos
 - Se soluciona problema con el campo fecha al guardar para que no resetee la hora, minutos y segundos a 0
 - Se pule el estilo de los campos de los formularios tanto en la interfaz normal como la oscura
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.2] _6 May 2025_
 

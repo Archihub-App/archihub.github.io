@@ -3,34 +3,38 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.3] _beta_
+## [0.9.4] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- The ability to sort results using more fields from the forms
-- When using text search, results can now be sorted either by relevance or by any of the active columns
 - Added keyboard shortcuts for the audio and video playback views: play and pause.
 - Implemented a timezone standard for display in the frontend
-- Added search/replace functionality in the Liquid Text editor
 - Implemented semantic search for resource metadata
+- Added `Ctrl + Z` support in the Liquid Text editor
+- Added a new form field that allows selecting one of the users registered in the system
+
+### Security
+- The access levels for image galleries are adjusted.
+
+## [0.9.3] _23 May 2025_
+
+### Added
+- The ability to sort results using more fields from the forms
+- When using text search, results can now be sorted either by relevance or by any of the active columns
+- Added search/replace functionality in the Liquid Text editor
 - Added a name-based search field to the location form
 - Added the ability to view the backend and frontend version of the application from the interface
 - Added the `updatedAt` field to store the edit date for both resources and records
 - Added the `updatedBy` field to store the user who made the last edit in both resources and records
-- Added a new form field that allows selecting one of the users registered in the system
-- Added `Ctrl + Z` support in the Liquid Text editor
+- Added the ability to search for a geographic location for assignments, and automatically assign the corresponding polygon if it exists in the database.
 
 ### Fixed
 - Fixed and simplified the code for creating an instance of an already initialized Plugin
 - Added automatic file processing when a resource is updated, not just when it is created
 - Optimized the loading of geographic polygons from the backend by simplifying shapes and omitting polygons based on size
 - Fixed an issue where some polygons would disappear from the map view when displaying locations
-- Added the ability to search for a geographic location for assignments, and automatically assign the corresponding polygon if it exists in the database.
 - Fixed an issue with the date field where saving would reset the hour, minutes, and seconds to 0
 - Refined the styling of form fields for both light and dark interfaces
-
-### Security
-- The access levels for image galleries are adjusted.
 
 ## [0.9.2] _6 May 2025_
 
