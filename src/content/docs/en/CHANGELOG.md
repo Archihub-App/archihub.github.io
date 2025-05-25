@@ -7,7 +7,6 @@ description: ''
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- Added keyboard shortcuts for the audio and video playback views: play and pause.
 - Implemented a timezone standard for display in the frontend
 - Implemented semantic search for resource metadata
 - Added `Ctrl + Z` support in the Liquid Text editor
@@ -19,6 +18,7 @@ description: ''
 ## [0.9.3] _23 May 2025_
 
 ### Added
+- Added keyboard shortcuts for the audio and video playback views: play and pause.
 - The ability to sort results using more fields from the forms
 - When using text search, results can now be sorted either by relevance or by any of the active columns
 - Added search/replace functionality in the Liquid Text editor
