@@ -12,6 +12,9 @@ description: ''
 - Soporte `Ctrl + Z` en el editor de texto líquido
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 
+### Fixed
+- Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 

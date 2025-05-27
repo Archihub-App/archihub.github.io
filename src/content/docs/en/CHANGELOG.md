@@ -12,6 +12,9 @@ description: ''
 - Added `Ctrl + Z` support in the Liquid Text editor
 - Added a new form field that allows selecting one of the users registered in the system
 
+### Fixed
+- Fixed the display of location names in the metadata query view
+
 ### Security
 - The access levels for image galleries are adjusted.
 
