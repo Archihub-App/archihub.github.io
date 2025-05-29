@@ -13,7 +13,9 @@ description: ''
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 
 ### Fixed
-- Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
+- Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de 
+- Se pule la visualización de los bloques y OCR permitiendo la edición
+- Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
