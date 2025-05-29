@@ -11,6 +11,7 @@ description: ''
 - Implemented semantic search for resource metadata
 - Added `Ctrl + Z` support in the Liquid Text editor
 - Added a new form field that allows selecting one of the users registered in the system
+- Implemented chat with the AI assistant in the document view
 
 ### Fixed
 - Fixed the display of location names in the metadata query view
