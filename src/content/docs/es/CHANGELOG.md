@@ -11,6 +11,8 @@ description: ''
 - Se implementa búsqueda semántica para los metadatos de los recursos
 - Soporte `Ctrl + Z` en el editor de texto líquido
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
+- Se implementa el chat con el asistente de IA en la vista de documentos
+- Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de 
