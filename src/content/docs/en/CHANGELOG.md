@@ -18,6 +18,7 @@ description: ''
 - Fixed the display of location names in the metadata query view
 - Polished the display of blocks and OCR, enabling editing
 - Improved UX for drawing blocks on documents and images in both 3D and scroll views
+- The image and document gallery viewer now supports adding a URL parameter to specify the page to explore
 
 ### Security
 - The access levels for image galleries are adjusted.

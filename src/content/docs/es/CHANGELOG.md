@@ -18,6 +18,7 @@ description: ''
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de 
 - Se pule la visualización de los bloques y OCR permitiendo la edición
 - Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
+- El visor de galería de imágenes y de documentos ahora permite agregar en la URL un parámetro para la página que se quiera explorar
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
