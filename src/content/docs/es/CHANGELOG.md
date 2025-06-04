@@ -22,6 +22,7 @@ description: ''
 - Se pule la visualización de los bloques y OCR permitiendo la edición
 - Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
 - El visor de galería de imágenes y de documentos ahora permite agregar en la URL un parámetro para la página que se quiera explorar
+- Si al explorar los recursos se estan visualizando campos `text` en los resultados, estos campos no son necesarios para los resultados. Es decir, un recurso puede o no tener contenido en ese campo
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

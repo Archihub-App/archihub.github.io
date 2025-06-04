@@ -22,6 +22,7 @@ description: ''
 - Polished the display of blocks and OCR, enabling editing
 - Improved UX for drawing blocks on documents and images in both 3D and scroll views
 - The image and document gallery viewer now supports adding a URL parameter to specify the page to explore
+- When exploring resources, if `text` fields are being displayed in the results, those fields are not required. In other words, a resource may or may not have content in that field
 
 ### Security
 - The access levels for image galleries are adjusted
