@@ -15,6 +15,7 @@ description: ''
 - Implemented chat with the AI assistant in the image and gallery views
 - Added text fields to the resource results
 - Added conditional fields for displaying plugin action forms
+- Added the ability to directly select OCR on the document when using the `scroll` view
 
 ### Fixed
 - Fixed the display of location names in the metadata query view

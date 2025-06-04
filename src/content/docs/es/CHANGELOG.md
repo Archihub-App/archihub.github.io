@@ -15,6 +15,7 @@ description: ''
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 - Se agregan los campos texto a los resultados de los recursos
 - Se agregan los campos condicionales para la visualización de los formularios de las acciones de los plugins
+- Se agrega la posibilidad de seleccionar directamente el OCR sobre el documento cuando se usa la vista `scroll`
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
