@@ -16,6 +16,7 @@ description: ''
 - Added text fields to the resource results
 - Added conditional fields for displaying plugin action forms
 - Added the ability to directly select OCR on the document when using the `scroll` view
+- Enabled the document view in public query interfaces
 
 ### Fixed
 - Fixed the display of location names in the metadata query view
@@ -23,6 +24,7 @@ description: ''
 - Improved UX for drawing blocks on documents and images in both 3D and scroll views
 - The image and document gallery viewer now supports adding a URL parameter to specify the page to explore
 - When exploring resources, if `text` fields are being displayed in the results, those fields are not required. In other words, a resource may or may not have content in that field
+- Added the necessary filters to allow sorting results using a `text` field
 
 ### Security
 - The access levels for image galleries are adjusted

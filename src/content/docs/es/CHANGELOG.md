@@ -16,6 +16,7 @@ description: ''
 - Se agregan los campos texto a los resultados de los recursos
 - Se agregan los campos condicionales para la visualización de los formularios de las acciones de los plugins
 - Se agrega la posibilidad de seleccionar directamente el OCR sobre el documento cuando se usa la vista `scroll`
+- Se habilita la vista de documentos en las vistas de consulta públicas
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
@@ -23,6 +24,7 @@ description: ''
 - Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
 - El visor de galería de imágenes y de documentos ahora permite agregar en la URL un parámetro para la página que se quiera explorar
 - Si al explorar los recursos se estan visualizando campos `text` en los resultados, estos campos no son necesarios para los resultados. Es decir, un recurso puede o no tener contenido en ese campo
+- Se agregan los filtros necesarios para que se puedan ordenar los resultados usando un campo `text`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
