@@ -14,6 +14,7 @@ description: ''
 - Implemented chat with the AI assistant in the document view
 - Implemented chat with the AI assistant in the image and gallery views
 - Added text fields to the resource results
+- Added conditional fields for displaying plugin action forms
 
 ### Fixed
 - Fixed the display of location names in the metadata query view

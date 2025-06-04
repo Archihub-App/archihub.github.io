@@ -14,6 +14,7 @@ description: ''
 - Se implementa el chat con el asistente de IA en la vista de documentos
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 - Se agregan los campos texto a los resultados de los recursos
+- Se agregan los campos condicionales para la visualización de los formularios de las acciones de los plugins
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
