@@ -13,6 +13,7 @@ description: ''
 - Added a new form field that allows selecting one of the users registered in the system
 - Implemented chat with the AI assistant in the document view
 - Implemented chat with the AI assistant in the image and gallery views
+- Added text fields to the resource results
 
 ### Fixed
 - Fixed the display of location names in the metadata query view
@@ -21,7 +22,8 @@ description: ''
 - The image and document gallery viewer now supports adding a URL parameter to specify the page to explore
 
 ### Security
-- The access levels for image galleries are adjusted.
+- The access levels for image galleries are adjusted
+- Implemented a key validation system for the application's PRO features
 
 ## [0.9.3] _23 May 2025_
 

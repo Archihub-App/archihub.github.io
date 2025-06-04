@@ -13,15 +13,17 @@ description: ''
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 - Se implementa el chat con el asistente de IA en la vista de documentos
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
+- Se agregan los campos texto a los resultados de los recursos
 
 ### Fixed
-- Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de 
+- Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
 - Se pule la visualización de los bloques y OCR permitiendo la edición
 - Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
 - El visor de galería de imágenes y de documentos ahora permite agregar en la URL un parámetro para la página que se quiera explorar
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+- Se implementa sistema de validación de llaves para las funcionalidades PRO del aplicativo
 
 ## [0.9.3] _23 May 2025_
 
