@@ -12,6 +12,7 @@ description: ''
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 - Se agrega soporte de imágenes para el handler de servicios LLM
+- Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
