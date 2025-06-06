@@ -11,6 +11,7 @@ description: ''
 - Se implementa búsqueda semántica para los metadatos de los recursos
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
+- Se agrega soporte de imágenes para el handler de servicios LLM
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

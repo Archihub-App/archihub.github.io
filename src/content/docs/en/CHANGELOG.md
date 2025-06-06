@@ -11,6 +11,7 @@ description: ''
 - Implemented semantic search for resource metadata
 - Added a new form field that allows selecting one of the users registered in the system
 - Implemented chat with the AI assistant in the image and gallery views
+- Added image support to the LLM services handler
 
 ### Security
 - The access levels for image galleries are adjusted
