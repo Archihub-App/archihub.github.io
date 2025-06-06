@@ -24,6 +24,7 @@ description: ''
 - Added the ability to directly select OCR on the document when using the `scroll` view
 - Enabled the document view in public query interfaces
 - Added `Ctrl + Z` support in the Liquid Text editor
+- `HookHandler` now works for `records`
 
 ### Fixed
 - Fixed the display of location names in the metadata query view

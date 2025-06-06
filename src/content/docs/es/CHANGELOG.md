@@ -24,6 +24,7 @@ description: ''
 - Se agrega la posibilidad de seleccionar directamente el OCR sobre el documento cuando se usa la vista `scroll`
 - Se habilita la vista de documentos en las vistas de consulta públicas
 - Soporte `Ctrl + Z` en el editor de texto líquido
+- `HookHandler` ahora para los `records`
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
