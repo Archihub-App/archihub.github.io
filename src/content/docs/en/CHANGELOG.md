@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.4] _beta_
+## [0.9.5] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -11,8 +11,15 @@ description: ''
 - Implemented semantic search for resource metadata
 - Added `Ctrl + Z` support in the Liquid Text editor
 - Added a new form field that allows selecting one of the users registered in the system
-- Implemented chat with the AI assistant in the document view
 - Implemented chat with the AI assistant in the image and gallery views
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.4] _6 June 2025_
+
+### Added
+- Implemented chat with the AI assistant in the document view
 - Added text fields to the resource results
 - Added conditional fields for displaying plugin action forms
 - Added the ability to directly select OCR on the document when using the `scroll` view
@@ -27,7 +34,6 @@ description: ''
 - Added the necessary filters to allow sorting results using a `text` field
 
 ### Security
-- The access levels for image galleries are adjusted
 - Implemented a key validation system for the application's PRO features
 
 ## [0.9.3] _23 May 2025_

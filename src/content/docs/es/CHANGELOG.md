@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.4] _beta_
+## [0.9.5] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
@@ -11,8 +11,15 @@ description: ''
 - Se implementa búsqueda semántica para los metadatos de los recursos
 - Soporte `Ctrl + Z` en el editor de texto líquido
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
-- Se implementa el chat con el asistente de IA en la vista de documentos
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.4] _6 June 2025_
+
+### Added
+- Se implementa el chat con el asistente de IA en la vista de documentos
 - Se agregan los campos texto a los resultados de los recursos
 - Se agregan los campos condicionales para la visualización de los formularios de las acciones de los plugins
 - Se agrega la posibilidad de seleccionar directamente el OCR sobre el documento cuando se usa la vista `scroll`
@@ -23,11 +30,10 @@ description: ''
 - Se pule la visualización de los bloques y OCR permitiendo la edición
 - Se mejora el UX para el dibujo de bloques en los documentos e imágenes tanto en la vista 3D como en la vista scroll
 - El visor de galería de imágenes y de documentos ahora permite agregar en la URL un parámetro para la página que se quiera explorar
-- Si al explorar los recursos se estan visualizando campos `text` en los resultados, estos campos no son necesarios para los resultados. Es decir, un recurso puede o no tener contenido en ese campo
+- Si al explorar los recursos se estan visualizando campos `text` en los resultados, estos campos no son necesarios para los resultados. Es decir, un recurso puede o no tener contenido en estos campos
 - Se agregan los filtros necesarios para que se puedan ordenar los resultados usando un campo `text`
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 - Se implementa sistema de validación de llaves para las funcionalidades PRO del aplicativo
 
 ## [0.9.3] _23 May 2025_
