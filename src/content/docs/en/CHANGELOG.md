@@ -9,7 +9,6 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Implemented semantic search for resource metadata
-- Added `Ctrl + Z` support in the Liquid Text editor
 - Added a new form field that allows selecting one of the users registered in the system
 - Implemented chat with the AI assistant in the image and gallery views
 
@@ -24,6 +23,7 @@ description: ''
 - Added conditional fields for displaying plugin action forms
 - Added the ability to directly select OCR on the document when using the `scroll` view
 - Enabled the document view in public query interfaces
+- Added `Ctrl + Z` support in the Liquid Text editor
 
 ### Fixed
 - Fixed the display of location names in the metadata query view

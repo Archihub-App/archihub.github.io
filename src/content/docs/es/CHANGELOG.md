@@ -9,7 +9,6 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se implementa búsqueda semántica para los metadatos de los recursos
-- Soporte `Ctrl + Z` en el editor de texto líquido
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 
@@ -24,6 +23,7 @@ description: ''
 - Se agregan los campos condicionales para la visualización de los formularios de las acciones de los plugins
 - Se agrega la posibilidad de seleccionar directamente el OCR sobre el documento cuando se usa la vista `scroll`
 - Se habilita la vista de documentos en las vistas de consulta públicas
+- Soporte `Ctrl + Z` en el editor de texto líquido
 
 ### Fixed
 - Se arregla la visualización de los nombres de las ubicaciones en la vista de consulta de metadatos
