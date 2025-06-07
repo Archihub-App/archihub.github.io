@@ -13,6 +13,7 @@ description: ''
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 - Se agrega soporte de imágenes para el handler de servicios LLM
 - Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
+- Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

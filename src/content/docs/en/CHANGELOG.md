@@ -13,6 +13,7 @@ description: ''
 - Implemented chat with the AI assistant in the image and gallery views
 - Added image support to the LLM services handler
 - Added the ability to search from the sidebar menu from any view within the application
+- Installation assistant added to load basic data into forms and lists during setup
 
 ### Security
 - The access levels for image galleries are adjusted
