@@ -14,6 +14,7 @@ description: ''
 - Se agrega soporte de imágenes para el handler de servicios LLM
 - Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
+- Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

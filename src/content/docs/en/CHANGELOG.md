@@ -14,6 +14,7 @@ description: ''
 - Added image support to the LLM services handler
 - Added the ability to search from the sidebar menu from any view within the application
 - Installation assistant added to load basic data into forms and lists during setup
+- Added a zoom level slider to both the document view and the image view
 
 ### Security
 - The access levels for image galleries are adjusted
