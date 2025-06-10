@@ -15,6 +15,7 @@ description: ''
 - Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
+- Soporte de Azure como servicio para los asistentes de IA
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
