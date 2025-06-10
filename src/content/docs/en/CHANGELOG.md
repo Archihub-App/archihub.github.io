@@ -17,6 +17,10 @@ description: ''
 - Added a zoom level slider to both the document view and the image view
 - Azure has been added as one of the LLM API providers
 
+### Fixed
+- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
+- Implemented double-click functionality in the resource tree to open a folder
+
 ### Security
 - The access levels for image galleries are adjusted
 

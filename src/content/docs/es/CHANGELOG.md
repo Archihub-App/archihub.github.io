@@ -17,6 +17,10 @@ description: ''
 - Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
 - Soporte de Azure como servicio para los asistentes de IA
 
+### Fixed
+- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
+- Se implementa doble click en el árbol de recursos para abrir una carpeta
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
