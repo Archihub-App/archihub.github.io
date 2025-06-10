@@ -1,0 +1,64 @@
+---
+title: Documentación ArchiHUB
+description: Explora la documentación oficial de ArchiHUB
+template: splash
+hero:
+  tagline: Descubre nuevas formas de consultar y preservar información con ArchiHUB. Explora el proyecto y aprende cómo empezar a construir archivos digitales duraderos y accesibles.
+  image:
+    file: ../../../assets/logo_docu_archihub.png
+    alt: Logo de ArchiHUB
+  actions:
+    - text: Conoce el proyecto
+      link: https://bit-sol.xyz/es/projects/archihub
+      icon: information
+      variant: secondary
+    - text: Licenciamiento
+      link: /archihub.github.io/es/licencia
+      icon: seti:license
+      variant: secondary
+    - text: Empieza ahora
+      link: /archihub.github.io/es/install_local
+      icon: rocket
+      variant: secondary
+    - text: Guías de uso en YouTube
+      link: https://www.youtube.com/watch?v=XrH0VRjUpys&list=PLzh6tCpowSeuJ7QOqjVL_lM5ASIcBdQXu
+      variant: secondary
+      icon: youtube
+    - text: Ve al repositorio
+      link: https://github.com/ArchiHUB-App
+      icon: github
+      variant: secondary
+    - text: CHANGELOG
+      link: /archihub.github.io/es/changelog
+      icon: seti:clock
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import '../../../styles/clients.css';
+import { clients } from '../../../data/clients.jsx';
+
+## Próximos pasos	
+<CardGrid stagger>
+  <Card title="Guía de inicio rápido" icon="rocket">
+    Comienza a utilizar ArchiHUB en minutos con nuestra guía paso a paso para nuevos usuarios. [Instala ahora →](/archihub.github.io/es/install_local)
+  </Card>
+	<Card title="Estándares de metadatos" icon="star">
+    Crea facilmente distintos tipos de formularios para tu contenido. [Conoce los estándares de metadatos →](/archihub.github.io/es/estandares)
+  </Card>
+  <Card title="Guías en video" icon="youtube">
+    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo. [Conoce las guías en video →](https://www.youtube.com/watch?v=XrH0VRjUpys&list=PLzh6tCpowSeuJ7QOqjVL_lM5ASIcBdQXu)
+  </Card>
+</CardGrid>
+
+## ¿Quienes han confiado en ArchiHUB?
+
+Este desarrollo se beneficia de la experiencia en la administración de archivos de diversas entidades públicas en Colombia. A todas estas entidades y los equipos que las conformaron, un agradecimiento especial por hacerlo posible, por aportar su conocimiento y sus comentarios para probar y mejorar el aplicativo.
+
+<section className="clients">
+  {clients.map((client) => (
+    <a key={client.name} href={client.link} target="_blank" rel="noopener noreferrer" className="client">
+      <img src={client.logo} alt={client.name} />
+    </a>
+  ))}
+</section>

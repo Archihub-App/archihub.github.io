@@ -1,0 +1,19 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .client img {
+    width: 150px !important;
+    height: auto;
+    width: auto;
+    transition: transform 0.2s ease;
+  }
+  
+  .client img:hover {
+    transform: scale(1.1);
+  }
