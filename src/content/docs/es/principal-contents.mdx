@@ -2,60 +2,61 @@
 title: Principal Contents
 description: This is a description of the principal contents.
 ---
+
 import "../../../styles/global.css";
-import { Card, CardGrid } from '@astrojs/starlight/components';
-import { LinkCard } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { LinkCard } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
 
-<a href="changelog" >
-  <Card title="Changelog" icon="seti:clock">
-    
+<Card title="Changelog" icon="seti:clock">
+  <a href="changelog">
     Consulta los cambios y actualizaciones más recientes en ArchiHUB.
-  </Card>
-</a>
+  </a>
+</Card>
 
-
-<a href="install_local" >
-  <Card title="Instalación" icon="rocket">
+<Card title="Instalación" icon="rocket" iconColor="blue">
+  <a href="install_local">
     Guía paso a paso para instalar y configurar ArchiHUB en tu entorno local.
-  </Card>
-</a>
+  </a>
+</Card>
 
-<a href="config_local" >
-  <Card title="Configuración de la herramienta" icon="seti:config">
+<Card title="Configuración de la herramienta" icon="seti:config">
+  <a href="config_local">
     Aprende a configurar y personalizar ArchiHUB según tus necesidades.
-  </Card>
-</a>
+  </a>
+</Card>
 
-<a href="perfil/config" >
-  <Card title="Mi perfil" icon="pencil">
+<Card title="Mi perfil" icon="pencil">
+  <a href="perfil/config">
     Gestiona tu perfil de usuario y configura tus preferencias personales.
-  </Card>
-</a>
+  </a>
+</Card>
 
-<a href="catalogacion" >
-  <Card title="Carga de la información" icon="document">
+<Card title="Carga de la información" icon="document">
+  <a href="catalogacion">
     Aprende a cargar y gestionar la información en ArchiHUB de manera eficiente.
-  </Card>
-</a>
+  </a>
+</Card>
 
-  <a href="stack" >
-  <Card title="Documentación técnica" icon="seti:json">
-    Documentación detallada sobre la arquitectura y componentes técnicos de ArchiHUB.
-  </Card>
-</a>
+<Card title="Documentación técnica" icon="seti:json">
+  <a href="stack">
+    Documentación detallada sobre la arquitectura y componentes técnicos de
+    ArchiHUB.
+  </a>
+</Card>
 
-<a href="crear_plugin" >
-  <Card title="Guías para desarrolladores" icon="information">
+<Card title="Guías para desarrolladores" icon="information">
+  <a href="crear_plugin">
     Guías para desarrolladores que quieran crear plugins con ArchiHUB.
-  </Card>
-</a>
+  </a>
+</Card>
 
-<a href="file_processing" >
-  <Card title="Plugins" icon="star">
-    Aprende a utilizar plugins existentes para extender la funcionalidad de ArchiHUB.
-  </Card>
-</a>
+<Card title="Plugins" icon="star">
+  <a href="file_processing">
+    Aprende a utilizar plugins existentes para extender la funcionalidad de
+    ArchiHUB.
+  </a>
+</Card>
 
 </CardGrid>
