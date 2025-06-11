@@ -1,331 +1,337 @@
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
-
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
-  site: 'https://archihub-app.github.io',
-  base: '/archihub.github.io',
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  site: "https://archihub-app.github.io",
+  base: "/archihub.github.io",
   integrations: [
     starlight({
-      title: 'ArchiHUB',
-      defaultLocale: 'es',
+      title: "ArchiHUB",
+      defaultLocale: "es",
       locales: {
         es: {
-          label: 'Español',
-          lang: 'es'
+          label: "Español",
+          lang: "es",
         },
         en: {
-          label: 'English',
-          lang: 'en'
+          label: "English",
+          lang: "en",
         },
       },
       sidebar: [
-        { 
-          label: 'Conoce el proyecto',
+        {
+          label: "Conoce el proyecto",
           translations: {
-            en: 'About the project'
+            en: "About the project",
           },
-          link: '/archihub'
+          link: "/archihub",
         },
         {
-          label: 'CHANGELOG',
-          link: '/changelog'
+          label: "CHANGELOG",
+          link: "/changelog",
         },
         {
-          label: 'Instalación',
+          label: "Instalación",
           translations: {
-            en: 'Installation'
-          },
-          items: [
-            {
-              label: 'Instalación en una máquina local',
-              translations: {
-                en: 'Install on a local machine'
-              },
-              link: '/install_local'
-            },
-            {
-              label: 'Primeros pasos después de la instalación',
-              translations: {
-                en: 'First steps after installation'
-              },
-              link: '/pasos'
-            },
-            {
-              label: 'Configuración avanzada de la instalación local',
-              translations: {
-                en: 'Advanced Configuration of Local Installation'
-              },
-              link: '/config_local'
-            },
-            {
-              label: 'Instalar un plugin',
-              translations: {
-                en: 'Install a plugin'
-              },
-              link: '/install_plugin'
-            },
-            {
-              label: 'Actualizar el aplicativo',
-              translations: {
-                en: 'Update the application'
-              },
-              link: '/actualizar_local'
-            }
-          ]
-        },
-        {
-          label: 'Configuración de la herramienta',
-          translations: {
-            en: 'Tool configuration'
+            en: "Installation",
           },
           items: [
             {
-              label: 'Los estándares de metadatos y tipos de contenido',
+              label: "Instalación en una máquina local",
               translations: {
-                en: 'Metadata standards and content types'
+                en: "Install on a local machine",
               },
-              link: '/estandares'
+              link: "/install_local",
             },
             {
-              label: 'Campos para los estándares de metadatos',
+              label: "Primeros pasos después de la instalación",
               translations: {
-                en: 'Fields for metadata standards'
+                en: "First steps after installation",
               },
-              link: '/campos'
+              link: "/pasos",
             },
             {
-              label: 'Las vistas de consulta',
+              label: "Configuración avanzada de la instalación local",
               translations: {
-                en: 'Query views'
+                en: "Advanced Configuration of Local Installation",
               },
-              link: '/consulta'
+              link: "/config_local",
             },
             {
-              label: 'Los roles de usuario',
+              label: "Instalar un plugin",
               translations: {
-                en: 'User roles'
+                en: "Install a plugin",
               },
-              link: '/roles'
+              link: "/install_plugin",
             },
             {
-              label: 'Los niveles de acceso a la información',
+              label: "Actualizar el aplicativo",
               translations: {
-                en: 'Levels of access to information'
+                en: "Update the application",
               },
-              link: '/acceso'
+              link: "/actualizar_local",
             },
-            {
-              label: 'Los ajustes del sistema',
-              translations: {
-                en: 'System settings'
-              },
-              link: '/ajustes'
-            }
-          ]
+          ],
         },
         {
-          label: 'Mi perfil',
+          label: "Configuración de la herramienta",
           translations: {
-            en: 'My profile'
+            en: "Tool configuration",
           },
           items: [
             {
-              label: 'Configuración de mi perfil',
+              label: "Los estándares de metadatos y tipos de contenido",
               translations: {
-                en: 'My profile settings'
+                en: "Metadata standards and content types",
               },
-              link: '/perfil/config'
+              link: "/estandares",
             },
             {
-              label: 'Mis favoritos',
+              label: "Campos para los estándares de metadatos",
               translations: {
-                en: 'My bookmarks'
+                en: "Fields for metadata standards",
               },
-              link: '/perfil/favoritos'
+              link: "/campos",
             },
             {
-              label: 'Mis recortes',
+              label: "Las vistas de consulta",
               translations: {
-                en: 'My snippets'
+                en: "Query views",
               },
-              link: '/perfil/recortes'
+              link: "/consulta",
             },
             {
-              label: 'Las llaves de acceso',
+              label: "Los roles de usuario",
               translations: {
-                en: 'Access keys'
+                en: "User roles",
               },
-              link: '/perfil/llaves'
+              link: "/roles",
             },
             {
-              label: 'Mis procesamientos',
+              label: "Los niveles de acceso a la información",
               translations: {
-                en: 'My processings'
+                en: "Levels of access to information",
               },
-              link: '/perfil/procesamientos'
+              link: "/acceso",
             },
             {
-              label: 'Procesamientos automáticos',
+              label: "Los ajustes del sistema",
               translations: {
-                en: 'Automatic processings'
+                en: "System settings",
               },
-              link: '/perfil/procesamientos_auto'
-            }
-          ]
+              link: "/ajustes",
+            },
+          ],
         },
         {
-          label: 'Carga de la información',
+          label: "Mi perfil",
           translations: {
-            en: 'Information loading'
+            en: "My profile",
           },
           items: [
             {
-              label: 'El módulo de catalogación',
+              label: "Configuración de mi perfil",
               translations: {
-                en: 'The cataloging module'
+                en: "My profile settings",
               },
-              link: '/catalogacion'
+              link: "/perfil/config",
             },
             {
-              label: 'Cargas masivas usando el script de carga y la API de administración',
+              label: "Mis favoritos",
               translations: {
-                en: 'Bulk uploads using the upload script and the administration API'
+                en: "My bookmarks",
               },
-              link: '/masivas'
+              link: "/perfil/favoritos",
             },
             {
-              label: 'Actualizar / exportar los tipos de contenido, listados y estándares de metadatos',
+              label: "Mis recortes",
               translations: {
-                en: 'Update / export content types, listings and metadata standards'
+                en: "My snippets",
               },
-              link: '/inventarios'
+              link: "/perfil/recortes",
             },
             {
-              label: 'Cargar polígonos geográficos para la visualización y catalogación de la información',
+              label: "Las llaves de acceso",
               translations: {
-                en: 'Load geographic polygons for viewing and cataloging information'
+                en: "Access keys",
               },
-              link: '/geosystem'
-            }
-          ]
+              link: "/perfil/llaves",
+            },
+            {
+              label: "Mis procesamientos",
+              translations: {
+                en: "My processings",
+              },
+              link: "/perfil/procesamientos",
+            },
+            {
+              label: "Procesamientos automáticos",
+              translations: {
+                en: "Automatic processings",
+              },
+              link: "/perfil/procesamientos_auto",
+            },
+          ],
         },
         {
-          label: 'Documentación técnica',
+          label: "Carga de la información",
           translations: {
-            en: 'Technical documentation'
+            en: "Information loading",
           },
           items: [
             {
-              label: 'Stack tecnológico y requerimientos',
+              label: "El módulo de catalogación",
               translations: {
-                en: 'Technological stack and requirements'
+                en: "The cataloging module",
               },
-              link: '/stack'
+              link: "/catalogacion",
             },
             {
-              label: 'Las filas de procesos y los nodos de procesamiento',
+              label:
+                "Cargas masivas usando el script de carga y la API de administración",
               translations: {
-                en: 'Process rows and processing nodes'
+                en: "Bulk uploads using the upload script and the administration API",
               },
-              link: '/nodos'
-            }
-          ]
+              link: "/masivas",
+            },
+            {
+              label:
+                "Actualizar / exportar los tipos de contenido, listados y estándares de metadatos",
+              translations: {
+                en: "Update / export content types, listings and metadata standards",
+              },
+              link: "/inventarios",
+            },
+            {
+              label:
+                "Cargar polígonos geográficos para la visualización y catalogación de la información",
+              translations: {
+                en: "Load geographic polygons for viewing and cataloging information",
+              },
+              link: "/geosystem",
+            },
+          ],
         },
         {
-          label: 'Guías para desarrolladores',
+          label: "Documentación técnica",
           translations: {
-            en: 'Guides for developers'
+            en: "Technical documentation",
           },
           items: [
             {
-              label: 'Guía para crear un plugin',
+              label: "Stack tecnológico y requerimientos",
               translations: {
-                en: 'Guide to create a plugin'
+                en: "Technological stack and requirements",
               },
-              link: '/crear_plugin'
-            }
-          ]
+              link: "/stack",
+            },
+            {
+              label: "Las filas de procesos y los nodos de procesamiento",
+              translations: {
+                en: "Process rows and processing nodes",
+              },
+              link: "/nodos",
+            },
+          ],
         },
         {
-          label: 'Plugins disponibles',
+          label: "Guías para desarrolladores",
           translations: {
-            en: 'Available plugins'
+            en: "Guides for developers",
           },
           items: [
             {
-              label: 'Procesamiento de archivos',
+              label: "Guía para crear un plugin",
               translations: {
-                en: 'File processing'
+                en: "Guide to create a plugin",
               },
-              link: '/file_processing'
+              link: "/crear_plugin",
             },
-            {
-              label: 'Generador de inventarios',
-              translations: {
-                en: 'Inventory maker'
-              },
-              link: '/inventory_maker'
-            },
-            {
-              label: 'Actualización masiva de recursos',
-              translations: {
-                en: 'Massive updater of resources'
-              },
-              link: '/massive_updater'
-            },
-            {
-              label: 'Descarga de videos',
-              translations: {
-                en: 'Video download'
-              },
-              link: '/video_download'
-            },
-            {
-              label: 'Transcripción de audio y video',
-              translations: {
-                en: 'Audio and video transcription'
-              },
-              link: '/transcribe'
-            }
-          ]
+          ],
         },
         {
-          label: 'Licencia y código de conducta',
+          label: "Plugins disponibles",
           translations: {
-            en: 'License and code of conduct'
+            en: "Available plugins",
           },
           items: [
             {
-              label: 'Agradecimientos',
+              label: "Procesamiento de archivos",
               translations: {
-                en: 'Acknowledgements'
+                en: "File processing",
               },
-              link: '/agradecimientos'
+              link: "/file_processing",
             },
             {
-              label: 'Licencia',
+              label: "Generador de inventarios",
               translations: {
-                en: 'License'
+                en: "Inventory maker",
               },
-              link: '/licencia'
+              link: "/inventory_maker",
             },
             {
-              label: 'Código de conducta',
+              label: "Actualización masiva de recursos",
               translations: {
-                en: 'Code of conduct'
+                en: "Massive updater of resources",
               },
-              link: '/conducta'
-            }
-          ]
-        }
+              link: "/massive_updater",
+            },
+            {
+              label: "Descarga de videos",
+              translations: {
+                en: "Video download",
+              },
+              link: "/video_download",
+            },
+            {
+              label: "Transcripción de audio y video",
+              translations: {
+                en: "Audio and video transcription",
+              },
+              link: "/transcribe",
+            },
+          ],
+        },
+        {
+          label: "Licencia y código de conducta",
+          translations: {
+            en: "License and code of conduct",
+          },
+          items: [
+            {
+              label: "Agradecimientos",
+              translations: {
+                en: "Acknowledgements",
+              },
+              link: "/agradecimientos",
+            },
+            {
+              label: "Licencia",
+              translations: {
+                en: "License",
+              },
+              link: "/licencia",
+            },
+            {
+              label: "Código de conducta",
+              translations: {
+                en: "Code of conduct",
+              },
+              link: "/conducta",
+            },
+          ],
+        },
       ],
       logo: {
-        src: './src/assets/logo_docu_archihub.png',
+        src: "./src/assets/logo_docu_archihub.png",
       },
-      favicon: '/favicon.ico',
+      favicon: "/favicon.ico",
       social: {
-        github: 'https://github.com/ArchiHUB-App',
-        instagram: 'https://www.instagram.com/archihub_app/',
+        github: "https://github.com/ArchiHUB-App",
+        instagram: "https://www.instagram.com/archihub_app/",
       },
     }),
   ],

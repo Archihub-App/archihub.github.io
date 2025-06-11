@@ -1,0 +1,60 @@
+---
+title: Principal Contents
+description: This is a description of the principal contents.
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { LinkCard } from "@astrojs/starlight/components";
+import "../../../styles/global.css";
+
+<CardGrid stagger>
+
+<Card title="Changelog" icon="seti:clock">
+  <a href="changelog">
+    Check out the latest changes and updates in ArchiHUB.
+  </a>
+</Card>
+
+<Card title="Installation" icon="rocket" iconColor="blue">
+  <a href="install_local">
+    Step-by-step guide to install and configure ArchiHUB in your local environment.
+  </a>
+</Card>
+
+<Card title="Tool Configuration" icon="seti:config">
+  <a href="config_local">
+    Learn how to configure and customize ArchiHUB according to your needs.
+  </a>
+</Card>
+
+<Card title="My Profile" icon="pencil">
+  <a href="perfil/config">
+    Manage your user profile and configure your personal preferences.
+  </a>
+</Card>
+
+<Card title="Information Upload" icon="document">
+  <a href="catalogacion">
+    Learn how to upload and manage information in ArchiHUB efficiently.
+  </a>
+</Card>
+
+<Card title="Technical Documentation" icon="seti:json">
+  <a href="stack">
+    Detailed documentation about ArchiHUB's architecture and technical components.
+  </a>
+</Card>
+
+<Card title="Developer Guides" icon="information">
+  <a href="crear_plugin">
+    Guides for developers who want to create plugins with ArchiHUB.
+  </a>
+</Card>
+
+<Card title="Plugins" icon="star">
+  <a href="file_processing">
+    Learn how to use existing plugins to extend ArchiHUB's functionality.
+  </a>
+</Card>
+
+</CardGrid>
