@@ -2,33 +2,60 @@
 title: Principal Contents
 description: This is a description of the principal contents.
 ---
-
+import "../../../styles/global.css";
 import { Card, CardGrid } from '@astrojs/starlight/components';
-import '../../../styles/clients.css';
+import { LinkCard } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
+
+<a href="changelog" >
   <Card title="Changelog" icon="seti:clock">
-    Comienza a utilizar ArchiHUB en minutos con nuestra guía paso a paso para nuevos usuarios.
+    
+    Consulta los cambios y actualizaciones más recientes en ArchiHUB.
   </Card>
-	<Card title="Instalación local" icon="seti:terminal">
-    Crea facilmente distintos tipos de formularios para tu contenido. 
+</a>
+
+
+<a href="install_local" >
+  <Card title="Instalación" icon="rocket">
+    Guía paso a paso para instalar y configurar ArchiHUB en tu entorno local.
   </Card>
-  <Card title="Configuración de la herramienta" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+<a href="config_local" >
+  <Card title="Configuración de la herramienta" icon="seti:config">
+    Aprende a configurar y personalizar ArchiHUB según tus necesidades.
   </Card>
-  <Card title="Mi perfil" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+<a href="perfil/config" >
+  <Card title="Mi perfil" icon="pencil">
+    Gestiona tu perfil de usuario y configura tus preferencias personales.
   </Card>
-  <Card title="Carga de la información" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+<a href="catalogacion" >
+  <Card title="Carga de la información" icon="document">
+    Aprende a cargar y gestionar la información en ArchiHUB de manera eficiente.
   </Card>
-  <Card title="Documentación técnica" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+  <a href="stack" >
+  <Card title="Documentación técnica" icon="seti:json">
+    Documentación detallada sobre la arquitectura y componentes técnicos de ArchiHUB.
   </Card>
-  <Card title="Guías para desarrolladores" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+<a href="crear_plugin" >
+  <Card title="Guías para desarrolladores" icon="information">
+    Guías para desarrolladores que quieran crear plugins con ArchiHUB.
   </Card>
-  <Card title="Plugins" icon="seti:gear">
-    Conoce el listado de videos guías que tenemos disponibles para ayudarte a usar el aplicativo.
+</a>
+
+<a href="file_processing" >
+  <Card title="Plugins" icon="star">
+    Aprende a utilizar plugins existentes para extender la funcionalidad de ArchiHUB.
   </Card>
-  </CardGrid>
+</a>
+
+</CardGrid>
