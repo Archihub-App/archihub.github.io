@@ -20,6 +20,7 @@ description: ''
 ### Fixed
 - Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Implemented double-click functionality in the resource tree to open a folder
+- Fixed the geographic filter component
 
 ### Security
 - The access levels for image galleries are adjusted
