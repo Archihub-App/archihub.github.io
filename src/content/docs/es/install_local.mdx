@@ -2,6 +2,7 @@
 title: 'Instalación en una máquina local '
 description: 'Lorem ipsum dolor sit amet - 2'
 ---
+import { Steps } from '@astrojs/starlight/components';
 
 Es importante destacar que existen requerimientos mínimos de hardware para poder ejecutar el aplicativo en función de las herramientas que se deseen utilizar. A continuación, se presenta una tabla que describe las distintas funciones junto con sus requerimientos mínimos correspondientes.
 
@@ -20,22 +21,59 @@ Para instalar ArchiHUB en una máquina local, es necesario contar con el aplicat
 
 ## Descargar ArchiHUB
 
-El sistema ArchiHUB se compone de dos partes principales: un backend y un frontend. El backend, siendo una API, permite que el frontend sea un componente intercambiable. Actualmente, hay una versión del frontend que ejecuta todas las tareas relacionadas con el procesamiento y la gestión del archivo. No obstante, esta configuración no restringe el uso del sistema, ya que se puede desarrollar una interfaz adaptada a las necesidades específicas de cada usuario, dependiendo de sus requerimientos. A continuación detallaremos los pasos a seguir para la instalación usando _docker compose_. El primer paso es clonar o descargar el [repositorio](https://github.com/ArchiHUB-App/getting-started) con los scripts de instalación:
+El sistema ArchiHUB está compuesto por dos componentes principales:  
+- **Backend**: Una API que sirve como base del sistema  
+- **Frontend**: Componente intercambiable que puede adaptarse según necesidades específicas  
 
-```
-git clone https://github.com/ArchiHUB-App/getting-started
-```
+Actualmente existe una versión del frontend que gestiona todas las tareas de procesamiento y manejo de archivos. Sin embargo, esta implementación no limita el sistema, ya que permite desarrollar interfaces personalizadas según los requerimientos de cada usuario.
 
-En este repositorio encontramos centralizados las distintas formas en las que podemos iniciar nuestra instalación de ArchiHUB. Para nuestro caso específico, necesitaremos el contenido de la carpeta _local-machine_. Antes de comenzar el proceso de instalación, es crucial que actualices las llaves de ingreso y ajustes algunas configuraciones de seguridad. Esto asegurará que tu instalación sea segura y que todo funcione sin problemas desde el principio.
+### Preparación de la instalación
+
+Este repositorio centraliza las diferentes formas de instalar ArchiHUB. Para nuestro caso, necesitaremos los archivos ubicados en la carpeta `local-machine`.
+
+**Importante**: Antes de comenzar, debes:
+1. Actualizar las claves de acceso
+2. Ajustar las configuraciones de seguridad
+
+Esto garantizará que la instalación sea segura y funcione correctamente desde el inicio.
 
 ### Configuración del entorno
 
-Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo archivo .env copiando el contenido que se encuentra en el archivo .env.back. Puedes utilizar el editor de texto de tu preferencia para realizar esta tarea. Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
+Sigue estos pasos para preparar el entorno:
 
-- __Línea 7__: _MONGO_INITDB_ROOT_PASSWORD_ es la variable de entorno que le asigna una contraseña a la base de datos. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. [Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. [Enlace para generar llave fernet](https://fernetkeygen.com/).
+<Steps>
+
+1. Descargar el repositorio con los scripts de instalación
+
+   ```bash
+   git clone https://github.com/ArchiHUB-App/getting-started
+   ```
+
+2. Ir a la carpeta archihub
+   ```bash
+   cd getting-started/local-machine/archihub
+   ```
+
+3. Renombrar el archivo .env.bak a .env
+   ```bash
+   mv .env.back .env
+   ```
+
+
+</Steps>
+
+Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
+
+- __Línea 7__: _MONGO_INITDB_ROOT_PASSWORD_ es la variable de entorno que le asigna una contraseña a la base de datos. 
+- __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. 
+- __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. 
+- __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. 
+
+**Herramientas útiles**
+
+[Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+
+[Enlace para generar llave fernet](https://fernetkeygen.com/).
 
 ### Organización de las carpetas
 
@@ -66,23 +104,53 @@ Para comenzar, debes ir a la carpeta /local-machine/archihub y crear un nuevo ar
 
 Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/ArchiHUB-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
 
-- __Clonando el repositorio__: Utiliza el comando `git clone` para clonar el repositorio, esto debe ser dentro de la carpeta `/local-machine/archihub/` con el nombre de carpeta "backend". <br>
-    ```
-    git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
-    ```
-- __Descargando el zip__: <br>![descarga desde github](/archihub.github.io/imagenes/descarga_git.gif)
+<Steps>
+
+4. Clonar el repositorio
+   ```bash
+   git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
+   ```
+   Este comando debe ejecutarse dentro de la carpeta `/local-machine/archihub/` y creará una carpeta llamada "backend".
+
+5. O descargar el zip
+   ![descarga desde github](/archihub.github.io/imagenes/descarga_git.gif)
+
+</Steps>
 
 Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
 
 ### Arrancar el aplicativo
 
-Cuando ya tengamos las variables de entorno configuradas y las carpetas listas, estamos preparados para iniciar el aplicativo usando Docker. Para esto es necesario abrir un terminal y dirigirse a la carpeta en donde se encuentra la herramienta Archivo. Para hacer esto, se debe escribir `cd ` _(!! no olvidar el espacio al final)_ en la terminal y arrastrar la carpeta __archihub__ a la terminal.
+<Steps>
 
-![vista abrir carpeta en la terminal](/archihub.github.io/imagenes/terminal.gif)
+6. Ejecutar el comando de despliegue
+   ```bash
+   docker compose up -d
+   ```
+   Este comando iniciará el despliegue de todos los servicios necesarios.
 
-Pulsar “Enter” y luego copiar y pegar el comando `docker compose up -d` y “Enter” para aceptar. Se iniciará el despliegue de los servicios. Para verificar el estado de los servicios, puedes abrir la aplicación Docker y dirigirte a la pestaña "Containers". Allí debería aparecer __archihub__ como activo.
+7. Verificar el estado de los servicios
+   Puedes verificar el estado de dos maneras:
 
-Usualmente la instalación puede tomar unos minutos. Cuando estés listo puedes ir al siguiente enlace usando su navegador: [http://localhost/](http://localhost/)
+   **Opción 1 - Docker Desktop:**
+   - Abre la aplicación Docker Desktop
+   - Ve a la pestaña "Containers"
+   - Verifica que aparezca __archihub__ como activo
+
+   **Opción 2 - Terminal:**
+   ```bash
+   docker ps
+   ```
+   Este comando mostrará todos los contenedores activos. Deberías ver los contenedores de ArchiHUB en la lista.
+
+8. Acceder a la aplicación
+   - Abre tu navegador web
+   - Ve a [http://localhost/](http://localhost/)
+   - La instalación puede tomar unos minutos, sé paciente
+
+</Steps>
+
+> **Nota:** Si los servicios no aparecen como activos, espera unos minutos y verifica nuevamente. La primera instalación puede tomar más tiempo.
 
 El usuario por defecto de esta instalación es __beta__ y la contraseña __beta__.
 
