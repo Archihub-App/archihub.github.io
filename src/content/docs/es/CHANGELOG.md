@@ -20,6 +20,7 @@ description: ''
 ### Fixed
 - Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Se implementa doble click en el árbol de recursos para abrir una carpeta
+- Se arregla el componente de filtro geográfico
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
