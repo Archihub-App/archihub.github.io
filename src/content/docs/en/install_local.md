@@ -2,6 +2,7 @@
 title: 'Installation on a local machine'
 description: 'Lorem ipsum dolor sit amet - 2'
 ---
+import { Steps } from '@astrojs/starlight/components';
 
 It is important to note that there are minimum hardware requirements to be able to run the application depending on the tools to be used. Below is a table describing the different functions and their corresponding minimum requirements.
 
@@ -20,22 +21,58 @@ To install ArchiHUB on a local machine, it is necessary to have the Docker appli
 
 ## Download ArchiHUB
 
-The ArchiHUB system is composed of two main parts: a backend and a frontend. The backend, being an API, allows the frontend to be an interchangeable component. Currently, there is a version of the frontend that executes all tasks related to archive processing and management. However, this configuration does not restrict the use of the system, since it is possible to develop an interface adapted to the specific needs of each user, depending on their requirements. We will now detail the steps to follow for installation using _docker compose_. The first step is to clone or download the [repository](https://github.com/ArchiHUB-App/getting-started) with the installation scripts:
+The ArchiHUB system is composed of two main components:  
+- **Backend**: An API that serves as the system's foundation  
+- **Frontend**: An interchangeable component that can be adapted according to specific needs  
 
-```
-git clone https://github.com/ArchiHUB-App/getting-started
-```
+Currently, there is a version of the frontend that manages all processing and file management tasks. However, this implementation does not limit the system, as it allows the development of custom interfaces according to each user's requirements.
 
-In this repository we find centralized the different ways in which we can start our ArchiHUB installation. For our specific case, we will need the content of the _local-machine_ folder. Before starting the installation process, it is crucial that you update the login keys and adjust some security settings. This will ensure that your installation is secure and that everything runs smoothly from the start.
+### Installation preparation
+
+This repository centralizes the different ways to install ArchiHUB. For our case, we will need the files located in the `local-machine` folder.
+
+**Important**: Before starting, you must:
+1. Update the access keys
+2. Adjust security settings
+
+This will ensure that the installation is secure and works correctly from the start.
 
 ### Environment configuration
 
-To begin, you must go to the /local-machine/archihub folder and create a new .env file by copying the contents found in the .env.back file. You can use the text editor of your choice to perform this task. Be sure to adjust the following settings in this file so that everything works correctly:
+Follow these steps to prepare the environment:
 
-- __Line 7__: _MONGO_INITDB_ROOT_PASSWORD_ is the environment variable that assigns a password to the database. [Link to randomly generate a password](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Line 11__: _ELASTIC_PASSWORD_ is the environment variable that assigns a password to the index of elasticsearch. [Link to randomly generate a password](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Line 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ are for the keys to enter the application. [Link to randomly generate a password](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
-- __Line 31__: _FERNET_KEY_ is the key used to encrypt our API access keys. [Link to generate fernet key](https://fernetkeygen.com/).
+<Steps>
+
+1. Download the repository with installation scripts
+
+   ```bash
+   git clone https://github.com/ArchiHUB-App/getting-started
+   ```
+
+2. Go to the archihub folder
+   ```bash
+   cd getting-started/local-machine/archihub
+   ```
+
+3. Rename the .env.bak file to .env
+   ```bash
+   mv .env.back .env
+   ```
+
+</Steps>
+
+Make sure to adjust the following settings in this file so that everything works correctly:
+
+- __Line 7__: _MONGO_INITDB_ROOT_PASSWORD_ is the environment variable that assigns a password to the database. 
+- __Line 11__: _ELASTIC_PASSWORD_ is the environment variable that assigns a password to the elasticsearch index. 
+- __Line 29 and 30__: _SECRET_KEY_ and _JWT_SECRET_KEY_ are for the application login keys. 
+- __Line 31__: _FERNET_KEY_ is the key used to encrypt our API access keys. 
+
+**Useful tools**
+
+[Link to randomly generate a password](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+
+[Link to generate fernet key](https://fernetkeygen.com/).
 
 ### Folder organization
 
@@ -54,8 +91,8 @@ To begin, you must go to the /local-machine/archihub folder and create a new .en
 │   │   ├── elastic
  ```
 
- The root of the folder is composed of the following folders, if they do not exist they must be created:
- - __archihub__: in this folder we find the _frontend_ code, the _backend_ we must download or clone it from the repository and in _mongo_db_ we find the initial configuration of the application to load to a fresh installation of the database.
+ The root folder consists of the following folders, if they don't exist they must be created:
+ - __archihub__: in this folder we find the _frontend_ code, the _backend_ we must download or clone from the repository, and in _mongo_db_ we find the initial configuration of the application to load into a fresh database installation.
  - __webfiles__: ArchiHUB supports a wide variety of documents that you can upload without worrying about the format. To facilitate viewing and standardize formats, our tool takes care of generating web versions of the documents. This allows you to access and view your files consistently and smoothly, regardless of the original format.
  - __userfiles__: this folder stores files generated by users, such as mass processing reports or inventories requested from the cataloging module.
  - __temporal__: for some processing cases it is necessary to manipulate temporary files, this folder is used for that.
@@ -66,22 +103,54 @@ To begin, you must go to the /local-machine/archihub folder and create a new .en
 
 As we mentioned before, it is necessary to download the backend code from the [repository](https://github.com/ArchiHUB-App/archihub-backend) of the project. You can do it in two ways:
 
-- __Cloning the repository__: Use the `git clone` command to clone the repository, this should be inside the `/local-machine/archihub/` folder with the folder name "backend". <br>
-    ```
-    git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
-    ```
-- __Downloading the zip file__: <br>![download from github](/archihub.github.io/imagenes/descarga_git.gif)
+<Steps>
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
+   ```
+   This command must be executed inside the `/local-machine/archihub/` folder and will create a folder named "backend".
+
+2. Or download the zip
+   ![download from github](/archihub.github.io/imagenes/descarga_git.gif)
+
+</Steps>
 
 This will allow you to get all the necessary code to configure and run the ArchiHUB backend.
 
 ### Starting the application
 
-When we have the environment variables configured and the folders ready, we are ready to start the application using Docker. For this it is necessary to open a terminal and go to the folder where the File tool is located. To do this, type `cd ` _(!! do not forget the space at the end)_ in the terminal and drag the __archihub__ folder to the terminal.
+<Steps>
 
-![view open folder in terminal](/archihub.github.io/imagenes/terminal.gif)
+1. Execute the deployment command
+   ```bash
+   docker compose up -d
+   ```
+   This command will start the deployment of all necessary services.
 
-Press “Enter” and then copy and paste the command `docker compose up -d` and “Enter” to accept. The deployment of the services will start. To check the status of the services, you can open the Docker application and go to the “Containers” tab. There you should see __archihub__ as active.
+2. Verify the status of the services
+   You can verify the status in two ways:
 
-Usually the installation can take a few minutes. When you are ready you can go to the following link using your browser: [http://localhost/](http://localhost/)
+   **Option 1 - Docker Desktop:**
+   - Open the Docker Desktop application
+   - Go to the "Containers" tab
+   - Verify that __archihub__ appears as active
 
-Once you are ready we can continue with the [first steps](../pasos) in ArchiHUB.
+   **Option 2 - Terminal:**
+   ```bash
+   docker ps
+   ```
+   This command will show all active containers. You should see the ArchiHUB containers in the list.
+
+3. Access the application
+   - Open your web browser
+   - Go to [http://localhost/](http://localhost/)
+   - The installation may take a few minutes, be patient
+
+</Steps>
+
+> **Note:** If the services don't appear as active, wait a few minutes and check again. The first installation may take longer.
+
+The default user for this installation is __beta__ and the password is __beta__.
+
+Once you're ready, we can continue with the [first steps](../pasos) in ArchiHUB.
