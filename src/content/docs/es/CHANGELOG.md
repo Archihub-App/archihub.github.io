@@ -18,7 +18,6 @@ description: ''
 - Soporte de Azure como servicio para los asistentes de IA
 
 ### Fixed
-- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Se implementa doble click en el árbol de recursos para abrir una carpeta
 - Se arregla el componente de filtro geográfico
 - Se agrega la opción `Limpiar filtros` cuando la búsqueda no devuelve resultados
