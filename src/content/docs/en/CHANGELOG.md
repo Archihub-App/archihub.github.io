@@ -22,6 +22,7 @@ description: ''
 - Implemented double-click functionality in the resource tree to open a folder
 - Fixed the geographic filter component
 - Added a `Clear filters` option when a search returns no results
+- Added middle-click support to open links from results and the menu in a new tab
 
 ### Security
 - The access levels for image galleries are adjusted
