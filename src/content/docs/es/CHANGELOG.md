@@ -21,6 +21,7 @@ description: ''
 - Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Se implementa doble click en el árbol de recursos para abrir una carpeta
 - Se arregla el componente de filtro geográfico
+- Se agrega la opción `Limpiar filtros` cuando la búsqueda no devuelve resultados
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

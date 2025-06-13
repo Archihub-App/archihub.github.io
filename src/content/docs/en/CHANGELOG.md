@@ -21,6 +21,7 @@ description: ''
 - Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Implemented double-click functionality in the resource tree to open a folder
 - Fixed the geographic filter component
+- Added a `Clear filters` option when a search returns no results
 
 ### Security
 - The access levels for image galleries are adjusted
