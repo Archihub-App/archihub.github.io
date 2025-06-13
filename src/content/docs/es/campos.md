@@ -103,6 +103,9 @@ El campo autor es un campo especializado para capturar información sobre los cr
 
 Este campo puede configurarse para permitir múltiples autores y diferentes tipos de contribución.
 
+![CampoAutor](/archihub.github.io/imagenes/campoAuthor.png)
+
+
 ## El campo Relación
 
 El campo relación es útil si queremos relacionar tipos de contenido entre si. Por ejemplo, podemos tener un tipo de contenido que se llame _Tesauro_ y usarlo a manera de etiqueta en otro tipo de contenido usando el campo relación. De esta manera puedo relacionar uno o más campos del _Tesauro_ al contenido. Es importante aclarar que si uso un campo de relación de tipo _Tesauro_ para el formulario del _Tesauro_, al momento de guardar la plataforma los va a relacionar automaticamente entre si. Es decir que la relación se guardará no solo en el recurso que se está editando sino también en los recursos que estoy relacionando.
@@ -120,6 +123,8 @@ El campo ubicación permite capturar información geográfica o de localización
 
 Este campo es especialmente útil para recursos que tienen una componente geográfica o cuando es importante documentar la ubicación física de un objeto o evento.
 
+![Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+
 ## El campo múltiple
 
 El campo múltiple permite agrupar varios campos relacionados en una sola sección repetible. Esto es útil cuando necesitas capturar información estructurada que puede repetirse múltiples veces.
@@ -130,6 +135,9 @@ Por ejemplo:
 - Diferentes versiones de un documento con sus metadatos específicos
 
 Cada instancia del campo múltiple puede contener varios subcampos que se repiten como un conjunto.
+
+![módulo](/archihub.github.io/imagenes/multiple.png)
+
 
 ## El campo Archivo
 
