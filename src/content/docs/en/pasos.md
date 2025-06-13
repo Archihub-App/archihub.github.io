@@ -3,7 +3,7 @@ title: 'First steps - Welcome!'
 description: ''
 ---
 
-Welcome to the start of the application! Currently, you have a user with full permissions, which gives you full access to the menu. 
+Welcome to the start of the application! Currently, you have a user with full permissions, which gives you full access to the menu.
 
 Let's take this opportunity to explore all the functionalities and get familiar with the platform. Let's take a look!
 
@@ -11,7 +11,7 @@ Let's take this opportunity to explore all the functionalities and get familiar 
 
 ### Cataloging
 
-This is our main screen, where you will spend most of your time browsing through the files. 
+This is our main screen, where you will spend most of your time browsing through the files.
 
 It is important that you become familiar with how it works in order to take full advantage of all the functionalities. Let's explore together how it works and how you can use it efficiently.
 
@@ -32,6 +32,9 @@ It is important to know that content types have a hierarchy. We are currently lo
 │   ├── Serie
 │   │   ├── Document Unit
  ```
+
+ ![jerarquía](/archihub.github.io/jerarquia_en.png)
+
 
  As you can see, the __Document Unit__ can be contained in a __Fond__, a __Section__ or a __Series__. These types, which we will call the parents of the __Document Unit__, will appear on the left. Although there is nothing there now, we will soon begin to build our file. The __Document Units__ will be displayed on the right side of the screen.
 
