@@ -3,7 +3,7 @@ title: 'Primeros pasos ¡Bienvenido!'
 description: ''
 ---
 
-¡Bienvenido al inicio de la aplicación! Actualmente, tienes un usuario con todos los permisos, lo que te da acceso completo al menú. 
+¡Bienvenido al inicio de la aplicación! Actualmente, tienes un usuario con todos los permisos, lo que te da acceso completo al menú.
 
 
 Aprovechemos esta oportunidad para explorar todas las funcionalidades y familiarizarnos con la plataforma. ¡Vamos a echar un vistazo!
@@ -13,7 +13,7 @@ Aprovechemos esta oportunidad para explorar todas las funcionalidades y familiar
 
 ### Catalogación
 
-Esta es nuestra pantalla principal, donde pasarás la mayor parte del tiempo navegando por los archivos. 
+Esta es nuestra pantalla principal, donde pasarás la mayor parte del tiempo navegando por los archivos.
 
 Es importante que te familiarices con su funcionamiento para aprovechar al máximo todas las funcionalidades. Vamos a explorar juntos cómo funciona y cómo puedes utilizarlo de manera eficiente.
 
@@ -36,6 +36,9 @@ Es importante saber que los tipos de contenido tienen una jerarquía. Actualment
 │   ├── Serie
 │   │   ├── Unidad Documental
  ```
+
+![jerarquía](/archihub.github.io/jerarquia.png)
+
 
  Como puedes ver, la __Unidad Documental__ puede estar contenida en un __Fondo__, una __Sección__ o una __Serie__. Estos tipos, que llamaremos los padres de la __Unidad Documental__, aparecerán a la izquierda. Aunque ahora no hay nada, pronto comenzaremos a construir nuestro archivo. Las __unidades documentales__ se mostrarán en la parte derecha de la pantalla.
 
