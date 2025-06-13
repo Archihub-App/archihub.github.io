@@ -16,6 +16,7 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
 - Soporte de Azure como servicio para los asistentes de IA
+- Se agrega enlace al recurso en los botones del contenido relacionado en la vista de documentos
 
 ### Fixed
 - Se implementa doble click en el árbol de recursos para abrir una carpeta

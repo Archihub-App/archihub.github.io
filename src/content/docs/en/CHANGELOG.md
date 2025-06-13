@@ -16,9 +16,9 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - Added a zoom level slider to both the document view and the image view
 - Azure has been added as one of the LLM API providers
+- Added a link to the resource in the related content buttons within the document view
 
 ### Fixed
-- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
 - Implemented double-click functionality in the resource tree to open a folder
 - Fixed the geographic filter component
 - Added a `Clear filters` option when a search returns no results
