@@ -25,21 +25,24 @@ Este campo permite crear un campo de tipo booleano que solo acepta dos valores: 
 
 Al configurar este campo, se mostrará como una casilla de verificación (checkbox) en el formulario de catalogación. El usuario puede marcar o desmarcar la casilla según corresponda.
 
+![trueFalse](/archihub.github.io/imagenes/truefalse.png)
+
+
+
 ## El campo Texto
 
 El campo de texto es uno de los más básicos y versátiles. Permite ingresar texto libre en una sola línea. Es ideal para títulos, nombres, identificadores, URLs cortas, etc.
 
-Al configurar este campo puedes establecer:
-- **Nombre**: El nombre del campo que aparecerá en el formulario
-- **Destino**: La ruta donde se guardará el valor en los metadatos
-- **Requerido**: Si el campo es obligatorio o no
-- **Ayuda**: Texto de ayuda que aparecerá debajo del campo
+![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
+
 
 ## El campo Área de texto
 
 Similar al campo de texto, pero permite ingresar múltiples líneas de texto. Es perfecto para descripciones largas, resúmenes, comentarios, o cualquier contenido que requiera más espacio.
 
 Este campo se renderiza como un área de texto expandible donde el usuario puede escribir párrafos completos con saltos de línea.
+
+![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
 
 ## El campo Número
 
@@ -52,6 +55,9 @@ Es útil para metadatos como:
 - Códigos numéricos
 - Coordenadas
 
+![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
+
+
 ## El campo Fecha
 
 Este campo permite capturar fechas de manera estructurada. Incluye un selector de fecha que facilita la selección y asegura que el formato sea consistente.
@@ -62,6 +68,9 @@ Puedes configurar:
 - Si incluir o no la hora
 
 Es especialmente útil para fechas de creación, publicación, modificación, eventos, etc.
+
+![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
+
 
 ## El campo Listado
 
@@ -80,6 +89,9 @@ Por ejemplo:
 - Múltiples autores de una lista predefinida
 
 Las opciones seleccionadas se guardan como un array en los metadatos del recurso.
+
+![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
+
 
 ## El campo Autor
 
