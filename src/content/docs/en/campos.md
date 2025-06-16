@@ -95,15 +95,43 @@ The selected options are saved as an array in the resource metadata.
 
 ## The Author field
 
-The author field is a specialized field for capturing information about the creators or contributors of a resource. It can include:
-- Full name
-- Role (author, editor, translator, etc.)
-- Contact information
-- Unique identifiers
+The Author field is a specialized field for capturing information about the creators or contributors of a resource. It supports multiple authors and different types of contribution, allowing differentiation between individuals and organizations.
 
-This field can be configured to allow multiple authors and different types of contribution.
+### Field structure
+Each author entry can contain:
+- **Author type**: Person or Organization (selector)
+- **Basic information**:
+  - For individuals: First name, Last name
+  - For organizations: Full name, Acronyms
 
-![CampoAutor](/archihub.github.io/imagenes/campoAuthor.png)
+![Author field](/archihub.github.io/imagenes/campoAuthor.png)
+
+The following image shows the author form. The checkbox allows selecting between a person or an organization. For a person, it will show first name and last name fields; for an organization, it will show organization name and acronym fields.
+
+![Author form](/archihub.github.io/imagenes/autor-form.png)
+
+### Practical example
+**Scenario**: Registering a book with two authors and a collaborating organization:
+
+1. **First author**:
+   - Type: Person
+   - First name: María
+   - Last name: González
+
+2. **Second author**:
+   - Type: Person
+   - First name: Juan
+   - Last name: Pérez
+
+3. **Organization**:
+   - Type: Organization
+   - Name: Center for Scientific Research
+   - Acronym: CSR
+
+### Metadata display
+Authors appear listed in the resource's metadata section, grouped by type and showing all provided information:
+
+![Author in metadata](/archihub.github.io/imagenes/autor-metadatos.png)
 
 ## The Relation field
 

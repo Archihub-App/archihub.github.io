@@ -28,7 +28,6 @@ Al configurar este campo, se mostrará como una casilla de verificación (checkb
 ![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
 
-
 ## El campo Texto
 
 El campo de texto es uno de los más básicos y versátiles. Permite ingresar texto libre en una sola línea. Es ideal para títulos, nombres, identificadores, URLs cortas, etc.
@@ -93,17 +92,45 @@ Las opciones seleccionadas se guardan como un array en los metadatos del recurso
 ![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
 
-## El campo Autor
+## Campo Autor
 
-El campo autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Puede incluir:
-- Nombre completo
-- Rol (autor, editor, traductor, etc.)
-- Información de contacto
-- Identificadores únicos
+El campo Autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Soporta múltiples autores y diferentes tipos de contribución, permitiendo diferenciar entre personas físicas y organizaciones.
 
-Este campo puede configurarse para permitir múltiples autores y diferentes tipos de contribución.
+### Estructura del campo
+Cada entrada de autor puede contener:
+- **Tipo de autor**: Persona u Organización (selector)
+- **Información básica**:
+  - Para personas: Nombre, Apellido
+  - Para organizaciones: Nombre completo, Siglas 
 
-![CampoAutor](/archihub.github.io/imagenes/campoAuthor.png)
+![Campo de autor](/archihub.github.io/imagenes/campoAuthor.png)
+
+En la siguiente imagen se muestra el formulario de autor, el checkbox permite seleccionar si es una persona o una organización, si es una persona se mostrará el campo de nombre y apellido, si es una organización se mostrará el campo de organización y siglas.
+
+![Formulario de autor](/archihub.github.io/imagenes/autor-form.png)
+
+### Ejemplo práctico
+**Escenario**: Registrar un libro con dos autores y una organización colaboradora:
+
+1. **Primer autor**:
+   - Tipo: Persona
+   - Nombre: María
+   - Apellido: González
+
+2. **Segundo autor**:
+   - Tipo: Persona
+   - Nombre: Juan
+   - Apellido: Pérez
+
+3. **Organización**:
+   - Tipo: Organización
+   - Nombre: Centro de Investigaciones Científicas
+   - Siglas: CIC
+
+### Visualización en metadatos
+Los autores aparecen listados en la sección de metadatos del recurso, agrupados por tipo y mostrando toda la información proporcionada:
+
+![Autor en metadatos](/archihub.github.io/imagenes/autor-metadatos.png)
 
 
 ## El campo Relación
