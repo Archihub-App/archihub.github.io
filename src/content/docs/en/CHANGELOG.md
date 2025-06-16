@@ -25,6 +25,7 @@ description: ''
 - Added middle-click support to open links from results and the menu in a new tab
 - Fixed an error when deleting compressed files if the folder does not exist
 - Fixed the issue with deleting generated inventories
+- Cache is now automatically cleared when a form is created or updated
 
 ### Security
 - The access levels for image galleries are adjusted
