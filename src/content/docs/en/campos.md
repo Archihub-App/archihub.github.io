@@ -95,15 +95,43 @@ The selected options are saved as an array in the resource metadata.
 
 ## The Author field
 
-The author field is a specialized field for capturing information about the creators or contributors of a resource. It can include:
-- Full name
-- Role (author, editor, translator, etc.)
-- Contact information
-- Unique identifiers
+The Author field is a specialized field for capturing information about the creators or contributors of a resource. It supports multiple authors and different types of contribution, allowing differentiation between individuals and organizations.
 
-This field can be configured to allow multiple authors and different types of contribution.
+### Field structure
+Each author entry can contain:
+- **Author type**: Person or Organization (selector)
+- **Basic information**:
+  - For individuals: First name, Last name
+  - For organizations: Full name, Acronyms
 
-![CampoAutor](/archihub.github.io/imagenes/campoAuthor.png)
+![Author field](/archihub.github.io/imagenes/campoAuthor.png)
+
+The following image shows the author form. The checkbox allows selecting between a person or an organization. For a person, it will show first name and last name fields; for an organization, it will show organization name and acronym fields.
+
+![Author form](/archihub.github.io/imagenes/autor-form.png)
+
+### Practical example
+**Scenario**: Registering a book with two authors and a collaborating organization:
+
+1. **First author**:
+   - Type: Person
+   - First name: María
+   - Last name: González
+
+2. **Second author**:
+   - Type: Person
+   - First name: Juan
+   - Last name: Pérez
+
+3. **Organization**:
+   - Type: Organization
+   - Name: Center for Scientific Research
+   - Acronym: CSR
+
+### Metadata display
+Authors appear listed in the resource's metadata section, grouped by type and showing all provided information:
+
+![Author in metadata](/archihub.github.io/imagenes/autor-metadatos.png)
 
 ## The Relation field
 
@@ -113,16 +141,37 @@ The relation field is useful if we want to relate content types to each other. F
 
 ## The Location field
 
-The location field allows capturing geographic or physical location information. It can include:
-- GPS coordinates (latitude and longitude)
-- Physical address
-- Place name
-- Postal code
-- Country, state, city
+The Location field allows georeferencing resources by associating them with physical places or administrative jurisdictions. It supports multiple locations and different levels of precision.
 
-This field is especially useful for resources that have a geographic component or when it is important to document the physical location of an object or event.
+### Field structure
+Each location can contain:
+- **Place name**: City, region, landmark
+- **Administrative division**: Department/State/Province
+- **Country**: Selectable from dropdown list
+- **Geographic coordinates** (optional): Latitude and Longitude
 
-![Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+![Location field interface](/archihub.github.io/imagenes/ubicacion.png)
+
+### Adding a location
+1. Click on "Add location"
+2. Fill in the main name (e.g., "Cali")
+3. Select the corresponding locality
+
+![Add location](/archihub.github.io/imagenes/agregar_ubicacion.png)
+
+### Practical example
+**Scenario**: Registering a book with two relevant locations:
+
+1. **Place of publication**:
+   - Name: Medellín
+
+2. **Research location**:
+   - Name: Tayrona National Natural Park, Magdalena, 11.3114° N, 74.0775° W
+
+### Metadata display
+Locations appear listed with their complete information:
+
+![Location example](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
 ## The Multiple field
 

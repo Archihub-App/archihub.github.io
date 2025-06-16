@@ -28,7 +28,6 @@ Al configurar este campo, se mostrará como una casilla de verificación (checkb
 ![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
 
-
 ## El campo Texto
 
 El campo de texto es uno de los más básicos y versátiles. Permite ingresar texto libre en una sola línea. Es ideal para títulos, nombres, identificadores, URLs cortas, etc.
@@ -93,17 +92,45 @@ Las opciones seleccionadas se guardan como un array en los metadatos del recurso
 ![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
 
-## El campo Autor
+## Campo Autor
 
-El campo autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Puede incluir:
-- Nombre completo
-- Rol (autor, editor, traductor, etc.)
-- Información de contacto
-- Identificadores únicos
+El campo Autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Soporta múltiples autores y diferentes tipos de contribución, permitiendo diferenciar entre personas físicas y organizaciones.
 
-Este campo puede configurarse para permitir múltiples autores y diferentes tipos de contribución.
+### Estructura del campo
+Cada entrada de autor puede contener:
+- **Tipo de autor**: Persona u Organización (selector)
+- **Información básica**:
+  - Para personas: Nombre, Apellido
+  - Para organizaciones: Nombre completo, Siglas 
 
-![CampoAutor](/archihub.github.io/imagenes/campoAuthor.png)
+![Campo de autor](/archihub.github.io/imagenes/campoAuthor.png)
+
+En la siguiente imagen se muestra el formulario de autor, el checkbox permite seleccionar si es una persona o una organización, si es una persona se mostrará el campo de nombre y apellido, si es una organización se mostrará el campo de organización y siglas.
+
+![Formulario de autor](/archihub.github.io/imagenes/autor-form.png)
+
+### Ejemplo práctico
+**Escenario**: Registrar un libro con dos autores y una organización colaboradora:
+
+1. **Primer autor**:
+   - Tipo: Persona
+   - Nombre: María
+   - Apellido: González
+
+2. **Segundo autor**:
+   - Tipo: Persona
+   - Nombre: Juan
+   - Apellido: Pérez
+
+3. **Organización**:
+   - Tipo: Organización
+   - Nombre: Centro de Investigaciones Científicas
+   - Siglas: CIC
+
+### Visualización en metadatos
+Los autores aparecen listados en la sección de metadatos del recurso, agrupados por tipo y mostrando toda la información proporcionada:
+
+![Autor en metadatos](/archihub.github.io/imagenes/autor-metadatos.png)
 
 
 ## El campo Relación
@@ -112,18 +139,40 @@ El campo relación es útil si queremos relacionar tipos de contenido entre si. 
 
 ![Formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
 
-## El campo Ubicación
+## Campo Ubicación
 
-El campo ubicación permite capturar información geográfica o de localización física. Puede incluir:
-- Coordenadas GPS (latitud y longitud)
-- Dirección física
-- Nombre del lugar
-- Código postal
-- País, estado, ciudad
+El campo Ubicación permite georreferenciar recursos asociándolos a lugares físicos o jurisdicciones administrativas. Soporta múltiples ubicaciones y diferentes niveles de precisión.
 
-Este campo es especialmente útil para recursos que tienen una componente geográfica o cuando es importante documentar la ubicación física de un objeto o evento.
+### Estructura del campo
+Cada ubicación puede contener:
+- **Nombre del lugar**: Ciudad, región, punto de referencia
+- **División administrativa**: Departamento/Estado/Provincia
+- **País**: Seleccionable desde lista desplegable
+- **Coordenadas geográficas** (opcional): Latitud y Longitud
 
-![Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+![Interfaz del campo Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+
+
+### Añadir una ubicación
+1. Haga clic en "Agregar ubicación"
+2. Complete el nombre principal (ej: "Cali")
+3. Elija la localidad correspondiente
+
+![Agregar ubicación](/archihub.github.io/imagenes/agregar_ubicacion.png)
+
+### Ejemplo práctico
+**Escenario**: Registrar un libro con dos ubicaciones relevantes:
+
+1. **Lugar de publicación**:
+   - Nombre: Medellín
+
+2. **Lugar de investigación**:
+   - Nombre: Parque Nacional Natural Tayrona, Magdalena, 11.3114° N, 74.0775° W
+
+### Visualización en metadatos
+Las ubicaciones aparecen listadas con su información completa:
+
+![Ubicación](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
 ## El campo múltiple
 
