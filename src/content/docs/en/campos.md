@@ -141,16 +141,37 @@ The relation field is useful if we want to relate content types to each other. F
 
 ## The Location field
 
-The location field allows capturing geographic or physical location information. It can include:
-- GPS coordinates (latitude and longitude)
-- Physical address
-- Place name
-- Postal code
-- Country, state, city
+The Location field allows georeferencing resources by associating them with physical places or administrative jurisdictions. It supports multiple locations and different levels of precision.
 
-This field is especially useful for resources that have a geographic component or when it is important to document the physical location of an object or event.
+### Field structure
+Each location can contain:
+- **Place name**: City, region, landmark
+- **Administrative division**: Department/State/Province
+- **Country**: Selectable from dropdown list
+- **Geographic coordinates** (optional): Latitude and Longitude
 
-![Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+![Location field interface](/archihub.github.io/imagenes/ubicacion.png)
+
+### Adding a location
+1. Click on "Add location"
+2. Fill in the main name (e.g., "Cali")
+3. Select the corresponding locality
+
+![Add location](/archihub.github.io/imagenes/agregar_ubicacion.png)
+
+### Practical example
+**Scenario**: Registering a book with two relevant locations:
+
+1. **Place of publication**:
+   - Name: Medellín
+
+2. **Research location**:
+   - Name: Tayrona National Natural Park, Magdalena, 11.3114° N, 74.0775° W
+
+### Metadata display
+Locations appear listed with their complete information:
+
+![Location example](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
 ## The Multiple field
 

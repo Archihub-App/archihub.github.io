@@ -139,18 +139,40 @@ El campo relación es útil si queremos relacionar tipos de contenido entre si. 
 
 ![Formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
 
-## El campo Ubicación
+## Campo Ubicación
 
-El campo ubicación permite capturar información geográfica o de localización física. Puede incluir:
-- Coordenadas GPS (latitud y longitud)
-- Dirección física
-- Nombre del lugar
-- Código postal
-- País, estado, ciudad
+El campo Ubicación permite georreferenciar recursos asociándolos a lugares físicos o jurisdicciones administrativas. Soporta múltiples ubicaciones y diferentes niveles de precisión.
 
-Este campo es especialmente útil para recursos que tienen una componente geográfica o cuando es importante documentar la ubicación física de un objeto o evento.
+### Estructura del campo
+Cada ubicación puede contener:
+- **Nombre del lugar**: Ciudad, región, punto de referencia
+- **División administrativa**: Departamento/Estado/Provincia
+- **País**: Seleccionable desde lista desplegable
+- **Coordenadas geográficas** (opcional): Latitud y Longitud
 
-![Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+![Interfaz del campo Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+
+
+### Añadir una ubicación
+1. Haga clic en "Agregar ubicación"
+2. Complete el nombre principal (ej: "Cali")
+3. Elija la localidad correspondiente
+
+![Agregar ubicación](/archihub.github.io/imagenes/agregar_ubicacion.png)
+
+### Ejemplo práctico
+**Escenario**: Registrar un libro con dos ubicaciones relevantes:
+
+1. **Lugar de publicación**:
+   - Nombre: Medellín
+
+2. **Lugar de investigación**:
+   - Nombre: Parque Nacional Natural Tayrona, Magdalena, 11.3114° N, 74.0775° W
+
+### Visualización en metadatos
+Las ubicaciones aparecen listadas con su información completa:
+
+![Ubicación](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
 ## El campo múltiple
 
