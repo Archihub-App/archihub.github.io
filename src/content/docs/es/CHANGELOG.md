@@ -26,6 +26,7 @@ description: ''
 - Se soluciona error al borrar archivos comprimidos cuando no existe la carpeta
 - Se soluciona borrar los inventarios generados
 - Se limpia el cache automaticamente cuando se creo o actualiza un formulario
+- Se soluciona error en la lista de selección del formulario de creación para que el primer valor que se cargue quede como valor por defecto
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
