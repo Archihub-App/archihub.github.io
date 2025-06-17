@@ -237,4 +237,4 @@ En la siguiente imagen se muestra el formulario de configuración del separador,
 
 Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las diferentes secciones:
 
-![Navegación por separadores](/archihub.github.io/imagenes/separador-navegacion.png)
+![Navegación por separadores](/archihub.github.io/imagenes/campo-separador.png)
