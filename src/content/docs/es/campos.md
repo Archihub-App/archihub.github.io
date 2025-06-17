@@ -192,18 +192,49 @@ Cada instancia del campo múltiple puede contener varios subcampos que se repite
 
 Dentro de un formulario puedes configurar varios campos distintos para cargar archivos. Para el campo de archivo hay varias opciones que es importante considerar al momento de crear el formulario.
 
-![formulario archivos](/archihub.github.io/imagenes/formulario_archivo.png)
+![formulario archivos](/archihub.github.io/imagenes/campo-archivo.png)
 
 A diferencia de los otros campos de metadatos que se guardan en una ruta usando el campo __Destino__, el campo __Archivo__ no se guarda en los metadatos. Los archivos se asocian a un recurso usando el campo __Etiqueta__. De esta manera, es posible configurar varios campos de __Archivo__ cada uno con una etiqueta distinta para así identificar el campo al cual están asociados.
 
-![Etiqueta archivo](/archihub.github.io/imagenes/etiqueta_archivo.png)
+![Etiqueta archivo](/archihub.github.io/imagenes/campo-archivo-preview.png)
 
 A cada archivo asociado a un recurso, puedes ver el campo asociado en su etiqueta identificada, cada uno con un color distinto. Es posible verlo desde la vista del detalle de cada recurso o desde el formulario de edición una vez se haya subido y guardado el recurso.
 
-![Etiqueta formulario](/archihub.github.io/imagenes/archivo_formulario.png)
+![Etiqueta formulario](/archihub.github.io/imagenes/campo-archivo-form.png)
 
 ## El campo Separador
 
-Hay casos en los que el formulario debe tener varias páginas, y para eso usamos el campo __Separador__. Este es un campo especial que solo necesita el campo __Nombre__. Una vez se haya añadido al formulario, se usará para paginar el formulario al momento de catalogar un nuevo recurso.
+El campo Separador es un campo especial que permite dividir un formulario en múltiples páginas, mejorando la experiencia de usuario al organizar la información en secciones más manejables. Es particularmente útil para formularios extensos que contienen muchos campos.
 
-![Formulario separador](/archihub.github.io/imagenes/formulario_separador.png)
+Cada separador define una nueva página en el formulario y requiere:
+- **Nombre**: Identificador único del separador (obligatorio)
+
+![Campo de separador en el formulario](/archihub.github.io/imagenes/formulario_separador.png)
+
+### Configuración del separador
+
+En la siguiente imagen se muestra el formulario de configuración del separador, donde se puede definir el nombre, título y descripción que se mostrará en la navegación del formulario.
+
+![Formulario de configuración del separador](/archihub.github.io/imagenes/separador-form.png)
+
+### Ejemplo de uso
+
+**Escenario**: Crear un formulario de registro de proyecto con tres secciones:
+
+1. **Información básica**
+   - Campos: Título, descripción, fecha de inicio
+   - Sin separador (aparece en la primera página por defecto)
+
+2. **Detalles del proyecto**
+   - Separador: "Detalles"
+   - Campos: Objetivos, alcance, presupuesto
+
+3. **Equipo y colaboradores**
+   - Separador: "Equipo"
+   - Campos: Miembros del equipo, roles, contactos
+
+### Visualización en el formulario
+
+Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las diferentes secciones:
+
+![Navegación por separadores](/archihub.github.io/imagenes/separador-navegacion.png)
