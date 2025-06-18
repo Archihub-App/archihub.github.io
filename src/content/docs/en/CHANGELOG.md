@@ -29,6 +29,9 @@ description: ''
 - Fixed an issue in the creation form's selection list so that the first loaded value is set as the default
 - When the system fails to save the `resource-schema`, it creates a new one
 
+### Removed
+- The `relation` field has been temporarily removed to be reimplemented in accordance with recent functional changes
+
 ### Security
 - The access levels for image galleries are adjusted
 
