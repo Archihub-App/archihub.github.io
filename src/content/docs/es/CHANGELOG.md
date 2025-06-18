@@ -28,6 +28,7 @@ description: ''
 - Se limpia el cache automaticamente cuando se creo o actualiza un formulario
 - Se soluciona error en la lista de selección del formulario de creación para que el primer valor que se cargue quede como valor por defecto
 - Cuando el sistema no puede guardar el `resource-schema` crea otro
+- Se mejora la UX al crear un `campo múltiple` en la creación de formularios
 
 ### Removed
 - Se elimina temporalmente el campo `relation` para ser reimplementado teniendo en cuenta los cambios funcionales que se han implementado

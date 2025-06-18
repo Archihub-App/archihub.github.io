@@ -28,6 +28,7 @@ description: ''
 - Cache is now automatically cleared when a form is created or updated
 - Fixed an issue in the creation form's selection list so that the first loaded value is set as the default
 - When the system fails to save the `resource-schema`, it creates a new one
+- Improved the UX for creating `repeater` fields during form creation
 
 ### Removed
 - The `relation` field has been temporarily removed to be reimplemented in accordance with recent functional changes
