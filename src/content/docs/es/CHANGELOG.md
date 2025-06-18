@@ -27,6 +27,7 @@ description: ''
 - Se soluciona borrar los inventarios generados
 - Se limpia el cache automaticamente cuando se creo o actualiza un formulario
 - Se soluciona error en la lista de selección del formulario de creación para que el primer valor que se cargue quede como valor por defecto
+- Cuando el sistema no puede guardar el `resource-schema` crea otro
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

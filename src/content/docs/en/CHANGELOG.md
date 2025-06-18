@@ -27,6 +27,7 @@ description: ''
 - Fixed the issue with deleting generated inventories
 - Cache is now automatically cleared when a form is created or updated
 - Fixed an issue in the creation form's selection list so that the first loaded value is set as the default
+- When the system fails to save the `resource-schema`, it creates a new one
 
 ### Security
 - The access levels for image galleries are adjusted
