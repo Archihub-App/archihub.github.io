@@ -21,73 +21,164 @@ En esta parte de la documentación detallaremos cada uno de los campos que se pu
 
 ## El campo Verdadero / Falso
 
-Este campo permite crear un campo de tipo booleano que solo acepta dos valores: verdadero o falso. Es útil para metadatos que requieren una respuesta binaria, como "¿Está publicado?", "¿Es confidencial?", etc.
+El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verdadero o falso. Es ideal para metadatos que requieren una respuesta binaria.
 
-Al configurar este campo, se mostrará como una casilla de verificación (checkbox) en el formulario de catalogación. El usuario puede marcar o desmarcar la casilla según corresponda.
+### Estructura del campo
+- **Tipo de campo**: Booleano (verdadero/falso)
+- **Representación visual**: Casilla de verificación (checkbox)
+- **Valores posibles**: 
+  - Verdadero (casilla marcada)
+  - Falso (casilla desmarcada)
+
+### Ejemplo práctico
+**Escenario**: Configurar un campo para indicar si un documento está publicado:
+
+1. **Campo**: "Publicado"
+2. **Tipo**: Verdadero/Falso
+3. **Uso**: Marcar cuando el documento esté listo para ser visible públicamente
 
 ![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
 
 ## El campo Texto
 
-El campo de texto es uno de los más básicos y versátiles. Permite ingresar texto libre en una sola línea. Es ideal para títulos, nombres, identificadores, URLs cortas, etc.
+El campo de texto permite el ingreso de texto en una sola línea, siendo uno de los tipos de campo más versátiles en el sistema.
+
+### Estructura del campo
+- **Tipo de campo**: Texto de una línea
+- **Longitud máxima**: Configurable
+- **Validaciones**: Opcionalmente puede incluir validación de formato (email, URL, etc.)
+
+### Ejemplo práctico
+**Escenario**: Crear un campo para el título de un documento:
+
+1. **Etiqueta**: "Título del documento"
+2. **Tipo**: Texto
+3. **Requerido**: Sí
+4. **Longitud máxima**: 255 caracteres
 
 ![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
 
 
 ## El campo Área de texto
 
-Similar al campo de texto, pero permite ingresar múltiples líneas de texto. Es perfecto para descripciones largas, resúmenes, comentarios, o cualquier contenido que requiera más espacio.
+El campo Área de texto permite el ingreso de texto en múltiples líneas, ideal para contenido extenso que requiere formato y saltos de línea.
 
-Este campo se renderiza como un área de texto expandible donde el usuario puede escribir párrafos completos con saltos de línea.
+### Estructura del campo
+- **Tipo de campo**: Texto multilínea
+- **Editor**: Incluye barra de herramientas básica
+- **Formato**: Soporta saltos de línea y párrafos
+- **Límite de caracteres**: Configurable
+
+### Ejemplo práctico
+**Escenario**: Crear un campo para la descripción detallada de un proyecto:
+
+1. **Etiqueta**: "Descripción detallada"
+2. **Tipo**: Área de texto
+3. **Requerido**: Opcional
+4. **Límite**: 2000 caracteres
 
 ![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
 
 ## El campo Número
 
-El campo número está diseñado específicamente para capturar valores numéricos. Incluye validación automática para asegurar que solo se ingresen números válidos.
+El campo Número está diseñado específicamente para capturar valores numéricos con validación automática.
 
-Es útil para metadatos como:
-- Año de publicación
-- Número de páginas
-- Cantidad de elementos
-- Códigos numéricos
-- Coordenadas
+### Estructura del campo
+- **Tipo de campo**: Numérico
+- **Formatos soportados**: Enteros y decimales
+- **Validaciones**:
+  - Valor mínimo/máximo
+  - Incrementos permitidos
+  - Formato de visualización
+
+### Ejemplo práctico
+**Escenario**: Configurar un campo para el año de publicación:
+
+1. **Etiqueta**: "Año de publicación"
+2. **Tipo**: Número
+3. **Rango**: 1900-2025
+4. **Formato**: Número entero
 
 ![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
 
 
 ## El campo Fecha
 
-Este campo permite capturar fechas de manera estructurada. Incluye un selector de fecha que facilita la selección y asegura que el formato sea consistente.
+El campo Fecha permite la selección estructurada de fechas a través de un selector visual, asegurando consistencia en el formato.
 
-Puedes configurar:
-- Formato de fecha
-- Fechas mínimas y máximas permitidas
-- Si incluir o no la hora
+### Estructura del campo
+- **Tipo de campo**: Fecha/Hora
+- **Formatos soportados**:
+  - Fecha (DD/MM/AAAA)
+  - Fecha y hora
+  - Rango de fechas
+- **Validaciones**:
+  - Fechas mínima/máxima
+  - Días de la semana permitidos
+  - Validación personalizada
 
-Es especialmente útil para fechas de creación, publicación, modificación, eventos, etc.
+### Ejemplo práctico
+**Escenario**: Configurar un campo para la fecha de publicación:
+
+1. **Etiqueta**: "Fecha de publicación"
+2. **Tipo**: Fecha
+3. **Formato**: DD/MM/AAAA
+4. **Rango permitido**: Fecha actual en adelante
 
 ![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
 
 
 ## El campo Listado
 
-En casos especiales, un campo de metadatos puede tener un conjunto predefinido de opciones. Cuando esto sucede, es posible definir estas listas de opciones en la sección denominada __LISTAS__ del módulo de catalogación y seleccionarla como lista de opciones al definir el metadato.
+El campo Listado permite seleccionar una opción de un conjunto predefinido, asegurando consistencia en los datos.
+
+### Estructura del campo
+- **Tipo de campo**: Selección simple
+- **Fuente de datos**: Lista predefinida
+- **Presentación**: Menú desplegable
+- **Búsqueda**: Incluye búsqueda predictiva
+
+### Configuración
+Las listas se definen en la sección __LISTAS__ del módulo de catalogación, permitiendo:
+- Crear nuevas listas
+- Editar opciones existentes
+- Reutilizar listas en múltiples campos
+
+### Ejemplo práctico
+**Escenario**: Crear un campo para el tipo de documento:
+
+1. **Etiqueta**: "Tipo de documento"
+2. **Tipo**: Listado
+3. **Opciones**: Artículo, Libro, Tesis, Informe
+4. **Requerido**: Sí
 
 ![menu](/archihub.github.io/imagenes/listados.png)
 
 ## El campo Lista de selección múltiple
 
-Similar al campo listado, pero permite seleccionar múltiples opciones de una lista predefinida. Es útil cuando un recurso puede tener varios valores para un mismo metadato.
+El campo Lista de selección múltiple permite elegir varias opciones de una lista predefinida, ideal para metadatos que pueden tener múltiples valores.
 
-Por ejemplo:
-- Múltiples categorías
-- Varios idiomas
-- Diferentes formatos
-- Múltiples autores de una lista predefinida
+### Estructura del campo
+- **Tipo de campo**: Selección múltiple
+- **Fuente de datos**: Lista predefinida
+- **Presentación**: Lista con casillas de verificación
+- **Límite de selección**: Configurable
 
-Las opciones seleccionadas se guardan como un array en los metadatos del recurso.
+### Características
+- Búsqueda dentro de las opciones
+- Visualización de opciones seleccionadas
+- Ordenamiento personalizado
+- Validación de selección mínima/máxima
+
+### Ejemplo práctico
+**Escenario**: Configurar un campo para las palabras clave de un documento:
+
+1. **Etiqueta**: "Palabras clave"
+2. **Tipo**: Selección múltiple
+3. **Fuente**: Lista de términos controlados
+4. **Mínimo requerido**: 1
+5. **Máximo permitido**: 10
 
 ![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
@@ -135,75 +226,182 @@ Los autores aparecen listados en la sección de metadatos del recurso, agrupados
 
 ## El campo Relación
 
-El campo relación es útil si queremos relacionar tipos de contenido entre si. Por ejemplo, podemos tener un tipo de contenido que se llame _Tesauro_ y usarlo a manera de etiqueta en otro tipo de contenido usando el campo relación. De esta manera puedo relacionar uno o más campos del _Tesauro_ al contenido. Es importante aclarar que si uso un campo de relación de tipo _Tesauro_ para el formulario del _Tesauro_, al momento de guardar la plataforma los va a relacionar automaticamente entre si. Es decir que la relación se guardará no solo en el recurso que se está editando sino también en los recursos que estoy relacionando.
+El campo Relación permite establecer conexiones entre diferentes tipos de contenido dentro de la plataforma, facilitando la organización y recuperación de información relacionada.
+
+### Estructura del campo
+- **Tipo de campo**: Relación
+- **Tipos de relación**:
+  - Uno a uno
+  - Uno a muchos
+  - Muchos a muchos
+- **Búsqueda**: Incluye búsqueda predictiva
+
+### Funcionalidades
+- Relación bidireccional automática
+- Filtrado por tipo de contenido
+- Visualización de relaciones existentes
+- Validación de cardinalidad
+
+### Ejemplo práctico
+**Escenario**: Relacionar un documento con términos de un tesauro:
+
+1. **Etiqueta**: "Términos controlados"
+2. **Tipo**: Relación
+3. **Contenido relacionado**: Tesauro
+4. **Cardinalidad**: Muchos a muchos
+5. **Búsqueda**: Por título y descripción
 
 ![Formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
 
 ## Campo Ubicación
 
-El campo Ubicación permite georreferenciar recursos asociándolos a lugares físicos o jurisdicciones administrativas. Soporta múltiples ubicaciones y diferentes niveles de precisión.
+El campo Ubicación permite georreferenciar recursos mediante la asociación con lugares físicos o divisiones administrativas, soportando múltiples ubicaciones con diferentes niveles de precisión.
 
 ### Estructura del campo
-Cada ubicación puede contener:
-- **Nombre del lugar**: Ciudad, región, punto de referencia
-- **División administrativa**: Departamento/Estado/Provincia
-- **País**: Seleccionable desde lista desplegable
-- **Coordenadas geográficas** (opcional): Latitud y Longitud
+Cada ubicación incluye:
+- **Nombre del lugar**: Identificador principal (ciudad, región, punto de referencia)
+- **División administrativa**: Niveles jerárquicos (departamento/estado/provincia)
+- **País**: Selección desde lista desplegable estandarizada
+- **Coordenadas geográficas** (opcional):
+  - Latitud
+  - Longitud
+  - Precisión
+
+### Funcionalidades
+- Búsqueda predictiva de lugares
+- Mapa interactivo para selección de coordenadas
+- Validación de ubicaciones
+- Jerarquía de divisiones administrativas
+
+### Ejemplo práctico
+**Escenario**: Documentar las ubicaciones relevantes para un proyecto de investigación:
+
+1. **Ubicación principal**:
+   - Nombre: Universidad del Valle
+   - Ciudad: Cali
+   - Departamento: Valle del Cauca
+   - País: Colombia
+
+2. **Área de estudio**:
+   - Nombre: Parque Nacional Natural Farallones
+   - Coordenadas: 3.3547° N, 76.7890° W
+
+### Visualización
+Las ubicaciones se muestran con su información completa y en un mapa interactivo cuando se dispone de coordenadas.
 
 ![Interfaz del campo Ubicación](/archihub.github.io/imagenes/ubicacion.png)
 
-
-### Añadir una ubicación
-1. Haga clic en "Agregar ubicación"
-2. Complete el nombre principal (ej: "Cali")
-3. Elija la localidad correspondiente
-
 ![Agregar ubicación](/archihub.github.io/imagenes/agregar_ubicacion.png)
-
-### Ejemplo práctico
-**Escenario**: Registrar un libro con dos ubicaciones relevantes:
-
-1. **Lugar de publicación**:
-   - Nombre: Medellín
-
-2. **Lugar de investigación**:
-   - Nombre: Parque Nacional Natural Tayrona, Magdalena, 11.3114° N, 74.0775° W
-
-### Visualización en metadatos
-Las ubicaciones aparecen listadas con su información completa:
 
 ![Ubicación](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
-## El campo múltiple
+## El campo Múltiple
 
-El campo múltiple permite agrupar varios campos relacionados en una sola sección repetible. Esto es útil cuando necesitas capturar información estructurada que puede repetirse múltiples veces.
+El campo Múltiple permite crear grupos de campos relacionados que pueden repetirse según sea necesario, ideal para capturar información estructurada en múltiples instancias.
 
-Por ejemplo:
-- Múltiples direcciones con diferentes tipos
-- Varios números de teléfono con sus respectivos tipos
-- Diferentes versiones de un documento con sus metadatos específicos
+### Estructura del campo
+- **Tipo de campo**: Grupo repetible
+- **Subcampos**: Configurables individualmente
+- **Cardinalidad**: 
+  - Mínimo de instancias
+  - Máximo de instancias
+  - Sin límite
 
-Cada instancia del campo múltiple puede contener varios subcampos que se repiten como un conjunto.
+### Características
+- Arrastrar y soltar para reordenar
+- Plantillas de campos predefinidas
+- Validación por instancia
+- Colapso/expansión de grupos
+
+### Ejemplo práctico
+**Escenario**: Crear un formulario para información de contacto:
+
+1. **Grupo**: "Información de contacto"
+2. **Subcampos**:
+   - Tipo (email, teléfono, dirección)
+   - Valor
+   - Notas
+3. **Configuración**:
+   - Mínimo: 1 instancia
+   - Máximo: Sin límite
+   - Ordenable: Sí
 
 ![módulo](/archihub.github.io/imagenes/multiple.png)
 
 
 ## El campo Archivo
 
-Dentro de un formulario puedes configurar varios campos distintos para cargar archivos. Para el campo de archivo hay varias opciones que es importante considerar al momento de crear el formulario.
+El campo Archivo permite la carga y gestión de archivos adjuntos, con múltiples opciones de configuración para adaptarse a diferentes necesidades de almacenamiento y visualización.
 
-![formulario archivos](/archihub.github.io/imagenes/formulario_archivo.png)
+### Estructura del campo
+- **Tipo de campo**: Carga de archivos
+- **Múltiples archivos**: Configurable
+- **Formatos permitidos**: Personalizables
+- **Tamaño máximo**: Definible por campo
 
-A diferencia de los otros campos de metadatos que se guardan en una ruta usando el campo __Destino__, el campo __Archivo__ no se guarda en los metadatos. Los archivos se asocian a un recurso usando el campo __Etiqueta__. De esta manera, es posible configurar varios campos de __Archivo__ cada uno con una etiqueta distinta para así identificar el campo al cual están asociados.
+### Configuración
+- **Tipos de archivo**: Restricción por extensiones
+- **Etiquetas**: Identificación única para cada campo de archivo
+- **Previsualización**: Vista previa de imágenes y documentos
+- **Versiones**: Generación automática de miniaturas
 
-![Etiqueta archivo](/archihub.github.io/imagenes/etiqueta_archivo.png)
+### Asociación con recursos
+A diferencia de otros campos, los archivos:
+- Se asocian mediante etiquetas únicas
+- No se almacenan en los metadatos
+- Pueden tener múltiples versiones
+- Mantienen metadatos propios
+
+### Ejemplo práctico
+**Escenario**: Configurar un campo para documentos de respaldo:
+
+1. **Etiqueta**: "documentos_anexos"
+2. **Tipo**: Archivo
+3. **Formatos permitidos**: PDF, DOCX, XLSX
+4. **Tamaño máximo**: 10MB por archivo
+5. **Múltiples archivos**: Sí (hasta 5)
+
+![formulario archivos](/archihub.github.io/imagenes/campo-archivo.png)
+
+![Etiqueta archivo](/archihub.github.io/imagenes/campo-archivo-preview.png)
 
 A cada archivo asociado a un recurso, puedes ver el campo asociado en su etiqueta identificada, cada uno con un color distinto. Es posible verlo desde la vista del detalle de cada recurso o desde el formulario de edición una vez se haya subido y guardado el recurso.
 
-![Etiqueta formulario](/archihub.github.io/imagenes/archivo_formulario.png)
+![Etiqueta formulario](/archihub.github.io/imagenes/campo-archivo-form.png)
 
 ## El campo Separador
 
-Hay casos en los que el formulario debe tener varias páginas, y para eso usamos el campo __Separador__. Este es un campo especial que solo necesita el campo __Nombre__. Una vez se haya añadido al formulario, se usará para paginar el formulario al momento de catalogar un nuevo recurso.
+El campo Separador es un campo especial que permite dividir un formulario en múltiples páginas, mejorando la experiencia de usuario al organizar la información en secciones más manejables. Es particularmente útil para formularios extensos que contienen muchos campos.
 
-![Formulario separador](/archihub.github.io/imagenes/formulario_separador.png)
+Cada separador define una nueva página en el formulario y requiere:
+- **Nombre**: Identificador único del separador (obligatorio)
+
+![Campo de separador en el formulario](/archihub.github.io/imagenes/formulario_separador.png)
+
+### Configuración del separador
+
+En la siguiente imagen se muestra el formulario de configuración del separador, donde se puede definir el nombre, título y descripción que se mostrará en la navegación del formulario.
+
+![Formulario de configuración del separador](/archihub.github.io/imagenes/separador-form.png)
+
+### Ejemplo de uso
+
+**Escenario**: Crear un formulario de registro de proyecto con tres secciones:
+
+1. **Información básica**
+   - Campos: Título, descripción, fecha de inicio
+   - Sin separador (aparece en la primera página por defecto)
+
+2. **Detalles del proyecto**
+   - Separador: "Detalles"
+   - Campos: Objetivos, alcance, presupuesto
+
+3. **Equipo y colaboradores**
+   - Separador: "Equipo"
+   - Campos: Miembros del equipo, roles, contactos
+
+### Visualización en el formulario
+
+Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las diferentes secciones:
+
+![Navegación por separadores](/archihub.github.io/imagenes/campo-separador.png)
