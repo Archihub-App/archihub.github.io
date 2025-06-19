@@ -3,7 +3,7 @@ title: 'Fields for metadata standards'
 description: ''
 ---
 
-In this part of the documentation we will detail each of the fields that can be configured in the form:
+In this part of the documentation, we will detail each of the fields that can be configured in the form:
 
 - [True / False](#the-true--false-field)
 - [Text](#the-text-field)
@@ -19,88 +19,173 @@ In this part of the documentation we will detail each of the fields that can be 
 - [File](#the-file-field)
 - [Separator](#the-separator-field)
 
-## The True / False field
+## The True / False Field
 
-This field allows you to create a boolean type field that only accepts two values: true or false. It is useful for metadata that requires a binary response, such as "Is it published?", "Is it confidential?", etc.
+The True/False field is a boolean field that only accepts two values: true or false. It is ideal for metadata that requires a binary response.
 
-When configuring this field, it will be displayed as a checkbox in the cataloging form. The user can check or uncheck the box as appropriate.
+### Field Structure
+- **Field Type**: Boolean (true/false)
+- **Visual Representation**: Checkbox
+- **Possible Values**: 
+  - True (checkbox checked)
+  - False (checkbox unchecked)
+
+### Practical Example
+**Scenario**: Configure a field to indicate if a document is published:
+
+1. **Field**: "Published"
+2. **Type**: True/False
+3. **Usage**: Check when the document is ready to be publicly visible
 
 ![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
-## The Text field
+## The Text Field
 
-The text field is one of the most basic and versatile. It allows entering free text in a single line. It is ideal for titles, names, identifiers, short URLs, etc.
+The text field allows single-line text input, being one of the most versatile field types in the system.
 
-When configuring this field you can set:
-- **Name**: The name of the field that will appear in the form
-- **Destination**: The path where the value will be saved in the metadata
-- **Required**: Whether the field is mandatory or not
-- **Help**: Help text that will appear below the field
+### Field Structure
+- **Field Type**: Single-line text
+- **Maximum Length**: Configurable
+- **Validations**: May include format validation (email, URL, etc.)
+
+### Practical Example
+**Scenario**: Create a field for a document title:
+
+1. **Label**: "Document Title"
+2. **Type**: Text
+3. **Required**: Yes
+4. **Maximum Length**: 255 characters
 
 ![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
 
-## The Text Area field
+## The Text Area Field
 
-Similar to the text field, but allows entering multiple lines of text. It is perfect for long descriptions, summaries, comments, or any content that requires more space.
+The Text Area field allows multi-line text input, ideal for extensive content that requires formatting and line breaks.
 
-This field is rendered as an expandable text area where the user can write complete paragraphs with line breaks.
+### Field Structure
+- **Field Type**: Multi-line text
+- **Editor**: Includes basic toolbar
+- **Format**: Supports line breaks and paragraphs
+- **Character Limit**: Configurable
+
+### Practical Example
+**Scenario**: Create a field for a detailed project description:
+
+1. **Label**: "Detailed Description"
+2. **Type**: Text Area
+3. **Required**: Optional
+4. **Limit**: 2000 characters
 
 ![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
 
-## The Number field
+## The Number Field
 
-The number field is specifically designed to capture numeric values. It includes automatic validation to ensure that only valid numbers are entered.
+The Number field is specifically designed to capture numeric values with automatic validation.
 
-It is useful for metadata such as:
-- Publication year
-- Number of pages
-- Quantity of elements
-- Numeric codes
-- Coordinates
+### Field Structure
+- **Field Type**: Numeric
+- **Supported Formats**: Integers and decimals
+- **Validations**:
+  - Minimum/maximum value
+  - Allowed increments
+  - Display format
+
+### Practical Example
+**Scenario**: Configure a field for the publication year:
+
+1. **Label**: "Publication Year"
+2. **Type**: Number
+3. **Range**: 1900-2025
+4. **Format**: Integer
 
 ![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
 
-## The Date field
+## The Date Field
 
-This field allows capturing dates in a structured way. It includes a date picker that facilitates selection and ensures that the format is consistent.
+The Date field allows structured date selection through a visual picker, ensuring format consistency.
 
-You can configure:
-- Date format
-- Minimum and maximum allowed dates
-- Whether to include time or not
+### Field Structure
+- **Field Type**: Date/Time
+- **Supported Formats**:
+  - Date (DD/MM/YYYY)
+  - Date and time
+  - Date range
+- **Validations**:
+  - Minimum/maximum dates
+  - Allowed weekdays
+  - Custom validation
 
-It is especially useful for creation, publication, modification, event dates, etc.
+### Practical Example
+**Scenario**: Configure a field for the publication date:
+
+1. **Label**: "Publication Date"
+2. **Type**: Date
+3. **Format**: DD/MM/YYYY
+4. **Allowed Range**: Current date onwards
 
 ![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
 
-## The List field
+## The List Field
 
-In special cases, a metadata field may have a predefined set of options. When this happens, it is possible to define these option lists in the section called __LISTS__ of the cataloging module and select it as an option list when defining the metadata.
+The List field allows selecting one option from a predefined set, ensuring data consistency.
+
+### Field Structure
+- **Field Type**: Single selection
+- **Data Source**: Predefined list
+- **Presentation**: Dropdown menu
+- **Search**: Includes predictive search
+
+### Configuration
+Lists are defined in the __LISTS__ section of the cataloging module, allowing:
+- Create new lists
+- Edit existing options
+- Reuse lists in multiple fields
+
+### Practical Example
+**Scenario**: Create a field for document type:
+
+1. **Label**: "Document Type"
+2. **Type**: List
+3. **Options**: Article, Book, Thesis, Report
+4. **Required**: Yes
 
 ![menu](/archihub.github.io/imagenes/listados.png)
 
-## The Multiple Selection List field
+## The Multiple Selection List Field
 
-Similar to the list field, but allows selecting multiple options from a predefined list. It is useful when a resource can have several values for the same metadata.
+The Multiple Selection List field allows choosing several options from a predefined list, ideal for metadata that can have multiple values.
 
-For example:
-- Multiple categories
-- Various languages
-- Different formats
-- Multiple authors from a predefined list
+### Field Structure
+- **Field Type**: Multiple selection
+- **Data Source**: Predefined list
+- **Presentation**: Checkbox list
+- **Selection Limit**: Configurable
 
-The selected options are saved as an array in the resource metadata.
+### Features
+- Search within options
+- Display of selected options
+- Custom sorting
+- Minimum/maximum selection validation
+
+### Practical Example
+**Scenario**: Configure a field for document keywords:
+
+1. **Label**: "Keywords"
+2. **Type**: Multiple Selection
+3. **Source**: Controlled vocabulary list
+4. **Minimum Required**: 1
+5. **Maximum Allowed**: 10
 
 ![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
-## The Author field
+## The Author Field
 
 The Author field is a specialized field for capturing information about the creators or contributors of a resource. It supports multiple authors and different types of contribution, allowing differentiation between individuals and organizations.
 
-### Field structure
+### Field Structure
 Each author entry can contain:
-- **Author type**: Person or Organization (selector)
-- **Basic information**:
+- **Author Type**: Person or Organization (selector)
+- **Basic Information**:
   - For individuals: First name, Last name
   - For organizations: Full name, Acronyms
 
@@ -108,95 +193,94 @@ Each author entry can contain:
 
 The following image shows the author form. The checkbox allows selecting between a person or an organization. For a person, it will show first name and last name fields; for an organization, it will show organization name and acronym fields.
 
-![Author form](/archihub.github.io/imagenes/autor-form.png)
+## The Relation Field
 
-### Practical example
-**Scenario**: Registering a book with two authors and a collaborating organization:
+The Relation field allows creating relationships between different content types. For example, you can have a content type called _Thesaurus_ and use it as a label in another content type using the relation field. This way, you can relate one or more fields from the _Thesaurus_ to the content.
 
-1. **First author**:
-   - Type: Person
-   - First name: María
-   - Last name: González
-
-2. **Second author**:
-   - Type: Person
-   - First name: Juan
-   - Last name: Pérez
-
-3. **Organization**:
-   - Type: Organization
-   - Name: Center for Scientific Research
-   - Acronym: CSR
-
-### Metadata display
-Authors appear listed in the resource's metadata section, grouped by type and showing all provided information:
-
-![Author in metadata](/archihub.github.io/imagenes/autor-metadatos.png)
-
-## The Relation field
-
-The relation field is useful if we want to relate content types to each other. For example, we can have a content type called _Thesaurus_ and use it as a label on another content type using the relation field. In this way I can relate one or more fields of the _Thesaurus_ to the content. It is important to clarify that if I use a relation field of type _Thesaurus_ for the _Thesaurus_ form, at the moment of saving the platform will automatically relate them to each other. That is to say that the relation will be saved not only in the resource that is being edited but also in the resources that I am relating.
+It's important to note that when using a relation field of type _Thesaurus_ in the _Thesaurus_ form, the platform will automatically establish the relationship between them when saving. This means the relationship will be saved not only in the resource being edited but also in the related resources.
 
 ![Relation form](/archihub.github.io/imagenes/formulario_relacion.png)
 
-## The Location field
+## The Location Field
 
 The Location field allows georeferencing resources by associating them with physical places or administrative jurisdictions. It supports multiple locations and different levels of precision.
 
-### Field structure
+### Field Structure
 Each location can contain:
-- **Place name**: City, region, landmark
-- **Administrative division**: Department/State/Province
+- **Place Name**: City, region, landmark
+- **Administrative Division**: Department/State/Province
 - **Country**: Selectable from dropdown list
-- **Geographic coordinates** (optional): Latitude and Longitude
+- **Geographic Coordinates** (optional): Latitude and Longitude
 
 ![Location field interface](/archihub.github.io/imagenes/ubicacion.png)
 
-### Adding a location
+### Adding a Location
 1. Click on "Add location"
 2. Fill in the main name (e.g., "Cali")
 3. Select the corresponding locality
 
 ![Add location](/archihub.github.io/imagenes/agregar_ubicacion.png)
 
-### Practical example
+### Practical Example
 **Scenario**: Registering a book with two relevant locations:
 
-1. **Place of publication**:
+1. **Place of Publication**:
    - Name: Medellín
 
-2. **Research location**:
+2. **Research Location**:
    - Name: Tayrona National Natural Park, Magdalena, 11.3114° N, 74.0775° W
 
-### Metadata display
+### Metadata Display
 Locations appear listed with their complete information:
 
 ![Location example](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)
 
-## The Multiple field
+## The Multiple Field
 
-The multiple field allows grouping several related fields into a single repeatable section. This is useful when you need to capture structured information that can be repeated multiple times.
+The Multiple field allows creating groups of related fields that can be repeated as needed, ideal for capturing structured information in multiple instances.
 
-For example:
-- Multiple addresses with different types
-- Various phone numbers with their respective types
-- Different versions of a document with their specific metadata
+### Field Structure
+- **Field Type**: Repeatable group
+- **Subfields**: Individually configurable
 
-Each instance of the multiple field can contain several subfields that repeat as a set.
+### Practical Example
+**Scenario**: Capture multiple phone numbers with their types:
+
+1. **Field Group**: "Phone Numbers"
+2. **Subfields**:
+   - Type (Mobile, Home, Work)
+   - Number
+   - Extension (optional)
+3. **Repeatable**: Yes, add multiple numbers
 
 ![módulo](/archihub.github.io/imagenes/multiple.png)
 
-## The File field
+## The File Field
 
-Within a form you can set up several different fields for uploading files. For the file field there are several options that are important to consider when creating the form.
+The File field allows uploading and associating files with a resource. It includes several configuration options to suit different needs.
+
+### Field Structure
+- **Field Type**: File upload
+- **Supported Files**: Configurable file types
+- **Multiple Files**: Option to allow multiple file uploads
+- **Size Limit**: Configurable maximum file size
+
+### Configuration
+When configuring a File field, you can specify:
+- **Tag**: Used to identify the field (required)
+- **Allowed File Types**: Restrict to specific file extensions
+- **Maximum File Size**: Set a size limit for uploads
+- **Multiple Files**: Allow single or multiple file uploads
+
+### How It Works
+Unlike other metadata fields that store values in the metadata structure, the File field uses tags to associate files with resources. This allows for multiple file fields, each identified by a unique tag.
 
 ![form files](/archihub.github.io/imagenes/formulario_archivo.png)
 
-Unlike the other metadata fields that are stored in a path using the __Destination__ field, the __File__ field is not stored in the metadata. Files are associated with a resource using the __Tag__ field. In this way, it is possible to configure several __File__ fields each with a different label to identify the field to which they are associated.
+### Viewing Uploaded Files
+Uploaded files are displayed with their associated tag, each with a distinct color. You can view these from either the resource detail view or the edit form after the resource has been saved.
 
 ![File tag](/archihub.github.io/imagenes/etiqueta_archivo.png)
-
-For each file associated to a resource, you can see the associated field in its label identified, each with a different color. It is possible to see it from the detail view of each resource or from the edit form once the resource has been uploaded and saved.
 
 ![Label form](/archihub.github.io/imagenes/archivo_formulario.png)
 
