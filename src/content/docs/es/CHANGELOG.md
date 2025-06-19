@@ -3,27 +3,43 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.5] _beta_
+## [0.9.6] _beta_
 
 ### Added
+
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
-- Se implementa búsqueda semántica para los metadatos de los recursos
-- Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
-- Se agrega soporte de imágenes para el handler de servicios LLM
 - Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
-- Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
 - Soporte de Azure como servicio para los asistentes de IA
-
-### Fixed
-- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
-- Se implementa doble click en el árbol de recursos para abrir una carpeta
-- Se arregla el componente de filtro geográfico
+- Soporte de Grok como servicio para los asistentes de IA
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.5] _19 June 2026_
+
+### Added
+- Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
+- Se agrega soporte de imágenes para el handler de servicios LLM
+- Se agrega un slider para el nivel de zoom tanto en la vista de documentos como en la vista de imágenes
+- Se agrega enlace al recurso en los botones del contenido relacionado en la vista de documentos
+
+### Fixed
+- Se implementa doble click en el árbol de recursos para abrir una carpeta
+- Se arregla el componente de filtro geográfico
+- Se agrega la opción `Limpiar filtros` cuando la búsqueda no devuelve resultados
+- Se agrega click del medio para abrir en una nueva tab a los enlaces de los resultados y del menu
+- Se soluciona error al borrar archivos comprimidos cuando no existe la carpeta
+- Se soluciona borrar los inventarios generados
+- Se limpia el cache automaticamente cuando se creo o actualiza un formulario
+- Se soluciona error en la lista de selección del formulario de creación para que el primer valor que se cargue quede como valor por defecto
+- Cuando el sistema no puede guardar el `resource-schema` crea otro
+- Se mejora la UX al crear un `campo múltiple` en la creación de formularios
+
+### Removed
+- Se elimina temporalmente el campo `relation` para ser reimplementado teniendo en cuenta los cambios funcionales que se han implementado
 
 ## [0.9.4] _6 June 2025_
 

@@ -3,27 +3,43 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.5] _beta_
+## [0.9.6] _beta_
 
 ### Added
+
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
-- Implemented semantic search for resource metadata
-- Added a new form field that allows selecting one of the users registered in the system
 - Implemented chat with the AI assistant in the image and gallery views
-- Added image support to the LLM services handler
 - Added the ability to search from the sidebar menu from any view within the application
 - Installation assistant added to load basic data into forms and lists during setup
-- Added a zoom level slider to both the document view and the image view
 - Azure has been added as one of the LLM API providers
-
-### Fixed
-- Se agrega la opción para limpiar filtros de búsqueda cuando no hay resultados
-- Implemented double-click functionality in the resource tree to open a folder
-- Fixed the geographic filter component
+- Grok has been added as one of the LLM API providers
 
 ### Security
 - The access levels for image galleries are adjusted
+
+## [0.9.5] _19 June 2026_
+
+### Added
+- Added a new form field that allows selecting one of the users registered in the system
+- Added image support to the LLM services handler
+- Added a zoom level slider to both the document view and the image view
+- Added a link to the resource in the related content buttons within the document view
+
+### Fixed
+- Implemented double-click functionality in the resource tree to open a folder
+- Fixed the geographic filter component
+- Added a `Clear filters` option when a search returns no results
+- Added middle-click support to open links from results and the menu in a new tab
+- Fixed an error when deleting compressed files if the folder does not exist
+- Fixed the issue with deleting generated inventories
+- Cache is now automatically cleared when a form is created or updated
+- Fixed an issue in the creation form's selection list so that the first loaded value is set as the default
+- When the system fails to save the `resource-schema`, it creates a new one
+- Improved the UX for creating `repeater` fields during form creation
+
+### Removed
+- The `relation` field has been temporarily removed to be reimplemented in accordance with recent functional changes
 
 ## [0.9.4] _6 June 2025_
 
