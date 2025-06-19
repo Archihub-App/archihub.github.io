@@ -3,19 +3,27 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.5] _beta_
+## [0.9.6] _beta_
 
 ### Added
+
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
-- Implemented semantic search for resource metadata
-- Added a new form field that allows selecting one of the users registered in the system
 - Implemented chat with the AI assistant in the image and gallery views
-- Added image support to the LLM services handler
 - Added the ability to search from the sidebar menu from any view within the application
 - Installation assistant added to load basic data into forms and lists during setup
-- Added a zoom level slider to both the document view and the image view
 - Azure has been added as one of the LLM API providers
+- Grok has been added as one of the LLM API providers
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.5] _19 June 2026_
+
+### Added
+- Added a new form field that allows selecting one of the users registered in the system
+- Added image support to the LLM services handler
+- Added a zoom level slider to both the document view and the image view
 - Added a link to the resource in the related content buttons within the document view
 
 ### Fixed
@@ -32,9 +40,6 @@ description: ''
 
 ### Removed
 - The `relation` field has been temporarily removed to be reimplemented in accordance with recent functional changes
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [0.9.4] _6 June 2025_
 
