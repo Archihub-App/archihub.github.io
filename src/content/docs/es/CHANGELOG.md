@@ -14,6 +14,7 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Soporte de Azure como servicio para los asistentes de IA
 - Soporte de Grok como servicio para los asistentes de IA
+- Se mejora la interfaz de conversation con la IA para mostrar las imágenes que se están cargando
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

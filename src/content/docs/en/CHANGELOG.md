@@ -14,6 +14,7 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - Azure has been added as one of the LLM API providers
 - Grok has been added as one of the LLM API providers
+- Improved the AI conversation interface to display the images being uploaded
 
 ### Security
 - The access levels for image galleries are adjusted
