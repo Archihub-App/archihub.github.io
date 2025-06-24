@@ -16,6 +16,9 @@ description: ''
 - Grok has been added as one of the LLM API providers
 - Improved the AI conversation interface to display the images being uploaded
 
+### Fixed
+- Added the ability to edit an AI assistant after creation. For all providers, the name can be edited, and for Azure, the connection URLs can also be modified
+
 ### Security
 - The access levels for image galleries are adjusted
 

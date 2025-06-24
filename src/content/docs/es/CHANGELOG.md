@@ -16,6 +16,9 @@ description: ''
 - Soporte de Grok como servicio para los asistentes de IA
 - Se mejora la interfaz de conversation con la IA para mostrar las imágenes que se están cargando
 
+### Fixed
+- Se agrega la posibilidad de editar un asistente de IA una vez creado. Para todos los proveedores se puede editar el nombre y para Azure se pueden editar las url de conexión
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
