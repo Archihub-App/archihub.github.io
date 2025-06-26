@@ -3,24 +3,29 @@ title: 'CHANGELOG'
 description: ''
 ---
 
+## [0.9.7] _beta_
+
+### Added
+- The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
+- Implemented a timezone standard for display in the frontend
+- Installation assistant added to load basic data into forms and lists during setup
+
+### Security
+- The access levels for image galleries are adjusted
+
 ## [0.9.6] _beta_
 
 ### Added
 
-- The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- Implemented a timezone standard for display in the frontend
 - Implemented chat with the AI assistant in the image and gallery views
 - Added the ability to search from the sidebar menu from any view within the application
-- Installation assistant added to load basic data into forms and lists during setup
 - Azure has been added as one of the LLM API providers
 - Grok has been added as one of the LLM API providers
 - Improved the AI conversation interface to display the images being uploaded
 
 ### Fixed
 - Added the ability to edit an AI assistant after creation. For all providers, the name can be edited, and for Azure, the connection URLs can also be modified
-
-### Security
-- The access levels for image galleries are adjusted
+- Optimized the backend Dockerfile for faster application deployment
 
 ## [0.9.5] _19 June 2026_
 

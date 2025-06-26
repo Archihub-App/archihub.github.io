@@ -3,24 +3,30 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.6] _beta_
+## [0.9.7] _beta_
 
 ### Added
 
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
+- Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.6] _26 June 2026_
+
+### Added
+
 - Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
 - Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
-- Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Soporte de Azure como servicio para los asistentes de IA
 - Soporte de Grok como servicio para los asistentes de IA
 - Se mejora la interfaz de conversation con la IA para mostrar las imágenes que se están cargando
 
 ### Fixed
 - Se agrega la posibilidad de editar un asistente de IA una vez creado. Para todos los proveedores se puede editar el nombre y para Azure se pueden editar las url de conexión
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
+- Se optimiza el Dockerfile del backend para un despliegue más rápido del aplicativo
 
 ## [0.9.5] _19 June 2026_
 
