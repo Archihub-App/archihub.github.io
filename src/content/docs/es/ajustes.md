@@ -34,6 +34,80 @@ La siguiente opción de configuración se refiere a los tipos de contenido. Como
 
 De este diagrama, podemos deducir que el tipo de contenido que contiene la información o los documentos es la Unidad Documental. Los demás tipos de contenido están ahí para proporcionar orden y estructura a la organización de estos recursos.
 
+
+## API
+
+![Ajustes API](/archihub.github.io/imagenes/settings_api.png)
+
+En este apartado puedes controlar el acceso a las APIs del sistema:
+
+- **Activar la API de administración**  
+  Permite habilitar los endpoints de administración. La llave de administrador tiene una duración limitada (máximo dos días). Es importante desactivar la API una vez realizados los cambios necesarios.
+
+- **Activar la API pública**  
+  Habilita los endpoints públicos para consultar información. Estos endpoints tienen un límite de uso semanal por usuario.
+
+---
+
+## Administración del cache
+
+![Ajustes cache](/archihub.github.io/imagenes/settings-cache.png)
+
+- **Regenerar el cache**  
+  Si notas que la información no está actualizada, puedes regenerar la caché para refrescar los datos mostrados en la aplicación.
+
+---
+
+## Administración de la geolocalización
+
+![Ajustes geolocalización](/archihub.github.io/imagenes/settings-geo.png)
+
+- **Cargar polígonos geográficos**  
+  Permite cargar los polígonos geográficos necesarios para la visualización de mapas.
+
+---
+
+## Ajustes de usuario
+
+![Ajustes usuario](/archihub.github.io/imagenes/settings-user.png)
+
+- **Activar el registro de usuarios**  
+  Permite que los usuarios se registren y accedan a la información de la aplicación.
+
+- **Activar la recuperación de contraseña**  
+  Habilita la opción para que los usuarios recuperen su contraseña en caso de olvido.
+
+- **Idioma por defecto de los usuarios**  
+  Selecciona el idioma predeterminado para los usuarios de la aplicación.
+
+---
+
+## Ajustes de los archivos
+
+![Ajustes archivos](/archihub.github.io/imagenes/setting-archivos.png)
+
+- **Activar la descarga de archivos**  
+  Permite a los usuarios descargar archivos desde la aplicación.
+
+- **Borrar archivos zipeados**  
+  Elimina los archivos comprimidos generados en la aplicación.
+
+- **Borrar inventarios públicos**  
+  Elimina los inventarios públicos generados en la aplicación.
+
+---
+
+## Reinicio del sistema
+
+![Reinicio sistema](/archihub.github.io/imagenes/settings-reinicio.png)
+
+- **Reiniciar el sistema**  
+  Permite reiniciar el backend para aplicar cambios de configuración.
+
+---
+
+> **Tip:** Después de realizar cambios importantes en la configuración, recuerda pulsar el botón "Reiniciar backend" para que los ajustes se apliquen correctamente.
+
 Cuando queramos explorar los recursos en este archivo, nos enfocaremos principalmente en las __Unidades Documentales__. Por eso, este es el tipo de contenido predeterminado en el módulo de catalogación. Al abrir el módulo o cargar el buscador en la herramienta, se abrirá automáticamente en la __Unidad Documental__, ya que es aquí donde se encuentra la información. Esto facilita la navegación y gestión de los documentos dentro de tu archivo.
 
 La siguiente opción de configuración se refiere a los tipos de contenido que se muestran en la vista individual de los recursos. Vamos a usar un ejemplo para aclarar esto. Supongamos que tienes un fondo llamado "Noticias".
@@ -56,17 +130,6 @@ Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este c
 En este apartado de la configuración, debes seleccionar los listados creados para los [roles](../roles) y [niveles de acceso](../acceso). Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
 
 Mantén estos listados actualizados y revisa periódicamente para asegurarte de que reflejan correctamente las necesidades y estructuras de acceso de tu organización, sin comprometer la integridad del sistema.
-
-## API
-
-![Ajustes API](/archihub.github.io/imagenes/ajustes_api.png)
-
-ArchiHUB ofrece varias entradas de API que puedes gestionar desde esta configuración. Es posible activar o desactivar tanto la API de administración como la API pública:
-
-- __API de Administración__: Esta API es útil para conectar ArchiHUB con herramientas externas y facilitar la carga masiva de información.
-- __API Pública__: Permite a los usuarios realizar consultas al archivo desde sus propias páginas web o herramientas, promoviendo una mayor apropiación del contenido. Esto puede incluir desde especiales web hasta instalaciones interactivas.
-
-Desde estos ajustes, puedes activar o desactivar rápidamente estas opciones según tus necesidades. Recuerda que al hacer algún cambio en estas configuraciones, es necesario reiniciar el backend de la herramienta para que los cambios surtan efecto.
 
 ## Administración del índice
 
