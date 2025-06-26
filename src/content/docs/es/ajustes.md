@@ -34,21 +34,10 @@ La siguiente opción de configuración se refiere a los tipos de contenido. Como
 
 De este diagrama, podemos deducir que el tipo de contenido que contiene la información o los documentos es la Unidad Documental. Los demás tipos de contenido están ahí para proporcionar orden y estructura a la organización de estos recursos.
 
----
-
-## Roles y acceso a la información
-
-Esta sección te permite gestionar los niveles de acceso y los roles de usuario dentro de ArchiHUB.
-
-- **Listado para los niveles de acceso**  
-  Los niveles de acceso definen la publicidad de la información. Por defecto, todo el contenido creado en la herramienta es Público. Puedes crear nuevos niveles desde el módulo de catalogación y asignarlos a los usuarios para controlar quién puede acceder a cierta información.
-
-- **Listado para los roles de usuario**  
-  Los roles de usuario definen la capacidad de los usuarios para manejar información. Por defecto existen los roles de administrador y editor, pero puedes implementar nuevos roles para cada tipo de contenido según las necesidades de tu organización.
-
----
 
 ## API
+
+![Ajustes API](/archihub.github.io/imagenes/settings_api.png)
 
 En este apartado puedes controlar el acceso a las APIs del sistema:
 
@@ -60,31 +49,9 @@ En este apartado puedes controlar el acceso a las APIs del sistema:
 
 ---
 
-## Administración del índice
-
-Aquí puedes gestionar la indexación de los recursos y la búsqueda dentro del sistema:
-
-- **Activar el índice para las búsquedas**  
-  Habilita la gestión del índice para búsquedas, utilizando Elasticsearch. Solo debes activar esta opción si tienes Elasticsearch configurado.
-
-- **Regenerar el índice para la búsqueda de los recursos**  
-  Útil si acabas de activar el índice o modificaste los estándares de metadatos.
-
-- **Volver a indexar los recursos**  
-  Reindexa todos los recursos, sobrescribiendo versiones anteriores y creando las que no están.
-
-- **Activar la búsqueda semántica**  
-  Permite realizar búsquedas semánticas utilizando una base de datos vectorial (requiere QDrant).
-
-- **Regenerar índice de polígonos geográficos**  
-  Reindexa todos los polígonos geográficos para su uso en mapas.
-
-- **Indexar polígonos geográficos**  
-  Indexa los polígonos geográficos sobrescribiendo las versiones anteriores.
-
----
-
 ## Administración del cache
+
+![Ajustes cache](/archihub.github.io/imagenes/settings-cache.png)
 
 - **Regenerar el cache**  
   Si notas que la información no está actualizada, puedes regenerar la caché para refrescar los datos mostrados en la aplicación.
@@ -93,12 +60,16 @@ Aquí puedes gestionar la indexación de los recursos y la búsqueda dentro del 
 
 ## Administración de la geolocalización
 
+![Ajustes geolocalización](/archihub.github.io/imagenes/settings-geo.png)
+
 - **Cargar polígonos geográficos**  
   Permite cargar los polígonos geográficos necesarios para la visualización de mapas.
 
 ---
 
 ## Ajustes de usuario
+
+![Ajustes usuario](/archihub.github.io/imagenes/settings-user.png)
 
 - **Activar el registro de usuarios**  
   Permite que los usuarios se registren y accedan a la información de la aplicación.
@@ -113,6 +84,8 @@ Aquí puedes gestionar la indexación de los recursos y la búsqueda dentro del 
 
 ## Ajustes de los archivos
 
+![Ajustes archivos](/archihub.github.io/imagenes/setting-archivos.png)
+
 - **Activar la descarga de archivos**  
   Permite a los usuarios descargar archivos desde la aplicación.
 
@@ -125,6 +98,8 @@ Aquí puedes gestionar la indexación de los recursos y la búsqueda dentro del 
 ---
 
 ## Reinicio del sistema
+
+![Reinicio sistema](/archihub.github.io/imagenes/settings-reinicio.png)
 
 - **Reiniciar el sistema**  
   Permite reiniciar el backend para aplicar cambios de configuración.
@@ -155,17 +130,6 @@ Este enfoque te ayuda a centrarte en los recursos más relevantes, que en este c
 En este apartado de la configuración, debes seleccionar los listados creados para los [roles](../roles) y [niveles de acceso](../acceso). Esta configuración es vital para el correcto funcionamiento de ArchiHUB. Aunque es posible agregar nuevos roles o niveles de acceso a lo largo del uso de la herramienta, es importante no eliminar ni modificar los listados existentes en la configuración. Hacerlo podría generar errores en la instalación y afectar el funcionamiento de la herramienta.
 
 Mantén estos listados actualizados y revisa periódicamente para asegurarte de que reflejan correctamente las necesidades y estructuras de acceso de tu organización, sin comprometer la integridad del sistema.
-
-## API
-
-![Ajustes API](/archihub.github.io/imagenes/ajustes_api.png)
-
-ArchiHUB ofrece varias entradas de API que puedes gestionar desde esta configuración. Es posible activar o desactivar tanto la API de administración como la API pública:
-
-- __API de Administración__: Esta API es útil para conectar ArchiHUB con herramientas externas y facilitar la carga masiva de información.
-- __API Pública__: Permite a los usuarios realizar consultas al archivo desde sus propias páginas web o herramientas, promoviendo una mayor apropiación del contenido. Esto puede incluir desde especiales web hasta instalaciones interactivas.
-
-Desde estos ajustes, puedes activar o desactivar rápidamente estas opciones según tus necesidades. Recuerda que al hacer algún cambio en estas configuraciones, es necesario reiniciar el backend de la herramienta para que los cambios surtan efecto.
 
 ## Administración del índice
 
