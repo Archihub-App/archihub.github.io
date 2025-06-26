@@ -34,6 +34,105 @@ La siguiente opción de configuración se refiere a los tipos de contenido. Como
 
 De este diagrama, podemos deducir que el tipo de contenido que contiene la información o los documentos es la Unidad Documental. Los demás tipos de contenido están ahí para proporcionar orden y estructura a la organización de estos recursos.
 
+---
+
+## Roles y acceso a la información
+
+Esta sección te permite gestionar los niveles de acceso y los roles de usuario dentro de ArchiHUB.
+
+- **Listado para los niveles de acceso**  
+  Los niveles de acceso definen la publicidad de la información. Por defecto, todo el contenido creado en la herramienta es Público. Puedes crear nuevos niveles desde el módulo de catalogación y asignarlos a los usuarios para controlar quién puede acceder a cierta información.
+
+- **Listado para los roles de usuario**  
+  Los roles de usuario definen la capacidad de los usuarios para manejar información. Por defecto existen los roles de administrador y editor, pero puedes implementar nuevos roles para cada tipo de contenido según las necesidades de tu organización.
+
+---
+
+## API
+
+En este apartado puedes controlar el acceso a las APIs del sistema:
+
+- **Activar la API de administración**  
+  Permite habilitar los endpoints de administración. La llave de administrador tiene una duración limitada (máximo dos días). Es importante desactivar la API una vez realizados los cambios necesarios.
+
+- **Activar la API pública**  
+  Habilita los endpoints públicos para consultar información. Estos endpoints tienen un límite de uso semanal por usuario.
+
+---
+
+## Administración del índice
+
+Aquí puedes gestionar la indexación de los recursos y la búsqueda dentro del sistema:
+
+- **Activar el índice para las búsquedas**  
+  Habilita la gestión del índice para búsquedas, utilizando Elasticsearch. Solo debes activar esta opción si tienes Elasticsearch configurado.
+
+- **Regenerar el índice para la búsqueda de los recursos**  
+  Útil si acabas de activar el índice o modificaste los estándares de metadatos.
+
+- **Volver a indexar los recursos**  
+  Reindexa todos los recursos, sobrescribiendo versiones anteriores y creando las que no están.
+
+- **Activar la búsqueda semántica**  
+  Permite realizar búsquedas semánticas utilizando una base de datos vectorial (requiere QDrant).
+
+- **Regenerar índice de polígonos geográficos**  
+  Reindexa todos los polígonos geográficos para su uso en mapas.
+
+- **Indexar polígonos geográficos**  
+  Indexa los polígonos geográficos sobrescribiendo las versiones anteriores.
+
+---
+
+## Administración del cache
+
+- **Regenerar el cache**  
+  Si notas que la información no está actualizada, puedes regenerar la caché para refrescar los datos mostrados en la aplicación.
+
+---
+
+## Administración de la geolocalización
+
+- **Cargar polígonos geográficos**  
+  Permite cargar los polígonos geográficos necesarios para la visualización de mapas.
+
+---
+
+## Ajustes de usuario
+
+- **Activar el registro de usuarios**  
+  Permite que los usuarios se registren y accedan a la información de la aplicación.
+
+- **Activar la recuperación de contraseña**  
+  Habilita la opción para que los usuarios recuperen su contraseña en caso de olvido.
+
+- **Idioma por defecto de los usuarios**  
+  Selecciona el idioma predeterminado para los usuarios de la aplicación.
+
+---
+
+## Ajustes de los archivos
+
+- **Activar la descarga de archivos**  
+  Permite a los usuarios descargar archivos desde la aplicación.
+
+- **Borrar archivos zipeados**  
+  Elimina los archivos comprimidos generados en la aplicación.
+
+- **Borrar inventarios públicos**  
+  Elimina los inventarios públicos generados en la aplicación.
+
+---
+
+## Reinicio del sistema
+
+- **Reiniciar el sistema**  
+  Permite reiniciar el backend para aplicar cambios de configuración.
+
+---
+
+> **Tip:** Después de realizar cambios importantes en la configuración, recuerda pulsar el botón "Reiniciar backend" para que los ajustes se apliquen correctamente.
+
 Cuando queramos explorar los recursos en este archivo, nos enfocaremos principalmente en las __Unidades Documentales__. Por eso, este es el tipo de contenido predeterminado en el módulo de catalogación. Al abrir el módulo o cargar el buscador en la herramienta, se abrirá automáticamente en la __Unidad Documental__, ya que es aquí donde se encuentra la información. Esto facilita la navegación y gestión de los documentos dentro de tu archivo.
 
 La siguiente opción de configuración se refiere a los tipos de contenido que se muestran en la vista individual de los recursos. Vamos a usar un ejemplo para aclarar esto. Supongamos que tienes un fondo llamado "Noticias".
