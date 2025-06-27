@@ -1,0 +1,120 @@
+---
+title: 'Carga masiva de información'
+description: 'Guía para realizar cargas masivas de documentos en ArchiHUB'
+---
+import { Steps } from '@astrojs/starlight/components';
+
+ArchiHUB facilita la carga masiva de documentos mediante un script que respeta la jerarquía de carpetas de tu sistema. Esta guía te mostrará cómo configurar y utilizar esta herramienta para migrar grandes volúmenes de documentos de manera eficiente.
+
+## Requisitos previos
+
+- Python 3.8 o superior
+- Git instalado en tu sistema
+- Una llave de administración de ArchiHUB (aprende a generarla [aquí](../perfil/llaves))
+
+## Instrucciones paso a paso
+
+<Steps>
+
+1. **Clonar el repositorio**
+
+   Descarga el repositorio que contiene los scripts de carga:
+   
+   ```bash
+   git clone https://github.com/ArchiHUB-App/getting-started.git
+   ```
+
+2. **Configurar las credenciales de la API**
+
+   Navega a la carpeta de scripts y crea un archivo de configuración:
+   
+   ```bash
+   cd getting-started/scripts
+   touch .env
+   ```
+
+3. **Configurar las variables de entorno**
+
+   Abre el archivo `.env` y agrega las siguientes líneas, reemplazando con tus credenciales:
+   
+   ```
+   ARCHIHUB_API_KEY="tu-llave-de-administracion"
+   ARCHIHUB_API_URL="http://localhost:11000/adminApi"
+   ```
+
+4. **Preparar el entorno de Python**
+
+   Crea y activa un entorno virtual para instalar las dependencias:
+   
+   ```bash
+   python3 -m venv folder_load
+   source folder_load/bin/activate
+   pip install -r requirements.txt
+   ```
+
+5. **Ejecutar el script de carga**
+
+   Navega a la carpeta de scripts y ejecuta el comando de carga. Asegúrate de ajustar la ruta según tu configuración:
+   
+   ```bash
+   cd getting-started/scripts
+   python3 folder_load.py --folder ruta/a/tu/carpeta --publish true
+   ```
+
+</Steps>
+
+## Parámetros del script
+
+El script de carga masiva acepta los siguientes parámetros:
+
+### Parámetros obligatorios
+
+- `--folder`
+  - **Descripción**: Ruta absoluta a la carpeta raíz que contiene los documentos a cargar.
+  - **Ejemplo**: `/ruta/completa/a/la/carpeta`
+  - **Nota**: La estructura de carpetas se mantendrá en ArchiHUB.
+
+### Parámetros opcionales
+
+- `--publish`
+  - **Descripción**: Publica automáticamente los documentos cargados.
+  - **Valores**: `true` o `false`
+  - **Por defecto**: `false` (los documentos se guardan como borrador)
+  - **Recomendación**: Usa `true` para producción, `false` para pruebas.
+
+## Ejemplo práctico
+
+Supongamos que tienes la siguiente estructura de carpetas:
+
+```
+Documentos/
+├── Proyecto A/
+│   ├── Contrato.pdf
+│   └── Presupuesto.xlsx
+└── Proyecto B/
+    ├── Factura.pdf
+    └── Recibo.pdf
+```
+
+Para cargar estos documentos manteniendo la estructura, usarías:
+
+```bash
+python3 folder_load.py --folder /ruta/a/Documentos --publish true
+```
+
+Si deseas cargar la carpeta de ejemplos que viene con el repositorio, puedes usar el siguiente comando (ajusta la ruta según tu sistema):
+
+```bash
+cd getting-started/scripts
+python3 folder_load.py --folder ~/dev/archihub/getting-started/scripts/Assets --publish true
+```
+
+Este comando cargará el contenido de la carpeta `Assets` que incluye archivos de ejemplo para probar la funcionalidad.
+
+## Solución de problemas
+
+- **Error de autenticación**: Verifica que la llave de API en el archivo `.env` sea correcta.
+- **Ruta no encontrada**: Asegúrate de que la ruta especificada en `--folder` existe.
+- **Permisos denegados**: Verifica que tengas permisos de escritura en la carpeta de destino.
+
+
