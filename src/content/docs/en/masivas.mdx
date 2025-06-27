@@ -1,0 +1,118 @@
+---
+title: 'Bulk Uploads'
+description: 'Guide for performing bulk document uploads in ArchiHUB'
+---
+import { Steps } from '@astrojs/starlight/components';
+
+ArchiHUB makes bulk document uploads easy with a script that respects your system's folder hierarchy. This guide will show you how to set up and use this tool to efficiently migrate large volumes of documents.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- Git installed on your system
+- An ArchiHUB admin key (learn how to generate one [here](../profile/keys))
+
+## Step-by-Step Instructions
+
+<Steps>
+
+1. **Clone the repository**
+
+   Download the repository containing the upload scripts:
+   
+   ```bash
+   git clone https://github.com/ArchiHUB-App/getting-started.git
+   ```
+
+2. **Configure API credentials**
+
+   Navigate to the scripts folder and create a configuration file:
+   
+   ```bash
+   cd getting-started/scripts
+   touch .env
+   ```
+
+3. **Set up environment variables**
+
+   Open the `.env` file and add the following lines, replacing with your credentials:
+   
+   ```
+   ARCHIHUB_API_KEY="your-admin-key"
+   ARCHIHUB_API_URL="http://localhost:11000/adminApi"
+   ```
+
+4. **Set up Python environment**
+
+   Create and activate a virtual environment to install dependencies:
+   
+   ```bash
+   python3 -m venv folder_load
+   source folder_load/bin/activate
+   pip install -r requirements.txt
+   ```
+
+5. **Run the upload script**
+
+   Navigate to the scripts folder and run the upload command. Make sure to adjust the path according to your configuration:
+   
+   ```bash
+   cd getting-started/scripts
+   python3 folder_load.py --folder /path/to/your/folder --publish true
+   ```
+
+</Steps>
+
+## Script Parameters
+
+The bulk upload script accepts the following parameters:
+
+### Required Parameters
+
+- `--folder`
+  - **Description**: Absolute path to the root folder containing the documents to upload.
+  - **Example**: `/full/path/to/your/folder`
+  - **Note**: The folder structure will be preserved in ArchiHUB.
+
+### Optional Parameters
+
+- `--publish`
+  - **Description**: Automatically publishes the uploaded documents.
+  - **Values**: `true` or `false`
+  - **Default**: `false` (documents are saved as drafts)
+  - **Recommendation**: Use `true` for production, `false` for testing.
+
+## Practical Example
+
+Suppose you have the following folder structure:
+
+```
+Documents/
+├── Project A/
+│   ├── Contract.pdf
+│   └── Budget.xlsx
+└── Project B/
+    ├── Invoice.pdf
+    └── Receipt.pdf
+```
+
+To upload these documents while maintaining the structure, you would use:
+
+```bash
+python3 folder_load.py --folder /path/to/Documents --publish true
+```
+
+If you want to upload the example folder included in the repository, you can use the following command (adjust the path according to your system):
+
+```bash
+cd getting-started/scripts
+python3 folder_load.py --folder ~/dev/archihub/getting-started/scripts/Assets --publish true
+```
+
+This command will upload the contents of the `Assets` folder, which includes sample files to test the functionality.
+
+## Troubleshooting
+
+- **Authentication Error**: Verify that the API key in the `.env` file is correct.
+- **Path Not Found**: Make sure the path specified in `--folder` exists.
+- **Permission Denied**: Check that you have write permissions for the target folder.

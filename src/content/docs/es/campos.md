@@ -23,12 +23,15 @@ En esta parte de la documentación detallaremos cada uno de los campos que se pu
 
 El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verdadero o falso. Es ideal para metadatos que requieren una respuesta binaria.
 
+
 ### Estructura del campo
 - **Tipo de campo**: Booleano (verdadero/falso)
 - **Representación visual**: Casilla de verificación (checkbox)
 - **Valores posibles**: 
   - Verdadero (casilla marcada)
   - Falso (casilla desmarcada)
+  
+![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
 ### Ejemplo práctico
 **Escenario**: Configurar un campo para indicar si un documento está publicado:
@@ -37,8 +40,7 @@ El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verda
 2. **Tipo**: Verdadero/Falso
 3. **Uso**: Marcar cuando el documento esté listo para ser visible públicamente
 
-![trueFalse](/archihub.github.io/imagenes/truefalse.png)
-
+![trueFalseForm](/archihub.github.io/imagenes/campo-edit-verdadero-falso.png)
 
 ## El campo Texto
 
@@ -49,6 +51,8 @@ El campo de texto permite el ingreso de texto en una sola línea, siendo uno de 
 - **Longitud máxima**: Configurable
 - **Validaciones**: Opcionalmente puede incluir validación de formato (email, URL, etc.)
 
+![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
+
 ### Ejemplo práctico
 **Escenario**: Crear un campo para el título de un documento:
 
@@ -57,8 +61,7 @@ El campo de texto permite el ingreso de texto en una sola línea, siendo uno de 
 3. **Requerido**: Sí
 4. **Longitud máxima**: 255 caracteres
 
-![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
-
+![campoTextoForm](/archihub.github.io/imagenes/campo-edit-texto.png)
 
 ## El campo Área de texto
 
@@ -70,6 +73,8 @@ El campo Área de texto permite el ingreso de texto en múltiples líneas, ideal
 - **Formato**: Soporta saltos de línea y párrafos
 - **Límite de caracteres**: Configurable
 
+![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
+
 ### Ejemplo práctico
 **Escenario**: Crear un campo para la descripción detallada de un proyecto:
 
@@ -78,7 +83,7 @@ El campo Área de texto permite el ingreso de texto en múltiples líneas, ideal
 3. **Requerido**: Opcional
 4. **Límite**: 2000 caracteres
 
-![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
+![areaDeTextoForm](/archihub.github.io/imagenes/campo-edit-area-de-texto.png)
 
 ## El campo Número
 
@@ -92,16 +97,17 @@ El campo Número está diseñado específicamente para capturar valores numéric
   - Incrementos permitidos
   - Formato de visualización
 
+![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
+
 ### Ejemplo práctico
 **Escenario**: Configurar un campo para el año de publicación:
 
-1. **Etiqueta**: "Año de publicación"
+1. **Etiqueta**: "z"
 2. **Tipo**: Número
 3. **Rango**: 1900-2025
 4. **Formato**: Número entero
 
-![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
-
+![campoNumericoForm](/archihub.github.io/imagenes/campo-edit-numero.png)
 
 ## El campo Fecha
 
@@ -118,6 +124,8 @@ El campo Fecha permite la selección estructurada de fechas a través de un sele
   - Días de la semana permitidos
   - Validación personalizada
 
+![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
+
 ### Ejemplo práctico
 **Escenario**: Configurar un campo para la fecha de publicación:
 
@@ -126,8 +134,7 @@ El campo Fecha permite la selección estructurada de fechas a través de un sele
 3. **Formato**: DD/MM/AAAA
 4. **Rango permitido**: Fecha actual en adelante
 
-![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
-
+![campoFechaForm](/archihub.github.io/imagenes/campo-edit-fecha.png)
 
 ## El campo Listado
 
@@ -138,6 +145,8 @@ El campo Listado permite seleccionar una opción de un conjunto predefinido, ase
 - **Fuente de datos**: Lista predefinida
 - **Presentación**: Menú desplegable
 - **Búsqueda**: Incluye búsqueda predictiva
+
+![menu](/archihub.github.io/imagenes/listados.png)
 
 ### Configuración
 Las listas se definen en la sección __LISTAS__ del módulo de catalogación, permitiendo:
@@ -153,7 +162,6 @@ Las listas se definen en la sección __LISTAS__ del módulo de catalogación, pe
 3. **Opciones**: Artículo, Libro, Tesis, Informe
 4. **Requerido**: Sí
 
-![menu](/archihub.github.io/imagenes/listados.png)
 
 ## El campo Lista de selección múltiple
 
@@ -164,6 +172,8 @@ El campo Lista de selección múltiple permite elegir varias opciones de una lis
 - **Fuente de datos**: Lista predefinida
 - **Presentación**: Lista con casillas de verificación
 - **Límite de selección**: Configurable
+
+![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
 ### Características
 - Búsqueda dentro de las opciones
@@ -180,7 +190,6 @@ El campo Lista de selección múltiple permite elegir varias opciones de una lis
 4. **Mínimo requerido**: 1
 5. **Máximo permitido**: 10
 
-![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
 
 ## Campo Autor
