@@ -12,6 +12,9 @@ description: ''
 - Implemented zoom functionality in the map of the Location field
 - New system plugin for auto-completing metadata using documents and LLM assistants
 
+### Fixed
+- New implementation of the relation field
+
 ### Security
 - The access levels for image galleries are adjusted
 

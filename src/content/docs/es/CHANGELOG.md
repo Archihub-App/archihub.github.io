@@ -13,6 +13,9 @@ description: ''
 - Se implementa zoom en el mapa del campo ubicación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 
+### Fixed
+- Nueva implementación del campo relación
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
