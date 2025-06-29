@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
 - Implemented zoom functionality in the map of the Location field
+- New system plugin for auto-completing metadata using documents and LLM assistants
 
 ### Security
 - The access levels for image galleries are adjusted

@@ -11,6 +11,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se implementa zoom en el mapa del campo ubicación
+- Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
