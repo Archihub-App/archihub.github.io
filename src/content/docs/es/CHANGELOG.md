@@ -10,6 +10,7 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
+- Se implementa zoom en el mapa del campo ubicación
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

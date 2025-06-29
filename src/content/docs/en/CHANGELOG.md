@@ -9,6 +9,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
+- Implemented zoom functionality in the map of the Location field
 
 ### Security
 - The access levels for image galleries are adjusted
