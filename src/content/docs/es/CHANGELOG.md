@@ -15,6 +15,7 @@ description: ''
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se arregla el orden de las ventanas al hacer click en la vista galeria
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
