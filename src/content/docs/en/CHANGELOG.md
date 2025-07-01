@@ -16,6 +16,7 @@ description: ''
 ### Fixed
 - New implementation of the relation field
 - Fixed the window stacking order when clicking in the gallery view
+- Fixed an issue with recursive hooks
 
 ### Security
 - The access levels for image galleries are adjusted
