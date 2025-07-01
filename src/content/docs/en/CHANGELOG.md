@@ -11,6 +11,7 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - Implemented zoom functionality in the map of the Location field
 - New system plugin for auto-completing metadata using documents and LLM assistants
+- Added a column showing the last update date for resources
 
 ### Fixed
 - New implementation of the relation field

@@ -12,6 +12,7 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se implementa zoom en el mapa del campo ubicación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
+- Columna con la fecha de la última actualización para los recursos
 
 ### Fixed
 - Nueva implementación del campo relación
