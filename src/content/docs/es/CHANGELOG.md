@@ -19,6 +19,10 @@ description: ''
 - Se arregla el orden de las ventanas al hacer click en la vista galeria
 - Se soluciona problema con hooks recursivos
 - Soporte de funciones sincronas para el `Hookhandler`
+- Se limpian los filtros `parent` cada vez que se cambia el tipo de contenido
+- Se soluciona error con `files` al guardar
+- Se soluciona `offset` al ir hacia atrás en la galería
+
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

@@ -18,6 +18,9 @@ description: ''
 - Fixed the window stacking order when clicking in the gallery view
 - Fixed an issue with recursive hooks
 - Added support for synchronous functions in the `HookHandler`
+- Cleared `parent` filters whenever the content type is changed
+- Fixed an issue with `files` when saving
+- Fixed the `offset` issue when navigating backward in the gallery
 
 ### Security
 - The access levels for image galleries are adjusted
