@@ -3,19 +3,27 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.7] _beta_
+## [0.9.8] _beta_
 
 ### Added
-
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
-- Se implementa zoom en el mapa del campo ubicación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Columna con la fecha de la última actualización para los recursos
 
 ### Fixed
 - Nueva implementación del campo relación
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.7] _2 July 2026_
+
+### Added
+- Se implementa zoom en el mapa del campo ubicación
+
+### Fixed
 - Se arregla el orden de las ventanas al hacer click en la vista galeria
 - Se soluciona problema con hooks recursivos
 - Se quita el botón de descarga en la vista galería si la descarga está deshabilitada en el sistema
@@ -23,9 +31,6 @@ description: ''
 - Se limpian los filtros `parent` cada vez que se cambia el tipo de contenido
 - Se soluciona error con `files` al guardar
 - Se soluciona `offset` al ir hacia atrás en la galería
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.6] _26 June 2026_
 
