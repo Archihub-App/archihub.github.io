@@ -17,6 +17,7 @@ description: ''
 - New implementation of the relation field
 - Fixed the window stacking order when clicking in the gallery view
 - Fixed an issue with recursive hooks
+- Removed the download button from the gallery view if downloads are disabled in the system
 - Added support for synchronous functions in the `HookHandler`
 - Cleared `parent` filters whenever the content type is changed
 - Fixed an issue with `files` when saving
