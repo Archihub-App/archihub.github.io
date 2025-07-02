@@ -32,7 +32,7 @@ description: ''
 - Fixed an issue with `files` when saving
 - Fixed the `offset` issue when navigating backward in the gallery
 
-## [0.9.6] _beta_
+## [0.9.6] _26 June 2026_
 
 ### Added
 
