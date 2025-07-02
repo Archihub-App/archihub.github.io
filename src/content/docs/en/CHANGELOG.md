@@ -17,6 +17,7 @@ description: ''
 - New implementation of the relation field
 - Fixed the window stacking order when clicking in the gallery view
 - Fixed an issue with recursive hooks
+- Added support for synchronous functions in the `HookHandler`
 
 ### Security
 - The access levels for image galleries are adjusted
