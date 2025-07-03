@@ -11,9 +11,11 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Columna con la fecha de la última actualización para los recursos
+- Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

@@ -11,9 +11,11 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added a column showing the last update date for resources
+- Added a gallery view to the query interfaces for browsing image content using filters
 
 ### Fixed
 - New implementation of the relation field
+- Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
 
 ### Security
 - The access levels for image galleries are adjusted
