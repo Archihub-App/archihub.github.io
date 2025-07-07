@@ -69,9 +69,49 @@ El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verda
 El campo de texto permite el ingreso de texto en una sola línea, siendo uno de los tipos de campo más versátiles en el sistema.
 
 ### Estructura del campo
-- **Tipo de campo**: Texto de una línea
-- **Longitud máxima**: Configurable
-- **Validaciones**: Opcionalmente puede incluir validación de formato (email, URL, etc.)
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Título"`, `"Nombre del autor"`.
+
+**Tipo de campo**: Texto de una línea  
+- **Descripción**: Permite ingresar texto en una sola línea.  
+- **Ejemplo**: Campo para el título de un documento.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.titulo`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Ingrese el título completo del documento."*
+
+**Longitud máxima**:  
+- **Descripción**: Número máximo de caracteres permitidos.  
+- **Ejemplo**: `255 caracteres`.
+
+**Validaciones**:  
+- **Descripción**: Reglas opcionales para el formato del texto (email, URL, etc.).  
+- **Ejemplo**: *"Debe ser una dirección de correo válida."*
+
+**Añadir al final**:  
+- **Descripción**: Texto que se mostrará al final del campo (opcional).  
+- **Ejemplo**: *"Ejemplo: Informe final 2023"*
+
+**Añadir al inicio**:  
+- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
+- **Ejemplo**: *"Título: "*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `Sí` (debe completarse el campo).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
 
@@ -90,10 +130,45 @@ El campo de texto permite el ingreso de texto en una sola línea, siendo uno de 
 El campo Área de texto permite el ingreso de texto en múltiples líneas, ideal para contenido extenso que requiere formato y saltos de línea.
 
 ### Estructura del campo
-- **Tipo de campo**: Texto multilínea
-- **Editor**: Incluye barra de herramientas básica
-- **Formato**: Soporta saltos de línea y párrafos
-- **Límite de caracteres**: Configurable
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Descripción"`, `"Observaciones"`.
+
+**Tipo de campo**: Área de texto  
+- **Descripción**: Permite ingresar texto en varias líneas, ideal para descripciones largas o comentarios.  
+- **Ejemplo**: Campo para la descripción detallada de un proyecto.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.descripcion`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Ingrese una descripción detallada del recurso."*
+
+**Límite de caracteres**:  
+- **Descripción**: Número máximo de caracteres permitidos.  
+- **Ejemplo**: `2000 caracteres`.
+
+**Editor**:  
+- **Descripción**: Indica si el campo incluye barra de herramientas básica para formato de texto.  
+- **Ejemplo**: *"Permite negrita, cursiva y listas."*
+
+**Formato**:  
+- **Descripción**: Soporta saltos de línea y párrafos.  
+- **Ejemplo**: *"Puede escribir texto en varios párrafos."*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `No` (puede dejarse vacío).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
 
@@ -112,12 +187,53 @@ El campo Área de texto permite el ingreso de texto en múltiples líneas, ideal
 El campo Número está diseñado específicamente para capturar valores numéricos con validación automática.
 
 ### Estructura del campo
-- **Tipo de campo**: Numérico
-- **Formatos soportados**: Enteros y decimales
-- **Validaciones**:
-  - Valor mínimo/máximo
-  - Incrementos permitidos
-  - Formato de visualización
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Año de publicación"`, `"Cantidad de páginas"`.
+
+**Tipo de campo**: Numérico  
+- **Descripción**: Permite ingresar valores numéricos, ya sean enteros o decimales.  
+- **Ejemplo**: Campo para el año, cantidad, precio, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.anio_publicacion`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Ingrese el año en formato numérico (ejemplo: 2023)."*
+
+**Valor mínimo/máximo**:  
+- **Descripción**: Define los límites inferior y superior permitidos para el valor.  
+- **Ejemplo**: `1900` (mínimo), `2025` (máximo).
+
+**Incrementos permitidos**:  
+- **Descripción**: Define el paso o incremento entre valores válidos.  
+- **Ejemplo**: `1` para enteros, `0.01` para decimales.
+
+**Formato de visualización**:  
+- **Descripción**: Permite definir cómo se muestra el número (separadores, decimales, etc.).  
+- **Ejemplo**: *"Mostrar con separador de miles."*
+
+**Añadir al final**:  
+- **Descripción**: Texto que se mostrará al final del campo (opcional).  
+- **Ejemplo**: *"Años", "kg", "USD"*
+
+**Añadir al inicio**:  
+- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
+- **Ejemplo**: *"$", "N°"*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `Sí` (debe completarse el campo).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
 
