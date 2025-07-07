@@ -252,15 +252,53 @@ El campo Número está diseñado específicamente para capturar valores numéric
 El campo Fecha permite la selección estructurada de fechas a través de un selector visual, asegurando consistencia en el formato.
 
 ### Estructura del campo
-- **Tipo de campo**: Fecha/Hora
-- **Formatos soportados**:
-  - Fecha (DD/MM/AAAA)
-  - Fecha y hora
-  - Rango de fechas
-- **Validaciones**:
-  - Fechas mínima/máxima
-  - Días de la semana permitidos
-  - Validación personalizada
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Fecha de publicación"`, `"Fecha de nacimiento"`.
+
+**Tipo de campo**: Fecha/Hora  
+- **Descripción**: Permite seleccionar una fecha, una fecha y hora, o un rango de fechas.  
+- **Ejemplo**: Campo para la fecha de publicación, fecha de evento, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.fecha_publicacion`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Seleccione la fecha en el formato DD/MM/AAAA."*
+
+**Formatos soportados**:  
+- **Descripción**: Tipos de formato permitidos para la fecha.  
+- **Ejemplo**: `Fecha (DD/MM/AAAA)`, `Fecha y hora`, `Rango de fechas`.
+
+**Validaciones**:  
+- **Descripción**: Reglas para restringir las fechas válidas.  
+- **Ejemplo**: *"Solo fechas posteriores a hoy."*, *"No se permiten fines de semana."*
+
+**Fechas mínima/máxima**:  
+- **Descripción**: Límite inferior y superior para la selección de fechas.  
+- **Ejemplo**: `01/01/2000` (mínima), `31/12/2030` (máxima).
+
+**Días de la semana permitidos**:  
+- **Descripción**: Restringe la selección a ciertos días.  
+- **Ejemplo**: *"Solo días hábiles (lunes a viernes)."*
+
+**Validación personalizada**:  
+- **Descripción**: Permite reglas adicionales según necesidades específicas.  
+- **Ejemplo**: *"La fecha de inicio debe ser anterior a la fecha de fin."*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `Sí` (debe completarse el campo).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
 
@@ -279,18 +317,8 @@ El campo Fecha permite la selección estructurada de fechas a través de un sele
 El campo Listado permite seleccionar una opción de un conjunto predefinido, asegurando consistencia en los datos.
 
 ### Estructura del campo
-- **Tipo de campo**: Selección simple
-- **Fuente de datos**: Lista predefinida
-- **Presentación**: Menú desplegable
-- **Búsqueda**: Incluye búsqueda predictiva
 
-![menu](/archihub.github.io/imagenes/listados.png)
-
-### Configuración
-Las listas se definen en la sección __LISTAS__ del módulo de catalogación, permitiendo:
-- Crear nuevas listas
-- Editar opciones existentes
-- Reutilizar listas en múltiples campos
+![listados](/archihub.github.io/imagenes/listados.png)
 
 ### Ejemplo práctico
 **Escenario**: Crear un campo para el tipo de documento:
@@ -300,46 +328,84 @@ Las listas se definen en la sección __LISTAS__ del módulo de catalogación, pe
 3. **Opciones**: Artículo, Libro, Tesis, Informe
 4. **Requerido**: Sí
 
-
 ## El campo Lista de selección múltiple
 
 El campo Lista de selección múltiple permite elegir varias opciones de una lista predefinida, ideal para metadatos que pueden tener múltiples valores.
 
 ### Estructura del campo
-- **Tipo de campo**: Selección múltiple
-- **Fuente de datos**: Lista predefinida
-- **Presentación**: Lista con casillas de verificación
-- **Límite de selección**: Configurable
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Estados"`, `"Palabras clave"`.
+
+**Tipo de campo**: Selección múltiple  
+- **Descripción**: Permite seleccionar varias opciones de una lista predefinida.  
+- **Ejemplo**: Campo para seleccionar varios estados, temas, etiquetas, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.firstLevel.listamultiple`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Seleccione una o más opciones de la lista."*
+
+**Listado**:  
+- **Descripción**: Lista predefinida de opciones disponibles.  
+- **Ejemplo**: `Lista de estados`.
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `Sí` (debe seleccionarse al menos una opción).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `País = México`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
-
-### Características
-- Búsqueda dentro de las opciones
-- Visualización de opciones seleccionadas
-- Ordenamiento personalizado
-- Validación de selección mínima/máxima
 
 ### Ejemplo práctico
 **Escenario**: Configurar un campo para las palabras clave de un documento:
 
 1. **Etiqueta**: "Palabras clave"
 2. **Tipo**: Selección múltiple
-3. **Fuente**: Lista de términos controlados
-4. **Mínimo requerido**: 1
-5. **Máximo permitido**: 10
-
-
+3. **Listado**: Lista de términos controlados
 
 ## Campo Autor
 
 El campo Autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Soporta múltiples autores y diferentes tipos de contribución, permitiendo diferenciar entre personas físicas y organizaciones.
 
 ### Estructura del campo
-Cada entrada de autor puede contener:
-- **Tipo de autor**: Persona u Organización (selector)
-- **Información básica**:
-  - Para personas: Nombre, Apellido
-  - Para organizaciones: Nombre completo, Siglas 
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Autor"`, `"Autores"`.
+
+**Tipo de campo**: Autor  
+- **Descripción**: Permite ingresar información de personas u organizaciones responsables del recurso.  
+- **Ejemplo**: Campo para registrar autores de un libro, artículo, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.autores`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Agregue uno o más autores, indicando si es persona u organización."*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `No` (puede dejarse vacío).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de recurso = Publicación`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
 
 ![Campo de autor](/archihub.github.io/imagenes/campoAuthor.png)
 
@@ -376,18 +442,31 @@ Los autores aparecen listados en la sección de metadatos del recurso, agrupados
 El campo Relación permite establecer conexiones entre diferentes tipos de contenido dentro de la plataforma, facilitando la organización y recuperación de información relacionada.
 
 ### Estructura del campo
-- **Tipo de campo**: Relación
-- **Tipos de relación**:
-  - Uno a uno
-  - Uno a muchos
-  - Muchos a muchos
-- **Búsqueda**: Incluye búsqueda predictiva
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Campo relación"`, `"Documento relacionado"`.
 
-### Funcionalidades
-- Relación bidireccional automática
-- Filtrado por tipo de contenido
-- Visualización de relaciones existentes
-- Validación de cardinalidad
+**Tipo de campo**: Relación  
+- **Descripción**: Permite seleccionar y vincular uno o varios recursos de otro tipo de contenido.  
+- **Ejemplo**: Relacionar un documento con un fondo, colección, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.firstLevel.relationField`.
+
+**Tipo de contenido**:  
+- **Descripción**: Define el tipo de recurso o entidad con la que se puede establecer la relación.  
+- **Ejemplo**: `Fondo`, `Tesauro`, `Colección`.
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `No` (puede dejarse vacío).
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+
+![formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
 
 ### Ejemplo práctico
 **Escenario**: Relacionar un documento con términos de un tesauro:
@@ -398,27 +477,40 @@ El campo Relación permite establecer conexiones entre diferentes tipos de conte
 4. **Cardinalidad**: Muchos a muchos
 5. **Búsqueda**: Por título y descripción
 
-![Formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
-
 ## Campo Ubicación
 
 El campo Ubicación permite georreferenciar recursos mediante la asociación con lugares físicos o divisiones administrativas, soportando múltiples ubicaciones con diferentes niveles de precisión.
 
 ### Estructura del campo
-Cada ubicación incluye:
-- **Nombre del lugar**: Identificador principal (ciudad, región, punto de referencia)
-- **División administrativa**: Niveles jerárquicos (departamento/estado/provincia)
-- **País**: Selección desde lista desplegable estandarizada
-- **Coordenadas geográficas** (opcional):
-  - Latitud
-  - Longitud
-  - Precisión
+**Nombre**: Nombre del campo  
+- **Descripción**: Identificador único y descriptivo del campo.  
+- **Ejemplo**: `"Ubicación"`, `"Lugar de origen"`.
 
-### Funcionalidades
-- Búsqueda predictiva de lugares
-- Mapa interactivo para selección de coordenadas
-- Validación de ubicaciones
-- Jerarquía de divisiones administrativas
+**Tipo de campo**: Ubicación  
+- **Descripción**: Permite asociar el recurso a uno o varios lugares físicos o divisiones administrativas.  
+- **Ejemplo**: Campo para registrar la ubicación de un evento, documento, objeto, etc.
+
+**Destino**:  
+- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Ejemplo**: `metadata.ubicacion`.
+
+**Instrucciones**:  
+- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
+- **Ejemplo**: *"Seleccione o busque la ubicación correspondiente."*
+
+**Requerido**:  
+- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
+- **Ejemplo**: `No` (puede dejarse vacío).
+
+**Condición**:  
+- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
+- **Ejemplo**: *"Visible solo si `Tipo de recurso = Evento`."*
+
+**Niveles de acceso**:  
+- **Descripción**: Permisos necesarios para interactuar con el campo.  
+- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+
+![ubicacion](/archihub.github.io/imagenes/ubicacion.png)
 
 ### Ejemplo práctico
 **Escenario**: Documentar las ubicaciones relevantes para un proyecto de investigación:
