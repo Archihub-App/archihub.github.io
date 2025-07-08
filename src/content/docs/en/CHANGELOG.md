@@ -15,6 +15,7 @@ description: ''
 - Added OpenCV.js support in the document and image viewer
 - Displayed metadata of the first associated resource in the file view
 - Added filter chips to the resource view to show which filters are active
+- All `select` type fields now include a search option to quickly select the desired item
 
 ### Fixed
 - New implementation of the relation field

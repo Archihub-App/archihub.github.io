@@ -15,6 +15,7 @@ description: ''
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se muestran los metadatos del primer recurso asociado en la vista de archivos
 - Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
+- Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
 
 ### Fixed
 - Nueva implementación del campo relación
