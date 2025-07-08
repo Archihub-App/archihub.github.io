@@ -20,6 +20,7 @@ description: ''
 ### Fixed
 - Nueva implementación del campo relación
 - Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
+- Se solucionan errores de visualizacion en el mapa al hacer zoom con los marcadores bien ubicados en las coordenadas asignadas
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

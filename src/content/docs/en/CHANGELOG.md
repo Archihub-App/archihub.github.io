@@ -20,6 +20,7 @@ description: ''
 ### Fixed
 - New implementation of the relation field
 - Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
+- Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
 
 ### Security
 - The access levels for image galleries are adjusted
