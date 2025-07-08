@@ -1,39 +1,39 @@
 ---
-title: 'El campo Separador'
+title: 'The Separator Field'
 description: ''
 ---
 
-El campo Separador es un campo especial que permite dividir un formulario en múltiples páginas, mejorando la experiencia de usuario al organizar la información en secciones más manejables. Es particularmente útil para formularios extensos que contienen muchos campos.
+The Separator field is a special field that allows you to divide a form into multiple pages, improving the user experience by organizing information into more manageable sections. It is particularly useful for long forms containing many fields.
 
-Cada separador define una nueva página en el formulario y requiere:
-- **Nombre**: Identificador único del separador (obligatorio)
+Each separator defines a new page in the form and requires:
+- **Name**: Unique identifier for the separator (required)
 
-![Campo de separador en el formulario](/archihub.github.io/imagenes/formulario_separador.png)
+![Separator field in the form](/archihub.github.io/imagenes/formulario_separador.png)
 
-### Configuración del separador
+### Separator configuration
 
-En la siguiente imagen se muestra el formulario de configuración del separador, donde se puede definir el nombre, título y descripción que se mostrará en la navegación del formulario.
+The following image shows the separator configuration form, where you can define the name, title, and description that will be displayed in the form navigation.
 
-![Formulario de configuración del separador](/archihub.github.io/imagenes/separador-form.png)
+![Separator configuration form](/archihub.github.io/imagenes/separador-form.png)
 
-### Ejemplo de uso
+### Usage example
 
-**Escenario**: Crear un formulario de registro de proyecto con tres secciones:
+**Scenario**: Create a project registration form with three sections:
 
-1. **Información básica**
-   - Campos: Título, descripción, fecha de inicio
-   - Sin separador (aparece en la primera página por defecto)
+1. **Basic information**
+   - Fields: Title, description, start date
+   - No separator (appears on the first page by default)
 
-2. **Detalles del proyecto**
-   - Separador: "Detalles"
-   - Campos: Objetivos, alcance, presupuesto
+2. **Project details**
+   - Separator: "Details"
+   - Fields: Objectives, scope, budget
 
-3. **Equipo y colaboradores**
-   - Separador: "Equipo"
-   - Campos: Miembros del equipo, roles, contactos
+3. **Team and collaborators**
+   - Separator: "Team"
+   - Fields: Team members, roles, contacts
 
-### Visualización en el formulario
+### Visualization in the form
 
-Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las diferentes secciones:
+Separators appear as steps in the top navigation of the form, allowing users to easily move between the different sections:
 
-![Navegación por separadores](/archihub.github.io/imagenes/campo-separador.png) 
+![Navigation by separators](/archihub.github.io/imagenes/campo-separador.png) 

@@ -1,42 +1,42 @@
 ---
-title: 'El campo Relación'
+title: 'The Relation Field'
 description: ''
 ---
 
-El campo Relación permite establecer conexiones entre diferentes tipos de contenido dentro de la plataforma, facilitando la organización y recuperación de información relacionada.
+The Relation field allows you to establish connections between different types of content within the platform, facilitating the organization and retrieval of related information.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Campo relación"`, `"Documento relacionado"`.
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"Relation field"`, `"Related document"`.
 
-**Tipo de campo**: Relación  
-- **Descripción**: Permite seleccionar y vincular uno o varios recursos de otro tipo de contenido.  
-- **Ejemplo**: Relacionar un documento con un fondo, colección, etc.
+**Field type**: Relation  
+- **Description**: Allows selecting and linking one or more resources of another content type.  
+- **Example**: Relate a document to a collection, thesaurus, etc.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.firstLevel.relationField`.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.firstLevel.relationField`.
 
-**Tipo de contenido**:  
-- **Descripción**: Define el tipo de recurso o entidad con la que se puede establecer la relación.  
-- **Ejemplo**: `Fondo`, `Tesauro`, `Colección`.
+**Content type**:  
+- **Description**: Defines the type of resource or entity with which the relation can be established.  
+- **Example**: `Collection`, `Thesaurus`, `Fund`.
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `No` (puede dejarse vacío).
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `No` (can be left empty).
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
 
-![formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
+![relation form](/archihub.github.io/imagenes/formulario_relacion.png)
 
-### Ejemplo práctico
-**Escenario**: Relacionar un documento con términos de un tesauro:
+### Practical example
+**Scenario**: Relate a document to terms from a thesaurus:
 
-1. **Etiqueta**: "Términos controlados"
-2. **Tipo**: Relación
-3. **Contenido relacionado**: Tesauro
-4. **Cardinalidad**: Muchos a muchos
-5. **Búsqueda**: Por título y descripción 
+1. **Label**: "Controlled terms"
+2. **Type**: Relation
+3. **Related content**: Thesaurus
+4. **Cardinality**: Many to many
+5. **Search**: By title and description 

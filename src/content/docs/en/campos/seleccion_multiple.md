@@ -1,48 +1,48 @@
 ---
-title: 'El campo Lista de selección múltiple'
+title: 'The Multiple Selection List Field'
 description: ''
 ---
 
-El campo Lista de selección múltiple permite elegir varias opciones de una lista predefinida, ideal para metadatos que pueden tener múltiples valores.
+The Multiple Selection List field allows you to choose several options from a predefined list, ideal for metadata that can have multiple values.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Estados"`, `"Palabras clave"`.
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"States"`, `"Keywords"`.
 
-**Tipo de campo**: Selección múltiple  
-- **Descripción**: Permite seleccionar varias opciones de una lista predefinida.  
-- **Ejemplo**: Campo para seleccionar varios estados, temas, etiquetas, etc.
+**Field type**: Multiple selection  
+- **Description**: Allows selecting several options from a predefined list.  
+- **Example**: Field to select multiple states, topics, tags, etc.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.firstLevel.listamultiple`.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.firstLevel.multiplelist`.
 
-**Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione una o más opciones de la lista."*
+**Instructions**:  
+- **Description**: Guide for the user on how to use the field.  
+- **Example**: *"Select one or more options from the list."*
 
-**Listado**:  
-- **Descripción**: Lista predefinida de opciones disponibles.  
-- **Ejemplo**: `Lista de estados`.
+**List**:  
+- **Description**: Predefined list of available options.  
+- **Example**: `List of states`.
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe seleccionarse al menos una opción).
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `Yes` (at least one option must be selected).
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `País = México`."*
+**Condition**:  
+- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
+- **Example**: *"Visible only if `Country = Mexico`."*
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
 
-![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
+![multipleSelectionList](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para las palabras clave de un documento:
+### Practical example
+**Scenario**: Configure a field for the keywords of a document:
 
-1. **Etiqueta**: "Palabras clave"
-2. **Tipo**: Selección múltiple
-3. **Listado**: Lista de términos controlados 
+1. **Label**: "Keywords"
+2. **Type**: Multiple selection
+3. **List**: List of controlled terms 

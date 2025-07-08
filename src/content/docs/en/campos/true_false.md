@@ -1,47 +1,46 @@
 ---
-title: 'El campo Verdadero / Falso'
+title: 'The True / False Field'
 description: ''
 ---
 
-El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verdadero o falso. Es ideal para metadatos que requieren una respuesta binaria.
+The True/False field is a boolean field that only accepts two values: true or false. It is ideal for metadata that requires a binary response.
 
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"Approved"`, `"Active"`.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Aprobado"`, `"Activo"`.
+**Field type**: Boolean (true/false)  
+- **Description**: Only accepts the values `True` or `False`.  
+- **Example**: Radio options or checkbox in the interface.
 
-**Tipo de campo**: Booleano (verdadero/falso)  
-- **Descripción**: Admite solo los valores `Verdadero` o `Falso`.  
-- **Ejemplo**: Opciones de radio o checkbox en la interfaz.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.first_level.relationField`.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.first_level.relationField`.
+**Instructions**:  
+- **Description**: Guide for the user on how to use the field.  
+- **Example**: *"Select 'True' if the document is complete."*
 
-**Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione 'Verdadero' si el documento está completo."*
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `Yes` (an option must be selected).
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe marcarse una opción).
+**Condition**:  
+- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
+- **Example**: *"Visible only if `Status = Pending`."*
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Estado = Pendiente`."*
-
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
   
 ![trueFalse](/archihub.github.io/imagenes/truefalse.png)
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para indicar si un documento está publicado:
+### Practical example
+**Scenario**: Configure a field to indicate if a document is published:
 
-1. **Campo**: "Publicado"
-2. **Tipo**: Verdadero/Falso
-3. **Uso**: Marcar cuando el documento esté listo para ser visible públicamente
+1. **Field**: "Published"
+2. **Type**: True/False
+3. **Usage**: Mark when the document is ready to be publicly visible
 
 ![trueFalseForm](/archihub.github.io/imagenes/campo-edit-verdadero-falso.png)

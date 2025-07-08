@@ -1,59 +1,59 @@
 ---
-title: 'Campo Ubicación'
+title: 'Location Field'
 description: ''
 ---
 
-El campo Ubicación permite georreferenciar recursos mediante la asociación con lugares físicos o divisiones administrativas, soportando múltiples ubicaciones con diferentes niveles de precisión.
+The Location field allows georeferencing resources by associating them with physical places or administrative divisions, supporting multiple locations with different levels of precision.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Ubicación"`, `"Lugar de origen"`.
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"Location"`, `"Place of origin"`.
 
-**Tipo de campo**: Ubicación  
-- **Descripción**: Permite asociar el recurso a uno o varios lugares físicos o divisiones administrativas.  
-- **Ejemplo**: Campo para registrar la ubicación de un evento, documento, objeto, etc.
+**Field type**: Location  
+- **Description**: Allows associating the resource with one or more physical places or administrative divisions.  
+- **Example**: Field to record the location of an event, document, object, etc.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.ubicacion`.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.location`.
 
-**Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione o busque la ubicación correspondiente."*
+**Instructions**:  
+- **Description**: Guide for the user on how to use the field.  
+- **Example**: *"Select or search for the corresponding location."*
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `No` (puede dejarse vacío).
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `No` (can be left empty).
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de recurso = Evento`."*
+**Condition**:  
+- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
+- **Example**: *"Visible only if `Resource type = Event`."*
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
 
-![ubicacion](/archihub.github.io/imagenes/ubicacion.png)
+![location](/archihub.github.io/imagenes/ubicacion.png)
 
-### Ejemplo práctico
-**Escenario**: Documentar las ubicaciones relevantes para un proyecto de investigación:
+### Practical example
+**Scenario**: Document the relevant locations for a research project:
 
-1. **Ubicación principal**:
-   - Nombre: Universidad del Valle
-   - Ciudad: Cali
-   - Departamento: Valle del Cauca
-   - País: Colombia
+1. **Main location**:
+   - Name: Universidad del Valle
+   - City: Cali
+   - Department: Valle del Cauca
+   - Country: Colombia
 
-2. **Área de estudio**:
-   - Nombre: Parque Nacional Natural Farallones
-   - Coordenadas: 3.3547° N, 76.7890° W
+2. **Study area**:
+   - Name: Farallones National Natural Park
+   - Coordinates: 3.3547° N, 76.7890° W
 
-### Visualización
-Las ubicaciones se muestran con su información completa y en un mapa interactivo cuando se dispone de coordenadas.
+### Visualization
+Locations are displayed with their complete information and on an interactive map when coordinates are available.
 
-![Interfaz del campo Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+![Location field interface](/archihub.github.io/imagenes/ubicacion.png)
 
-![Agregar ubicación](/archihub.github.io/imagenes/agregar_ubicacion.png)
+![Add location](/archihub.github.io/imagenes/agregar_ubicacion.png)
 
-![Ubicación](/archihub.github.io/imagenes/ejemplo-ubicaciones.png) 
+![Location](/archihub.github.io/imagenes/ejemplo-ubicaciones.png) 

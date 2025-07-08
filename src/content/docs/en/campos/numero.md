@@ -1,67 +1,67 @@
 ---
-title: 'El campo Número'
+title: 'The Number Field'
 description: ''
 ---
 
-El campo Número está diseñado específicamente para capturar valores numéricos con validación automática.
+The Number field is specifically designed to capture numeric values with automatic validation.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Año de publicación"`, `"Cantidad de páginas"`.
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"Year of publication"`, `"Number of pages"`.
 
-**Tipo de campo**: Numérico  
-- **Descripción**: Permite ingresar valores numéricos, ya sean enteros o decimales.  
-- **Ejemplo**: Campo para el año, cantidad, precio, etc.
+**Field type**: Numeric  
+- **Description**: Allows entering numeric values, either integers or decimals.  
+- **Example**: Field for year, quantity, price, etc.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.anio_publicacion`.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.publication_year`.
 
-**Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Ingrese el año en formato numérico (ejemplo: 2023)."*
+**Instructions**:  
+- **Description**: Guide for the user on how to use the field.  
+- **Example**: *"Enter the year in numeric format (example: 2023)."*
 
-**Valor mínimo/máximo**:  
-- **Descripción**: Define los límites inferior y superior permitidos para el valor.  
-- **Ejemplo**: `1900` (mínimo), `2025` (máximo).
+**Minimum/maximum value**:  
+- **Description**: Defines the lower and upper limits allowed for the value.  
+- **Example**: `1900` (minimum), `2025` (maximum).
 
-**Incrementos permitidos**:  
-- **Descripción**: Define el paso o incremento entre valores válidos.  
-- **Ejemplo**: `1` para enteros, `0.01` para decimales.
+**Allowed increments**:  
+- **Description**: Defines the step or increment between valid values.  
+- **Example**: `1` for integers, `0.01` for decimals.
 
-**Formato de visualización**:  
-- **Descripción**: Permite definir cómo se muestra el número (separadores, decimales, etc.).  
-- **Ejemplo**: *"Mostrar con separador de miles."*
+**Display format**:  
+- **Description**: Allows defining how the number is displayed (separators, decimals, etc.).  
+- **Example**: *"Show with thousands separator."*
 
-**Añadir al final**:  
-- **Descripción**: Texto que se mostrará al final del campo (opcional).  
-- **Ejemplo**: *"Años", "kg", "USD"*
+**Add at the end**:  
+- **Description**: Text to be shown at the end of the field (optional).  
+- **Example**: *"Years", "kg", "USD"*
 
-**Añadir al inicio**:  
-- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
-- **Ejemplo**: *"$", "N°"*
+**Add at the beginning**:  
+- **Description**: Text to be shown at the beginning of the field (optional).  
+- **Example**: *"$", "No."*
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe completarse el campo).
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `Yes` (the field must be completed).
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+**Condition**:  
+- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
+- **Example**: *"Visible only if `Document type = Report`."*
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
 
 ![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para el año de publicación:
+### Practical example
+**Scenario**: Configure a field for the year of publication:
 
-1. **Etiqueta**: "z"
-2. **Tipo**: Número
-3. **Rango**: 1900-2025
-4. **Formato**: Número entero
+1. **Label**: "Year of publication"
+2. **Type**: Number
+3. **Range**: 1900-2025
+4. **Format**: Integer number
 
 ![campoNumericoForm](/archihub.github.io/imagenes/campo-edit-numero.png) 

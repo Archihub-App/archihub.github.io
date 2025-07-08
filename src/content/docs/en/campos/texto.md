@@ -1,63 +1,63 @@
 ---
-title: 'El campo Texto'
+title: 'The Text Field'
 description: ''
 ---
 
-El campo de texto permite el ingreso de texto en una sola línea, siendo uno de los tipos de campo más versátiles en el sistema.
+The text field allows the entry of text in a single line, being one of the most versatile field types in the system.
 
-### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Título"`, `"Nombre del autor"`.
+### Field Structure
+**Name**: Field name  
+- **Description**: Unique and descriptive identifier for the field.  
+- **Example**: `"Title"`, `"Author's name"`.
 
-**Tipo de campo**: Texto de una línea  
-- **Descripción**: Permite ingresar texto en una sola línea.  
-- **Ejemplo**: Campo para el título de un documento.
+**Field type**: Single-line text  
+- **Description**: Allows entering text in a single line.  
+- **Example**: Field for the title of a document.
 
-**Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.titulo`.
+**Destination**:  
+- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Example**: `metadata.title`.
 
-**Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Ingrese el título completo del documento."*
+**Instructions**:  
+- **Description**: Guide for the user on how to use the field.  
+- **Example**: *"Enter the full title of the document."*
 
-**Longitud máxima**:  
-- **Descripción**: Número máximo de caracteres permitidos.  
-- **Ejemplo**: `255 caracteres`.
+**Maximum length**:  
+- **Description**: Maximum number of allowed characters.  
+- **Example**: `255 characters`.
 
-**Validaciones**:  
-- **Descripción**: Reglas opcionales para el formato del texto (email, URL, etc.).  
-- **Ejemplo**: *"Debe ser una dirección de correo válida."*
+**Validations**:  
+- **Description**: Optional rules for text format (email, URL, etc.).  
+- **Example**: *"Must be a valid email address."*
 
-**Añadir al final**:  
-- **Descripción**: Texto que se mostrará al final del campo (opcional).  
-- **Ejemplo**: *"Ejemplo: Informe final 2023"*
+**Add at the end**:  
+- **Description**: Text to be shown at the end of the field (optional).  
+- **Example**: *"Example: Final report 2023"*
 
-**Añadir al inicio**:  
-- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
-- **Ejemplo**: *"Título: "*
+**Add at the beginning**:  
+- **Description**: Text to be shown at the beginning of the field (optional).  
+- **Example**: *"Title: "*
 
-**Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe completarse el campo).
+**Required**:  
+- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
+- **Example**: `Yes` (the field must be completed).
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+**Condition**:  
+- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
+- **Example**: *"Visible only if `Document type = Report`."*
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Access levels**:  
+- **Description**: Permissions required to interact with the field.  
+- **Example**: `Administrator, Editor` (only these roles can modify it).
 
-![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
+![textField](/archihub.github.io/imagenes/campoTexto.png)
 
-### Ejemplo práctico
-**Escenario**: Crear un campo para el título de un documento:
+### Practical example
+**Scenario**: Create a field for the title of a document:
 
-1. **Etiqueta**: "Título del documento"
-2. **Tipo**: Texto
-3. **Requerido**: Sí
-4. **Longitud máxima**: 255 caracteres
+1. **Label**: "Document title"
+2. **Type**: Text
+3. **Required**: Yes
+4. **Maximum length**: 255 characters
 
-![campoTextoForm](/archihub.github.io/imagenes/campo-edit-texto.png) 
+![textFieldForm](/archihub.github.io/imagenes/campo-edit-texto.png) 
