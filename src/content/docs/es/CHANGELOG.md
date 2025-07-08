@@ -12,6 +12,9 @@ description: ''
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Columna con la fecha de la última actualización para los recursos
 - Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
+- Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+- Se muestran los metadatos del primer recurso asociado en la vista de archivos
+- Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
 
 ### Fixed
 - Nueva implementación del campo relación

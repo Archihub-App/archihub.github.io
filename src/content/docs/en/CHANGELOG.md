@@ -12,6 +12,9 @@ description: ''
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added a column showing the last update date for resources
 - Added a gallery view to the query interfaces for browsing image content using filters
+- Added OpenCV.js support in the document and image viewer
+- Displayed metadata of the first associated resource in the file view
+- Added filter chips to the resource view to show which filters are active
 
 ### Fixed
 - New implementation of the relation field
