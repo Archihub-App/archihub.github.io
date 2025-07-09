@@ -16,6 +16,7 @@ description: ''
 - Displayed metadata of the first associated resource in the file view
 - Added filter chips to the resource view to show which filters are active
 - All `select` type fields now include a search option to quickly select the desired item
+- Added the ability to configure new fields using `canvas` within the tool's plugins
 
 ### Fixed
 - New implementation of the relation field

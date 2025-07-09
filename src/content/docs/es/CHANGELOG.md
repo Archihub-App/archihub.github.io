@@ -16,6 +16,7 @@ description: ''
 - Se muestran los metadatos del primer recurso asociado en la vista de archivos
 - Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
 - Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
+- Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
 
 ### Fixed
 - Nueva implementación del campo relación
