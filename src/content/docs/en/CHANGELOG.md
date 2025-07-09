@@ -17,6 +17,7 @@ description: ''
 - Added filter chips to the resource view to show which filters are active
 - All `select` type fields now include a search option to quickly select the desired item
 - Added the ability to configure new fields using `canvas` within the tool's plugins
+- File processing now extracts metadata from `TIF` files and displays it in the document query view. A system has been implemented to support additional formats and their metadata, with new formats to be added progressively
 
 ### Fixed
 - New implementation of the relation field

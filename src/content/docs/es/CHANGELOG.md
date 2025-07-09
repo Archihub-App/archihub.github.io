@@ -17,6 +17,7 @@ description: ''
 - Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
 - Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos.
 
 ### Fixed
 - Nueva implementación del campo relación
