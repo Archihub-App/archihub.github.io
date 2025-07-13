@@ -17,12 +17,13 @@ description: ''
 - Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
 - Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
-- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos.
+- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos
 
 ### Fixed
 - Nueva implementación del campo relación
 - Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
 - Se solucionan errores de visualizacion en el mapa al hacer zoom con los marcadores bien ubicados en las coordenadas asignadas
+- Se soluciona error al regenerar índice con el listado múltiple y el campo usuarios
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

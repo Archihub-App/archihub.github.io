@@ -23,6 +23,7 @@ description: ''
 - New implementation of the relation field
 - Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
 - Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
+- Fixed an error when regenerating the index involving multi-select lists and the users field
 
 ### Security
 - The access levels for image galleries are adjusted
