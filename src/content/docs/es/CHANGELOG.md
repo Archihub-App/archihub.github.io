@@ -27,6 +27,7 @@ description: ''
 - Se soluciona error en la edición de transcripción para parlante único
 - Se soluciona error de inicio del backend cuando se tiene el índice de búsqueda habilitado
 - Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
+- Se soluciona error relacionado con el orden de las opciones en el `index_management`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
