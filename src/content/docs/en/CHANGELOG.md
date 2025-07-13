@@ -23,6 +23,10 @@ description: ''
 - New implementation of the relation field
 - Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
 - Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
+- Fixed the display issue of document pages that were shown out of order
+- Fixed an issue with single-speaker transcription editing
+- Fixed backend startup error when the search index is enabled
+- Fixed the issue with document and image block views displaying files in the wrong order when uploading files
 
 ### Security
 - The access levels for image galleries are adjusted

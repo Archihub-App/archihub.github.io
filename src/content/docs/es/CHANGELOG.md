@@ -23,6 +23,10 @@ description: ''
 - Nueva implementación del campo relación
 - Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
 - Se solucionan errores de visualizacion en el mapa al hacer zoom con los marcadores bien ubicados en las coordenadas asignadas
+- Se soluciona el error de visualización de las páginas de los documentos que se mostraban en desorden
+- Se soluciona error en la edición de transcripción para parlante único
+- Se soluciona error de inicio del backend cuando se tiene el índice de búsqueda habilitado
+- Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
