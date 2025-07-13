@@ -23,7 +23,7 @@ description: ''
 - New implementation of the relation field
 - Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
 - Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
-- Fixed an error when regenerating the index involving multi-select lists and the users field
+- Fixed an error when regenerating the index involving multi-select lists, the users field and the author field
 - Fixed the display issue of document pages that were shown out of order
 - Fixed an issue with single-speaker transcription editing
 - Fixed backend startup error when the search index is enabled
