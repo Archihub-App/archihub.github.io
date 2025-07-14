@@ -11,6 +11,8 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added a column showing the last update date for resources
+- Added OpenCV.js support in the document and image viewer
+- Added the ability to configure new fields using `canvas` within the tool's plugins
 
 ### Fixed
 - New implementation of the relation field
@@ -22,11 +24,9 @@ description: ''
 
 ### Added
 - Added a gallery view to the query interfaces for browsing image content using filters
-- Added OpenCV.js support in the document and image viewer
 - Displayed metadata of the first associated resource in the file view
 - Added filter chips to the resource view to show which filters are active
 - All `select` type fields now include a search option to quickly select the desired item
-- Added the ability to configure new fields using `canvas` within the tool's plugins
 - File processing now extracts metadata from `TIF` files and displays it in the document query view. A system has been implemented to support additional formats and their metadata, with new formats to be added progressively
 - Changed the MongoDB version to 7.0.21. If you have a previous installation of ArchiHUB, you must update the database to the new version following the instructions in the [documentation](https://archihub-app.github.io/archihub.github.io/en/upg_mongo/)
 - Implemented certificate handling for login using LDAP Active Directory
@@ -41,6 +41,7 @@ description: ''
 - Fixed the issue with document and image block views displaying files in the wrong order when uploading files
 - Fixed an issue related to the order of options in `index_management`
 - Fixed an issue with the `HookHandler` to allow registering multiple tasks with the same function without duplicating arguments
+- Fixed an issue in the content editor that occurred when a user logged in for the first time
 
 ## [0.9.7] _2 July 2025_
 
