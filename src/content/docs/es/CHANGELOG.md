@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.8] _beta_
+## [0.9.9] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
@@ -11,16 +11,25 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Columna con la fecha de la última actualización para los recursos
-- Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
-- Se muestran los metadatos del primer recurso asociado en la vista de archivos
-- Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
-- Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
-- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos
 
 ### Fixed
 - Nueva implementación del campo relación
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.8] _beta_
+
+### Added
+- Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
+- Se muestran los metadatos del primer recurso asociado en la vista de archivos
+- Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
+- Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
+- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos
+
+### Fixed
 - Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
 - Se solucionan errores de visualizacion en el mapa al hacer zoom con los marcadores bien ubicados en las coordenadas asignadas
 - Se soluciona error al regenerar índice con el listado múltiple, el campo usuarios y el campo autor
@@ -29,9 +38,6 @@ description: ''
 - Se soluciona error de inicio del backend cuando se tiene el índice de búsqueda habilitado
 - Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
 - Se soluciona error relacionado con el orden de las opciones en el `index_management`
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.7] _2 July 2026_
 
