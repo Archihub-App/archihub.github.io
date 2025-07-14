@@ -40,6 +40,7 @@ description: ''
 - Fixed backend startup error when the search index is enabled
 - Fixed the issue with document and image block views displaying files in the wrong order when uploading files
 - Fixed an issue related to the order of options in `index_management`
+- Fixed an issue with the `HookHandler` to allow registering multiple tasks with the same function without duplicating arguments
 
 ## [0.9.7] _2 July 2025_
 

@@ -40,6 +40,7 @@ description: ''
 - Se soluciona error de inicio del backend cuando se tiene el índice de búsqueda habilitado
 - Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
 - Se soluciona error relacionado con el orden de las opciones en el `index_management`
+- Se soluciona error con el `HookHandler` para que registre varias tareas con la misma función sin repetir argumentos
 
 ## [0.9.7] _2 July 2025_
 
