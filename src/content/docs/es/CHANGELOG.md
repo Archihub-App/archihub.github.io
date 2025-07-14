@@ -28,6 +28,7 @@ description: ''
 - Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
 - Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
 - El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos
+- Se cambia la versión de MongoDB a 7.0.21. Si se tiene una instalación previa de ArchiHUB, se debe actualizar la base de datos a la nueva versión siguiendo las instrucciones en la [documentación](https://archihub-app.github.io/archihub.github.io/es/upg_mongo/)
 
 ### Fixed
 - Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno

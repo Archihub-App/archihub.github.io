@@ -18,6 +18,7 @@ description: ''
 - All `select` type fields now include a search option to quickly select the desired item
 - Added the ability to configure new fields using `canvas` within the tool's plugins
 - File processing now extracts metadata from `TIF` files and displays it in the document query view. A system has been implemented to support additional formats and their metadata, with new formats to be added progressively
+- Changed the MongoDB version to 7.0.21. If you have a previous installation of ArchiHUB, you must update the database to the new version following the instructions in the [documentation](https://archihub-app.github.io/archihub.github.io/en/upg_mongo/)
 
 ### Fixed
 - New implementation of the relation field
