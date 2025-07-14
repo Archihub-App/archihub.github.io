@@ -20,7 +20,7 @@ description: ''
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.9.8] _beta_
+## [0.9.8] _14 July 2025_
 
 ### Added
 - Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
@@ -40,7 +40,7 @@ description: ''
 - Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
 - Se soluciona error relacionado con el orden de las opciones en el `index_management`
 
-## [0.9.7] _2 July 2026_
+## [0.9.7] _2 July 2025_
 
 ### Added
 - Se implementa zoom en el mapa del campo ubicación
@@ -54,7 +54,7 @@ description: ''
 - Se soluciona error con `files` al guardar
 - Se soluciona `offset` al ir hacia atrás en la galería
 
-## [0.9.6] _26 June 2026_
+## [0.9.6] _26 June 2025_
 
 ### Added
 
@@ -68,7 +68,7 @@ description: ''
 - Se agrega la posibilidad de editar un asistente de IA una vez creado. Para todos los proveedores se puede editar el nombre y para Azure se pueden editar las url de conexión
 - Se optimiza el Dockerfile del backend para un despliegue más rápido del aplicativo
 
-## [0.9.5] _19 June 2026_
+## [0.9.5] _19 June 2025_
 
 ### Added
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema

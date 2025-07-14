@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.8] _beta_
+## [0.9.9] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -11,6 +11,16 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added a column showing the last update date for resources
+
+### Fixed
+- New implementation of the relation field
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.8] _14 July 2025_
+
+### Added
 - Added a gallery view to the query interfaces for browsing image content using filters
 - Added OpenCV.js support in the document and image viewer
 - Displayed metadata of the first associated resource in the file view
@@ -21,7 +31,6 @@ description: ''
 - Changed the MongoDB version to 7.0.21. If you have a previous installation of ArchiHUB, you must update the database to the new version following the instructions in the [documentation](https://archihub-app.github.io/archihub.github.io/en/upg_mongo/)
 
 ### Fixed
-- New implementation of the relation field
 - Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
 - Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
 - Fixed an error when regenerating the index involving multi-select lists, the users field and the author field
@@ -31,10 +40,7 @@ description: ''
 - Fixed the issue with document and image block views displaying files in the wrong order when uploading files
 - Fixed an issue related to the order of options in `index_management`
 
-### Security
-- The access levels for image galleries are adjusted
-
-## [0.9.7] _2 July 2026_
+## [0.9.7] _2 July 2025_
 
 ### Added
 - Implemented zoom functionality in the map of the Location field
@@ -48,7 +54,7 @@ description: ''
 - Fixed an issue with `files` when saving
 - Fixed the `offset` issue when navigating backward in the gallery
 
-## [0.9.6] _26 June 2026_
+## [0.9.6] _26 June 2025_
 
 ### Added
 
@@ -62,7 +68,7 @@ description: ''
 - Added the ability to edit an AI assistant after creation. For all providers, the name can be edited, and for Azure, the connection URLs can also be modified
 - Optimized the backend Dockerfile for faster application deployment
 
-## [0.9.5] _19 June 2026_
+## [0.9.5] _19 June 2025_
 
 ### Added
 - Added a new form field that allows selecting one of the users registered in the system
