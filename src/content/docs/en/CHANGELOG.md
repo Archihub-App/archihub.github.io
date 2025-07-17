@@ -15,11 +15,13 @@ description: ''
 - Added the ability to configure new fields using `canvas` within the tool's plugins
 - Implemented the ability to associate `parent` resources during upload using an Excel inventory
 - Added preview support for videos and audios in the content editor form
+- Added new icons for content types
 
 ### Fixed
 - New implementation of the relation field
 - Fixed an issue with the `parent` filter when exporting an inventory
 - When generating an inventory, `select` and `select-multiple` fields now display their text content instead of IDs
+- Fixed an icon display issue in the content type form
 
 ### Security
 - The access levels for image galleries are adjusted

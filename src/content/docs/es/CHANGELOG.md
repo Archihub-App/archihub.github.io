@@ -15,11 +15,13 @@ description: ''
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
 - Se implementa la posibilidad de asociar recursos `parent` al momento de la carga usando un inventario de excel
 - Se agrega la previsualización de videos y audios en el formularios del editor de contenido
+- Se agregan nuevos iconos para los tipos de contenido
 
 ### Fixed
 - Nueva implementación del campo relación
 - Se soluciona problema con el filtro `parent` al exportar un inventario
 - Al generar un inventario, los campos `select` y `select-multiple` muestran el contenido en texto y no en ID
+- Se soluciona error de visualización de los iconos en el formulario de tipo de contenido
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
