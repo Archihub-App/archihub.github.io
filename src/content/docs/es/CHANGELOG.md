@@ -19,6 +19,7 @@ description: ''
 ### Fixed
 - Nueva implementación del campo relación
 - Se soluciona problema con el filtro `parent` al exportar un inventario
+- Al generar un inventario, los campos `select` y `select-multiple` muestran el contenido en texto y no en ID
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

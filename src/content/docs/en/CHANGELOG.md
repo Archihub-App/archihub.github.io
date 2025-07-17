@@ -19,6 +19,7 @@ description: ''
 ### Fixed
 - New implementation of the relation field
 - Fixed an issue with the `parent` filter when exporting an inventory
+- When generating an inventory, `select` and `select-multiple` fields now display their text content instead of IDs
 
 ### Security
 - The access levels for image galleries are adjusted
