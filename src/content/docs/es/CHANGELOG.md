@@ -14,6 +14,7 @@ description: ''
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
 - Se implementa la posibilidad de asociar recursos `parent` al momento de la carga usando un inventario de excel
+- Se agrega la previsualización de videos y audios en el formularios del editor de contenido
 
 ### Fixed
 - Nueva implementación del campo relación

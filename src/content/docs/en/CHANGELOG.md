@@ -14,6 +14,7 @@ description: ''
 - Added OpenCV.js support in the document and image viewer
 - Added the ability to configure new fields using `canvas` within the tool's plugins
 - Implemented the ability to associate `parent` resources during upload using an Excel inventory
+- Added preview support for videos and audios in the content editor form
 
 ### Fixed
 - New implementation of the relation field
