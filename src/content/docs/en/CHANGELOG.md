@@ -13,9 +13,11 @@ description: ''
 - Added a column showing the last update date for resources
 - Added OpenCV.js support in the document and image viewer
 - Added the ability to configure new fields using `canvas` within the tool's plugins
+- Implemented the ability to associate `parent` resources during upload using an Excel inventory
 
 ### Fixed
 - New implementation of the relation field
+- Fixed an issue with the `parent` filter when exporting an inventory
 
 ### Security
 - The access levels for image galleries are adjusted

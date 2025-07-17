@@ -13,9 +13,11 @@ description: ''
 - Columna con la fecha de la última actualización para los recursos
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+- Se implementa la posibilidad de asociar recursos `parent` al momento de la carga usando un inventario de excel
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se soluciona problema con el filtro `parent` al exportar un inventario
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
