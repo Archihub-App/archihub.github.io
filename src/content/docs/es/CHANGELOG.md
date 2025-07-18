@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.9] _beta_
+## [0.9.10] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
@@ -13,18 +13,24 @@ description: ''
 - Columna con la fecha de la última actualización para los recursos
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+
+### Fixed
+- Nueva implementación del campo relación
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.9] _17 July 2025_
+
+### Added
 - Se implementa la posibilidad de asociar recursos `parent` al momento de la carga usando un inventario de excel
 - Se agrega la previsualización de videos y audios en el formularios del editor de contenido
 - Se agregan nuevos iconos para los tipos de contenido
 
 ### Fixed
-- Nueva implementación del campo relación
 - Se soluciona problema con el filtro `parent` al exportar un inventario
 - Al generar un inventario, los campos `select` y `select-multiple` muestran el contenido en texto y no en ID
 - Se soluciona error de visualización de los iconos en el formulario de tipo de contenido
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.8] _14 July 2025_
 

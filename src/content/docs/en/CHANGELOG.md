@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.9] _beta_
+## [0.9.10] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -13,18 +13,24 @@ description: ''
 - Added a column showing the last update date for resources
 - Added OpenCV.js support in the document and image viewer
 - Added the ability to configure new fields using `canvas` within the tool's plugins
+
+### Fixed
+- New implementation of the relation field
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.9] _17 July 2025_
+
+### Added
 - Implemented the ability to associate `parent` resources during upload using an Excel inventory
 - Added preview support for videos and audios in the content editor form
 - Added new icons for content types
 
 ### Fixed
-- New implementation of the relation field
 - Fixed an issue with the `parent` filter when exporting an inventory
 - When generating an inventory, `select` and `select-multiple` fields now display their text content instead of IDs
 - Fixed an icon display issue in the content type form
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [0.9.8] _14 July 2025_
 
