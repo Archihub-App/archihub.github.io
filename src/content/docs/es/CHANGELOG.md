@@ -16,6 +16,7 @@ description: ''
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se soluciona los metadatos que no salían en las consulta públicas
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

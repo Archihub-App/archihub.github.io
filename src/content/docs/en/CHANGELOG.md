@@ -16,6 +16,7 @@ description: ''
 
 ### Fixed
 - New implementation of the relation field
+- Fixed an issue where metadata was not appearing in public queries
 
 ### Security
 - The access levels for image galleries are adjusted
