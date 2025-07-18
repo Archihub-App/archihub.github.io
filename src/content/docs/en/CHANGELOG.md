@@ -13,6 +13,7 @@ description: ''
 - Added a column showing the last update date for resources
 - Added OpenCV.js support in the document and image viewer
 - Added the ability to configure new fields using `canvas` within the tool's plugins
+- Added the ability to schedule tasks within the system
 
 ### Fixed
 - New implementation of the relation field

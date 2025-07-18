@@ -13,6 +13,7 @@ description: ''
 - Columna con la fecha de la última actualización para los recursos
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+- Se agrega al sistema la posibilidad de programar tareas
 
 ### Fixed
 - Nueva implementación del campo relación
