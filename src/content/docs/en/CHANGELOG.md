@@ -17,7 +17,7 @@ description: ''
 
 ### Fixed
 - New implementation of the relation field
-- Fixed an issue where metadata was not appearing in public queries
+- Added search functionality to the public query views in the menu for users who are not logged in
 
 ### Security
 - The access levels for image galleries are adjusted
@@ -33,6 +33,7 @@ description: ''
 - Fixed an issue with the `parent` filter when exporting an inventory
 - When generating an inventory, `select` and `select-multiple` fields now display their text content instead of IDs
 - Fixed an icon display issue in the content type form
+- Fixed an issue where metadata was not appearing in public queries
 
 ## [0.9.8] _14 July 2025_
 

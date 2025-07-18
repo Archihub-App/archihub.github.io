@@ -17,6 +17,7 @@ description: ''
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se agrega la búsqueda en las vistas de consulta públicas del menu para los usuarios que no están logeados
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
