@@ -17,7 +17,6 @@ description: ''
 
 ### Fixed
 - Nueva implementación del campo relación
-- Se soluciona los metadatos que no salían en las consulta públicas
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
@@ -33,6 +32,7 @@ description: ''
 - Se soluciona problema con el filtro `parent` al exportar un inventario
 - Al generar un inventario, los campos `select` y `select-multiple` muestran el contenido en texto y no en ID
 - Se soluciona error de visualización de los iconos en el formulario de tipo de contenido
+- Se soluciona los metadatos que no salían en las consulta públicas
 
 ## [0.9.8] _14 July 2025_
 
