@@ -3,23 +3,90 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.6] _beta_
+## [0.9.10] _beta_
 
 ### Added
-
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
-- Implemented chat with the AI assistant in the image and gallery views
-- Added the ability to search from the sidebar menu from any view within the application
 - Installation assistant added to load basic data into forms and lists during setup
-- Azure has been added as one of the LLM API providers
-- Grok has been added as one of the LLM API providers
-- Improved the AI conversation interface to display the images being uploaded
+- New system plugin for auto-completing metadata using documents and LLM assistants
+- Added a column showing the last update date for resources
+- Added OpenCV.js support in the document and image viewer
+- Added the ability to configure new fields using `canvas` within the tool's plugins
+- Added the ability to schedule tasks within the system
+
+### Fixed
+- New implementation of the relation field
+- Added search functionality to the public query views in the menu for users who are not logged in
 
 ### Security
 - The access levels for image galleries are adjusted
 
-## [0.9.5] _19 June 2026_
+## [0.9.9] _17 July 2025_
+
+### Added
+- Implemented the ability to associate `parent` resources during upload using an Excel inventory
+- Added preview support for videos and audios in the content editor form
+- Added new icons for content types
+
+### Fixed
+- Fixed an issue with the `parent` filter when exporting an inventory
+- When generating an inventory, `select` and `select-multiple` fields now display their text content instead of IDs
+- Fixed an icon display issue in the content type form
+- Fixed an issue where metadata was not appearing in public queries
+
+## [0.9.8] _14 July 2025_
+
+### Added
+- Added a gallery view to the query interfaces for browsing image content using filters
+- Displayed metadata of the first associated resource in the file view
+- Added filter chips to the resource view to show which filters are active
+- All `select` type fields now include a search option to quickly select the desired item
+- File processing now extracts metadata from `TIF` files and displays it in the document query view. A system has been implemented to support additional formats and their metadata, with new formats to be added progressively
+- Changed the MongoDB version to 7.0.21. If you have a previous installation of ArchiHUB, you must update the database to the new version following the instructions in the [documentation](https://archihub-app.github.io/archihub.github.io/en/upg_mongo/)
+- Implemented certificate handling for login using LDAP Active Directory
+
+### Fixed
+- Refined the implementation of the tree and navigation in the query views when only one content type is being displayed
+- Fixed display issues on the map when zooming, ensuring markers are correctly positioned at their assigned coordinates
+- Fixed an error when regenerating the index involving multi-select lists, the users field and the author field
+- Fixed the display issue of document pages that were shown out of order
+- Fixed an issue with single-speaker transcription editing
+- Fixed backend startup error when the search index is enabled
+- Fixed the issue with document and image block views displaying files in the wrong order when uploading files
+- Fixed an issue related to the order of options in `index_management`
+- Fixed an issue with the `HookHandler` to allow registering multiple tasks with the same function without duplicating arguments
+- Fixed an issue in the content editor that occurred when a user logged in for the first time
+
+## [0.9.7] _2 July 2025_
+
+### Added
+- Implemented zoom functionality in the map of the Location field
+
+### Fixed
+- Fixed the window stacking order when clicking in the gallery view
+- Fixed an issue with recursive hooks
+- Removed the download button from the gallery view if downloads are disabled in the system
+- Added support for synchronous functions in the `HookHandler`
+- Cleared `parent` filters whenever the content type is changed
+- Fixed an issue with `files` when saving
+- Fixed the `offset` issue when navigating backward in the gallery
+
+## [0.9.6] _26 June 2025_
+
+### Added
+
+- Implemented chat with the AI assistant in the image and gallery views
+- Added the ability to search from the sidebar menu from any view within the application
+- Azure has been added as one of the LLM API providers
+- Grok has been added as one of the LLM API providers
+- Improved the AI conversation interface to display the images being uploaded
+
+### Fixed
+- Added the ability to edit an AI assistant after creation. For all providers, the name can be edited, and for Azure, the connection URLs can also be modified
+- Optimized the backend Dockerfile for faster application deployment
+
+## [0.9.5] _19 June 2025_
 
 ### Added
 - Added a new form field that allows selecting one of the users registered in the system

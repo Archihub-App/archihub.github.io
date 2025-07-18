@@ -296,6 +296,21 @@ export default defineConfig({
           ],
         },
         {
+          label: "Proceso de migración de MongoDB",
+          translations: {
+            en: "MongoDB migration process",
+          },
+          items: [
+            {
+              label: "Migración de MongoDB: 5.0.xx a 7.0.xx",
+              translations: {
+                en: "MongoDB migration: 5.0.xx to 7.0.xx",
+              },
+              link: "/upg_mongo",
+            },
+          ],
+        },
+        {
           label: "Licencia y código de conducta",
           translations: {
             en: "License and code of conduct",

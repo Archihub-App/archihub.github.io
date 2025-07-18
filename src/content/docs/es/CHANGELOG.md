@@ -3,23 +3,90 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.6] _beta_
+## [0.9.10] _beta_
 
 ### Added
-
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
-- Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
-- Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
-- Soporte de Azure como servicio para los asistentes de IA
-- Soporte de Grok como servicio para los asistentes de IA
-- Se mejora la interfaz de conversation con la IA para mostrar las imágenes que se están cargando
+- Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
+- Columna con la fecha de la última actualización para los recursos
+- Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+- Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+- Se agrega al sistema la posibilidad de programar tareas
+
+### Fixed
+- Nueva implementación del campo relación
+- Se agrega la búsqueda en las vistas de consulta públicas del menu para los usuarios que no están logeados
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 
-## [0.9.5] _19 June 2026_
+## [0.9.9] _17 July 2025_
+
+### Added
+- Se implementa la posibilidad de asociar recursos `parent` al momento de la carga usando un inventario de excel
+- Se agrega la previsualización de videos y audios en el formularios del editor de contenido
+- Se agregan nuevos iconos para los tipos de contenido
+
+### Fixed
+- Se soluciona problema con el filtro `parent` al exportar un inventario
+- Al generar un inventario, los campos `select` y `select-multiple` muestran el contenido en texto y no en ID
+- Se soluciona error de visualización de los iconos en el formulario de tipo de contenido
+- Se soluciona los metadatos que no salían en las consulta públicas
+
+## [0.9.8] _14 July 2025_
+
+### Added
+- Se agrega una vista de galeria a las vistas de consulta para navegar contenido en imágenes usando filtros
+- Se muestran los metadatos del primer recurso asociado en la vista de archivos
+- Se agregan chips de filtros a la vista de recursos para saber que filtros están activos
+- Todos los campos de tipo `select` ahora tienen la opción de búsqueda para seleccionar rapidamente el item deseado
+- El procesamiento de archivos ahora extrae los metadatos de los archivos `TIF` y los expone en la consulta del documento. Se implementa el sistema para soporte de cualquier otro formato y sus metadatos y se iran agregan nuevos formatos
+- Se cambia la versión de MongoDB a 7.0.21. Si se tiene una instalación previa de ArchiHUB, se debe actualizar la base de datos a la nueva versión siguiendo las instrucciones en la [documentación](https://archihub-app.github.io/archihub.github.io/es/upg_mongo/)
+- Manejo de certificado para el ingreso con directorio activo ldap
+
+### Fixed
+- Se pule la implementación del árbol y de la navegación de las vistas de consulta cuando el tipo de contenido a mostrar es solo uno
+- Se solucionan errores de visualizacion en el mapa al hacer zoom con los marcadores bien ubicados en las coordenadas asignadas
+- Se soluciona error al regenerar índice con el listado múltiple, el campo usuarios y el campo autor
+- Se soluciona el error de visualización de las páginas de los documentos que se mostraban en desorden
+- Se soluciona error en la edición de transcripción para parlante único
+- Se soluciona error de inicio del backend cuando se tiene el índice de búsqueda habilitado
+- Se soluciona error en la visualización en bloques de los documentos y las imágenes por carga de archivos en desorden
+- Se soluciona error relacionado con el orden de las opciones en el `index_management`
+- Se soluciona error con el `HookHandler` para que registre varias tareas con la misma función sin repetir argumentos
+- Se soluciona error en el editor de contenido cuando un usuario se logea por primera vez
+
+## [0.9.7] _2 July 2025_
+
+### Added
+- Se implementa zoom en el mapa del campo ubicación
+
+### Fixed
+- Se arregla el orden de las ventanas al hacer click en la vista galeria
+- Se soluciona problema con hooks recursivos
+- Se quita el botón de descarga en la vista galería si la descarga está deshabilitada en el sistema
+- Soporte de funciones sincronas para el `Hookhandler`
+- Se limpian los filtros `parent` cada vez que se cambia el tipo de contenido
+- Se soluciona error con `files` al guardar
+- Se soluciona `offset` al ir hacia atrás en la galería
+
+## [0.9.6] _26 June 2025_
+
+### Added
+
+- Se implementa el chat con el asistente de IA en la vista de imágenes y galerías
+- Se agrega la posibilidad de buscar desde el menu lateral desde cualquier vista del aplicativo
+- Soporte de Azure como servicio para los asistentes de IA
+- Soporte de Grok como servicio para los asistentes de IA
+- Se mejora la interfaz de conversation con la IA para mostrar las imágenes que se están cargando
+
+### Fixed
+- Se agrega la posibilidad de editar un asistente de IA una vez creado. Para todos los proveedores se puede editar el nombre y para Azure se pueden editar las url de conexión
+- Se optimiza el Dockerfile del backend para un despliegue más rápido del aplicativo
+
+## [0.9.5] _19 June 2025_
 
 ### Added
 - Se agrega un nuevo campo de los formularios en el cual es posible seleccionar uno de los usuarios registrados en el sistema
