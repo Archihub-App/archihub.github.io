@@ -14,6 +14,7 @@ description: ''
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se optimiza la carga de los polygonos en el recuadro del mapa
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

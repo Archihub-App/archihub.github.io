@@ -14,6 +14,7 @@ description: ''
 
 ### Fixed
 - New implementation of the relation field
+- Optimized the loading of polygons in the map box
 
 ### Security
 - The access levels for image galleries are adjusted
