@@ -3,24 +3,31 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.10] _beta_
+## [0.9.11] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
-- Columna con la fecha de la última actualización para los recursos
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
-- Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
-- Se agrega al sistema la posibilidad de programar tareas
 
 ### Fixed
 - Nueva implementación del campo relación
-- Se agrega la búsqueda en las vistas de consulta públicas del menu para los usuarios que no están logeados
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.10] _22 July 2025_
+
+### Added
+- Columna con la fecha de la última actualización para los recursos
+- Se agrega la posibilidad de configurar nuevos campos usando `canvas` en los plugins de la herramienta
+- Se agrega al sistema la posibilidad de programar tareas
+- Se implementa un límite de intentos de ingreso en un rango de 10 minutos
+
+### Fixed
+- Se agrega la búsqueda en las vistas de consulta públicas del menu para los usuarios que no están logeados
 
 ## [0.9.9] _17 July 2025_
 

@@ -3,24 +3,31 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.10] _beta_
+## [0.9.11] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
-- Added a column showing the last update date for resources
 - Added OpenCV.js support in the document and image viewer
-- Added the ability to configure new fields using `canvas` within the tool's plugins
-- Added the ability to schedule tasks within the system
 
 ### Fixed
 - New implementation of the relation field
-- Added search functionality to the public query views in the menu for users who are not logged in
 
 ### Security
 - The access levels for image galleries are adjusted
+
+## [0.9.10] _22 July 2025_
+
+### Added
+- Added a column showing the last update date for resources
+- Added the ability to configure new fields using `canvas` within the tool's plugins
+- Added the ability to schedule tasks within the system
+- Implemented a login attempt limit within a 10-minute window
+
+### Fixed
+- Added search functionality to the public query views in the menu for users who are not logged in
 
 ## [0.9.9] _17 July 2025_
 
