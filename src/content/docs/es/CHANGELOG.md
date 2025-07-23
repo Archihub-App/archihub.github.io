@@ -15,6 +15,7 @@ description: ''
 ### Fixed
 - Nueva implementación del campo relación
 - Se optimiza la carga de los polygonos en el recuadro del mapa
+- Se reestructura el servicio para los LLMs agrupandolos en un `IAHandler`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
@@ -29,6 +30,9 @@ description: ''
 
 ### Fixed
 - Se agrega la búsqueda en las vistas de consulta públicas del menu para los usuarios que no están logeados
+
+### Improved
+- Se mejoran las traducciones en el backend
 
 ## [0.9.9] _17 July 2025_
 

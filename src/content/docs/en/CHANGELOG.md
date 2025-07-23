@@ -15,6 +15,7 @@ description: ''
 ### Fixed
 - New implementation of the relation field
 - Optimized the loading of polygons in the map box
+- Restructured the LLM service by grouping them under an `IAHandler`
 
 ### Security
 - The access levels for image galleries are adjusted
@@ -29,6 +30,9 @@ description: ''
 
 ### Fixed
 - Added search functionality to the public query views in the menu for users who are not logged in
+
+### Improved
+- Improved translations in the backend
 
 ## [0.9.9] _17 July 2025_
 
