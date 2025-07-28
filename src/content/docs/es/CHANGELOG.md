@@ -11,11 +11,12 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+- Se agrega un nuevo rol `super-editor`. Este rol hereda todos los permisos de `editor` y ahora `editor` puede ver los recursos a los que tenga acceso pero solo puede editar sus propios recursos.
 
 ### Fixed
 - Nueva implementación del campo relación
 - Se optimiza la carga de los polygonos en el recuadro del mapa
-- Se reestructura el servicio para los LLMs agrupandolos en un `IAHandler`
+- Se reestructura el servicio para los LLMs agrupandolos en un `AIHandler`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

@@ -11,11 +11,12 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added OpenCV.js support in the document and image viewer
+- Added a new role `super-editor`. This role inherits all permissions from `editor`, while the `editor` role can now view all accessible resources but only edit the ones they own
 
 ### Fixed
 - New implementation of the relation field
 - Optimized the loading of polygons in the map box
-- Restructured the LLM service by grouping them under an `IAHandler`
+- Restructured the LLM service by grouping them under an `AIHandler`
 
 ### Security
 - The access levels for image galleries are adjusted
