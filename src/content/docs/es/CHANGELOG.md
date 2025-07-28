@@ -17,6 +17,7 @@ description: ''
 - Nueva implementación del campo relación
 - Se optimiza la carga de los polygonos en el recuadro del mapa
 - Se reestructura el servicio para los LLMs agrupandolos en un `AIHandler`
+- Se arregla la interfaz para la edición de los bloques y transcripciones del procesamiento de segmentación de documentos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
