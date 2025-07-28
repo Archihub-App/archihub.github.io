@@ -20,6 +20,7 @@ description: ''
 
 ### Security
 - The access levels for image galleries are adjusted
+- The system now removes all executables and JavaScript code from PDF files and overwrites the original with the sanitized version
 
 ## [0.9.10] _22 July 2025_
 

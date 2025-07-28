@@ -20,6 +20,7 @@ description: ''
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+- El sistema se encarga de eliminar todos los ejecutables y códigos JS en los archivos PDF y sobreescribe el original con la nueva versión
 
 ## [0.9.10] _22 July 2025_
 
