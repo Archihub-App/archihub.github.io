@@ -12,6 +12,7 @@ description: ''
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added OpenCV.js support in the document and image viewer
 - Added a new role `super-editor`. This role inherits all permissions from `editor`, while the `editor` role can now view all accessible resources but only edit the ones they own
+- Implemented the resource tree in the `Control Panel` view of the plugins for integration with services like SharePoint and Google Drive
 
 ### Fixed
 - New implementation of the relation field

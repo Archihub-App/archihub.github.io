@@ -12,6 +12,7 @@ description: ''
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega un nuevo rol `super-editor`. Este rol hereda todos los permisos de `editor` y ahora `editor` puede ver los recursos a los que tenga acceso pero solo puede editar sus propios recursos.
+- Se implementa el arbol de recursos en la vista `Control panel` de los plugins para integración con servicios como SharePoint o Google Drive
 
 ### Fixed
 - Nueva implementación del campo relación
