@@ -25,8 +25,8 @@ description: ''
 - Se implementa el arbol de recursos en la vista `Control panel` de los plugins para integración con servicios como SharePoint o Google Drive
 
 ### Fixed
-- Se optimiza la carga de los polygonos en el recuadro del mapa
-- Se reestructura el servicio para los LLMs agrupandolos en un `AIHandler`
+- Se optimiza la carga de los polígonos en el recuadro del mapa
+- Se reestructura el servicio para los LLMs agrupándolos en un `AIHandler`
 - Se arregla la interfaz para la edición de los bloques y transcripciones del procesamiento de segmentación de documentos
 - Se soluciona `Ctrl Z` y `Ctrl Y` en el editor del texto líquido
 
