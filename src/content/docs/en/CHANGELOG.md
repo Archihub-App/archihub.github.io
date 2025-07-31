@@ -19,6 +19,7 @@ description: ''
 - Optimized the loading of polygons in the map box
 - Restructured the LLM service by grouping them under an `AIHandler`
 - Fixed the interface for editing blocks and transcriptions from the document segmentation processing
+- Fixed `Ctrl + Z` and `Ctrl + Y` functionality in the Liquid Text editor
 
 ### Security
 - The access levels for image galleries are adjusted

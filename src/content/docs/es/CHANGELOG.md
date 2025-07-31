@@ -19,6 +19,7 @@ description: ''
 - Se optimiza la carga de los polygonos en el recuadro del mapa
 - Se reestructura el servicio para los LLMs agrupandolos en un `AIHandler`
 - Se arregla la interfaz para la edición de los bloques y transcripciones del procesamiento de segmentación de documentos
+- Se soluciona `Ctrl Z` y `Ctrl Y` en el editor del texto líquido
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
