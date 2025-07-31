@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.11] _beta_
+## [0.9.12] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
@@ -11,18 +11,26 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+
+### Fixed
+- Nueva implementación del campo relación
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.11] _31 July 2025_
+
+### Added
 - Se agrega un nuevo rol `super-editor`. Este rol hereda todos los permisos de `editor` y ahora `editor` puede ver los recursos a los que tenga acceso pero solo puede editar sus propios recursos.
 - Se implementa el arbol de recursos en la vista `Control panel` de los plugins para integración con servicios como SharePoint o Google Drive
 
 ### Fixed
-- Nueva implementación del campo relación
 - Se optimiza la carga de los polygonos en el recuadro del mapa
 - Se reestructura el servicio para los LLMs agrupandolos en un `AIHandler`
 - Se arregla la interfaz para la edición de los bloques y transcripciones del procesamiento de segmentación de documentos
 - Se soluciona `Ctrl Z` y `Ctrl Y` en el editor del texto líquido
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 - El sistema se encarga de eliminar todos los ejecutables y códigos JS en los archivos PDF y sobreescribe el original con la nueva versión
 
 ## [0.9.10] _22 July 2025_

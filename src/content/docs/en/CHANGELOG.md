@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.11] _beta_
+## [0.9.12] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -11,18 +11,26 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added OpenCV.js support in the document and image viewer
+
+### Fixed
+- New implementation of the relation field
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.11] _31 July 2025_
+
+### Added
 - Added a new role `super-editor`. This role inherits all permissions from `editor`, while the `editor` role can now view all accessible resources but only edit the ones they own
 - Implemented the resource tree in the `Control Panel` view of the plugins for integration with services like SharePoint and Google Drive
 
 ### Fixed
-- New implementation of the relation field
 - Optimized the loading of polygons in the map box
 - Restructured the LLM service by grouping them under an `AIHandler`
 - Fixed the interface for editing blocks and transcriptions from the document segmentation processing
 - Fixed `Ctrl + Z` and `Ctrl + Y` functionality in the Liquid Text editor
 
 ### Security
-- The access levels for image galleries are adjusted
 - The system now removes all executables and JavaScript code from PDF files and overwrites the original with the sanitized version
 
 ## [0.9.10] _22 July 2025_
