@@ -11,6 +11,7 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added OpenCV.js support in the document and image viewer
+- Added the option to restore adjustments made to the image, whether on the original image or the one processed with OpenCV.js
 
 ### Fixed
 - New implementation of the relation field

@@ -11,6 +11,7 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+- Se agrega la opción de restaurar los ajustes que se han hecho a la imagen, bien sea sobre la imagen original como sobre la imagen procesada con OpenCV.js
 
 ### Fixed
 - Nueva implementación del campo relación
