@@ -12,6 +12,7 @@ description: ''
 - New system plugin for auto-completing metadata using documents and LLM assistants
 - Added OpenCV.js support in the document and image viewer
 - Added the option to restore adjustments made to the image, whether on the original image or the one processed with OpenCV.js
+- Added `hot-reloading` to enable or disable plugins without needing to restart the application
 
 ### Fixed
 - New implementation of the relation field
