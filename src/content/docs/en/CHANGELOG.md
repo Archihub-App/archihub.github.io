@@ -16,6 +16,7 @@ description: ''
 
 ### Fixed
 - New implementation of the relation field
+- Fixed 401 error when loading the sidebar menu for users who are not registered
 
 ### Security
 - The access levels for image galleries are adjusted
