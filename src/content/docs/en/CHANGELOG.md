@@ -13,6 +13,7 @@ description: ''
 - Added OpenCV.js support in the document and image viewer
 - Added the option to restore adjustments made to the image, whether on the original image or the one processed with OpenCV.js
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Added support for running local LLMs with Ollama
 
 ### Fixed
 - New implementation of the relation field

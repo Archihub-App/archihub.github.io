@@ -13,6 +13,7 @@ description: ''
 - Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
 - Se agrega la opción de restaurar los ajustes que se han hecho a la imagen, bien sea sobre la imagen original como sobre la imagen procesada con OpenCV.js
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se agrega soporte para ejecución de LLMs locales con Ollama
 
 ### Fixed
 - Nueva implementación del campo relación
