@@ -3,23 +3,31 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.12] _beta_
+## [0.9.13] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
-- Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
-- Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
-- Se agrega la opción de restaurar los ajustes que se han hecho a la imagen, bien sea sobre la imagen original como sobre la imagen procesada con OpenCV.js
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Se agrega soporte para ejecución de LLMs locales con Ollama
 
 ### Fixed
 - Nueva implementación del campo relación
+- Se soluciona temas de navegación en la UI en Firefox
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.12] _11 August 2025_
+
+### Added
+- Nuevo plugin del sistema para autocompletar metadatos usando los documentos y los asistentes LLMs
+- Se agrega soporte de OpenCV.js en el visor de documentos e imagenes
+- Se agrega la opción de restaurar los ajustes que se han hecho a la imagen, bien sea sobre la imagen original como sobre la imagen procesada con OpenCV.js
+- Se agrega soporte para ejecución de LLMs locales con Ollama
+
+### Fixed
+- Se soluciona petición 401 al momento de carga el menú lateral cuando el usuario no está registrado
 
 ## [0.9.11] _31 July 2025_
 

@@ -3,24 +3,31 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.12] _beta_
+## [0.9.13] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
-- New system plugin for auto-completing metadata using documents and LLM assistants
-- Added OpenCV.js support in the document and image viewer
-- Added the option to restore adjustments made to the image, whether on the original image or the one processed with OpenCV.js
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added support for running local LLMs with Ollama
 
 ### Fixed
 - New implementation of the relation field
-- Fixed 401 error when loading the sidebar menu for users who are not registered
+- Fixed UI navigation issues in Firefox
 
 ### Security
 - The access levels for image galleries are adjusted
+
+## [0.9.12] _11 August 2025_
+
+### Added
+- New system plugin for auto-completing metadata using documents and LLM assistants
+- Added OpenCV.js support in the document and image viewer
+- Added the option to restore adjustments made to the image, whether on the original image or the one processed with OpenCV.js
+- Added support for running local LLMs with Ollama
+
+### Fixed
+- Fixed 401 error when loading the sidebar menu for users who are not registered
 
 ## [0.9.11] _31 July 2025_
 
