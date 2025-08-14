@@ -10,10 +10,12 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Added tag support for transcription
 
 ### Fixed
 - New implementation of the relation field
 - Fixed UI navigation issues in Firefox
+- Added an error message when unmounting a video or audio
 
 ### Security
 - The access levels for image galleries are adjusted

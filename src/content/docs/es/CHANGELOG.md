@@ -10,10 +10,12 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Soporte de etiquetas para transcripción
 
 ### Fixed
 - Nueva implementación del campo relación
 - Se soluciona temas de navegación en la UI en Firefox
+- Mensaje de error cuando se hacia `unmount` de un video o audio
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
