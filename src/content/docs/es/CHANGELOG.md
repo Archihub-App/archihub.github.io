@@ -13,9 +13,11 @@ description: ''
 - Soporte de etiquetas para transcripción
 
 ### Fixed
-- Nueva implementación del campo relación
+- El campo `parent` de los recursos ahora admite arreglos
+- El árbol de recursos permite dos o más raíces simultaneas para el árbol
 - Se soluciona temas de navegación en la UI en Firefox
 - Mensaje de error cuando se hacia `unmount` de un video o audio
+- Se mejoran los tiempos y la responsividad de los campos de los formularios en las acciones de los plugins
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

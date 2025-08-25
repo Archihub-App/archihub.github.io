@@ -13,9 +13,11 @@ description: ''
 - Added tag support for transcription
 
 ### Fixed
-- New implementation of the relation field
+- The `parent` field of resources now supports arrays
+- The resource tree now allows two or more simultaneous roots
 - Fixed UI navigation issues in Firefox
 - Added an error message when unmounting a video or audio
+- Improved performance and responsiveness of form fields in plugin actions
 
 ### Security
 - The access levels for image galleries are adjusted
