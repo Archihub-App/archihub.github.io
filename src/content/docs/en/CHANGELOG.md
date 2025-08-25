@@ -11,6 +11,8 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added tag support for transcription
+- Added support for groups in transcription tags
+- Media files can now be served from a cloud provider if configured by a plugin
 
 ### Fixed
 - The `parent` field of resources now supports arrays
