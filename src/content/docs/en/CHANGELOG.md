@@ -20,6 +20,7 @@ description: ''
 - Fixed UI navigation issues in Firefox
 - Added an error message when unmounting a video or audio
 - Improved performance and responsiveness of form fields in plugin actions
+- Automated the download of the latest version of Exiftool in the Dockerfile for backend deployment
 
 ### Security
 - The access levels for image galleries are adjusted
