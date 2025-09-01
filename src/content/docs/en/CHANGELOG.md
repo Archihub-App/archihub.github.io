@@ -15,7 +15,7 @@ description: ''
 - Media files can now be served from a cloud provider if configured by a plugin
 
 ### Fixed
-- The `parent` field of resources now supports arrays
+- The `parent` field of resources now supports multiple parents simultaneously. This replaces the relation field, with resource relationships managed through the information hierarchy defined by content types.
 - The resource tree now allows two or more simultaneous roots
 - Fixed UI navigation issues in Firefox
 - Added an error message when unmounting a video or audio

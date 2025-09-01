@@ -15,7 +15,7 @@ description: ''
 - Los archivos multimedia pueden ser servidos desde un proveedor de nube si un plugin lo ha configurado asi
 
 ### Fixed
-- El campo `parent` de los recursos ahora admite arreglos
+- El campo `parent` de los recursos ya soporta varios padres al tiempo. Esto reemplaza el campo relación y las relaciones de los recursos entre si se maneja con la jerarquía de información definida por los tipos de contenido
 - El árbol de recursos permite dos o más raíces simultaneas para el árbol
 - Se soluciona temas de navegación en la UI en Firefox
 - Mensaje de error cuando se hacia `unmount` de un video o audio
