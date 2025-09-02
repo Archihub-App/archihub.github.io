@@ -13,6 +13,7 @@ description: ''
 - Soporte de etiquetas para transcripción
 - Soporte de grupos para las etiquetas de la transcripción
 - Los archivos multimedia pueden ser servidos desde un proveedor de nube si un plugin lo ha configurado asi
+- Se agrega la posibilidad de ajustar el ancho de la columna de izquierda
 
 ### Fixed
 - El campo `parent` de los recursos ya soporta varios padres al tiempo. Esto reemplaza el campo relación y las relaciones de los recursos entre si se maneja con la jerarquía de información definida por los tipos de contenido
@@ -21,6 +22,7 @@ description: ''
 - Mensaje de error cuando se hacia `unmount` de un video o audio
 - Se mejoran los tiempos y la responsividad de los campos de los formularios en las acciones de los plugins
 - Se automatiza la descarga de la última versión de Exiftool en el Dockerfile para el despliegue del back
+- En las galerías se deshabilita la navegación cuando hay solo una imagen
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

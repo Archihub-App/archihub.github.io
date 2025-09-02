@@ -13,6 +13,7 @@ description: ''
 - Added tag support for transcription
 - Added support for groups in transcription tags
 - Media files can now be served from a cloud provider if configured by a plugin
+- Added the ability to adjust the width of the left column
 
 ### Fixed
 - The `parent` field of resources now supports multiple parents simultaneously. This replaces the relation field, with resource relationships managed through the information hierarchy defined by content types.
@@ -21,6 +22,7 @@ description: ''
 - Added an error message when unmounting a video or audio
 - Improved performance and responsiveness of form fields in plugin actions
 - Automated the download of the latest version of Exiftool in the Dockerfile for backend deployment
+- Disabled navigation in galleries when there is only one image
 
 ### Security
 - The access levels for image galleries are adjusted
