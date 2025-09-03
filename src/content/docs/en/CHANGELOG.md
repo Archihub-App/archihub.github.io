@@ -24,6 +24,7 @@ description: ''
 - Automated the download of the latest version of Exiftool in the Dockerfile for backend deployment
 - Disabled navigation in galleries when there is only one image
 - Adjusted the query views menu to handle cases with no query views or with multiple ones
+- Optimized the aggregation query for the query views
 
 ### Security
 - The access levels for image galleries are adjusted
