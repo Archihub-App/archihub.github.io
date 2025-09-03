@@ -23,6 +23,7 @@ description: ''
 - Se mejoran los tiempos y la responsividad de los campos de los formularios en las acciones de los plugins
 - Se automatiza la descarga de la última versión de Exiftool en el Dockerfile para el despliegue del back
 - En las galerías se deshabilita la navegación cuando hay solo una imagen
+- Se ajusta el menu de las vistas de consulta al no haber vistas de consulta y al haber varias
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
