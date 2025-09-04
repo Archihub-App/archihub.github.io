@@ -3,13 +3,23 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.13] _beta_
+## [0.9.14] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+
+### Fixed
+- Se soluciona temas de navegación en la UI en Firefox
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.13] _4 September 2025_
+
+### Added
 - Soporte de etiquetas para transcripción
 - Soporte de grupos para las etiquetas de la transcripción
 - Los archivos multimedia pueden ser servidos desde un proveedor de nube si un plugin lo ha configurado asi
@@ -18,16 +28,12 @@ description: ''
 ### Fixed
 - El campo `parent` de los recursos ya soporta varios padres al tiempo. Esto reemplaza el campo relación y las relaciones de los recursos entre si se maneja con la jerarquía de información definida por los tipos de contenido
 - El árbol de recursos permite dos o más raíces simultaneas para el árbol
-- Se soluciona temas de navegación en la UI en Firefox
 - Mensaje de error cuando se hacia `unmount` de un video o audio
 - Se mejoran los tiempos y la responsividad de los campos de los formularios en las acciones de los plugins
 - Se automatiza la descarga de la última versión de Exiftool en el Dockerfile para el despliegue del back
 - En las galerías se deshabilita la navegación cuando hay solo una imagen
 - Se ajusta el menu de las vistas de consulta al no haber vistas de consulta y al haber varias
 - Se optimiza la consulta de agregación para las vistas de consulta
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.12] _11 August 2025_
 
