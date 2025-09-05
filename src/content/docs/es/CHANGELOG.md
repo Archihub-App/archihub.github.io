@@ -11,6 +11,7 @@ description: ''
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega la visualización de archivos públicos sin necesidad de estar logeado
+- Se agrega la opción de implementar `actions` que sean publicas para todos los usuarios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

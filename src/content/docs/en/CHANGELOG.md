@@ -11,6 +11,7 @@ description: ''
 - Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added support for viewing public files without requiring login
+- Added the option to implement `actions` that are public for all users
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
