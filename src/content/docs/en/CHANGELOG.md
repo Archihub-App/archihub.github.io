@@ -12,6 +12,7 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added support for viewing public files without requiring login
 - Added the option to implement `actions` that are public for all users
+- Added parent tags to resource metadata
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
