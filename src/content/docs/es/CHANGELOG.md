@@ -13,6 +13,7 @@ description: ''
 - Se agrega la visualización de archivos públicos sin necesidad de estar logeado
 - Se agrega la opción de implementar `actions` que sean publicas para todos los usuarios
 - Se agregan las etiquetas de los padres a los metadatos de los recursos
+- Se agrega la vista pública para los documentos de tipo `video` y `audio` validando primero los niveles de acceso de documento y recursos que lo contienen
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
