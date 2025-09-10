@@ -15,6 +15,7 @@ description: ''
 - Added parent tags to resource metadata
 - Added a public view for `video` and `audio` documents, first validating the access levels of the document and the resources that contain them
 - Added a button to jump to the last page in the cataloging form
+- Added levels for resource parents
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

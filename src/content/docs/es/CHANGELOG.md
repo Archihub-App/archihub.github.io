@@ -15,6 +15,7 @@ description: ''
 - Se agregan las etiquetas de los padres a los metadatos de los recursos
 - Se agrega la vista pública para los documentos de tipo `video` y `audio` validando primero los niveles de acceso de documento y recursos que lo contienen
 - Se agrega un botón para ir a la última página en el formulario de catalogación
+- Se agregan niveles para los padres de los recursos
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
