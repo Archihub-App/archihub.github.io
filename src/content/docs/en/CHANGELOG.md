@@ -14,6 +14,7 @@ description: ''
 - Added the option to implement `actions` that are public for all users
 - Added parent tags to resource metadata
 - Added a public view for `video` and `audio` documents, first validating the access levels of the document and the resources that contain them
+- Added a button to jump to the last page in the cataloging form
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
