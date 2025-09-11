@@ -3,13 +3,23 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.14] _beta_
+## [0.9.15] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+
+### Fixed
+- Fixed UI navigation issues in Firefox
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [0.9.14] _11 September 2025_
+
+### Added
 - Added support for viewing public files without requiring login
 - Added the option to implement `actions` that are public for all users
 - Added parent tags to resource metadata
@@ -19,11 +29,7 @@ description: ''
 - Added a condition in list fields for forms
 
 ### Fixed
-- Fixed UI navigation issues in Firefox
 - Fixed an issue with list fields when editing a form. By default, even if a list had been selected, the system displayed the first item as selected. This did not affect the database, which correctly stored the selected list, but the frontend did not display it properly
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [0.9.13] _4 September 2025_
 

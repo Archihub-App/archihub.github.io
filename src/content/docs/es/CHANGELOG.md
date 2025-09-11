@@ -3,13 +3,23 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.14] _beta_
+## [0.9.15] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+
+### Fixed
+- Se soluciona temas de navegación en la UI en Firefox
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [0.9.14] _11 September 2025_
+
+### Added
 - Se agrega la visualización de archivos públicos sin necesidad de estar logeado
 - Se agrega la opción de implementar `actions` que sean publicas para todos los usuarios
 - Se agregan las etiquetas de los padres a los metadatos de los recursos
@@ -19,11 +29,7 @@ description: ''
 - Se agrega una condición en los campos de listados para los formularios
 
 ### Fixed
-- Se soluciona temas de navegación en la UI en Firefox
 - Se soluciona problema con los campos listados cuando se editaba un formulario. Por defecto, asi se hubiera seleccionado un listado, el sistema mostraba como seleccionado el primero. Esto no afectaba la base de datos que seguía guardando el listado seleccionado pero el front no lo mostraba correctamente.
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [0.9.13] _4 September 2025_
 
