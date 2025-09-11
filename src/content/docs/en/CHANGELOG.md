@@ -20,6 +20,7 @@ description: ''
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
+- Fixed an issue with list fields when editing a form. By default, even if a list had been selected, the system displayed the first item as selected. This did not affect the database, which correctly stored the selected list, but the frontend did not display it properly
 
 ### Security
 - The access levels for image galleries are adjusted

@@ -20,6 +20,7 @@ description: ''
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
+- Se soluciona problema con los campos listados cuando se editaba un formulario. Por defecto, asi se hubiera seleccionado un listado, el sistema mostraba como seleccionado el primero. Esto no afectaba la base de datos que seguía guardando el listado seleccionado pero el front no lo mostraba correctamente.
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
