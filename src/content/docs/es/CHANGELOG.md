@@ -16,6 +16,7 @@ description: ''
 - Se agrega la vista pública para los documentos de tipo `video` y `audio` validando primero los niveles de acceso de documento y recursos que lo contienen
 - Se agrega un botón para ir a la última página en el formulario de catalogación
 - Se agregan niveles para los padres de los recursos
+- Se agrega una condición en los campos de listados para los formularios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
