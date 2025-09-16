@@ -15,6 +15,7 @@ description: ''
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
+- Fixed indexing error when indexing a resource with a multi-select field
 
 ### Security
 - The access levels for image galleries are adjusted

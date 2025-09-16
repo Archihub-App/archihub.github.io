@@ -15,6 +15,7 @@ description: ''
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
+- Se soluciona error de indexación al indexar un recurso con una selección múltiple
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
