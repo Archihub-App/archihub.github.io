@@ -10,6 +10,8 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se permite asignar un `record` a un `resource` usando el identificador
+- Se visualiza el historial de versiones de un `record`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

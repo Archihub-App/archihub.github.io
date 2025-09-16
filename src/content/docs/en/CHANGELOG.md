@@ -10,6 +10,8 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Allowed assigning a `record` to a `resource` using its identifier
+- Added visualization of the version history of a `record`
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
