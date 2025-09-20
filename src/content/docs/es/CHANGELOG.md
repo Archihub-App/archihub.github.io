@@ -16,6 +16,7 @@ description: ''
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
 - Se soluciona error de indexación al indexar un recurso con una selección múltiple
+- Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

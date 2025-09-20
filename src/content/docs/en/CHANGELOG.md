@@ -16,6 +16,7 @@ description: ''
 ### Fixed
 - Fixed UI navigation issues in Firefox
 - Fixed indexing error when indexing a resource with a multi-select field
+- When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons.
 
 ### Security
 - The access levels for image galleries are adjusted
