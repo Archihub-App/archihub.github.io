@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.15] _beta_
+## [1.0.0] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.

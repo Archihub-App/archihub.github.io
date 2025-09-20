@@ -3,14 +3,13 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [0.9.15] _beta_
+## [1.0.0] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Se permite asignar un `record` a un `resource` usando el identificador
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
