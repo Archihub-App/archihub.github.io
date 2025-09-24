@@ -3,23 +3,29 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.0] _beta_
+## [1.0.1] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
-- Installation assistant added to load basic data into forms and lists during setup
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
-- Fixed indexing error when indexing a resource with a multi-select field
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
-- When downloading a resource file, if there is only one document, the system no longer generates a `.zip` file and instead directly serves the associated document
-- Fixed an error in the standards creation form where, when selecting a condition dependent on a list, the application did not set a default `equal` value, causing the condition to fail unless one was manually selected
 
 ### Security
 - The access levels for image galleries are adjusted
+
+## [1.0.0] _24 September 2025_
+
+### Added
+- Installation assistant added to load basic data into forms and lists during setup
+
+### Fixed
+- Fixed indexing error when indexing a resource with a multi-select field
+- When downloading a resource file, if there is only one document, the system no longer generates a `.zip` file and instead directly serves the associated document
+- Fixed an error in the standards creation form where, when selecting a condition dependent on a list, the application did not set a default `equal` value, causing the condition to fail unless one was manually selected
 
 ## [0.9.14] _11 September 2025_
 

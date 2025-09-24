@@ -3,23 +3,29 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.0] _beta_
+## [1.0.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
-- Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
-- Se soluciona error de indexación al indexar un recurso con una selección múltiple
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
-- Al momento de descargar un archivo de un recurso si solo hay un documento el sistema no genera un archivo .zip y solo envía el documento asociado
-- Se soluciona un error en el formulario de creación de estándares en el que al seleccionar una condición que depende de un listado, por defecto el aplicativo no define un valor `equal` y la condición no sirve si no se escoje uno manualmente
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [1.0.0] _24 September 2025_
+
+### Added
+- Asistente de instalación para cargar datos básicos en los formularios y listas al momento de la instalación
+
+### Fixed
+- Se soluciona error de indexación al indexar un recurso con una selección múltiple
+- Al momento de descargar un archivo de un recurso si solo hay un documento el sistema no genera un archivo .zip y solo envía el documento asociado
+- Se soluciona un error en el formulario de creación de estándares en el que al seleccionar una condición que depende de un listado, por defecto el aplicativo no define un valor `equal` y la condición no sirve si no se escoje uno manualmente
 
 ## [0.9.14] _11 September 2025_
 
