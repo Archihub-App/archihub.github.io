@@ -14,7 +14,9 @@ description: ''
 ### Fixed
 - Fixed UI navigation issues in Firefox
 - Fixed indexing error when indexing a resource with a multi-select field
-- When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons.
+- When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
+- When downloading a resource file, if there is only one document, the system no longer generates a `.zip` file and instead directly serves the associated document
+- Fixed an error in the standards creation form where, when selecting a condition dependent on a list, the application did not set a default `equal` value, causing the condition to fail unless one was manually selected
 
 ### Security
 - The access levels for image galleries are adjusted
