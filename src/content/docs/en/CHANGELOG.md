@@ -9,6 +9,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- When editing a form, a left-side column now displays a compact view of the form fields, with the option to drag and reorder them
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

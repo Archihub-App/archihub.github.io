@@ -9,6 +9,7 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Al editar un formulario ahora hay una columna a la iquierda que da cuenta en modo compacto de los campos del formulario con la posibilidad de arrastrar para reordenar
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
