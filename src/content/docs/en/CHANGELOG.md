@@ -14,6 +14,7 @@ description: ''
 ### Fixed
 - Fixed UI navigation issues in Firefox
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
+- Fixed error in audio conversion to OGG format
 
 ### Security
 - The access levels for image galleries are adjusted
