@@ -16,6 +16,8 @@ description: ''
 - Fixed UI navigation issues in Firefox
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
 - Fixed error in audio conversion to OGG format
+- Fixed an error occurring during bulk updates using Excel files
+- Fixed an issue when exporting an inventory from the bulk processing plugin for inventory generation
 
 ### Security
 - The access levels for image galleries are adjusted

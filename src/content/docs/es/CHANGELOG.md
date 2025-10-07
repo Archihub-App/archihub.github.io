@@ -16,6 +16,8 @@ description: ''
 - Se soluciona temas de navegación en la UI en Firefox
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
 - Se soluciona error en la conversión a ogg de un audio
+- Se soluciona error al momento de la actualización masiva usando un excel
+- Se soluciona error al exportar un inventario desde el procesamiento masivo del plugin para generar inventarios
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
