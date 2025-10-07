@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - When editing a form, a left-side column now displays a compact view of the form fields, with the option to drag and reorder them
+- Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

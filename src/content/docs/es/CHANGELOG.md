@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Al editar un formulario ahora hay una columna a la iquierda que da cuenta en modo compacto de los campos del formulario con la posibilidad de arrastrar para reordenar
+- Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
