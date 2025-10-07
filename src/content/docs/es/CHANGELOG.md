@@ -3,24 +3,30 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.1] _beta_
+## [1.0.2] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Al editar un formulario ahora hay una columna a la iquierda que da cuenta en modo compacto de los campos del formulario con la posibilidad de arrastrar para reordenar
 - Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
-- Se soluciona error en la conversión a ogg de un audio
-- Se soluciona error al momento de la actualización masiva usando un excel
-- Se soluciona error al exportar un inventario desde el procesamiento masivo del plugin para generar inventarios
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [1.0.1] _7 October 2025_
+
+### Added
+- Al editar un formulario ahora hay una columna a la iquierda que da cuenta en modo compacto de los campos del formulario con la posibilidad de arrastrar para reordenar
+
+### Fixed
+- Se soluciona error en la conversión a ogg de un audio
+- Se soluciona error al momento de la actualización masiva usando un excel
+- Se soluciona error al exportar un inventario desde el procesamiento masivo del plugin para generar inventarios
 
 ## [1.0.0] _24 September 2025_
 

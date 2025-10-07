@@ -3,24 +3,30 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.1] _beta_
+## [1.0.2] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- When editing a form, a left-side column now displays a compact view of the form fields, with the option to drag and reorder them
 - Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
-- Fixed error in audio conversion to OGG format
-- Fixed an error occurring during bulk updates using Excel files
-- Fixed an issue when exporting an inventory from the bulk processing plugin for inventory generation
 
 ### Security
 - The access levels for image galleries are adjusted
+
+## [1.0.1] _7 October 2025_
+
+### Added
+- When editing a form, a left-side column now displays a compact view of the form fields, with the option to drag and reorder them
+
+### Fixed
+- Fixed error in audio conversion to OGG format
+- Fixed an error occurring during bulk updates using Excel files
+- Fixed an issue when exporting an inventory from the bulk processing plugin for inventory generation
 
 ## [1.0.0] _24 September 2025_
 
