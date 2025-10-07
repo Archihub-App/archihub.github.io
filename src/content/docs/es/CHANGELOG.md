@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
+- Cuando no hay vistas de consultas disponible, el sistema coje una imagen `frontpage.png` y la muestra en la página inicial
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

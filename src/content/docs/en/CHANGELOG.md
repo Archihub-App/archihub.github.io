@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
+- When no query views are available, the system automatically displays a `frontpage.png` image on the home page
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
