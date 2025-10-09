@@ -11,6 +11,7 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
 - Cuando no hay vistas de consultas disponible, el sistema coje la imagen `front_img` si está definida en el `config.json` y la muestra en la página inicial
+- Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

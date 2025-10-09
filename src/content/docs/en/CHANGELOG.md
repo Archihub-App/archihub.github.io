@@ -11,6 +11,7 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
 - When no query views are available, the system uses the `front_img` defined in `config.json` (if present) and displays it on the home page
+- The resource editing view’s tree has been reimplemented to provide clearer support for multiple parent relationships
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
