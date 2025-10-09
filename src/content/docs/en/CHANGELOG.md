@@ -10,11 +10,12 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
-- When no query views are available, the system automatically displays a `frontpage.png` image on the home page
+- When no query views are available, the system uses the `front_img` defined in `config.json` (if present) and displays it on the home page
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
+- Fixed an issue when filtering resources in query views where resources had one or more parent elements
 
 ### Security
 - The access levels for image galleries are adjusted

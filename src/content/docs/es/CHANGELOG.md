@@ -10,11 +10,12 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
-- Cuando no hay vistas de consultas disponible, el sistema coje una imagen `frontpage.png` y la muestra en la página inicial
+- Cuando no hay vistas de consultas disponible, el sistema coje la imagen `front_img` si está definida en el `config.json` y la muestra en la página inicial
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
+- Se soluciona problema al filtrar recursos en las vistas de consulta cuando los recursos tiene uno o más padres
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
