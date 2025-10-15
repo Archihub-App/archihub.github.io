@@ -17,6 +17,8 @@ description: ''
 - Fixed UI navigation issues in Firefox
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
 - Fixed an issue when filtering resources in query views where resources had one or more parent elements
+- The `AIHandler` has been updated to support the latest Gemini and OpenAI models
+- Fixed bulk update issues affecting fields of type `simple-date`
 
 ### Security
 - The access levels for image galleries are adjusted

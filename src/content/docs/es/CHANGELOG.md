@@ -17,6 +17,8 @@ description: ''
 - Se soluciona temas de navegación en la UI en Firefox
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
 - Se soluciona problema al filtrar recursos en las vistas de consulta cuando los recursos tiene uno o más padres
+- Se actualiza el `AIHandler` para soportar los nuevos modelos de Gemini y OpenAI
+- Se soluciona la actualizacion masiva cuando el campo es `simple-date`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
