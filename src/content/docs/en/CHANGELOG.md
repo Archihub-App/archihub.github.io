@@ -19,6 +19,7 @@ description: ''
 - Fixed an issue when filtering resources in query views where resources had one or more parent elements
 - The `AIHandler` has been updated to support the latest Gemini and OpenAI models
 - Fixed bulk update issues affecting fields of type `simple-date`
+- Fixed an error that occurred when downloading the inventory from the content editor
 
 ### Security
 - The access levels for image galleries are adjusted

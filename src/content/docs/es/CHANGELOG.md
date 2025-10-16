@@ -19,6 +19,7 @@ description: ''
 - Se soluciona problema al filtrar recursos en las vistas de consulta cuando los recursos tiene uno o más padres
 - Se actualiza el `AIHandler` para soportar los nuevos modelos de Gemini y OpenAI
 - Se soluciona la actualizacion masiva cuando el campo es `simple-date`
+- Se soluciona error al descargar el inventario desde el editor de contenido
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
