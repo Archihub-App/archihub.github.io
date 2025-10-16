@@ -3,26 +3,32 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.2] _beta_
+## [1.0.3] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
-- When no query views are available, the system uses the `front_img` defined in `config.json` (if present) and displays it on the home page
 - The resource editing view’s tree has been reimplemented to provide clearer support for multiple parent relationships
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [1.0.2] _16 October 2025_
+
+### Added
+- Added support for plugins to display a generated image in the control panel view, enabling use cases such as generating QR codes for user authentication
+- When no query views are available, the system uses the `front_img` defined in `config.json` (if present) and displays it on the home page
+
+### Fixed
 - When performing bulk upload or update via Excel file, location fields can either retrieve coordinates using external services or read the postal code and assign the corresponding geographic polygons
 - Fixed an issue when filtering resources in query views where resources had one or more parent elements
 - The `AIHandler` has been updated to support the latest Gemini and OpenAI models
 - Fixed bulk update issues affecting fields of type `simple-date`
 - Fixed an error that occurred when downloading the inventory from the content editor
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [1.0.1] _7 October 2025_
 

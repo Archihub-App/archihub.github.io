@@ -3,26 +3,32 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.2] _beta_
+## [1.0.3] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
-- Cuando no hay vistas de consultas disponible, el sistema coje la imagen `front_img` si está definida en el `config.json` y la muestra en la página inicial
 - Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [1.0.2] _16 October 2025_
+
+### Added
+- Se agrega la posibilidad a un plugin de mostrar una imagen generada en la vista de panel de control. Esto se puede usar para generar códigos QR para la autenticación de los usuarios
+- Cuando no hay vistas de consultas disponible, el sistema coje la imagen `front_img` si está definida en el `config.json` y la muestra en la página inicial
+
+### Fixed
 - Al momento de la carga o actualización masiva usando el archivo de excel, los campos de ubicación pueden o bien encontrar la coordenada usando servicios externos o bien leer el código postal y asignar los polígonos geográficos correspondientes.
 - Se soluciona problema al filtrar recursos en las vistas de consulta cuando los recursos tiene uno o más padres
 - Se actualiza el `AIHandler` para soportar los nuevos modelos de Gemini y OpenAI
 - Se soluciona la actualizacion masiva cuando el campo es `simple-date`
 - Se soluciona error al descargar el inventario desde el editor de contenido
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [1.0.1] _7 October 2025_
 
