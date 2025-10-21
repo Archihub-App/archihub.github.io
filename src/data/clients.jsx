@@ -28,5 +28,15 @@ export const clients = [
       name: 'Corporación Humanitaria Reencuentros',
       logo: '/archihub.github.io/logos/chr.png',
       link: 'https://corporacionreencuentros.org/'
+    },
+    {
+      name: 'Banco Interamericano de Desarrollo',
+      logo: '/archihub.github.io/logos/bid.png',
+      link: 'https://www.iadb.org/es'
+    },
+    {
+      name: 'Cinemateca de Bogotá',
+      logo: '/archihub.github.io/logos/cinemateca.png',
+      link: 'https://www.cinematecadebogota.gov.co/'
     }
   ];
