@@ -13,6 +13,7 @@ description: ''
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
+- Fixed an issue in the form editor where conditions broke after moving, adding, or removing fields above the conditional field. An automatic adjustment process was added to keep conditions synchronized when fields are modified
 
 ### Security
 - The access levels for image galleries are adjusted
