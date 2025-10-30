@@ -23,5 +23,20 @@ export const clients = [
       name: 'JEP',
       logo: '/archihub.github.io/logos/jep.jpg',
       link: 'https://www.jep.gov.co/Paginas/Inicio.aspx'
+    },
+    {
+      name: 'Corporación Humanitaria Reencuentros',
+      logo: '/archihub.github.io/logos/chr.png',
+      link: 'https://corporacionreencuentros.org/'
+    },
+    {
+      name: 'Banco Interamericano de Desarrollo',
+      logo: '/archihub.github.io/logos/bid.png',
+      link: 'https://www.iadb.org/es'
+    },
+    {
+      name: 'Cinemateca de Bogotá',
+      logo: '/archihub.github.io/logos/cinemateca.png',
+      link: 'https://www.cinematecadebogota.gov.co/'
     }
   ];
