@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
+- Se agregan iconos y colores que permiten identificar el tipo de campo en el editor de formularios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

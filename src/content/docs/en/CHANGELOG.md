@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - The resource editing view’s tree has been reimplemented to provide clearer support for multiple parent relationships
+- Icons and colors were added to the form editor to visually identify each field type more easily
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
