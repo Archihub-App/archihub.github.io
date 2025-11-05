@@ -15,6 +15,7 @@ description: ''
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
 - Se soluciona problema en el editor de formularios. Al crear una condición y luego mover, agregar o quitar campos arriba del campo de la condición, esta se descuadra y deja de servir la condición. Se agrega un proceso automático que ajusta las condiciones cuando se modifican los campos.
+- Se soluciona error al generar el mapeo de los campos al indice cuando el campo es agregado a traves de un plugin
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
