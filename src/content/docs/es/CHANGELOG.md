@@ -11,6 +11,7 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
 - Se agregan iconos y colores que permiten identificar el tipo de campo en el editor de formularios
+- Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
