@@ -12,6 +12,7 @@ description: ''
 - Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
 - Se agregan iconos y colores que permiten identificar el tipo de campo en el editor de formularios
 - Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
+- Se agrega la posibilidad de modificar la información devuelta por la búsqueda del sistema usando plugins
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
