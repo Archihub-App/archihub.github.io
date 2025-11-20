@@ -15,6 +15,8 @@ description: ''
 - Added the ability to modify the information returned by the system’s search through plugins
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - A calendar-style field is implemented, replacing the previous date field
+- New models are added for AI assistants, including vision models for local execution with Ollama
+- The context size for AI models is adjusted based on the selected model
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
