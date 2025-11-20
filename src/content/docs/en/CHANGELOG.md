@@ -14,6 +14,7 @@ description: ''
 - Added default views for query interfaces, allowing users to start navigation in either list or gallery mode
 - Added the ability to modify the information returned by the system’s search through plugins
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
+- A calendar-style field is implemented, replacing the previous date field
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
