@@ -3,30 +3,36 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.3] _beta_
+## [1.1.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
+- Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
+
+### Fixed
+- Se soluciona temas de navegación en la UI en Firefox
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [1.1.0] _20 November 2025_
+
+### Added
 - Se reimplementa el árbol en la vista de edición de los recursos para un soporte más claro de los múltiples padres
 - Se agregan iconos y colores que permiten identificar el tipo de campo en el editor de formularios
-- Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
 - Se agrega la posibilidad de modificar la información devuelta por la búsqueda del sistema usando plugins
-- Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
-- se implementa un campo de calendario que reemplaza el campo de fecha
+- Se implementa un campo de calendario que reemplaza el campo de fecha
 - Se agregan nuevos modelos disponibles para los asistentes de IA. Se agregan modelos de visión para ejecución local con Ollama
 - Se ajusta el tamaño del contexto para los modelos de IA en función del modelo seleccionado
 
 ### Fixed
-- Se soluciona temas de navegación en la UI en Firefox
 - Se soluciona problema en el editor de formularios. Al crear una condición y luego mover, agregar o quitar campos arriba del campo de la condición, esta se descuadra y deja de servir la condición. Se agrega un proceso automático que ajusta las condiciones cuando se modifican los campos.
 - Se soluciona error al generar el mapeo de los campos al indice cuando el campo es agregado a traves de un plugin
 - Se soluciona y mejora el árbol en el formulario del editor de contenido, mejorando el manejo de los padres directos o no del recurso
 - Se soluciona error en el campo multiple cuando tenemos solo campos de texto
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [1.0.2] _16 October 2025_
 

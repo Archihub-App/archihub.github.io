@@ -3,30 +3,36 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.0.3] _beta_
+## [1.1.1] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Added default views for query interfaces, allowing users to start navigation in either list or gallery mode
+- A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
+
+### Fixed
+- Fixed UI navigation issues in Firefox
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [1.1.0] _20 November 2025_
+
+### Added
 - The resource editing view’s tree has been reimplemented to provide clearer support for multiple parent relationships
 - Icons and colors were added to the form editor to visually identify each field type more easily
-- Added default views for query interfaces, allowing users to start navigation in either list or gallery mode
 - Added the ability to modify the information returned by the system’s search through plugins
-- A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - A calendar-style field is implemented, replacing the previous date field
 - New models are added for AI assistants, including vision models for local execution with Ollama
 - The context size for AI models is adjusted based on the selected model
 
 ### Fixed
-- Fixed UI navigation issues in Firefox
 - Fixed an issue in the form editor where conditions broke after moving, adding, or removing fields above the conditional field. An automatic adjustment process was added to keep conditions synchronized when fields are modified
 - Fixed an error in field-to-index mapping when the field was added through a plugin
 - Fixed and improved the tree in the content editor form, enhancing the handling of direct and indirect parents of the resource
 - Fixed an error in the multi-field component when it contained only text fields
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [1.0.2] _16 October 2025_
 
