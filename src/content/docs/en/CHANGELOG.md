@@ -18,6 +18,7 @@ description: ''
 - Fixed UI navigation issues in Firefox
 - Fixed an issue in the form editor where conditions broke after moving, adding, or removing fields above the conditional field. An automatic adjustment process was added to keep conditions synchronized when fields are modified
 - Fixed an error in field-to-index mapping when the field was added through a plugin
+- Fixed and improved the tree in the content editor form, enhancing the handling of direct and indirect parents of the resource
 
 ### Security
 - The access levels for image galleries are adjusted
