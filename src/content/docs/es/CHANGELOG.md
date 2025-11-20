@@ -15,6 +15,8 @@ description: ''
 - Se agrega la posibilidad de modificar la información devuelta por la búsqueda del sistema usando plugins
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
 - se implementa un campo de calendario que reemplaza el campo de fecha
+- Se agregan nuevos modelos disponibles para los asistentes de IA. Se agregan modelos de visión para ejecución local con Ollama
+- Se ajusta el tamaño del contexto para los modelos de IA en función del modelo seleccionado
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
