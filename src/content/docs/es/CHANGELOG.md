@@ -21,6 +21,7 @@ description: ''
 - Se soluciona problema en el editor de formularios. Al crear una condición y luego mover, agregar o quitar campos arriba del campo de la condición, esta se descuadra y deja de servir la condición. Se agrega un proceso automático que ajusta las condiciones cuando se modifican los campos.
 - Se soluciona error al generar el mapeo de los campos al indice cuando el campo es agregado a traves de un plugin
 - Se soluciona y mejora el árbol en el formulario del editor de contenido, mejorando el manejo de los padres directos o no del recurso
+- Se soluciona error en el campo multiple cuando tenemos solo campos de texto
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
