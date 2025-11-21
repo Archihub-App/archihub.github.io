@@ -351,10 +351,6 @@ export default defineConfig({
         src: "./src/assets/logo_docu_archihub.png",
       },
       favicon: "/favicon.ico",
-      // social: {
-      //   github: "https://github.com/ArchiHUB-App",
-      //   instagram: "https://www.instagram.com/archihub_app/",
-      // },
       social: [
         { icon: "github",
           label: "GitHub",
