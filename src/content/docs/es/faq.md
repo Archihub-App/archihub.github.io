@@ -33,7 +33,7 @@ Sí, ArchiHUB está diseñado para ser utilizado en entornos de producción. Ase
 La privacidad de tus datos es una prioridad para nosotros. ArchiHUB almacena tus datos localmente en tu servidor, lo que significa que tienes control total sobre ellos.
 
 ## ¿Archihub se puede desplegar en la nube?
-Sí, ArchiHUB se puede desplegar en servicios de nube. Como ejemplo de ello, tienes a disposición un despliegue público en [Hostinger](https://archihub.bit-sol.com.co/), aunque también puedes optar por otros proveedores como AWS, Google Cloud, o Azure (entre otros).
+Sí, ArchiHUB se puede desplegar en servicios de nube. Como ejemplo de ello, tienes a disposición un [despliegue público en la nube](https://archihub.bit-sol.com.co/). Puedes optar por proveedores como AWS, Google Cloud, o Azure (entre otros).
 
 ## ¿Dónde puedo encontrar la documentación oficial de ArchiHUB?
 La documentación oficial de ArchiHUB está disponible en nuestro sitio web: [https://archihub-app.github.io/archihub.github.io/](https://archihub-app.github.io/archihub.github.io/). Aquí encontrarás guías de instalación, tutoriales y referencias para ayudarte a sacar el máximo provecho de ArchiHUB. Adicionalmente, puedes visitar la documentación generada con [DeepWiki](https://deepwiki.com/) en [https://deepwiki.com/Archihub-App/archihub-backend](https://deepwiki.com/Archihub-App/archihub-backend).
