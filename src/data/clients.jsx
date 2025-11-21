@@ -35,6 +35,11 @@ export const clients = [
       link: 'https://www.iadb.org/es'
     },
     {
+      name: 'Ministerio de educación nacional de Colombia',
+      logo: '/archihub.github.io/logos/mined.png',
+      link: 'https://www.mineducacion.gov.co/'
+    },
+    {
       name: 'Cinemateca de Bogotá',
       logo: '/archihub.github.io/logos/cinemateca.png',
       link: 'https://www.cinematecadebogota.gov.co/'
