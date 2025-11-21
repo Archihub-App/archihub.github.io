@@ -34,6 +34,13 @@ export default defineConfig({
           link: "/changelog",
         },
         {
+          label: "Preguntas frecuentes",
+          translations: {
+            en: "Frequently Asked Questions",
+          },
+          link: "/faq",
+        },
+        {
           label: "Instalación",
           translations: {
             en: "Installation",
@@ -344,10 +351,17 @@ export default defineConfig({
         src: "./src/assets/logo_docu_archihub.png",
       },
       favicon: "/favicon.ico",
-      social: {
-        github: "https://github.com/ArchiHUB-App",
-        instagram: "https://www.instagram.com/archihub_app/",
-      },
+      social: [
+        { icon: "github",
+          label: "GitHub",
+          href: "https://github.com/ArchiHUB-App",
+        },
+        {
+          icon: "instagram",
+          label: "Instagram",
+          href: "https://www.instagram.com/archihub_app/",
+        },
+      ]
     }),
   ],
 });
