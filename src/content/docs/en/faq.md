@@ -56,3 +56,23 @@ If you require a custom frontend, you can develop your own interface using the A
 ## Does ArchiHUB allow integration with AI tools?
 Yes, ArchiHUB allows integration with various artificial intelligence (AI) tools. You can use plugins and APIs to connect ArchiHUB with AI services that enhance your workflow. We are continuously working to expand AI integration capabilities in future versions.
 
+## Managing the index in ArchiHUB
+
+### What is needed to use the index for searches in ArchiHUB?
+To use the index in ArchiHUB, you need to have the Elasticsearch service active and running. The container must be enabled in the `docker-compose.yml` file. Additionally, from the ArchiHUB settings, you must activate the "Use index for searches" option:
+
+![activate index](/archihub.github.io/imagenes/check_indice.png)
+
+If this is the first time you activate the index, you must save the configuration and then restart the system for the changes to take effect. Once restarted, the ArchiHUB configuration will show the index status as active.
+
+If the index checkbox becomes deactivated, it may be because the Elasticsearch service is not running or has not been configured correctly. Verify that the container is active and that the configuration is appropriate.
+
+### How can I reindex my content in ArchiHUB?
+If this is the first time you activate the index or if you have made significant changes to your content, it is recommended to reindex your files to ensure the index is up to date. To reindex, follow these steps:
+1. Go to the ArchiHUB configuration section.
+2. Look for the "Regenerate the index for resource search" option and click the corresponding button.
+3. Confirm the action and wait for the reindexing process to complete. This process may take time depending on the number of files you have in your system.
+4. Look for the "Reindex resources" option and click the corresponding button.
+5. Confirm the action and wait for the reindexing process to complete.
+
+This process may take time depending on the number of files you have in your system. Once finished, the index will be updated and ready for use in searches.
