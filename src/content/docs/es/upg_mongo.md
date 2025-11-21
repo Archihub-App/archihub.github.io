@@ -146,7 +146,7 @@ db.adminCommand({ setFeatureCompatibilityVersion: "7.0" })
 Verificar:
 
 ```js
-db.adminCommand({ getParameter: 1, featureCompatibilityVersion: 1 })
+db.adminCommand({ setFeatureCompatibilityVersion: "7.0", confirm: true })
 ```
 
 ✅ Ahora debería mostrar `"7.0"`.
