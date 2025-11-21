@@ -55,3 +55,24 @@ En caso de requerir un frontend personalizado, puedes desarrollar tu propia inte
 
 ## ¿ArchiHUB permite la integración con herramientas de IA?
 Sí, ArchiHUB permite la integración con diversas herramientas de inteligencia artificial (IA). Puedes utilizar plugins y APIs para conectar ArchiHUB con servicios de IA que mejoren tu flujo de trabajo. Estamos trabajando continuamente para ampliar las capacidades de integración con IA en futuras versiones.
+
+## Manejo del índice en ArchiHUB
+
+### ¿Qué se necesita para usar el índice para las búsquedas en ArchiHUB?
+Para utilizar el índice en ArchiHUB, es necesario tener activado y en ejecución el servicio de Elasticsearch. El contenedor debe estar habilitado en el archivo `docker-compose.yml`. Además, desde los ajustes de ArchiHUB, debes activar la opción de "Usar índice para búsquedas":
+
+![activar indice](/archihub.github.io/imagenes/check_indice.png)
+
+Si es la primera vez que activas el índice, debes guardar la configuración y luego reiniciar el sistema para que los cambios surtan efecto. Una vez reiniciado, en la configuración de ArchiHUB se mostrará el estado del índice como activo.
+
+En caso de que el checkbox del índice se desactive, puede deberse a que el servicio de Elasticsearch no está en ejecución o no se ha configurado correctamente. Verifica que el contenedor esté activo y que la configuración sea la adecuada.
+
+### ¿Cómo puedo reindexar mi contenido en ArchiHUB?
+En caso de que sea la primera vez que activas el índice o si has realizado cambios significativos en tu contenido, es recomendable reindexar tus archivos para asegurar que el índice esté actualizado. Para reindexar, sigue estos pasos:
+1. Ve a la sección de configuración de ArchiHUB.
+2. Busca la opción de "Regenerar el índice para la búsqueda de los recursos" y haz clic en el botón correspondiente.
+3. Confirma la acción y espera a que el proceso de reindexación se complete. Este proceso puede tardar dependiendo de la cantidad de archivos que tengas en tu sistema.
+4. Busca la opción de "Volver a indexar los recursos" y haz clic en el botón correspondiente.
+5. Confirma la acción y espera a que el proceso de reindexación se complete.
+
+Este proceso puede tardar dependiendo de la cantidad de archivos que tengas en tu sistema. Una vez finalizado, el índice estará actualizado y listo para su uso en las búsquedas.
