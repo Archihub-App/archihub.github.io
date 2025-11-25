@@ -151,6 +151,35 @@ Sucede cuando Elasticsearch no está corriendo o no puede conectarse. Verifica:
 Ve a **Ajustes → Regenerar el índice para la búsqueda de los recursos** → Haz clic en el botón.  
 El proceso puede tardar según la cantidad de archivos. Solo es necesario hacerlo tras activar por primera vez o tras grandes cambios de contenido.
 
+## 📂 Carpetas de datos de ArchiHUB
+
+### ¿Qué permisos deben tener las carpetas de datos de ArchiHUB?
+Las carpetas de datos deben tener permisos de lectura y escritura para el usuario que ejecuta los contenedores Docker.  
+Por ejemplo, si usas Linux y ejecutas Docker como usuario `archihub`, asegúrate de que las carpetas tengan permisos adecuados:
+```bash
+chown -R archihub:archihub /ruta/a/original
+chmod -R 755 /ruta/a/original
+```
+
+De misma forma para las otras carpetas de datos de ArchiHUB:
+```
+temporal
+userfiles
+webfiles
+```
+
+### ¿Qué carpetas se recomienda respaldar?
+Se recomienda respaldar las siguientes carpetas para asegurar tus datos y configuraciones:
+- `original`: Contiene los archivos originales subidos.
+- `userfiles`: Contiene archivos generados por el usuario, como configuraciones y datos personalizados.
+- `webfiles`: Contiene archivos relacionados con la interfaz web y recursos estáticos.
+
+Además, es importante respaldar la base de datos utilizada por ArchiHUB para almacenar información crítica sobre proyectos, usuarios y configuraciones:
+- `ruta/a/data/mongodb`: Contiene los datos de la base de datos MongoDB utilizada por ArchiHUB.
+
+Si tienes el servicio de Elasticsearch habilitado, también es recomendable respaldar su carpeta de datos:
+- `ruta/a/data/elasticsearch`: Contiene los datos del índice de búsqueda utilizado por ArchiHUB.
+
 ## 💼 Planes y Versión Pro
 
 ### ¿Qué ventajas tiene ArchiHUB Pro?

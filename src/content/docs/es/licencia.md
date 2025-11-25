@@ -5,7 +5,7 @@ description: ''
 
 ## Licenciamiento
 
-ArchiHUB se divide en varias partes. Por un lado un __backend__ de código abierto con lincencia del MIT descrita más abajo. Un __frontend__ de administración y puesta a público de la información que es de código propietario y con una licencia CREATIVE COMMONS Atribución – No comercial – Sin Derivar. Esta interfaz es de descarga gratuita para usos no comerciales. Para un licenciamiento comercial favor comunicarse con [BITSOL](https://www.instagram.com/bitsol.xyz/). Y finalmente tenemos un ecosistema de plugins disponibles, cada uno con un licenciamiento distinto.
+ArchiHUB se divide en varias partes. Por un lado un __backend__ de código abierto con lincencia del MIT descrita más abajo. Un __frontend__ de administración y puesta a público de la información que es de código propietario y con una licencia CREATIVE COMMONS Atribución – No comercial – Sin Derivar. Esta interfaz es de descarga gratuita para usos no comerciales. Para un licenciamiento comercial favor comunicarse con [BITSOL](mailto:contact@bit-sol.com.co). Y finalmente tenemos un ecosistema de plugins disponibles, cada uno con un licenciamiento distinto.
 
 ## Licencia
 

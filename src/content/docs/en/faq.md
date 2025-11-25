@@ -151,6 +151,35 @@ This happens when Elasticsearch is not running or cannot connect. Verify:
 Go to **Settings → Regenerate the index for resource search** → Click the button.  
 The process may take time depending on the amount of files. It is only necessary to do this after activating it for the first time or after major content changes.
 
+## 📂 ArchiHUB Data Folders
+
+### What permissions should ArchiHUB data folders have?
+Data folders must have read and write permissions for the user running the Docker containers.  
+For example, if you're using Linux and running Docker as user `archihub`, make sure the folders have appropriate permissions:
+```bash
+chown -R archihub:archihub /path/to/original
+chmod -R 755 /path/to/original
+```
+
+Similarly for the other ArchiHUB data folders:
+```
+temporal
+userfiles
+webfiles
+```
+
+### What folders should be backed up?
+It is recommended to back up the following folders to secure your data and configurations:
+- `original`: Contains the original uploaded files.
+- `userfiles`: Contains user-generated files, such as configurations and customized data.
+- `webfiles`: Contains files related to the web interface and static resources.
+
+Additionally, it is important to back up the database used by ArchiHUB to store critical information about projects, users, and configurations:
+- `path/to/data/mongodb`: Contains the MongoDB database data used by ArchiHUB.
+
+If you have the Elasticsearch service enabled, it is also recommended to back up its data folder:
+- `path/to/data/elasticsearch`: Contains the search index data used by ArchiHUB.
+
 ## 💼 Plans and Pro Version
 
 ### What are the advantages of ArchiHUB Pro?
