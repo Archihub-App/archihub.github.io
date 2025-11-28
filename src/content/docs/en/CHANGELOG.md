@@ -16,6 +16,8 @@ description: ''
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
+- The graphical implementation of the resource tree is improved to better indicate when a resource can or cannot be selected.
+- The UX and UI for the cataloging form are improved overall.
 
 ### Security
 - The access levels for image galleries are adjusted

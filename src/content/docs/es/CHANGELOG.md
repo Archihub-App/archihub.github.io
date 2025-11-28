@@ -11,10 +11,12 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
-- Se agrega un nuevo componente de `Artículos` que permite crear entradas de blog usando un editor tipo Gutenberg y con usando como anexos los recursos y recortes que escoja el usuario
+- Se agrega un nuevo componente de `Artículos` que permite crear entradas de blog usando un editor tipo Gutenberg y usando como anexos los recursos y recortes que escoja el usuario
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
+- Se mejora la implementación gráfica del arbol de recursos para identificar mejor cuando un recurso se puede o no seleccionar
+- Se mejora la UX y UI en general para el formulario de catalogación
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
