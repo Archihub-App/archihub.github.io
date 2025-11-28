@@ -11,6 +11,7 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado o galería
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
+- Se agrega un nuevo componente de `Artículos` que permite crear entradas de blog usando un editor tipo Gutenberg y con usando como anexos los recursos y recortes que escoja el usuario
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
