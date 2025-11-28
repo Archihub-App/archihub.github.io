@@ -5,7 +5,7 @@ description: ''
 
 ## Licensing
 
-ArchiHUB is divided into several parts. On the one hand an open source __backend__ with MIT license described below. A __frontend__ for the administration and public release of information which is proprietary and licensed under a CREATIVE COMMONS Attribution - Non-commercial - No Derivative license. This interface is free to download for non-commercial use. For commercial licensing please contact [BITSOL](https://www.instagram.com/bitsol.xyz/). And finally we have an ecosystem of plugins available, each with a different licensing.
+ArchiHUB is divided into several parts. On the one hand an open source __backend__ with MIT license described below. A __frontend__ for the administration and public release of information which is proprietary and licensed under a CREATIVE COMMONS Attribution - Non-commercial - No Derivative license. This interface is free to download for non-commercial use. For commercial licensing please contact [BITSOL](mailto:contact@bit-sol.com.co). And finally we have an ecosystem of plugins available, each with a different licensing.
 
 ## License
 

@@ -1,57 +1,196 @@
 ---
-title: "Preguntas Frecuentes"
-description: "Respuestas a las preguntas más comunes sobre ArchiHUB."
+title: "Preguntas Frecuentes - ArchiHUB"
+description: "Respuestas a las dudas más comunes sobre instalación, uso, despliegue y características de ArchiHUB."
 ---
 
-# Preguntas Frecuentes
+# Preguntas Frecuentes sobre ArchiHUB
 
-## ¿Cuáles son los requisitos mínimos para usar ArchiHUB?
-Para utilizar ArchiHUB, necesitas un dispositivo con Dokcer instalado y una conexión a internet estable. Recomendamos al menos 4 GB de RAM y 2 CPU para un rendimiento óptimo. Sin embargo, los requisitos pueden variar según el tamaño de los proyectos que manejes.
+## 🖥️ Requisitos y Compatibilidad
 
-Como referencia, ArchiHUB se ha estado ejecutando en un Raspberry Pi 4.
+### ¿Cuáles son los requisitos mínimos para usar ArchiHUB?
+ArchiHUB requiere:
+- Docker y Docker Compose instalados
+- Conexión estable a internet
+- Mínimo recomendado: 4 GB de RAM y 2 núcleos de CPU
 
-## ¿Cómo puedo contribuir al proyecto ArchiHUB?
-Puedes contribuir al proyecto ArchiHUB de varias maneras:
-- Reportando errores o sugiriendo mejoras en nuestro [repositorio de GitHub](https://github.com/Archihub-App/archihub-backend).
-- Participando en discusiones y ayudando a otros usuarios en nuestra comunidad.
-- Desarrollando nuevas características o mejorando la documentación.
-- Compartiendo ArchiHUB con tus colegas y amigos.
+Funciona perfectamente en servidores modestos. Como referencia, **ArchiHUB se ejecuta sin problemas en un Raspberry Pi 4**.
 
-## ¿Dónde puedo encontrar soporte si tengo problemas con ArchiHUB?
-Si tienes problemas con ArchiHUB, puedes buscar ayuda en los siguientes lugares:
-- Nuestra [documentación oficial](https://archihub-app.github.io/archihub.github.io/).
-- El [repositorio de GitHub](https://github.com/Archihub-App/archihub-backend/issues/new).
-- Si cuentas con soporte premium o ArchiHUB Pro, puedes contactar directamente a nuestro equipo de soporte a través del correo electrónico proporcionado en tu plan.
+### ¿ArchiHUB funciona en Windows, macOS y Linux?
+Sí. Al estar basado en Docker, es completamente multiplataforma (Windows, macOS, Linux, incluyendo arquitecturas ARM64 como Raspberry Pi).
 
-## ¿Archihub es de código abierto?
-Sí, ArchiHUB es un proyecto de código abierto. Puedes encontrar el código fuente en nuestro [repositorio de GitHub](https://github.com/Archihub-App/archihub-backend).
 
-## ¿Puedo usar ArchiHUB en un entorno de producción?
-Sí, ArchiHUB está diseñado para ser utilizado en entornos de producción. Asegúrate de seguir las mejores prácticas de seguridad y mantenimiento para garantizar un rendimiento óptimo y la seguridad de tus datos. Si necesitas soporte adicional, considera optar por ArchiHUB Pro. Encuentra los detalles en nuestra [página web](https://bit-sol.com.co/es/).
+## 🎮 Uso de GPU para Tareas Avanzadas
 
-## ¿Cómo se maneja la privacidad de mis datos en ArchiHUB?
-La privacidad de tus datos es una prioridad para nosotros. ArchiHUB almacena tus datos localmente en tu servidor, lo que significa que tienes control total sobre ellos.
+### ¿ArchiHUB soporta el uso de GPU?
+Sí, ArchiHUB permite el uso de GPU (NVIDIA compatibles con CUDA) para tareas de procesamiento intensivo, como la transcripción automática de audio con modelos como Whisper. Esto acelera significativamente procesos que de otro modo dependerían solo del CPU.
 
-## ¿Archihub se puede desplegar en la nube?
-Sí, ArchiHUB se puede desplegar en servicios de nube. Como ejemplo de ello, tienes a disposición un despliegue público en [Hostinger](https://archihub.bit-sol.com.co/), aunque también puedes optar por otros proveedores como AWS, Google Cloud, o Azure (entre otros).
+### ¿Cuáles son los requisitos para usar GPU en ArchiHUB?
+- Una GPU NVIDIA con soporte CUDA instalada y accesible.
+- Configura nodos de procesamiento dedicados (workers de Celery) en máquinas con GPU.
+- Variable de entorno `CELERY_WORKER` (cualquier valor) para identificar el nodo como worker.
+- Concurrencia recomendada: `CELERYD_CONCURRENCY=1` para evitar sobrecarga.
 
-## ¿Dónde puedo encontrar la documentación oficial de ArchiHUB?
-La documentación oficial de ArchiHUB está disponible en nuestro sitio web: [https://archihub-app.github.io/archihub.github.io/](https://archihub-app.github.io/archihub.github.io/). Aquí encontrarás guías de instalación, tutoriales y referencias para ayudarte a sacar el máximo provecho de ArchiHUB. Adicionalmente, puedes visitar la documentación generada con [DeepWiki](https://deepwiki.com/) en [https://deepwiki.com/Archihub-App/archihub-backend](https://deepwiki.com/Archihub-App/archihub-backend).
+Nota: Si no hay un nodo GPU disponible para una tarea, se pausará hasta que lo esté.
 
-## ¿Cómo puedo actualizar ArchiHUB a la última versión?
-Para actualizar ArchiHUB a la última versión, sigue estos pasos:
-1. Realiza una copia de seguridad de tus datos y configuraciones actuales.
-2. Detén el contenedor de ArchiHUB si está en ejecución.
-3. Actualiza el repositorio local de ArchiHUB con los últimos cambios desde GitHub.
-4. Reconstruye y reinicia el contenedor de ArchiHUB.
-5. Verifica que la actualización se haya realizado correctamente y que todos tus datos estén intactos.
+### ¿Cómo configuro un nodo para tareas con GPU?
+1. En la máquina con GPU, define `CUDA_VISIBLE_DEVICES=0` (o `0,1` para múltiples GPUs) en tu archivo `docker-compose.yml`(disponible en [este enlace](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/docker-compose.yml) en la sección `CELERY QUEUE SERVICE USING GPU`)
 
-Si necesitas ayuda adicional, consulta nuestra [documentación oficial](https://archihub-app.github.io/archihub.github.io/) o contacta a nuestro equipo de soporte.
+## 🤖 Ejecución de Modelos de IA Locales con Ollama y GPU
 
-## ¿Puedo personalizar ArchiHUB según mis necesidades?
-Sí, ArchiHUB es altamente personalizable. Puedes modificar la configuración, agregar plugins y adaptar la plataforma para satisfacer tus necesidades específicas.
+### ¿Qué es Ollama y cómo se integra con ArchiHUB?
+Ollama es una herramienta open-source que permite ejecutar modelos de lenguaje grandes (LLMs) localmente, garantizando privacidad y reduciendo la dependencia de servicios en la nube. En ArchiHUB, se integra para potenciar asistentes de IA con modelos locales, como análisis de documentos, generación de resúmenes o procesamiento de imágenes/transcripciones.
 
-En caso de requerir un frontend personalizado, puedes desarrollar tu propia interfaz usando la API de ArchiHUB. También puedes contactarnos para servicios de personalización y desarrollo a medida.
+### ¿Cuáles son los requisitos para usar Ollama con GPU?
+- GPU NVIDIA compatible con CUDA (para aceleración; sin GPU, funciona en CPU pero más lento).
+- Docker y el contenedor de Ollama habilitado en `docker-compose.yml`.
+- Variables de entorno en `.env`: `OLLAMA_HOST=archihub_ollama`, `OLLAMA_PORT=11434`, `OLLAMA_PATH=/ruta/a/datos/ollama`.
+- Espacio en disco para modelos (pueden ser varios GB por modelo).
 
-## ¿ArchiHUB permite la integración con herramientas de IA?
-Sí, ArchiHUB permite la integración con diversas herramientas de inteligencia artificial (IA). Puedes utilizar plugins y APIs para conectar ArchiHUB con servicios de IA que mejoren tu flujo de trabajo. Estamos trabajando continuamente para ampliar las capacidades de integración con IA en futuras versiones.
+### ¿Cómo configuro Ollama con soporte GPU?
+1. En el `docker-compose.yml`, habilita el servicio `archihub_ollama` con imagen `ollama/ollama:latest`:
+- Expone puerto: `${OLLAMA_PORT}:${OLLAMA_PORT}`.
+- Volúmenes: `${OLLAMA_PATH}:/root/.ollama` para almacenar modelos.
+- Para GPU: Agrega en `environment`: `CUDA_VISIBLE_DEVICES: 0`, y en `deploy.resources.reservations.devices`:
+
+```
+driver: nvidia
+count: 1
+capabilities: [gpu]
+```
+
+2. Inicia los servicios: `docker compose up -d`.
+3. Instala un modelo: `docker exec -it <nombre_contenedor_ollama> ollama pull <modelo>` (ej. `llama2` o `llava` para visión).
+
+Nota: Ollama detecta automáticamente la GPU si está configurada. Para múltiples GPUs, ajusta `CUDA_VISIBLE_DEVICES=0,1`.
+
+### ¿Cómo uso Ollama en ArchiHUB?
+1. Una vez configurado, ve a la sección de Asistentes en ArchiHUB.
+2. Selecciona "Ollama" como proveedor de IA.
+3. Asigna un nombre al asistente y elige el modelo instalado.
+4. El asistente podrá usar recursos locales como documentos, imágenes o transcripciones para tareas como generación de texto o análisis.
+
+Ejemplos: Análisis de transcripciones de video o identificación de elementos en imágenes (con modelos como Llava).
+
+### ¿Hay problemas en el uso de Ollama con GPU?
+- Verifica que el contenedor esté corriendo (`docker ps`) y el puerto accesible.
+- Si la GPU no se detecta, confirma drivers NVIDIA y reinicia el contenedor.
+- Modelos grandes tardan en descargarse; usa `ollama list` para verificar.
+
+Para detalles completos, consulta la [documentación de Ollama en ArchiHUB](https://archihub-app.github.io/archihub.github.io/es/local_ollama/).
+
+## 🚀 Instalación y Despliegue
+
+### ¿Se puede desplegar ArchiHUB en la nube?
+Sí. Puedes usar cualquier proveedor (AWS, Google Cloud, Azure, DigitalOcean, Hetzner, etc.).  
+También tienes disponible una instancia pública de demostración:  
+➜ [https://archihub.bit-sol.com.co](https://archihub.bit-sol.com.co)
+
+### ¿Cómo actualizo ArchiHUB a la última versión?
+1. Haz backup de tu base de datos y configuraciones
+2. Detén los contenedores (`docker compose down`)
+3. Actualiza el código: `git pull` en tu carpeta local ([front](https://github.com/Archihub-App/getting-started) y [back](https://github.com/Archihub-App/archihub-backend))
+4. Reconstruye e inicia: `docker compose up -d --build`
+5. Verifica que todo funcione correctamente
+
+## 🔒 Privacidad y Seguridad
+
+### ¿Dónde se almacenan mis datos?
+Todos tus datos (proyectos, archivos BIM, documentos) se guardan **localmente en tu servidor**. ArchiHUB no envía información a servidores externos. Tú tienes el control total.
+
+### ¿Puedo usar ArchiHUB en entornos de producción?
+Sí, está diseñado y probado para producción. Para entornos críticos recomendamos ArchiHUB Pro con soporte prioritario y actualizaciones a la medida de sus necesidades.
+
+## 🧑‍💻 Código Abierto y Contribución
+
+### ¿ArchiHUB es de código abierto?
+Sí, el backend es 100% open-source bajo licencia MIT.  
+Repositorio oficial: [https://github.com/ArchiHUB-App](https://github.com/ArchiHUB-App)
+
+El frontend es de uso libre bajo licencia [Creative Commons Atribución – No Comercial – Sin Derivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es). Para más detalles respecto a la licencia del frontend, [dirigirse aquí](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/frontend/LICENSE.md).
+
+### ¿Cómo puedo contribuir?
+- Reportando bugs o sugerencias en GitHub Issues
+- Mejorando la documentación
+- Desarrollando nuevas funcionalidades o plugins
+- Ayudando a otros usuarios en la comunidad
+- Dando ★ al repositorio y compartiéndolo
+
+## 📚 Documentación y Soporte
+
+### ¿Dónde encuentro ayuda oficial?
+- Documentación principal → [archihub-app.github.io](https://archihub-app.github.io/archihub.github.io/)
+- Documentación técnica generada con DeepWiki → [deepwiki.com/Archihub-App/archihub-backend](https://deepwiki.com/Archihub-App/archihub-backend)
+- Issues y soporte comunitario → [GitHub](https://github.com/Archihub-App/archihub-backend/issues/new)
+- Soporte premium (respuesta < 24h) → Solo usuarios ArchiHUB Pro
+
+## 🔧 Personalización e Integraciones
+
+### ¿Puedo personalizar la interfaz o agregar funcionalidades?
+Sí. Puedes:
+- Modificar el frontend (es un proyecto separado y completamente personalizable) ***Debes tener en cuenta los [acuerdos de licencia del front](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/frontend/LICENSE.md)***
+- Crear tu propia interfaz usando la API completa
+- Desarrollar plugins propios
+- Solicitar desarrollo a medida (contacto en [bit-sol.com.co](https://bit-sol.com.co))
+
+### ¿ArchiHUB soporta integración con herramientas de IA?
+Sí. Actualmente permite conectar servicios externos de IA mediante plugins y APIs. Estamos trabajando en integraciones nativas más potentes (generación automática de memorias, detección de patrones avanzada, etc.).
+
+## 🔍 Búsqueda e Índice (Elasticsearch)
+
+### ¿Cómo activo la búsqueda avanzada con índice?
+1. Asegúrate de que el servicio `elasticsearch` esté habilitado en tu `docker-compose.yml`
+2. En Ajustes → activa “Usar índice para búsquedas”
+3. Guarda y reinicia ArchiHUB
+
+### ¿Por qué se desactiva sola la opción del índice?
+Sucede cuando Elasticsearch no está corriendo o no puede conectarse. Verifica:
+- Que el contenedor esté activo (`docker ps`)
+- Que no haya errores en los logs de Elasticsearch
+
+### ¿Cómo reindexar todo mi contenido?
+Ve a **Ajustes → Regenerar el índice para la búsqueda de los recursos** → Haz clic en el botón.  
+El proceso puede tardar según la cantidad de archivos. Solo es necesario hacerlo tras activar por primera vez o tras grandes cambios de contenido.
+
+## 📂 Carpetas de datos de ArchiHUB
+
+### ¿Qué permisos deben tener las carpetas de datos de ArchiHUB?
+Las carpetas de datos deben tener permisos de lectura y escritura para el usuario que ejecuta los contenedores Docker.  
+Por ejemplo, si usas Linux y ejecutas Docker como usuario `archihub`, asegúrate de que las carpetas tengan permisos adecuados:
+```bash
+chown -R archihub:archihub /ruta/a/original
+chmod -R 755 /ruta/a/original
+```
+
+De misma forma para las otras carpetas de datos de ArchiHUB:
+```
+temporal
+userfiles
+webfiles
+```
+
+### ¿Qué carpetas se recomienda respaldar?
+Se recomienda respaldar las siguientes carpetas para asegurar tus datos y configuraciones:
+- `original`: Contiene los archivos originales subidos.
+- `userfiles`: Contiene archivos generados por el usuario, como configuraciones y datos personalizados.
+- `webfiles`: Contiene archivos relacionados con la interfaz web y recursos estáticos.
+
+Además, es importante respaldar la base de datos utilizada por ArchiHUB para almacenar información crítica sobre proyectos, usuarios y configuraciones:
+- `ruta/a/data/mongodb`: Contiene los datos de la base de datos MongoDB utilizada por ArchiHUB.
+
+Si tienes el servicio de Elasticsearch habilitado, también es recomendable respaldar su carpeta de datos:
+- `ruta/a/data/elasticsearch`: Contiene los datos del índice de búsqueda utilizado por ArchiHUB.
+
+## 💼 Planes y Versión Pro
+
+### ¿Qué ventajas tiene ArchiHUB Pro?
+- Soporte técnico prioritario (respuesta < 24h)
+- Actualizaciones y parches de seguridad garantizados
+- Funcionalidades avanzadas (en desarrollo)
+- Desarrollo de características a medida (opcional)
+
+Más información: [https://bit-sol.com.co/es/projects/archihub/](https://bit-sol.com.co/es/projects/archihub/)
+
+---
+
+¿Tienes alguna pregunta que no aparece aquí?  
+¡Escríbela en [GitHub Discussions](https://github.com/orgs/Archihub-App/discussions/new/choose) o contáctanos directamente!

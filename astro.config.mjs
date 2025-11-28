@@ -260,6 +260,21 @@ export default defineConfig({
           ],
         },
         {
+          label: "Asistentes de IA",
+          translations: {
+            en: "AI Assistants",
+          },
+          items: [
+            {
+              label: "Ejecución de modelos de lenguaje en local con Ollama",
+              translations: {
+                en: "Running local language models with Ollama",
+              },
+              link: "/local_ollama",
+            },
+          ],
+        },
+        {
           label: "Plugins disponibles",
           translations: {
             en: "Available plugins",
@@ -351,10 +366,6 @@ export default defineConfig({
         src: "./src/assets/logo_docu_archihub.png",
       },
       favicon: "/favicon.ico",
-      // social: {
-      //   github: "https://github.com/ArchiHUB-App",
-      //   instagram: "https://www.instagram.com/archihub_app/",
-      // },
       social: [
         { icon: "github",
           label: "GitHub",
