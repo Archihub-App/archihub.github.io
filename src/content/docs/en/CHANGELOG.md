@@ -12,6 +12,7 @@ description: ''
 - Added default views for query interfaces, allowing users to start navigation in either list or gallery mode
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - A new `Articles` component is added, allowing users to create blog posts using a Gutenberg-style editor and attach any resources or clippings they choose
+- Drag-and-drop is added to reorganize files in the cataloging form.
 
 
 ### Fixed
