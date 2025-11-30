@@ -13,6 +13,8 @@ description: ''
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
 - Se agrega un nuevo componente de `Artículos` que permite crear entradas de blog usando un editor tipo Gutenberg y usando como anexos los recursos y recortes que escoja el usuario
 - Se agrega arrastrar y soltar para reorganizar los archivos en el formulario de catalogacion
+- Se agrega un nuevo gestor de recortes en el editor de los `Artículos` para mejorar la experiencia al momento de cargarlos al texto
+- Se agrega un gestor de favoritos para el editor de los `Artículos` para gestionar los recursos o archivos guardados por el usuario y relacionarlos al texto
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

@@ -13,6 +13,8 @@ description: ''
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - A new `Articles` component is added, allowing users to create blog posts using a Gutenberg-style editor and attach any resources or clippings they choose
 - Drag-and-drop is added to reorganize files in the cataloging form.
+- A new clipping manager is added to the `Articles` editor to improve the experience when inserting clippings into the text
+- A favorites manager is added to the `Articles` editor, allowing users to manage saved resources or files and link them to the text
 
 
 ### Fixed
