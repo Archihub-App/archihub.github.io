@@ -15,6 +15,7 @@ description: ''
 - Se agrega arrastrar y soltar para reorganizar los archivos en el formulario de catalogacion
 - Se agrega un nuevo gestor de recortes en el editor de los `Artículos` para mejorar la experiencia al momento de cargarlos al texto
 - Se agrega un gestor de favoritos para el editor de los `Artículos` para gestionar los recursos o archivos guardados por el usuario y relacionarlos al texto
+- Se agrega la posibilidad de crear un recorte para videos y audios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

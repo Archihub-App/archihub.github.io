@@ -15,7 +15,7 @@ description: ''
 - Drag-and-drop is added to reorganize files in the cataloging form.
 - A new clipping manager is added to the `Articles` editor to improve the experience when inserting clippings into the text
 - A favorites manager is added to the `Articles` editor, allowing users to manage saved resources or files and link them to the text
-
+- Added the ability to create clippings for videos and audio files.
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
