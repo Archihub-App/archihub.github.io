@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.1.1] _beta_
+## [1.2.0] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -21,6 +21,7 @@ description: ''
 - Fixed UI navigation issues in Firefox
 - The graphical implementation of the resource tree is improved to better indicate when a resource can or cannot be selected.
 - The UX and UI for the cataloging form are improved overall.
+- Fixed an interface error that occurred when the token had expired and the user navigated to the login page
 
 ### Security
 - The access levels for image galleries are adjusted

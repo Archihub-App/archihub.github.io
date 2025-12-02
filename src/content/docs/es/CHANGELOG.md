@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.1.1] _beta_
+## [1.2.0] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
@@ -21,6 +21,7 @@ description: ''
 - Se soluciona temas de navegación en la UI en Firefox
 - Se mejora la implementación gráfica del arbol de recursos para identificar mejor cuando un recurso se puede o no seleccionar
 - Se mejora la UX y UI en general para el formulario de catalogación
+- Se soluciona error que se disparaba en la interfaz cuando el token había expirado y que el usuario iba a la página de login
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
