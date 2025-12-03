@@ -18,6 +18,46 @@ Funciona perfectamente en servidores modestos. Como referencia, **ArchiHUB se ej
 ### ¿ArchiHUB funciona en Windows, macOS y Linux?
 Sí. Al estar basado en Docker, es completamente multiplataforma (Windows, macOS, Linux, incluyendo arquitecturas ARM64 como Raspberry Pi).
 
+## ❗ Errores frecuentes
+
+### Guardé un recurso pero no lo veo en el módulo de catalogación
+
+ArchiHUB permite **guardar** o **publicar** los recursos.
+Si acabas de guardar un recurso y no lo ves en el módulo de catalogación, es probable que esté como **borrador**.
+En la barra lateral izquierda activa la opción **“Ver borradores”**. Allí podrás ver todos tus borradores.
+
+Ten en cuenta que un recurso **solo será visible para otros usuarios cuando lo publiques**.
+Los borradores únicamente los pueden ver tú y los usuarios con rol **super-editor**.
+
+### Los archivos aparecen con la etiqueta "Sin procesar"
+
+Cuando cargas un archivo a ArchiHUB, este **no se procesa automáticamente por defecto**.
+Para activar el procesamiento automático, revisa los **primeros pasos de la documentación**.
+
+Si cargaste archivos **antes** de habilitar este procesamiento, deberás procesarlos **manualmente**.
+En la vista de detalle del recurso, y si tu usuario tiene permisos, verás en la barra lateral la opción para **procesar los archivos**.
+
+### Procesé los archivos pero siguen con la etiqueta "Sin procesar"
+ArchiHUB utiliza **nodos de procesamiento independientes** del aplicativo para manejar los archivos.
+Si lanzaste el procesamiento y el archivo continúa marcado como **“Sin procesar”**, es necesario contactar al **administrador del sistema** para verificar que dichos nodos estén **en línea y funcionando correctamente**.
+
+### Mi usuario no existe o no puedo ingresar
+
+En este caso debes consultar con el **administrador del sistema** para verificar que tu usuario exista en la base de datos.
+Si tu instalación utiliza **LDAP**, asegúrate de que tu usuario esté incluido en el **grupo correspondiente**.
+
+### No aparece mi recurso en la búsqueda
+
+Si realizaste cambios y no se ven reflejados en la búsqueda, puede existir un problema con la **indexación**.
+
+* Verifica que el índice esté configurado correctamente (ver sección inferior de esta documentación).
+* Si realizaste cambios en el formulario, es necesario **regenerar el índice** para que la búsqueda reconozca la nueva estructura de datos.
+
+### No puedo ver el recurso que hizo otro usuario
+Si otro usuario creó un recurso y tú no puedes verlo, puede deberse a lo siguiente:
+- El recurso fue guardado como borrador. Si no tienes el rol de `super-editor`, no podrás visualizarlo.
+- No cuentas con los niveles de acceso necesarios. En ese caso, verifica que el recurso tenga un nivel de acceso compatible con tu usuario o que haya sido publicado como recurso público.
+
 
 ## 🎮 Uso de GPU para Tareas Avanzadas
 
