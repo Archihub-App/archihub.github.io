@@ -22,6 +22,7 @@ description: ''
 - Se mejora la implementación gráfica del arbol de recursos para identificar mejor cuando un recurso se puede o no seleccionar
 - Se mejora la UX y UI en general para el formulario de catalogación
 - Se soluciona error que se disparaba en la interfaz cuando el token había expirado y que el usuario iba a la página de login
+- Se mejora la implementación de los recortes para imágenes y documentos al previsualizar automáticamente el recorte sin la necesidad de un click adicional
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
