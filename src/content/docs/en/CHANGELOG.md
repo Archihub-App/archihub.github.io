@@ -22,6 +22,7 @@ description: ''
 - The graphical implementation of the resource tree is improved to better indicate when a resource can or cannot be selected.
 - The UX and UI for the cataloging form are improved overall.
 - Fixed an interface error that occurred when the token had expired and the user navigated to the login page
+- Improved the implementation of snippets for images and documents by automatically previewing the snippet without requiring an additional click.
 
 ### Security
 - The access levels for image galleries are adjusted

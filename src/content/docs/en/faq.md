@@ -18,6 +18,48 @@ It works perfectly on modest servers. As a reference, **ArchiHUB runs smoothly o
 ### Does ArchiHUB work on Windows, macOS, and Linux?
 Yes. Being based on Docker, it is completely cross-platform (Windows, macOS, Linux, including ARM64 architectures like Raspberry Pi).
 
+## ❗ Common Errors
+
+### I saved a resource but I can’t see it in the cataloging module
+
+ArchiHUB allows you to **save** or **publish** resources.
+If you just saved a resource and don’t see it in the cataloging module, it’s likely saved as a **draft**.
+In the left sidebar, enable **“View drafts”**. There you will find all your drafts.
+
+Keep in mind that a resource **will only be visible to other users once you publish it**.
+Drafts can only be seen by you and users with the **super-editor** role.
+
+### Files appear with the “Unprocessed” label
+
+When you upload a file to ArchiHUB, it is **not processed automatically by default**.
+To enable automatic processing, review the **Getting Started** section of the documentation.
+
+If you uploaded files **before** enabling automatic processing, you must process them **manually**.
+In the resource detail view, and if your user has the required permissions, you will see an option in the sidebar to **process the files**.
+
+### I processed the files but they are still marked as “Unprocessed”
+
+ArchiHUB uses **independent processing nodes** separate from the main application to handle file processing.
+If you triggered processing and the file remains marked as **“Unprocessed”**, you should contact the **system administrator** to verify that these nodes are **online and functioning correctly**.
+
+### My user does not exist or I cannot log in
+
+You should contact the **system administrator** to verify that your user exists in the database.
+If your installation uses **LDAP**, ensure that your user is included in the **correct group**.
+
+### My resource doesn’t appear in the search
+
+If you made changes that are not showing up in the search results, there may be an issue with **indexing**.
+
+* Verify that the index is correctly configured (see the section at the end of this document).
+* If you modified the form, you need to **regenerate the index** so the search engine recognizes the updated data structure.
+
+### I can't see a resource created by another user
+
+If another user created a resource and you cannot see it, it may be due to one of the following reasons:
+
+* The resource was saved as a draft. If you do not have the `super-editor` role, you won’t be able to view it.
+* You do not have the required access levels. Check whether the resource has an access level compatible with your user, or whether it has been published as a public resource.
 
 ## 🎮 GPU Usage for Advanced Tasks
 
