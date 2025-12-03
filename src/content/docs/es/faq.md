@@ -37,6 +37,10 @@ Para activar el procesamiento automático, revisa los **primeros pasos de la doc
 Si cargaste archivos **antes** de habilitar este procesamiento, deberás procesarlos **manualmente**.
 En la vista de detalle del recurso, y si tu usuario tiene permisos, verás en la barra lateral la opción para **procesar los archivos**.
 
+### Procesé los archivos pero siguen con la etiqueta "Sin procesar"
+ArchiHUB utiliza **nodos de procesamiento independientes** del aplicativo para manejar los archivos.
+Si lanzaste el procesamiento y el archivo continúa marcado como **“Sin procesar”**, es necesario contactar al **administrador del sistema** para verificar que dichos nodos estén **en línea y funcionando correctamente**.
+
 ### Mi usuario no existe o no puedo ingresar
 
 En este caso debes consultar con el **administrador del sistema** para verificar que tu usuario exista en la base de datos.
