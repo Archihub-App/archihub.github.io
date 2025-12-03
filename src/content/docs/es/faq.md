@@ -53,6 +53,11 @@ Si realizaste cambios y no se ven reflejados en la búsqueda, puede existir un p
 * Verifica que el índice esté configurado correctamente (ver sección inferior de esta documentación).
 * Si realizaste cambios en el formulario, es necesario **regenerar el índice** para que la búsqueda reconozca la nueva estructura de datos.
 
+### No puedo ver el recurso que hizo otro usuario
+Si otro usuario creó un recurso y tú no puedes verlo, puede deberse a lo siguiente:
+- El recurso fue guardado como borrador. Si no tienes el rol de `super-editor`, no podrás visualizarlo.
+- No cuentas con los niveles de acceso necesarios. En ese caso, verifica que el recurso tenga un nivel de acceso compatible con tu usuario o que haya sido publicado como recurso público.
+
 
 ## 🎮 Uso de GPU para Tareas Avanzadas
 
