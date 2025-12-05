@@ -24,6 +24,7 @@ description: ''
 - The UX and UI for the cataloging form are improved overall.
 - Fixed an interface error that occurred when the token had expired and the user navigated to the login page
 - Improved the implementation of snippets for images and documents by automatically previewing the snippet without requiring an additional click.
+- In the model selector for providers within the chat window, the option is enabled for the user to enter the name of any model they want.
 
 ### Security
 - The access levels for image galleries are adjusted
