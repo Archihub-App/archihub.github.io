@@ -26,6 +26,7 @@ description: ''
 - Se mejora la implementación de los recortes para imágenes y documentos al previsualizar automáticamente el recorte sin la necesidad de un click adicional
 - En el selector de modelos para los proveedores desde la ventana de chat, se habilita la opcion que el usuario ponga el nombre del modelo que desee
 - Se agrega la posibilidad de copiar y pegar texto de las conversaciones con el asistente de IA
+- Se eliminan  los modelos que no son de `chat` en la ventana de conversación con la IA
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
