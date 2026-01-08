@@ -27,6 +27,7 @@ description: ''
 - In the model selector for providers within the chat window, the option is enabled for the user to enter the name of any model they want.
 - Added the ability to copy and paste text from conversations with the AI assistant.
 - Removed non-`chat` models from the AI conversation window
+- Updated the frontend to Node.js version 24
 
 ### Security
 - The access levels for image galleries are adjusted
