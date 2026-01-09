@@ -28,6 +28,7 @@ description: ''
 - Se agrega la posibilidad de copiar y pegar texto de las conversaciones con el asistente de IA
 - Se eliminan  los modelos que no son de `chat` en la ventana de conversación con la IA
 - Se actualiza el frontend a la versión 24 de node.js
+- En los formularios de catalogación se mejora la petición para los niveles de acceso guardando en el cache del navegador para no repetir varias peticiones iguales
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

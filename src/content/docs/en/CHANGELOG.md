@@ -28,6 +28,7 @@ description: ''
 - Added the ability to copy and paste text from conversations with the AI assistant.
 - Removed non-`chat` models from the AI conversation window
 - Updated the frontend to Node.js version 24
+- Improved access-level requests in cataloging forms by caching them in the browser to avoid repeated identical requests
 
 ### Security
 - The access levels for image galleries are adjusted
