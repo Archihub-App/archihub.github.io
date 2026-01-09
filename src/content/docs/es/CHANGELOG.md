@@ -29,6 +29,7 @@ description: ''
 - Se eliminan  los modelos que no son de `chat` en la ventana de conversación con la IA
 - Se actualiza el frontend a la versión 24 de node.js
 - En los formularios de catalogación se mejora la petición para los niveles de acceso guardando en el cache del navegador para no repetir varias peticiones iguales
+- En la vista de archivo, se vuelven a poner los metadatos en una ventana flotante sobre la vista del documento o galería
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

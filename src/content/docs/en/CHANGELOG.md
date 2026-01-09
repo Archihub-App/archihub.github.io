@@ -29,6 +29,7 @@ description: ''
 - Removed non-`chat` models from the AI conversation window
 - Updated the frontend to Node.js version 24
 - Improved access-level requests in cataloging forms by caching them in the browser to avoid repeated identical requests
+- In the file view, metadata has been restored to a floating panel overlaying the document or gallery view
 
 ### Security
 - The access levels for image galleries are adjusted
