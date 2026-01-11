@@ -17,6 +17,7 @@ description: ''
 - A favorites manager is added to the `Articles` editor, allowing users to manage saved resources or files and link them to the text
 - Added the ability to create clippings for videos and audio files.
 - Pagination has been added for audio and video transcriptions.
+- Pagination for the gallery view of query views
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

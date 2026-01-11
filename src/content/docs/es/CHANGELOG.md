@@ -17,6 +17,7 @@ description: ''
 - Se agrega un gestor de favoritos para el editor de los `Artículos` para gestionar los recursos o archivos guardados por el usuario y relacionarlos al texto
 - Se agrega la posibilidad de crear un recorte para videos y audios
 - Se agrega paginado para las transcripciones de audio y video
+- Paginado para la vista galería de las vistas de consulta
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
