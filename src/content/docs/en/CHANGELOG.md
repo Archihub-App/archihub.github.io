@@ -18,6 +18,7 @@ description: ''
 - Added the ability to create clippings for videos and audio files.
 - Pagination has been added for audio and video transcriptions.
 - Pagination for the gallery view of query views
+- Filters are implemented in the gallery view
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

@@ -18,6 +18,7 @@ description: ''
 - Se agrega la posibilidad de crear un recorte para videos y audios
 - Se agrega paginado para las transcripciones de audio y video
 - Paginado para la vista galería de las vistas de consulta
+- Se implementan filtros en la vista de galería
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
