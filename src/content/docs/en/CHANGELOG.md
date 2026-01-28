@@ -32,6 +32,8 @@ description: ''
 - Updated the frontend to Node.js version 24
 - Improved access-level requests in cataloging forms by caching them in the browser to avoid repeated identical requests
 - In the file view, metadata has been restored to a floating panel overlaying the document or gallery view
+- Implemented improvements to overall application loading times
+- Added OpenStreetMap (OSM) maps for resource metadata
 
 ### Security
 - The access levels for image galleries are adjusted
