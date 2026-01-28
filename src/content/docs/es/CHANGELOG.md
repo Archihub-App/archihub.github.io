@@ -17,6 +17,8 @@ description: ''
 - Se agrega un gestor de favoritos para el editor de los `Artículos` para gestionar los recursos o archivos guardados por el usuario y relacionarlos al texto
 - Se agrega la posibilidad de crear un recorte para videos y audios
 - Se agrega paginado para las transcripciones de audio y video
+- Paginado para la vista galería de las vistas de consulta
+- Se implementan filtros en la vista de galería
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
@@ -28,6 +30,10 @@ description: ''
 - Se agrega la posibilidad de copiar y pegar texto de las conversaciones con el asistente de IA
 - Se eliminan  los modelos que no son de `chat` en la ventana de conversación con la IA
 - Se actualiza el frontend a la versión 24 de node.js
+- En los formularios de catalogación se mejora la petición para los niveles de acceso guardando en el cache del navegador para no repetir varias peticiones iguales
+- En la vista de archivo, se vuelven a poner los metadatos en una ventana flotante sobre la vista del documento o galería
+- Se implementan mejoras para los tiempos generales de carga del aplicativo
+- Se implementan mapas OSM para los metadatos de los recursos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

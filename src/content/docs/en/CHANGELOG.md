@@ -17,6 +17,8 @@ description: ''
 - A favorites manager is added to the `Articles` editor, allowing users to manage saved resources or files and link them to the text
 - Added the ability to create clippings for videos and audio files.
 - Pagination has been added for audio and video transcriptions.
+- Pagination for the gallery view of query views
+- Filters are implemented in the gallery view
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
@@ -28,6 +30,10 @@ description: ''
 - Added the ability to copy and paste text from conversations with the AI assistant.
 - Removed non-`chat` models from the AI conversation window
 - Updated the frontend to Node.js version 24
+- Improved access-level requests in cataloging forms by caching them in the browser to avoid repeated identical requests
+- In the file view, metadata has been restored to a floating panel overlaying the document or gallery view
+- Implemented improvements to overall application loading times
+- Added OpenStreetMap (OSM) maps for resource metadata
 
 ### Security
 - The access levels for image galleries are adjusted
