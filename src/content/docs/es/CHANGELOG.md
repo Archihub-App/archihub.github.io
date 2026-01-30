@@ -19,6 +19,8 @@ description: ''
 - Se agrega paginado para las transcripciones de audio y video
 - Paginado para la vista galería de las vistas de consulta
 - Se implementan filtros en la vista de galería
+- Se implementa la vista `blog` para cargar los `Artículos`
+- Se implementa la indexación de los `Artículos` para realizar búsqueda en los recursos con `Artículos`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
