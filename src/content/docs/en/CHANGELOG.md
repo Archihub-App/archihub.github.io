@@ -9,7 +9,7 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added default views for query interfaces, allowing users to start navigation in either list or gallery mode
+- Added default views for query interfaces, allowing users to start navigation in either list, gallery or blog mode
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - A new `Articles` component is added, allowing users to create blog posts using a Gutenberg-style editor and attach any resources or clippings they choose
 - Drag-and-drop is added to reorganize files in the cataloging form.
@@ -21,6 +21,7 @@ description: ''
 - Filters are implemented in the gallery view
 - Implemented the `blog` view to display `Articles`
 - Added indexing for `Articles`, enabling them to appear in resource search results
+- Implemented RSS support for `Articles`
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
@@ -36,6 +37,7 @@ description: ''
 - In the file view, metadata has been restored to a floating panel overlaying the document or gallery view
 - Implemented improvements to overall application loading times
 - Added OpenStreetMap (OSM) maps for resource metadata
+- Fixed the label name in the file list
 
 ### Security
 - The access levels for image galleries are adjusted
