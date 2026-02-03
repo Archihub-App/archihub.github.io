@@ -21,6 +21,7 @@ description: ''
 - Filters are implemented in the gallery view
 - Implemented the `blog` view to display `Articles`
 - Added indexing for `Articles`, enabling them to appear in resource search results
+- Implemented RSS support for `Articles`
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

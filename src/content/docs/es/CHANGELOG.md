@@ -21,6 +21,7 @@ description: ''
 - Se implementan filtros en la vista de galería
 - Se implementa la vista `blog` para cargar los `Artículos`
 - Se implementa la indexación de los `Artículos` para realizar búsqueda en los recursos con `Artículos`
+- Se implementa RSS para los `Artículos`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
