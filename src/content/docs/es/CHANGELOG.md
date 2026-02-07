@@ -22,6 +22,7 @@ description: ''
 - Se implementa la vista `blog` para cargar los `Artículos`
 - Se implementa la indexación de los `Artículos` para realizar búsqueda en los recursos con `Artículos`
 - Se implementa RSS para los `Artículos`
+- Se agrega metadato duración a los videos y audios
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

@@ -22,6 +22,7 @@ description: ''
 - Implemented the `blog` view to display `Articles`
 - Added indexing for `Articles`, enabling them to appear in resource search results
 - Implemented RSS support for `Articles`
+- Added duration metadata to videos and audios
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
