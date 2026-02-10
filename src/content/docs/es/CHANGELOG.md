@@ -22,6 +22,9 @@ description: ''
 - Se implementa la vista `blog` para cargar los `Artículos`
 - Se implementa la indexación de los `Artículos` para realizar búsqueda en los recursos con `Artículos`
 - Se implementa RSS para los `Artículos`
+- Se agrega metadato duración a los videos y audios
+- Se agrega nueva galería de recortes para imágenes, videos y audios en los `Artículos`
+- Se agrega soporte de `story maps` para los `Artículos`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
@@ -38,6 +41,7 @@ description: ''
 - Se implementan mejoras para los tiempos generales de carga del aplicativo
 - Se implementan mapas OSM para los metadatos de los recursos
 - Se arregla el nombre de la etiqueta en el listado de archivos
+- Se implementan polígonos en la vista OSM de los metadatos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

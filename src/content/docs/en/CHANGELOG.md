@@ -22,6 +22,9 @@ description: ''
 - Implemented the `blog` view to display `Articles`
 - Added indexing for `Articles`, enabling them to appear in resource search results
 - Implemented RSS support for `Articles`
+- Added duration metadata to videos and audios
+- Added a new clipping gallery for images, videos, and audio in `Articles`.
+- Added `story maps` support for `Articles`.
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
@@ -38,6 +41,7 @@ description: ''
 - Implemented improvements to overall application loading times
 - Added OpenStreetMap (OSM) maps for resource metadata
 - Fixed the label name in the file list
+- Implemented polygon support in the OSM metadata view.
 
 ### Security
 - The access levels for image galleries are adjusted
