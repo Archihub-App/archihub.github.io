@@ -25,6 +25,7 @@ description: ''
 - Added duration metadata to videos and audios
 - Added a new clipping gallery for images, videos, and audio in `Articles`.
 - Added `story maps` support for `Articles`.
+- Added `lazy load` to `Articles` galleries.
 
 ### Fixed
 - Fixed UI navigation issues in Firefox

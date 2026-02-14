@@ -25,6 +25,7 @@ description: ''
 - Se agrega metadato duración a los videos y audios
 - Se agrega nueva galería de recortes para imágenes, videos y audios en los `Artículos`
 - Se agrega soporte de `story maps` para los `Artículos`
+- Se agregan `lazy load` a las galerías de los `Artículos`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox
