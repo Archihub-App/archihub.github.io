@@ -26,6 +26,7 @@ description: ''
 - Se agrega nueva galería de recortes para imágenes, videos y audios en los `Artículos`
 - Se agrega soporte de `story maps` para los `Artículos`
 - Se agregan `lazy load` a las galerías de los `Artículos`
+- Se implementa `react-helmet` para mejoras en el `SEO`
 
 ### Fixed
 - Se soluciona temas de navegación en la UI en Firefox

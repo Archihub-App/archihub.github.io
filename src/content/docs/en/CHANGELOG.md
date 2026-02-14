@@ -26,6 +26,7 @@ description: ''
 - Added a new clipping gallery for images, videos, and audio in `Articles`.
 - Added `story maps` support for `Articles`.
 - Added `lazy load` to `Articles` galleries.
+- Implemented `react-helmet` to improve SEO.
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
