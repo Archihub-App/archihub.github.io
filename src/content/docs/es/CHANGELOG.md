@@ -3,14 +3,22 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.0] _beta_
+## [1.2.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado, galería o blog
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+
+## [1.2.0] _15 February 2026_
+
+### Added
+- Se agregan vistas por defecto para las vistas de consulta, el usuario puede iniciar la navegación bien sea en modo listado, galería o blog
 - Se agrega un nuevo componente de `Artículos` que permite crear entradas de blog usando un editor tipo Gutenberg y usando como anexos los recursos favoritos y recortes que escoja el usuario
 - Se agrega arrastrar y soltar para reorganizar los archivos en el formulario de catalogacion
 - Se agrega un nuevo gestor de recortes en el editor de los `Artículos` para mejorar la experiencia al momento de cargarlos al texto
@@ -45,8 +53,6 @@ description: ''
 - Se arregla el nombre de la etiqueta en el listado de archivos
 - Se implementan polígonos en la vista OSM de los metadatos
 
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [1.1.0] _20 November 2025_
 

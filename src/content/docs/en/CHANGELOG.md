@@ -3,14 +3,21 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.0] _beta_
+## [1.2.1] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added default views for query interfaces, allowing users to start navigation in either list, gallery or blog mode
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
+
+### Security
+- The access levels for image galleries are adjusted
+
+## [1.2.0] _15 February 2026_
+
+### Added
+- Added default views for query interfaces, allowing users to start navigation in either list, gallery or blog mode
 - A new `Articles` component is added, allowing users to create blog posts using a Gutenberg-style editor and attach any resources or clippings they choose
 - Drag-and-drop is added to reorganize files in the cataloging form.
 - A new clipping manager is added to the `Articles` editor to improve the experience when inserting clippings into the text
@@ -26,7 +33,7 @@ description: ''
 - Added a new clipping gallery for images, videos, and audio in `Articles`.
 - Added `story maps` support for `Articles`.
 - Added `lazy load` to `Articles` galleries.
-- Implemented `react-helmet` to improve SEO.
+- Implemented `react-helmet` to improve `SEO`.
 
 ### Fixed
 - Fixed UI navigation issues in Firefox
@@ -44,9 +51,6 @@ description: ''
 - Added OpenStreetMap (OSM) maps for resource metadata
 - Fixed the label name in the file list
 - Implemented polygon support in the OSM metadata view.
-
-### Security
-- The access levels for image galleries are adjusted
 
 ## [1.1.0] _20 November 2025_
 
