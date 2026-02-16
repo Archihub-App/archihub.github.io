@@ -11,6 +11,9 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
 
+### Fixed
+- Se migra el frontend a Next.js
+
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
 

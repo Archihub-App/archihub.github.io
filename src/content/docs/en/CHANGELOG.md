@@ -11,6 +11,9 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 
+### Fixed
+- Frontend gets migrated to Next.js
+
 ### Security
 - The access levels for image galleries are adjusted
 
