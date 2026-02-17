@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
+- Se implementa nueva ruta pública para polígonos geográficos
 
 ### Fixed
 - Se migra el frontend a Next.js
