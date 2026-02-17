@@ -13,6 +13,7 @@ description: ''
 
 ### Fixed
 - Frontend gets migrated to Next.js
+- Fixed an issue in the *Articles* favorites card: when the favorite is another *Article*, the excerpt is now correctly displayed on the card.
 
 ### Security
 - The access levels for image galleries are adjusted
