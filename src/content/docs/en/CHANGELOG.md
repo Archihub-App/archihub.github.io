@@ -14,7 +14,8 @@ description: ''
 
 ### Fixed
 - Frontend gets migrated to Next.js
-- Fixed an issue in the *Articles* favorites card: when the favorite is another *Article*, the excerpt is now correctly displayed on the card.
+- Fixed an issue in the *Articles* favorites card: when the favorite is another *Article*, the excerpt is now correctly displayed on the card
+- Fixed missing top handle bar in video, audio and document viewer
 
 ### Security
 - The access levels for image galleries are adjusted

@@ -15,6 +15,7 @@ description: ''
 ### Fixed
 - Se migra el frontend a Next.js
 - Se soluciona problema en la tarjeta de favoritos de los Artículos. Cuando el favorito es otro Artículo el extracto debe ser visible en la tarjeta
+- Se soluciona la barra superior de la ventana de metadatos en la vista de videos, audios y documentos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
