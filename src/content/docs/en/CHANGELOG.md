@@ -11,6 +11,7 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - New public route for geographic polygons
+- Added a new route and service for granular updates of resource metadata.
 
 ### Fixed
 - Frontend gets migrated to Next.js
