@@ -10,6 +10,14 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega un nuevo campo para las vistas de consulta en la cual se puede subir directamente la imagen que usará el sistema para esa vista
+- Se implementa nueva ruta pública para polígonos geográficos
+- Se agrega nueva ruta y servicio para actualización granular de los metadatos de los recursos
+
+### Fixed
+- Se migra el frontend a Next.js
+- Se soluciona problema en la tarjeta de favoritos de los Artículos. Cuando el favorito es otro Artículo el extracto debe ser visible en la tarjeta
+- Se soluciona la barra superior de la ventana de metadatos en la vista de videos, audios y documentos
+- Se ajusta el comportamiento de las ventanas para evitar arrastrar cuando se activa un `input`
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
