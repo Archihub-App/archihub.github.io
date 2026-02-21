@@ -21,7 +21,8 @@ description: ''
 ### Added
 - A new field is added to the query views, allowing users to directly upload the image that the system will use for that view
 - New public route for geographic polygons
-- Added a new route and service for granular updates of resource metadata.
+- Added a new route and service for granular updates of resource metadata
+- Loading indicator for the images gallery
 
 ### Fixed
 - Fixed an issue in the *Articles* favorites card: when the favorite is another *Article*, the excerpt is now correctly displayed on the card
