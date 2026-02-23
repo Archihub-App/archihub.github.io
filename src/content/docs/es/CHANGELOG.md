@@ -12,6 +12,8 @@ description: ''
 
 ### Fixed
 - Se migra el frontend a Next.js
+- Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
+- Se actualiza el estilo del chat con IA para simplificar UX
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
