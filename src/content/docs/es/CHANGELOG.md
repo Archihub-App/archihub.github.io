@@ -9,6 +9,9 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
+- Se agrega un nuevo campo para periodos de tiempo
+- Tablero de visualización para los logs del sistema
 
 ### Fixed
 - Se migra el frontend a Next.js
