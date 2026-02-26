@@ -9,7 +9,8 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added the ability for `plugins` to modify the Elasticsearch indexing configuration.
+- Added the ability for `plugins` to modify the Elasticsearch indexing configuration
+- Addded new temporal duration field
 
 ### Fixed
 - Frontend gets migrated to Next.js

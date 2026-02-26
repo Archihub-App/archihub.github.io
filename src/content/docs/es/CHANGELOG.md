@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
+- Se agrega un nuevo campo para periodos de tiempo
 
 ### Fixed
 - Se migra el frontend a Next.js
