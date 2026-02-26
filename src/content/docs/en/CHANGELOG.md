@@ -11,6 +11,7 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added the ability for `plugins` to modify the Elasticsearch indexing configuration
 - Addded new temporal duration field
+- Data visualization dashboard for the system logs
 
 ### Fixed
 - Frontend gets migrated to Next.js
