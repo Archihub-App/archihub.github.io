@@ -12,6 +12,7 @@ description: ''
 - Added the ability for `plugins` to modify the Elasticsearch indexing configuration
 - Addded new temporal duration field
 - Data visualization dashboard for the system logs
+- Added URL parameters for search filters
 
 ### Fixed
 - Frontend gets migrated to Next.js

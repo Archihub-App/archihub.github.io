@@ -12,6 +12,7 @@ description: ''
 - Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
 - Se agrega un nuevo campo para periodos de tiempo
 - Tablero de visualización para los logs del sistema
+- Se agregan parámetros en la URL para los filtros de búsqueda
 
 ### Fixed
 - Se migra el frontend a Next.js
