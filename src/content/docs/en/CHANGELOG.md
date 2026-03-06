@@ -15,6 +15,7 @@ description: ''
 - Added URL parameters for search filters
 - Soft delete of resources is implemented
 - Improved logs handling from the frontend and backend to allow filtering
+- Added the option to select multiple resources for deletion in the cataloging module
 
 ### Fixed
 - Frontend gets migrated to Next.js

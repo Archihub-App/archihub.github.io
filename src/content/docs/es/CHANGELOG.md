@@ -14,6 +14,7 @@ description: ''
 - Tablero de visualización para los logs del sistema
 - Se agregan parámetros en la URL para los filtros de búsqueda
 - Se implementa borrado lógico y no destructivo de los recursos en la base de datos
+- Se agrega la opción de seleccionar varios recursos para borrar en el módulo de catalogación
 
 ### Fixed
 - Se migra el frontend a Next.js
