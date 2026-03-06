@@ -13,6 +13,7 @@ description: ''
 - Se agrega un nuevo campo para periodos de tiempo
 - Tablero de visualización para los logs del sistema
 - Se agregan parámetros en la URL para los filtros de búsqueda
+- Se implementa borrado lógico y no destructivo de los recursos en la base de datos
 
 ### Fixed
 - Se migra el frontend a Next.js

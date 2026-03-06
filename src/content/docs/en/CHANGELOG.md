@@ -13,6 +13,7 @@ description: ''
 - Addded new temporal duration field
 - Data visualization dashboard for the system logs
 - Added URL parameters for search filters
+- Soft delete of resources is implemented
 
 ### Fixed
 - Frontend gets migrated to Next.js
