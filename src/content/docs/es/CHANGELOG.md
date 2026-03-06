@@ -13,11 +13,14 @@ description: ''
 - Se agrega un nuevo campo para periodos de tiempo
 - Tablero de visualización para los logs del sistema
 - Se agregan parámetros en la URL para los filtros de búsqueda
+- Se implementa borrado lógico y no destructivo de los recursos en la base de datos
+- Se agrega la opción de seleccionar varios recursos para borrar en el módulo de catalogación
 
 ### Fixed
 - Se migra el frontend a Next.js
 - Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
 - Se actualiza el estilo del chat con IA para simplificar UX
+- Se mejora la implementación de los logs tanto en el front como en el back para filtrado
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
