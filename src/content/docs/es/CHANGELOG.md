@@ -15,6 +15,7 @@ description: ''
 - Se agregan parámetros en la URL para los filtros de búsqueda
 - Se implementa borrado lógico y no destructivo de los recursos en la base de datos
 - Se agrega la opción de seleccionar varios recursos para borrar en el módulo de catalogación
+- Se implementan mensajes de advertencia al eliminar tipos de contenido
 
 ### Fixed
 - Se migra el frontend a Next.js
