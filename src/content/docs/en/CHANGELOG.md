@@ -17,6 +17,7 @@ description: ''
 - Improved logs handling from the frontend and backend to allow filtering
 - Added the option to select multiple resources for deletion in the cataloging module
 - New warning messages for when deleting a post type
+- Added a view to review and/or recover deleted resources
 
 ### Fixed
 - Frontend gets migrated to Next.js
