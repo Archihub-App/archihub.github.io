@@ -24,6 +24,7 @@ description: ''
 - Frontend gets migrated to Next.js
 - Updated `package.json` to remove unnused dependencies
 - Updated AI chat UI to improve UX
+- Improved logs view dashboard to allow filtering by user and type
 - Fixed loading on views list when no views are created yet
 
 ### Security
