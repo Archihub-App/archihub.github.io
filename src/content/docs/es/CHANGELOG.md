@@ -18,6 +18,7 @@ description: ''
 - Se implementan mensajes de advertencia al eliminar tipos de contenido
 - Se agrega una vista para revisar y/o recuperar recursos eliminados
 - Se agrega campo para cargar archivos al campo múltiple
+- Se agrega campo para selección de un listado al campo múltiple
 
 ### Fixed
 - Se migra el frontend a Next.js
