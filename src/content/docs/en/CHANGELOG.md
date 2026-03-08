@@ -18,6 +18,7 @@ description: ''
 - Added the option to select multiple resources for deletion in the cataloging module
 - New warning messages for when deleting a post type
 - Added a view to review and/or recover deleted resources
+- Added file upload to repeater fields
 
 ### Fixed
 - Frontend gets migrated to Next.js
