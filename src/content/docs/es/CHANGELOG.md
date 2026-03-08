@@ -23,6 +23,7 @@ description: ''
 - Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
 - Se actualiza el estilo del chat con IA para simplificar UX
 - Se mejora la implementación de los logs tanto en el front como en el back para filtrado
+- Se soluciona la animación de cargando en el listado de vistas de consulta cuando no hay vistas para mostrar aún
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
