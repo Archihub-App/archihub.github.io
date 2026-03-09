@@ -15,12 +15,16 @@ description: ''
 - Se agregan parámetros en la URL para los filtros de búsqueda
 - Se implementa borrado lógico y no destructivo de los recursos en la base de datos
 - Se agrega la opción de seleccionar varios recursos para borrar en el módulo de catalogación
+- Se implementan mensajes de advertencia al eliminar tipos de contenido
+- Se agrega una vista para revisar y/o recuperar recursos eliminados
+- Se agrega campo para cargar archivos al campo múltiple
 
 ### Fixed
 - Se migra el frontend a Next.js
 - Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
 - Se actualiza el estilo del chat con IA para simplificar UX
 - Se mejora la implementación de los logs tanto en el front como en el back para filtrado
+- Se soluciona la animación de cargando en el listado de vistas de consulta cuando no hay vistas para mostrar aún
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.

@@ -16,11 +16,16 @@ description: ''
 - Soft delete of resources is implemented
 - Improved logs handling from the frontend and backend to allow filtering
 - Added the option to select multiple resources for deletion in the cataloging module
+- New warning messages for when deleting a post type
+- Added a view to review and/or recover deleted resources
+- Added file upload to repeater fields
 
 ### Fixed
 - Frontend gets migrated to Next.js
 - Updated `package.json` to remove unnused dependencies
 - Updated AI chat UI to improve UX
+- Improved logs view dashboard to allow filtering by user and type
+- Fixed loading on views list when no views are created yet
 
 ### Security
 - The access levels for image galleries are adjusted
