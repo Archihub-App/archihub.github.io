@@ -19,6 +19,7 @@ description: ''
 - New warning messages for when deleting a post type
 - Added a view to review and/or recover deleted resources
 - Added file upload to repeater fields
+- Added select from list to repeater fields
 
 ### Fixed
 - Frontend gets migrated to Next.js
