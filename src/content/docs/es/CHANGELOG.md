@@ -3,14 +3,23 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.2] _beta_
+## [1.2.3] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+
+### Fixed
+- Se migra el frontend a Next.js
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes.
+
+## [1.2.2] _11 March 2026_
+
+### Added
 - Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
-- Se agrega un nuevo campo para periodos de tiempo
 - Tablero de visualización para los logs del sistema
 - Se agregan parámetros en la URL para los filtros de búsqueda
 - Se implementa borrado lógico y no destructivo de los recursos en la base de datos
@@ -21,14 +30,10 @@ description: ''
 - Se agrega campo para selección de un listado al campo múltiple
 
 ### Fixed
-- Se migra el frontend a Next.js
 - Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
 - Se actualiza el estilo del chat con IA para simplificar UX
 - Se mejora la implementación de los logs tanto en el front como en el back para filtrado
 - Se soluciona la animación de cargando en el listado de vistas de consulta cuando no hay vistas para mostrar aún
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
 
 ## [1.2.1] _20 February 2026_
 
