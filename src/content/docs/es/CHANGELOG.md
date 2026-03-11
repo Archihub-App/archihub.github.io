@@ -14,7 +14,8 @@ description: ''
 - Se migra el frontend a Next.js
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
+- Se ajustan los niveles de acceso para las galerías de imágenes
+- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
 
 ## [1.2.2] _11 March 2026_
 

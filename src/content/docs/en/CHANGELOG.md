@@ -15,6 +15,7 @@ description: ''
 
 ### Security
 - The access levels for image galleries are adjusted
+- New option to block or allow only metadata visualization for resource dependending on access level
 
 ## [1.2.2] _11 March 2026_
 
