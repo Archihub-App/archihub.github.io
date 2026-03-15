@@ -12,6 +12,7 @@ description: ''
 
 ### Fixed
 - Frontend gets migrated to Next.js
+- Added file types as a search filter in the index
 
 ### Security
 - The access levels for image galleries are adjusted

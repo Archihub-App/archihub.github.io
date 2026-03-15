@@ -12,6 +12,7 @@ description: ''
 
 ### Fixed
 - Se migra el frontend a Next.js
+- Se agregan los tipos de archivo como filtro de búsqueda en el índice
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
