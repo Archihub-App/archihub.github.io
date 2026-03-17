@@ -12,6 +12,9 @@ description: ''
 
 ### Fixed
 - Frontend gets migrated to Next.js
+- Added file types as a search filter in the index
+- Reimplemented from scratch the file uploader component
+- Reimplemented from scratch the JSON visualizer component
 
 ### Security
 - The access levels for image galleries are adjusted
