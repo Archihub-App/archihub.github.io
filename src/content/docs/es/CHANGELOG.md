@@ -3,25 +3,41 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.2] _beta_
+## [1.2.3] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
-- Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
-- Se agrega un nuevo campo para periodos de tiempo
-- Tablero de visualización para los logs del sistema
-- Se agregan parámetros en la URL para los filtros de búsqueda
 
 ### Fixed
 - Se migra el frontend a Next.js
-- Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
-- Se actualiza el estilo del chat con IA para simplificar UX
-- Se quita el selector múltiple de la vista de consulta
+- Se agregan los tipos de archivo como filtro de búsqueda en el índice
+- Se reimplementa el componente para cargar archivos
+- Se reimplementa el componente para visualizar estructuras JSON
 
 ### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes.
+- Se ajustan los niveles de acceso para las galerías de imágenes
+- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
+
+## [1.2.2] _11 March 2026_
+
+### Added
+- Se agrega la posibilidad de que los `plugins` modifiquen la configuración de indexación de Elasticsearch
+- Tablero de visualización para los logs del sistema
+- Se agregan parámetros en la URL para los filtros de búsqueda
+- Se implementa borrado lógico y no destructivo de los recursos en la base de datos
+- Se agrega la opción de seleccionar varios recursos para borrar en el módulo de catalogación
+- Se implementan mensajes de advertencia al eliminar tipos de contenido
+- Se agrega una vista para revisar y/o recuperar recursos eliminados
+- Se agrega campo para cargar archivos al campo múltiple
+- Se agrega campo para selección de un listado al campo múltiple
+
+### Fixed
+- Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
+- Se actualiza el estilo del chat con IA para simplificar UX
+- Se mejora la implementación de los logs tanto en el front como en el back para filtrado
+- Se soluciona la animación de cargando en el listado de vistas de consulta cuando no hay vistas para mostrar aún
 
 ## [1.2.1] _20 February 2026_
 

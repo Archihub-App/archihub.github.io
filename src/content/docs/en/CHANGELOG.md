@@ -3,25 +3,42 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.2] _beta_
+## [1.2.3] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
-- Added the ability for `plugins` to modify the Elasticsearch indexing configuration
-- Addded new temporal duration field
-- Data visualization dashboard for the system logs
-- Added URL parameters for search filters
 
 ### Fixed
 - Frontend gets migrated to Next.js
-- Updated `package.json` to remove unnused dependencies
-- Updated AI chat UI to improve UX
-- Removed multiple select from search view
+- Added file types as a search filter in the index
+- Reimplemented from scratch the file uploader component
+- Reimplemented from scratch the JSON visualizer component
 
 ### Security
 - The access levels for image galleries are adjusted
+- New option to block or allow only metadata visualization for resource dependending on access level
+
+## [1.2.2] _11 March 2026_
+
+### Added
+- Added the ability for `plugins` to modify the Elasticsearch indexing configuration
+- Data visualization dashboard for the system logs
+- Added URL parameters for search filters
+- Soft delete of resources is implemented
+- Improved logs handling from the frontend and backend to allow filtering
+- Added the option to select multiple resources for deletion in the cataloging module
+- New warning messages for when deleting a post type
+- Added a view to review and/or recover deleted resources
+- Added file upload to repeater fields
+- Added select from list to repeater fields
+
+### Fixed
+- Updated `package.json` to remove unnused dependencies
+- Updated AI chat UI to improve UX
+- Improved logs view dashboard to allow filtering by user and type
+- Fixed loading on views list when no views are created yet
 
 ## [1.2.1] _20 February 2026_
 
