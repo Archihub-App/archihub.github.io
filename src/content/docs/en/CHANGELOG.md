@@ -18,6 +18,7 @@ description: ''
 - Frontend gets migrated to Next.js
 - Updated `package.json` to remove unnused dependencies
 - Updated AI chat UI to improve UX
+- Removed multiple select from search view
 
 ### Security
 - The access levels for image galleries are adjusted

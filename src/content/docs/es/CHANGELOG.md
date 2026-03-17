@@ -18,6 +18,7 @@ description: ''
 - Se migra el frontend a Next.js
 - Se actualiza el `package.json` del frontend para limpiar dependencias sin usar
 - Se actualiza el estilo del chat con IA para simplificar UX
+- Se quita el selector múltiple de la vista de consulta
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes.
