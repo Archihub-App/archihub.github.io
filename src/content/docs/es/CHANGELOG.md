@@ -16,6 +16,8 @@ description: ''
 - Se agregan los tipos de archivo como filtro de búsqueda en el índice
 - Se reimplementa el componente para cargar archivos
 - Se reimplementa el componente para visualizar estructuras JSON
+- Se arregla error en la carga de favoritos cuando el usuario no tiene ninguno
+- Se soluciona error al cargar los plugins cuando el plugin está desactivado y no existen los módulos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
