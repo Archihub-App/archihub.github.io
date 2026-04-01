@@ -9,12 +9,15 @@ description: ''
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Added general web settings configuration from the admin panel
 
 ### Fixed
 - Frontend gets migrated to Next.js
 - Added file types as a search filter in the index
 - Reimplemented from scratch the file uploader component
 - Reimplemented from scratch the JSON visualizer component
+- Error on favorites load when user doesn't have any
+- Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
 
 ### Security
 - The access levels for image galleries are adjusted
