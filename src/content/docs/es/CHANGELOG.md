@@ -9,12 +9,15 @@ description: ''
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se agrega configuración general del sitio desde el panel de administración
 
 ### Fixed
 - Se migra el frontend a Next.js
 - Se agregan los tipos de archivo como filtro de búsqueda en el índice
 - Se reimplementa el componente para cargar archivos
 - Se reimplementa el componente para visualizar estructuras JSON
+- Se arregla error en la carga de favoritos cuando el usuario no tiene ninguno
+- Se soluciona error al cargar los plugins cuando el plugin está desactivado y no existen los módulos
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
