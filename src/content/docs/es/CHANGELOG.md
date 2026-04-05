@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.3] _beta_
+## [1.3.0] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
