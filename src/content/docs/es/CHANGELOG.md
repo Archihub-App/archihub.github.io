@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega configuración general del sitio desde el panel de administración
+- Se implementa soporte para MCP
 
 ### Fixed
 - Se migra el frontend a Next.js

@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
+- Added MCP support
 
 ### Fixed
 - Frontend gets migrated to Next.js
