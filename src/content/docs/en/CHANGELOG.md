@@ -3,13 +3,14 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.3] _beta_
+## [1.3.0] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
+- Added MCP support
 
 ### Fixed
 - Frontend gets migrated to Next.js

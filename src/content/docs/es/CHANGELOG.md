@@ -3,13 +3,14 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.3] _beta_
+## [1.3.0] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega configuración general del sitio desde el panel de administración
+- Se implementa soporte para MCP
 
 ### Fixed
 - Se migra el frontend a Next.js
