@@ -18,6 +18,7 @@ description: ''
 - Reimplemented from scratch the JSON visualizer component
 - Error on favorites load when user doesn't have any
 - Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
+- Multple processing of the same kind are now posible in the record view
 
 ### Security
 - The access levels for image galleries are adjusted
