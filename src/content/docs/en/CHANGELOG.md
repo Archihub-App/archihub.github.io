@@ -3,7 +3,7 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.2.3] _beta_
+## [1.3.0] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
@@ -11,6 +11,7 @@ description: ''
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
 - Added stream support for displaying real time thinking and response generation on the frontend
+- Added MCP support
 
 ### Fixed
 - Frontend gets migrated to Next.js
