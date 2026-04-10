@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
+- Added stream support for displaying real time thinking and response generation on the frontend
 - Added MCP support
 
 ### Fixed
@@ -19,6 +20,7 @@ description: ''
 - Reimplemented from scratch the JSON visualizer component
 - Error on favorites load when user doesn't have any
 - Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
+- Multple processing of the same kind are now posible in the record view
 
 ### Security
 - The access levels for image galleries are adjusted

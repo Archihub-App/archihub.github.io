@@ -10,6 +10,7 @@ description: ''
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega configuración general del sitio desde el panel de administración
+- Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se implementa soporte para MCP
 
 ### Fixed
@@ -19,6 +20,7 @@ description: ''
 - Se reimplementa el componente para visualizar estructuras JSON
 - Se arregla error en la carga de favoritos cuando el usuario no tiene ninguno
 - Se soluciona error al cargar los plugins cuando el plugin está desactivado y no existen los módulos
+- Ahora se pueden visualizar múltiples procesamientos del mismo tipo en la vista de archivo
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
