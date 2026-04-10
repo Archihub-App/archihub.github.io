@@ -10,6 +10,7 @@ description: ''
 - Implemented a timezone standard for display in the frontend
 - Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
+- Added stream support for displaying real time thinking and response generation on the frontend
 
 ### Fixed
 - Frontend gets migrated to Next.js
