@@ -12,6 +12,7 @@ description: ''
 - Added general web settings configuration from the admin panel
 - Added stream support for displaying real time thinking and response generation on the frontend
 - Added MCP support
+- Added labelling support
 
 ### Fixed
 - Frontend gets migrated to Next.js
