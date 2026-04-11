@@ -12,6 +12,7 @@ description: ''
 - Se agrega configuración general del sitio desde el panel de administración
 - Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se implementa soporte para MCP
+- Se agrega soporte independiente para el etiquetado
 
 ### Fixed
 - Se migra el frontend a Next.js
