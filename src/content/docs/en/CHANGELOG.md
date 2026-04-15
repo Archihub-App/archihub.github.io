@@ -13,6 +13,8 @@ description: ''
 - Added stream support for displaying real time thinking and response generation on the frontend
 - Added MCP support
 - Added labelling support
+- Launched an advanced node-based orchestration system to automate complex data processing tasks.
+- Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
 
 ### Fixed
 - Frontend gets migrated to Next.js
@@ -22,6 +24,7 @@ description: ''
 - Error on favorites load when user doesn't have any
 - Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
 - Multple processing of the same kind are now posible in the record view
+- Implemented `@classmethod` instead of `instance` for PluginClass
 
 ### Security
 - The access levels for image galleries are adjusted
