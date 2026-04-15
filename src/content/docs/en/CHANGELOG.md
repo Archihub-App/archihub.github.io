@@ -22,6 +22,7 @@ description: ''
 - Error on favorites load when user doesn't have any
 - Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
 - Multple processing of the same kind are now posible in the record view
+- Implemented `@classmethod` instead of `instance` for PluginClass
 
 ### Security
 - The access levels for image galleries are adjusted

@@ -22,6 +22,7 @@ description: ''
 - Se arregla error en la carga de favoritos cuando el usuario no tiene ninguno
 - Se soluciona error al cargar los plugins cuando el plugin está desactivado y no existen los módulos
 - Ahora se pueden visualizar múltiples procesamientos del mismo tipo en la vista de archivo
+- Se implementa `@classmethod` en vez de `instance` para PluginClass
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
