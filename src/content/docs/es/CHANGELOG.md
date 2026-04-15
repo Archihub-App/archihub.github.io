@@ -13,6 +13,8 @@ description: ''
 - Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se implementa soporte para MCP
 - Se agrega soporte independiente para el etiquetado
+- Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos.
+- Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
 
 ### Fixed
 - Se migra el frontend a Next.js

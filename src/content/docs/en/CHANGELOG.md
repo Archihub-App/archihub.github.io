@@ -13,6 +13,8 @@ description: ''
 - Added stream support for displaying real time thinking and response generation on the frontend
 - Added MCP support
 - Added labelling support
+- Launched an advanced node-based orchestration system to automate complex data processing tasks.
+- Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
 
 ### Fixed
 - Frontend gets migrated to Next.js
