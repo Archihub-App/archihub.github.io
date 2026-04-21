@@ -15,6 +15,7 @@ description: ''
 - Se agrega soporte independiente para el etiquetado
 - Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos.
 - Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
+- Se implementa asistente de IA a nivel de aplicativo para búsquedas
 
 ### Fixed
 - Se migra el frontend a Next.js
