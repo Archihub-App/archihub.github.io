@@ -16,6 +16,7 @@ description: ''
 - Launched an advanced node-based orchestration system to automate complex data processing tasks.
 - Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
 - AI asistant at app level for search
+- Added support for `skills` using markdown files
 
 ### Fixed
 - Frontend gets migrated to Next.js

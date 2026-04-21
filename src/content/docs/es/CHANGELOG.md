@@ -16,6 +16,7 @@ description: ''
 - Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos.
 - Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
 - Se implementa asistente de IA a nivel de aplicativo para búsquedas
+- Se agrega suporte para `skills` usando archivos markdown
 
 ### Fixed
 - Se migra el frontend a Next.js
