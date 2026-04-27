@@ -28,6 +28,7 @@ description: ''
 - Ahora se pueden visualizar múltiples procesamientos del mismo tipo en la vista de archivo
 - Se implementa `@classmethod` en vez de `instance` para PluginClass
 - Se agrega el asistente de IA en la vista de documentos
+- The current page in document or image gallery gets saved in a URL param
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
