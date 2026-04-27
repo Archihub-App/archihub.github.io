@@ -27,6 +27,8 @@ description: ''
 - Fixed an error when loading plugins if the plugin was disabled and its modules did not exist
 - Multple processing of the same kind are now posible in the record view
 - Implemented `@classmethod` instead of `instance` for PluginClass
+- Added the AI asitant in the document viewer
+- La página en las galerías de imágenes o documentos se guarda en la URL como un param
 
 ### Security
 - The access levels for image galleries are adjusted
