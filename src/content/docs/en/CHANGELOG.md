@@ -18,6 +18,7 @@ description: ''
 - AI asistant at app level for search
 - Added support for `skills` using markdown files
 - AI messaging now support both image input and OCR for the document viewer
+- Added image previsualization in the editor view
 
 ### Fixed
 - Frontend gets migrated to Next.js
