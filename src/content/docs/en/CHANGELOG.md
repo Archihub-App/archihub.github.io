@@ -17,6 +17,7 @@ description: ''
 - Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
 - AI asistant at app level for search
 - Added support for `skills` using markdown files
+- AI messaging now support both image input and OCR for the document viewer
 
 ### Fixed
 - Frontend gets migrated to Next.js

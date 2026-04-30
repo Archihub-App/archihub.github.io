@@ -17,6 +17,7 @@ description: ''
 - Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
 - Se implementa asistente de IA a nivel de aplicativo para búsquedas
 - Se agrega suporte para `skills` usando archivos markdown
+- La ventana de dialogo con LLM en la vista documento permite usar la imagen del documento como input o el OCR si existe
 
 ### Fixed
 - Se migra el frontend a Next.js
