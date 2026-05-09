@@ -32,6 +32,7 @@ description: ''
 - Added the AI asitant in the document viewer
 - La página en las galerías de imágenes o documentos se guarda en la URL como un param
 - Resources is recycle bin do not show up in record metadata
+- Retry time for celery task to 12 hours to allow OCR Atlas tasks
 
 ### Security
 - The access levels for image galleries are adjusted
