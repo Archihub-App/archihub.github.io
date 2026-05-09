@@ -17,6 +17,8 @@ description: ''
 - Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
 - AI asistant at app level for search
 - Added support for `skills` using markdown files
+- AI messaging now support both image input and OCR for the document viewer
+- Added image previsualization in the editor view
 
 ### Fixed
 - Frontend gets migrated to Next.js
@@ -29,6 +31,8 @@ description: ''
 - Implemented `@classmethod` instead of `instance` for PluginClass
 - Added the AI asitant in the document viewer
 - La página en las galerías de imágenes o documentos se guarda en la URL como un param
+- Resources is recycle bin do not show up in record metadata
+- Retry time for celery task to 12 hours to allow OCR Atlas tasks
 
 ### Security
 - The access levels for image galleries are adjusted

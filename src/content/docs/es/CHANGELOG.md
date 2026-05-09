@@ -17,6 +17,8 @@ description: ''
 - Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
 - Se implementa asistente de IA a nivel de aplicativo para búsquedas
 - Se agrega suporte para `skills` usando archivos markdown
+- La ventana de dialogo con LLM en la vista documento permite usar la imagen del documento como input o el OCR si existe
+- Se agrega previsualización de imágenes en el editor
 
 ### Fixed
 - Se migra el frontend a Next.js
@@ -29,6 +31,8 @@ description: ''
 - Se implementa `@classmethod` en vez de `instance` para PluginClass
 - Se agrega el asistente de IA en la vista de documentos
 - The current page in document or image gallery gets saved in a URL param
+- Los recursos en la papelera ya no se muestran en la vista de archivos
+- Se aumenta tiempo límite de tareas de celery para el nuevo OCR de Atlas
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
