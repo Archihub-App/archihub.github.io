@@ -33,6 +33,7 @@ description: ''
 - The current page in document or image gallery gets saved in a URL param
 - Los recursos en la papelera ya no se muestran en la vista de archivos
 - Se aumenta tiempo límite de tareas de celery para el nuevo OCR de Atlas
+- Se limpian las cadenas de caracteres quemados y se implementan las traducciones faltantes
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes

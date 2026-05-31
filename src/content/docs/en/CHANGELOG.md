@@ -33,6 +33,7 @@ description: ''
 - La página en las galerías de imágenes o documentos se guarda en la URL como un param
 - Resources is recycle bin do not show up in record metadata
 - Retry time for celery task to 12 hours to allow OCR Atlas tasks
+- Hardcoded strings for user messages and missing translation are now fixed
 
 ### Security
 - The access levels for image galleries are adjusted
