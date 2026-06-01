@@ -19,6 +19,8 @@ description: ''
 - Added support for `skills` using markdown files
 - AI messaging now support both image input and OCR for the document viewer
 - Added image previsualization in the editor view
+- Added translations for each plugin
+- Added comments to article blocks
 
 ### Fixed
 - Frontend gets migrated to Next.js
@@ -33,6 +35,7 @@ description: ''
 - La página en las galerías de imágenes o documentos se guarda en la URL como un param
 - Resources is recycle bin do not show up in record metadata
 - Retry time for celery task to 12 hours to allow OCR Atlas tasks
+- Hardcoded strings for user messages and missing translation are now fixed
 
 ### Security
 - The access levels for image galleries are adjusted
