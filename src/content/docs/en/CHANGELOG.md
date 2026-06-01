@@ -19,6 +19,8 @@ description: ''
 - Added support for `skills` using markdown files
 - AI messaging now support both image input and OCR for the document viewer
 - Added image previsualization in the editor view
+- Added translations for each plugin
+- Added comments to article blocks
 
 ### Fixed
 - Frontend gets migrated to Next.js

@@ -19,6 +19,8 @@ description: ''
 - Se agrega suporte para `skills` usando archivos markdown
 - La ventana de dialogo con LLM en la vista documento permite usar la imagen del documento como input o el OCR si existe
 - Se agrega previsualización de imágenes en el editor
+- Se agregan soporte de traducciones para cada plugin
+- Se agregan comentarios para los bloques de los artículos
 
 ### Fixed
 - Se migra el frontend a Next.js
