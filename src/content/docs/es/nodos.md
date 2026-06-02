@@ -33,6 +33,21 @@ Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensida
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
+### Planificador de Tareas Crónicas (Celery Beat)
+
+Para la ejecución de tareas programadas y periódicas del sistema (como mantenimientos automáticos, sincronizaciones o limpiezas temporales), ArchiHUB utiliza **Celery Beat**. Este componente funciona como un scheduler que distribuye las tareas a las colas correspondientes según los intervalos definidos.
+
+> ⚠️ **CRÍTICO:** A diferencia de los workers, **solo debe existir una instancia de Celery Beat ejecutándose globalmente** en todo el entorno para evitar el disparo duplicado de tareas programadas.
+
+Para iniciar el planificador de tareas, utiliza el siguiente comando:
+
+```bash
+celery --app app.celery_app beat --loglevel INFO
+
+```
+
+*Nota: Para entornos de desarrollo o despliegues simplificados en un solo contenedor, puedes combinar el worker y el beat en un solo comando usando el flag `-B` (ej. `celery --app app.celery_app worker -B --loglevel INFO`), aunque para entornos de producción se recomienda mantenerlos en procesos separados.*
+
 ### Nodos de procesamiento para tareas que requieren GPU
 
 Para tareas que requieren el uso de GPU como la transcripción automática, es necesario agregar dos parametros adicionales al comando de inicio del nodo de procesamiento:
