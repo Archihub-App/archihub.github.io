@@ -33,6 +33,21 @@ If you want to start a node focused on high, medium and low intensity tasks, you
 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
+### Scheduled Tasks Planner (Celery Beat)
+
+ArchiHUB uses **Celery Beat** to execute scheduled and periodic system tasks (such as automated maintenance, synchronizations, or temporary file cleanups). This component acts as a scheduler, dispatching tasks to their corresponding queues based on predefined intervals.
+
+> ⚠️ **CRITICAL:** Unlike workers, **only one instance of Celery Beat must be running globally** across the entire environment to prevent periodic tasks from being triggered multiple times.
+
+To start the task scheduler, run the following command:
+
+```bash
+celery --app app.celery_app beat --loglevel INFO
+
+```
+
+*Note: For development environments or simplified single-container deployments, you can combine the worker and the beat into a single process using the `-B` flag (e.g., `celery --app app.celery_app worker -B --loglevel INFO`). However, for production environments, it is highly recommended to keep them in separate processes.*
+
 ### Processing nodes for tasks that require GPU
 
 For tasks that require the use of a GPU such as automatic transcription, it is necessary to add two additional parameters to the start command of the processing node:
