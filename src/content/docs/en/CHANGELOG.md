@@ -21,6 +21,7 @@ description: ''
 - Added image previsualization in the editor view
 - Added translations for each plugin
 - Added comments to article blocks
+- Scheduler plugin for celery tasks
 
 ### Fixed
 - Frontend gets migrated to Next.js

@@ -21,6 +21,7 @@ description: ''
 - Se agrega previsualización de imágenes en el editor
 - Se agregan soporte de traducciones para cada plugin
 - Se agregan comentarios para los bloques de los artículos
+- Plugin para programar tareas
 
 ### Fixed
 - Se migra el frontend a Next.js
