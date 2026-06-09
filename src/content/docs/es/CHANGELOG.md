@@ -22,9 +22,9 @@ description: ''
 - Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se agrega soporte independiente para el etiquetado
-- Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos.
-- Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
-- Se implementa asistente de IA a nivel de aplicativo para búsquedas
+- Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos. [PRO]
+- Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales. [PRO]
+- Se implementa asistente de IA a nivel de aplicativo para búsquedas [PRO]
 - Se agrega suporte para `skills` usando archivos markdown
 - La ventana de dialogo con LLM en la vista documento permite usar la imagen del documento como input o el OCR si existe
 - Se agrega previsualización de imágenes en el editor
