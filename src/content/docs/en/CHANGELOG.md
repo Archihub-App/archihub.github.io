@@ -42,7 +42,7 @@ description: ''
 - Multple processing of the same kind are now posible in the record view
 - Implemented `@classmethod` instead of `instance` for PluginClass
 - Added the AI asitant in the document viewer
-- La página en las galerías de imágenes o documentos se guarda en la URL como un param
+- The page number in image or document galleries is stored in the URL as a parameter.
 - Retry time for celery task to 12 hours to allow OCR Atlas tasks
 - Resources is recycle bin do not show up in record metadata
 - Hardcoded strings for user messages and missing translation are now fixed
