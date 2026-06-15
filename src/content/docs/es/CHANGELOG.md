@@ -3,19 +3,28 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.0] _beta_
+## [1.3.1] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
-- Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
 - Se agrega configuración general del sitio desde el panel de administración
-- Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se implementa soporte para MCP
+- Se implementa soporte para navegación agentica
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes
+- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
+
+## [1.3.0] _9 June 2026_
+
+### Added
+- Se agrega `hot-reloading` para activar/desactivar plugins sin necesidad de reiniciar el aplicativo
+- Se implementa stream para razonamiento y respuesta de los modelos LLM en la interfaz
 - Se agrega soporte independiente para el etiquetado
-- Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos.
-- Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales.
-- Se implementa asistente de IA a nivel de aplicativo para búsquedas
+- Implementado un sistema avanzado de orquestación basado en nodos que permite automatizar tareas complejas de procesamiento de datos. [PRO]
+- Procesamiento Inteligente: Soporta ejecución iterativa automática (List Lacing) y bifurcaciones condicionales. [PRO]
+- Se implementa asistente de IA a nivel de aplicativo para búsquedas [PRO]
 - Se agrega suporte para `skills` usando archivos markdown
 - La ventana de dialogo con LLM en la vista documento permite usar la imagen del documento como input o el OCR si existe
 - Se agrega previsualización de imágenes en el editor
@@ -37,10 +46,6 @@ description: ''
 - Los recursos en la papelera ya no se muestran en la vista de archivos
 - Se aumenta tiempo límite de tareas de celery para el nuevo OCR de Atlas
 - Se limpian las cadenas de caracteres quemados y se implementan las traducciones faltantes
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes
-- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
 
 ## [1.2.2] _11 March 2026_
 

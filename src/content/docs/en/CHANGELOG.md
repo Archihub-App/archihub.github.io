@@ -3,19 +3,28 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.0] _beta_
+## [1.3.1] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
-- Added `hot-reloading` to enable or disable plugins without needing to restart the application
 - Added general web settings configuration from the admin panel
-- Added stream support for displaying real time thinking and response generation on the frontend
 - Added MCP support
+- Improved agent navigation
+
+### Security
+- The access levels for image galleries are adjusted
+- New option to block or allow only metadata visualization for resource dependending on access level
+
+## [1.3.0] _9 June 2026_
+
+### Added
+- Added `hot-reloading` to enable or disable plugins without needing to restart the application
+- Added stream support for displaying real time thinking and response generation on the frontend
 - Added labelling support
-- Launched an advanced node-based orchestration system to automate complex data processing tasks.
-- Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing.
-- AI asistant at app level for search
+- Launched an advanced node-based orchestration system to automate complex data processing tasks. [PRO]
+- Smart Processing: Supports automatic iterative execution (List Lacing) and conditional routing. [PRO]
+- AI asistant at app level for search [PRO]
 - Added support for `skills` using markdown files
 - AI messaging now support both image input and OCR for the document viewer
 - Added image previsualization in the editor view
@@ -33,14 +42,10 @@ description: ''
 - Multple processing of the same kind are now posible in the record view
 - Implemented `@classmethod` instead of `instance` for PluginClass
 - Added the AI asitant in the document viewer
-- La página en las galerías de imágenes o documentos se guarda en la URL como un param
-- Resources is recycle bin do not show up in record metadata
+- The page number in image or document galleries is stored in the URL as a parameter.
 - Retry time for celery task to 12 hours to allow OCR Atlas tasks
+- Resources is recycle bin do not show up in record metadata
 - Hardcoded strings for user messages and missing translation are now fixed
-
-### Security
-- The access levels for image galleries are adjusted
-- New option to block or allow only metadata visualization for resource dependending on access level
 
 ## [1.2.2] _11 March 2026_
 
