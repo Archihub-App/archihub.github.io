@@ -1,21 +1,18 @@
 ---
 title: 'The Relation Field'
-description: ''
+description: 'Documentation about the relation field in ArchiHUB'
 ---
 
-The Relation field allows you to establish connections between different types of content within the platform, facilitating the organization and retrieval of related information.
+The Relation field (internally `relation`) allows you to establish connections between the current resource and one or more resources of another content type within the platform, facilitating the organization and retrieval of related information.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Relation field"`, `"Related document"`.
 
-**Field type**: Relation  
-- **Description**: Allows selecting and linking one or more resources of another content type.  
-- **Example**: Relate a document to a collection, thesaurus, etc.
+**Name**:  
+- **Description**: The label that identifies the field.  
+- **Example**: `"Related document"`, `"Controlled terms"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
+- **Description**: The location in the metadata where the reference to the related resource will be stored.  
 - **Example**: `metadata.firstLevel.relationField`.
 
 **Content type**:  
@@ -23,20 +20,17 @@ The Relation field allows you to establish connections between different types o
 - **Example**: `Collection`, `Thesaurus`, `Fund`.
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `No` (can be left empty).
+- **Description**: Indicates whether establishing at least one relation is mandatory in order to save the resource.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+**Condition** and **Access levels**:  
+- **Description**: Control the field's visibility and which roles can modify it.
 
-![relation form](/archihub.github.io/imagenes/formulario_relacion.png)
+![Relation field in the form](/archihub.github.io/imagenes/formulario_relacion.png)
 
-### Practical example
-**Scenario**: Relate a document to terms from a thesaurus:
+---
 
-1. **Label**: "Controlled terms"
-2. **Type**: Relation
-3. **Related content**: Thesaurus
-4. **Cardinality**: Many to many
-5. **Search**: By title and description 
+### Behavior in the interface
+
+- It is presented as a search tool that lets you find and link existing resources of the configured content type, typically by title or description.
+- Depending on the configured cardinality, the field can accept a single relation or multiple simultaneous relations (many to many).
+- Established relations remain available both from the source resource and, in many cases, from the related resource, facilitating cross-navigation between content.

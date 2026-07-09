@@ -1,21 +1,18 @@
 ---
 title: 'El campo Relación'
-description: ''
+description: 'Documentación sobre el campo de relación en ArchiHUB'
 ---
 
-El campo Relación permite establecer conexiones entre diferentes tipos de contenido dentro de la plataforma, facilitando la organización y recuperación de información relacionada.
+El campo Relación (internamente `relation`) permite establecer conexiones entre el recurso actual y uno o varios recursos de otro tipo de contenido dentro de la plataforma, facilitando la organización y recuperación de información relacionada.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Campo relación"`, `"Documento relacionado"`.
 
-**Tipo de campo**: Relación  
-- **Descripción**: Permite seleccionar y vincular uno o varios recursos de otro tipo de contenido.  
-- **Ejemplo**: Relacionar un documento con un fondo, colección, etc.
+**Nombre**:  
+- **Descripción**: La etiqueta que identifica el campo.  
+- **Ejemplo**: `"Documento relacionado"`, `"Términos controlados"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
+- **Descripción**: La ubicación en los metadatos donde se almacenará la referencia al recurso relacionado.  
 - **Ejemplo**: `metadata.firstLevel.relationField`.
 
 **Tipo de contenido**:  
@@ -23,20 +20,17 @@ El campo Relación permite establecer conexiones entre diferentes tipos de conte
 - **Ejemplo**: `Fondo`, `Tesauro`, `Colección`.
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `No` (puede dejarse vacío).
+- **Descripción**: Indica si es obligatorio establecer al menos una relación para poder guardar el recurso.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Controlan la visibilidad del campo y qué roles pueden modificarlo.
 
-![formulario relación](/archihub.github.io/imagenes/formulario_relacion.png)
+![Campo relación en el formulario](/archihub.github.io/imagenes/formulario_relacion.png)
 
-### Ejemplo práctico
-**Escenario**: Relacionar un documento con términos de un tesauro:
+---
 
-1. **Etiqueta**: "Términos controlados"
-2. **Tipo**: Relación
-3. **Contenido relacionado**: Tesauro
-4. **Cardinalidad**: Muchos a muchos
-5. **Búsqueda**: Por título y descripción 
+### Comportamiento en la interfaz
+
+- Se presenta como un buscador que permite encontrar y vincular recursos existentes del tipo de contenido configurado, generalmente por título o descripción.
+- Según la cardinalidad configurada, el campo puede aceptar una única relación o múltiples relaciones simultáneas (muchos a muchos).
+- Las relaciones establecidas quedan disponibles tanto desde el recurso de origen como, en muchos casos, desde el recurso relacionado, facilitando la navegación cruzada entre contenidos.

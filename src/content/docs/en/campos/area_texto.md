@@ -1,59 +1,42 @@
 ---
 title: 'The Text Area Field'
-description: ''
+description: 'Documentation about the text area field in ArchiHUB'
 ---
 
-The Text Area field allows the entry of multi-line text, ideal for extensive content that requires formatting and line breaks.
+The Text Area field allows the entry of multi-line text. It is designed to capture large blocks of information such as descriptions, summaries, notes, or observations.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Description"`, `"Observations"`.
 
-**Field type**: Text area  
-- **Description**: Allows entering text in several lines, ideal for long descriptions or comments.  
-- **Example**: Field for the detailed description of a project.
+Configuring a text area field includes the following basic properties:
+
+**Name**:  
+- **Description**: The label that identifies the field within the form.  
+- **Example**: `"General description"`, `"Conservation notes"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.description`.
+- **Description**: The path in the metadata where the entered content will be stored.  
+- **Example**: `metadata.firstLevel.description`.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Enter a detailed description of the resource."*
-
-**Character limit**:  
-- **Description**: Maximum number of allowed characters.  
-- **Example**: `2000 characters`.
-
-**Editor**:  
-- **Description**: Indicates if the field includes a basic toolbar for text formatting.  
-- **Example**: *"Allows bold, italics, and lists."*
-
-**Format**:  
-- **Description**: Supports line breaks and paragraphs.  
-- **Example**: *"You can write text in several paragraphs."*
+- **Description**: Optional help text that guides the user on what information to detail in the text area. Shown via a help icon.  
+- **Example**: *"Provide a detailed summary of the document's physical condition."*
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `No` (can be left empty).
+- **Description**: Defines whether filling in this block of text is mandatory to save the record.
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Document type = Report`."*
+**Condition** (Optional):  
+- **Description**: Allows the text area to be shown or hidden depending on previous answers in the form.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+**Access levels** (Optional):  
+- **Description**: Allows limiting which users can interact with or view this specific field.
 
-![areaDeTexto](/archihub.github.io/imagenes/areaDeTexto.png)
+![Text area field configuration](/archihub.github.io/imagenes/campos/text_area.png)
 
-### Practical example
-**Scenario**: Create a field for the detailed description of a project:
+---
 
-1. **Label**: "Detailed description"
-2. **Type**: Text area
-3. **Required**: Optional
-4. **Limit**: 2000 characters
+### Behavior in the interface
 
-![areaDeTextoForm](/archihub.github.io/imagenes/campo-edit-area-de-texto.png) 
+- **Automatic expansion**: The text area generally has an initial size (for example, 3 lines) and can automatically expand as the user types, up to a maximum number of lines predefined in the view, after which it will show a scrollbar.
+- **Format**: This field stores plain text along with the line breaks entered by the user.
+
+![Text area field in the form](/archihub.github.io/imagenes/campos/text_area_form.png)

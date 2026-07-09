@@ -1,48 +1,41 @@
 ---
-title: 'The Multiple Selection List Field'
-description: ''
+title: 'The Multiple Selection Field'
+description: 'Documentation about the multiple selection field in ArchiHUB'
 ---
 
-The Multiple Selection List field allows you to choose several options from a predefined list, ideal for metadata that can have multiple values.
+The Multiple Selection field (internally `select-multiple2`) is similar to the List field, but allows the user to simultaneously choose **several** options from a predefined set. It is ideal for assigning multiple tags, topics, or statuses to a single resource.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"States"`, `"Keywords"`.
 
-**Field type**: Multiple selection  
-- **Description**: Allows selecting several options from a predefined list.  
-- **Example**: Field to select multiple states, topics, tags, etc.
+**Name**:  
+- **Description**: The field's label.  
+- **Example**: `"Related topics"`, `"Tags"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.firstLevel.multiplelist`.
+- **Description**: The key where the array of selected values will be stored.  
+- **Example**: `metadata.firstLevel.topics`.
+
+**Options / Source list**:  
+- **Description**: The system list that provides the available values.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Select one or more options from the list."*
-
-**List**:  
-- **Description**: Predefined list of available options.  
-- **Example**: `List of states`.
+- **Description**: Additional guidance for the user.  
+- **Example**: *"Select all the topics covered in this document."*
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `Yes` (at least one option must be selected).
+- **Description**: If enabled, requires that at least one option from the list be selected.
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Country = Mexico`."*
+**Condition** and **Access levels**:  
+- **Description**: Allow setting conditional logic and controlling which user profiles interact with the field.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+![Multiple selection field configuration](/archihub.github.io/imagenes/campos/selectMulti.png)
 
-![multipleSelectionList](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
+---
 
-### Practical example
-**Scenario**: Configure a field for the keywords of a document:
+### Behavior in the interface
 
-1. **Label**: "Keywords"
-2. **Type**: Multiple selection
-3. **List**: List of controlled terms 
+- It is usually rendered as an autocomplete text field where each selected option becomes a "pill" or *chip*.
+- The user can quickly search for, add, and remove options through the *chip* interface.
+- At the data level, it is stored as a list or array of values in the metadata schema.
+
+![Multiple selection field in the form](/archihub.github.io/imagenes/campos/selectMulti_form.png)

@@ -1,42 +1,51 @@
 ---
 title: 'The File Field'
-description: ''
+description: 'Documentation about the file upload field in ArchiHUB'
 ---
 
-The File field allows uploading and managing attached files, with multiple configuration options to suit different storage and display needs.
+The File field (internally `file`) provides a drag-and-drop area, or a way to select and upload multimedia documents attached to the resource (images, PDFs, videos, etc.).
 
 ### Field Structure
-- **Field type**: File upload
-- **Multiple files**: Configurable
-- **Allowed formats**: Customizable
-- **Maximum size**: Set per field
 
-### Configuration
-- **File types**: Restriction by extensions
-- **Labels**: Unique identification for each file field
-- **Preview**: Preview of images and documents
-- **Versions**: Automatic generation of thumbnails
+Unlike text fields, the file field has specific options for managing media:
 
-### Association with resources
-Unlike other fields, files:
-- Are associated through unique labels
-- Are not stored in the metadata
-- Can have multiple versions
-- Maintain their own metadata
+**Name**:  
+- **Description**: Label to identify the type of files expected.  
+- **Example**: `"Attached documents"`, `"Main photograph"`.
 
-### Practical example
-**Scenario**: Configure a field for supporting documents:
+**Destination**:  
+- **Description**: Files are generally not embedded at the same level as text metadata; instead, they are linked through an identifier or `tag` that relates the uploaded file to this form field.
 
-1. **Label**: "attached_documents"
-2. **Type**: File
-3. **Allowed formats**: PDF, DOCX, XLSX
-4. **Maximum size**: 10MB per file
-5. **Multiple files**: Yes (up to 5)
+**Allowed formats**:  
+- **Description**: Allows limiting the accepted extension types.  
+- **Example**: Only allow `image/*` and `application/pdf`.
 
-![file form](/archihub.github.io/imagenes/campo-archivo.png)
+**File limit**:  
+- **Description**: The maximum number of files that can be uploaded in this specific field.  
+- **Example**: Limit to `1` to force a single cover image.
 
-![File label](/archihub.github.io/imagenes/campo-archivo-preview.png)
+**Required**:  
+- **Description**: Prevents the user from saving the record if a file has not been uploaded and associated with this field.
 
-Each file associated with a resource can be seen in its identified label, each with a different color. It is possible to view it from the detail view of each resource or from the edit form once the resource has been uploaded and saved.
+**Instructions**, **Condition**, and **Access levels**:  
+- **Description**: Common elements for help, dynamic display, and security.
 
-![Form label](/archihub.github.io/imagenes/campo-archivo-form.png) 
+![File field configuration](/archihub.github.io/imagenes/campos/file.png)
+
+---
+
+### Behavior in the interface
+
+- The interface (*DropzoneArea*) shows an interactive area to drop files.
+- It allows viewing the currently uploaded files as labels (*chips*).
+- Existing files associated with the resource appear listed, allowing them to be removed or replaced according to the configured limit.
+
+![File field in the form](/archihub.github.io/imagenes/campos/file_form.png)
+
+### Label preview
+
+Each file associated with a resource is identified by a label (*tag*) in a distinct color, visible both from the resource's detail view and from its edit form once the file has been uploaded and saved:
+
+![File label preview](/archihub.github.io/imagenes/campo-archivo-preview.png)
+
+![File label in the form](/archihub.github.io/imagenes/campo-archivo-form.png)
