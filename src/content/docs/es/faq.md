@@ -228,9 +228,9 @@ Si tienes el servicio de Elasticsearch habilitado, también es recomendable resp
 - Funcionalidades avanzadas (en desarrollo)
 - Desarrollo de características a medida (opcional)
 
-Más información: [https://bit-sol.com.co/es/projects/archihub/](https://bit-sol.com.co/es/projects/archihub/)
+Más información: [https://bit-sol.com.co/project/archihub/](https://bit-sol.com.co/project/archihub/)
 
 ---
 
 ¿Tienes alguna pregunta que no aparece aquí?  
-¡Escríbela en [GitHub Discussions](https://github.com/orgs/Archihub-App/discussions/new/choose) o contáctanos directamente!
+¡Escríbela en [GitHub Discussions](https://github.com/orgs/Archihub-App/discussions/new/choose) o [contáctanos directamente!](https://bit-sol.com.co/)
