@@ -1,48 +1,41 @@
 ---
-title: 'El campo Lista de selección múltiple'
-description: ''
+title: 'El campo Selección Múltiple'
+description: 'Documentación sobre el campo de selección múltiple en ArchiHUB'
 ---
 
-El campo Lista de selección múltiple permite elegir varias opciones de una lista predefinida, ideal para metadatos que pueden tener múltiples valores.
+El campo Selección Múltiple (internamente `select-multiple2`) es similar al campo Listado, pero permite al usuario elegir simultáneamente **varias** opciones de un conjunto predefinido. Es ideal para asignar múltiples etiquetas, temas o estados a un solo recurso.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Estados"`, `"Palabras clave"`.
 
-**Tipo de campo**: Selección múltiple  
-- **Descripción**: Permite seleccionar varias opciones de una lista predefinida.  
-- **Ejemplo**: Campo para seleccionar varios estados, temas, etiquetas, etc.
+**Nombre**:  
+- **Descripción**: La etiqueta del campo.  
+- **Ejemplo**: `"Temas relacionados"`, `"Etiquetas"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.firstLevel.listamultiple`.
+- **Descripción**: La clave donde se guardará el arreglo (array) de valores seleccionados.  
+- **Ejemplo**: `metadata.firstLevel.temas`.
+
+**Opciones / Listado fuente**:  
+- **Descripción**: La lista del sistema que provee los valores disponibles.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione una o más opciones de la lista."*
-
-**Listado**:  
-- **Descripción**: Lista predefinida de opciones disponibles.  
-- **Ejemplo**: `Lista de estados`.
+- **Descripción**: Orientación adicional para el usuario.  
+- **Ejemplo**: *"Seleccione todos los temas que se traten en este documento."*
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe seleccionarse al menos una opción).
+- **Descripción**: Si está activo, exige que se seleccione al menos una opción del listado.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `País = México`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Permiten establecer lógica condicional y controlar qué perfiles de usuario interactúan con el campo.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+![Configuración del campo de selección múltiple](/archihub.github.io/imagenes/campos/selectMulti.png)
 
-![listaDeSeleccionMultiple](/archihub.github.io/imagenes/listaDeSeleccionMultiple.png)
+---
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para las palabras clave de un documento:
+### Comportamiento en la interfaz
 
-1. **Etiqueta**: "Palabras clave"
-2. **Tipo**: Selección múltiple
-3. **Listado**: Lista de términos controlados 
+- Habitualmente se renderiza como un campo de texto con autocompletado donde cada opción seleccionada se convierte en una "píldora" o *chip*.
+- El usuario puede buscar, añadir y eliminar opciones de forma rápida mediante la interfaz de *chips*.
+- A nivel de datos, se almacena como una lista o arreglo de valores en el esquema de metadatos.
+
+![Campo de selección múltiple en el formulario](/archihub.github.io/imagenes/campos/selectMulti_form.png)

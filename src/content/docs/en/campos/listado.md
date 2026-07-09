@@ -1,65 +1,43 @@
 ---
-title: 'The List Field'
-description: ''
+title: 'The List (Selection) Field'
+description: 'Documentation about the selection (List) field in ArchiHUB'
 ---
 
-The List field allows you to select an option from a predefined set, ensuring data consistency.
+The List field (internally `select`) allows the user to choose a single option from a predefined set of values. It is essential for ensuring data consistency and normalization (for example, document types, statuses, categories).
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Department"`, `"Document type"`.
 
-**Field type**: Single selection  
-- **Description**: Allows selecting a single option from a predefined list.  
-- **Example**: Field to select a department, type, category, etc.
+This field relies on the lists (controlled vocabularies) configured in the system:
+
+**Name**:  
+- **Description**: The label that identifies the field.  
+- **Example**: `"Department"`, `"Resource type"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.department`.
+- **Description**: The key in the metadata where the identifier or value of the selected option will be stored.  
+- **Example**: `metadata.firstLevel.document_type`.
+
+**Options / Source list**:  
+- **Description**: The identifier of the system list from which the dropdown options will be pulled. Options are loaded dynamically.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Select an option from the dropdown list."*
-
-**Data source**:  
-- **Description**: Predefined list of available options.  
-- **Example**: `List of departments of Colombia`.
-
-**Presentation**:  
-- **Description**: How the list is displayed to the user.  
-- **Example**: *"Dropdown menu"*.
-
-**Search**:  
-- **Description**: Allows searching among the available options.  
-- **Example**: *"The user can type to filter the options."*
-
-**Add at the end**:  
-- **Description**: Text to be shown at the end of the field (optional).  
-- **Example**: *"Select only one"*.
-
-**Add at the beginning**:  
-- **Description**: Text to be shown at the beginning of the field (optional).  
-- **Example**: *"Option: "*.
+- **Description**: Optional guidance for the user.  
+- **Example**: *"Select the main category that applies to the resource."*
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `Yes` (an option must be selected).
+- **Description**: Indicates whether selecting an option is mandatory to continue.
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Country = Colombia`."*
+**Condition** and **Access levels**:  
+- **Description**: Rules for showing/hiding the field or restricting which roles can modify it.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+![List field configuration](/archihub.github.io/imagenes/campos/select.png)
 
-![listados](/archihub.github.io/imagenes/listados.png)
+---
 
-### Practical example
-**Scenario**: Create a field for the document type:
+### Behavior in the interface
 
-1. **Label**: "Document type"
-2. **Type**: List
-3. **Options**: Article, Book, Thesis, Report
-4. **Required**: Yes 
+- It is displayed as a dropdown menu (Select / Autocomplete).
+- By default, it usually includes an empty option such as `"Select an option"`.
+- It supports built-in search (autocomplete) when the list of options is extensive, helping the user quickly find the desired value.
+
+![List field in the form](/archihub.github.io/imagenes/campos/select_form.png)
