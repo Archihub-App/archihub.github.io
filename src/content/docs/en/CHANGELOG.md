@@ -11,6 +11,13 @@ description: ''
 - Added general web settings configuration from the admin panel
 - Added MCP support
 - Improved agent navigation
+- Implemented tiles for large images both in the backend and frontend with a custom viewer
+- Added OpenRouter as AI provider
+- Added new algorithm for simplifying the geometry of geographic polygons
+
+### Fixed
+- Improved Exiftools implementation in the deployment Dockerfile
+- Improved back response messages for agent interaction
 
 ### Security
 - The access levels for image galleries are adjusted

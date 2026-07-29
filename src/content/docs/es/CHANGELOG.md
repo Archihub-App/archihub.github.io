@@ -11,6 +11,13 @@ description: ''
 - Se agrega configuración general del sitio desde el panel de administración
 - Se implementa soporte para MCP
 - Se implementa soporte para navegación agentica
+- Se implementa soporte de tiles para imágenes grandes tanto en el backend como en el frontend con un visor personalizado
+- Se agrega OpenRouter como proveedor de IA
+- Se agrega nuevo algoritmo para simplificar la geometría de polígonos geográficos
+
+### Fixed
+- Se mejora la implementacion de Exiftools en el Dockerfile de despliegue
+- Se mejoran mensajes de respuesta del back para la interacción de agentes
 
 ### Security
 - Se ajustan los niveles de acceso para las galerías de imágenes
