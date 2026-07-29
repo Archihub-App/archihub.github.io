@@ -1,39 +1,38 @@
 ---
-title: 'The Separator Field'
-description: ''
+title: 'The Separator Element'
+description: 'Documentation about the use of separators in ArchiHUB forms'
 ---
 
-The Separator field is a special field that allows you to divide a form into multiple pages, improving the user experience by organizing information into more manageable sections. It is particularly useful for long forms containing many fields.
+The Separator element (internally `separator`) is not a data-capture field as such, but a purely visual, organizational (UI) component for the forms interface.
 
-Each separator defines a new page in the form and requires:
-- **Name**: Unique identifier for the separator (required)
+### Field Structure
 
-![Separator field in the form](/archihub.github.io/imagenes/formulario_separador.png)
+Being a layout component, its configuration is very basic:
 
-### Separator configuration
+**Name / Label**:  
+- **Description**: The title of the new section the separator is introducing.  
+- **Example**: `"Control Information"`, `"Conservation Data"`.
 
-The following image shows the separator configuration form, where you can define the name, title, and description that will be displayed in the form navigation.
+**Instructions**:  
+- **Description**: Can be used as a general description below the title of the new section to guide the user at that stage of the form.
 
-![Separator configuration form](/archihub.github.io/imagenes/separador-form.png)
+**Condition** and **Access levels**:  
+- **Description**: If the separator depends on certain rules, it can be hidden so that the whole section appears to disappear (this visually hides the section's heading, but the visibility logic must also be applied to each internal field that should be hidden as well).
 
-### Usage example
+![Separator element configuration](/archihub.github.io/imagenes/campos/separator.png)
 
-**Scenario**: Create a project registration form with three sections:
+---
 
-1. **Basic information**
-   - Fields: Title, description, start date
-   - No separator (appears on the first page by default)
+### Behavior in the interface
 
-2. **Project details**
-   - Separator: "Details"
-   - Fields: Objectives, scope, budget
+- It renders as a heading or a prominent dividing line within the form.
+- It does not generate any structure in the resource's final metadata, since it does not store a value entered by the user.
+- It is very useful in long forms to divide information into logical categories or tabs, drastically improving the cataloger's experience.
 
-3. **Team and collaborators**
-   - Separator: "Team"
-   - Fields: Team members, roles, contacts
+![Separator in the form](/archihub.github.io/imagenes/campos/separator_form.png)
 
-### Visualization in the form
+### Step navigation
 
 Separators appear as steps in the top navigation of the form, allowing users to easily move between the different sections:
 
-![Navigation by separators](/archihub.github.io/imagenes/campo-separador.png) 
+![Navigation by separators](/archihub.github.io/imagenes/campo-separador.png)

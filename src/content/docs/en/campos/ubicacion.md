@@ -1,59 +1,47 @@
 ---
-title: 'Location Field'
-description: ''
+title: 'The Location Field'
+description: 'Documentation about the geographic location field in ArchiHUB'
 ---
 
-The Location field allows georeferencing resources by associating them with physical places or administrative divisions, supporting multiple locations with different levels of precision.
+The Location field (internally `location`) provides a native tool for capturing geospatial coordinates and location data on resources.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Location"`, `"Place of origin"`.
 
-**Field type**: Location  
-- **Description**: Allows associating the resource with one or more physical places or administrative divisions.  
-- **Example**: Field to record the location of an event, document, object, etc.
+This field interacts with integrated map services:
+
+**Name**:  
+- **Description**: The field's visual label.  
+- **Example**: `"Place of origin"`, `"Coordinates of the find"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.location`.
+- **Description**: The key in the metadata where the geospatial object will be stored (latitude and longitude, and optionally the location text).  
+- **Example**: `metadata.firstLevel.find_location`.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Select or search for the corresponding location."*
+- **Description**: On-screen help to guide the user.
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `No` (can be left empty).
+- **Description**: Requires the user to set a location before being able to save the record.
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Resource type = Event`."*
+**Condition** and **Access levels**:  
+- **Description**: Handle conditional logic and security restrictions at the visual level.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+![Location field configuration](/archihub.github.io/imagenes/campos/location.png)
 
-![location](/archihub.github.io/imagenes/ubicacion.png)
+---
 
-### Practical example
-**Scenario**: Document the relevant locations for a research project:
+### Behavior in the interface
 
-1. **Main location**:
-   - Name: Universidad del Valle
-   - City: Cali
-   - Department: Valle del Cauca
-   - Country: Colombia
+- In the interface, it is usually presented as a geographic search (often connected to geolocation services) or a visual map component.
+- The user can type the name of a place or interact with the map (dropping a pin) to set the exact coordinates.
+- Storage in the database is done in a structured format suited for subsequent geospatial searches (GeoJSON or similar).
 
-2. **Study area**:
-   - Name: Farallones National Natural Park
-   - Coordinates: 3.3547° N, 76.7890° W
+![Location field in the form](/archihub.github.io/imagenes/campos/location_form.png)
 
-### Visualization
-Locations are displayed with their complete information and on an interactive map when coordinates are available.
+### Usage examples
 
-![Location field interface](/archihub.github.io/imagenes/ubicacion.png)
+Locations are displayed with their complete information and on an interactive map when coordinates are available. The user can add a new location from the form itself, and a single field can end up holding several locations associated with the resource:
 
 ![Add location](/archihub.github.io/imagenes/agregar_ubicacion.png)
 
-![Location](/archihub.github.io/imagenes/ejemplo-ubicaciones.png) 
+![Example of multiple locations](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)

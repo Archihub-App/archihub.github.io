@@ -1,65 +1,43 @@
 ---
-title: 'El campo Listado'
-description: ''
+title: 'El campo Listado (Selección)'
+description: 'Documentación sobre el campo de selección (Listado) en ArchiHUB'
 ---
 
-El campo Listado permite seleccionar una opción de un conjunto predefinido, asegurando consistencia en los datos.
+El campo Listado (internamente `select`) permite al usuario elegir una única opción desde un conjunto predefinido de valores. Es fundamental para asegurar la consistencia y normalización de los datos (por ejemplo, tipos de documento, estados, categorías).
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Departamento"`, `"Tipo de documento"`.
 
-**Tipo de campo**: Selección simple  
-- **Descripción**: Permite seleccionar una sola opción de una lista predefinida.  
-- **Ejemplo**: Campo para seleccionar un departamento, tipo, categoría, etc.
+Este campo se apoya en los listados (vocabularios controlados) configurados en el sistema:
+
+**Nombre**:  
+- **Descripción**: La etiqueta que identifica el campo.  
+- **Ejemplo**: `"Departamento"`, `"Tipo de recurso"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.departamento`.
+- **Descripción**: La clave en los metadatos donde se guardará el identificador o valor de la opción seleccionada.  
+- **Ejemplo**: `metadata.firstLevel.tipo_documento`.
+
+**Opciones / Listado fuente**:  
+- **Descripción**: El identificador de la lista del sistema de donde se obtendrán las opciones desplegables. Las opciones se cargan de forma dinámica.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione una opción de la lista desplegable."*
-
-**Fuente de datos**:  
-- **Descripción**: Lista predefinida de opciones disponibles.  
-- **Ejemplo**: `Lista de departamentos de Colombia`.
-
-**Presentación**:  
-- **Descripción**: Forma en que se muestra la lista al usuario.  
-- **Ejemplo**: *"Menú desplegable"*.
-
-**Búsqueda**:  
-- **Descripción**: Permite buscar entre las opciones disponibles.  
-- **Ejemplo**: *"El usuario puede escribir para filtrar las opciones."*
-
-**Añadir al final**:  
-- **Descripción**: Texto que se mostrará al final del campo (opcional).  
-- **Ejemplo**: *"Seleccione solo uno"*.
-
-**Añadir al inicio**:  
-- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
-- **Ejemplo**: *"Opción: "*.
+- **Descripción**: Guía opcional para el usuario.  
+- **Ejemplo**: *"Seleccione la categoría principal que aplique al recurso."*
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe seleccionarse una opción).
+- **Descripción**: Indica si es obligatorio seleccionar una opción para continuar.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `País = Colombia`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Reglas para mostrar/ocultar el campo o restringir qué roles pueden modificarlo.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+![Configuración del campo listado](/archihub.github.io/imagenes/campos/select.png)
 
-![listados](/archihub.github.io/imagenes/listados.png)
+---
 
-### Ejemplo práctico
-**Escenario**: Crear un campo para el tipo de documento:
+### Comportamiento en la interfaz
 
-1. **Etiqueta**: "Tipo de documento"
-2. **Tipo**: Listado
-3. **Opciones**: Artículo, Libro, Tesis, Informe
-4. **Requerido**: Sí 
+- Se presenta como un menú desplegable (Select / Autocomplete).
+- Por defecto suele incluir una opción vacía como `"Seleccione una opción"`.
+- Soporta búsqueda integrada (autocompletado) si la lista de opciones es extensa, facilitando al usuario encontrar rápidamente el valor deseado.
+
+![Campo listado en el formulario](/archihub.github.io/imagenes/campos/select_form.png)

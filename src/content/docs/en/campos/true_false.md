@@ -1,46 +1,37 @@
 ---
-title: 'The True / False Field'
-description: ''
+title: 'The Checkbox Field (True/False)'
+description: 'Documentation about the checkbox field in ArchiHUB'
 ---
 
-The True/False field is a boolean field that only accepts two values: true or false. It is ideal for metadata that requires a binary response.
+The Checkbox field (internally `checkbox`) is used for binary options, such as "Yes/No", "I agree", or any simple boolean state.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Approved"`, `"Active"`.
 
-**Field type**: Boolean (true/false)  
-- **Description**: Only accepts the values `True` or `False`.  
-- **Example**: Radio options or checkbox in the interface.
+**Name**:  
+- **Description**: The label or descriptive text of the action to confirm.  
+- **Example**: `"Original document"`, `"Approved for publication"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.first_level.relationField`.
+- **Description**: The key in the metadata where the `true` or `false` value will be stored.  
+- **Example**: `metadata.firstLevel.is_original`.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Select 'True' if the document is complete."*
+- **Description**: Help text to provide context about what checking the box implies.
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `Yes` (an option must be selected).
+- **Description**: If required, the box *must* be checked in order to save the form (useful for accepting terms and conditions or certifying validity).
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Status = Pending`."*
+**Condition** and **Access levels**:  
+- **Description**: Manage the field's dynamic visibility and permissions.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
-  
-![trueFalse](/archihub.github.io/imagenes/truefalse.png)
+![Checkbox field configuration](/archihub.github.io/imagenes/campos/checkbox.png)
 
-### Practical example
-**Scenario**: Configure a field to indicate if a document is published:
+---
 
-1. **Field**: "Published"
-2. **Type**: True/False
-3. **Usage**: Mark when the document is ready to be publicly visible
+### Behavior in the interface
 
-![trueFalseForm](/archihub.github.io/imagenes/campo-edit-verdadero-falso.png)
+- It is shown as a classic interactive checkbox or a toggle (*switch*).
+- Its default initial state is usually unchecked (`false`).
+- Clicking it toggles the state, immediately updating the data model.
+
+![Checkbox field in the form](/archihub.github.io/imagenes/campos/checkbox_form.png)

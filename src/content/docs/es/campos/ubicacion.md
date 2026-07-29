@@ -1,59 +1,47 @@
 ---
-title: 'Campo Ubicación'
-description: ''
+title: 'El campo Ubicación'
+description: 'Documentación sobre el campo de ubicación geográfica en ArchiHUB'
 ---
 
-El campo Ubicación permite georreferenciar recursos mediante la asociación con lugares físicos o divisiones administrativas, soportando múltiples ubicaciones con diferentes niveles de precisión.
+El campo Ubicación (internamente `location`) proporciona una herramienta nativa para capturar coordenadas geoespaciales y datos de ubicación en los recursos.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Ubicación"`, `"Lugar de origen"`.
 
-**Tipo de campo**: Ubicación  
-- **Descripción**: Permite asociar el recurso a uno o varios lugares físicos o divisiones administrativas.  
-- **Ejemplo**: Campo para registrar la ubicación de un evento, documento, objeto, etc.
+Este campo interactúa con servicios de mapas integrados:
+
+**Nombre**:  
+- **Descripción**: La etiqueta visual del campo.  
+- **Ejemplo**: `"Lugar de origen"`, `"Coordenadas del hallazgo"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.ubicacion`.
+- **Descripción**: La clave en los metadatos donde se guardará el objeto geoespacial (latitud y longitud, y opcionalmente el texto de la ubicación).  
+- **Ejemplo**: `metadata.firstLevel.lugar_hallazgo`.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione o busque la ubicación correspondiente."*
+- **Descripción**: Ayuda en pantalla para guiar al usuario.
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `No` (puede dejarse vacío).
+- **Descripción**: Obliga al usuario a establecer una ubicación antes de poder guardar el registro.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de recurso = Evento`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Manejan lógicas condicionales y restricciones de seguridad a nivel visual.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+![Configuración del campo ubicación](/archihub.github.io/imagenes/campos/location.png)
 
-![ubicacion](/archihub.github.io/imagenes/ubicacion.png)
+---
 
-### Ejemplo práctico
-**Escenario**: Documentar las ubicaciones relevantes para un proyecto de investigación:
+### Comportamiento en la interfaz
 
-1. **Ubicación principal**:
-   - Nombre: Universidad del Valle
-   - Ciudad: Cali
-   - Departamento: Valle del Cauca
-   - País: Colombia
+- En la interfaz, se suele presentar como un buscador geográfico (a menudo conectado a servicios de geolocalización) o un componente visual de mapa.
+- El usuario puede escribir el nombre de un lugar o interactuar con el mapa (colocando un pin) para fijar las coordenadas exactas.
+- El almacenamiento en la base de datos se realiza en un formato estructurado apto para posteriores búsquedas geoespaciales (GeoJSON o similar).
 
-2. **Área de estudio**:
-   - Nombre: Parque Nacional Natural Farallones
-   - Coordenadas: 3.3547° N, 76.7890° W
+![Campo ubicación en el formulario](/archihub.github.io/imagenes/campos/location_form.png)
 
-### Visualización
-Las ubicaciones se muestran con su información completa y en un mapa interactivo cuando se dispone de coordenadas.
+### Ejemplos de uso
 
-![Interfaz del campo Ubicación](/archihub.github.io/imagenes/ubicacion.png)
+Las ubicaciones se muestran con su información completa y en un mapa interactivo cuando hay coordenadas disponibles. El usuario puede agregar una nueva ubicación desde el propio formulario, y un mismo campo puede llegar a alojar varias ubicaciones asociadas al recurso:
 
 ![Agregar ubicación](/archihub.github.io/imagenes/agregar_ubicacion.png)
 
-![Ubicación](/archihub.github.io/imagenes/ejemplo-ubicaciones.png) 
+![Ejemplo de múltiples ubicaciones](/archihub.github.io/imagenes/ejemplo-ubicaciones.png)

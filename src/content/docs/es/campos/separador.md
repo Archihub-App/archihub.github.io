@@ -1,39 +1,38 @@
 ---
-title: 'El campo Separador'
-description: ''
+title: 'El elemento Separador'
+description: 'Documentación sobre el uso de separadores en formularios de ArchiHUB'
 ---
 
-El campo Separador es un campo especial que permite dividir un formulario en múltiples páginas, mejorando la experiencia de usuario al organizar la información en secciones más manejables. Es particularmente útil para formularios extensos que contienen muchos campos.
+El elemento Separador (internamente `separator`) no es un campo de captura de datos como tal, sino un componente puramente visual y de organización (UI) para la interfaz de los formularios.
 
-Cada separador define una nueva página en el formulario y requiere:
-- **Nombre**: Identificador único del separador (obligatorio)
+### Estructura del campo
 
-![Campo de separador en el formulario](/archihub.github.io/imagenes/formulario_separador.png)
+Al ser un componente de diseño, su configuración es muy básica:
 
-### Configuración del separador
+**Nombre / Etiqueta**:  
+- **Descripción**: El título de la nueva sección que el separador está introduciendo.  
+- **Ejemplo**: `"Información de Control"`, `"Datos de Conservación"`.
 
-En la siguiente imagen se muestra el formulario de configuración del separador, donde se puede definir el nombre, título y descripción que se mostrará en la navegación del formulario.
+**Instrucciones**:  
+- **Descripción**: Se puede utilizar como una descripción general debajo del título de la nueva sección para guiar al usuario en esa etapa del formulario.
 
-![Formulario de configuración del separador](/archihub.github.io/imagenes/separador-form.png)
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Si el separador depende de ciertas reglas, se puede ocultar para que toda la sección parezca desaparecer (esto oculta visualmente el encabezado de la sección, pero la lógica de visibilidad debe aplicarse a cada campo interno que se desee ocultar también).
 
-### Ejemplo de uso
+![Configuración del elemento separador](/archihub.github.io/imagenes/campos/separator.png)
 
-**Escenario**: Crear un formulario de registro de proyecto con tres secciones:
+---
 
-1. **Información básica**
-   - Campos: Título, descripción, fecha de inicio
-   - Sin separador (aparece en la primera página por defecto)
+### Comportamiento en la interfaz
 
-2. **Detalles del proyecto**
-   - Separador: "Detalles"
-   - Campos: Objetivos, alcance, presupuesto
+- Se renderiza como un encabezado o una línea divisoria prominente dentro del formulario.
+- No genera ninguna estructura en los metadatos finales del recurso, ya que no almacena un valor ingresado por el usuario.
+- Resulta muy útil en formularios extensos para dividir la información por categorías o pestañas lógicas, mejorando drásticamente la experiencia del catalogador.
 
-3. **Equipo y colaboradores**
-   - Separador: "Equipo"
-   - Campos: Miembros del equipo, roles, contactos
+![Separador en el formulario](/archihub.github.io/imagenes/campos/separator_form.png)
 
-### Visualización en el formulario
+### Navegación por pasos
 
-Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las diferentes secciones:
+Los separadores aparecen como pasos en la navegación superior del formulario, permitiendo a los usuarios moverse fácilmente entre las distintas secciones:
 
-![Navegación por separadores](/archihub.github.io/imagenes/campo-separador.png) 
+![Navegación por separadores](/archihub.github.io/imagenes/campo-separador.png)

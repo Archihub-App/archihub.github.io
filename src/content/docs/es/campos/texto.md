@@ -1,63 +1,43 @@
 ---
 title: 'El campo Texto'
-description: ''
+description: 'Documentación sobre el campo de texto en ArchiHUB'
 ---
 
-El campo de texto permite el ingreso de texto en una sola línea, siendo uno de los tipos de campo más versátiles en el sistema.
+El campo de texto permite el ingreso de texto en una sola línea. Es el tipo de campo más utilizado para capturar información corta como nombres, títulos o identificadores.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Título"`, `"Nombre del autor"`.
 
-**Tipo de campo**: Texto de una línea  
-- **Descripción**: Permite ingresar texto en una sola línea.  
-- **Ejemplo**: Campo para el título de un documento.
+Al configurar un campo de texto en un formulario, dispones de las siguientes propiedades:
+
+**Nombre**:  
+- **Descripción**: La etiqueta o título que verá el usuario en el formulario.  
+- **Ejemplo**: `"Título del documento"`, `"Nombre del autor"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.titulo`.
+- **Descripción**: La clave o ruta en los metadatos donde se guardará el valor (por ejemplo, dentro del esquema de la base de datos).  
+- **Ejemplo**: `metadata.firstLevel.titulo`.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Ingrese el título completo del documento."*
-
-**Longitud máxima**:  
-- **Descripción**: Número máximo de caracteres permitidos.  
-- **Ejemplo**: `255 caracteres`.
-
-**Validaciones**:  
-- **Descripción**: Reglas opcionales para el formato del texto (email, URL, etc.).  
-- **Ejemplo**: *"Debe ser una dirección de correo válida."*
-
-**Añadir al final**:  
-- **Descripción**: Texto que se mostrará al final del campo (opcional).  
-- **Ejemplo**: *"Ejemplo: Informe final 2023"*
-
-**Añadir al inicio**:  
-- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
-- **Ejemplo**: *"Título: "*
+- **Descripción**: Texto de ayuda opcional que se muestra al usuario al interactuar con el icono de ayuda del campo.  
+- **Ejemplo**: *"Ingrese el título completo del documento tal como aparece en la portada."*
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe completarse el campo).
+- **Descripción**: Indica si el campo es de diligenciamiento obligatorio para poder guardar el recurso.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+**Condición** (Opcional):  
+- **Descripción**: Permite configurar la visibilidad del campo basándose en el valor de otro campo del mismo formulario. Útil para formularios dinámicos.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+**Niveles de acceso** (Opcional):  
+- **Descripción**: Restringe qué roles de usuario pueden ver o editar este campo.
 
-![campoTexto](/archihub.github.io/imagenes/campoTexto.png)
+![Configuración del campo de texto](/archihub.github.io/imagenes/campos/text.png)
 
-### Ejemplo práctico
-**Escenario**: Crear un campo para el título de un documento:
+---
 
-1. **Etiqueta**: "Título del documento"
-2. **Tipo**: Texto
-3. **Requerido**: Sí
-4. **Longitud máxima**: 255 caracteres
+### Ejemplo de visualización
 
-![campoTextoForm](/archihub.github.io/imagenes/campo-edit-texto.png) 
+Cuando el usuario interactúa con un campo de texto, verá una entrada estándar de una línea. Si el campo tiene instrucciones, aparecerá un icono de ayuda junto al nombre.
+
+*(Nota: Las opciones de validación avanzada como longitud máxima o formato de correo electrónico dependen de configuraciones a nivel de backend y no directamente de la estructura visual básica del campo).*
+
+![Campo de texto en el formulario](/archihub.github.io/imagenes/campos/text_form.png)

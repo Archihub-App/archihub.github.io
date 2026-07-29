@@ -1,62 +1,42 @@
 ---
-title: 'Campo Autor'
-description: ''
+title: 'El campo Autor'
+description: 'Documentación sobre el campo de autor en ArchiHUB'
 ---
 
-El campo Autor es un campo especializado para capturar información sobre los creadores o contribuyentes de un recurso. Soporta múltiples autores y diferentes tipos de contribución, permitiendo diferenciar entre personas físicas y organizaciones.
+El campo Autor (internamente `author`) es un campo especializado diseñado para relacionar formalmente el recurso actual con usuarios del sistema que tienen atribución de autoría.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Autor"`, `"Autores"`.
 
-**Tipo de campo**: Autor  
-- **Descripción**: Permite ingresar información de personas u organizaciones responsables del recurso.  
-- **Ejemplo**: Campo para registrar autores de un libro, artículo, etc.
+**Nombre**:  
+- **Descripción**: Etiqueta para identificar el campo.  
+- **Ejemplo**: `"Autores principales"`, `"Investigadores responsables"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.autores`.
+- **Descripción**: La ubicación en el modelo de datos donde se referenciarán las ID o datos de los autores.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Agregue uno o más autores, indicando si es persona u organización."*
+- **Descripción**: Mensaje de ayuda contextual.
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `No` (puede dejarse vacío).
+- **Descripción**: Impide guardar si no se asigna al menos un autor.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de recurso = Publicación`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Controlan la visibilidad y permisos del campo.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+![Configuración del campo autor](/archihub.github.io/imagenes/campos/author.png)
 
-![Campo de autor](/archihub.github.io/imagenes/campoAuthor.png)
+---
 
-![Formulario de autor](/archihub.github.io/imagenes/autor-form.png)
+### Comportamiento en la interfaz
 
-### Ejemplo práctico
-**Escenario**: Registrar un libro con dos autores y una organización colaboradora:
+- Utiliza un componente que permite buscar y autocompletar nombres de usuarios registrados en el sistema.
+- Está diseñado como un arreglo (FormArrayAuthor), lo que significa que el usuario puede añadir múltiples autores iterativamente haciendo clic en "+ Añadir".
+- Proporciona validación interna para asegurar que la referencia al usuario del sistema sea válida y se persista correctamente en las relaciones estructurales.
 
-1. **Primer autor**:
-   - Tipo: Persona
-   - Nombre: María
-   - Apellido: González
+![Campo autor en el formulario](/archihub.github.io/imagenes/campos/author_form.png)
 
-2. **Segundo autor**:
-   - Tipo: Persona
-   - Nombre: Juan
-   - Apellido: Pérez
+### Visualización en los metadatos
 
-3. **Organización**:
-   - Tipo: Organización
-   - Nombre: Centro de Investigaciones Científicas
-   - Siglas: CIC
-
-### Visualización en metadatos
 Los autores aparecen listados en la sección de metadatos del recurso, agrupados por tipo y mostrando toda la información proporcionada:
 
-![Autor en metadatos](/archihub.github.io/imagenes/autor-metadatos.png) 
+![Autor en los metadatos](/archihub.github.io/imagenes/autor-metadatos.png)

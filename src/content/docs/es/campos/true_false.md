@@ -1,47 +1,37 @@
 ---
-title: 'El campo Verdadero / Falso'
-description: ''
+title: 'El campo Casilla de Verificación (True/False)'
+description: 'Documentación sobre el campo de casilla de verificación en ArchiHUB'
 ---
 
-El campo Verdadero/Falso es un campo booleano que solo acepta dos valores: verdadero o falso. Es ideal para metadatos que requieren una respuesta binaria.
-
+El campo Casilla de Verificación (internamente `checkbox`) se utiliza para opciones binarias, como "Sí/No", "Acepto", o cualquier estado booleano simple.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Aprobado"`, `"Activo"`.
 
-**Tipo de campo**: Booleano (verdadero/falso)  
-- **Descripción**: Admite solo los valores `Verdadero` o `Falso`.  
-- **Ejemplo**: Opciones de radio o checkbox en la interfaz.
+**Nombre**:  
+- **Descripción**: La etiqueta o texto descriptivo de la acción a confirmar.  
+- **Ejemplo**: `"Documento original"`, `"Aprobado para publicación"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.first_level.relationField`.
+- **Descripción**: La clave en los metadatos donde se almacenará el valor `true` (verdadero) o `false` (falso).  
+- **Ejemplo**: `metadata.firstLevel.es_original`.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Seleccione 'Verdadero' si el documento está completo."*
+- **Descripción**: Texto de ayuda para proveer contexto sobre lo que implica marcar la casilla.
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe marcarse una opción).
+- **Descripción**: Si es requerido, la casilla *debe* marcarse forzosamente para permitir guardar el formulario (útil para aceptar términos y condiciones o certificar validez).
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Estado = Pendiente`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Gestionan la visibilidad dinámica y los permisos.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
-  
-![trueFalse](/archihub.github.io/imagenes/truefalse.png)
+![Configuración del campo verdadero/falso](/archihub.github.io/imagenes/campos/checkbox.png)
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para indicar si un documento está publicado:
+---
 
-1. **Campo**: "Publicado"
-2. **Tipo**: Verdadero/Falso
-3. **Uso**: Marcar cuando el documento esté listo para ser visible públicamente
+### Comportamiento en la interfaz
 
-![trueFalseForm](/archihub.github.io/imagenes/campo-edit-verdadero-falso.png)
+- Se muestra como un cuadro clásico interactivo o un interruptor (*switch*).
+- Su estado inicial por defecto suele ser desmarcado (`false`).
+- Al hacer clic, alterna el estado, actualizando inmediatamente el modelo de datos.
+
+![Campo verdadero/falso en el formulario](/archihub.github.io/imagenes/campos/checkbox_form.png)

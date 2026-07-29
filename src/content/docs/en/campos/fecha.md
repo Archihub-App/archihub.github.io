@@ -1,67 +1,38 @@
 ---
 title: 'The Date Field'
-description: ''
+description: 'Documentation about the date field in ArchiHUB'
 ---
 
-The Date field allows for structured date selection through a visual picker, ensuring consistency in format.
+The Date field (`simple-date`) provides an optimized interface for selecting exact dates, ensuring a consistent storage format (ISO) in the database.
 
 ### Field Structure
-**Name**: Field name  
-- **Description**: Unique and descriptive identifier for the field.  
-- **Example**: `"Publication date"`, `"Date of birth"`.
 
-**Field type**: Date/Time  
-- **Description**: Allows selecting a date, a date and time, or a date range.  
-- **Example**: Field for publication date, event date, etc.
+The properties available for the date field are:
+
+**Name**:  
+- **Description**: The field's label.  
+- **Example**: `"Creation date"`, `"Date of entry"`.
 
 **Destination**:  
-- **Description**: Location or relation where the value is stored (e.g. metadata, database).  
-- **Example**: `metadata.publication_date`.
+- **Description**: Storage location within the metadata.  
+- **Example**: `metadata.firstLevel.creation_date`.
 
 **Instructions**:  
-- **Description**: Guide for the user on how to use the field.  
-- **Example**: *"Select the date in the format DD/MM/YYYY."*
-
-**Supported formats**:  
-- **Description**: Allowed types of date format.  
-- **Example**: `Date (DD/MM/YYYY)`, `Date and time`, `Date range`.
-
-**Validations**:  
-- **Description**: Rules to restrict valid dates.  
-- **Example**: *"Only dates after today."*, *"Weekends are not allowed."*
-
-**Minimum/maximum dates**:  
-- **Description**: Lower and upper limits for date selection.  
-- **Example**: `01/01/2000` (minimum), `12/31/2030` (maximum).
-
-**Allowed days of the week**:  
-- **Description**: Restricts selection to certain days.  
-- **Example**: *"Only business days (Monday to Friday)."*
-
-**Custom validation**:  
-- **Description**: Allows additional rules as needed.  
-- **Example**: *"The start date must be before the end date."*
+- **Description**: Optional help message about which specific date is being requested.
 
 **Required**:  
-- **Description**: Indicates if the field is mandatory (`Yes`) or optional (`No`).  
-- **Example**: `Yes` (the field must be completed).
+- **Description**: Indicates whether a date must be selected.
 
-**Condition**:  
-- **Description**: Rules for displaying/editing the field (e.g. depending on another field).  
-- **Example**: *"Visible only if `Document type = Report`."*
+**Condition** and **Access levels**:  
+- **Description**: Allow conditionally controlling the field's visibility and restricting it based on the user's role.
 
-**Access levels**:  
-- **Description**: Permissions required to interact with the field.  
-- **Example**: `Administrator, Editor` (only these roles can modify it).
+![Date field configuration](/archihub.github.io/imagenes/campos/date.png)
 
-![campoFecha](/archihub.github.io/imagenes/campoFecha.png)
+---
 
-### Practical example
-**Scenario**: Configure a field for the publication date:
+### Behavior in the interface
 
-1. **Label**: "Publication date"
-2. **Type**: Date
-3. **Format**: DD/MM/YYYY
-4. **Allowed range**: Current date onwards
+- It prevents typical formatting errors from manual date entry (such as the confusing use of DD/MM/YYYY vs MM/DD/YYYY).
+- When a date range is required, two separate `simple-date` fields are typically configured (e.g. "Start date" and "End date").
 
-![campoFechaForm](/archihub.github.io/imagenes/campo-edit-fecha.png) 
+![Date field in the form](/archihub.github.io/imagenes/campos/date_form.png)

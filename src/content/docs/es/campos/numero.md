@@ -1,67 +1,38 @@
 ---
 title: 'El campo Número'
-description: ''
+description: 'Documentación sobre el campo de número en ArchiHUB'
 ---
 
-El campo Número está diseñado específicamente para capturar valores numéricos con validación automática.
+El campo Número restringe la entrada de datos exclusivamente a valores numéricos, asegurando que la información capturada pueda ser procesada o validada matemáticamente.
 
 ### Estructura del campo
-**Nombre**: Nombre del campo  
-- **Descripción**: Identificador único y descriptivo del campo.  
-- **Ejemplo**: `"Año de publicación"`, `"Cantidad de páginas"`.
 
-**Tipo de campo**: Numérico  
-- **Descripción**: Permite ingresar valores numéricos, ya sean enteros o decimales.  
-- **Ejemplo**: Campo para el año, cantidad, precio, etc.
+La configuración del campo número incluye propiedades de validación nativas:
+
+**Nombre**:  
+- **Descripción**: La etiqueta visible para el usuario.  
+- **Ejemplo**: `"Cantidad"`, `"Año de publicación"`.
 
 **Destino**:  
-- **Descripción**: Ubicación o relación donde se almacena el valor (ej. metadatos, base de datos).  
-- **Ejemplo**: `metadata.anio_publicacion`.
+- **Descripción**: La clave en los metadatos donde se guardará el valor numérico.  
+- **Ejemplo**: `metadata.firstLevel.cantidad_paginas`.
 
 **Instrucciones**:  
-- **Descripción**: Guía para el usuario sobre cómo usar el campo.  
-- **Ejemplo**: *"Ingrese el año en formato numérico (ejemplo: 2023)."*
-
-**Valor mínimo/máximo**:  
-- **Descripción**: Define los límites inferior y superior permitidos para el valor.  
-- **Ejemplo**: `1900` (mínimo), `2025` (máximo).
-
-**Incrementos permitidos**:  
-- **Descripción**: Define el paso o incremento entre valores válidos.  
-- **Ejemplo**: `1` para enteros, `0.01` para decimales.
-
-**Formato de visualización**:  
-- **Descripción**: Permite definir cómo se muestra el número (separadores, decimales, etc.).  
-- **Ejemplo**: *"Mostrar con separador de miles."*
-
-**Añadir al final**:  
-- **Descripción**: Texto que se mostrará al final del campo (opcional).  
-- **Ejemplo**: *"Años", "kg", "USD"*
-
-**Añadir al inicio**:  
-- **Descripción**: Texto que se mostrará al inicio del campo (opcional).  
-- **Ejemplo**: *"$", "N°"*
+- **Descripción**: Texto de ayuda para aclarar qué formato numérico se espera.  
 
 **Requerido**:  
-- **Descripción**: Indica si el campo es obligatorio (`Sí`) u opcional (`No`).  
-- **Ejemplo**: `Sí` (debe completarse el campo).
+- **Descripción**: Define si es obligatorio introducir un número.
 
-**Condición**:  
-- **Descripción**: Reglas para mostrar/editar el campo (ej. dependiendo de otro campo).  
-- **Ejemplo**: *"Visible solo si `Tipo de documento = Informe`."*
+**Condición** y **Niveles de acceso**:  
+- **Descripción**: Propiedades estándar para controlar la visibilidad dinámica y los permisos del campo.
 
-**Niveles de acceso**:  
-- **Descripción**: Permisos necesarios para interactuar con el campo.  
-- **Ejemplo**: `Administrador, Editor` (solo estos roles pueden modificarlo).
+![Configuración del campo número](/archihub.github.io/imagenes/campos/number.png)
 
-![campoNumerico](/archihub.github.io/imagenes/campoNumerico.png)
+---
 
-### Ejemplo práctico
-**Escenario**: Configurar un campo para el año de publicación:
+### Comportamiento en la interfaz
 
-1. **Etiqueta**: "z"
-2. **Tipo**: Número
-3. **Rango**: 1900-2025
-4. **Formato**: Número entero
+- El campo en el frontend suele mostrar controles de incremento/decremento (flechas) y previene la escritura de caracteres alfabéticos.
+- El valor guardado será estrictamente de tipo numérico (`Number`) en la base de datos, lo que facilita operaciones de búsqueda, ordenamiento y agregación en el sistema.
 
-![campoNumericoForm](/archihub.github.io/imagenes/campo-edit-numero.png) 
+![Campo número en el formulario](/archihub.github.io/imagenes/campos/number_form.png)
