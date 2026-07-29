@@ -39,7 +39,7 @@ Antes de comenzar, asegúrate de tener habilitado el contenedor de Ollama en el 
 
 Para el funcionamiento adecuado de Ollama con ArchiHUB, es necesario configurar las siguientes variables de entorno en el archivo `.env`:
 
-```env
+```txt
 # Ollama settings
 OLLAMA_HOST=archihub_ollama # Nombre del servicio del contenedor Ollama
 OLLAMA_PORT=11434
