@@ -19,4 +19,4 @@ To configure automatic file processing, follow these steps:
 1. **Access the plugin**: to access the file processing plugin, go to the processing tab in the ArchiHUB interface and select the `PROCESSING CONFIGURATION` button of the file processing plugin.
 2. **Configure content types**: select the content types you want to process automatically and select the processing row that will be used for each content type. If more than one content type is configured for the same processing row, the files will be processed in alphabetical order by the name of the content type.
 
-For the use of the plugin, it is important that there is at least one processing row available, as this depends on the tasks related to file processing being able to be executed. To create a processing row or validate that it exists, review the [processing rows](../nodos) documentation.
+For the use of the plugin, it is important that there is at least one processing row available, as this depends on the tasks related to file processing being able to be executed. To create a processing row or validate that it exists, review the [processing rows](/archihub.github.io/en/nodos) documentation.

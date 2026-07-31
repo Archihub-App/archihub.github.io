@@ -11,7 +11,7 @@ Nuestro compromiso con el desarrollo de ArchiHUB como proyecto de código abiert
 
 Un plugin es un módulo adicional que se puede integrar en ArchiHUB para ampliar sus funcionalidades. Los plugins pueden ser utilizados para agregar nuevas características o incluso integrar ArchiHUB con otras herramientas y servicios.
 
-Como ejemplo, tenemos el plugin para [transcripción de audio y video](../transcribe) que permite a los usuarios transcribir automáticamente el contenido de sus archivos multimedia usando el modelo Whisper de OpenAI.
+Como ejemplo, tenemos el plugin para [transcripción de audio y video](/archihub.github.io/es/transcribe) que permite a los usuarios transcribir automáticamente el contenido de sus archivos multimedia usando el modelo Whisper de OpenAI.
 
 ![Visualización de transcripciones en ArchiHUB](/archihub.github.io/imagenes/download_transcription.gif)
 

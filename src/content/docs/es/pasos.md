@@ -21,7 +21,7 @@ Es importante que te familiarices con su funcionamiento para aprovechar al máxi
 ![home del modulo de catalogación](/archihub.github.io/imagenes/home_catalogacion.png)
 
 
-En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](../estandares).
+En la esquina superior izquierda, encontrarás una lista desplegable con los tipos de contenido que vienen predefinidos con la instalación de ArchiHUB. Si quieres saber más sobre estos tipos de contenido, haz clic [aquí](/archihub.github.io/es/estandares).
 
 ![menu tipos de contenido](/archihub.github.io/imagenes/menu_tipos.png)
 
@@ -48,7 +48,7 @@ Es importante saber que los tipos de contenido tienen una jerarquía. Actualment
 
 Para crear una nueva __Unidad Documental__, primero debemos crear un __Fondo__ que la contenga. Sigue estos pasos:
 
-- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G. Puedes saber más sobre los estándares de metadatos [acá](../estandares).
+- Abrir el formulario de creación: Cuando abras por primera vez el formulario de creación, verás el formulario por defecto del ISAD-G. Puedes saber más sobre los estándares de metadatos [acá](/archihub.github.io/es/estandares).
 - Rellenar el formulario: No te preocupes por todos los campos en este momento. Solo necesitas introducir un _Título_ para tu nuevo recurso de tipo __Fondo__.
 - Guardar el __Fondo__: Una vez que hayas introducido el _Título_, puedes guardar tu nuevo recurso de tipo __Fondo__.
 

@@ -13,11 +13,11 @@ For this guide, we will perform two examples with two different information stru
 
 ## Administration API Key
 
-To run this and other scripts that manage the application, you need to have an administration key. This key is essential for interacting with ArchiHUB's administration API. Learn more about how to generate it [here](../../perfil/llaves).
+To run this and other scripts that manage the application, you need to have an administration key. This key is essential for interacting with ArchiHUB's administration API. Learn more about how to generate it [here](/archihub.github.io/en/perfil/llaves).
 
 ## Downloading the Scripts
 
-If you have already followed the [local machine installation guide](../../install_local), you have already downloaded the [repository](https://github.com/ArchiHUB-App/getting-started) that we need. If not, you can clone the repository or download it [here](https://github.com/ArchiHUB-App/getting-started/archive/refs/heads/main.zip).
+If you have already followed the [local machine installation guide](/archihub.github.io/en/install_local), you have already downloaded the [repository](https://github.com/ArchiHUB-App/getting-started) that we need. If not, you can clone the repository or download it [here](https://github.com/ArchiHUB-App/getting-started/archive/refs/heads/main.zip).
 
 ```
 git clone https://github.com/ArchiHUB-App/getting-started.git
