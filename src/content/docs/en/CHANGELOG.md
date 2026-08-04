@@ -3,25 +3,31 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.1] _beta_
+## [1.4] _beta_
 
 ### Added
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added general web settings configuration from the admin panel
 - Added MCP support
+- Migrated from Flask to FastAPI
+
+### Security
+- The access levels for image galleries are adjusted
+- New option to block or allow only metadata visualization for resource dependending on access level
+
+## [1.3.1] _4 August 2026_
+
+### Added
 - Improved agent navigation
 - Implemented tiles for large images both in the backend and frontend with a custom viewer
 - Added OpenRouter as AI provider
 - Added new algorithm for simplifying the geometry of geographic polygons
 
 ### Fixed
+- Improved the documentation of the main system endpoints and enabled swagger for developers
 - Improved Exiftools implementation in the deployment Dockerfile
 - Improved back response messages for agent interaction
-
-### Security
-- The access levels for image galleries are adjusted
-- New option to block or allow only metadata visualization for resource dependending on access level
 
 ## [1.3.0] _9 June 2026_
 

@@ -3,25 +3,32 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.1] _beta_
+## [1.4] _beta_
 
 ### Added
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega configuración general del sitio desde el panel de administración
 - Se implementa soporte para MCP
+- Se migra de Flask a FastAPI
+
+### Security
+- Se ajustan los niveles de acceso para las galerías de imágenes
+- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
+
+## [1.3.1] _4 August 2026_
+
+### Added
+
 - Se implementa soporte para navegación agentica
 - Se implementa soporte de tiles para imágenes grandes tanto en el backend como en el frontend con un visor personalizado
 - Se agrega OpenRouter como proveedor de IA
 - Se agrega nuevo algoritmo para simplificar la geometría de polígonos geográficos
 
 ### Fixed
+- Se mejora la documentación de los endpoints del sistema principal y se habilita swagger para desarrolladores
 - Se mejora la implementacion de Exiftools en el Dockerfile de despliegue
 - Se mejoran mensajes de respuesta del back para la interacción de agentes
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes
-- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
 
 ## [1.3.0] _9 June 2026_
 
