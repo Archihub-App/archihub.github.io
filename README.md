@@ -28,7 +28,7 @@ ArchiHUB es una plataforma de documentación y recursos para arquitectos y profe
    ```sh
    npm run dev
    ```
-   Tu sitio estará disponible en `http://localhost:4321`.
+   Tu sitio estará disponible en [`http://localhost:4321`](http://localhost:4321).
 
    
 
