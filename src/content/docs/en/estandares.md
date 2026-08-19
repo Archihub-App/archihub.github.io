@@ -26,7 +26,7 @@ A field has at least 4 configurable options:
 - __Destination__: this is the path into the metadata schema. By default all destinations must start with _metadata_, for example, the default path for the title is _metadata.firstLevel.title_. This way I can have the same field, with the same type and destination in two or more different standards. If you try to save a field that has already been configured with a certain type you will not be able to save it with a different one. If you want to consult the complete schema of your metadata in the tool, you can go to the system configuration.
 - __Required__: whether the field is required or not.
 
-A metadata standard provides a list of metadata that can be customized according to the specific needs of the content type. The types of fields available are diverse and suit a wide range of possibilities. See the detailed documentation [here](../campos).
+A metadata standard provides a list of metadata that can be customized according to the specific needs of the content type. The types of fields available are diverse and suit a wide range of possibilities. See the detailed documentation [here](/archihub.github.io/en/campos).
 
 ## Types of content
 

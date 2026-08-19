@@ -8,9 +8,9 @@ El plugin de transcripción automática de ArchiHUB utiliza el modelo Whisper de
 
 ## Instalación
 
-1. **Instalación del aplicativo**: para instalar el aplicativo debes seguir los pasos en la mencionados en la sección de [instalación](../install_local).
+1. **Instalación del aplicativo**: para instalar el aplicativo debes seguir los pasos en la mencionados en la sección de [instalación](/archihub.github.io/es/install_local).
 
-2. **Instalación del plugin**: para instalar el plugin de transcripción automática, debes clonar el [repositorio del plugin](https://github.com/ArchiHUB-App/transcribeWhisperX.git) en la carpeta `plugins` del aplicativo siguiendo los pasoos indicados en la sección de [instalación de plugins](../install_plugin).
+2. **Instalación del plugin**: para instalar el plugin de transcripción automática, debes clonar el [repositorio del plugin](https://github.com/ArchiHUB-App/transcribeWhisperX.git) en la carpeta `plugins` del aplicativo siguiendo los pasoos indicados en la sección de [instalación de plugins](/archihub.github.io/es/install_plugin).
 
 3. **Configuración del token de Hugging Face**: el plugin ofrece la opción de generar la transcripción “plana” de la voz o de separar los parlantes identificados en el audio. Para usar la segunda opción es importante tener una cuenta en [Hugging Face](https://huggingface.co/) y crear un token para hacer uso del modelo de separación de parlantes:
 
@@ -39,7 +39,7 @@ docker compose up --no-deps -d archihub_flask_backend
 
 Una vez reiniciado, accede a la interfaz de ArchiHUB y ve a la pestaña de procesamientos. Si el plugin de transcripción no está habilitado, debes habilitarlo desde la pestaña de ajustes y luego reiniciar el aplicativo con los comandos indicaos en el paso anterior.
 
-Es importante que la [fila de procesamiento](../nodos/#las-filas-de-procesos) requerida para ejecutar tareas del plugin se haya iniciado.
+Es importante que la [fila de procesamiento](/archihub.github.io/es/nodos#las-filas-de-procesos) requerida para ejecutar tareas del plugin se haya iniciado.
 
 Una vez en el plugin, selecciona los archivos que quieres transcribir y configura las opciones del plugin:
 

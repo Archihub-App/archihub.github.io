@@ -7,9 +7,9 @@ The ArchiHUB automatic transcription plugin uses the Whisper model from OpenAI t
 
 ## Installation
 
-1. **Installation of the application**: to install the application you must follow the steps mentioned in the [installation section](../install_local).
+1. **Installation of the application**: to install the application you must follow the steps mentioned in the [installation section](/archihub.github.io/en/install_local).
 
-2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/ArchiHUB-App/transcribeWhisperX.git) in the `plugins` folder of the application following the steps indicated in the [plugin installation section](../install_plugin).
+2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/ArchiHUB-App/transcribeWhisperX.git) in the `plugins` folder of the application following the steps indicated in the [plugin installation section](/archihub.github.io/en/install_plugin).
 
 3. **Hugging Face token configuration**: the plugin offers the option to generate the "flat" transcription of the voice or to separate the speakers identified in the audio. To use the second option, it is important to have an account on [Hugging Face](https://huggingface.co/) and create a token to use the speaker separation model:
 
@@ -38,7 +38,7 @@ docker compose up --no-deps -d archihub_flask_backend
 
 Once restarted, access the ArchiHUB interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
 
-It is important that the [processing row](../nodos/#the-process-queues) required to execute plugin tasks has been started.
+It is important that the [processing row](/archihub.github.io/en/nodos#the-process-queues) required to execute plugin tasks has been started.
 
 Once in the plugin, select the files you want to transcribe and configure the plugin options:
 

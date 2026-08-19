@@ -39,7 +39,7 @@ Before starting, make sure you have the Ollama container enabled in ArchiHUB's `
 
 For Ollama to work properly with ArchiHUB, you need to configure the following environment variables in the `.env` file:
 
-```env
+```txt
 # Ollama settings
 OLLAMA_HOST=archihub_ollama # Name of the Ollama container service
 OLLAMA_PORT=11434

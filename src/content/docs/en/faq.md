@@ -230,9 +230,9 @@ If you have the Elasticsearch service enabled, it is also recommended to back up
 - Advanced features (in development)
 - Custom feature development (optional)
 
-More information: [https://bit-sol.com.co/es/projects/archihub/](https://bit-sol.com.co/es/projects/archihub/)
+More information: [https://bit-sol.com.co/project/archihub/](https://bit-sol.com.co/project/archihub/)
 
 ---
 
 Do you have a question that doesn't appear here?  
-Write it on [GitHub Discussions](https://github.com/orgs/Archihub-App/discussions/new/choose) or contact us directly!
+Write it on [GitHub Discussions](https://github.com/orgs/Archihub-App/discussions/new/choose) or [contact us directly!](https://bit-sol.com.co/)

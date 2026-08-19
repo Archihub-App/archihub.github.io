@@ -126,7 +126,7 @@ This approach helps you focus on the most relevant resources, which in this case
 
 ![Roles settings](/archihub.github.io/imagenes/ajustes_roles.png)
 
-In this configuration section, you must select the lists created for [roles](../roles) and [access levels](../acceso). This configuration is vital for the proper functioning of ArchiHUB. Although it is possible to add new roles or access levels throughout the use of the tool, it is important not to delete or modify the existing lists in the configuration. Doing so could generate errors in the installation and affect the tool's functionality.
+In this configuration section, you must select the lists created for [roles](/archihub.github.io/en/roles) and [access levels](/archihub.github.io/en/acceso). This configuration is vital for the proper functioning of ArchiHUB. Although it is possible to add new roles or access levels throughout the use of the tool, it is important not to delete or modify the existing lists in the configuration. Doing so could generate errors in the installation and affect the tool's functionality.
 
 Keep these lists updated and review them periodically to ensure they correctly reflect your organization's access needs and structures, without compromising the system's integrity.
 

@@ -18,7 +18,7 @@ It is important that you become familiar with how it works in order to take full
 ![cataloging module](/archihub.github.io/imagenes/catalogacion.gif)
 ![home of the cataloging module](/archihub.github.io/imagenes/home_catalogacion.png)
 
-In the upper left corner, you will find a drop-down list with the content types that come predefined with the ArchiHUB installation. If you want to know more about these content types, click [here](../estandares).
+In the upper left corner, you will find a drop-down list with the content types that come predefined with the ArchiHUB installation. If you want to know more about these content types, click [here](/archihub.github.io/en/estandares).
 
 ![menu content types](/archihub.github.io/imagenes/menu_tipos.png)
 
@@ -44,7 +44,7 @@ It is important to know that content types have a hierarchy. We are currently lo
 
 To create a new __Documentary Unit__, we must first create a __Fond__ that contains it. Follow these steps:
 
-- Open the creation form: When you first open the creation form, you will see the default ISAD-G form. You can learn more about the metadata standards [here](../estandares).
+- Open the creation form: When you first open the creation form, you will see the default ISAD-G form. You can learn more about the metadata standards [here](/archihub.github.io/en/estandares).
 - Fill in the form: Don't worry about all the fields at this point. You just need to enter a _Title_ for your new resource of type __Fond__.
 - Save the __Fond__: Once you have entered the _Title_, you can save your new resource of type __Fond__.
 
