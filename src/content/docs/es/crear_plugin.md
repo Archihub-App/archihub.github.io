@@ -40,7 +40,24 @@ openai
 
 ```
 
-Es importante que siempre se deje un salto de línea al final del archivo `requirements.txt` para evitar errores en la instalación de las dependencias con docker.
+Ya no es necesario dejar un salto de línea al final del archivo: el instalador lee el archivo línea por línea y admite comentarios (`#`).
+
+Si una dependencia se instala desde un repositorio git, añade `#egg=<nombre-de-la-distribución>` al final de la URL. Sin ese dato el nombre del paquete no se puede deducir de la URL, y la declaración no se puede verificar contra lo que el código importa:
+
+```
+git+https://github.com/openai/whisper.git#egg=openai-whisper
+```
+
+4.1. **Define los paquetes del sistema**: si el plugin necesita un programa del sistema (por ejemplo `ffmpeg` o `tesseract-ocr`), decláralo en un archivo `packages.txt` dentro de la carpeta del plugin, un nombre de paquete apt por línea. Estos paquetes se instalan al construir la imagen.
+
+```
+# Convierte audio y video antes de transcribir.
+ffmpeg
+```
+
+**Esto no es opcional ni decorativo.** Antes no existía este archivo y los autores escribían el requisito como comentario dentro de `requirements.txt`, donde el proceso de construcción lo borraba. El resultado era un plugin que se instalaba sin errores y fallaba en su primera tarea con un `FileNotFoundError` de un binario que nadie había instalado.
+
+Cada línea debe ser un nombre de paquete (`^[a-z0-9][a-z0-9+.-]*$`). Cualquier otra cosa se rechaza al construir la imagen, porque el contenido de esta carpeta es de terceros y se entrega a un comando que se ejecuta como root.
 
 5. **Define las variables de entorno del plugin**: si el plugin requiere de variables de entorno adicionales, estas se deben definir en un archivo `.env` en la carpeta del plugin. En este caso, el plugin requiere de la variable `OPENAI_API_KEY` con la llave generada en la [cuenta de OpenAI](https://platform.openai.com/settings/organization/api-keys). Para ello, abre el archivo `.env` en cualquier editor de texto y asigna la llave generada.
 

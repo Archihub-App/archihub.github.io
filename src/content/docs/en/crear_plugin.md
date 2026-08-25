@@ -40,7 +40,24 @@ openai
 
 ```
 
-It is important to always leave a line break at the end of the `requirements.txt` file to avoid errors in the installation of the dependencies with docker.
+A trailing newline is no longer required: the installer reads the file line by line and accepts comments (`#`).
+
+If a dependency is installed from a git repository, append `#egg=<distribution-name>` to the URL. Without it the package name cannot be derived from the URL, so the declaration cannot be checked against what the code imports:
+
+```
+git+https://github.com/openai/whisper.git#egg=openai-whisper
+```
+
+4.1. **Declare system packages**: if the plugin needs a system program (`ffmpeg`, `tesseract-ocr`, ...), declare it in a `packages.txt` file inside the plugin folder, one apt package name per line. These are installed when the image is built.
+
+```
+# Converts audio and video before transcribing.
+ffmpeg
+```
+
+**This is not optional.** There was no such file before, so authors wrote the requirement as a comment inside `requirements.txt`, where the build step deleted it. The result was a plugin that installed cleanly and failed at its first task with a `FileNotFoundError` for a binary nobody had installed.
+
+Each line must be a package name (`^[a-z0-9][a-z0-9+.-]*$`). Anything else is refused at build time, because this folder is third-party content and its contents are handed to a command running as root.
 
 5. **Define the plugin environment variables**: if the plugin requires additional environment variables, these must be defined in an `.env` file in the plugin folder. In this case, the plugin requires the `OPENAI_API_KEY` variable with the key generated in the [OpenAI account](https://platform.openai.com/settings/organization/api-keys). To do this, open the `.env` file in any text editor and assign the generated key.
 

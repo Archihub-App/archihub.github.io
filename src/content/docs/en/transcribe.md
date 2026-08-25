@@ -28,8 +28,8 @@ The ArchiHUB automatic transcription plugin uses the Whisper model from OpenAI t
 6. **Restart the backend**: restart the application backend with the following commands:
 
 ```bash
-docker compose stop archihub_flask_backend
-docker compose up --no-deps -d archihub_flask_backend
+docker compose stop archihub_backend
+docker compose up --no-deps -d archihub_backend
 ```
 
 ## Using the plugin

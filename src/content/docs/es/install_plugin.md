@@ -32,8 +32,8 @@ Una vez haya terminado vamos al submenu de __Plugins__ en la __Administración d
 Después de activar el complemento, es esencial reiniciar el backend. Este reinicio evitará la descarga de dependencias, lo que debería agilizar el proceso.
 
 ```
-docker compose stop archihub_flask_backend
-docker compose up --no-deps -d archihub_flask_backend
+docker compose stop archihub_backend
+docker compose up --no-deps -d archihub_backend
 ```
 
 Ahora podemos volver a nuestro menu de procesamientos y debería salir nuestro nuevo plugin activo:

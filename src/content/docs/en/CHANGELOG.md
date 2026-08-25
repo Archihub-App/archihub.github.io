@@ -3,16 +3,36 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.4] _beta_
+## [2.0.0] _beta_
+
+### Changed
+- The backend is now FastAPI only. The previous Flask implementation and its entry points are removed, and the `ARCHIHUB_STACK` variable no longer exists.
+- Environment variables `FLASK_ENV` and `FLASK_RUN_PORT` are renamed to `FASTAPI_ENV` and `FASTAPI_RUN_PORT`, and `GUNICORN_WORKERS` to `UVICORN_WORKERS`. `FLASK_APP`, `FLASK_RUN_HOST`, `FLASK_DEBUG` and `SECRET_KEY` are removed, as nothing reads them any more.
+- The backend service in Docker Compose is now named `archihub_backend`.
+- Each plugin declares its own configuration in a `.env` file beside its package, the same way it already declared its Python dependencies and system packages.
 
 ### Added
+- Coordinated restart of every process in a deployment, from the system settings screen. Activating or deactivating a plugin requests the restart that makes the change take effect again.
+- MongoDB indexes for the geographic layers, which were previously queried by scanning the whole collection.
+- Invalid geometries are repaired automatically when the administrative boundaries are loaded.
+
+### Fixed
+- System settings were not being saved: the screen reported success without writing any change.
+- Boundary indexing discarded one border and, with it, prevented the geospatial index from being created at all.
+- Speaker separation in transcription could not load, due to an incompatibility between versions of its libraries.
+
+### Security
+- The previous API key scheme is retired; keys are stored encrypted and shown only once.
+- The restart counter and the plugin registry can no longer be modified through the settings form.
+
+### Added (for validation before v2.0.0)
 - The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
 - Implemented a timezone standard for display in the frontend
 - Added general web settings configuration from the admin panel
 - Added MCP support
 - Migrated from Flask to FastAPI
 
-### Security
+### Security (for validation before v2.0.0)
 - The access levels for image galleries are adjusted
 - New option to block or allow only metadata visualization for resource dependending on access level
 

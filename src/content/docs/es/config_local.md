@@ -64,8 +64,8 @@ El primer paso es ir la la configuración del sistema y en la sección Administr
 
 Después de activar Elasticsearch en la configuración del sistema, es necesario reiniciar el contenedor del backend para aplicar los cambios. Esto se puede hacer de dos formas:
 
-- __Desde la terminal__: Debes navegar a la carpeta `local-machine/archihub` y desde ahí puedes ejecutar el siguiente comando para reiniciar el contenidor del backend: `docker compose up -d --no-deps archihub_flask_backend`.
-- __Desde el aplicativo de escritorio__: En el aplicativo de escritorio es un poco más sencillo, asegurate de estar en el submenu de los contenedores, busca el que dice `archihub_flask_backend` y simplemente lo detienes y vuelves a iniciar.
+- __Desde la terminal__: Debes navegar a la carpeta `local-machine/archihub` y desde ahí puedes ejecutar el siguiente comando para reiniciar el contenidor del backend: `docker compose up -d --no-deps archihub_backend`.
+- __Desde el aplicativo de escritorio__: En el aplicativo de escritorio es un poco más sencillo, asegurate de estar en el submenu de los contenedores, busca el que dice `archihub_backend` y simplemente lo detienes y vuelves a iniciar.
 
 Para validar que el índice de Elasticsearch haya iniciado correctamente, sigue estos pasos:
 

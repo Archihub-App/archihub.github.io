@@ -32,8 +32,8 @@ Once it has finished we go to the __Plugins__ submenu in the __System Administra
 After activating the plugin, it is essential to restart the backend. This restart will prevent the download of dependencies, which should speed up the process.
 
 ```
-docker compose stop archihub_flask_backend
-docker compose up --no-deps -d archihub_flask_backend
+docker compose stop archihub_backend
+docker compose up --no-deps -d archihub_backend
 ```
 
 Now we can go back to our processing menu and our new active plugin should appear:

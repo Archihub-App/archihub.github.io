@@ -29,8 +29,8 @@ El plugin de transcripción automática de ArchiHUB utiliza el modelo Whisper de
 6. **Reinicio del backend**: reinicia el backend del aplicativo con los siguientes comandos:
 
 ```bash
-docker compose stop archihub_flask_backend
-docker compose up --no-deps -d archihub_flask_backend
+docker compose stop archihub_backend
+docker compose up --no-deps -d archihub_backend
 ```
 
 ## Uso del plugin

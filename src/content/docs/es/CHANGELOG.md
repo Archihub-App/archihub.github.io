@@ -3,16 +3,36 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.4] _beta_
+## [2.0.0] _beta_
+
+### Changed
+- El backend pasa a ser exclusivamente FastAPI. Se elimina la implementación anterior en Flask junto con sus puntos de entrada; ya no existe la variable `ARCHIHUB_STACK`.
+- Se renombran las variables de entorno `FLASK_ENV` y `FLASK_RUN_PORT` a `FASTAPI_ENV` y `FASTAPI_RUN_PORT`, y `GUNICORN_WORKERS` a `UVICORN_WORKERS`. Se eliminan `FLASK_APP`, `FLASK_RUN_HOST`, `FLASK_DEBUG` y `SECRET_KEY`, que ya no las lee nada.
+- El servicio del backend en Docker Compose pasa a llamarse `archihub_backend`.
+- Cada plugin declara su propia configuración en un archivo `.env` junto a su paquete, del mismo modo que ya declaraba sus dependencias de Python y sus paquetes del sistema.
 
 ### Added
+- Reinicio coordinado de todos los procesos del despliegue desde los ajustes del sistema. Activar o desactivar un plugin vuelve a solicitar el reinicio que hace efectivo el cambio.
+- Índices de MongoDB para las capas geográficas, que antes se consultaban recorriendo la colección completa.
+- Se reparan automáticamente las geometrías inválidas al cargar los polígonos administrativos.
+
+### Fixed
+- Los ajustes del sistema no se guardaban: la pantalla informaba de un guardado correcto sin escribir ningún cambio.
+- El indexado de polígonos descartaba una frontera y, con ella, impedía crear el índice geoespacial completo.
+- La separación de hablantes en la transcripción no podía cargarse por una incompatibilidad entre versiones de sus bibliotecas.
+
+### Security
+- Se retira el esquema anterior de llaves de API; las llaves se almacenan cifradas y se muestran una única vez.
+- El contador de reinicios y el registro de plugins dejan de ser modificables desde el formulario de ajustes.
+
+### Added (for validation before v2.0.0)
 - Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
 - Se implementa un estandar de franja horaria para la visualización en el front
 - Se agrega configuración general del sitio desde el panel de administración
 - Se implementa soporte para MCP
 - Se migra de Flask a FastAPI
 
-### Security
+### Security (for validation before v2.0.0)
 - Se ajustan los niveles de acceso para las galerías de imágenes
 - Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
 
