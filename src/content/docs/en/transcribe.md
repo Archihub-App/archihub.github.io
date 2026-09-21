@@ -9,7 +9,7 @@ The ArchiHUB automatic transcription plugin uses the Whisper model from OpenAI t
 
 1. **Installation of the application**: to install the application you must follow the steps mentioned in the [installation section](/archihub.github.io/en/install_local).
 
-2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/ArchiHUB-App/transcribeWhisperX.git) in the `plugins` folder of the application following the steps indicated in the [plugin installation section](/archihub.github.io/en/install_plugin).
+2. **Installation of the plugin**: to install the automatic transcription plugin, you must clone the [plugin repository](https://github.com/ArchiHUB-App/transcribeWhisperX.git) into the backend's `archihub/plugins` folder following the steps indicated in the [plugin installation section](/archihub.github.io/en/install_plugin).
 
 3. **Hugging Face token configuration**: the plugin offers the option to generate the "flat" transcription of the voice or to separate the speakers identified in the audio. To use the second option, it is important to have an account on [Hugging Face](https://huggingface.co/) and create a token to use the speaker separation model:
 
@@ -23,20 +23,17 @@ The ArchiHUB automatic transcription plugin uses the Whisper model from OpenAI t
 
 4. **Access the diarization repository**: access the [model repository](https://huggingface.co/pyannote/speaker-diarization-3.1) and request access. Complete the form with the requested information.
 
-5. **Environment variables configuration**: once the Hugging Face access token is generated, you must paste the token into the ArchiHUB environment variables. To do this, open the .env file in any text editor and look for the `HF_TOKEN` variable. If it does not exist, create it and assign the generated key.
+5. **Environment variables configuration**: once the Hugging Face access token is generated, paste it into the plugin's settings. Copy the `.env.example` file in the plugin folder (`archihub/plugins/transcribeWhisperX/`) as `.env` in the same folder and set the token as the value of `HF_TOKEN`. This file belongs to the plugin; do not add the variable to the installation's `.env` or to `docker-compose.yml`.
 
-6. **Restart the backend**: restart the application backend with the following commands:
+6. **Enable the node for the `high` queue**: transcriptions run on the `high` queue, which the default processing node does not consume. In `docker-compose.yml`, uncomment the `celery_worker_queues` service (in its GPU or non-GPU version), as explained in the [advanced configuration](/archihub.github.io/en/config_local).
 
-```bash
-docker compose stop archihub_flask_backend
-docker compose up --no-deps -d archihub_flask_backend
-```
+7. **Rebuild the images**: from the `local-machine/archihub` folder, run `docker compose up -d --build`. If you change the plugin's `.env` later, restarting from the system configuration (__Reinicio del sistema__ → __Reiniciar backend__) is enough.
 
 ## Using the plugin
 
 ### Using from the processing view
 
-Once restarted, access the ArchiHUB interface and go to the processing tab. If the transcription plugin is not enabled, you must enable it from the settings tab and then restart the application with the commands indicated in the previous step.
+Once restarted, access the ArchiHUB interface and go to the processing tab. If the transcription plugin is not enabled, enable it from the __Plugins__ submenu in __System administration__; the application restarts by itself to apply the change.
 
 It is important that the [processing row](/archihub.github.io/en/nodos#the-process-queues) required to execute plugin tasks has been started.
 

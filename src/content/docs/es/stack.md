@@ -18,9 +18,9 @@ ArchiHUB es una plataforma web versátil que utiliza un stack technológico vari
 - __Backend del aplicativo:__ El backend de nuestro aplicativo se beneficia de varios proyectos de código abierto. Utilizamos:
 <br> &nbsp;&nbsp; - __FFmpeg__: para el procesamiento de archivos
 <br> &nbsp;&nbsp; - __Celery__: para la gestión de la fila de procesamientos, permitiendo una ejecución distribuida y asíncrona de tareas.
-<br> &nbsp;&nbsp; - __Flask y Gunicorn__: para poner en marcha el backend de forma paralela, asegurando una escalabilidad y rendimiento óptimos en todo momento.
+<br> &nbsp;&nbsp; - __FastAPI y Uvicorn__: para poner en marcha la API del backend con varios procesos en paralelo, asegurando una escalabilidad y rendimiento óptimos en todo momento.
 
-- __Frontend del aplicativo:__ Nuestro aplicativo cuenta con un frontend desarrollado utilizando React.js.
+- __Frontend del aplicativo:__ Nuestro aplicativo cuenta con un frontend desarrollado con Next.js (React), servido detrás de nginx.
 
 ## Requerimientos
 

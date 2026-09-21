@@ -3,25 +3,46 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.1] _beta_
+## [2.0.0] _21 September 2026_
+
+### Changed
+- The backend is now distributed under the [GNU AGPL v3](/archihub.github.io/en/licencia) license instead of the MIT license.
+- The backend is now FastAPI only. The previous Flask implementation and its entry points are removed, and the `ARCHIHUB_STACK` variable no longer exists.
+- Environment variables `FLASK_ENV` and `FLASK_RUN_PORT` are renamed to `FASTAPI_ENV` and `FASTAPI_RUN_PORT`, `GUNICORN_WORKERS` to `UVICORN_WORKERS` and, in the installation's `.env`, `BACKEND_PORT_FLASK` to `BACKEND_PORT`. `FLASK_APP`, `FLASK_RUN_HOST`, `FLASK_DEBUG` and `SECRET_KEY` are removed, as nothing reads them any more.
+- The backend service in Docker Compose is now named `archihub_backend`.
+- Each plugin declares its own configuration in a `.env` file beside its package, the same way it already declared its Python dependencies and system packages.
+- Plugins written for version 1.x are not compatible. The backend does not start while a plugin is active that is not installed in its 2.0 version, and names it.
+- The frontend is a Next.js application running in its own service (`archihub_frontend_node`) behind nginx.
+- The local installation no longer restores an initial database: on first use, the application asks you to create the administrator account and prepares the initial configuration.
+- The `install.sh` installer generates each installation's own passwords and keys from the `.env.bak` template, and leaves an existing `.env` untouched.
+- The [update guide](/archihub.github.io/en/actualizar_local) explains how to move from version 1.x to 2.0.
 
 ### Added
-- The possibility of changing the content type of a resource is enabled as long as it shares a form with the destination type.
-- Implemented a timezone standard for display in the frontend
-- Added general web settings configuration from the admin panel
-- Added MCP support
+- Coordinated restart of every process in a deployment, from the system settings screen. Activating or deactivating a plugin requests the restart that makes the change take effect again.
+- MongoDB indexes for the geographic layers, which were previously queried by scanning the whole collection.
+- Invalid geometries are repaired automatically when the administrative boundaries are loaded.
+
+### Fixed
+- System settings were not being saved: the screen reported success without writing any change.
+- Boundary indexing discarded one border and, with it, prevented the geospatial index from being created at all.
+- Speaker separation in transcription could not load, due to an incompatibility between versions of its libraries.
+
+### Security
+- The previous API key scheme is retired; keys are stored hashed and shown only once.
+- The restart counter and the plugin registry can no longer be modified through the settings form.
+
+## [1.3.1] _4 August 2026_
+
+### Added
 - Improved agent navigation
 - Implemented tiles for large images both in the backend and frontend with a custom viewer
 - Added OpenRouter as AI provider
 - Added new algorithm for simplifying the geometry of geographic polygons
 
 ### Fixed
+- Improved the documentation of the main system endpoints and enabled swagger for developers
 - Improved Exiftools implementation in the deployment Dockerfile
 - Improved back response messages for agent interaction
-
-### Security
-- The access levels for image galleries are adjusted
-- New option to block or allow only metadata visualization for resource dependending on access level
 
 ## [1.3.0] _9 June 2026_
 

@@ -3,25 +3,47 @@ title: 'CHANGELOG'
 description: ''
 ---
 
-## [1.3.1] _beta_
+## [2.0.0] _21 September 2026_
+
+### Changed
+- El backend pasa a distribuirse bajo la licencia [GNU AGPL v3](/archihub.github.io/es/licencia) en lugar de la licencia MIT.
+- El backend pasa a ser exclusivamente FastAPI. Se elimina la implementación anterior en Flask junto con sus puntos de entrada; ya no existe la variable `ARCHIHUB_STACK`.
+- Se renombran las variables de entorno `FLASK_ENV` y `FLASK_RUN_PORT` a `FASTAPI_ENV` y `FASTAPI_RUN_PORT`, `GUNICORN_WORKERS` a `UVICORN_WORKERS` y, en el `.env` de la instalación, `BACKEND_PORT_FLASK` a `BACKEND_PORT`. Se eliminan `FLASK_APP`, `FLASK_RUN_HOST`, `FLASK_DEBUG` y `SECRET_KEY`, que ya no las lee nada.
+- El servicio del backend en Docker Compose pasa a llamarse `archihub_backend`.
+- Cada plugin declara su propia configuración en un archivo `.env` junto a su paquete, del mismo modo que ya declaraba sus dependencias de Python y sus paquetes del sistema.
+- Los plugins escritos para la versión 1.x no son compatibles. El backend no arranca si hay activo un plugin que no está instalado en su versión 2.0, e indica cuál es.
+- El frontend es una aplicación Next.js que se ejecuta en su propio servicio (`archihub_frontend_node`) detrás de nginx.
+- La instalación local ya no restaura una base de datos inicial: la primera vez que se abre, el aplicativo pide crear el usuario administrador y prepara la configuración inicial.
+- El instalador `install.sh` genera contraseñas y llaves propias para cada instalación a partir de la plantilla `.env.bak`, y no modifica un `.env` existente.
+- La guía de [actualización](/archihub.github.io/es/actualizar_local) explica cómo pasar de la versión 1.x a la 2.0.
 
 ### Added
-- Se habilita la posibilidad de campiar el tipo de contenido de un recurso siempre y cuando comparta formulario con el tipo de destino.
-- Se implementa un estandar de franja horaria para la visualización en el front
-- Se agrega configuración general del sitio desde el panel de administración
-- Se implementa soporte para MCP
+- Reinicio coordinado de todos los procesos del despliegue desde los ajustes del sistema. Activar o desactivar un plugin vuelve a solicitar el reinicio que hace efectivo el cambio.
+- Índices de MongoDB para las capas geográficas, que antes se consultaban recorriendo la colección completa.
+- Se reparan automáticamente las geometrías inválidas al cargar los polígonos administrativos.
+
+### Fixed
+- Los ajustes del sistema no se guardaban: la pantalla informaba de un guardado correcto sin escribir ningún cambio.
+- El indexado de polígonos descartaba una frontera y, con ella, impedía crear el índice geoespacial completo.
+- La separación de hablantes en la transcripción no podía cargarse por una incompatibilidad entre versiones de sus bibliotecas.
+
+### Security
+- Se retira el esquema anterior de llaves de API; las llaves se almacenan como hash y se muestran una única vez.
+- El contador de reinicios y el registro de plugins dejan de ser modificables desde el formulario de ajustes.
+
+## [1.3.1] _4 August 2026_
+
+### Added
+
 - Se implementa soporte para navegación agentica
 - Se implementa soporte de tiles para imágenes grandes tanto en el backend como en el frontend con un visor personalizado
 - Se agrega OpenRouter como proveedor de IA
 - Se agrega nuevo algoritmo para simplificar la geometría de polígonos geográficos
 
 ### Fixed
+- Se mejora la documentación de los endpoints del sistema principal y se habilita swagger para desarrolladores
 - Se mejora la implementacion de Exiftools en el Dockerfile de despliegue
 - Se mejoran mensajes de respuesta del back para la interacción de agentes
-
-### Security
-- Se ajustan los niveles de acceso para las galerías de imágenes
-- Nueva opción del sistema que permite bloquear o habilitar la vista de metadatos en función de los niveles de acceso
 
 ## [1.3.0] _9 June 2026_
 

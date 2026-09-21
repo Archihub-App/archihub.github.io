@@ -14,7 +14,6 @@ By default, as we have already seen, our local installation has the following st
 │   ├── archihub
 │   │   ├── frontend
 │   │   ├── backend
-│   │   ├── mongo_db
 │   ├── webfiles
 │   ├── userfiles
 │   ├── temporal
@@ -37,22 +36,24 @@ DATA_PATH='../data'
 
 From here, you can change the essential folder paths. In the example, the paths are relative, but you can use absolute paths that lead directly to your content. It is important to remember that for the correct functioning of the application, these folders should not be changing and their content should not be changing frequently.
 
-You can add or modify the following variables in the `.env` file to point to the new desired paths, in this case we want to assign a path that is in an external disk:
+For example, to place every folder on an external drive, change those same variables in the `.env` file:
 
 ```
-WEBFILES_PATH=/mnt/disco_externo/webfiles
-USERFILES_PATH=/mnt/disco_externo/userfiles
-TEMPORAL_PATH=/mnt/disco_externo/temporal
-ORIGINAL_PATH=/mnt/disco_externo/original
-DATA_PATH=/mnt/disco_externo/data
+USERFILES_PATH='/mnt/external_drive/userfiles'
+WEBFILE_PATH='/mnt/external_drive/webfiles'
+UPLOAD_PATH='/mnt/external_drive/original'
+TEMPORAL_PATH='/mnt/external_drive/temporal'
+DATA_PATH='/mnt/external_drive/data'
 ```
+
+If you already have content loaded, stop the application with `docker compose down` and move the contents of the current folders to the new paths before starting it again.
 
 ### Important Considerations
 
 - __Path Consistency__: Make sure that the specified paths are always available and accessible by the system where ArchiHUB is running.
 - __Access Permissions__: Verify that ArchiHUB has the necessary permissions to read and write to the new paths.
 - __Avoid Frequent Changes__: Changing the paths and contents of these folders frequently may cause errors in the operation of the application. Be sure to define these paths definitively during the initial configuration.
-- __Application restart__: After making these changes, it is necessary to restart ArchiHUB for the new settings to take effect. You can run `docker compose up --build -d` from the root folder as we saw in the chapter to update the application.
+- __Application restart__: After making these changes, it is necessary to restart ArchiHUB for the new settings to take effect. Run `docker compose up -d` from the `local-machine/archihub` folder: the containers are recreated with the new paths.
 
 ## Enable ElasticSearch for Searching
 
@@ -60,26 +61,21 @@ By default, the Elasticsearch container is downloaded and installed along with A
 
 ### Activating Elasticsearch in ArchiHUB
 
-The first step is to go to the system configuration and in the Index Management section activate the first option.
+The first step is to go to the system configuration and, in the __Administración de la búsqueda__ (search management) section, turn on __Activar el índice para las búsquedas__ (enable the index for searches) and save. The system settings labels are shown in Spanish.
 
-After activating Elasticsearch in the system configuration, it is necessary to restart the backend container to apply the changes. This can be done in two ways:
+The change takes effect when the backend restarts. In the same system configuration, in the __Reinicio del sistema__ (system restart) section, click __Reiniciar backend__: the backend and the processing nodes restart without stopping the containers. You can also do it from the terminal, in the `local-machine/archihub` folder, with `docker compose restart archihub_backend celery_worker`.
 
-- __From console__: You must navigate to the `local-machine/archihub` folder and from there you can run the following command to restart the backend container: `docker compose up -d --no-deps archihub_flask_backend`.
-- __From desktop application__: In the desktop application it is a little simpler, make sure you are in the submenu of the containers, look for the one that says `archihub_flask_backend` and simply stop it and start again.
+To validate that the Elasticsearch index has started correctly, head back to the system configuration in the ArchiHUB interface and check, in the __Administración de la búsqueda__ section, that the option is still on. If this option is active, congratulations! You now have your archive connected to the index, which means that Elasticsearch is working properly and you can take advantage of ArchiHUB's advanced search capabilities.
 
-To validate that the Elasticsearch index has started correctly, follow these steps:
-
-Head back to the system configuration in the ArchiHUB interface. Look for the “Index Management” section and check if the first option is active. If this option is active, congratulations! You now have your archive connected to the index, which means that Elasticsearch is working properly and you can take advantage of ArchiHUB's advanced search capabilities.
-
-If the first option is not active, it is possible that a problem occurred when starting the index. In this case, try to solve the problem by consulting our [frequently asked questions](/archihub.github.io/en/faq) section, where some of the common problems and their solutions are addressed. If you do not find the answer there, we recommend that you ask in the [forum](https://github.com/orgs/ArchiHUB-App/discussions) of the application, where the community and developers can offer help and guidance to solve any problem.
+If the option is not active, it is possible that a problem occurred when starting the index. In this case, try to solve the problem by consulting our [frequently asked questions](/archihub.github.io/en/faq) section, where some of the common problems and their solutions are addressed. If you do not find the answer there, we recommend that you ask in the [forum](https://github.com/orgs/ArchiHUB-App/discussions) of the application, where the community and developers can offer help and guidance to solve any problem.
 
 ### Start indexing
 
 For Elasticsearch to work correctly with ArchiHUB, it is necessary to generate a mapping for the index, which defines the structure of the data to be indexed. Fortunately, ArchiHUB takes care of this automatically using the metadata standards you have defined. Here's how to perform these steps:
 
-First, access the system settings in the ArchiHUB interface and look for the section called __Index Management__. Here, you should click on the option to “Regenerate index”. This will generate the necessary mapping based on your metadata standards. It is important to note that this action will appear in your processing in your profile, allowing you to track its progress.
+First, access the system settings in the ArchiHUB interface and look for the section called __Administración de la búsqueda__. Here, click __Regenerar índice__ (regenerate index). This will generate the necessary mapping based on your metadata standards. It is important to note that this action will appear in your processing in your profile, allowing you to track its progress.
 
-After regenerating the index, you must index the resources to upload them to the index so that you can start searching. To do this, in the same section __Index Management__, select the option “Index the resources”. This process can also be followed from the “My Processes” section in your profile, where you will be able to see the status and progress of the indexing.
+After regenerating the index, you must index the resources to upload them to the index so that you can start searching. To do this, in the same __Administración de la búsqueda__ section, click __Volver a indexar__ (reindex). This process can also be followed from the “My Processes” section in your profile, where you will be able to see the status and progress of the indexing.
 
 Once the index is generated and the resources are indexed, ArchiHUB will automatically take care of uploading the database changes to Elasticsearch in case the content is updated. This ensures that the information in the index is always up to date and reflects the changes made to the archive.
 
@@ -89,4 +85,6 @@ By default, our `docker-compose.yml` file starts a single processing node dedica
 
 However, if we want to [install new plugins](/archihub.github.io/en/install_plugin) that may use a bit more intensive processing, we need to modify that file.
 
-To do this open the `docker-compose.yml` file in a text editor and go to the `CELERY QUEUE SERVICE` section. You will notice that it looks a lot like `CELERY WORKER SERVICE` but it is commented out and the command it executes is different as we now have the processing rows specified. Uncomment the whole block of text, then open the terminal and restart the containers with `docker compose up --build -d`.
+To do this open the `docker-compose.yml` file in a text editor and go to the `CELERY WORKER FOR NAMED QUEUES` section. It holds the `celery_worker_queues` service, which looks a lot like `celery_worker` but is commented out and consumes the `high`, `medium` and `low` queues. Right below it is the same definition for a machine with an NVIDIA GPU (`CELERY WORKER FOR NAMED QUEUES, WITH GPU`); uncomment only one of the two. Then open the terminal and restart the containers with `docker compose up -d --build`.
+
+If you configured scheduled tasks (for example with the system tasks plugin), also uncomment the `celery_beat` service. There must be exactly one in the whole installation: with two, every scheduled task runs twice.
