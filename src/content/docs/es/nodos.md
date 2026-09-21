@@ -17,20 +17,20 @@ Este procesamiento se ejecuta solamente en las máquinas que estén corriendo un
 
 ### Iniciando un nodo de procesamiento
 
-Los nodos de procesamiento en ArchiHUB se configuran de manera similar al backend del aplicativo y deben tener acceso a las mismas carpetas, variables de entorno y servicios. Para que funcionen correctamente, es necesario asegurarse de que todas las variables de entorno definidas para el backend también estén presentes en los nodos de procesamiento. Además, se debe definir una variable de entorno adicional llamada `CELERY_WORKER` y asignarle cualquier valor. Esta variable permite identificar estas instancias como `workers` de Celery y evita la duplicación de tareas automáticas.
+Los nodos de procesamiento en ArchiHUB se configuran de manera similar al backend del aplicativo y deben tener acceso a las mismas carpetas, variables de entorno y servicios. Para que funcionen correctamente, es necesario asegurarse de que todas las variables de entorno definidas para el backend también estén presentes en los nodos de procesamiento. Además, se debe definir una variable de entorno adicional, `CELERY_WORKER=true`. Esta variable permite identificar estas instancias como `workers` de Celery y evita la duplicación de tareas automáticas.
 
-El comando en la terminal para iniciar un nodo de procesamiento es:
+En la instalación con Docker, el servicio `celery_worker` del `docker-compose.yml` ya es un nodo de procesamiento con esta configuración. Fuera de Docker, el comando para iniciar un nodo de procesamiento desde la carpeta del backend es:
 
 ```
-celery --app app.celery_app worker --loglevel INFO
+celery --app archihub.worker.celery_app worker --loglevel INFO
 ```
 
 Esto iniciará un nodo de procesamiento para todas las tareas que no tengan especificada una fila de tareas en específico. Esto incluye todas las tareas del sistema, como la generación de inventarios o la indexación. Puedes tener varios nodos corriendo en la misma máquina o configurar el número de tareas en paralelo que cada uno es capaz de ejecutar. Por defecto, cada nodo corre una  sola tarea a la vez, pero esto puede configurarse en función de la capacidad de la máquina.
 
-Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensidad, lo haces con:
+Si quieres iniciar un nodo enfocado a las tareas de alta, media y baja intensidad, lo haces con el comando siguiente. En Docker, es lo que hace el servicio `celery_worker_queues`, comentado en el `docker-compose.yml`, mediante la variable `CELERY_QUEUES=high,medium,low`:
 
 ```
-celery --app app.celery_app worker -Q high,medium,low --loglevel INFO
+celery --app archihub.worker.celery_app worker -Q high,medium,low --loglevel INFO
 ```
 
 ### Planificador de Tareas Crónicas (Celery Beat)
@@ -39,24 +39,24 @@ Para la ejecución de tareas programadas y periódicas del sistema (como manteni
 
 > ⚠️ **CRÍTICO:** A diferencia de los workers, **solo debe existir una instancia de Celery Beat ejecutándose globalmente** en todo el entorno para evitar el disparo duplicado de tareas programadas.
 
-Para iniciar el planificador de tareas, utiliza el siguiente comando:
+En Docker, el planificador es el servicio `celery_beat`, comentado en el `docker-compose.yml` (usa la variable `CELERY_RUN_MODE=beat`). Fuera de Docker, utiliza el siguiente comando:
 
 ```bash
-celery --app app.celery_app beat --loglevel INFO
+celery --app archihub.worker.celery_app beat --loglevel INFO
 
 ```
 
-*Nota: Para entornos de desarrollo o despliegues simplificados en un solo contenedor, puedes combinar el worker y el beat en un solo comando usando el flag `-B` (ej. `celery --app app.celery_app worker -B --loglevel INFO`), aunque para entornos de producción se recomienda mantenerlos en procesos separados.*
+*Nota: Para entornos de desarrollo o despliegues simplificados en un solo contenedor, puedes combinar el worker y el beat en un solo comando usando el flag `-B` (ej. `celery --app archihub.worker.celery_app worker -B --loglevel INFO`), aunque para entornos de producción se recomienda mantenerlos en procesos separados.*
 
 ### Nodos de procesamiento para tareas que requieren GPU
 
 Para tareas que requieren el uso de GPU como la transcripción automática, es necesario agregar dos parametros adicionales al comando de inicio del nodo de procesamiento:
 
 ```
-CUDA_VISIBLE_DEVICES=0 celery --app app.celery_app worker -Q high,medium,low --loglevel INFO -P solo
+CUDA_VISIBLE_DEVICES=0 celery --app archihub.worker.celery_app worker -Q high,medium,low --loglevel INFO -P solo
 ```
 
-Si prefieres usar las variables de entorno de la máquina, puedes definir la variable `CUDA_VISIBLE_DEVICES` en el archivo `.env` de la máquina y asignarle el valor `0`. Esto permitirá que el nodo de procesamiento utilice la GPU 0 de la máquina.
+En Docker, la versión con GPU del servicio `celery_worker_queues` en el `docker-compose.yml` ya define `CUDA_VISIBLE_DEVICES: 0` y el parámetro `-P solo`. La variable se ajusta en ese archivo, no en el `.env`: el `docker-compose.yml` solo pasa a los contenedores las variables que menciona.
 
 En caso de que la máquina tenga más de una GPU, puedes definir la variable `CUDA_VISIBLE_DEVICES` con los índices de las GPUs que quieres utilizar. Por ejemplo, si quieres utilizar las GPUs 0 y 1, debes definir la variable `CUDA_VISIBLE_DEVICES` con el valor `0,1`.
 
@@ -74,10 +74,8 @@ Se recomienda realizar pruebas y validar la capacidad de la máquina para las ta
 En caso de que el nodo de procesamiento se detenga y sea necesario reiniciarlo, esto puede suceder al ejecutar el módulo de transcripción o procesamiento intensivo que no use GPU:
 
 ```
-docker ps
-# listado de contenedores para validar el nombre del worker
+docker compose ps
+# listado de servicios para validar el nombre del nodo, por ejemplo celery_worker
 
-docker compose stop <nombre del contenedor>
-
-docker compose up -d
+docker compose restart <nombre del servicio>
 ```

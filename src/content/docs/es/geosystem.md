@@ -7,13 +7,13 @@ ArchiHUB permite la sistematización de diferentes polígonos geográficos para 
 
 ## Carga de polígonos
 
-El primer paso para organizar la información geolocalizada en ArchiHUB es darle al sistema conocimiento sobre los distintos niveles y zonas geográficas mediante la carga de polígonos geográficos. La implementación del sistema utiliza archivos GEOJSON, que deben ser ubicados en la carpeta app/utils/geo/ del backend de la aplicación.
+El primer paso para organizar la información geolocalizada en ArchiHUB es darle al sistema conocimiento sobre los distintos niveles y zonas geográficas mediante la carga de polígonos geográficos. La implementación del sistema utiliza archivos GEOJSON, que deben ser ubicados en la carpeta `archihub/data/geo/` del backend de la aplicación (en una instalación local, `local-machine/archihub/backend/archihub/data/geo/`).
 
-Dentro de esta carpeta, los archivos GEOJSON deben organizarse según el nivel administrativo que representan. Por ejemplo, el primer nivel administrativo (nivel 0) corresponde al nivel de país. Por lo tanto, en la carpeta app/utils/geo/admin_0, se debe ubicar el archivo GEOJSON que contenga todos los países o aquellos que se quieran implementar. Dado que este es el primer nivel administrativo, es útil configurarlo cargando los países completos.
+Dentro de esta carpeta, los archivos GEOJSON deben organizarse según el nivel administrativo que representan. Por ejemplo, el primer nivel administrativo (nivel 0) corresponde al nivel de país. Por lo tanto, en la carpeta `archihub/data/geo/admin_0`, se debe ubicar el archivo GEOJSON que contenga todos los países o aquellos que se quieran implementar. Dado que este es el primer nivel administrativo, es útil configurarlo cargando los países completos.
 
-El segundo nivel administrativo se carga de manera similar. En la carpeta app/utils/geo/admin_1, se debe ubicar el siguiente nivel administrativo, que, en el caso de Colombia, sería un archivo GEOJSON con los departamentos. El tercer nivel, ubicado en la ruta app/utils/geo/admin_2, correspondería a los municipios.
+El segundo nivel administrativo se carga de manera similar. En la carpeta `archihub/data/geo/admin_1`, se debe ubicar el siguiente nivel administrativo, que, en el caso de Colombia, sería un archivo GEOJSON con los departamentos. El tercer nivel, ubicado en la ruta `archihub/data/geo/admin_2`, correspondería a los municipios.
 
-Una vez que los archivos se han ubicado en las carpetas correctas de acuerdo con el nivel administrativo que representan, se puede iniciar la carga de estos desde la configuración del sistema.
+Una vez que los archivos se han ubicado en las carpetas correctas de acuerdo con el nivel administrativo que representan, reconstruye las imágenes con `docker compose up -d --build` para que los archivos queden disponibles dentro de los contenedores. Luego se puede iniciar la carga desde la configuración del sistema.
 
 ![carga poligonos](/archihub.github.io/imagenes/carga_poly.png)
 

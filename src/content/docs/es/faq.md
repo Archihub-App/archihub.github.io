@@ -67,13 +67,13 @@ Sí, ArchiHUB permite el uso de GPU (NVIDIA compatibles con CUDA) para tareas de
 ### ¿Cuáles son los requisitos para usar GPU en ArchiHUB?
 - Una GPU NVIDIA con soporte CUDA instalada y accesible.
 - Configura nodos de procesamiento dedicados (workers de Celery) en máquinas con GPU.
-- Variable de entorno `CELERY_WORKER` (cualquier valor) para identificar el nodo como worker.
+- Variable de entorno `CELERY_WORKER=true` para identificar el nodo como worker.
 - Concurrencia recomendada: `CELERYD_CONCURRENCY=1` para evitar sobrecarga.
 
 Nota: Si no hay un nodo GPU disponible para una tarea, se pausará hasta que lo esté.
 
 ### ¿Cómo configuro un nodo para tareas con GPU?
-1. En la máquina con GPU, define `CUDA_VISIBLE_DEVICES=0` (o `0,1` para múltiples GPUs) en tu archivo `docker-compose.yml`(disponible en [este enlace](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/docker-compose.yml) en la sección `CELERY QUEUE SERVICE USING GPU`)
+1. En la máquina con GPU, define `CUDA_VISIBLE_DEVICES=0` (o `0,1` para múltiples GPUs) en tu archivo `docker-compose.yml` (disponible en [este enlace](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/docker-compose.yml)), en el servicio `celery_worker_queues` de la sección `CELERY WORKER FOR NAMED QUEUES, WITH GPU`, y descomenta ese servicio. Ver [nodos de procesamiento](/archihub.github.io/es/nodos).
 
 ## 🤖 Ejecución de Modelos de IA Locales con Ollama y GPU
 
@@ -83,36 +83,25 @@ Ollama es una herramienta open-source que permite ejecutar modelos de lenguaje g
 ### ¿Cuáles son los requisitos para usar Ollama con GPU?
 - GPU NVIDIA compatible con CUDA (para aceleración; sin GPU, funciona en CPU pero más lento).
 - Docker y el contenedor de Ollama habilitado en `docker-compose.yml`.
-- Variables de entorno en `.env`: `OLLAMA_HOST=archihub_ollama`, `OLLAMA_PORT=11434`, `OLLAMA_PATH=/ruta/a/datos/ollama`.
 - Espacio en disco para modelos (pueden ser varios GB por modelo).
 
 ### ¿Cómo configuro Ollama con soporte GPU?
-1. En el `docker-compose.yml`, habilita el servicio `archihub_ollama` con imagen `ollama/ollama:latest`:
-- Expone puerto: `${OLLAMA_PORT}:${OLLAMA_PORT}`.
-- Volúmenes: `${OLLAMA_PATH}:/root/.ollama` para almacenar modelos.
-- Para GPU: Agrega en `environment`: `CUDA_VISIBLE_DEVICES: 0`, y en `deploy.resources.reservations.devices`:
-
-```
-driver: nvidia
-count: 1
-capabilities: [gpu]
-```
-
+1. En el `docker-compose.yml`, descomenta el servicio `archihub_ollama`. Ya trae la configuración para GPU (`CUDA_VISIBLE_DEVICES` y la sección `deploy`); elimínalas si la máquina no tiene GPU NVIDIA.
 2. Inicia los servicios: `docker compose up -d`.
-3. Instala un modelo: `docker exec -it <nombre_contenedor_ollama> ollama pull <modelo>` (ej. `llama2` o `llava` para visión).
+3. Instala un modelo: `docker compose exec archihub_ollama ollama pull <modelo>` (ej. `llama2` o `llava` para visión).
 
 Nota: Ollama detecta automáticamente la GPU si está configurada. Para múltiples GPUs, ajusta `CUDA_VISIBLE_DEVICES=0,1`.
 
 ### ¿Cómo uso Ollama en ArchiHUB?
-1. Una vez configurado, ve a la sección de Asistentes en ArchiHUB.
-2. Selecciona "Ollama" como proveedor de IA.
-3. Asigna un nombre al asistente y elige el modelo instalado.
+1. Una vez configurado, ve al menú __Asistentes de IA__ en ArchiHUB y crea un asistente.
+2. Selecciona el protocolo `ollama` y usa la URL base `http://archihub_ollama:11434`.
+3. Asigna un nombre al asistente y elige como modelo por defecto uno de los modelos instalados.
 4. El asistente podrá usar recursos locales como documentos, imágenes o transcripciones para tareas como generación de texto o análisis.
 
 Ejemplos: Análisis de transcripciones de video o identificación de elementos en imágenes (con modelos como Llava).
 
 ### ¿Hay problemas en el uso de Ollama con GPU?
-- Verifica que el contenedor esté corriendo (`docker ps`) y el puerto accesible.
+- Verifica que el contenedor esté corriendo (`docker compose ps`).
 - Si la GPU no se detecta, confirma drivers NVIDIA y reinicia el contenedor.
 - Modelos grandes tardan en descargarse; usa `ollama list` para verificar.
 
@@ -128,7 +117,7 @@ También tienes disponible una instancia pública de demostración:
 ### ¿Cómo actualizo ArchiHUB a la última versión?
 1. Haz backup de tu base de datos y configuraciones
 2. Detén los contenedores (`docker compose down`)
-3. Actualiza el código: `git pull` en tu carpeta local ([front](https://github.com/Archihub-App/getting-started) y [back](https://github.com/Archihub-App/archihub-backend))
+3. Actualiza el código: `git pull` en la carpeta del [instalador](https://github.com/Archihub-App/getting-started) y en la del [backend](https://github.com/Archihub-App/archihub-backend) (`local-machine/archihub/backend`). Si vienes de la versión 1.x, sigue la guía de [actualización](/archihub.github.io/es/actualizar_local).
 4. Reconstruye e inicia: `docker compose up -d --build`
 5. Verifica que todo funcione correctamente
 
@@ -143,7 +132,7 @@ Sí, está diseñado y probado para producción. Para entornos críticos recomen
 ## 🧑‍💻 Código Abierto y Contribución
 
 ### ¿ArchiHUB es de código abierto?
-Sí, el backend es 100% open-source bajo licencia MIT.  
+Sí, el backend es 100% open-source bajo licencia [GNU AGPL v3](/archihub.github.io/es/licencia).  
 Repositorio oficial: [https://github.com/ArchiHUB-App](https://github.com/ArchiHUB-App)
 
 El frontend es de uso libre bajo licencia [Creative Commons Atribución – No Comercial – Sin Derivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es). Para más detalles respecto a la licencia del frontend, [dirigirse aquí](https://github.com/Archihub-App/getting-started/blob/main/local-machine/archihub/frontend/LICENSE.md).
@@ -178,9 +167,9 @@ Sí. Actualmente permite conectar servicios externos de IA mediante plugins y AP
 ## 🔍 Búsqueda e Índice (Elasticsearch)
 
 ### ¿Cómo activo la búsqueda avanzada con índice?
-1. Asegúrate de que el servicio `elasticsearch` esté habilitado en tu `docker-compose.yml`
-2. En Ajustes → activa “Usar índice para búsquedas”
-3. Guarda y reinicia ArchiHUB
+1. Verifica que el servicio `archihub_elasticsearch` esté activo (`docker compose ps`). La instalación local lo incluye por defecto.
+2. En la configuración del sistema, sección __Administración de la búsqueda__, activa __Activar el índice para las búsquedas__ y guarda.
+3. Reinicia desde la sección __Reinicio del sistema__ con el botón __Reiniciar backend__.
 
 ### ¿Por qué se desactiva sola la opción del índice?
 Sucede cuando Elasticsearch no está corriendo o no puede conectarse. Verifica:
@@ -218,7 +207,7 @@ Además, es importante respaldar la base de datos utilizada por ArchiHUB para al
 - `ruta/a/data/mongodb`: Contiene los datos de la base de datos MongoDB utilizada por ArchiHUB.
 
 Si tienes el servicio de Elasticsearch habilitado, también es recomendable respaldar su carpeta de datos:
-- `ruta/a/data/elasticsearch`: Contiene los datos del índice de búsqueda utilizado por ArchiHUB.
+- `ruta/a/data/elastic`: Contiene los datos del índice de búsqueda utilizado por ArchiHUB.
 
 ## 💼 Planes y Versión Pro
 

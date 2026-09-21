@@ -1,6 +1,6 @@
 ---
-title: 'Instalación en una máquina local '
-description: 'Lorem ipsum dolor sit amet - 2'
+title: 'Instalación en una máquina local'
+description: 'Cómo instalar ArchiHUB en una sola máquina con Docker Compose.'
 ---
 import { Steps } from '@astrojs/starlight/components';
 
@@ -13,76 +13,111 @@ Es importante destacar que existen requerimientos mínimos de hardware para pode
 
 ## Instalación de Docker en la máquina
 
-Para instalar ArchiHUB en una máquina local, es necesario contar con el aplicativo Docker instalado en el sistema operativo (ya sea Mac o Windows). Docker es una herramienta que permite virtualizar los diferentes servicios necesarios para el correcto funcionamiento del archivo. A lo largo de esta guía, se mostrará cómo utilizar esta herramienta para poner en marcha el archivo, realizar copias de seguridad y actualizar la herramienta.
+Para instalar ArchiHUB en una máquina local, es necesario contar con Docker y _docker compose_ instalados en el sistema operativo. Docker es una herramienta que permite virtualizar los diferentes servicios necesarios para el correcto funcionamiento del archivo. A lo largo de esta guía, se mostrará cómo utilizar esta herramienta para poner en marcha el archivo, realizar copias de seguridad y actualizar la herramienta.
 
 - [Instalación en MAC](https://docs.docker.com/desktop/install/mac-install/)
 - [Instalación en Windows](https://docs.docker.com/desktop/install/windows-install/)
 - [Instalación en Linux](https://docs.docker.com/engine/install/)
 
-## Descargar ArchiHUB
+Además de Docker, el instalador necesita `git` y `openssl`. En Windows, ejecuta los comandos de esta guía desde [WSL](https://learn.microsoft.com/es-es/windows/wsl/install) o desde Git Bash.
 
-El sistema ArchiHUB está compuesto por dos componentes principales:  
-- **Backend**: Una API que sirve como base del sistema  
-- **Frontend**: Componente intercambiable que puede adaptarse según necesidades específicas  
+## Componentes de ArchiHUB
 
-Actualmente existe una versión del frontend que gestiona todas las tareas de procesamiento y manejo de archivos. Sin embargo, esta implementación no limita el sistema, ya que permite desarrollar interfaces personalizadas según los requerimientos de cada usuario.
+El sistema ArchiHUB está compuesto por dos componentes principales:
+- **Backend**: una API desarrollada en Python con FastAPI que sirve como base del sistema. Usa MongoDB como base de datos, Elasticsearch para las búsquedas y Celery con Redis para la fila de procesamientos.
+- **Frontend**: una aplicación Next.js, servida detrás de nginx, que gestiona todas las tareas de catalogación, procesamiento y consulta.
 
-### Preparación de la instalación
+El frontend es intercambiable: la API permite desarrollar interfaces personalizadas según los requerimientos de cada usuario.
 
-Este repositorio centraliza las diferentes formas de instalar ArchiHUB. Para nuestro caso, necesitaremos los archivos ubicados en la carpeta `local-machine`.
+El repositorio [getting-started](https://github.com/Archihub-App/getting-started) centraliza las diferentes formas de instalar ArchiHUB. Para una instalación en una sola máquina se usan los archivos de la carpeta `local-machine`, que ya incluye el frontend compilado. El backend se descarga durante la instalación.
 
-**Importante**: Antes de comenzar, debes:
-1. Actualizar las claves de acceso
-2. Ajustar las configuraciones de seguridad
-
-Esto garantizará que la instalación sea segura y funcione correctamente desde el inicio.
-
-### Configuración del entorno
-
-Sigue estos pasos para preparar el entorno:
+## Instalación
 
 <Steps>
 
 1. Descargar el repositorio con los scripts de instalación
 
    ```bash
-   git clone https://github.com/ArchiHUB-App/getting-started
+   git clone https://github.com/Archihub-App/getting-started
+   cd getting-started/local-machine
    ```
 
-2. Ir a la carpeta archihub
+2. Ejecutar el instalador
+
    ```bash
-   cd getting-started/local-machine/archihub
+   ./install.sh
    ```
 
-3. Renombrar el archivo .env.bak a .env
+   El instalador:
+   - crea el archivo `archihub/.env` a partir de `archihub/.env.bak`, con contraseñas y llaves generadas al azar para esta instalación;
+   - crea las carpetas de datos (`original`, `temporal`, `userfiles`, `webfiles`, `data/mongodb` y `data/elastic`);
+   - descarga el backend en `archihub/backend`.
+
+   Si `archihub/.env` ya existe, el instalador no lo modifica: sus credenciales son las de la base de datos ya creada. En cambio, la carpeta `archihub/backend` sí se borra y se descarga de nuevo, junto con los plugins instalados en ella; para actualizar una instalación existente sigue la guía de [actualización](/archihub.github.io/es/actualizar_local) en lugar de volver a ejecutar el instalador. Para descargar una rama concreta del backend usa `BACKEND_BRANCH=<rama> ./install.sh`.
+
+3. Revisar el archivo `archihub/.env`
+
+   Cada variable está explicada en el mismo archivo. Las más importantes son:
+
+   - `ENVIRONMENT_NAME`: da nombre a la base de datos y al índice de búsqueda (`archihub-<nombre>`).
+   - `BACKEND_PORT`: puerto en el que se publica el backend. Por defecto es `11000`.
+   - `REDIRECT_URL`: dirección pública del frontend, usada en los correos de recuperación de contraseña.
+
+   No cambies `FERNET_KEY` una vez que el aplicativo esté en uso: con ella se cifran datos como las llaves de los proveedores de IA, que no se pueden leer con una llave distinta. `MONGO_INITDB_ROOT_PASSWORD` solo se aplica al crear la base de datos; cambiarla después exige cambiar también la contraseña del usuario en MongoDB.
+
+4. Revisar la dirección del backend en el frontend
+
+   El navegador llega al backend por la dirección `URL_API` del archivo `archihub/frontend/build/public/config.json`. Por defecto es `http://localhost:11000`, que sirve si usas el aplicativo desde la misma máquina y no cambiaste `BACKEND_PORT`. Si vas a acceder desde otros equipos, pon ahí la dirección de la máquina, por ejemplo `http://192.168.1.20:11000`.
+
+5. Arrancar el aplicativo
+
    ```bash
-   mv .env.back .env
+   cd archihub
+   docker compose up -d --build
    ```
 
+   La primera vez se construyen las imágenes del backend y del frontend, lo que puede tardar varios minutos.
+
+6. Verificar el estado de los servicios
+
+   **Opción 1 - Docker Desktop:** abre la pestaña "Containers" y verifica que el grupo __archihub__ aparezca activo.
+
+   **Opción 2 - Terminal:**
+   ```bash
+   docker compose ps
+   ```
+
+7. Acceder a la aplicación
+
+   Abre [http://localhost/](http://localhost/) en el navegador. La primera vez, el aplicativo pide crear el usuario administrador y prepara la configuración inicial.
 
 </Steps>
 
-Asegúrate de ajustar las siguientes configuraciones en este archivo para que todo funcione correctamente:
+> **Nota:** Si los servicios no aparecen como activos, espera unos minutos y verifica nuevamente. Elasticsearch es el que más tarda en arrancar, y el backend lo espera antes de iniciar.
 
-- __Línea 7__: _MONGO_INITDB_ROOT_PASSWORD_ es la variable de entorno que le asigna una contraseña a la base de datos. 
-- __Línea 11__: _ELASTIC_PASSWORD_ es la variable de entorno que le asigna una constraseña al índice de elasticsearch. 
-- __Línea 29 y 30__: _SECRET_KEY_ y _JWT_SECRET_KEY_ son para las llaves de ingreso al aplicativo. 
-- __Línea 31__: _FERNET_KEY_ es la llave que se usa para encriptar nuestras llaves de acceso a la API. 
+### Instalación sin el instalador
 
-**Herramientas útiles**
+Si no puedes ejecutar `install.sh`, puedes hacer los mismos pasos a mano desde la carpeta `local-machine`:
 
-[Enlace para generar aleatoriamente una contraseña](https://www.random.org/strings/?num=10&len=30&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new).
+1. Copia `archihub/.env.bak` a `archihub/.env` y reemplaza cada `__GENERATE__` por un valor aleatorio. El propio archivo indica cómo generarlos: `openssl rand -hex 32` para las contraseñas, `JWT_SECRET_KEY` y `NODE_TOKEN`, y `openssl rand -base64 32 | tr '+/' '-_'` para `FERNET_KEY`.
+2. Crea las carpetas `original`, `temporal`, `userfiles`, `webfiles`, `data/mongodb` y `data/elastic`. Créalas con tu usuario antes de arrancar los contenedores: Elasticsearch no arranca si su carpeta de datos pertenece a root.
+3. Descarga el backend en `archihub/backend`:
+   ```bash
+   git clone https://github.com/Archihub-App/archihub-backend.git archihub/backend
+   ```
 
-[Enlace para generar llave fernet](https://fernetkeygen.com/).
+Luego sigue desde el paso 3.
 
-### Organización de las carpetas
+## Organización de las carpetas
 
  ```
 ├── local-machine
+│   ├── install.sh
 │   ├── archihub
+│   │   ├── .env
+│   │   ├── docker-compose.yml
 │   │   ├── frontend
 │   │   ├── backend
-│   │   ├── mongo_db
 │   ├── webfiles
 │   ├── userfiles
 │   ├── temporal
@@ -92,66 +127,21 @@ Asegúrate de ajustar las siguientes configuraciones en este archivo para que to
 │   │   ├── elastic
  ```
 
- La raiz de la carpeta está compuesta por las siguientes carpetas, si no existen se deben crear:
- - __archihub__: en esta carpeta encontramos el código del _frontend_, el _backend_ debemos descargarlo o clonarlo del repositorio y en _mongo_db_ se encuentra la configuración inicial del aplicativo para cargar a una instalación fresca de la base de datos.
+ - __archihub__: la configuración de la instalación (`.env` y `docker-compose.yml`), el frontend compilado y el código del backend.
  - __webfiles__: ArchiHUB soporta una amplia variedad de documentos que puedes cargar sin preocuparte por el formato. Para facilitar la visualización y estandarizar los formatos, nuestra herramienta se encarga de generar versiones web de los documentos. Esto te permite acceder y ver tus archivos de manera consistente y sin complicaciones, independientemente del formato original.
  - __userfiles__: en esta carpeta se guardan los archivos generados por los usuarios, pueden ser reportes de procesamiento masivo o inventarios que se solicitan desde el módulo de catalogación.
- - __temporal__: para algunos casos de procesamiento es necesario manipular archivos temporal, esta carpeta se usa para eso.
- - __original__: acá se almacenan los archivos originales de los documentos. Se guardan en una estructura temporal de carpetas y la ruta del original es la misma que la de las versiones web.
+ - __temporal__: para algunos casos de procesamiento es necesario manipular archivos temporales, esta carpeta se usa para eso.
+ - __original__: acá se almacenan los archivos originales de los documentos. Se guardan en una estructura de carpetas por año y mes, y la ruta del original es la misma que la de las versiones web.
  - __data__: estos son los datos persistentes tanto de la base de datos como del índice. Esta carpeta es para uso exclusivo del sistema y no debe ser modificada.
 
-### Descargar el backend del aplicativo
+## Servicios
 
-Como mencionamos anteriormente, es necesario descargar el código del backend desde el [repositorio](https://github.com/ArchiHUB-App/archihub-backend) del proyecto. Puedes hacerlo de dos maneras:
+`docker-compose.yml` levanta MongoDB, Elasticsearch, Redis, el backend, un nodo de procesamiento para la fila por defecto y el frontend. MongoDB, Elasticsearch y Redis solo se publican en `127.0.0.1`, de modo que no quedan expuestos a la red.
 
-<Steps>
+El archivo trae comentados otros servicios opcionales, que se activan quitando el comentario del bloque correspondiente:
 
-4. Clonar el repositorio
-   ```bash
-   git clone https://github.com/ArchiHUB-App/archihub-backend.git backend
-   ```
-   Este comando debe ejecutarse dentro de la carpeta `/local-machine/archihub/` y creará una carpeta llamada "backend".
-
-5. O descargar el zip
-   ![descarga desde github](/archihub.github.io/imagenes/descarga_git.gif)
-
-</Steps>
-
-Esto te permitirá obtener todo el código necesario para configurar y ejecutar el backend de ArchiHUB.
-
-### Arrancar el aplicativo
-
-<Steps>
-
-6. Ejecutar el comando de despliegue
-   ```bash
-   docker compose up -d
-   ```
-   Este comando iniciará el despliegue de todos los servicios necesarios.
-
-7. Verificar el estado de los servicios
-   Puedes verificar el estado de dos maneras:
-
-   **Opción 1 - Docker Desktop:**
-   - Abre la aplicación Docker Desktop
-   - Ve a la pestaña "Containers"
-   - Verifica que aparezca __archihub__ como activo
-
-   **Opción 2 - Terminal:**
-   ```bash
-   docker ps
-   ```
-   Este comando mostrará todos los contenedores activos. Deberías ver los contenedores de ArchiHUB en la lista.
-
-8. Acceder a la aplicación
-   - Abre tu navegador web
-   - Ve a [http://localhost/](http://localhost/)
-   - La instalación puede tomar unos minutos, sé paciente
-
-</Steps>
-
-> **Nota:** Si los servicios no aparecen como activos, espera unos minutos y verifica nuevamente. La primera instalación puede tomar más tiempo.
-
-El usuario por defecto de esta instalación es __beta__ y la contraseña __beta__.
+- `celery_beat`: el planificador de tareas periódicas. Debe haber uno solo en toda la instalación.
+- `celery_worker_queues`: un nodo para las filas `high`, `medium` y `low`, que usan algunos plugins (por ejemplo, la [transcripción automática](/archihub.github.io/es/transcribe)), en versión con y sin GPU. Ver [nodos de procesamiento](/archihub.github.io/es/nodos).
+- `archihub_ollama`: modelos de lenguaje locales. Ver [Ollama](/archihub.github.io/es/local_ollama).
 
 Una vez estés listo podemos seguir con los [primeros pasos](/archihub.github.io/es/pasos) en ArchiHUB.

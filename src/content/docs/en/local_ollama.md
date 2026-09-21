@@ -9,22 +9,21 @@ Ollama is a tool that allows you to run large language models (LLMs) locally on 
 
 ## Prerequisites
 
-Before starting, make sure you have the Ollama container enabled in ArchiHUB's `docker-compose.yml`. You should have a configuration similar to the following:
+ArchiHUB's `docker-compose.yml` ships the Ollama service commented out. To enable it, uncomment the `archihub_ollama` block:
 
 ```yaml
   archihub_ollama:
     image: ollama/ollama:latest
-    ports:
-      - "${OLLAMA_PORT}:${OLLAMA_PORT}"
+    restart: unless-stopped
     volumes:
-      - ${OLLAMA_PATH}:/root/.ollama
+      - ../../ollama:/root/.ollama
     environment:
-      <<: *backend_env_variables
-      CUDA_VISIBLE_DEVICES: 0
+      CUDA_VISIBLE_DEVICES: 0 # Remove if not using a GPU
     networks:
       - archihub_mongo_network
       - archihub_elastic_network
     command: serve
+    # Remove the deploy section if not using a GPU
     deploy:
       resources:
         reservations:
@@ -32,31 +31,29 @@ Before starting, make sure you have the Ollama container enabled in ArchiHUB's `
             - driver: nvidia
               count: 1
               capabilities: [gpu]
-    restart: unless-stopped
 ```
 
-## Configuring Ollama-related environment variables (in the `.env` file)
+Models are stored in the `ollama` folder at the root of the repository. If the machine has no NVIDIA GPU, remove the `CUDA_VISIBLE_DEVICES` variable and the `deploy` section. Then start the service with `docker compose up -d`.
 
-For Ollama to work properly with ArchiHUB, you need to configure the following environment variables in the `.env` file:
-
-```txt
-# Ollama settings
-OLLAMA_HOST=archihub_ollama # Name of the Ollama container service
-OLLAMA_PORT=11434
-OLLAMA_PATH=/path/to/ollama/data
-```
+The service publishes no port: the backend reaches it over Docker's internal network by the name `archihub_ollama`, so no environment variables are needed.
 
 ## Installing models in Ollama
 
 Once Ollama is running, you can install AI models using the `ollama pull` command. For example, to install the `llama2` model, run the following command in the terminal:
 
 ```bash
-docker exec -it archihub_ollama ollama pull llama2 # Replace "llama2" with the name of the model you want to install. Validate the container name.
+docker compose exec archihub_ollama ollama pull llama2 # Replace "llama2" with the name of the model you want to install.
 ```
 
 ## Creating the assistant in ArchiHUB
 
-After installing the models in Ollama, ArchiHUB will be able to use them for various artificial intelligence tasks. To do this, from the AI assistants menu in ArchiHUB, select Ollama as the AI provider and assign a name to the assistant:
+After installing the models in Ollama, ArchiHUB will be able to use them for various artificial intelligence tasks. To do this, create a new assistant in ArchiHUB's __AI Assistants__ menu with these values:
+
+- __Protocol__: `ollama`.
+- __Base URL__: `http://archihub_ollama:11434`.
+- __Default model__: one of the models you installed, for example `llama2`.
+
+Ollama needs no access key. Model details, such as its context window, are read from Ollama itself.
 
 ![Creating the assistant in ArchiHUB](/archihub.github.io/imagenes/ollama_assistant.png)
 

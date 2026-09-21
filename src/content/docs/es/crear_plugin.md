@@ -19,19 +19,20 @@ En esta guía vamos a desarrollar un plugin que permite la integración de Archi
 
 ## Estructura de un plugin
 
-Como punto de partida, usaremos la plantilla de plugin que se encuentra en el repositorio de ArchiHUB. Esta plantilla contiene la estructura básica de un plugin y algunos ejemplos de cómo se pueden implementar diferentes funcionalidades. Para acceder a la plantilla, puedes clonar el [repositorio del `backend`](https://github.com/ArchiHUB-App/archihub-backend) y buscar el archivo `Plugin.py` en la carpeta `app/utils/templates/`.
+Un plugin es un paquete de Python dentro de la carpeta `archihub/plugins/` del [repositorio del `backend`](https://github.com/ArchiHUB-App/archihub-backend). Como punto de partida puedes tomar los plugins que vienen con el backend: `liquidText` e `inventoryMaker` son buenos ejemplos de tareas masivas y de descarga de archivos.
 
 Los plugins en ArchiHUB siempre contienen las siguientes partes:
-- **Información estructurada del plugin**: contiene la información básica del plugin. Esta se define en formato JSON y se encuentra al final de la plantilla del plugin.
-- **Endpoints**: contiene los endpoints que se exponen para interactuar con el plugin o la herramienta en general. Estos se definen en la función `add_routes` disponible en la pl antilla del plugin.
-- **Tareas**: contiene las tareas que se ejecutan al procesar archivos. Estas tareas se definen en la función `bulk` disponible en la plantilla del plugin.
+- **Información estructurada del plugin**: un diccionario `plugin_info` con la información básica del plugin y los campos que el frontend muestra para configurarlo.
+- **La clase del plugin**: una subclase de `ArchiPlugin` que define sus endpoints en el método `add_routes`.
+- **Tareas**: funciones de Celery (`@shared_task`) que se ejecutan en segundo plano en los nodos de procesamiento.
+- **La función `build()`**: devuelve una instancia del plugin. ArchiHUB solo carga los plugins que definen `plugin_info` y `build()` en su archivo `__init__.py`.
 
 ## Creación de un plugin
 
 Como primer paso, debemos definir una funcionalidad y un nombre para el plugin. En este caso, vamos a crear un plugin que permite modificar títulos de recursos usando la API de OpenAI. El nombre del plugin será `titleModifier`. A continuación, se describen los pasos para crear el plugin:
 
-1. **Crea la carpeta del plugin**: crea una carpeta con el nombre del plugin en la carpeta `plugins` del aplicativo. En este caso, la carpeta se llamará `titleModifier`.
-2. **Crea el archivo del plugin**: dentro de la carpeta de los plugins siempre se debe crear un archivo `__init__.py`. En este caso, crea el archivo `__init__.py` dentro de la carpeta `titleModifier` como copia de la plantilla del plugin.
+1. **Crea la carpeta del plugin**: crea una carpeta con el nombre del plugin en la carpeta `archihub/plugins` del backend. En este caso, la carpeta se llamará `titleModifier`.
+2. **Crea el archivo del plugin**: dentro de la carpeta de los plugins siempre se debe crear un archivo `__init__.py`. En este caso, crea el archivo `__init__.py` dentro de la carpeta `titleModifier`.
 3. **Define el logo del plugin**: el logo del plugin se debe guardar en la carpeta `static` dentro de la carpeta del plugin con el nombre `image.png`. En este caso, guarda el logo del plugin en la carpeta `titleModifier/static/image.png`.
 4. **Define las dependencias del plugin**: si el plugin requiere de dependencias adicionales, estas se deben definir en el archivo `requirements.txt` dentro de la carpeta del plugin. En este caso, el plugin requiere de la librería `openai`, por lo que se debe crear el archivo `requirements.txt` dentro de la carpeta `titleModifier` con el siguiente contenido:
 
@@ -59,9 +60,25 @@ ffmpeg
 
 Cada línea debe ser un nombre de paquete (`^[a-z0-9][a-z0-9+.-]*$`). Cualquier otra cosa se rechaza al construir la imagen, porque el contenido de esta carpeta es de terceros y se entrega a un comando que se ejecuta como root.
 
-5. **Define las variables de entorno del plugin**: si el plugin requiere de variables de entorno adicionales, estas se deben definir en un archivo `.env` en la carpeta del plugin. En este caso, el plugin requiere de la variable `OPENAI_API_KEY` con la llave generada en la [cuenta de OpenAI](https://platform.openai.com/settings/organization/api-keys). Para ello, abre el archivo `.env` en cualquier editor de texto y asigna la llave generada.
+5. **Define las variables de entorno del plugin**: si el plugin requiere de variables de entorno adicionales, estas se deben definir en un archivo `.env` en la carpeta del plugin. En este caso, el plugin requiere de la variable `OPENAI_API_KEY` con la llave generada en la [cuenta de OpenAI](https://platform.openai.com/settings/organization/api-keys):
 
-6. **Modifica el archivo `__init__.py`**: en el archivo `__init__.py` se debe escribir el código del plugin. Para iniciar, se modifica la información del plugin. Esta información se encuentra al final del archivo `__init__.py` y se debe modificar con la siguiente información:
+```
+OPENAI_API_KEY=tu-llave
+```
+
+El archivo `.env` contiene credenciales, así que no se sube al repositorio ni se incluye en la imagen. Sube en su lugar un archivo `.env.example` con las mismas variables sin valores: es lo que lee quien instala el plugin.
+
+El plugin lee sus variables con el módulo `config` del framework, nunca con `load_dotenv()`, que modificaría el entorno de todo el proceso y afectaría a los demás plugins:
+
+```python
+from archihub.plugins.framework import config
+
+api_key = config.get('titleModifier', 'OPENAI_API_KEY', required=True)
+```
+
+Con `required=True`, si la variable falta se produce un error que nombra el plugin y la variable, en lugar de una cadena vacía que fallaría más adelante.
+
+6. **Escribe la información del plugin**: en el archivo `__init__.py` se escribe el código del plugin. Para iniciar, se define la información del plugin en el diccionario `plugin_info`:
 
 ```python
 plugin_info = {
@@ -109,90 +126,131 @@ plugin_info = {
 }
 ```
 
-Luego deberás definir los endpoints y las tareas del plugin. Para ello, se debe modificar la función `add_routes` y la función `bulk` respectivamente. En la función `add_routes`, se deben definir los endpoints que el plugin expondrá para su uso. Por defecto, ya se encuentra configurado el endpoint `bulk` para el llamado de la función `bulk`. En este caso, se debe modificar la función `add_routes` para que quede de la siguiente manera:
+7. **Escribe la clase del plugin y sus endpoints**: los endpoints se declaran en el método `add_routes`, sobre `self.router`. Todas las rutas quedan bajo el nombre del plugin, así que la ruta `/bulk` se publica como `/titleModifier/bulk`, que es la que llama la pantalla de procesamientos del frontend:
 
 ```python
-def add_routes(self):
-    @self.route('/bulk', methods=['POST'])
-    @jwt_required()
-    def process_files():
-        current_user = get_jwt_identity()
-        body = request.get_json()
+import logging
 
-        if 'post_type' not in body:
-            return {'msg': 'No se especificó el tipo de contenido'}, 400
-        
-        if not self.has_role('admin', current_user) and not self.has_role('processing', current_user):
-            return {'msg': 'No tiene permisos suficientes'}, 401
+from celery import shared_task
+from fastapi import Body, Depends
 
-        task = self.bulk.delay(body, current_user)
-        self.add_task_to_user(task.id, 'titleModifier.bulk', current_user, 'msg')
-        
-        return {'msg': 'Se agregó la tarea a la fila de procesamientos'}, 201
+from archihub.core.responses import json_response
+from archihub.core.security.jwt import CurrentUser
+from archihub.plugins.framework import config
+from archihub.plugins.framework import data as plugin_data
+from archihub.plugins.framework.base import (
+    ArchiPlugin,
+    BrokerUnavailable,
+    object_ids,
+    queue,
+    require_roles,
+)
+
+logger = logging.getLogger(__name__)
+
+SLUG = 'titleModifier'
+TASK_BULK = 'titleModifier.bulk'
+
+
+class TitleModifier(ArchiPlugin):
+    def add_routes(self):
+        plugin = self
+
+        @self.router.post('/bulk', status_code=201)
+        def bulk(
+            body: dict = Body(...),
+            current_user: CurrentUser = Depends(require_roles('admin', 'processing')),
+        ):
+            if not body.get('post_type'):
+                return json_response({'msg': 'No se especificó el tipo de contenido'}, 400)
+
+            error = plugin.validate_settings_fields(body, 'bulk')
+            if error:
+                return json_response({'msg': error}, 400)
+
+            try:
+                queue(bulk_task, TASK_BULK, current_user.username, 'msg', body, current_user.username)
+            except BrokerUnavailable:
+                return json_response({'msg': 'La fila de procesamientos no está disponible'}, 503)
+
+            return json_response({'msg': 'Se agregó la tarea a la fila de procesamientos'}, 201)
 ```
 
-Nótese que en este caso se está validando que el usuario tenga permisos para ejecutar el plugin. Esto es importante ya que el plugin va a modificar títulos de recursos y no todos los usuarios deben tener acceso a esta funcionalidad. En este caso, solo los usuarios con rol `admin` o `processing` podrán ejecutar el plugin.
+Nótese cómo se validan los permisos: `Depends(require_roles('admin', 'processing'))` se resuelve antes de ejecutar el endpoint, así que solo los usuarios con rol `admin` o `processing` llegan a él; los demás reciben un error 403 sin que el endpoint se ejecute. Esto es importante ya que el plugin va a modificar títulos de recursos y no todos los usuarios deben tener acceso a esta funcionalidad. Los permisos de un plugin se declaran siempre así, nunca con una comprobación dentro del endpoint.
 
-Además, el segundo parámetro de la función `self.add_task_to_user` es el nombre del plugin y la función que se va a ejecutar. Esto es simplemente para identificar la tarea en la base de datos y no afecta el funcionamiento del plugin. Con esto, la función `bulk` queda de la siguiente manera:
+`validate_settings_fields` comprueba que la petición traiga los campos marcados como obligatorios en `settings_bulk`. La función `queue` envía la tarea a la fila de procesamientos y la registra en el perfil del usuario; su segundo parámetro es el nombre de la tarea, que la identifica en la base de datos. Si la fila no está disponible, `queue` lanza `BrokerUnavailable` y el endpoint responde 503 en lugar de confirmar una tarea que nunca se ejecutará.
+
+8. **Escribe las tareas**: las tareas son funciones de Celery definidas a nivel de módulo:
 
 ```python
-@shared_task(ignore_result=False, name='titleModifier.bulk', queue='low')
-    def bulk(body, user):
-        from openai import OpenAI
-        openai_client = OpenAI(api_key=OPENAI_API_KEY)
+@shared_task(ignore_result=False, name=TASK_BULK, queue='low')
+def bulk_task(body, user):
+    from openai import OpenAI
 
-        def modify_title(client, original_title, model, instructions, input):
+    from archihub.infra.mongo import get_mongo
+
+    client = OpenAI(api_key=config.get(SLUG, 'OPENAI_API_KEY', required=True))
+
+    filters = {'post_type': body['post_type']}
+    if body.get('resources'):
+        filters['_id'] = {'$in': object_ids(body['resources'], 'resources')}
+    elif body.get('parent'):
+        parent = object_ids([body['parent']], 'parent')[0]
+        filters['$or'] = [{'parents.id': body['parent']}, {'_id': parent}]
+
+    resources = list(get_mongo().get_all_records(
+        'resources', filters, fields={'metadata': 1, 'post_type': 1}
+    ))
+    if not resources:
+        return 'No se encontraron recursos para procesar'
+
+    updated = failed = 0
+    for resource in resources:
+        metadata = resource.get('metadata') or {}
+        title = (metadata.get('firstLevel') or {}).get('title')
+        if not title:
+            continue
+        try:
             response = client.responses.create(
-            model = model,
-            instructions = instructions,
-            input = input + original_title
+                model=body['model'],
+                instructions=body['instructions'],
+                input=f"{body['input']} {title}",
             )
-            return response.output_text
-        
-        filters = {
-            'post_type': body['post_type']
-        }
+            metadata['firstLevel']['title'] = response.output_text.strip()
+            _, status = plugin_data.update_resource(
+                str(resource['_id']),
+                {'post_type': resource['post_type'], 'metadata': metadata},
+            )
+        except Exception:
+            logger.exception('No se pudo modificar el título de %s', resource['_id'])
+            failed += 1
+            continue
+        if status == 200:
+            updated += 1
+        else:
+            failed += 1
 
-        if 'parent' in body:
-            if body['parent'] and len(body['resources']) == 0:
-                filters = {'$or': [{'parents.id': body['parent'], 'post_type': body['post_type']}, {'_id': ObjectId(body['parent'])}], **filters}
-        
-        if 'resources' in body:
-            if body['resources']:
-                if len(body['resources']) > 0:
-                    filters = {'_id': {'$in': [ObjectId(resource) for resource in body['resources']]}, **filters}
-            
-        # obtenemos los recursos
-        resources = list(mongodb.get_all_records('resources', filters, fields={'_id': 1, 'metadata': 1}))
-        if len(resources) == 0:
-            return 'No se encontraron recursos para procesar'
-        
-        for resource in resources:
-            original_title = resource['metadata']['firstLevel']['title']
-            new_title = modify_title(openai_client, original_title, body['model'], body['instructions'], body['input'])
-            update = {
-                'metadata': {
-                    'firstLevel': {
-                        'title': new_title
-                    }
-                }
-            }
-            update_data = RecordUpdate(**update)
-            mongodb.update_record('resources', {'_id': resource['_id']}, update_data)
-
-        instance = ExtendedPluginClass('titleModifier','', **plugin_info)
-        instance.clear_cache()
-
-        return 'ok'
+    return f'{updated} títulos modificados, {failed} con errores'
 ```
 
-Dentro de la función `bulk` se define el código que se va a ejecutar al procesar los registros. En este caso, se obtiene el título original del recurso y se envía a la API de OpenAI para que lo modifique. Luego, se actualiza el título del recurso en la base de datos.
+Dentro de la tarea se obtiene el título original de cada recurso, se envía a la API de OpenAI para que lo modifique y se guarda el resultado. Algunas pautas que sigue este ejemplo:
 
-Como funciones propias de ArchiHUB, se encuentran las funciones `mongodb.get_all_records` y `mongodb.update_record`. La primera función obtiene los registros de la base de datos y la segunda actualiza el registro en la base de datos. Además, al final de la función `bulk` se llama a la función `clear_cache` del plugin para que se actualicen los cambios en la interfaz de ArchiHUB. Esto es importante ya que si no se llama a esta función, los cambios no se verán reflejados en la interfaz de ArchiHUB a menos de que se regenere la cache desde los ajustes del aplicativo.
+- **Las importaciones pesadas van dentro de la tarea** (`openai` en este caso). El archivo `__init__.py` también se importa en el proceso del backend, que no ejecuta tareas, y no debe cargar allí bibliotecas que no usa.
+- **`update_resource`** guarda los cambios validándolos contra el formulario del tipo de contenido, igual que una edición hecha por un usuario, y actualiza el índice de búsqueda. Como la actualización reemplaza el campo `metadata` completo, se envían todos los metadatos del recurso, no solo el título.
+- **Un recurso con error no detiene la tarea**: se registra, se cuenta y se sigue con el siguiente. El resultado indica cuántos se modificaron y cuántos fallaron.
+- **`object_ids`** convierte los identificadores recibidos y rechaza los que no son válidos con un mensaje claro.
+- **No es necesario limpiar la caché**: toda escritura en la base de datos invalida automáticamente las consultas en caché que dependen de ella.
+
+9. **Define la función `build()`**: al final del archivo, después de `plugin_info`, define la función que ArchiHUB usa para cargar el plugin:
+
+```python
+def build():
+    return TitleModifier(SLUG, plugin_info, module_file=__file__)
+```
 
 ### Fila de procesamiento
 
-El plugin se ejecuta en una fila de procesamiento. Esto significa que cuando se envía una tarea al plugin, esta se agrega a una fila y se procesa en segundo plano. Esto es útil para distribuir las tareas a diferentes workers y evitar problemas de rendimiento si se ejecuta todo en la misma máquina y fila de procesamiento. En este caso, el plugin usa la fila `low` para procesar las tareas. Para más información de las filas de procesamiento, revisa la [documentación de ArchiHUB](https://archihub-app.github.io/archihub.github.io/es/nodos/).
+El plugin se ejecuta en una fila de procesamiento. Esto significa que cuando se envía una tarea al plugin, esta se agrega a una fila y se procesa en segundo plano. Esto es útil para distribuir las tareas a diferentes workers y evitar problemas de rendimiento si se ejecuta todo en la misma máquina y fila de procesamiento. En este caso, el plugin usa la fila `low` para procesar las tareas. El nodo de procesamiento por defecto no atiende las filas `high`, `medium` y `low`: para que la tarea se ejecute debe estar activo un nodo para esas filas, como el servicio `celery_worker_queues` de la [configuración avanzada](/archihub.github.io/es/config_local). Si la tarea es liviana, puedes omitir el parámetro `queue` y se ejecutará en la fila por defecto. Para más información de las filas de procesamiento, revisa la [documentación de ArchiHUB](/archihub.github.io/es/nodos).
 
 ### Campos de interacción con el frontend
 
@@ -205,4 +263,4 @@ Para las interacciones desde el frontend, se definen los campos desde la variabl
 
 ## Repositorio del plugin de ejemplo
 
-Para facilitar el entendimiento de la guía, hemos creado un repositorio donde podrás encontrar el [plugin desarrollado](https://github.com/ArchiHUB-App/titleModifier). Para instalarlo, sigue las instrucciones en la [documentación oficial de ArchiHUB](https://archihub-app.github.io/archihub.github.io/es/install_plugin/).
+Para facilitar el entendimiento de la guía, hemos creado un repositorio donde podrás encontrar el [plugin desarrollado](https://github.com/ArchiHUB-App/titleModifier). Ten en cuenta que ese repositorio contiene la versión del plugin para ArchiHUB 1.x; el código de esta guía es el de la versión 2.0. Para instalar un plugin, sigue las instrucciones de [instalación de plugins](/archihub.github.io/es/install_plugin).
