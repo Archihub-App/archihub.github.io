@@ -2,6 +2,47 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.0.1] _27 October 2026_
+
+### Added
+- Configurable permission points system (`/system/permission-points` and `/system/role-mappings`) allowing administrators to map custom roles to specific operations (content modeling, resource editing and publishing, review task management, access rights vocabulary, activity feeds, and AI services) without altering built-in roles.
+- User picker in forms: new `/users/options` endpoint listing account identifiers and display names for user-picker fields in cataloguing forms.
+- Public document details endpoint `/records/public/{record_id}/document` providing page counts and the aspect ratio of the first page.
+- User task cancellation: users can stop and cancel their own running background tasks in `/tasks`, while administrators retain permission to stop any task.
+- Zero-downtime search reindexing: full search reindexing updates documents in-place using `indexedAt` timestamps and only purges stale documents upon completion, keeping search queries available throughout the entire reindexing process.
+- Scheduled cleanup in Celery beat (`records.cleanup_temporary_records`) to periodically remove orphaned temporary files and draft uploads older than 24 hours.
+- Redis caching for the instance storage report (`storage_report`), speeding up response times and avoiding repetitive disk I/O and database aggregations.
+- Extended audit logging in the system log for user lifecycle events, password resets, API key creation and revocation, plugin tasks, task cancellations, boundary loading, and role mapping updates.
+
+### Changed
+- Editorial review workflow and user tasks (`usertasks`): aligned review statuses (`pending`, `review`, `approved`, `rejected`) and role permissions. Editors can create tasks, view tasks created by or assigned to them, add comments, and advance tasks to review; team leads and administrators can supervise all tasks, filter by user, and approve or reject them.
+- Search indexing decoupling: Elasticsearch indexing tasks are queued independently of heavy plugin queues and registered as chain errbacks (`always=True`), ensuring reindexing executes even if a preceding plugin hook task fails.
+- Health and readiness probe (`/health/ready`): verifies that all registered Celery queues have active worker consumers (reporting degraded status if any queue lacks consumers), caches answers for 5 seconds to prevent connection storms, and sanitizes internal service errors.
+- Bounded startup waiting for Elasticsearch in `start.sh` and `start_celery.sh` via `ELASTIC_WAIT_SECONDS` (default 300 seconds), preventing indefinite startup hangs if search is slow or disabled.
+- Controlled list/vocabulary creation now returns the assigned `id` in the response payload.
+- Centralized pagination validation (`archihub/core/pagination.py`) enforcing non-negative integer page numbers and rejecting invalid types or out-of-range bounds.
+- Updated minimum dependency versions: `requests>=2.32.4`, `urllib3>=2.5.0`, and `pillow>=11.3.0`.
+
+### Fixed
+- Fixed resource metadata presentation: numeric fields with a value of `0` are now properly displayed instead of being treated as empty and hidden from view.
+- GeoSystem administrative boundary loading: collections are now cleared once per administrative level rather than per file, allowing levels split across multiple GeoJSON files to load completely without data loss.
+- Cascade file deletion: deleting resources now detaches and moves files belonging to descendant resources down the hierarchy into the recycle bin properly.
+- Inherited access rights and reciprocal relation reindexing: updates to access rights or hierarchy location propagate the effective inherited right across all descendant search documents; updating reciprocal relations reindexes affected resources.
+- Automatic resource reindexing when reordering attached files.
+- Bulk updates and spreadsheet import (`massiveUpdater`): deep-merges existing metadata instead of overwriting omitted fields, preserves complete form field definitions (lists, subfields, and conditionals), and validates required permissions before creating types, forms, or vocabularies.
+- Formula injection prevention in spreadsheets exported by `inventoryMaker`, neutralizing text cells starting with `=`, `+`, `-`, `@`, tabs, or carriage returns.
+- Consistency in export permissions for `inventoryMaker` and `liquidText`: exports strictly enforce the same visibility rules, access rights, and draft filtering as the catalogue browser, omitting restricted fields and unauthorized records.
+- Safe handling of empty environment variables: empty strings in configuration variables like `EMAIL_PORT` or `LDAP_HOST` are treated as unset/default values, avoiding numeric conversion or startup connection failures.
+- Media processing timeouts in `filesProcessing` (`FFMPEG_TIMEOUT`), preventing corrupted or oversized media conversions from blocking Celery workers indefinitely.
+- Fixed node cache clearing and cache invalidation propagation across distributed ArchiHUB instances.
+
+### Security
+- Session revocation: JWT access tokens now carry a session version (`ver`) claim, enabling immediate revocation of all active sessions for a user upon password changes or administrative action.
+- Reworked password recovery: reset links use encrypted cryptographic tokens bound to a fingerprint of the current password hash, ensuring links are strictly single-use, reducing validity to 1 hour, and isolating them from API access tokens.
+- Directory (LDAP) authentication hardening: prevents directory accounts from taking over pre-existing local accounts with the same email, and bases login rate-limiting on verified connection IP addresses rather than spoofable request headers.
+- Staged upload isolation: users can only attach and promote their own staged temporary uploads, and file deduplication enforces visibility checks to avoid exposing existing unauthorized records.
+- SSRF protection in AI services: hardened local and external AI provider connections with network address validation (`_is_internal_host`), preventing calls to AI providers from reaching unauthorized internal network addresses.
+- Dynamic form plugin validation and rejection of file uploads on plugin configuration endpoints.
 
 ## [2.0.0] _21 September 2026_
 

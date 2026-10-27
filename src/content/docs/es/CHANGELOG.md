@@ -2,6 +2,47 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.0.1] _27 October 2026_
+
+### Added
+- Sistema configurable de puntos de permiso (`/system/permission-points` y `/system/role-mappings`) que permite a los administradores asignar roles personalizados a operaciones específicas (modelado de contenido, edición y publicación de recursos, revisión de tareas, vocabulario de derechos de acceso, feed de actividad y servicios de IA) sin alterar los roles predefinidos del sistema.
+- Selector de usuarios en formularios: nuevo endpoint `/users/options` que lista cuentas de usuario con identificadores y nombres para campos de asignación y selección en formularios de catalogación.
+- Endpoint público de detalles de documento `/records/public/{record_id}/document` para consultar el número de páginas y la relación de aspecto de la primera página.
+- Cancelación de tareas por usuarios: los usuarios pueden cancelar y detener sus propias tareas en segundo plano en `/tasks`, manteniendo el permiso administrativo para cancelar cualquier tarea.
+- Reindexación de búsqueda sin interrupción (Zero-downtime reindexing): la reconstrucción completa del índice de búsqueda actualiza los documentos en vivo con marca de tiempo `indexedAt` y solo purga los documentos obsoletos al finalizar, manteniendo la búsqueda disponible durante todo el proceso.
+- Tarea programada en Celery beat (`records.cleanup_temporary_records`) para limpiar periódicamente archivos temporales y subidas en borrador huérfanas con más de 24 horas de antigüedad.
+- Caché en Redis para el reporte de almacenamiento de la instancia (`storage_report`), optimizando el tiempo de respuesta y evitando cálculos repetidos sobre el disco y la base de datos.
+- Registro y auditoría extendida en el registro del sistema para eventos de ciclo de vida de usuarios, restablecimiento de contraseñas, creación y revocación de llaves API, tareas de plugins, cancelación de tareas, carga de geometrías y actualización de mapeo de roles.
+
+### Changed
+- Flujo de revisión editorial y tareas de usuario (`usertasks`): alineación de estados de revisión (`pending`, `review`, `approved`, `rejected`) y permisos de rol. Los editores pueden crear tareas, ver tareas creadas por ellos o asignadas a ellos, comentar y pasarlas a revisión; los líderes de equipo y administradores pueden supervisar todas las tareas, filtrar por usuario y aprobarlas o rechazarlas.
+- Desacoplamiento de tareas de indexación: las tareas de indexación en Elasticsearch se encolan de forma independiente a las colas de plugins pesados y se configuran como errbacks en cadenas de hooks (`always=True`), asegurando su ejecución incluso si una tarea previa del plugin falla.
+- Monitoreo de salud y preparación (`/health/ready`): verifica que las colas de Celery registradas cuenten con trabajadores activos (reportando estado degradado si alguna cola carece de consumidor), almacena en caché las respuestas por 5 segundos para mitigar sobrecargas y anonimiza mensajes de error de servicios internos.
+- Tiempo de espera acotado para Elasticsearch en scripts de arranque (`start.sh` y `start_celery.sh`) mediante `ELASTIC_WAIT_SECONDS` (por defecto 300 segundos), evitando bucles de espera infinitos si el servicio está desactivado o ralentizado.
+- El endpoint de creación de vocabularios y listados controlados ahora devuelve el `id` del listado creado en la respuesta.
+- Validación centralizada de parámetros de paginación (`archihub/core/pagination.py`), asegurando números de página enteros no negativos y rechazando valores fuera de rango o tipos incompatibles.
+- Actualización de versiones mínimas de dependencias: `requests>=2.32.4`, `urllib3>=2.5.0` y `pillow>=11.3.0`.
+
+### Fixed
+- Corrección en la presentación de metadatos de recursos: los campos con valor numérico `0` ahora se muestran correctamente en lugar de ser interpretados como vacíos y ocultados.
+- Carga de límites geográficos en GeoSystem: la colección de geometrías administrativas se limpia una sola vez por nivel administrativo en lugar de por archivo, permitiendo cargar niveles divididos en múltiples archivos GeoJSON sin pérdida de información.
+- Eliminación en cascada de archivos: al eliminar recursos en cascada, los archivos de los recursos descendientes se desvinculan y mueven a la papelera de reciclaje adecuadamente.
+- Propagación de derechos de acceso heredados y relaciones recíprocas en el índice de búsqueda: cambios en los permisos o ubicación de un recurso padre actualizan el derecho de acceso efectivo de sus descendientes en Elasticsearch; la actualización de relaciones recíprocas reindexa los recursos afectados.
+- Reindexación automática del recurso tras reordenar sus archivos adjuntos.
+- Actualización e importación masiva (`massiveUpdater`): combina metadatos existentes en lugar de sobreescribir campos omitidos, conserva las definiciones completas de campos de formulario (listas, subcampos y condiciones) y valida los permisos correspondientes antes de crear tipos, formularios o listados.
+- Prevención de inyección de fórmulas en hojas de cálculo exportadas por `inventoryMaker`, neutralizando celdas de texto que inicien con `=`, `+`, `-`, `@`, tabulaciones o retornos de carro.
+- Consistencia de permisos y filtros en `inventoryMaker` y `liquidText`: las exportaciones respetan las reglas de visibilidad, derechos de acceso y borradores equivalentes a la navegación del catálogo, omitiendo campos y registros restringidos a usuarios no autorizados.
+- Manejo de variables de entorno vacías: cadenas vacías en variables de configuración como `EMAIL_PORT` o `LDAP_HOST` se tratan como valores no configurados en lugar de producir fallas de conversión numérica o de conexión al iniciar.
+- Límite de tiempo en procesamiento de medios en `filesProcessing` (`FFMPEG_TIMEOUT`), evitando que conversiones bloqueen indefinidamente los procesos de Celery.
+- Corrección en la limpieza e invalidación de caché entre nodos distribuidos de ArchiHUB.
+
+### Security
+- Revocación de sesiones: los tokens JWT de acceso incluyen un identificador de versión (`ver`) que permite invalidar de forma inmediata todas las sesiones activas de un usuario al cambiar la contraseña o por solicitud administrativa.
+- Reestructuración del restablecimiento de contraseñas: se generan tokens criptográficos seguros ligados a la huella del hash de la contraseña actual, garantizando que el enlace sea estrictamente de un solo uso, con caducidad de 1 hora y diferenciado de los tokens de autenticación de la API.
+- Seguridad en autenticación LDAP: se impide que una cuenta de directorio tome el control de cuentas locales preexistentes con la misma dirección, y la limitación de intentos de acceso (`rate-limiting`) utiliza la dirección IP de conexión directa para evitar suplantaciones mediante encabezados.
+- Protección en subidas temporales: los usuarios solo pueden adjuntar sus propias cargas en borrador y la deduplicación de archivos verifica permisos de visibilidad para no exponer registros protegidos de otros usuarios.
+- Protección contra SSRF en proveedores de IA: validación y restricción de direcciones locales o privadas (`_is_internal_host`), impidiendo que llamadas a proveedores de IA alcancen servicios internos no autorizados.
+- Validación de plugins en formularios dinámicos y restricción de subida de archivos en endpoints de configuración de plugins.
 
 ## [2.0.0] _21 September 2026_
 
