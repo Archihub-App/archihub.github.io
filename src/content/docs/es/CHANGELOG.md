@@ -2,6 +2,34 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.0.2] _19 November 2026_
+
+### Added
+- Nuevo tipo de campo **Grupo** en el constructor de formularios, para agrupar visualmente campos relacionados en la ficha de catalogación.
+- Generación de imágenes con IA: el endpoint `POST /aiservices/providers/{provider_id}/images` genera una imagen con el proveedor indicado y la guarda como un registro independiente, procesado en segundo plano por Celery.
+- Idioma del sistema: nueva opción en la configuración para elegir el idioma de la aplicación (español o inglés); los textos de la configuración se traducen.
+- Botón **Gestionar permisos** en la configuración de roles y acceso, que lleva a la pantalla de puntos de permiso.
+- Reordenamiento de archivos adjuntos arrastrando y soltando en la ventana de archivos del recurso, con vista en galería o lista y previsualización.
+- Panel de herramientas en el encabezado con acceso a los plugins.
+
+### Changed
+- Los derechos de acceso y los roles de usuario se gestionan en la configuración del sistema en lugar de como listados controlados. **Al arrancar, el backend migra automáticamente** los listados existentes a la colección `system` y elimina los listados antiguos de `lists`. Se recomienda hacer una copia de seguridad de la base de datos antes de actualizar.
+- Las configuraciones nuevas del sistema se agregan al arrancar sin modificar las que ya existen.
+- Tareas de usuario: nueva presentación en forma de conversación, tareas plegables y permisos según el rol.
+- Paginación del formulario de catalogación con botones de primera, última y selección de página.
+
+### Fixed
+- Selector de fechas: navegación por años y fechas en UTC.
+- Cancelación y permisos de edición de tareas de usuario.
+- Campos condicionales: el backend evalúa las condiciones sobre campos de texto y de listas igual que el formulario (antes solo las de casillas), de modo que un campo requerido oculto por su condición ya no impide publicar y su valor no se guarda.
+- Constructor de formularios: las condiciones siguen apuntando a su campo de origen al insertar o borrar campos, se eliminan cuando se borra ese campo, y se guarda el campo de origen que muestra el selector.
+- El mapa del campo de ubicación ya no tapa el botón Guardar de la barra fija del formulario.
+- Generación de imágenes con IA: corregido un error interno que impedía generar imágenes.
+- El panel de herramientas del recurso solo muestra las acciones de los plugins activos.
+
+### Security
+- Actualización de Next.js a 16.4.6 en el frontend, que corrige dos avisos de seguridad publicados sobre la caché de funciones `'use cache'`.
+
 ## [2.0.1] _27 October 2026_
 
 ### Added

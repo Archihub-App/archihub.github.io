@@ -2,6 +2,34 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.0.2] _19 November 2026_
+
+### Added
+- New **Group** field type in the form builder, to visually group related fields in the cataloguing form.
+- AI image generation: the `POST /aiservices/providers/{provider_id}/images` endpoint generates an image with the given provider and stores it as an independent record, processed in the background by Celery.
+- System language: a new setting to choose the application language (Spanish or English); the settings texts are translated.
+- **Manage permissions** button in the roles and access settings, leading to the permission points screen.
+- Drag-and-drop reordering of attached files in the resource's files window, with gallery or list view and preview.
+- Tools panel in the header with access to plugins.
+
+### Changed
+- Access rights and user roles are managed in the system settings instead of as controlled lists. **On startup, the backend automatically migrates** the existing lists into the `system` collection and removes the old lists from `lists`. Back up the database before upgrading.
+- New system settings are added on startup without changing existing ones.
+- User tasks: new conversation layout, collapsible tasks and role-based permissions.
+- Cataloguing form pagination with first, last and page-select buttons.
+
+### Fixed
+- Date picker: year navigation and UTC dates.
+- User task cancellation and edit permissions.
+- Conditional fields: the backend evaluates conditions on text and select fields the same way the form does (previously only checkboxes), so a required field hidden by its condition no longer blocks publishing and its value is not stored.
+- Form builder: conditions keep pointing at their source field when fields are inserted or deleted, are removed when that field is deleted, and the source field the selector shows is the one saved.
+- The location field's map no longer covers the Save button in the form's fixed action bar.
+- AI image generation: fixed an internal error that prevented generating images.
+- The resource tools panel only lists actions from active plugins.
+
+### Security
+- Next.js upgraded to 16.4.6 in the frontend, fixing two published security advisories about the cache of `'use cache'` functions.
+
 ## [2.0.1] _27 October 2026_
 
 ### Added
