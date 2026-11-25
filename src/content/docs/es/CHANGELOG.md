@@ -2,6 +2,32 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.1.0] _25 November 2026_
+
+### Added
+- **Configuración de edición**: nueva pantalla en Catalogación que reúne las listas desplegables y la configuración de consulta, con el número de listas, formularios y colecciones de cada apartado.
+- Listas desplegables: nueva vista en tabla con una vista previa de las tres primeras opciones de cada lista, el número total de opciones y los formularios que la usan.
+- Configuración de consulta: las colecciones de Consultar se presentan como carpetas o en tabla, y al crear una se elige desde qué carpeta empieza y cómo se muestran sus registros.
+- Tareas de usuario:
+  - nuevo estado **En progreso**, al que pasa la tarea cuando la persona asignada la abre;
+  - los editores y transcriptores pueden asignarse tareas a sí mismos;
+  - notificaciones para los participantes de cada tarea;
+  - el título, la instrucción, la fecha límite y el lugar se guardan con la tarea, de modo que los ve también la persona asignada;
+  - tareas sobre una colección completa o sobre la pantalla de carga. Solo se asignan a editores con permiso de edición sobre la colección, y puede haber varias abiertas sobre la misma colección;
+  - nuevo diálogo para crear tareas y nuevo panel de detalle.
+
+### Changed
+- Tareas de usuario: devolver una tarea la deja otra vez pendiente y desaparece el estado `rejected`. **Al arrancar, el backend pasa automáticamente a `pending` las tareas guardadas como `rejected`.**
+- Tareas de usuario: quien creó una tarea o un administrador pueden eliminarla, y con ella se eliminan sus notificaciones.
+- Puntos de permiso: se elimina `usertasks.comment`. Comentan una tarea sus participantes, los líderes de equipo y los administradores. `usertasks.manage` cubre asignar tareas a otras personas, ver todas las tareas y aprobarlas o devolverlas. Si una instalación tenía configurado el punto eliminado, esa configuración se ignora.
+- Al arrancar, el backend calcula qué formularios usan cada lista desplegable y crea los índices nuevos de las notificaciones de tareas. No requiere pasos manuales; se recomienda hacer una copia de seguridad de la base de datos antes de actualizar.
+- Menú lateral reorganizado por secciones.
+- Accesibilidad: todos los botones de solo icono tienen un nombre accesible, y se eliminaron controles anidados en tablas y zonas de carga de archivos.
+
+### Fixed
+- La fecha límite de las tareas ya no se muestra un día antes según la zona horaria.
+- El listado de tareas incluye la conversación de cada tarea.
+
 ## [2.0.2] _19 November 2026_
 
 ### Added

@@ -2,6 +2,32 @@
 title: 'CHANGELOG'
 description: ''
 ---
+## [2.1.0] _25 November 2026_
+
+### Added
+- **Editing settings**: a new Cataloguing screen that brings together dropdown lists and browse settings, with the number of lists, forms and collections in each.
+- Dropdown lists: a new table view showing a preview of each list's first three options, its total number of options and the forms that use it.
+- Browse settings: the collections shown in Browse are presented as folders or as a table, and creating one sets the folder it starts from and how its records are shown.
+- User tasks:
+  - a new **In progress** status, which a task enters when its assignee opens it;
+  - editors and transcribers can assign tasks to themselves;
+  - notifications for the participants of each task;
+  - the title, instruction, due date and place are stored with the task, so the assignee sees them too;
+  - tasks on a whole collection or on the upload screen. They are assigned only to editors who may edit the collection, and several may be open on the same collection;
+  - a new dialog for creating tasks and a new detail panel.
+
+### Changed
+- User tasks: returning a task makes it pending again, and the `rejected` status is gone. **On startup, the backend automatically moves tasks stored as `rejected` to `pending`.**
+- User tasks: the user who created a task, or an administrator, may delete it, and its notifications are deleted with it.
+- Permission points: `usertasks.comment` is removed. A task's participants, team leads and administrators may comment on it. `usertasks.manage` covers assigning tasks to other users, seeing every task, and approving or returning tasks. An installation that had configured the removed point has that configuration ignored.
+- On startup, the backend works out which forms use each dropdown list and creates the new indexes for task notifications. No manual step is needed; backing up the database before upgrading is recommended.
+- The sidebar is reorganised into sections.
+- Accessibility: every icon-only button has an accessible name, and nested controls were removed from tables and file drop zones.
+
+### Fixed
+- A task's due date is no longer shown one day early depending on the time zone.
+- The task list includes each task's conversation.
+
 ## [2.0.2] _19 November 2026_
 
 ### Added
